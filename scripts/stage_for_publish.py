@@ -1,4 +1,4 @@
-"""Kopiert die Instagram-4:5-Slides eines Posts nach site/assets/posts/<name>/,
+"""Kopiert die Instagram-4:5-Slides eines Posts nach docs/assets/posts/<name>/,
 damit sie beim naechsten 'git push' ueber GitHub Pages oeffentlich erreichbar sind
 -- Voraussetzung fuer die Graph API (Bilder muessen unter einer public URL liegen).
 
@@ -22,7 +22,7 @@ def main():
     if not src.exists():
         sys.exit(f"Nicht gefunden: {src}")
 
-    dst = ROOT / "site" / "assets" / "posts" / name
+    dst = ROOT / "docs" / "assets" / "posts" / name
     dst.mkdir(parents=True, exist_ok=True)
 
     for f in sorted(src.glob("slide_*.png")):

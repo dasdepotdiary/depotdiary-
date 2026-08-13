@@ -5,7 +5,7 @@ rechnet Allokation in Prozent, vergleicht mit dem Vormonat falls vorhanden,
 und schreibt AUSSCHLIESSLICH Prozentwerte nach:
 
   data/depot_<JJJJ-MM>.json     (lokales Archiv, fuer Monatsvergleich)
-  site/content/depot.json       (fuer die Website)
+  docs/content/depot.json       (fuer die Website)
 
 Absolute Eurobetraege verlassen diese Datei nie in Richtung der Ausgabedateien.
 
@@ -20,7 +20,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
 DATA_DIR = ROOT / "data"
-SITE_DEPOT_JSON = ROOT / "site" / "content" / "depot.json"
+SITE_DEPOT_JSON = ROOT / "docs" / "content" / "depot.json"
 
 CATEGORY_LABELS = {
     "einzelaktien": "Einzelaktien",
