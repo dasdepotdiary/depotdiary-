@@ -156,6 +156,35 @@ def _draw_wrapped(draw, lines, x, y, font_regular_path, font_italic_path, size,
     return cy - LINE_SPACING  # y nach der letzten Zeile
 
 
+def _fit_row_font_size(draw, rows, card_w, start_size=34, min_size=20, step=2):
+    """Reduziert die Zeilen-Schriftgroesse in slide_rows, bis Label+Wert nebeneinander passen."""
+    usable = card_w - 56
+    size = start_size
+    while size > min_size:
+        font = _font(B.SERIF_REGULAR, size)
+        gap = 20
+        if all(_text_w(draw, label, font) + _text_w(draw, value, font) + gap <= usable for label, value, _ in rows):
+            return size
+        size -= step
+    return min_size
+
+
+def _truncate_to_width(draw, text, font, max_width):
+    """Kuerzt text mit '…', falls es bei max_width nicht passt."""
+    if _text_w(draw, text, font) <= max_width:
+        return text
+    ellipsis = "…"
+    lo, hi = 0, len(text)
+    while lo < hi:
+        mid = (lo + hi + 1) // 2
+        candidate = text[:mid].rstrip() + ellipsis
+        if _text_w(draw, candidate, font) <= max_width:
+            lo = mid
+        else:
+            hi = mid - 1
+    return text[:lo].rstrip() + ellipsis if lo > 0 else ellipsis
+
+
 def _wrapped_height(n_lines, font_regular_path, size):
     if n_lines == 0:
         return 0
@@ -311,7 +340,8 @@ class Post:
 
         h_lines, h_size, h_h = _headline_block(draw, headline, max_w)
 
-        row_font = _font(B.SERIF_REGULAR, 34)
+        row_size = _fit_row_font_size(draw, rows, max_w)
+        row_font = _font(B.SERIF_REGULAR, row_size)
         row_h = _line_height(row_font) + 26
         card_pad = 32
         card_h = row_h * len(rows) + card_pad * 2
@@ -334,9 +364,11 @@ class Post:
         card_w = max_w
         draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + card_w, y + card_h], fill=B.CARD)
         ry = y + card_pad
+        label_max_w = card_w - 56
         for i, (label, value, color) in enumerate(rows):
-            draw.text((B.MARGIN_LEFT + 28, ry), label, font=row_font, fill=B.BODY_TEXT)
             vw = _text_w(draw, value, row_font)
+            label_text = _truncate_to_width(draw, label, row_font, label_max_w - vw - 20)
+            draw.text((B.MARGIN_LEFT + 28, ry), label_text, font=row_font, fill=B.BODY_TEXT)
             draw.text((B.MARGIN_LEFT + card_w - 28 - vw, ry), value, font=row_font, fill=color)
             if i < len(rows) - 1:
                 draw.line(
@@ -496,3 +528,107 @@ class Post:
             y = pad + r * (thumb_h + pad)
             sheet.paste(thumb, (x, y))
         sheet.save(OUTPUT / self.name / "uebersicht.png")
+
+
+class HighlightDeck:
+    """Story-Highlight-Serie, nativ 1080x1920 (CLAUDE.md 'Wiederkehrende Formate' / PROMPTS.md Prompt 5).
+
+    Nutzung:
+        deck = HighlightDeck("etf_basics", total_slides=5)
+        deck.slide_title("etf", "Was ein ETF eigentlich ist.")
+        deck.slide_text("ETF", "Ein ETF ist ein *Fonds* ...", "Fliesstext ...")
+        ...
+        deck.export()
+    """
+
+    def __init__(self, name: str, total_slides: int):
+        self.name = name
+        self.total = total_slides
+        self.slides: list[Image.Image] = []
+
+    def _max_width(self):
+        return B.STORY_SIZE[0] - B.MARGIN_LEFT - B.MARGIN_RIGHT
+
+    def _content_area(self):
+        top = 170
+        bottom = int(B.STORY_SIZE[1] * B.CONTENT_MAX_Y_RATIO)
+        return top, bottom
+
+    def _new_canvas(self):
+        img = Image.new("RGB", B.STORY_SIZE, B.BG)
+        draw = ImageDraw.Draw(img)
+        draw.rectangle([0, 0, B.BAR_WIDTH, B.STORY_SIZE[1]], fill=B.INK)
+        return img, draw
+
+    def _draw_footer(self, draw, page_no):
+        W, H = B.STORY_SIZE
+        y_divider = int(H * 0.90)
+        draw.line([(B.MARGIN_LEFT, y_divider), (W - B.MARGIN_RIGHT, y_divider)], fill=B.DIVIDER, width=2)
+        font_word = _font(B.SANS_BOLD, B.FOOTER_SIZE)
+        _draw_tracked(draw, (B.MARGIN_LEFT, y_divider + 18), B.WORDMARK, font_word, B.INK, 3)
+        page_text = f"{page_no:02d} / {self.total:02d}"
+        pw = _text_w(draw, page_text, font_word)
+        draw.text((W - B.MARGIN_RIGHT - pw, y_divider + 18), page_text, font=font_word, fill=B.SUBTEXT)
+        font_disc = _font(B.SERIF_REGULAR, B.DISCLAIMER_SIZE)
+        draw.text((B.MARGIN_LEFT, y_divider + 54), B.DISCLAIMER, font=font_disc, fill=B.SUBTEXT)
+
+    def slide_title(self, word, subtitle=""):
+        """Titelkarte -- zaehlt nicht in der Seitennummerierung, kein Eyebrow/Footer-Zaehler."""
+        img, draw = self._new_canvas()
+        max_w = self._max_width()
+        top, bottom = self._content_area()
+
+        title_text = word.rstrip(".") + "."
+        title_font = _font(B.SERIF_BOLD, 130)
+        title_h = _line_height(title_font)
+
+        sub_lines, sub_size, sub_h = [], 36, 0
+        if subtitle:
+            sub_lines, sub_size = _wrap_markup(
+                draw, subtitle, B.SERIF_BOLD_ITALIC, B.SERIF_BOLD_ITALIC, 36, max_w, max_lines=2
+            )
+            sub_h = _wrapped_height(len(sub_lines), B.SERIF_BOLD_ITALIC, sub_size)
+
+        block_h = title_h + BLOCK_GAP + _accent_line_height() + (BLOCK_GAP + sub_h if subtitle else 0)
+        y = top + max(0, (bottom - top - block_h) // 2)
+
+        draw.text((B.MARGIN_LEFT, y), title_text, font=title_font, fill=B.INK)
+        y += title_h + BLOCK_GAP
+        y = _draw_accent_line(draw, B.MARGIN_LEFT, y)
+        if subtitle:
+            y += BLOCK_GAP
+            _draw_wrapped(draw, sub_lines, B.MARGIN_LEFT, y, B.SERIF_BOLD_ITALIC, B.SERIF_BOLD_ITALIC,
+                          sub_size, B.GREEN, B.GREEN)
+
+        self.slides.append(img)
+        return img
+
+    def slide_text(self, eyebrow, headline, body):
+        img, draw = self._new_canvas()
+        _draw_eyebrow(draw, eyebrow)
+        max_w = self._max_width()
+        top, bottom = self._content_area()
+
+        h_lines, h_size, h_h = _headline_block(draw, headline, max_w)
+        b_lines, b_size, b_h = _body_block(draw, body, max_w, max_lines=10)
+
+        block_h = h_h + BLOCK_GAP + _accent_line_height() + BLOCK_GAP + b_h
+        y = top + max(0, (bottom - top - block_h) // 2)
+
+        y = _draw_headline(draw, h_lines, h_size, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+        y = _draw_accent_line(draw, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+        _draw_body(draw, b_lines, b_size, B.MARGIN_LEFT, y)
+
+        page_no = len(self.slides)  # Titelkarte (falls vorhanden) zaehlt nicht mit
+        self._draw_footer(draw, page_no)
+        self.slides.append(img)
+        return img
+
+    def export(self):
+        out_dir = OUTPUT / self.name
+        out_dir.mkdir(parents=True, exist_ok=True)
+        for i, img in enumerate(self.slides):
+            img.save(out_dir / f"{i:02d}.png")
+        return out_dir

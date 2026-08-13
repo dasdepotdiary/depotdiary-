@@ -1,0 +1,15 @@
+{
+  "_hinweis": "Vorlage mit Platzhalterwerten. Fuer einen echten Post: Datei kopieren, mit den tatsaechlich veroeffentlichten Zahlen fuellen (Quelle: Investor-Relations-Seite oder Pflichtmitteilung des Unternehmens), Dateiname z.B. quartalszahlen_novo-nordisk-q2-2026.json.",
+  "unternehmen": "Beispiel AG",
+  "quartal": "Q2 2026",
+  "berichtsdatum": "2026-08-01",
+  "quelle": "Investor-Relations-Seite der Beispiel AG",
+  "gehalten_seit": "2024",
+  "kennzahlen": [
+    { "label": "Umsatz", "wert": "12,4 Mrd. (Platzhalter)" },
+    { "label": "Gewinn je Aktie", "wert": "1,85 (Platzhalter)" },
+    { "label": "Nettomarge", "wert": "22% (Platzhalter)" },
+    { "label": "Wachstum ggue. Vorjahresquartal", "wert": "+9% (Platzhalter)" }
+  ],
+  "ausblick_wortlaut": "Wortlaut des Unternehmens zum Ausblick hier eintragen -- Platzhalter."
+}

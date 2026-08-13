@@ -1,0 +1,27 @@
+{
+  "thema": "etf",
+  "titel_wort": "etf",
+  "untertitel": "Was ein ETF eigentlich ist.",
+  "eintraege": [
+    {
+      "headline": "Ein ETF ist ein *Fonds*, der an der Börse gehandelt wird.",
+      "body": "ETF steht für Exchange Traded Fund. Statt eine einzelne Aktie zu kaufen, kaufst du mit einem Anteil ein ganzes Bündel an Wertpapieren."
+    },
+    {
+      "headline": "Er bildet meistens einen *Index* ab.",
+      "body": "Ein Index wie der MSCI World oder S&P 500 ist eine Liste von Unternehmen nach festen Regeln. Ein ETF darauf hält alle diese Unternehmen automatisch, im gleichen Verhältnis."
+    },
+    {
+      "headline": "Dadurch bist du automatisch *breit* gestreut.",
+      "body": "Fällt eine einzelne Aktie im Index stark, wirkt sich das nur anteilig auf den gesamten ETF aus -- nicht auf mein ganzes Investment."
+    },
+    {
+      "headline": "Die laufenden Kosten heißen *TER*.",
+      "body": "Total Expense Ratio -- der jährliche Kostenanteil, der automatisch abgezogen wird. Bei den meisten breiten ETFs liegt das im Bereich von wenigen Zehntel Prozent im Jahr."
+    },
+    {
+      "headline": "Thesaurierend oder *ausschüttend*.",
+      "body": "Thesaurierende ETFs legen Dividenden automatisch wieder an. Ausschüttende zahlen sie dir aus. Beides hat steuerliche Unterschiede, die ich mir vorher angeschaut habe."
+    }
+  ]
+}
