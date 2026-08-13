@@ -1,0 +1,22 @@
+{
+  "_hinweis": "Vorlage. Kopieren als erklaerstueck_<slug>.json, hook/sections mit echtem Inhalt fuellen.",
+  "eyebrow": "ERKLAERSTÜCK",
+  "hook": "Was ein *KGV* eigentlich aussagt.",
+  "hook_sub": "Eine Kennzahl, kein Urteil.",
+  "sections": [
+    {
+      "headline": "Das KGV ist der *Kurs* geteilt durch den Gewinn je Aktie.",
+      "body": "Kurs-Gewinn-Verhältnis: Für wie viele Jahre Gewinn zahle ich gerade, wenn ich die Aktie zum aktuellen Kurs kaufe."
+    },
+    {
+      "headline": "Es sagt nichts *absolut* aus.",
+      "body": "Ein KGV von 30 kann bei einem schnell wachsenden Unternehmen niedrig sein, bei einem stagnierenden hoch. Ich schaue mir das KGV nie isoliert an."
+    },
+    {
+      "headline": "Ich vergleiche es mit dem *eigenen* Schnitt.",
+      "body": "Wie liegt das aktuelle KGV im Vergleich zum 5-Jahres-Durchschnitt desselben Unternehmens -- das sagt mir mehr als ein fixer Schwellenwert."
+    }
+  ],
+  "cta_headline": "Mehr *Kennzahlen* demnächst.",
+  "cta_body": "Welche Kennzahl soll ich als nächstes erklären?"
+}
