@@ -15,6 +15,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from render import Post
 import brand as B
+import voiceover
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -102,6 +103,30 @@ def main():
     print("Instagram 4:5:", ig_dir)
     print("TikTok 9:16:", tt_dir)
     print("Kontaktabzug:", ig_dir.parent / "uebersicht.png")
+
+    top = depot["categories_ohne_cash"]
+    cash_pct = next((c["percent"] for c in depot["categories_mit_cash"] if c["key"] == "cash"), 0)
+    top1, top2, top3 = depot["top_positions"][:3]
+    if diffs:
+        biggest = max(diffs, key=lambda d: abs(d["delta"]))
+        change_sentence = (
+            f"Auffaelligste Verschiebung zum Vormonat: {biggest['label']} "
+            f"{'plus' if biggest['delta'] > 0 else 'minus'} {abs(biggest['delta'])} Prozentpunkte."
+        )
+    else:
+        change_sentence = "Das ist der erste Monat, den ich so systematisch festhalte."
+
+    sentences = [
+        "Mein Depot in Zahlen -- heute zeig ich dir ganz genau, wie's bei mir gerade aussieht, Slide fuer Slide.",
+        f"Ohne Cash gerechnet sind {top[0]['percent']}% in {top[0]['label']}, "
+        f"der Rest verteilt sich auf {top[1]['label']}, {top[2]['label']} und {top[3]['label']}.",
+        f"Rechne ich die Cash-Quote mit rein, liegen gerade {cash_pct}% als Cash da.",
+        f"Meine groessten Positionen: {top1['name']}, dann {top2['name']}, dann {top3['name']}.",
+        change_sentence,
+        "Naechsten Monat zeig ich dir wieder, was sich bei mir veraendert hat -- folg mir gerne, wenn du das mitverfolgen willst.",
+    ]
+    voiceover.write(post.name, sentences)
+    print("Voiceover-Skript:", (Path(__file__).parent.parent / "output" / post.name / "script.md"))
 
 
 if __name__ == "__main__":
