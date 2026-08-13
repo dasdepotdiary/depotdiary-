@@ -1,11 +1,23 @@
 {
-  "placeholder": true,
-  "updated": "2026-08-01",
+  "placeholder": false,
+  "updated": "2026-08-13",
   "categories": [
-    { "label": "Einzelaktien", "percent": 42 },
-    { "label": "ETFs & Fonds", "percent": 31 },
-    { "label": "Bitcoin & BTC-Treasuries", "percent": 18 },
-    { "label": "Gold & Silber", "percent": 9 }
+    {
+      "label": "Einzelaktien",
+      "percent": 63.5
+    },
+    {
+      "label": "ETFs & Fonds",
+      "percent": 23.1
+    },
+    {
+      "label": "Bitcoin & BTC-Treasuries",
+      "percent": 11.9
+    },
+    {
+      "label": "Gold & Silber",
+      "percent": 1.5
+    }
   ],
-  "change_note": "*Platzhalter* — echte Zahlen kommen aus der Kursdaten-API (Phase 2)."
+  "change_note": ""
 }

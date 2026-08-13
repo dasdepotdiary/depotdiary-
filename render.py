@@ -106,7 +106,7 @@ def _wrap_markup(draw, text, font_regular_path, font_italic_path, size, max_widt
         for i, part in enumerate(parts):
             if part == "":
                 continue
-            glued = i == 0 and tokens and not seg_text.startswith(" ") and part[0] in _NO_SPACE_BEFORE
+            glued = bool(i == 0 and tokens and not seg_text.startswith(" ") and part[0] in _NO_SPACE_BEFORE)
             tokens.append((part, italic, glued))
 
     while True:
@@ -121,7 +121,7 @@ def _wrap_markup(draw, text, font_regular_path, font_italic_path, size, max_widt
             f = font_ital if italic else font_reg
             w_width = _text_w(draw, word, f)
             add_w = w_width if (not current or glued) else w_width + space_w
-            if current and current_w + add_w > max_width:
+            if current and current_w + add_w > max_width and not glued:
                 lines.append(current)
                 current = [(word, italic, glued)]
                 current_w = w_width
