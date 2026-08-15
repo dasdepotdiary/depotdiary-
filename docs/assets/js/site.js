@@ -49,7 +49,7 @@ function postCardHTML(post) {
 // --- Startseite ---
 async function initHome() {
   try {
-    const depot = await fetchJSON("/content/depot.json");
+    const depot = await fetchJSON("content/depot.json");
     const allocEl = document.getElementById("allocation");
     if (allocEl && depot.categories) {
       const placeholderNote = depot.placeholder
@@ -73,7 +73,7 @@ async function initHome() {
   }
 
   try {
-    const posts = await fetchJSON("/content/posts.json");
+    const posts = await fetchJSON("content/posts.json");
     const latest = [...posts].sort((a, b) => b.date.localeCompare(a.date)).slice(0, 4);
     const grid = document.getElementById("latest-posts");
     if (grid) {
@@ -88,7 +88,7 @@ async function initHome() {
 
 // --- Archiv ---
 async function initArchiv() {
-  const posts = await fetchJSON("/content/posts.json");
+  const posts = await fetchJSON("content/posts.json");
   const grid = document.getElementById("archiv-grid");
   const searchInput = document.getElementById("archiv-search");
   const categorySelect = document.getElementById("archiv-category");
@@ -119,7 +119,7 @@ async function initArchiv() {
 
 // --- Wissen ---
 async function initWissen() {
-  const entries = await fetchJSON("/content/wissen.json");
+  const entries = await fetchJSON("content/wissen.json");
   const sorted = [...entries].sort((a, b) => b.date.localeCompare(a.date));
 
   const nav = document.getElementById("wissen-nav");

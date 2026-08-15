@@ -2,28 +2,28 @@
 
 @font-face {
   font-family: "DejaVu Serif";
-  src: url("/assets/fonts/DejaVuSerif.ttf") format("truetype");
+  src: url("../fonts/DejaVuSerif.ttf") format("truetype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DejaVu Serif";
-  src: url("/assets/fonts/DejaVuSerif-Bold.ttf") format("truetype");
+  src: url("../fonts/DejaVuSerif-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "DejaVu Serif";
-  src: url("/assets/fonts/DejaVuSerif-BoldItalic.ttf") format("truetype");
+  src: url("../fonts/DejaVuSerif-BoldItalic.ttf") format("truetype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Liberation Sans";
-  src: url("/assets/fonts/LiberationSans-Bold.ttf") format("truetype");
+  src: url("../fonts/LiberationSans-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
