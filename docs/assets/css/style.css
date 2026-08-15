@@ -190,11 +190,17 @@ main {
 .allocation-label {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
   font-family: var(--serif);
   font-size: 16px;
   margin-bottom: 6px;
 }
-.allocation-value { font-weight: 700; }
+.allocation-label span:first-child {
+  flex: 1;
+  min-width: 0;
+}
+.allocation-value { font-weight: 700; white-space: nowrap; flex-shrink: 0; }
 .allocation-track {
   height: 8px;
   background: var(--divider);
@@ -225,14 +231,19 @@ main {
   text-decoration: none;
   background: var(--card);
   overflow: hidden;
+  border: 1px solid transparent;
+  transition: border-color 0.15s ease;
 }
+.post-card:hover { border-color: var(--green); }
 .post-card img {
   width: 100%;
   aspect-ratio: 4 / 5;
   object-fit: cover;
   display: block;
   background: var(--divider);
+  transition: transform 0.25s ease;
 }
+.post-card:hover img { transform: scale(1.03); }
 .post-card-body { padding: 16px 18px 20px; }
 .post-card .eyebrow { margin-bottom: 8px; }
 .post-card h3 { margin-bottom: 6px; }
@@ -262,8 +273,43 @@ main {
   border: 1px solid var(--divider);
   background: var(--bg);
   color: var(--ink);
+  transition: border-color 0.15s ease;
+}
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: var(--green);
 }
 .filters input { flex: 1; min-width: 180px; }
+.filters select { min-width: 110px; }
+
+/* --- Kennzahlen-Kacheln (fuer Quartalszahlen/Erklaerstueck-Daten) --- */
+.stat-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(96px, 1fr));
+  gap: 10px;
+  margin: 20px 0;
+}
+.stat-tile {
+  background: var(--card);
+  padding: 14px 12px;
+  text-align: center;
+}
+.stat-tile .stat-value {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--ink);
+  display: block;
+}
+.stat-tile .stat-label {
+  font-family: var(--sans);
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  color: var(--subtext);
+  display: block;
+  margin-top: 4px;
+}
 .result-count {
   font-family: var(--sans);
   font-size: 12px;

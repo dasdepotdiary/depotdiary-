@@ -87,22 +87,39 @@ async function initHome() {
 }
 
 // --- Archiv ---
+const MONTH_NAMES = ["Januar", "Februar", "März", "April", "Mai", "Juni",
+  "Juli", "August", "September", "Oktober", "November", "Dezember"];
+
 async function initArchiv() {
   const posts = await fetchJSON("content/posts.json");
   const grid = document.getElementById("archiv-grid");
   const searchInput = document.getElementById("archiv-search");
   const categorySelect = document.getElementById("archiv-category");
+  const yearSelect = document.getElementById("archiv-year");
+  const monthSelect = document.getElementById("archiv-month");
   const countEl = document.getElementById("archiv-count");
 
   const uniqueCategories = [...new Set(posts.map(p => p.category))];
   categorySelect.innerHTML = `<option value="">Alle Kategorien</option>` +
     uniqueCategories.map(c => `<option value="${c}">${categoryLabel(c)}</option>`).join("");
 
+  const uniqueYears = [...new Set(posts.map(p => p.date.slice(0, 4)))].sort((a, b) => b.localeCompare(a));
+  yearSelect.innerHTML = `<option value="">Alle Jahre</option>` +
+    uniqueYears.map(y => `<option value="${y}">${y}</option>`).join("");
+
+  const uniqueMonths = [...new Set(posts.map(p => p.date.slice(5, 7)))].sort();
+  monthSelect.innerHTML = `<option value="">Alle Monate</option>` +
+    uniqueMonths.map(m => `<option value="${m}">${MONTH_NAMES[parseInt(m, 10) - 1]}</option>`).join("");
+
   function render() {
     const q = searchInput.value.trim().toLowerCase();
     const cat = categorySelect.value;
+    const year = yearSelect.value;
+    const month = monthSelect.value;
     const filtered = posts
       .filter(p => !cat || p.category === cat)
+      .filter(p => !year || p.date.slice(0, 4) === year)
+      .filter(p => !month || p.date.slice(5, 7) === month)
       .filter(p => !q || (p.title + " " + (p.excerpt || "")).toLowerCase().includes(q))
       .sort((a, b) => b.date.localeCompare(a.date));
 
@@ -114,6 +131,8 @@ async function initArchiv() {
 
   searchInput.addEventListener("input", render);
   categorySelect.addEventListener("change", render);
+  yearSelect.addEventListener("change", render);
+  monthSelect.addEventListener("change", render);
   render();
 }
 
