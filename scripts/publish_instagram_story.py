@@ -19,7 +19,10 @@ import requests
 from dotenv import load_dotenv
 
 ROOT = Path(__file__).parent.parent
+sys.path.insert(0, str(ROOT))
 load_dotenv(ROOT / ".env")
+
+import site_sync
 
 GRAPH_VERSION = "v21.0"
 GRAPH_URL = f"https://graph.facebook.com/{GRAPH_VERSION}"
@@ -72,11 +75,8 @@ def main():
 
     token, ig_id, base_url = get_config()
 
-    slide = ROOT / "output" / args.post_name / "tiktok_9x16" / "slide_1.png"
-    if not slide.exists():
-        sys.exit(f"Nicht gefunden: {slide}")
-
-    image_url = f"{base_url}/assets/posts_9x16/{args.post_name}/slide_1.png"
+    story_relpath = site_sync.stage_story(args.post_name)
+    image_url = f"{base_url}/{story_relpath}"
     print(f"{'LIVE' if args.live else 'TROCKENLAUF'} -- Story fuer '{args.post_name}'")
     print(f"  Bild-URL: {image_url}")
 

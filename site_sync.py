@@ -13,6 +13,24 @@ POSTS_JSON = ROOT / "docs" / "content" / "posts.json"
 WISSEN_JSON = ROOT / "docs" / "content" / "wissen.json"
 
 
+def stage_story(post_name: str) -> str:
+    """Kopiert die Story-Ankuendigung (falls vorhanden, sonst Slide 1 im 9:16-Format)
+    nach docs/assets/posts_9x16/<name>/ und gibt den relativen Pfad zurueck."""
+    dst_dir = ROOT / "docs" / "assets" / "posts_9x16" / post_name
+    dst_dir.mkdir(parents=True, exist_ok=True)
+
+    announcement = ROOT / "output" / post_name / "story_announcement.png"
+    if announcement.exists():
+        dst = dst_dir / "story_announcement.png"
+        shutil.copy2(announcement, dst)
+        return f"assets/posts_9x16/{post_name}/story_announcement.png"
+
+    fallback = ROOT / "output" / post_name / "tiktok_9x16" / "slide_1.png"
+    dst = dst_dir / "slide_1.png"
+    shutil.copy2(fallback, dst)
+    return f"assets/posts_9x16/{post_name}/slide_1.png"
+
+
 def stage_cover(post_name: str) -> str:
     """Kopiert die Instagram-4:5-Slides nach docs/assets/posts/<name>/ (fuer
     Website-Vorschau und Insta-API-Hosting) und gibt den relativen Cover-Pfad

@@ -632,3 +632,48 @@ class HighlightDeck:
         for i, img in enumerate(self.slides):
             img.save(out_dir / f"{i:02d}.png")
         return out_dir
+
+
+def render_story_announcement(title: str, category_label: str = "", cta: str = "Jetzt ansehen") -> Image.Image:
+    """Einzelne Story-Ankuendigungs-Slide ('Neuer Post'), nativ 1080x1920.
+
+    Nutzung:
+        img = render_story_announcement("Was ein KGV eigentlich aussagt.", "ERKLAERSTUECK")
+        img.save("neuer_post.png")
+    """
+    img = Image.new("RGB", B.STORY_SIZE, B.BG)
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([0, 0, B.BAR_WIDTH, B.STORY_SIZE[1]], fill=B.INK)
+
+    max_w = B.STORY_SIZE[0] - B.MARGIN_LEFT - B.MARGIN_RIGHT
+    top = 170
+    bottom = int(B.STORY_SIZE[1] * B.CONTENT_MAX_Y_RATIO)
+
+    badge_font = _font(B.SANS_BOLD, B.EYEBROW_SIZE)
+    _draw_tracked(draw, (B.MARGIN_LEFT, 72), "NEUER POST", badge_font, B.GREEN, B.EYEBROW_TRACKING)
+
+    if category_label:
+        cat_font = _font(B.SANS_BOLD, B.EYEBROW_SIZE)
+        _draw_tracked(draw, (B.MARGIN_LEFT, 72 + B.EYEBROW_SIZE + 14), category_label.upper(),
+                      cat_font, B.SUBTEXT, B.EYEBROW_TRACKING)
+
+    h_lines, h_size = _wrap_markup(draw, title, B.SERIF_BOLD, B.SERIF_BOLD_ITALIC, 74, max_w, max_lines=5)
+    h_h = _wrapped_height(len(h_lines), B.SERIF_BOLD, h_size)
+
+    cta_font = _font(B.SERIF_BOLD_ITALIC, 40)
+    cta_h = _line_height(cta_font)
+
+    block_h = h_h + BLOCK_GAP + _accent_line_height() + BLOCK_GAP + cta_h
+    y = top + max(0, (bottom - top - block_h) // 2)
+
+    y = _draw_wrapped(draw, h_lines, B.MARGIN_LEFT, y, B.SERIF_BOLD, B.SERIF_BOLD_ITALIC, h_size, B.INK, B.GREEN)
+    y += BLOCK_GAP
+    y = _draw_accent_line(draw, B.MARGIN_LEFT, y)
+    y += BLOCK_GAP
+    draw.text((B.MARGIN_LEFT, y), cta, font=cta_font, fill=B.GREEN)
+
+    word_font = _font(B.SANS_BOLD, B.FOOTER_SIZE)
+    wy = int(B.STORY_SIZE[1] * 0.90)
+    _draw_tracked(draw, (B.MARGIN_LEFT, wy), B.WORDMARK, word_font, B.INK, 3)
+
+    return img
