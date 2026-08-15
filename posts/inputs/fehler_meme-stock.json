@@ -1,0 +1,22 @@
+{
+  "kategorie": "fehler",
+  "eyebrow": "FEHLER",
+  "hook": "Ein *Meme-Stock*, weil ich's auf Twitter gelesen hab.",
+  "hook_sub": "Eine der teuersten Lektionen bisher.",
+  "sections": [
+    {
+      "headline": "Ich bin *eingestiegen*, ohne selbst nachzuschauen.",
+      "body": "Ein Tweet hat gereicht -- keine eigene Recherche, kein Blick auf die Zahlen. Einfach mitgekauft."
+    },
+    {
+      "headline": "Im Plus *nicht* verkauft.",
+      "body": "Die Position stand kurz danach deutlich im Plus. Ich hab nicht verkauft, weil ich dachte, es geht noch weiter."
+    },
+    {
+      "headline": "Dann ging's *runter*.",
+      "body": "Aus dem Plus wurde ein deutliches Minus. Ich hab die Position bis heute gehalten -- mittlerweile hat sie sich wieder etwas erholt."
+    }
+  ],
+  "cta_headline": "Fehler gehören *dazu*.",
+  "cta_body": "Jeder fängt mal an, und jeder Fehler ist auch ein Teil vom Lernen. Was war deine erste teure Lektion?"
+}

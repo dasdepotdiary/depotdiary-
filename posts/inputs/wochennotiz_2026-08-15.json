@@ -1,0 +1,18 @@
+{
+  "kategorie": "wochennotiz",
+  "eyebrow": "WOCHENNOTIZ",
+  "hook": "Diese Woche habe ich *nichts* gekauft.",
+  "hook_sub": "Manchmal ist eine Entscheidung, nichts zu tun.",
+  "sections": [
+    {
+      "headline": "Der Markt fühlt sich für mich gerade *hoch bewertet* an.",
+      "body": "Nur mein persönliches Gefühl, keine Prognose -- aber ich hab diese Woche bewusst nichts nachgekauft."
+    },
+    {
+      "headline": "Stattdessen *spare* ich gerade an.",
+      "body": "Ich leg Cash beiseite für die nächsten Wochen, statt zu kaufen nur weil es sich falsch anfühlt, nichts zu tun."
+    }
+  ],
+  "cta_headline": "Nächste Woche *vielleicht* wieder anders.",
+  "cta_body": "Machst du das auch manchmal -- bewusst pausieren?"
+}

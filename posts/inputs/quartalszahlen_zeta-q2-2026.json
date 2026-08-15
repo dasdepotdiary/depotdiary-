@@ -1,0 +1,15 @@
+{
+  "_hinweis": "Zahlen aus Alpha Vantage (EARNINGS, INCOME_STATEMENT, COMPANY_OVERVIEW) + Presseberichten zu Zeta's Q2-2026-Zahlen vom 04.08.2026 zusammengetragen, kein woertliches Zitat aus der Original-Pressemitteilung. 'gehalten_seit' bitte noch ausfuellen.",
+  "unternehmen": "Zeta Global (ZETA)",
+  "quartal": "Q2 2026",
+  "berichtsdatum": "2026-08-04",
+  "quelle": "Quartalsbericht Zeta Global Holdings Corp, 04.08.2026",
+  "gehalten_seit": "??? -- bitte ergänzen",
+  "kennzahlen": [
+    { "label": "Umsatz", "wert": "443 Mio. USD" },
+    { "label": "Gewinn je Aktie (GAAP)", "wert": "0,06 USD" },
+    { "label": "Nettomarge (GAAP)", "wert": "1,8%" },
+    { "label": "Wachstum ggü. Vorjahresquartal", "wert": "+44% Umsatz" }
+  ],
+  "ausblick_wortlaut": "Zeta hebt die Jahresprognose 2026 an: Umsatz auf 1,818 Mrd. USD, Adjusted EBITDA auf 405 Mio. USD, freier Cashflow auf 255 Mio. USD, GAAP-Ergebnis je Aktie auf 0,10 USD (jeweils Mittelwert der Spanne). Für Q3 2026 wird ein Umsatz von rund 471 Mio. USD erwartet."
+}
