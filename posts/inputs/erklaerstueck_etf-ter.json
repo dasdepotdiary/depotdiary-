@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was die *TER* eines ETFs wirklich kostet.",
+  "hook_sub": "Eine kleine Zahl mit großer Langzeitwirkung.",
+  "sections": [
+    {
+      "headline": "TER steht für *Total Expense Ratio*.",
+      "body": "Die jährliche Gesamtkostenquote eines ETFs -- wird automatisch aus dem Fondsvermögen abgezogen, ich seh sie nie als extra Abbuchung."
+    },
+    {
+      "headline": "Klingt klein, wirkt aber *jedes* Jahr.",
+      "body": "0,2% statt 0,7% TER klingt nach wenig. Über 20-30 Jahre und durch den Zinseszinseffekt macht das einen spürbaren Unterschied im Endergebnis."
+    },
+    {
+      "headline": "Ich schau mir die TER *zusammen* mit dem Index an.",
+      "body": "Ein günstigerer ETF auf einen schlechter passenden Index bringt mir nichts. Erst Index prüfen, dann unter den passenden ETFs auf die TER schauen."
+    }
+  ],
+  "cta_headline": "Nächste *Kennzahl* folgt.",
+  "cta_body": "Sag mir gern, welche ETF-Kennzahl dich als Nächstes interessiert."
+}

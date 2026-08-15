@@ -7,5 +7,14 @@
     "excerpt": "Allokation diesen Monat: Einzelaktien 63.5%, ETFs & Fonds 23.1%, Bitcoin & BTC-Treasuries 11.9%.",
     "cover": "assets/posts/depot_update_2026-08/slide_1.png",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_kgv",
+    "title": "Was ein KGV eigentlich aussagt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-15",
+    "excerpt": "Eine Kennzahl, kein Urteil.",
+    "cover": "assets/posts/erklaerstueck_kgv/slide_1.png",
+    "url": null
   }
 ]
