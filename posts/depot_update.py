@@ -16,6 +16,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from render import Post
 import brand as B
 import voiceover
+import site_sync
 
 DATA_DIR = Path(__file__).parent.parent / "data"
 
@@ -127,6 +128,18 @@ def main():
     ]
     voiceover.write(post.name, sentences)
     print("Voiceover-Skript:", (Path(__file__).parent.parent / "output" / post.name / "script.md"))
+
+    cover = site_sync.stage_cover(post.name)
+    site_sync.add_post(
+        post_id=post.name,
+        title="Mein Depot in Zahlen",
+        category="depot-update",
+        date_str=depot["updated"],
+        excerpt=f"Allokation diesen Monat: {top[0]['label']} {top[0]['percent']}%, "
+                f"{top[1]['label']} {top[1]['percent']}%, {top[2]['label']} {top[2]['percent']}%.",
+        cover_relpath=cover,
+    )
+    print("Website-Eintrag aktualisiert (docs/content/posts.json)")
 
 
 if __name__ == "__main__":

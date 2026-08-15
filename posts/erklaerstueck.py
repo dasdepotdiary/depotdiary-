@@ -8,12 +8,14 @@ Aufruf:
 
 import json
 import sys
+from datetime import date
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
 from render import Post
 import voiceover
+import site_sync
 
 INPUTS_DIR = Path(__file__).parent / "inputs"
 
@@ -53,6 +55,27 @@ def main():
 
     voiceover.write(post.name, sentences)
     print("Voiceover-Skript:", (Path(__file__).parent.parent / "output" / post.name / "script.md"))
+
+    date_str = data.get("date", date.today().isoformat())
+    cover = site_sync.stage_cover(post.name)
+    site_sync.add_post(
+        post_id=post.name,
+        title=data["hook"].replace("*", ""),
+        category="erklaerstueck",
+        date_str=date_str,
+        excerpt=data.get("hook_sub", ""),
+        cover_relpath=cover,
+    )
+    body_paragraphs = ([data["hook_sub"]] if data.get("hook_sub") else []) + [
+        s["body"] for s in data["sections"]
+    ]
+    site_sync.add_wissen(
+        entry_id=slug,
+        title=data["hook"].replace("*", ""),
+        date_str=date_str,
+        body_paragraphs=body_paragraphs,
+    )
+    print("Website-Eintrag aktualisiert (docs/content/posts.json + wissen.json)")
 
 
 if __name__ == "__main__":

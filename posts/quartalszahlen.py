@@ -20,6 +20,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 from render import Post
 import brand as B
 import voiceover
+import site_sync
 
 INPUTS_DIR = Path(__file__).parent / "inputs"
 
@@ -94,6 +95,17 @@ def main():
     ]
     voiceover.write(post.name, sentences)
     print("Voiceover-Skript:", (Path(__file__).parent.parent / "output" / post.name / "script.md"))
+
+    cover = site_sync.stage_cover(post.name)
+    site_sync.add_post(
+        post_id=post.name,
+        title=f"{data['unternehmen']} -- {data['quartal']}",
+        category="quartalszahlen",
+        date_str=data["berichtsdatum"],
+        excerpt=f"Veröffentlichte Zahlen zu {data['quartal']}, Quelle: {data['quelle']}.",
+        cover_relpath=cover,
+    )
+    print("Website-Eintrag aktualisiert (docs/content/posts.json)")
 
 
 if __name__ == "__main__":
