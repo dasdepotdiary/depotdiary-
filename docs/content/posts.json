@@ -25,5 +25,14 @@
     "excerpt": "Eine kleine Zahl mit großer Langzeitwirkung.",
     "cover": "assets/posts/erklaerstueck_etf-ter/slide_1.png",
     "url": null
+  },
+  {
+    "id": "fehler_meme-stock",
+    "title": "Ein Meme-Stock, weil ich's auf Twitter gelesen hab.",
+    "category": "fehler",
+    "date": "2026-08-16",
+    "excerpt": "Eine der teuersten Lektionen bisher.",
+    "cover": "assets/posts/fehler_meme-stock/slide_1.png",
+    "url": null
   }
 ]
