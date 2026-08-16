@@ -431,6 +431,64 @@ class Post:
         self._finish(img, draw)
         return img
 
+    def slide_stats(self, eyebrow, headline, stats, note=""):
+        """Daten-Karten-Slide (Marktupdate-Format): je eine eigene Kachel.
+
+        stats = [(Label, Unterlabel, Wert, Farbe), ...]
+        """
+        img, draw = _new_canvas()
+        _draw_eyebrow(draw, eyebrow)
+        max_w = self._max_width()
+        top, bottom = _content_area()
+
+        h_lines, h_size, h_h = _headline_block(draw, headline, max_w)
+
+        label_font = _font(B.SERIF_BOLD, 30)
+        sublabel_font = _font(B.SERIF_REGULAR, 21)
+        value_font = _font(B.SERIF_BOLD, 42)
+        label_h = _line_height(label_font)
+        sublabel_h = _line_height(sublabel_font)
+        tile_pad = 22
+        tile_gap = 14
+        tile_h = tile_pad * 2 + label_h + 4 + sublabel_h
+
+        note_lines, note_size, note_h = [], B.DISCLAIMER_SIZE, 0
+        if note:
+            note_lines, note_size = _wrap_markup(
+                draw, note, B.SERIF_REGULAR, B.SERIF_BOLD_ITALIC, 24, max_w, max_lines=2
+            )
+            note_h = _wrapped_height(len(note_lines), B.SERIF_REGULAR, note_size)
+
+        tiles_h = len(stats) * tile_h + (len(stats) - 1) * tile_gap
+        block_h = (h_h + BLOCK_GAP + _accent_line_height() + BLOCK_GAP + tiles_h
+                   + (BLOCK_GAP + note_h if note else 0))
+        y = top + max(0, (bottom - top - block_h) // 2)
+
+        y = _draw_headline(draw, h_lines, h_size, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+        y = _draw_accent_line(draw, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+
+        tile_w = max_w
+        for label, sublabel, value, color in stats:
+            draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + tile_w, y + tile_h], fill=B.CARD)
+            draw.text((B.MARGIN_LEFT + 24, y + tile_pad), label, font=label_font, fill=B.INK)
+            draw.text((B.MARGIN_LEFT + 24, y + tile_pad + label_h + 4), sublabel,
+                       font=sublabel_font, fill=B.SUBTEXT)
+            vw = _text_w(draw, value, value_font)
+            vy = y + tile_h // 2 - _line_height(value_font) // 2
+            draw.text((B.MARGIN_LEFT + tile_w - 24 - vw, vy), value, font=value_font, fill=color)
+            y += tile_h + tile_gap
+        y -= tile_gap
+
+        if note:
+            y += BLOCK_GAP
+            _draw_wrapped(draw, note_lines, B.MARGIN_LEFT, y, B.SERIF_REGULAR, B.SERIF_BOLD_ITALIC,
+                          note_size, B.SUBTEXT, B.GREEN)
+
+        self._finish(img, draw)
+        return img
+
     # --- slide_cta(eyebrow, headline, body) ---
     def slide_cta(self, eyebrow, headline, body=""):
         img, draw = _new_canvas()
