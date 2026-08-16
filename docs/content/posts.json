@@ -16,5 +16,14 @@
     "excerpt": "Eine Kennzahl, kein Urteil.",
     "cover": "assets/posts/erklaerstueck_kgv/slide_1.png",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_etf-ter",
+    "title": "Was die TER eines ETFs wirklich kostet.",
+    "category": "erklaerstueck",
+    "date": "2026-08-16",
+    "excerpt": "Eine kleine Zahl mit großer Langzeitwirkung.",
+    "cover": "assets/posts/erklaerstueck_etf-ter/slide_1.png",
+    "url": null
   }
 ]

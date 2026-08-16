@@ -9,5 +9,18 @@
       "Ein KGV von 30 kann bei einem schnell wachsenden Unternehmen niedrig sein, bei einem stagnierenden hoch. Ich schaue mir das KGV nie isoliert an.",
       "Wie liegt das aktuelle KGV im Vergleich zum 5-Jahres-Durchschnitt desselben Unternehmens -- das sagt mir mehr als ein fixer Schwellenwert."
     ]
+  },
+  {
+    "id": "etf-ter",
+    "title": "Was die TER eines ETFs wirklich kostet.",
+    "date": "2026-08-16",
+    "body": [
+      "Eine kleine Zahl mit großer Langzeitwirkung.",
+      "Die jährliche Gesamtkostenquote eines ETFs -- wird automatisch aus dem Fondsvermögen abgezogen, ich seh sie nie als extra Abbuchung.",
+      "0,2% statt 0,7% TER klingt nach wenig. Über 20-30 Jahre und durch den Zinseszinseffekt macht das einen spürbaren Unterschied im Endergebnis.",
+      "Ein günstigerer ETF auf einen schlechter passenden Index bringt mir nichts. Erst Index prüfen, dann unter den passenden ETFs auf die TER schauen.",
+      "Ein FTSE All-World oder MSCI World liegen oft bei sehr niedriger TER. ETFs auf Nischenthemen wie Robotik, Drohnen oder Verteidigung kosten dagegen fast immer deutlich mehr -- der Preis für die engere Auswahl.",
+      "Mein persönlicher Ansatz: statt eines teuren Nischen-ETFs schau ich mir an, welche einzelne Aktie in dem Sektor für mich am überzeugendsten aussieht, und kaufe die direkt."
+    ]
   }
 ]
