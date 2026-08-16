@@ -1,0 +1,25 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was die *Fed* eigentlich macht.",
+  "hook_sub": "Und warum jeder drauf schaut.",
+  "sections": [
+    {
+      "headline": "Die Fed ist die *Zentralbank* der USA.",
+      "body": "Federal Reserve -- sie steuert die Geldpolitik der größten Volkswirtschaft der Welt, unter anderem über den Leitzins."
+    },
+    {
+      "headline": "Der Leitzins beeinflusst *alles*.",
+      "body": "Höhere Zinsen machen Kredite teurer, Sparen attraktiver -- das wirkt sich auf Unternehmensgewinne, Aktienkurse und Anleihen aus."
+    },
+    {
+      "headline": "Die Fed hat *zwei* Hauptziele.",
+      "body": "Preisstabilität (Inflation niedrig halten) und maximale Beschäftigung -- oft ein Balanceakt zwischen beidem."
+    },
+    {
+      "headline": "Deshalb reagieren Märkte auf *jede* Sitzung.",
+      "body": "Acht Mal im Jahr entscheidet die Fed über den Leitzins. Schon die Wortwahl in der Pressekonferenz kann Kurse bewegen."
+    }
+  ],
+  "cta_headline": "Nächste *Sitzung* im Blick.",
+  "cta_body": "Ich zeig dir, wann die nächste Fed-Entscheidung ansteht."
+}

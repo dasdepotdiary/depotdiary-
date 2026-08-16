@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Ist das eine *KI-Blase*?",
+  "hook_sub": "Drei Zahlen zur Einordnung, keine Antwort.",
+  "sections": [
+    {
+      "headline": "Die *Bewertungen* sind historisch hoch.",
+      "body": "Einige KI-nahe Tech-Werte handeln zu KGVs weit über dem Marktdurchschnitt -- das allein macht noch keine Blase."
+    },
+    {
+      "headline": "Die *Umsätze* wachsen tatsächlich.",
+      "body": "Anders als in der Dotcom-Zeit erzielen viele der großen KI-Unternehmen bereits reale, schnell wachsende Umsätze -- nicht nur Ankündigungen."
+    },
+    {
+      "headline": "Die *Kapitalausgaben* explodieren.",
+      "body": "Milliardeninvestitionen in Rechenzentren und Chips -- die Frage ist, ob sich das auszahlt oder zu Überkapazitäten führt."
+    }
+  ],
+  "cta_headline": "Ich beobachte die *Zahlen* weiter.",
+  "cta_body": "Keine Prognose von mir -- nur die Fakten, die ich im Blick behalte."
+}

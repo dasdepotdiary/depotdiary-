@@ -40,10 +40,13 @@ def main():
     eyebrow = data.get("eyebrow", "ERKLÄRSTÜCK")
     post.slide_hook(eyebrow, data["hook"], data.get("hook_sub", ""))
 
-    sentences = [data["hook"].replace("*", "")]
+    hook_sentence = data["hook"].replace("*", "")
+    if data.get("hook_sub"):
+        hook_sentence += ". " + data["hook_sub"]
+    sentences = [hook_sentence]
     for section in data["sections"]:
         post.slide_text(eyebrow, section["headline"], section["body"])
-        sentences.append(section["headline"].replace("*", ""))
+        sentences.append(section["headline"].replace("*", "") + " " + section["body"])
 
     post.slide_cta(eyebrow, data["cta_headline"], data.get("cta_body", ""))
     sentences.append(data["cta_headline"].replace("*", "") + ". " + data.get("cta_body", ""))
