@@ -383,3 +383,112 @@ article.wissen-entry:last-child { border-bottom: none; }
   font-style: italic;
   padding: 40px 0;
 }
+
+/* --- Link-in-Bio-Seite --- */
+body:has(.linkbio) { display: block; }
+.linkbio {
+  min-height: 100vh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 56px 20px 40px;
+}
+.linkbio-card {
+  width: 100%;
+  max-width: 420px;
+  text-align: center;
+}
+.linkbio-avatar {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--card);
+  margin-bottom: 18px;
+}
+.linkbio-wordmark { font-size: 17px; margin-bottom: 10px; }
+.linkbio-bio {
+  font-size: 15px;
+  color: var(--body-text);
+  margin: 0 0 32px;
+}
+.linkbio-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 40px;
+}
+.linkbio-link {
+  display: block;
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  color: var(--ink);
+  background: var(--card);
+  border: 1px solid var(--divider);
+  padding: 16px 18px;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+.linkbio-link:hover { border-color: var(--green); }
+.linkbio-link--primary {
+  background: var(--ink);
+  color: var(--bg);
+  border-color: var(--ink);
+}
+.linkbio-link--primary:hover { background: var(--green); border-color: var(--green); }
+
+.linkbio-signup {
+  background: var(--card);
+  padding: 24px 20px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.linkbio-signup-title {
+  font-family: var(--serif);
+  font-weight: 700;
+  font-size: 19px;
+  margin: 0 0 6px;
+}
+.linkbio-signup-note {
+  font-size: 13px;
+  color: var(--subtext);
+  margin: 0 0 16px;
+}
+.linkbio-form {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.linkbio-form input {
+  flex: 1;
+  min-width: 160px;
+  font-family: var(--sans);
+  font-size: 13px;
+  padding: 12px 14px;
+  border: 1px solid var(--divider);
+  background: var(--bg);
+  color: var(--ink);
+}
+.linkbio-form input:focus { outline: none; border-color: var(--green); }
+.linkbio-form button {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  padding: 12px 18px;
+  background: var(--ink);
+  color: var(--bg);
+  border: 1px solid var(--ink);
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.linkbio-form button:hover { background: var(--green); border-color: var(--green); }
+.linkbio-form-status {
+  font-size: 13px;
+  color: var(--subtext);
+  font-style: italic;
+  margin: 12px 0 0;
+}
+.linkbio-disclaimer { font-size: 12px; }
