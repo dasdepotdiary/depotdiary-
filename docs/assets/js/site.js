@@ -51,6 +51,11 @@ async function initHome() {
   try {
     const depot = await fetchJSON("content/depot.json");
     const allocEl = document.getElementById("allocation");
+    const lastUpdatedEl = document.getElementById("last-updated");
+    if (lastUpdatedEl && depot.updated) {
+      lastUpdatedEl.hidden = false;
+      lastUpdatedEl.textContent = `Zuletzt aktualisiert: ${formatDate(depot.updated)}`;
+    }
     if (allocEl && depot.categories) {
       const placeholderNote = depot.placeholder
         ? `<p class="result-count" style="color:var(--red);margin-bottom:14px;">Platzhalter-Daten — noch keine echte Depot-Allokation hinterlegt.</p>`

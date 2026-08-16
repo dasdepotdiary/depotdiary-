@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>depotdiary</title>
+    <link>https://dasdepotdiary.github.io/depotdiary-/</link>
+    <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
+    <language>de-AT</language>
+    <lastBuildDate>Sun, 16 Aug 2026 15:59:08 +0000</lastBuildDate>
+    <item>
+      <title>Was die TER eines ETFs wirklich kostet.</title>
+      <link>https://www.instagram.com/p/DcGApBDFrlt/</link>
+      <guid isPermaLink="false">erklaerstueck_etf-ter</guid>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Eine kleine Zahl mit großer Langzeitwirkung.</description>
+    </item>
+    <item>
+      <title>Ein Meme-Stock, weil ich's auf Twitter gelesen hab.</title>
+      <link>https://www.instagram.com/p/DcGsRuOFzKX/</link>
+      <guid isPermaLink="false">fehler_meme-stock</guid>
+      <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Fehler</category>
+      <description>Eine der teuersten Lektionen bisher.</description>
+    </item>
+    <item>
+      <title>Was ein KGV eigentlich aussagt.</title>
+      <link>https://www.instagram.com/p/DcEifOLFiZW/</link>
+      <guid isPermaLink="false">erklaerstueck_kgv</guid>
+      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Eine Kennzahl, kein Urteil.</description>
+    </item>
+    <item>
+      <title>Mein Depot in Zahlen</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">depot_update_2026-08</guid>
+      <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Depot-Update</category>
+      <description>Allokation diesen Monat: Einzelaktien 63.5%, ETFs &amp; Fonds 23.1%, Bitcoin &amp; BTC-Treasuries 11.9%.</description>
+    </item>
+  </channel>
+</rss>

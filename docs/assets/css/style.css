@@ -177,6 +177,14 @@ main {
   padding: 48px 0 64px;
 }
 
+.last-updated {
+  font-family: var(--sans);
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: var(--subtext);
+  margin: -8px 0 24px;
+}
+
 /* --- Allokations-Balken (Startseite) --- */
 .allocation {
   background: var(--card);
@@ -377,6 +385,11 @@ article.wissen-entry:last-child { border-bottom: none; }
   color: var(--subtext);
   margin: 0;
 }
+.rss-link {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.rss-link:hover { color: var(--green); }
 
 .empty-state {
   color: var(--subtext);

@@ -8,9 +8,18 @@ import json
 import shutil
 from pathlib import Path
 
+from PIL import Image
+
 ROOT = Path(__file__).parent
 POSTS_JSON = ROOT / "docs" / "content" / "posts.json"
 WISSEN_JSON = ROOT / "docs" / "content" / "wissen.json"
+
+
+def _to_webp(png_path: Path) -> Path:
+    """Erzeugt eine WebP-Kopie neben der PNG-Datei (kleinere Dateigroesse fuer die Website)."""
+    webp_path = png_path.with_suffix(".webp")
+    Image.open(png_path).save(webp_path, "WEBP", quality=85)
+    return webp_path
 
 
 def stage_story(post_name: str) -> str:
@@ -33,14 +42,21 @@ def stage_story(post_name: str) -> str:
 
 def stage_cover(post_name: str) -> str:
     """Kopiert die Instagram-4:5-Slides nach docs/assets/posts/<name>/ (fuer
-    Website-Vorschau und Insta-API-Hosting) und gibt den relativen Cover-Pfad
-    fuer Slide 1 zurueck."""
+    Insta-API-Hosting, bleiben PNG) und erzeugt zusaetzlich eine WebP-Version
+    von Slide 1 fuers Website-Cover (kleiner, schnellere Ladezeit). Gibt den
+    relativen WebP-Cover-Pfad zurueck."""
     src = ROOT / "output" / post_name / "instagram_4x5"
     dst = ROOT / "docs" / "assets" / "posts" / post_name
     dst.mkdir(parents=True, exist_ok=True)
+    slide_1_dst = None
     for f in sorted(src.glob("slide_*.png")):
-        shutil.copy2(f, dst / f.name)
-    return f"assets/posts/{post_name}/slide_1.png"
+        copied = dst / f.name
+        shutil.copy2(f, copied)
+        if f.name == "slide_1.png":
+            slide_1_dst = copied
+    if slide_1_dst:
+        _to_webp(slide_1_dst)
+    return f"assets/posts/{post_name}/slide_1.webp"
 
 
 def _load(path):
@@ -54,7 +70,7 @@ def _save(path, data):
 
 
 def add_post(post_id, title, category, date_str, excerpt, cover_relpath):
-    """cover_relpath z.B. 'assets/posts/<post_id>/slide_1.png' (siehe stage_for_publish.py)."""
+    """cover_relpath z.B. 'assets/posts/<post_id>/slide_1.webp'."""
     posts = _load(POSTS_JSON)
     posts = [p for p in posts if p["id"] != post_id]
     posts.append({
@@ -67,6 +83,14 @@ def add_post(post_id, title, category, date_str, excerpt, cover_relpath):
         "url": None,
     })
     _save(POSTS_JSON, posts)
+    _rebuild_feed()
+
+
+def _rebuild_feed():
+    import sys
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import make_rss
+    make_rss.main()
 
 
 def add_wissen(entry_id, title, date_str, body_paragraphs):
