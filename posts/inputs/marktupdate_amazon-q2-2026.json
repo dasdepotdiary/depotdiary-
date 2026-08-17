@@ -1,0 +1,33 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Amazon -- die *Zahlen* zum letzten Quartal.",
+  "hook_sub": "Q2 2026, veröffentlicht am 30. Juli 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz und *Cloud* wachsen deutlich.",
+      "stats": [
+        ["Gesamtumsatz", "Q2 2026", "200,6 Mrd. USD", "green"],
+        ["davon Wachstum", "zum Vorjahr", "+20%", "green_mid"],
+        ["AWS-Umsatz", "Q2 2026", "42,2 Mrd. USD (+37%)", "ochre"]
+      ],
+      "note": "AWS-Wachstum das schnellste seit 2021, über den Erwartungen von rund 31%."
+    },
+    {
+      "type": "stats",
+      "headline": "*Operatives* Ergebnis deutlich gestiegen.",
+      "stats": [
+        ["Operatives Ergebnis", "Q2 2026", "27,5 Mrd. USD (+43%)", "green"],
+        ["Capex-Ausblick", "für 2026 angehoben", "220 Mrd. USD", "ink"]
+      ],
+      "note": "Capex-Anhebung von Amazon selbst mit anhaltender KI-Nachfrage begründet."
+    },
+    {
+      "type": "text",
+      "headline": "Ein *Sonderfaktor* beim Gewinn.",
+      "body": "Der ausgewiesene Nettogewinn von 62,6 Mrd. USD enthält einen einmaligen Bewertungsgewinn von 53,4 Mrd. USD aus der Anthropic-Beteiligung -- ohne diesen Sondereffekt fällt das operative Bild deutlich kleiner aus."
+    }
+  ],
+  "cta_headline": "Ich beobachte die *Entwicklung* weiter.",
+  "cta_body": "Keine Bewertung von mir, nur die veröffentlichten Zahlen."
+}

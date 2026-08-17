@@ -1,0 +1,42 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Warum wird *Arbeitsspeicher* gerade so teuer?",
+  "hook_sub": "Ein Blick in die Zahlen hinter dem KI-Boom.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Die *Preise* sind explodiert.",
+      "stats": [
+        ["DRAM-Preise", "Q1 2026 zum Vorquartal", "+90 bis 95%", "ochre"],
+        ["DRAM-Preise", "Q2 2026 zum Vorquartal", "+63%", "ochre"],
+        ["NAND-Flash", "Q1 2026 zum Vorquartal", "+55 bis 60%", "ochre"]
+      ],
+      "note": "Quelle: Branchenberichte zu Vertragspreisen, Stand August 2026."
+    },
+    {
+      "type": "stats",
+      "headline": "Ein *konkretes* Beispiel.",
+      "stats": [
+        ["32GB DDR5-Kit", "September 2025", "rund 100 USD", "grey"],
+        ["32GB DDR5-Kit", "August 2026", "über 400 USD", "red"]
+      ],
+      "note": "Straßenpreise schwanken je nach Händler, die Größenordnung bleibt."
+    },
+    {
+      "type": "text",
+      "headline": "Der *Grund*: KI-Server.",
+      "body": "Ein einzelner KI-Server verbraucht 8 bis 10 mal so viel DRAM wie ein normaler Server -- und mehr als 3 mal so viel NAND-Speicher."
+    },
+    {
+      "type": "stats",
+      "headline": "*Angebot* und Nachfrage passen nicht zusammen.",
+      "stats": [
+        ["DRAM-Angebotswachstum", "weltweit, 2026", "rund +16%", "green_mid"],
+        ["Micron", "Consumer-Speicher", "Verkauf eingestellt", "ink"]
+      ],
+      "note": "SK Hynix meldet: Kapazität für HBM, DRAM und NAND 2026 bereits ausverkauft."
+    }
+  ],
+  "cta_headline": "Was das für dich *heißt*.",
+  "cta_body": "Beim nächsten Notebook- oder PC-Kauf lohnt sich ein genauer Blick auf die Speicherausstattung -- Aufpreise für mehr RAM sind spürbar gestiegen. Ich beobachte die Zahlen weiter."
+}
