@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 16 Aug 2026 15:59:08 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 07:19:23 +0000</lastBuildDate>
     <item>
       <title>Was die TER eines ETFs wirklich kostet.</title>
       <link>https://www.instagram.com/p/DcGApBDFrlt/</link>
@@ -37,6 +37,14 @@
       <pubDate>Fri, 14 Aug 2026 00:00:00 +0000</pubDate>
       <category>Depot-Update</category>
       <description>Allokation diesen Monat: Einzelaktien 63.5%, ETFs &amp; Fonds 23.1%, Bitcoin &amp; BTC-Treasuries 11.9%.</description>
+    </item>
+    <item>
+      <title>Zeta Global (ZETA) -- Q2 2026</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">quartalszahlen_zeta-q2-2026</guid>
+      <pubDate>Tue, 04 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Quartalszahlen</category>
+      <description>Veröffentlichte Zahlen zu Q2 2026, Quelle: Quartalsbericht Zeta Global Holdings Corp, 04.08.2026.</description>
     </item>
   </channel>
 </rss>
