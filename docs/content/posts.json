@@ -52,5 +52,32 @@
     "excerpt": "Drei Zahlen zur Einordnung, keine Antwort.",
     "cover": "assets/posts/erklaerstueck_ki-blase/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_speicherchips",
+    "title": "Warum wird Arbeitsspeicher gerade so teuer?",
+    "category": "marktupdate",
+    "date": "2026-08-17",
+    "excerpt": "Ein Blick in die Zahlen hinter dem KI-Boom.",
+    "cover": "assets/posts/marktupdate_speicherchips/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_amazon-q2-2026",
+    "title": "Amazon -- die Zahlen zum letzten Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-17",
+    "excerpt": "Q2 2026, veröffentlicht am 30. Juli 2026.",
+    "cover": "assets/posts/marktupdate_amazon-q2-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_fed-basics",
+    "title": "Was die Fed eigentlich macht.",
+    "category": "erklaerstueck",
+    "date": "2026-08-17",
+    "excerpt": "Und warum jeder drauf schaut.",
+    "cover": "assets/posts/erklaerstueck_fed-basics/slide_1.webp",
+    "url": null
   }
 ]

@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 17 Aug 2026 15:55:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Aug 2026 19:58:47 +0000</lastBuildDate>
     <item>
       <title>Ist das eine KI-Blase?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,30 @@
       <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Drei Zahlen zur Einordnung, keine Antwort.</description>
+    </item>
+    <item>
+      <title>Warum wird Arbeitsspeicher gerade so teuer?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_speicherchips</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Ein Blick in die Zahlen hinter dem KI-Boom.</description>
+    </item>
+    <item>
+      <title>Amazon -- die Zahlen zum letzten Quartal.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_amazon-q2-2026</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Q2 2026, veröffentlicht am 30. Juli 2026.</description>
+    </item>
+    <item>
+      <title>Was die Fed eigentlich macht.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_fed-basics</guid>
+      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Und warum jeder drauf schaut.</description>
     </item>
     <item>
       <title>Was die TER eines ETFs wirklich kostet.</title>
