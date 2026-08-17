@@ -17,13 +17,13 @@
     "action": "carousel",
     "caption": "Amazon -- die Zahlen zum letzten Quartal.\n\nQ2 2026, veroeffentlicht am 30. Juli 2026:\n\n-> Gesamtumsatz: 200,6 Mrd. USD (+20%)\n-> AWS-Umsatz: 42,2 Mrd. USD (+37%) -- schnellstes Wachstum seit 2021\n-> Operatives Ergebnis: 27,5 Mrd. USD (+43%)\n-> Capex-Ausblick fuer 2026 angehoben auf 220 Mrd. USD\n\nWichtig: der ausgewiesene Nettogewinn von 62,6 Mrd. USD enthaelt einen einmaligen Bewertungsgewinn von 53,4 Mrd. USD aus der Anthropic-Beteiligung.\n\nKeine Bewertung von mir, nur die veroeffentlichten Zahlen.\n\n#depotdiary #amazon #aws #quartalszahlen #boerse",
     "slide_count": 5,
-    "fire_at": "2026-08-19T18:00:00+02:00",
+    "fire_at": "2026-08-18T18:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_amazon-q2-2026",
     "action": "story",
-    "fire_at": "2026-08-19T18:03:00+02:00",
+    "fire_at": "2026-08-18T18:03:00+02:00",
     "status": "pending"
   },
   {
@@ -31,13 +31,13 @@
     "action": "carousel",
     "caption": "Warum wird Arbeitsspeicher gerade so teuer?\n\nEin Blick in die Zahlen hinter dem KI-Boom:\n\n-> DRAM-Preise: +90 bis 95% (Q1 2026), +63% (Q2 2026)\n-> Ein 32GB DDR5-Kit: von rund 100 USD auf ueber 400 USD innerhalb eines Jahres\n-> Grund: ein KI-Server verbraucht 8 bis 10 mal so viel DRAM wie ein normaler Server\n-> Angebot waechst nur rund 16%, Micron hat den Consumer-Markt verlassen\n\nKeine Anlageberatung -- nur die Fakten, die ich im Blick behalte.\n\n#depotdiary #speicherchips #dram #ki #boerse",
     "slide_count": 6,
-    "fire_at": "2026-08-19T20:30:00+02:00",
+    "fire_at": "2026-08-19T12:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_speicherchips",
     "action": "story",
-    "fire_at": "2026-08-19T20:33:00+02:00",
+    "fire_at": "2026-08-19T12:03:00+02:00",
     "status": "pending"
   }
 ]
