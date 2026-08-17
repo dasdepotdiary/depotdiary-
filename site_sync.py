@@ -40,6 +40,19 @@ def stage_story(post_name: str) -> str:
     return f"assets/posts_9x16/{post_name}/slide_1.png"
 
 
+def stage_video(post_name: str) -> str:
+    """Kopiert das fertige Reel-Video (mit Voiceover) nach docs/assets/posts_video/<name>/
+    und gibt den relativen Pfad zurueck, damit es oeffentlich (GitHub Pages) erreichbar ist."""
+    src = ROOT / "output" / post_name / "reel_9x16.mp4"
+    if not src.exists():
+        raise FileNotFoundError(f"Kein Reel gefunden: {src}")
+    dst_dir = ROOT / "docs" / "assets" / "posts_video" / post_name
+    dst_dir.mkdir(parents=True, exist_ok=True)
+    dst = dst_dir / "reel.mp4"
+    shutil.copy2(src, dst)
+    return f"assets/posts_video/{post_name}/reel.mp4"
+
+
 def stage_cover(post_name: str) -> str:
     """Kopiert die Instagram-4:5-Slides nach docs/assets/posts/<name>/ (fuer
     Insta-API-Hosting, bleiben PNG) und erzeugt zusaetzlich eine WebP-Version
