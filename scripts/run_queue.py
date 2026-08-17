@@ -33,6 +33,12 @@ from pathlib import Path
 import requests
 
 ROOT = Path(__file__).parent.parent
+
+try:
+    from dotenv import load_dotenv
+    load_dotenv(ROOT / ".env")
+except ImportError:
+    pass  # in GitHub Actions: env vars come from secrets, no .env/dotenv needed
 QUEUE_PATH = ROOT / "queue" / "publish_queue.json"
 GRAPH_VERSION = "v21.0"
 GRAPH_URL = f"https://graph.facebook.com/{GRAPH_VERSION}"
@@ -122,7 +128,9 @@ def publish_reel(token, ig_id, base_url, entry) -> dict:
 
 def publish_story(token, ig_id, base_url, entry) -> dict:
     name = entry["post_name"]
-    image_url = f"{base_url}/assets/posts_9x16/{name}/slide_1.png"
+    story_dir = ROOT / "docs" / "assets" / "posts_9x16" / name
+    filename = "story_announcement.png" if (story_dir / "story_announcement.png").exists() else "slide_1.png"
+    image_url = f"{base_url}/assets/posts_9x16/{name}/{filename}"
     last_error = None
     for attempt in range(4):
         resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
