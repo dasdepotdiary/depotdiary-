@@ -4,15 +4,13 @@
     "action": "reel",
     "caption": "Was die Fed eigentlich macht.\n\nUnd warum jeder drauf schaut:\n\n-> Die US-Zentralbank steuert die Geldpolitik ueber den Leitzins\n-> Hoehere Zinsen wirken sich auf Kredite, Sparen, Aktien und Anleihen aus\n-> Ziel: Preisstabilitaet und maximale Beschaeftigung\n-> Acht Fed-Sitzungen pro Jahr, jede kann Kurse bewegen\n\nKeine Anlageberatung, keine Prognose -- nur Basics zum Nachlesen.\n\n#depotdiary #fed #zinsen #boerse #finanzen",
     "fire_at": "2026-08-18T07:00:00+02:00",
-    "status": "error",
-    "error": "Meta-Verarbeitung fehlgeschlagen: {'status_code': 'ERROR', 'id': '18083276435363102'}"
+    "status": "pending"
   },
   {
     "post_name": "erklaerstueck_fed-basics",
     "action": "story",
     "fire_at": "2026-08-18T07:03:00+02:00",
-    "status": "error",
-    "error": "Story-Publish nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Medien-Download fehlgeschlagen. Die Medien-URI entspricht nicht unseren Anforderungen.\",\"error_user_msg\":\"Die Mediendatei konnte nicht von dieser URI abgerufen werden: https:\\/\\/dasdepotdiary.github.io\\/depotdiary\\/assets\\/posts_9x16\\/erklaerstueck_fed-basics\\/story_announcement.png.Weitere Informationen findest du im Abschnitt \\u201eEinschr\\u00e4nkungen\\u201c in unserer Entwicklerdokumentation: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"A6whfAWtfXXp4AvlCEKmJ4S\"}}"
+    "status": "pending"
   },
   {
     "post_name": "marktupdate_amazon-q2-2026",
