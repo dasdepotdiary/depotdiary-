@@ -79,5 +79,41 @@
     "excerpt": "Und warum jeder drauf schaut.",
     "cover": "assets/posts/erklaerstueck_fed-basics/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "wochennotiz_2026-08-18",
+    "title": "Diese Woche wieder nichts gekauft.",
+    "category": "wochennotiz",
+    "date": "2026-08-18",
+    "excerpt": "Nur mein Sparplan läuft weiter.",
+    "cover": "assets/posts/wochennotiz_2026-08-18/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_hormus-oman",
+    "title": "Trump droht dem Oman -- was hat das mit deinem Depot zu tun?",
+    "category": "erklaerstueck",
+    "date": "2026-08-18",
+    "excerpt": "Ein aktuelles Beispiel, warum Geopolitik Märkte bewegt.",
+    "cover": "assets/posts/erklaerstueck_hormus-oman/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_klarna-q2-2026",
+    "title": "Klarna -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-18",
+    "excerpt": "Q2 2026, veröffentlicht am 18. August 2026.",
+    "cover": "assets/posts/marktupdate_klarna-q2-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_xiaomi-q2-2026",
+    "title": "Xiaomi -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-18",
+    "excerpt": "Q2 2026, veröffentlicht am 18. August 2026.",
+    "cover": "assets/posts/marktupdate_xiaomi-q2-2026/slide_1.webp",
+    "url": null
   }
 ]

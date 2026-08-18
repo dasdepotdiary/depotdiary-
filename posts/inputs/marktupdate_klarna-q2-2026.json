@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Klarna -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Q2 2026, veröffentlicht am 18. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz und *Marge* wachsen.",
+      "stats": [
+        ["Umsatz", "Q2 2026", "1,042 Mrd. USD (+27%)", "green"],
+        ["Transaction Margin", "Q2 2026", "446 Mio. USD (+42%)", "green_mid"],
+        ["Nettoergebnis", "Q2 2026", "9 Mio. USD (positiv)", "ochre"]
+      ],
+      "note": "Vorjahresquartal noch mit Verlust -- erstmals wieder positiv."
+    },
+    {
+      "type": "stats",
+      "headline": "Wachstum bei *Kunden* und Händlern.",
+      "stats": [
+        ["GMV", "Q2 2026", "36,6 Mrd. USD (+18%)", "green"],
+        ["Aktive Kund:innen", "weltweit", "120 Mio. (+8%)", "ink"],
+        ["Händler", "weltweit", "1,2 Mio. (+54%)", "ink"]
+      ],
+      "note": "US-GMV +27%, GMV außerhalb der USA +15%."
+    },
+    {
+      "type": "text",
+      "headline": "Ausblick *gemischt*.",
+      "body": "Vollzeit-Prognose für Transaction Margin Dollars angehoben (1,62-1,65 Mrd. USD), gleichzeitig GMV-Ausblick wegen schwächerer deutscher Konsumnachfrage und Wechselkurseffekten leicht gesenkt (149-151 Mrd. USD)."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veröffentlichten Zahlen, Quelle: Klarna Group plc Q2-2026-Bericht."
+}

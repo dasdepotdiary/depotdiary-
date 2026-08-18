@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Xiaomi -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Q2 2026, veröffentlicht am 18. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz und *Marge*.",
+      "stats": [
+        ["Umsatz", "Q2 2026", "108,9 Mrd. RMB", "green"],
+        ["Bereinigter Gewinn", "Q2 2026", "6,2 Mrd. RMB", "green_mid"],
+        ["Bruttomarge", "Q2 2026", "19,8%", "ink"]
+      ],
+      "note": "Quelle: Xiaomi Corporation Q2-2026-Bericht."
+    },
+    {
+      "type": "stats",
+      "headline": "*Smartphones* und E-Autos.",
+      "stats": [
+        ["Smartphone-Marktanteil", "weltweit", "11,3% (Top 3)", "ochre"],
+        ["Durchschnittspreis Smartphone", "Rekordhoch", "1.310 RMB", "ochre"],
+        ["EV-Auslieferungen", "Q2 2026", "+28,2%", "green"]
+      ],
+      "note": "Rekord-Verkaufspreis trotz Gegenwind bei den Smartphone-Stückzahlen."
+    },
+    {
+      "type": "text",
+      "headline": "Belastung durch *Speicherpreise*.",
+      "body": "Management nennt steigende Speicherchip-Kosten als Belastung fürs Smartphone-Geschäft -- passt zu den Zahlen, die ich letzte Woche zu DRAM/NAND gezeigt hab."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veröffentlichten Zahlen, ohne Prognose."
+}
