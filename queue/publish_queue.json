@@ -20,13 +20,17 @@
     "caption": "Amazon -- die Zahlen zum letzten Quartal.\n\nQ2 2026, veroeffentlicht am 30. Juli 2026:\n\n-> Gesamtumsatz: 200,6 Mrd. USD (+20%)\n-> AWS-Umsatz: 42,2 Mrd. USD (+37%) -- schnellstes Wachstum seit 2021\n-> Operatives Ergebnis: 27,5 Mrd. USD (+43%)\n-> Capex-Ausblick fuer 2026 angehoben auf 220 Mrd. USD\n\nWichtig: der ausgewiesene Nettogewinn von 62,6 Mrd. USD enthaelt einen einmaligen Bewertungsgewinn von 53,4 Mrd. USD aus der Anthropic-Beteiligung.\n\nKeine Bewertung von mir, nur die veroeffentlichten Zahlen.\n\n#depotdiary #amazon #aws #quartalszahlen #boerse",
     "slide_count": 5,
     "fire_at": "2026-08-18T18:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-18T17:03:10.159819+00:00",
+    "media_id": "18103411739189679"
   },
   {
     "post_name": "marktupdate_amazon-q2-2026",
     "action": "story",
     "fire_at": "2026-08-18T18:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-18T17:03:16.735975+00:00",
+    "media_id": "18368480911240142"
   },
   {
     "post_name": "marktupdate_speicherchips",
