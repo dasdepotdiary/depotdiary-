@@ -4,13 +4,15 @@
     "action": "reel",
     "caption": "Was die Fed eigentlich macht.\n\nUnd warum jeder drauf schaut:\n\n-> Die US-Zentralbank steuert die Geldpolitik ueber den Leitzins\n-> Hoehere Zinsen wirken sich auf Kredite, Sparen, Aktien und Anleihen aus\n-> Ziel: Preisstabilitaet und maximale Beschaeftigung\n-> Acht Fed-Sitzungen pro Jahr, jede kann Kurse bewegen\n\nKeine Anlageberatung, keine Prognose -- nur Basics zum Nachlesen.\n\n#depotdiary #fed #zinsen #boerse #finanzen",
     "fire_at": "2026-08-18T07:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 18145113085558498"
   },
   {
     "post_name": "erklaerstueck_fed-basics",
     "action": "story",
     "fire_at": "2026-08-18T07:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 17985438563861530"
   },
   {
     "post_name": "marktupdate_amazon-q2-2026",
