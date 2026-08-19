@@ -7,11 +7,11 @@
       "type": "stats",
       "headline": "Deutlicher *Ergebnis-Beat*.",
       "stats": [
-        ["EPS", "Q2 2026", "4,11 USD", "green"],
-        ["Umsatz", "Q2 2026", "26,54 Mrd. USD (+5,3%)", "green_mid"],
-        ["Vergleichbare Umsaetze", "Q2 2026", "+3,8%", "ochre"]
+        ["EPS", "Q2 2026", "4,11 USD (+100%)", "green"],
+        ["Nettoergebnis", "Q2 2026", "1,877 Mrd. USD", "green"],
+        ["Umsatz", "Q2 2026", "26,54 Mrd. USD (+5,3%)", "green_mid"]
       ],
-      "note": "EPS-Erwartung war 2,33 USD -- Ueberraschung von 76,4%."
+      "note": "EPS-Erwartung war 2,33 USD -- Ueberraschung von 76,4%. Operatives Ergebnis: 2,56 Mrd. USD, Marge 9,6%."
     },
     {
       "type": "text",

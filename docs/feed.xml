@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 19 Aug 2026 14:32:32 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 19 Aug 2026 14:43:10 +0000</lastBuildDate>
     <item>
       <title>Der Zinseszins -- warum früh anfangen so viel bringt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -29,6 +29,14 @@
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Die Basis, bevor man über Kosten oder Auswahl spricht.</description>
+    </item>
+    <item>
+      <title>Warum kauft Big Tech plötzlich Atomkraftwerke?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_big-tech-atomkraft</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.</description>
     </item>
     <item>
       <title>Estée Lauder -- die Zahlen zum Quartal.</title>

@@ -5,13 +5,13 @@
   "sections": [
     {
       "type": "stats",
-      "headline": "Umsatz und Gewinn *deutlich* gestiegen.",
+      "headline": "Umsatz *gestiegen*, aber GAAP-Nettoverlust.",
       "stats": [
         ["Umsatz", "Q4 FY2026", "3,6 Mrd. USD (+6%)", "green"],
-        ["Bereinigtes EPS", "Q4 FY2026", "0,39 USD (+100%)", "green_mid"],
-        ["Operatives Ergebnis", "bereinigt", "267 Mio. USD (+95%)", "ochre"]
+        ["GAAP-Nettoergebnis", "Q4 FY2026", "-116 Mio. USD (Verlust)", "red"],
+        ["Bereinigtes EPS", "Q4 FY2026", "0,39 USD (+100%)", "green_mid"]
       ],
-      "note": "Umsatz über der Analystenerwartung von 3,54 Mrd. USD."
+      "note": "Verlust u.a. durch 337 Mio. USD Restrukturierungskosten und 84 Mio. USD Rueckstellung fuer einen Vergleich."
     },
     {
       "type": "stats",
