@@ -38,12 +38,41 @@
     "caption": "Warum wird Arbeitsspeicher gerade so teuer?\n\nEin Blick in die Zahlen hinter dem KI-Boom:\n\n-> DRAM-Preise: +90 bis 95% (Q1 2026), +63% (Q2 2026)\n-> Ein 32GB DDR5-Kit: von rund 100 USD auf ueber 400 USD innerhalb eines Jahres\n-> Grund: ein KI-Server verbraucht 8 bis 10 mal so viel DRAM wie ein normaler Server\n-> Angebot waechst nur rund 16%, Micron hat den Consumer-Markt verlassen\n\nKeine Anlageberatung -- nur die Fakten, die ich im Blick behalte.\n\n#depotdiary #speicherchips #dram #ki #boerse",
     "slide_count": 6,
     "fire_at": "2026-08-19T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 17902936602334584"
   },
   {
     "post_name": "marktupdate_speicherchips",
     "action": "story",
     "fire_at": "2026-08-19T12:03:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 18126216115685979"
+  },
+  {
+    "post_name": "erklaerstueck_dividende",
+    "action": "carousel",
+    "caption": "Eine Dividende ist kein Geschenk.\n\nEin Missverstaendnis, das ich am Anfang selbst hatte:\n\n-> Die Dividende kommt aus dem Unternehmen selbst -- ausgeschuetteter Gewinn, kein Geld von aussen\n-> Der Aktienkurs sinkt am Ausschuettungstag meist um ungefaehr denselben Betrag\n-> Das Depot wird dadurch nicht automatisch mehr wert\n-> Trotzdem kann es fuer mich persoenlich sinnvoll sein -- Geschmackssache, kein Renditevorteil an sich\n\nKeine Bewertung, nur die Mechanik.\n\n#depotdiary #dividende #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-08-19T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_dividende",
+    "action": "story",
+    "fire_at": "2026-08-19T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-etf",
+    "action": "reel",
+    "caption": "Was ist ein ETF eigentlich?\n\nDie Basis, bevor man ueber Kosten oder Auswahl spricht:\n\n-> ETF heisst Exchange Traded Fund -- an der Boerse gehandelt wie eine Aktie\n-> Buendelt viele Aktien in einem Produkt (MSCI-World-ETFs halten ueber 1.500 Einzelaktien)\n-> Bildet automatisch einen Index nach, keine aktive Auswahl\n\nEine Art von Diversifikation -- ob und wie du investierst, bleibt deine Entscheidung.\n\n#depotdiary #etf #boerse #finanzen #erklaerstueck",
+    "fire_at": "2026-08-19T19:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-etf",
+    "action": "story",
+    "fire_at": "2026-08-19T19:03:00+02:00",
     "status": "pending"
   }
 ]
