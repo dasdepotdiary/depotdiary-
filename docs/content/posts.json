@@ -115,5 +115,50 @@
     "excerpt": "Q2 2026, veröffentlicht am 18. August 2026.",
     "cover": "assets/posts/marktupdate_xiaomi-q2-2026/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_zinseszins",
+    "title": "Der Zinseszins -- warum früh anfangen so viel bringt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-19",
+    "excerpt": "Keine Magie, nur Mathematik.",
+    "cover": "assets/posts/erklaerstueck_zinseszins/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_dividende",
+    "title": "Eine Dividende ist kein Geschenk.",
+    "category": "erklaerstueck",
+    "date": "2026-08-19",
+    "excerpt": "Ein Missverständnis, das ich am Anfang selbst hatte.",
+    "cover": "assets/posts/erklaerstueck_dividende/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_was-ist-etf",
+    "title": "Was ist ein ETF eigentlich?",
+    "category": "erklaerstueck",
+    "date": "2026-08-19",
+    "excerpt": "Die Basis, bevor man über Kosten oder Auswahl spricht.",
+    "cover": "assets/posts/erklaerstueck_was-ist-etf/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_esteelauder-q4-2026",
+    "title": "Estée Lauder -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-19",
+    "excerpt": "Q4 Fiskaljahr 2026, veröffentlicht am 19. August 2026.",
+    "cover": "assets/posts/marktupdate_esteelauder-q4-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_target-q2-2026",
+    "title": "Target -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-19",
+    "excerpt": "Q2 2026, veröffentlicht am 19. August 2026.",
+    "cover": "assets/posts/marktupdate_target-q2-2026/slide_1.webp",
+    "url": null
   }
 ]

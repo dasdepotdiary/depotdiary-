@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Estée Lauder -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Q4 Fiskaljahr 2026, veröffentlicht am 19. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz und Gewinn *deutlich* gestiegen.",
+      "stats": [
+        ["Umsatz", "Q4 FY2026", "3,6 Mrd. USD (+6%)", "green"],
+        ["Bereinigtes EPS", "Q4 FY2026", "0,39 USD (+100%)", "green_mid"],
+        ["Operatives Ergebnis", "bereinigt", "267 Mio. USD (+95%)", "ochre"]
+      ],
+      "note": "Umsatz über der Analystenerwartung von 3,54 Mrd. USD."
+    },
+    {
+      "type": "stats",
+      "headline": "*Hautpflege* und Parfum treiben das Wachstum.",
+      "stats": [
+        ["Hautpflege", "Q4 FY2026", "1,85 Mrd. USD (+8,7%)", "green"],
+        ["Parfum", "Q4 FY2026", "618 Mio. USD (+10%)", "green"],
+        ["Make-up", "Q4 FY2026", "1,01 Mrd. USD (+2,9%)", "ink"]
+      ],
+      "note": "Haarpflege einziger ruecklaeufiger Bereich: 140 Mio. USD (-0,7%)."
+    },
+    {
+      "type": "text",
+      "headline": "Ausblick fuer *2027*.",
+      "body": "Umsatzwachstum von 3 bis 5% erwartet, bereinigtes EPS zwischen 3,10 und 3,35 USD."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veroeffentlichten Zahlen, Quelle: Estée Lauder Companies Q4-2026-Bericht."
+}

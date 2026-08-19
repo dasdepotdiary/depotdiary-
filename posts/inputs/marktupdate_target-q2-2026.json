@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Target -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Q2 2026, veröffentlicht am 19. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Deutlicher *Ergebnis-Beat*.",
+      "stats": [
+        ["EPS", "Q2 2026", "4,11 USD", "green"],
+        ["Umsatz", "Q2 2026", "26,54 Mrd. USD (+5,3%)", "green_mid"],
+        ["Vergleichbare Umsaetze", "Q2 2026", "+3,8%", "ochre"]
+      ],
+      "note": "EPS-Erwartung war 2,33 USD -- Ueberraschung von 76,4%."
+    },
+    {
+      "type": "text",
+      "headline": "Wichtiger *Sonderfaktor* beim Gewinn.",
+      "body": "994 Mio. USD des Ergebnisses stammen aus Zoll-Rueckerstattungen (1,65 USD je Aktie) -- ohne diesen Einmaleffekt liegt das Ergebnis rund 20% ueber dem Vorjahr."
+    },
+    {
+      "type": "stats",
+      "headline": "*Digital* waechst am staerksten.",
+      "stats": [
+        ["Digitale Vergleichsumsaetze", "Q2 2026", "+8,7%", "green"],
+        ["Same-Day Delivery", "Q2 2026", "+25%", "green"],
+        ["Vergleichbarer Traffic", "Q2 2026", "+3,6%", "ink"]
+      ],
+      "note": "Filial-Vergleichsumsaetze +2,7%."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veroeffentlichten Zahlen, Quelle: Target Corporation Q2-2026-Bericht."
+}
