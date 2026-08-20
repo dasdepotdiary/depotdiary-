@@ -232,5 +232,32 @@
     "excerpt": "Die zweite Ressource hinter dem KI-Boom, über die kaum gesprochen wird.",
     "cover": "assets/posts/marktupdate_ki-wasserverbrauch/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_inflation",
+    "title": "Was ist Inflation eigentlich genau?",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Ein Wort, das jeder kennt -- aber was passiert wirklich?",
+    "cover": "assets/posts/erklaerstueck_inflation/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_rezession-korrektur-crash",
+    "title": "Rezession, Korrektur, Crash -- wo ist der Unterschied?",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Drei Wörter, die ständig durcheinander benutzt werden.",
+    "cover": "assets/posts/erklaerstueck_rezession-korrektur-crash/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_fed-zinssenkung",
+    "title": "Was passiert, wenn die Fed die Zinsen senkt?",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Direkte Fortsetzung von 'Was die Fed eigentlich macht'.",
+    "cover": "assets/posts/erklaerstueck_fed-zinssenkung/slide_1.webp",
+    "url": null
   }
 ]

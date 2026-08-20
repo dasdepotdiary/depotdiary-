@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Thu, 20 Aug 2026 13:16:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 13:25:56 +0000</lastBuildDate>
     <item>
       <title>Was bedeutet Volatilität eigentlich?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -45,6 +45,30 @@
       <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Die zweite Ressource hinter dem KI-Boom, über die kaum gesprochen wird.</description>
+    </item>
+    <item>
+      <title>Was ist Inflation eigentlich genau?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_inflation</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ein Wort, das jeder kennt -- aber was passiert wirklich?</description>
+    </item>
+    <item>
+      <title>Rezession, Korrektur, Crash -- wo ist der Unterschied?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_rezession-korrektur-crash</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Drei Wörter, die ständig durcheinander benutzt werden.</description>
+    </item>
+    <item>
+      <title>Was passiert, wenn die Fed die Zinsen senkt?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_fed-zinssenkung</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Direkte Fortsetzung von 'Was die Fed eigentlich macht'.</description>
     </item>
     <item>
       <title>Der Zinseszins -- warum früh anfangen so viel bringt.</title>

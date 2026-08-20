@@ -167,7 +167,8 @@
     "fire_at": "2026-08-20T20:00:00+02:00",
     "status": "done",
     "published_at": "2026-08-20T19:46:30.129757+00:00",
-    "media_id": "18088780346170420"
+    "media_id": "18088780346170420",
+    "note": "DUPLIKAT versehentlich auch um 20:51:36 UTC erneut veroeffentlicht, media_id 18418163296147736 -- Cloud-Cron hatte schon gepostet, lokaler manueller Lauf hat es nicht erkannt (git pull fehlte davor)"
   },
   {
     "post_name": "erklaerstueck_rezession-korrektur-crash",
@@ -175,6 +176,7 @@
     "fire_at": "2026-08-20T20:03:00+02:00",
     "status": "done",
     "published_at": "2026-08-20T19:46:37.714644+00:00",
-    "media_id": "18123109816871958"
+    "media_id": "18123109816871958",
+    "note": "DUPLIKAT versehentlich auch um 20:51:44 UTC erneut veroeffentlicht, media_id 18011770964958239 -- Cloud-Cron hatte schon gepostet, lokaler manueller Lauf hat es nicht erkannt (git pull fehlte davor)"
   }
 ]

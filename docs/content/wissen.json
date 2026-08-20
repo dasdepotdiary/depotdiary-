@@ -133,5 +133,47 @@
       "Wenn ein Sektor oder Land schwächelt, können andere Teile des Depots das ausgleichen.",
       "Ein MSCI-World-ETF streut zum Beispiel schon über tausende Unternehmen und viele Länder in einem Produkt."
     ]
+  },
+  {
+    "id": "inflation",
+    "title": "Was ist Inflation eigentlich genau?",
+    "date": "2026-08-20",
+    "body": [
+      "Ein Wort, das jeder kennt -- aber was passiert wirklich?",
+      "Für denselben Geldbetrag bekommst du über Zeit weniger Waren und Dienstleistungen als vorher.",
+      "Statistikämter verfolgen die Preise typischer Produkte und Dienstleistungen und berechnen daraus eine durchschnittliche Preisveränderung.",
+      "Zentralbanken wie die EZB oder die Fed streben meist rund 2% pro Jahr an -- weder Stillstand noch außer Kontrolle.",
+      "Liegt Geld einfach nur auf dem Konto, kauft es sich mit der Zeit weniger, selbst wenn der Kontostand gleich bleibt.",
+      "Steigen Preise, fordern Arbeitnehmer höhere Löhne -- steigen Löhne, können Unternehmen die Preise weiter anheben. Ein bekannter Mechanismus, keine Regel.",
+      "Fallende Preise klingen gut, können aber Konsum und Investitionen verzögern -- Zentralbanken versuchen meist, beides zu vermeiden."
+    ]
+  },
+  {
+    "id": "rezession-korrektur-crash",
+    "title": "Rezession, Korrektur, Crash -- wo ist der Unterschied?",
+    "date": "2026-08-20",
+    "body": [
+      "Drei Wörter, die ständig durcheinander benutzt werden.",
+      "Gemessen vom letzten Höchststand eines Index -- ein normaler, häufiger Vorgang, kein Alarmsignal an sich.",
+      "Meist innerhalb weniger Tage -- 1987 oder März 2020 sind bekannte Beispiele dafür.",
+      "Ein länger anhaltender Rückgang von mindestens 20% vom Höchststand, oft über Monate.",
+      "Klassisch definiert als zwei aufeinanderfolgende Quartale mit schrumpfender Wirtschaftsleistung (BIP) -- unabhängig vom Aktienmarkt.",
+      "Der Aktienmarkt kann fallen, ohne dass eine Rezession folgt -- und umgekehrt kann eine Rezession kommen, ohne dass vorher ein Crash war.",
+      "Rückgänge von 10% passieren statistisch fast jedes Jahr irgendwann -- Crashs und Bärenmärkte deutlich seltener."
+    ]
+  },
+  {
+    "id": "fed-zinssenkung",
+    "title": "Was passiert, wenn die Fed die Zinsen senkt?",
+    "date": "2026-08-20",
+    "body": [
+      "Direkte Fortsetzung von 'Was die Fed eigentlich macht'.",
+      "Banken können sich selbst billiger Geld leihen -- das geben sie in Teilen an Kredite für Unternehmen und Verbraucher weiter.",
+      "Zinsen auf Tagesgeld oder Festgeld sinken meist mit -- Geld auf dem Konto bringt weniger Ertrag als vorher.",
+      "Niedrigere Zinsen senken die Kosten für Kredite und Anleihen -- das kann Investitionen und Wachstum erleichtern.",
+      "Niedrigere Zinsen machen zukünftige Unternehmensgewinne rechnerisch mehr wert und Anleihen im Vergleich weniger attraktiv -- ein bekannter Mechanismus, kein Automatismus.",
+      "Niedrigere Zinsen machen den Dollar für internationale Anleger tendenziell weniger attraktiv im Vergleich zu höher verzinsten Währungen.",
+      "Die Fed senkt Zinsen typischerweise, wenn sie die Wirtschaft ankurbeln will -- oft ein Signal, dass sie Abschwächung erwartet."
+    ]
   }
 ]
