@@ -165,12 +165,16 @@
     "action": "reel",
     "caption": "Rezession, Korrektur, Crash -- wo ist der Unterschied?\n\nDrei Woerter, die staendig durcheinander benutzt werden:\n\n-> Korrektur: Rueckgang von 10%+ vom Hoechststand -- normal, kein Alarmsignal\n-> Crash: sehr schneller, starker Einbruch (z.B. 1987, Maerz 2020)\n-> Baerenmarkt: laenger anhaltender Rueckgang ab -20%\n-> Rezession: zwei aufeinanderfolgende Quartale schrumpfendes BIP -- ein Wirtschafts-, kein Boersenbegriff\n\nKeine Prognose, welches Szenario als naechstes kommt.\n\n#depotdiary #rezession #boerse #finanzen #erklaerstueck",
     "fire_at": "2026-08-20T20:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-20T19:46:30.129757+00:00",
+    "media_id": "18088780346170420"
   },
   {
     "post_name": "erklaerstueck_rezession-korrektur-crash",
     "action": "story",
     "fire_at": "2026-08-20T20:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-20T19:46:37.714644+00:00",
+    "media_id": "18123109816871958"
   }
 ]
