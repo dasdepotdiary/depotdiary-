@@ -75,7 +75,7 @@ def publish_carousel(token, ig_id, base_url, entry) -> dict:
     name = entry["post_name"]
     children_ids = []
     for i in range(1, entry["slide_count"] + 1):
-        image_url = f"{base_url}/assets/posts/{name}/slide_{i}.png"
+        image_url = f"{base_url}/assets/posts/{name}/slide_{i}.png?v={int(time.time())}"
         resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
             "image_url": image_url, "is_carousel_item": "true", "access_token": token,
         })
@@ -130,9 +130,9 @@ def publish_story(token, ig_id, base_url, entry) -> dict:
     name = entry["post_name"]
     story_dir = ROOT / "docs" / "assets" / "posts_9x16" / name
     filename = "story_announcement.png" if (story_dir / "story_announcement.png").exists() else "slide_1.png"
-    image_url = f"{base_url}/assets/posts_9x16/{name}/{filename}"
     last_error = None
     for attempt in range(4):
+        image_url = f"{base_url}/assets/posts_9x16/{name}/{filename}?v={int(time.time())}"
         resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
             "image_url": image_url, "media_type": "STORIES", "access_token": token,
         })
