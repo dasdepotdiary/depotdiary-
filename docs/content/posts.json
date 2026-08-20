@@ -189,24 +189,6 @@
     "url": null
   },
   {
-    "id": "erklaerstueck_volatilitaet",
-    "title": "Was bedeutet Volatilität eigentlich?",
-    "category": "erklaerstueck",
-    "date": "2026-08-20",
-    "excerpt": "Ein Wort, das ständig fällt, aber selten erklärt wird.",
-    "cover": "assets/posts/erklaerstueck_volatilitaet/slide_1.webp",
-    "url": null
-  },
-  {
-    "id": "erklaerstueck_diversifikation",
-    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
-    "category": "erklaerstueck",
-    "date": "2026-08-20",
-    "excerpt": "Viele Positionen zu haben reicht nicht automatisch.",
-    "cover": "assets/posts/erklaerstueck_diversifikation/slide_1.webp",
-    "url": null
-  },
-  {
     "id": "marktupdate_walmart-q2-2026",
     "title": "Walmart -- die Zahlen zum Quartal.",
     "category": "marktupdate",
@@ -258,6 +240,24 @@
     "date": "2026-08-20",
     "excerpt": "Direkte Fortsetzung von 'Was die Fed eigentlich macht'.",
     "cover": "assets/posts/erklaerstueck_fed-zinssenkung/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_volatilitaet",
+    "title": "Was bedeutet Volatilität eigentlich?",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Ein Wort, das ständig fällt, aber selten erklärt wird.",
+    "cover": "assets/posts/erklaerstueck_volatilitaet/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_diversifikation",
+    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Viele Positionen zu haben reicht nicht automatisch.",
+    "cover": "assets/posts/erklaerstueck_diversifikation/slide_1.webp",
     "url": null
   }
 ]

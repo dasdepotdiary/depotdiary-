@@ -113,28 +113,6 @@
     ]
   },
   {
-    "id": "volatilitaet",
-    "title": "Was bedeutet Volatilität eigentlich?",
-    "date": "2026-08-20",
-    "body": [
-      "Ein Wort, das ständig fällt, aber selten erklärt wird.",
-      "Hohe Volatilität heißt: große Ausschläge nach oben und unten -- nicht zwingend eine Richtung.",
-      "Eine volatile Aktie ist nicht automatisch schlecht -- sie schwankt nur stärker als der Durchschnitt.",
-      "Je volatiler eine Position, desto wichtiger für mich, kurzfristige Schwankungen einfach auszuhalten."
-    ]
-  },
-  {
-    "id": "diversifikation",
-    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
-    "date": "2026-08-20",
-    "body": [
-      "Viele Positionen zu haben reicht nicht automatisch.",
-      "20 Aktien aus derselben Branche schwanken oft gemeinsam -- das ist kaum weniger riskant als eine einzelne.",
-      "Wenn ein Sektor oder Land schwächelt, können andere Teile des Depots das ausgleichen.",
-      "Ein MSCI-World-ETF streut zum Beispiel schon über tausende Unternehmen und viele Länder in einem Produkt."
-    ]
-  },
-  {
     "id": "inflation",
     "title": "Was ist Inflation eigentlich genau?",
     "date": "2026-08-20",
@@ -174,6 +152,28 @@
       "Niedrigere Zinsen machen zukünftige Unternehmensgewinne rechnerisch mehr wert und Anleihen im Vergleich weniger attraktiv -- ein bekannter Mechanismus, kein Automatismus.",
       "Niedrigere Zinsen machen den Dollar für internationale Anleger tendenziell weniger attraktiv im Vergleich zu höher verzinsten Währungen.",
       "Die Fed senkt Zinsen typischerweise, wenn sie die Wirtschaft ankurbeln will -- oft ein Signal, dass sie Abschwächung erwartet."
+    ]
+  },
+  {
+    "id": "volatilitaet",
+    "title": "Was bedeutet Volatilität eigentlich?",
+    "date": "2026-08-20",
+    "body": [
+      "Ein Wort, das ständig fällt, aber selten erklärt wird.",
+      "Hohe Volatilität heißt: große Ausschläge nach oben und unten -- nicht zwingend eine Richtung.",
+      "Eine volatile Aktie ist nicht automatisch schlecht -- sie schwankt nur stärker als der Durchschnitt.",
+      "Je volatiler eine Position, desto wichtiger für mich, kurzfristige Schwankungen einfach auszuhalten."
+    ]
+  },
+  {
+    "id": "diversifikation",
+    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
+    "date": "2026-08-20",
+    "body": [
+      "Viele Positionen zu haben reicht nicht automatisch.",
+      "20 Aktien aus derselben Branche schwanken oft gemeinsam -- das ist kaum weniger riskant als eine einzelne.",
+      "Wenn ein Sektor oder Land schwächelt, können andere Teile des Depots das ausgleichen.",
+      "Ein MSCI-World-ETF streut zum Beispiel schon über tausende Unternehmen und viele Länder in einem Produkt."
     ]
   }
 ]
