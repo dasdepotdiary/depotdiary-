@@ -45,5 +45,93 @@
       "Preisstabilität (Inflation niedrig halten) und maximale Beschäftigung -- oft ein Balanceakt zwischen beidem.",
       "Acht Mal im Jahr entscheidet die Fed über den Leitzins. Schon die Wortwahl in der Pressekonferenz kann Kurse bewegen."
     ]
+  },
+  {
+    "id": "hormus-oman",
+    "title": "Trump droht dem Oman -- was hat das mit deinem Depot zu tun?",
+    "date": "2026-08-18",
+    "body": [
+      "Ein aktuelles Beispiel, warum Geopolitik Märkte bewegt.",
+      "Durch diese Meerenge läuft ein großer Teil des weltweiten Öl-Seehandels -- Unsicherheit dort wirkt sich direkt auf den Ölpreis aus.",
+      "Er kündigte an, die Kontrolle über die Straße zu übernehmen, und drohte laut Fox News, den Oman 'in Grund und Boden zu bombardieren', falls das Land den USA im Weg steht.",
+      "Steigt die Unsicherheit über eine wichtige Handelsroute, steigt historisch oft auch der Ölpreis -- unabhängig davon, ob es am Ende wirklich dazu kommt."
+    ]
+  },
+  {
+    "id": "zinseszins",
+    "title": "Der Zinseszins -- warum früh anfangen so viel bringt.",
+    "date": "2026-08-19",
+    "body": [
+      "Keine Magie, nur Mathematik.",
+      "Im ersten Jahr wächst nur dein Einsatz -- ab dem zweiten Jahr wächst auch das, was du im ersten Jahr schon dazubekommen hast.",
+      "In den ersten Jahren wirkt der Effekt klein -- über Jahrzehnte wird aus der Kurve ein deutlicher Sprung nach oben.",
+      "Wer früh mit kleinen Beträgen anfängt, kann am Ende mehr haben als wer spät mit größeren Beträgen startet -- allein durch die Zeit, die der Zinseszins wirken kann."
+    ]
+  },
+  {
+    "id": "dividende",
+    "title": "Eine Dividende ist kein Geschenk.",
+    "date": "2026-08-19",
+    "body": [
+      "Ein Missverständnis, das ich am Anfang selbst hatte.",
+      "Es ist ausgeschütteter Gewinn -- kein zusätzliches Geld von außen, sondern ein Teil vom Wert, der schon da war.",
+      "Wird Geld ausgeschüttet, sinkt der Kurs der Aktie meist um ungefähr denselben Betrag -- das Depot wird dadurch nicht automatisch mehr wert.",
+      "Regelmäßige Ausschüttungen fühlen sich für mich greifbarer an als reine Kurssteigerung -- das ist aber Geschmackssache, kein Renditevorteil an sich."
+    ]
+  },
+  {
+    "id": "was-ist-etf",
+    "title": "Was ist ein ETF eigentlich?",
+    "date": "2026-08-19",
+    "body": [
+      "Die Basis, bevor man über Kosten oder Auswahl spricht.",
+      "Ein Fonds, der an der Börse gehandelt wird -- du kannst ihn kaufen und verkaufen wie eine einzelne Aktie.",
+      "Ein ETF auf den MSCI World hält zum Beispiel über 1.500 Einzelaktien aus der ganzen Welt gleichzeitig.",
+      "Keine Person entscheidet aktiv, was gekauft wird -- der ETF folgt automatisch der Zusammensetzung des Index, den er abbildet."
+    ]
+  },
+  {
+    "id": "was-ist-aktie",
+    "title": "Was ist eine Aktie eigentlich?",
+    "date": "2026-08-19",
+    "body": [
+      "Die Basis, bevor alles andere Sinn ergibt.",
+      "Kaufst du eine Aktie, gehört dir ein winziger Teil dieser Firma -- inklusive einem Anteil an Gewinn und Vermögen.",
+      "Er entsteht durch Angebot und Nachfrage an der Börse -- nicht durch eine feste Berechnung des 'wahren' Werts.",
+      "Läuft es gut, kann der Wert steigen -- läuft es schlecht, kann er auch auf null fallen. Beides ist möglich."
+    ]
+  },
+  {
+    "id": "was-ist-index",
+    "title": "Was ist eigentlich ein Index?",
+    "date": "2026-08-19",
+    "body": [
+      "Der MSCI World, der S&P 500 -- was steckt dahinter?",
+      "Der S&P 500 zum Beispiel bildet die 500 größten börsennotierten US-Unternehmen ab, nach klaren Kriterien ausgewählt.",
+      "Er fasst die Kursentwicklung aller enthaltenen Aktien zu einer einzigen Zahl zusammen -- meist gewichtet nach Unternehmensgröße.",
+      "Deshalb hängen Index und ETF oft zusammen -- der Index ist die Vorlage, der ETF das Produkt, das sie in der Praxis kaufbar macht."
+    ]
+  },
+  {
+    "id": "volatilitaet",
+    "title": "Was bedeutet Volatilität eigentlich?",
+    "date": "2026-08-20",
+    "body": [
+      "Ein Wort, das ständig fällt, aber selten erklärt wird.",
+      "Hohe Volatilität heißt: große Ausschläge nach oben und unten -- nicht zwingend eine Richtung.",
+      "Eine volatile Aktie ist nicht automatisch schlecht -- sie schwankt nur stärker als der Durchschnitt.",
+      "Je volatiler eine Position, desto wichtiger für mich, kurzfristige Schwankungen einfach auszuhalten."
+    ]
+  },
+  {
+    "id": "diversifikation",
+    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
+    "date": "2026-08-20",
+    "body": [
+      "Viele Positionen zu haben reicht nicht automatisch.",
+      "20 Aktien aus derselben Branche schwanken oft gemeinsam -- das ist kaum weniger riskant als eine einzelne.",
+      "Wenn ein Sektor oder Land schwächelt, können andere Teile des Depots das ausgleichen.",
+      "Ein MSCI-World-ETF streut zum Beispiel schon über tausende Unternehmen und viele Länder in einem Produkt."
+    ]
   }
 ]

@@ -144,15 +144,6 @@
     "url": null
   },
   {
-    "id": "marktupdate_big-tech-atomkraft",
-    "title": "Warum kauft Big Tech plötzlich Atomkraftwerke?",
-    "category": "marktupdate",
-    "date": "2026-08-19",
-    "excerpt": "Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.",
-    "cover": "assets/posts/marktupdate_big-tech-atomkraft/slide_1.webp",
-    "url": null
-  },
-  {
     "id": "marktupdate_esteelauder-q4-2026",
     "title": "Estée Lauder -- die Zahlen zum Quartal.",
     "category": "marktupdate",
@@ -168,6 +159,69 @@
     "date": "2026-08-19",
     "excerpt": "Q2 2026, veröffentlicht am 19. August 2026.",
     "cover": "assets/posts/marktupdate_target-q2-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_big-tech-atomkraft",
+    "title": "Warum kauft Big Tech plötzlich Atomkraftwerke?",
+    "category": "marktupdate",
+    "date": "2026-08-19",
+    "excerpt": "Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.",
+    "cover": "assets/posts/marktupdate_big-tech-atomkraft/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_was-ist-aktie",
+    "title": "Was ist eine Aktie eigentlich?",
+    "category": "erklaerstueck",
+    "date": "2026-08-19",
+    "excerpt": "Die Basis, bevor alles andere Sinn ergibt.",
+    "cover": "assets/posts/erklaerstueck_was-ist-aktie/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_was-ist-index",
+    "title": "Was ist eigentlich ein Index?",
+    "category": "erklaerstueck",
+    "date": "2026-08-19",
+    "excerpt": "Der MSCI World, der S&P 500 -- was steckt dahinter?",
+    "cover": "assets/posts/erklaerstueck_was-ist-index/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_volatilitaet",
+    "title": "Was bedeutet Volatilität eigentlich?",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Ein Wort, das ständig fällt, aber selten erklärt wird.",
+    "cover": "assets/posts/erklaerstueck_volatilitaet/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_diversifikation",
+    "title": "Diversifikation -- öfter falsch verstanden, als man denkt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-20",
+    "excerpt": "Viele Positionen zu haben reicht nicht automatisch.",
+    "cover": "assets/posts/erklaerstueck_diversifikation/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_walmart-q2-2026",
+    "title": "Walmart -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-20",
+    "excerpt": "Q2 Fiskaljahr 2027, veröffentlicht am 20. August 2026.",
+    "cover": "assets/posts/marktupdate_walmart-q2-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_alibaba-q2-2026",
+    "title": "Alibaba -- die Zahlen zum Quartal.",
+    "category": "marktupdate",
+    "date": "2026-08-20",
+    "excerpt": "Juni-Quartal 2026, veröffentlicht am 20. August 2026.",
+    "cover": "assets/posts/marktupdate_alibaba-q2-2026/slide_1.webp",
     "url": null
   }
 ]

@@ -169,6 +169,20 @@ def _fit_row_font_size(draw, rows, card_w, start_size=34, min_size=20, step=2):
     return min_size
 
 
+def _fit_stat_value_font_size(draw, label, value, label_font, usable_w, start_size=42, min_size=26, step=2):
+    """Reduziert die Wert-Schriftgroesse in slide_stats, bis Label und Wert nebeneinander
+    in eine Kachel-Zeile passen (lange Labels wie 'GAAP-Nettoergebnis' sonst ueberlappen)."""
+    label_w = _text_w(draw, label, label_font)
+    gap = 20
+    size = start_size
+    while size > min_size:
+        font = _font(B.SERIF_BOLD, size)
+        if label_w + gap + _text_w(draw, value, font) <= usable_w:
+            return size
+        size -= step
+    return min_size
+
+
 def _truncate_to_width(draw, text, font, max_width):
     """Kuerzt text mit '…', falls es bei max_width nicht passt."""
     if _text_w(draw, text, font) <= max_width:
@@ -470,14 +484,17 @@ class Post:
         y += BLOCK_GAP
 
         tile_w = max_w
+        usable_w = tile_w - 48
         for label, sublabel, value, color in stats:
             draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + tile_w, y + tile_h], fill=B.CARD)
             draw.text((B.MARGIN_LEFT + 24, y + tile_pad), label, font=label_font, fill=B.INK)
             draw.text((B.MARGIN_LEFT + 24, y + tile_pad + label_h + 4), sublabel,
                        font=sublabel_font, fill=B.SUBTEXT)
-            vw = _text_w(draw, value, value_font)
-            vy = y + tile_h // 2 - _line_height(value_font) // 2
-            draw.text((B.MARGIN_LEFT + tile_w - 24 - vw, vy), value, font=value_font, fill=color)
+            tile_value_size = _fit_stat_value_font_size(draw, label, value, label_font, usable_w)
+            tile_value_font = _font(B.SERIF_BOLD, tile_value_size)
+            vw = _text_w(draw, value, tile_value_font)
+            vy = y + tile_h // 2 - _line_height(tile_value_font) // 2
+            draw.text((B.MARGIN_LEFT + tile_w - 24 - vw, vy), value, font=tile_value_font, fill=color)
             y += tile_h + tile_gap
         y -= tile_gap
 

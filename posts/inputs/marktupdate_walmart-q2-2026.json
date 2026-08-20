@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Walmart -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Q2 Fiskaljahr 2027, veröffentlicht am 20. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz *gestiegen*, Nettoergebnis *gesunken*.",
+      "stats": [
+        ["Umsatz", "Q2 FY2027", "187,9 Mrd. USD (+5,9%)", "green"],
+        ["Nettoergebnis", "Q2 FY2027", "6,37 Mrd. USD (-9,4%)", "red"],
+        ["GAAP-EPS", "Q2 FY2027", "0,80 USD", "ink"]
+      ],
+      "note": "Vorjahr Nettoergebnis: 7,03 Mrd. USD. Operatives Ergebnis stieg dennoch um 28,8%, u.a. durch Zoll-Rueckerstattungen."
+    },
+    {
+      "type": "stats",
+      "headline": "*E-Commerce* und Werbung wachsen deutlich.",
+      "stats": [
+        ["Globaler E-Commerce", "Q2 FY2027", "+23%", "green"],
+        ["Werbeeinnahmen", "Q2 FY2027", "+38%", "green"],
+        ["Mitgliedschaften", "Q2 FY2027", "+17%", "green_mid"]
+      ],
+      "note": "US-Vergleichsumsatz (ohne Tankstellen) +2,6%, internationales Geschaeft +7,9%."
+    },
+    {
+      "type": "text",
+      "headline": "Warum die Aktie trotzdem *fiel*.",
+      "body": "Umsatz lag ueber den Erwartungen, aber der Rueckgang beim Nettoergebnis trotz Zoll-Rueckerstattungen liess Anleger vorsichtig reagieren -- die zusaetzlichen Margen sollen laut Unternehmen in kuenftige Preissenkungen reinvestiert werden."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veroeffentlichten Zahlen, Quelle: Walmart Q2-FY2027-Bericht."
+}

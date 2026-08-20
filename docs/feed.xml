@@ -5,7 +5,39 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 19 Aug 2026 14:43:10 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 20 Aug 2026 12:56:46 +0000</lastBuildDate>
+    <item>
+      <title>Was bedeutet Volatilität eigentlich?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_volatilitaet</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ein Wort, das ständig fällt, aber selten erklärt wird.</description>
+    </item>
+    <item>
+      <title>Diversifikation -- öfter falsch verstanden, als man denkt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_diversifikation</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Viele Positionen zu haben reicht nicht automatisch.</description>
+    </item>
+    <item>
+      <title>Walmart -- die Zahlen zum Quartal.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_walmart-q2-2026</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Q2 Fiskaljahr 2027, veröffentlicht am 20. August 2026.</description>
+    </item>
+    <item>
+      <title>Alibaba -- die Zahlen zum Quartal.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_alibaba-q2-2026</guid>
+      <pubDate>Thu, 20 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Juni-Quartal 2026, veröffentlicht am 20. August 2026.</description>
+    </item>
     <item>
       <title>Der Zinseszins -- warum früh anfangen so viel bringt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -31,14 +63,6 @@
       <description>Die Basis, bevor man über Kosten oder Auswahl spricht.</description>
     </item>
     <item>
-      <title>Warum kauft Big Tech plötzlich Atomkraftwerke?</title>
-      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
-      <guid isPermaLink="false">marktupdate_big-tech-atomkraft</guid>
-      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
-      <category>marktupdate</category>
-      <description>Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.</description>
-    </item>
-    <item>
       <title>Estée Lauder -- die Zahlen zum Quartal.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
       <guid isPermaLink="false">marktupdate_esteelauder-q4-2026</guid>
@@ -53,6 +77,30 @@
       <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Q2 2026, veröffentlicht am 19. August 2026.</description>
+    </item>
+    <item>
+      <title>Warum kauft Big Tech plötzlich Atomkraftwerke?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_big-tech-atomkraft</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.</description>
+    </item>
+    <item>
+      <title>Was ist eine Aktie eigentlich?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_was-ist-aktie</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Die Basis, bevor alles andere Sinn ergibt.</description>
+    </item>
+    <item>
+      <title>Was ist eigentlich ein Index?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_was-ist-index</guid>
+      <pubDate>Wed, 19 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Der MSCI World, der S&amp;P 500 -- was steckt dahinter?</description>
     </item>
     <item>
       <title>Diese Woche wieder nichts gekauft.</title>

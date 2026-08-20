@@ -1,0 +1,33 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Alibaba -- die *Zahlen* zum Quartal.",
+  "hook_sub": "Juni-Quartal 2026, veröffentlicht am 20. August 2026.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Umsatz *waechst*, GAAP-Gewinn *bricht ein*.",
+      "stats": [
+        ["Umsatz", "Juni-Quartal 2026", "268,95 Mrd. RMB (+9%)", "green"],
+        ["GAAP-Nettoergebnis", "Juni-Quartal 2026", "10,44 Mrd. RMB (-75%)", "red"],
+        ["Bereinigtes Nettoergebnis", "Juni-Quartal 2026", "20,72 Mrd. RMB (-38%)", "ochre"]
+      ],
+      "note": "Vorjahr GAAP-Nettoergebnis deutlich hoeher. Diluted EPS/ADS: 3,71 RMB, bereinigt 8,52 RMB (-42%)."
+    },
+    {
+      "type": "stats",
+      "headline": "*Cloud* waechst am schnellsten.",
+      "stats": [
+        ["Alibaba Cloud, extern", "Juni-Quartal 2026", "+45%", "green"],
+        ["Adjusted EBITA", "Juni-Quartal 2026", "-30%", "red"]
+      ],
+      "note": "Beschleunigtes Cloud-Wachstum, aber Marge sinkt durch hohe KI-Investitionen."
+    },
+    {
+      "type": "text",
+      "headline": "Warum der Gewinn so stark *sank*.",
+      "body": "Alibaba investiert massiv in KI-Infrastruktur und das eigene KI-Modell Qwen -- hoehere Inferenzkosten und Technologie-Investitionen druecken kurzfristig auf die Marge, waehrend das Cloud-Geschaeft beschleunigt waechst."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung* von mir.",
+  "cta_body": "Nur die veroeffentlichten Zahlen, Quelle: Alibaba Group Juni-Quartal-2026-Bericht."
+}
