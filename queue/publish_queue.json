@@ -105,13 +105,17 @@
     "caption": "Was ist eigentlich ein Index?\n\nDer MSCI World, der S&P 500 -- was steckt dahinter:\n\n-> Ein Index ist eine Liste von Aktien nach festen Regeln\n-> Der Indexstand ist ein Durchschnittswert, meist gewichtet nach Unternehmensgroesse\n-> Ein ETF kann so einen Index nachbilden\n\nGrundlage fuer viele spaetere Themen hier -- kein Urteil, welcher Index der 'beste' ist.\n\n#depotdiary #aktien #geldanlage #finanzen #geldwissen",
     "slide_count": 5,
     "fire_at": "2026-08-20T16:30:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-20T15:07:44.667637+00:00",
+    "media_id": "18016036082919642"
   },
   {
     "post_name": "erklaerstueck_was-ist-index",
     "action": "story",
     "fire_at": "2026-08-20T16:33:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-20T15:08:04.032675+00:00",
+    "media_id": "17963982936193013"
   },
   {
     "post_name": "marktupdate_big-tech-atomkraft",
@@ -134,26 +138,39 @@
     "action": "carousel",
     "caption": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.\n\nDie zweite Ressource hinter dem KI-Boom:\n\n-> Google: 10,9 Mrd. Gallonen Wasser 2025 (+34%)\n-> Amazon: 2,5 Mrd. Gallonen, Microsoft deutlich effizienter geworden\n-> USA direkt: 38-73 Mrd. Gallonen Prognose bis 2028\n-> Eine ChatGPT-Konversation: 10-25 Milliliter Wasser\n\nHaengt direkt mit dem Atomkraft-Thema von heute zusammen. Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur.\n\n#depotdiary #ki #atomkraft #boerse #nachhaltigkeit",
     "slide_count": 8,
-    "fire_at": "2026-08-20T17:10:00+02:00",
+    "fire_at": "2026-08-20T20:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_ki-wasserverbrauch",
     "action": "story",
-    "fire_at": "2026-08-20T17:13:00+02:00",
+    "fire_at": "2026-08-20T20:03:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_inflation",
     "action": "reel",
     "caption": "Was ist Inflation eigentlich genau?\n\nEin Wort, das jeder kennt -- aber was passiert wirklich:\n\n-> Dein Geld wird ueber Zeit weniger wert -- gemessen an einem Warenkorb\n-> Zentralbanken wie EZB und Fed streben meist rund 2% pro Jahr an\n-> Cash auf dem Konto verliert automatisch an Kaufkraft\n-> Loehne und Preise koennen sich gegenseitig hochschaukeln\n\nKeine Prognose von mir -- nur, warum diese Zahl fuer mein Depot relevant ist.\n\n#depotdiary #inflation #geldwissen #finanzen #erklaerstueck",
-    "fire_at": "2026-08-20T17:20:00+02:00",
+    "fire_at": "2026-08-20T20:10:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_inflation",
     "action": "story",
-    "fire_at": "2026-08-20T17:23:00+02:00",
+    "fire_at": "2026-08-20T20:13:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_rezession-korrektur-crash",
+    "action": "reel",
+    "caption": "Rezession, Korrektur, Crash -- wo ist der Unterschied?\n\nDrei Woerter, die staendig durcheinander benutzt werden:\n\n-> Korrektur: Rueckgang von 10%+ vom Hoechststand -- normal, kein Alarmsignal\n-> Crash: sehr schneller, starker Einbruch (z.B. 1987, Maerz 2020)\n-> Baerenmarkt: laenger anhaltender Rueckgang ab -20%\n-> Rezession: zwei aufeinanderfolgende Quartale schrumpfendes BIP -- ein Wirtschafts-, kein Boersenbegriff\n\nKeine Prognose, welches Szenario als naechstes kommt.\n\n#depotdiary #rezession #boerse #finanzen #erklaerstueck",
+    "fire_at": "2026-08-20T20:20:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_rezession-korrektur-crash",
+    "action": "story",
+    "fire_at": "2026-08-20T20:23:00+02:00",
     "status": "pending"
   }
 ]
