@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Eine *Dividende* ist kein Geschenk.",
+  "hook_sub": "Ein Missverständnis, das ich am Anfang selbst hatte.",
+  "sections": [
+    {
+      "headline": "Die Dividende kommt aus dem *Unternehmen selbst*.",
+      "body": "Es ist ausgeschütteter Gewinn -- kein zusätzliches Geld von außen, sondern ein Teil vom Wert, der schon da war."
+    },
+    {
+      "headline": "Der Aktienkurs sinkt am Ausschüttungstag *entsprechend*.",
+      "body": "Wird Geld ausgeschüttet, sinkt der Kurs der Aktie meist um ungefähr denselben Betrag -- das Depot wird dadurch nicht automatisch mehr wert."
+    },
+    {
+      "headline": "Trotzdem kann es für mich *sinnvoll* sein.",
+      "body": "Regelmäßige Ausschüttungen fühlen sich für mich greifbarer an als reine Kurssteigerung -- das ist aber Geschmackssache, kein Renditevorteil an sich."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung*, nur die Mechanik.",
+  "cta_body": "Ob Dividende oder Wachstum -- das ist deine eigene Entscheidung."
+}

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was ist eine *Aktie* eigentlich?",
+  "hook_sub": "Die Basis, bevor alles andere Sinn ergibt.",
+  "sections": [
+    {
+      "headline": "Eine Aktie ist ein *Anteil* am Unternehmen.",
+      "body": "Kaufst du eine Aktie, gehört dir ein winziger Teil dieser Firma -- inklusive einem Anteil an Gewinn und Vermögen."
+    },
+    {
+      "headline": "Der Kurs zeigt, was andere gerade *bereit* sind zu zahlen.",
+      "body": "Er entsteht durch Angebot und Nachfrage an der Börse -- nicht durch eine feste Berechnung des 'wahren' Werts."
+    },
+    {
+      "headline": "Als Aktionär trägst du das *unternehmerische* Risiko mit.",
+      "body": "Läuft es gut, kann der Wert steigen -- läuft es schlecht, kann er auch auf null fallen. Beides ist möglich."
+    }
+  ],
+  "cta_headline": "Deshalb kaufe *ich* nicht nur eine einzelne Aktie.",
+  "cta_body": "Meine eigene Entscheidung -- keine Empfehlung für dich."
+}

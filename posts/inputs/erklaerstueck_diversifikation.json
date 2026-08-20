@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Diversifikation* -- öfter falsch verstanden, als man denkt.",
+  "hook_sub": "Viele Positionen zu haben reicht nicht automatisch.",
+  "sections": [
+    {
+      "headline": "Es geht um *unkorrelierte* Werte, nicht nur um Anzahl.",
+      "body": "20 Aktien aus derselben Branche schwanken oft gemeinsam -- das ist kaum weniger riskant als eine einzelne."
+    },
+    {
+      "headline": "Echte Streuung verteilt sich über *Branchen und Regionen*.",
+      "body": "Wenn ein Sektor oder Land schwächelt, können andere Teile des Depots das ausgleichen."
+    },
+    {
+      "headline": "Ein breiter ETF liefert das *automatisch* mit.",
+      "body": "Ein MSCI-World-ETF streut zum Beispiel schon über tausende Unternehmen und viele Länder in einem Produkt."
+    }
+  ],
+  "cta_headline": "Wie breit *du* streust, ist deine Entscheidung.",
+  "cta_body": "Keine Empfehlung, nur die Mechanik dahinter."
+}

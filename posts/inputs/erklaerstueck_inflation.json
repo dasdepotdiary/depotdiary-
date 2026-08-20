@@ -1,0 +1,33 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was ist *Inflation* eigentlich genau?",
+  "hook_sub": "Ein Wort, das jeder kennt -- aber was passiert wirklich?",
+  "sections": [
+    {
+      "headline": "Inflation heißt: dein Geld wird *weniger wert*.",
+      "body": "Für denselben Geldbetrag bekommst du über Zeit weniger Waren und Dienstleistungen als vorher."
+    },
+    {
+      "headline": "Gemessen wird sie über einen *Warenkorb*.",
+      "body": "Statistikämter verfolgen die Preise typischer Produkte und Dienstleistungen und berechnen daraus eine durchschnittliche Preisveränderung."
+    },
+    {
+      "headline": "Eine *niedrige* Inflation gilt oft als gesund.",
+      "body": "Zentralbanken wie die EZB oder die Fed streben meist rund 2% pro Jahr an -- weder Stillstand noch außer Kontrolle."
+    },
+    {
+      "headline": "Cash verliert bei Inflation *automatisch* an Kaufkraft.",
+      "body": "Liegt Geld einfach nur auf dem Konto, kauft es sich mit der Zeit weniger, selbst wenn der Kontostand gleich bleibt."
+    },
+    {
+      "headline": "Löhne und Preise können sich *gegenseitig* hochschaukeln.",
+      "body": "Steigen Preise, fordern Arbeitnehmer höhere Löhne -- steigen Löhne, können Unternehmen die Preise weiter anheben. Ein bekannter Mechanismus, keine Regel."
+    },
+    {
+      "headline": "Es gibt auch das *Gegenteil*: Deflation.",
+      "body": "Fallende Preise klingen gut, können aber Konsum und Investitionen verzögern -- Zentralbanken versuchen meist, beides zu vermeiden."
+    }
+  ],
+  "cta_headline": "Deshalb behalte ich Inflation im *Blick*.",
+  "cta_body": "Keine Prognose von mir -- nur, warum diese Zahl für mein Depot relevant ist."
+}

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was ist ein *ETF* eigentlich?",
+  "hook_sub": "Die Basis, bevor man über Kosten oder Auswahl spricht.",
+  "sections": [
+    {
+      "headline": "ETF heißt *Exchange Traded Fund*.",
+      "body": "Ein Fonds, der an der Börse gehandelt wird -- du kannst ihn kaufen und verkaufen wie eine einzelne Aktie."
+    },
+    {
+      "headline": "Er bündelt *viele* Aktien in einem Produkt.",
+      "body": "Ein ETF auf den MSCI World hält zum Beispiel über 1.500 Einzelaktien aus der ganzen Welt gleichzeitig."
+    },
+    {
+      "headline": "Er bildet einfach einen *Index* nach.",
+      "body": "Keine Person entscheidet aktiv, was gekauft wird -- der ETF folgt automatisch der Zusammensetzung des Index, den er abbildet."
+    }
+  ],
+  "cta_headline": "Deshalb ist ein ETF *eine* Art von Diversifikation.",
+  "cta_body": "Wie und ob du investierst, ist trotzdem deine eigene Entscheidung."
+}

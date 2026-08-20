@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was bedeutet *Volatilität* eigentlich?",
+  "hook_sub": "Ein Wort, das ständig fällt, aber selten erklärt wird.",
+  "sections": [
+    {
+      "headline": "Volatilität misst, wie stark ein Kurs *schwankt*.",
+      "body": "Hohe Volatilität heißt: große Ausschläge nach oben und unten -- nicht zwingend eine Richtung."
+    },
+    {
+      "headline": "Sie ist kein Werturteil, sondern eine *Kennzahl*.",
+      "body": "Eine volatile Aktie ist nicht automatisch schlecht -- sie schwankt nur stärker als der Durchschnitt."
+    },
+    {
+      "headline": "Für mich persönlich bedeutet sie *Geduld*.",
+      "body": "Je volatiler eine Position, desto wichtiger für mich, kurzfristige Schwankungen einfach auszuhalten."
+    }
+  ],
+  "cta_headline": "Keine *Bewertung*, nur die Definition.",
+  "cta_body": "Wie du mit Schwankungen umgehst, ist deine eigene Entscheidung."
+}

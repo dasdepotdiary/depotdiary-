@@ -1,0 +1,54 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Warum kauft Big Tech plötzlich *Atomkraftwerke*?",
+  "hook_sub": "Der Strombedarf für KI-Rechenzentren treibt eine neue Nuklear-Welle.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Microsoft reaktiviert *Three Mile Island*.",
+      "stats": [
+        ["Vertragsvolumen", "20 Jahre", "16 Mrd. USD", "green"],
+        ["Leistung", "Reaktor-Block 1", "835 MW", "green_mid"],
+        ["Geplanter Start", "Wiederinbetriebnahme", "2027", "ink"]
+      ],
+      "note": "Reaktor wurde in 'Christopher M. Crane Clean Energy Center' umbenannt."
+    },
+    {
+      "type": "stats",
+      "headline": "*Meta* und *Amazon* sichern sich eigene Reaktoren.",
+      "stats": [
+        ["Meta", "Atomstrom-Beschaffung", "bis zu 6,6 GW", "ochre"],
+        ["Amazon", "Susquehanna-Campus", "ueber 20 Mrd. USD", "ochre"],
+        ["Amazon", "Investition in X-energy", "700 Mio. USD", "ink"]
+      ],
+      "note": "Meta ueber TerraPower, Oklo, Vistra und Constellation fuer das 'Prometheus'-KI-Projekt."
+    },
+    {
+      "type": "stats",
+      "headline": "Auch *Google* steigt beim Atomstrom ein.",
+      "stats": [
+        ["Duane-Arnold-Vertrag", "PPA-Laufzeit", "25 Jahre", "green"],
+        ["Reaktorleistung", "Duane Arnold, Iowa", "615 MW", "green_mid"],
+        ["Wiederinbetriebnahme", "geplant", "Q1 2029", "ink"]
+      ],
+      "note": "Zusaetzlich 50-MW-Vertrag mit dem SMR-Anbieter Kairos Power."
+    },
+    {
+      "type": "text",
+      "headline": "Der Grund: KI-Rechenzentren *verschlingen* Strom.",
+      "body": "Ein einzelnes grosses KI-Rechenzentrum kann so viel Strom brauchen wie eine Kleinstadt -- klassische Stromnetze kommen mit dem Tempo des Ausbaus nicht mehr hinterher."
+    },
+    {
+      "type": "text",
+      "headline": "Branchenweit fast *10 Gigawatt* zugesagt.",
+      "body": "Microsoft, Google, Amazon und Meta haben 2026 zusammen ueber ein Dutzend Nuklear-Deals unterschrieben -- genug Kapazitaet fuer etwa 7 Millionen Haushalte."
+    },
+    {
+      "type": "text",
+      "headline": "Alte Reaktoren werden *wiederbelebt*, nicht nur neue gebaut.",
+      "body": "Sowohl Three Mile Island als auch Duane Arnold waren bereits abgeschaltet -- beide werden jetzt gezielt für den KI-Strombedarf reaktiviert, statt neu gebaut zu werden."
+    }
+  ],
+  "cta_headline": "Ich beobachte, wie sich das *entwickelt*.",
+  "cta_body": "Keine Bewertung, keine Prognose -- nur die Zahlen hinter dem Trend."
+}

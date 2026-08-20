@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Der *Zinseszins* -- warum früh anfangen so viel bringt.",
+  "hook_sub": "Keine Magie, nur Mathematik.",
+  "sections": [
+    {
+      "headline": "Zinsen bekommst du auch auf *Zinsen*.",
+      "body": "Im ersten Jahr wächst nur dein Einsatz -- ab dem zweiten Jahr wächst auch das, was du im ersten Jahr schon dazubekommen hast."
+    },
+    {
+      "headline": "Der Unterschied zeigt sich erst *später*.",
+      "body": "In den ersten Jahren wirkt der Effekt klein -- über Jahrzehnte wird aus der Kurve ein deutlicher Sprung nach oben."
+    },
+    {
+      "headline": "Zeit schlägt oft *hohe Einzahlungen*.",
+      "body": "Wer früh mit kleinen Beträgen anfängt, kann am Ende mehr haben als wer spät mit größeren Beträgen startet -- allein durch die Zeit, die der Zinseszins wirken kann."
+    }
+  ],
+  "cta_headline": "Deshalb spar ich *jetzt*, nicht später.",
+  "cta_body": "Keine Prognose, nur der Grund, warum ich früh angefangen hab."
+}

@@ -1,0 +1,22 @@
+{
+  "kategorie": "wochennotiz",
+  "eyebrow": "WOCHENNOTIZ",
+  "hook": "Diese Woche wieder *nichts* gekauft.",
+  "hook_sub": "Nur mein Sparplan läuft weiter.",
+  "sections": [
+    {
+      "headline": "Ich finde den Markt weiterhin *überbewertet*.",
+      "body": "Nur mein persönliches Gefühl, keine Prognose -- deshalb kaufe ich aktuell bewusst nichts nach."
+    },
+    {
+      "headline": "Ich überlege sogar, etwas *Risiko rauszunehmen*.",
+      "body": "Bei manchen Positionen denke ich über Gewinnmitnahme nach -- gemacht habe ich es bisher nicht, nur überlegt."
+    },
+    {
+      "headline": "Stattdessen läuft einfach mein *Sparplan* weiter.",
+      "body": "Ich spare meine Rate weiter an und warte ab, wie sich das Ganze entwickelt."
+    }
+  ],
+  "cta_headline": "Nächste Woche *vielleicht* wieder anders.",
+  "cta_body": "Machst du das auch -- bewusst abwarten, statt zu handeln?"
+}

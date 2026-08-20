@@ -1,0 +1,33 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was passiert, wenn die *Fed* die Zinsen senkt?",
+  "hook_sub": "Direkte Fortsetzung von 'Was die Fed eigentlich macht'.",
+  "sections": [
+    {
+      "headline": "Kredite werden *günstiger*.",
+      "body": "Banken können sich selbst billiger Geld leihen -- das geben sie in Teilen an Kredite für Unternehmen und Verbraucher weiter."
+    },
+    {
+      "headline": "Sparen wird *weniger attraktiv*.",
+      "body": "Zinsen auf Tagesgeld oder Festgeld sinken meist mit -- Geld auf dem Konto bringt weniger Ertrag als vorher."
+    },
+    {
+      "headline": "Unternehmen können sich *günstiger finanzieren*.",
+      "body": "Niedrigere Zinsen senken die Kosten für Kredite und Anleihen -- das kann Investitionen und Wachstum erleichtern."
+    },
+    {
+      "headline": "Aktien reagieren historisch oft *positiv*.",
+      "body": "Niedrigere Zinsen machen zukünftige Unternehmensgewinne rechnerisch mehr wert und Anleihen im Vergleich weniger attraktiv -- ein bekannter Mechanismus, kein Automatismus."
+    },
+    {
+      "headline": "Der US-Dollar tendiert oft zur *Abschwächung*.",
+      "body": "Niedrigere Zinsen machen den Dollar für internationale Anleger tendenziell weniger attraktiv im Vergleich zu höher verzinsten Währungen."
+    },
+    {
+      "headline": "Der Grund für Zinssenkungen ist meist *Wachstumssorge*.",
+      "body": "Die Fed senkt Zinsen typischerweise, wenn sie die Wirtschaft ankurbeln will -- oft ein Signal, dass sie Abschwächung erwartet."
+    }
+  ],
+  "cta_headline": "Ich beobachte die *Fed-Sitzungen* weiter.",
+  "cta_body": "Keine Prognose, wann oder ob das passiert -- nur der Mechanismus dahinter."
+}

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was ist eigentlich ein *Index*?",
+  "hook_sub": "Der MSCI World, der S&P 500 -- was steckt dahinter?",
+  "sections": [
+    {
+      "headline": "Ein Index ist eine *Liste* von Aktien nach festen Regeln.",
+      "body": "Der S&P 500 zum Beispiel bildet die 500 größten börsennotierten US-Unternehmen ab, nach klaren Kriterien ausgewählt."
+    },
+    {
+      "headline": "Der Indexstand ist ein *Durchschnittswert*.",
+      "body": "Er fasst die Kursentwicklung aller enthaltenen Aktien zu einer einzigen Zahl zusammen -- meist gewichtet nach Unternehmensgröße."
+    },
+    {
+      "headline": "Ein ETF kann so einen Index *nachbilden*.",
+      "body": "Deshalb hängen Index und ETF oft zusammen -- der Index ist die Vorlage, der ETF das Produkt, das sie in der Praxis kaufbar macht."
+    }
+  ],
+  "cta_headline": "Grundlage für viele *spätere* Themen hier.",
+  "cta_body": "Kein Urteil darüber, welcher Index der 'beste' ist."
+}

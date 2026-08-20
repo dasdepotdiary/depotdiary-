@@ -1,0 +1,33 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Rezession, Korrektur, Crash -- wo ist der *Unterschied*?",
+  "hook_sub": "Drei Wörter, die ständig durcheinander benutzt werden.",
+  "sections": [
+    {
+      "headline": "Eine *Korrektur* ist ein Rückgang von 10% oder mehr.",
+      "body": "Gemessen vom letzten Höchststand eines Index -- ein normaler, häufiger Vorgang, kein Alarmsignal an sich."
+    },
+    {
+      "headline": "Ein *Crash* ist ein sehr schneller, starker Einbruch.",
+      "body": "Meist innerhalb weniger Tage -- 1987 oder März 2020 sind bekannte Beispiele dafür."
+    },
+    {
+      "headline": "Ein *Bärenmarkt* beginnt ab minus 20%.",
+      "body": "Ein länger anhaltender Rückgang von mindestens 20% vom Höchststand, oft über Monate."
+    },
+    {
+      "headline": "Eine *Rezession* ist ein wirtschaftlicher Begriff, kein Börsenbegriff.",
+      "body": "Klassisch definiert als zwei aufeinanderfolgende Quartale mit schrumpfender Wirtschaftsleistung (BIP) -- unabhängig vom Aktienmarkt."
+    },
+    {
+      "headline": "Börse und Wirtschaft laufen *nicht* immer synchron.",
+      "body": "Der Aktienmarkt kann fallen, ohne dass eine Rezession folgt -- und umgekehrt kann eine Rezession kommen, ohne dass vorher ein Crash war."
+    },
+    {
+      "headline": "Korrekturen kommen *häufiger* vor, als man denkt.",
+      "body": "Rückgänge von 10% passieren statistisch fast jedes Jahr irgendwann -- Crashs und Bärenmärkte deutlich seltener."
+    }
+  ],
+  "cta_headline": "Ich ordne diese Begriffe für mich *ein*, nicht für dich.",
+  "cta_body": "Keine Prognose, welches Szenario als Nächstes kommt."
+}
