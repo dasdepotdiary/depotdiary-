@@ -92,7 +92,7 @@ def main():
 
     media_ids = []
     for i, relpath in enumerate(relpaths, 1):
-        image_url = f"{base_url}/{relpath}"
+        image_url = f"{base_url}/{relpath}?v={int(time.time())}"
         print(f"  Slide {i}/{len(relpaths)}: {image_url}")
         container_id = create_story_container(token, ig_id, image_url)
         result = publish_container(token, ig_id, container_id)
