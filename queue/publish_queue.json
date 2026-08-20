@@ -80,5 +80,33 @@
     "status": "done",
     "published_at": "2026-08-19T17:58:07.656755+00:00",
     "media_id": "18437161846135157"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-aktie",
+    "action": "carousel",
+    "caption": "Was ist eine Aktie eigentlich?\n\nDie Basis, bevor alles andere Sinn ergibt:\n\n-> Eine Aktie ist ein Anteil am Unternehmen\n-> Der Kurs zeigt, was andere gerade bereit sind zu zahlen\n-> Als Aktionaer traegst du das unternehmerische Risiko mit -- Wert kann steigen oder auf null fallen\n\nDeshalb kaufe ich nicht nur eine einzelne Aktie -- meine eigene Entscheidung, keine Empfehlung.\n\n#depotdiary #boerse #etf #finanztipps #finanzbildung",
+    "slide_count": 5,
+    "fire_at": "2026-08-20T13:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-aktie",
+    "action": "story",
+    "fire_at": "2026-08-20T13:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-index",
+    "action": "carousel",
+    "caption": "Was ist eigentlich ein Index?\n\nDer MSCI World, der S&P 500 -- was steckt dahinter:\n\n-> Ein Index ist eine Liste von Aktien nach festen Regeln\n-> Der Indexstand ist ein Durchschnittswert, meist gewichtet nach Unternehmensgroesse\n-> Ein ETF kann so einen Index nachbilden\n\nGrundlage fuer viele spaetere Themen hier -- kein Urteil, welcher Index der 'beste' ist.\n\n#depotdiary #aktien #geldanlage #finanzen #geldwissen",
+    "slide_count": 5,
+    "fire_at": "2026-08-20T16:30:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_was-ist-index",
+    "action": "story",
+    "fire_at": "2026-08-20T16:33:00+02:00",
+    "status": "pending"
   }
 ]
