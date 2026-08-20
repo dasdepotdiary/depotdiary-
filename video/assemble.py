@@ -62,10 +62,13 @@ def _wrap_caption(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeType
     return lines
 
 
-def render_caption_image(text: str, video_size: tuple[int, int]) -> np.ndarray:
+def render_caption_image(text: str, video_size: tuple[int, int], position: str = "top") -> np.ndarray:
     """Kurze Untertitel-Phrase: weisser fetter Text auf dunklem Balken (INK,
-    hoher Kontrast), in der garantiert leeren oberen Letterbox-Zone der
-    tiktok_9x16-Slides -- ueberschneidet sich nie mit echtem Slide-Inhalt."""
+    hoher Kontrast). position="top": garantiert leere obere Letterbox-Zone
+    der tiktok_9x16-Slides (Karten-Modus, ueberschneidet nie echten Inhalt).
+    position="center": klassische Untertitel-Position im unteren Drittel,
+    fuer --pure-footage, wo der ganze Bildschirm echtes Video ist und die
+    Untertitel selbst der Inhalt sind, nicht nur eine Ergaenzung."""
     w, h = video_size
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
@@ -75,9 +78,15 @@ def render_caption_image(text: str, video_size: tuple[int, int]) -> np.ndarray:
     line_h = CAPTION_FONT.size + 12
     block_h = len(lines) * line_h
     pad_y = 20
-
-    bar_top = CAPTION_TOP_PADDING_PX
     bar_h = block_h + pad_y * 2
+
+    if position == "center":
+        # unteres Drittel, aber klar oberhalb der IG/TikTok-eigenen UI
+        # (Like/Kommentar/Story-Infos liegen im untersten ~18%)
+        bar_top = int(h * 0.68) - bar_h // 2
+    else:
+        bar_top = CAPTION_TOP_PADDING_PX
+
     draw.rounded_rectangle(
         [70, bar_top, w - 70, bar_top + bar_h], radius=16, fill=(22, 24, 28, 230)
     )
@@ -92,7 +101,7 @@ def render_caption_image(text: str, video_size: tuple[int, int]) -> np.ndarray:
     return np.array(img)
 
 
-def caption_clips(sentences: list[dict], video_size: tuple[int, int]) -> list:
+def caption_clips(sentences: list[dict], video_size: tuple[int, int], position: str = "top") -> list:
     clips = []
     for s in sentences:
         words = re.findall(r"\S+", s["text"].replace("--", ""))
@@ -104,7 +113,7 @@ def caption_clips(sentences: list[dict], video_size: tuple[int, int]) -> list:
         ]
         phrase_dur = s["duration"] / len(phrases)
         for i, phrase in enumerate(phrases):
-            arr = render_caption_image(phrase, video_size)
+            arr = render_caption_image(phrase, video_size, position=position)
             clip = ImageClip(arr).with_start(s["start"] + i * phrase_dur).with_duration(phrase_dur)
             clips.append(clip)
     return clips
@@ -177,6 +186,7 @@ def main():
     parser.add_argument("--pexels-clips", help="Kommagetrennte Liste echter Videoclips (z.B. von Pexels), werden ueber das Video verteilt eingestreut")
     parser.add_argument("--clip-seconds", type=float, default=2.5, help="Laenge jedes eingestreuten Clips in Sekunden (Default 2.5)")
     parser.add_argument("--no-captions", action="store_true", help="Keine eingebrannten Untertitel (Default: an)")
+    parser.add_argument("--pure-footage", action="store_true", help="Keine Slide-Karten im Video -- nur echte Videoclips, Inhalt komplett ueber Sprache+Untertitel (Slides werden trotzdem fuer Carousel/Story gebraucht)")
     args = parser.parse_args()
 
     slide_dir = ROOT / "output" / args.post_name / "tiktok_9x16"
@@ -196,8 +206,14 @@ def main():
         scale = audio_clip.duration / sum(durations)
         durations = [d * scale for d in durations]
 
-    def real_clip(path: Path, dur: float):
-        vc = VideoFileClip(str(path)).subclipped(0, dur)
+    def real_clip(path: Path, dur: float, start_offset: float = 0.0):
+        vc = VideoFileClip(str(path))
+        src_dur = vc.duration
+        start = start_offset % max(src_dur - min(dur, src_dur), 0.01)
+        if dur <= src_dur - start:
+            vc = vc.subclipped(start, start + dur)
+        else:
+            vc = vc.subclipped(start, src_dur).with_effects([vfx.Loop(duration=dur)])
         w, h = vc.size
         target_w, target_h = 1080, 1920
         scale = max(target_w / w, target_h / h)
@@ -226,18 +242,28 @@ def main():
         clips.append(c)
         cursor += dur
 
-    # erster echter Clip immer als Intro voranstellen
-    if pexels_paths:
-        add_clip(real_clip(pexels_paths[0], args.clip_seconds), args.clip_seconds, is_slide=False)
+    if args.pure_footage:
+        if not pexels_paths:
+            sys.exit("--pure-footage braucht --pexels-clips")
+        # ein Footage-Segment pro Satz (statt pro Slide) -- Karten werden nie
+        # gezeigt, Inhalt kommt nur ueber Sprache + Untertitel
+        for i, dur in enumerate(durations):
+            path = pexels_paths[i % len(pexels_paths)]
+            offset = (i // len(pexels_paths)) * 4.0
+            add_clip(real_clip(path, dur, start_offset=offset), dur, is_slide=True)
+    else:
+        # erster echter Clip immer als Intro voranstellen
+        if pexels_paths:
+            add_clip(real_clip(pexels_paths[0], args.clip_seconds), args.clip_seconds, is_slide=False)
 
-    # restliche echte Clips gleichmaessig zwischen die Slides verteilen
-    remaining = pexels_paths[1:]
-    insert_every = max(1, len(slides) // (len(remaining) + 1)) if remaining else None
+        # restliche echte Clips gleichmaessig zwischen die Slides verteilen
+        remaining = pexels_paths[1:]
+        insert_every = max(1, len(slides) // (len(remaining) + 1)) if remaining else None
 
-    for i, (path, dur) in enumerate(zip(slides, durations)):
-        add_clip(ken_burns_clip(path, dur), dur, is_slide=True)
-        if remaining and (i + 1) % insert_every == 0 and len(clips) < len(slides) + len(pexels_paths):
-            add_clip(real_clip(remaining.pop(0), args.clip_seconds), args.clip_seconds, is_slide=False)
+        for i, (path, dur) in enumerate(zip(slides, durations)):
+            add_clip(ken_burns_clip(path, dur), dur, is_slide=True)
+            if remaining and (i + 1) % insert_every == 0 and len(clips) < len(slides) + len(pexels_paths):
+                add_clip(real_clip(remaining.pop(0), args.clip_seconds), args.clip_seconds, is_slide=False)
 
     padding = -FADE if len(clips) > 1 else 0
     video = concatenate_videoclips(clips, method="compose", padding=padding)
@@ -247,7 +273,7 @@ def main():
             {**s, "start": slide_starts[i], "duration": durations[i]}
             for i, s in enumerate(sentences)
         ]
-        subs = caption_clips(scaled_sentences, video.size)
+        subs = caption_clips(scaled_sentences, video.size, position="center" if args.pure_footage else "top")
         if subs:
             video = CompositeVideoClip([video] + subs, size=video.size).with_duration(video.duration)
 
