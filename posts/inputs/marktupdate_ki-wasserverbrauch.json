@@ -1,0 +1,53 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "KI-Rechenzentren brauchen nicht nur Strom -- auch *Wasser*.",
+  "hook_sub": "Die zweite Ressource hinter dem KI-Boom, über die kaum gesprochen wird.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Google verbraucht *Milliarden* Liter.",
+      "stats": [
+        ["Wasserverbrauch 2025", "Google, gesamt", "10,9 Mrd. Gallonen", "green"],
+        ["Veraenderung", "zum Vorjahr", "+34%", "ochre"],
+        ["Seit 2021", "Vervielfachung", "mehr als verdoppelt", "ink"]
+      ],
+      "note": "1 US-Gallone entspricht rund 3,8 Litern."
+    },
+    {
+      "type": "stats",
+      "headline": "Auch *Amazon* und *Microsoft* im Blick.",
+      "stats": [
+        ["Amazon", "Wasserverbrauch 2025", "2,5 Mrd. Gallonen", "green_mid"],
+        ["Microsoft", "Effizienz aktuell", "0,27 L/kWh", "green"],
+        ["Microsoft", "Effizienz frueher", "2,3 L/kWh", "grey"]
+      ],
+      "note": "Microsoft hat die Effizienz pro Kilowattstunde deutlich verbessert."
+    },
+    {
+      "type": "text",
+      "headline": "Direkt vs. *indirekt* -- ein wichtiger Unterschied.",
+      "body": "2023 wurden geschaetzt 211 Milliarden Gallonen indirekt ueber die Stromerzeugung verbraucht -- gegenueber 17,4 Milliarden Gallonen direkter Kuehlung. Kein großer Anbieter zaehlt den indirekten Verbrauch in seinen Berichten mit."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Prognose* für die USA.",
+      "stats": [
+        ["Direkter Verbrauch", "USA, bis 2028", "38-73 Mrd. Gallonen", "ochre"],
+        ["Texas allein", "2025", "rund 25 Mrd. Gallonen", "ink"]
+      ],
+      "note": "Texas-Wert entspricht etwa 0,4% des gesamten Wasserverbrauchs im Bundesstaat."
+    },
+    {
+      "type": "text",
+      "headline": "Was eine einzelne *Anfrage* kostet.",
+      "body": "Eine ChatGPT-Konversation verbraucht laut umfassender Rechnung 10 bis 25 Milliliter Wasser -- reine direkte Kuehlung allein etwa 0,3 Milliliter pro Anfrage."
+    },
+    {
+      "type": "text",
+      "headline": "Deshalb passt das Thema zu *Atomkraft*.",
+      "body": "Neue Reaktoren wie Three Mile Island oder Duane Arnold lösen nicht nur den Strombedarf, sondern haben auch eigene Kühlsysteme -- beide Ressourcenfragen hängen zusammen."
+    }
+  ],
+  "cta_headline": "Ich beobachte, wie sich das *entwickelt*.",
+  "cta_body": "Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur."
+}

@@ -223,5 +223,14 @@
     "excerpt": "Juni-Quartal 2026, veröffentlicht am 20. August 2026.",
     "cover": "assets/posts/marktupdate_alibaba-q2-2026/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_ki-wasserverbrauch",
+    "title": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.",
+    "category": "marktupdate",
+    "date": "2026-08-20",
+    "excerpt": "Die zweite Ressource hinter dem KI-Boom, über die kaum gesprochen wird.",
+    "cover": "assets/posts/marktupdate_ki-wasserverbrauch/slide_1.webp",
+    "url": null
   }
 ]
