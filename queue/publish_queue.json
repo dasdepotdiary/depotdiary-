@@ -112,5 +112,18 @@
     "action": "story",
     "fire_at": "2026-08-20T16:33:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_big-tech-atomkraft",
+    "action": "reel",
+    "caption": "Warum kauft Big Tech ploetzlich Atomkraftwerke?\n\nDer Strombedarf fuer KI-Rechenzentren treibt eine neue Nuklear-Welle:\n\n-> Microsoft reaktiviert Three Mile Island (16 Mrd. USD, 20 Jahre Vertrag)\n-> Meta und Amazon sichern sich eigene Reaktoren, bis zu 6,6 GW\n-> Google steigt mit Duane Arnold ein (25 Jahre PPA)\n-> Branchenweit fast 10 GW zugesagt, ueber ein Dutzend Deals 2026\n\nAlte Reaktoren werden reaktiviert, nicht nur neue gebaut. Keine Bewertung, keine Prognose -- nur die Zahlen hinter dem Trend.\n\n#depotdiary #atomkraft #ki #bigtech #boerse",
+    "fire_at": "2026-08-20T15:10:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_big-tech-atomkraft",
+    "action": "story",
+    "fire_at": "2026-08-20T15:13:00+02:00",
+    "status": "pending"
   }
 ]
