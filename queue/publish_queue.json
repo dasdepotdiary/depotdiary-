@@ -138,39 +138,39 @@
     "action": "carousel",
     "caption": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.\n\nDie zweite Ressource hinter dem KI-Boom:\n\n-> Google: 10,9 Mrd. Gallonen Wasser 2025 (+34%)\n-> Amazon: 2,5 Mrd. Gallonen, Microsoft deutlich effizienter geworden\n-> USA direkt: 38-73 Mrd. Gallonen Prognose bis 2028\n-> Eine ChatGPT-Konversation: 10-25 Milliliter Wasser\n\nHaengt direkt mit dem Atomkraft-Thema von heute zusammen. Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur.\n\n#depotdiary #ki #atomkraft #boerse #nachhaltigkeit",
     "slide_count": 8,
-    "fire_at": "2026-08-20T20:00:00+02:00",
+    "fire_at": "2026-08-21T19:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_ki-wasserverbrauch",
     "action": "story",
-    "fire_at": "2026-08-20T20:03:00+02:00",
+    "fire_at": "2026-08-21T19:03:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_inflation",
     "action": "reel",
     "caption": "Was ist Inflation eigentlich genau?\n\nEin Wort, das jeder kennt -- aber was passiert wirklich:\n\n-> Dein Geld wird ueber Zeit weniger wert -- gemessen an einem Warenkorb\n-> Zentralbanken wie EZB und Fed streben meist rund 2% pro Jahr an\n-> Cash auf dem Konto verliert automatisch an Kaufkraft\n-> Loehne und Preise koennen sich gegenseitig hochschaukeln\n\nKeine Prognose von mir -- nur, warum diese Zahl fuer mein Depot relevant ist.\n\n#depotdiary #inflation #geldwissen #finanzen #erklaerstueck",
-    "fire_at": "2026-08-20T20:10:00+02:00",
+    "fire_at": "2026-08-22T19:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_inflation",
     "action": "story",
-    "fire_at": "2026-08-20T20:13:00+02:00",
+    "fire_at": "2026-08-22T19:03:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_rezession-korrektur-crash",
     "action": "reel",
     "caption": "Rezession, Korrektur, Crash -- wo ist der Unterschied?\n\nDrei Woerter, die staendig durcheinander benutzt werden:\n\n-> Korrektur: Rueckgang von 10%+ vom Hoechststand -- normal, kein Alarmsignal\n-> Crash: sehr schneller, starker Einbruch (z.B. 1987, Maerz 2020)\n-> Baerenmarkt: laenger anhaltender Rueckgang ab -20%\n-> Rezession: zwei aufeinanderfolgende Quartale schrumpfendes BIP -- ein Wirtschafts-, kein Boersenbegriff\n\nKeine Prognose, welches Szenario als naechstes kommt.\n\n#depotdiary #rezession #boerse #finanzen #erklaerstueck",
-    "fire_at": "2026-08-20T20:20:00+02:00",
+    "fire_at": "2026-08-20T20:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "erklaerstueck_rezession-korrektur-crash",
     "action": "story",
-    "fire_at": "2026-08-20T20:23:00+02:00",
+    "fire_at": "2026-08-20T20:03:00+02:00",
     "status": "pending"
   }
 ]
