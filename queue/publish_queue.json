@@ -138,13 +138,13 @@
     "action": "carousel",
     "caption": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.\n\nDie zweite Ressource hinter dem KI-Boom:\n\n-> Google: 10,9 Mrd. Gallonen Wasser 2025 (+34%)\n-> Amazon: 2,5 Mrd. Gallonen, Microsoft deutlich effizienter geworden\n-> USA direkt: 38-73 Mrd. Gallonen Prognose bis 2028\n-> Eine ChatGPT-Konversation: 10-25 Milliliter Wasser\n\nHaengt direkt mit dem Atomkraft-Thema von heute zusammen. Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur.\n\n#depotdiary #ki #atomkraft #boerse #nachhaltigkeit",
     "slide_count": 8,
-    "fire_at": "2026-08-21T19:00:00+02:00",
+    "fire_at": "2026-08-21T12:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_ki-wasserverbrauch",
     "action": "story",
-    "fire_at": "2026-08-21T19:03:00+02:00",
+    "fire_at": "2026-08-21T12:03:00+02:00",
     "status": "pending"
   },
   {
@@ -178,19 +178,6 @@
     "published_at": "2026-08-20T19:46:37.714644+00:00",
     "media_id": "18123109816871958",
     "note": "DUPLIKAT versehentlich auch um 20:51:44 UTC erneut veroeffentlicht, media_id 18011770964958239 -- Cloud-Cron hatte schon gepostet, lokaler manueller Lauf hat es nicht erkannt (git pull fehlte davor)"
-  },
-  {
-    "post_name": "erklaerstueck_fed-zinssenkung",
-    "action": "reel",
-    "caption": "Was passiert, wenn die Fed die Zinsen senkt?\n\nDirekte Fortsetzung von 'Was die Fed eigentlich macht':\n\n-> Kredite werden guenstiger, Sparen wird weniger attraktiv\n-> Unternehmen koennen sich guenstiger finanzieren\n-> Aktien reagieren historisch oft positiv -- kein Automatismus\n-> Der Dollar tendiert oft zur Abschwaechung\n\nKeine Prognose, wann oder ob das passiert -- nur der Mechanismus dahinter.\n\n#depotdiary #fed #zinsen #boerse #finanzen",
-    "fire_at": "2026-08-21T12:00:00+02:00",
-    "status": "pending"
-  },
-  {
-    "post_name": "erklaerstueck_fed-zinssenkung",
-    "action": "story",
-    "fire_at": "2026-08-21T12:03:00+02:00",
-    "status": "pending"
   },
   {
     "post_name": "erklaerstueck_volatilitaet",
