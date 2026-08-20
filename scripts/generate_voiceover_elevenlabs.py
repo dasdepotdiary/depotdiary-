@@ -20,7 +20,7 @@ ROOT = Path(__file__).parent.parent
 load_dotenv(ROOT / ".env")
 
 API_KEY = os.environ.get("ELEVENLABS_API_KEY")
-DEFAULT_VOICE_ID = "21m00Tcm4TlvDq8ikWAM"  # "Rachel", ElevenLabs Premade-Stimme, mehrsprachig
+DEFAULT_VOICE_ID = "EXAVITQu4vr4xnSDxMaL"  # "Sarah", Premade-Stimme (Rachel ist auf Free-Tier als Library-Voice gesperrt)
 
 
 def list_voices():
