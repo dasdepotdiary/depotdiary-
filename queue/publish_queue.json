@@ -139,13 +139,15 @@
     "caption": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.\n\nDie zweite Ressource hinter dem KI-Boom:\n\n-> Google: 10,9 Mrd. Gallonen Wasser 2025 (+34%)\n-> Amazon: 2,5 Mrd. Gallonen, Microsoft deutlich effizienter geworden\n-> USA direkt: 38-73 Mrd. Gallonen Prognose bis 2028\n-> Eine ChatGPT-Konversation: 10-25 Milliliter Wasser\n\nHaengt direkt mit dem Atomkraft-Thema von heute zusammen. Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur.\n\n#depotdiary #ki #atomkraft #boerse #nachhaltigkeit",
     "slide_count": 8,
     "fire_at": "2026-08-21T12:00:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "marktupdate_ki-wasserverbrauch",
     "action": "story",
     "fire_at": "2026-08-21T12:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "Story-Publish nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Medien-Download fehlgeschlagen. Die Medien-URI entspricht nicht unseren Anforderungen.\",\"error_user_msg\":\"Die Mediendatei konnte nicht von dieser URI abgerufen werden: https:\\/\\/dasdepotdiary.github.io\\/depotdiary-\\/assets\\/posts_9x16\\/marktupdate_ki-wasserverbrauch\\/slide_1.png?v=1787310299.Weitere Informationen findest du im Abschnitt \\u201eEinschr\\u00e4nkungen\\u201c in unserer Entwicklerdokumentation: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"APbvSDsFBosVLhI9y0-3RRG\"}}"
   },
   {
     "post_name": "erklaerstueck_inflation",
