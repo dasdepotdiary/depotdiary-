@@ -139,8 +139,10 @@
     "caption": "KI-Rechenzentren brauchen nicht nur Strom -- auch Wasser.\n\nDie zweite Ressource hinter dem KI-Boom:\n\n-> Google: 10,9 Mrd. Gallonen Wasser 2025 (+34%)\n-> Amazon: 2,5 Mrd. Gallonen, Microsoft deutlich effizienter geworden\n-> USA direkt: 38-73 Mrd. Gallonen Prognose bis 2028\n-> Eine ChatGPT-Konversation: 10-25 Milliliter Wasser\n\nHaengt direkt mit dem Atomkraft-Thema von heute zusammen. Keine Bewertung, keine Prognose -- nur die Zahlen hinter der Infrastruktur.\n\n#depotdiary #ki #atomkraft #boerse #nachhaltigkeit",
     "slide_count": 8,
     "fire_at": "2026-08-21T12:00:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "published_at": "2026-08-21T21:20:00+00:00",
+    "media_id": "18616619968055847",
+    "note": "manueller Retry noetig (erste Automatik-Veroeffentlichung schlug mit 400 fehl, Retry direkt danach erfolgreich -- vermutlich Instagram brauchte kurz laenger zum Verarbeiten der 8 Carousel-Bilder). Fehler beim Retry: falsche Platzhalter-Caption 'test' zunaechst live, muss vom Nutzer manuell in der App korrigiert werden (Caption-Edits gehen nicht per API)."
   },
   {
     "post_name": "marktupdate_ki-wasserverbrauch",
