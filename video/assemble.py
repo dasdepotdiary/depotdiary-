@@ -185,9 +185,17 @@ def main():
     parser.add_argument("--ambient", action="store_true", help="Sanfter bewegter Lichtschein-Hintergrund (kostenlos, kein KI-Video)")
     parser.add_argument("--pexels-clips", help="Kommagetrennte Liste echter Videoclips (z.B. von Pexels), werden ueber das Video verteilt eingestreut")
     parser.add_argument("--clip-seconds", type=float, default=2.5, help="Laenge jedes eingestreuten Clips in Sekunden (Default 2.5)")
-    parser.add_argument("--no-captions", action="store_true", help="Keine eingebrannten Untertitel (Default: an)")
-    parser.add_argument("--pure-footage", action="store_true", help="Keine Slide-Karten im Video -- nur echte Videoclips, Inhalt komplett ueber Sprache+Untertitel (Slides werden trotzdem fuer Carousel/Story gebraucht)")
+    parser.add_argument("--no-captions", action="store_true", help="Keine eingebrannten Untertitel")
+    parser.add_argument("--captions", action="store_true", help="Eingebrannte Untertitel erzwingen (bei --pure-footage sonst aus, App-eigene Untertitel werden stattdessen genutzt)")
+    parser.add_argument("--pure-footage", action="store_true", help="Keine Slide-Karten im Video -- nur echte Videoclips (Slides werden trotzdem fuer Carousel/Story gebraucht)")
     args = parser.parse_args()
+
+    # Nutzer-Feedback: bei --pure-footage wiederholen sich die wenigen echten
+    # Clips zu oft und eingebrannte Untertitel passen dann nicht mehr gut dazu
+    # -- Default hier ist jetzt AUS, App-eigene Untertitel uebernehmen das.
+    # Beim alten Karten-Modus bleiben Captions weiter standardmaessig an.
+    if args.pure_footage and not args.captions:
+        args.no_captions = True
 
     slide_dir = ROOT / "output" / args.post_name / "tiktok_9x16"
     slides = sorted(slide_dir.glob("slide_*.png"))
