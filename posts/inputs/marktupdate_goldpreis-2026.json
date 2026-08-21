@@ -1,0 +1,44 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Gold nahe *Rekordhoch* -- was steckt dahinter?",
+  "hook_sub": "4.587 USD pro Unze, +12% allein im letzten Monat.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Der *Preis* aktuell.",
+      "stats": [
+        ["Goldpreis", "21. August 2026", "4.587 USD/Unze", "green"],
+        ["Veraenderung", "letzte 30 Tage", "+11,35%", "ochre"],
+        ["52-Wochen-Hoch", "Januar 2026", "5.594 USD/Unze", "grey"]
+      ],
+      "note": "Zum Vergleich: das 52-Wochen-Tief lag im Juni bei 3.322 USD."
+    },
+    {
+      "type": "text",
+      "headline": "Grund 1: schwache *US-Arbeitsmarktdaten*.",
+      "body": "Der enttaeuschende US-Arbeitsmarktbericht Anfang August loeste eine deutliche Rally aus -- schwache Daten erhoehen die Erwartung, dass die Fed die Zinsen senkt."
+    },
+    {
+      "type": "text",
+      "headline": "Grund 2: *Geopolitik* am Golf.",
+      "body": "Die 60-Tage-Vereinbarung zwischen den USA und dem Iran lief am 17. August ohne Anschlussabkommen aus -- zuvor gab es Angriffe auf Schiffe in der Straße von Hormus."
+    },
+    {
+      "type": "text",
+      "headline": "Grund 3: ein *schwacher Dollar*.",
+      "body": "Solange der Dollar unter Druck bleibt und die langfristigen US-Renditen nicht stark steigen, bekommt Gold von dieser Seite Rueckenwind."
+    },
+    {
+      "type": "text",
+      "headline": "Grund 4: *saisonale* Nachfrage.",
+      "body": "Niedrigere US-Anleiherenditen im zweiten Halbjahr und steigende physische Nachfrage in Asien zaehlen laut World Gold Council zu den saisonalen Treibern."
+    },
+    {
+      "type": "text",
+      "headline": "Warum das fuer mich *interessant* ist.",
+      "body": "Gold reagiert oft auf genau die Themen, die ich hier sonst einzeln behandle -- Fed-Zinsentscheidungen, Dollar-Staerke, geopolitische Risiken wie am Golf. Ein guter Gradmesser fuer mehrere Themen gleichzeitig."
+    }
+  ],
+  "cta_headline": "Ich beobachte, wie sich das *entwickelt*.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen und Zusammenhaenge dahinter."
+}

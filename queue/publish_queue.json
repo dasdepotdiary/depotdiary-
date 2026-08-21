@@ -218,5 +218,19 @@
     "status": "done",
     "published_at": "2026-08-21T14:10:12.834691+00:00",
     "media_id": "18008072429762569"
+  },
+  {
+    "post_name": "marktupdate_goldpreis-2026",
+    "action": "carousel",
+    "caption": "Gold nahe Rekordhoch -- was steckt dahinter?\n\n4.587 USD pro Unze, +12% allein im letzten Monat:\n\n-> Schwache US-Arbeitsmarktdaten erhoehen Zinssenkungs-Erwartungen\n-> USA-Iran-Vereinbarung am 17.8. ohne Anschluss ausgelaufen, Spannungen am Golf\n-> Ein schwacher Dollar gibt Gold Rueckenwind\n-> Saisonal steigende physische Nachfrage in Asien\n\nKeine Bewertung, keine Kaufempfehlung -- nur die Zahlen und Zusammenhaenge dahinter.\n\n#depotdiary #gold #boerse #finanzen #marktupdate",
+    "slide_count": 8,
+    "fire_at": "2026-08-22T12:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_goldpreis-2026",
+    "action": "story",
+    "fire_at": "2026-08-22T12:03:00+02:00",
+    "status": "pending"
   }
 ]
