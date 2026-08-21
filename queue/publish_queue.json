@@ -232,5 +232,22 @@
     "action": "story",
     "fire_at": "2026-08-22T12:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_fed-zinssenkung",
+    "action": "reel",
+    "fire_at": "2026-08-22T00:00:00+02:00",
+    "status": "done",
+    "published_at": "2026-08-21T22:56:00+00:00",
+    "media_id": "18006320084970648",
+    "note": "manuell veroeffentlicht (aus Auto-Queue genommen, da Render-Zeit unsicher; erster Render hatte einen ungeeigneten Cartoon-Grafik-Clip statt echtem Footage, vor Publish korrigiert)"
+  },
+  {
+    "post_name": "erklaerstueck_fed-zinssenkung",
+    "action": "story",
+    "fire_at": "2026-08-22T00:03:00+02:00",
+    "status": "done",
+    "published_at": "2026-08-21T22:56:10+00:00",
+    "media_id": "18618399592007306"
   }
 ]
