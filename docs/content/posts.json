@@ -277,5 +277,14 @@
     "excerpt": "Ein Blick auf das wichtigste Krypto-Gesetzesvorhaben der USA gerade.",
     "cover": "assets/posts/marktupdate_clarity-act/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_sparplan-vs-einmalanlage",
+    "title": "Sparplan oder Einmalanlage -- was ist eigentlich besser?",
+    "category": "erklaerstueck",
+    "date": "2026-08-22",
+    "excerpt": "Eine der haeufigsten Fragen, die mir gestellt werden.",
+    "cover": "assets/posts/erklaerstueck_sparplan-vs-einmalanlage/slide_1.webp",
+    "url": null
   }
 ]

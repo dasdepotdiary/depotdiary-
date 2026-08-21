@@ -1,0 +1,29 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Sparplan oder *Einmalanlage* -- was ist eigentlich besser?",
+  "hook_sub": "Eine der haeufigsten Fragen, die mir gestellt werden.",
+  "sections": [
+    {
+      "headline": "Der *Sparplan* investiert regelmaessig.",
+      "body": "Fester Betrag, feste Intervalle -- z.B. monatlich. Der Kaufpreis wird so ueber viele Zeitpunkte gemittelt (Durchschnittskosteneffekt)."
+    },
+    {
+      "headline": "Die *Einmalanlage* investiert sofort komplett.",
+      "body": "Der gesamte Betrag geht direkt in den Markt -- historisch schlaegt das den Sparplan meistens, weil Maerkte im Schnitt eher steigen."
+    },
+    {
+      "headline": "Der Sparplan gewinnt bei *fallenden* Maerkten.",
+      "body": "Faellt der Markt nach dem Einstieg, kauft der Sparplan spaeter guenstiger nach -- die Einmalanlage sitzt komplett im Verlust."
+    },
+    {
+      "headline": "Fuer mich persoenlich zaehlt vor allem *Psychologie*.",
+      "body": "Ein Sparplan ist einfacher durchzuhalten, wenn man nicht ploetzlich eine grosse Summe uebrig hat oder Angst vor dem 'falschen' Einstiegszeitpunkt."
+    },
+    {
+      "headline": "Beides *kombinieren* ist auch moeglich.",
+      "body": "Viele nutzen einen laufenden Sparplan und investieren zusaetzliche groessere Summen (z.B. Bonus, Erbschaft) als Einmalanlage."
+    }
+  ],
+  "cta_headline": "Keine *Empfehlung*, nur die Mechanik.",
+  "cta_body": "Was zu dir passt, haengt von deiner Situation und deiner Risikobereitschaft ab."
+}
