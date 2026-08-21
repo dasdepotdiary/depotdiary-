@@ -185,13 +185,17 @@
     "caption": "Was bedeutet Volatilitaet eigentlich?\n\nEin Wort, das staendig faellt, aber selten erklaert wird:\n\n-> Misst, wie stark ein Kurs schwankt -- nicht zwingend eine Richtung\n-> Kein Werturteil, sondern eine Kennzahl\n-> Fuer mich persoenlich bedeutet sie vor allem Geduld\n\nKeine Bewertung, nur die Definition -- wie du mit Schwankungen umgehst, ist deine Entscheidung.\n\n#depotdiary #volatilitaet #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-08-21T09:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-21T07:59:25.513680+00:00",
+    "media_id": "18014267696873658"
   },
   {
     "post_name": "erklaerstueck_volatilitaet",
     "action": "story",
     "fire_at": "2026-08-21T09:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-21T07:59:31.523779+00:00",
+    "media_id": "17988899360868160"
   },
   {
     "post_name": "erklaerstueck_diversifikation",
