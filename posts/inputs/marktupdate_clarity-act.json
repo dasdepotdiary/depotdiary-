@@ -1,0 +1,44 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Der *CLARITY Act* -- warum bewegt ein US-Gesetz den Bitcoin-Kurs?",
+  "hook_sub": "Ein Blick auf das wichtigste Krypto-Gesetzesvorhaben der USA gerade.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Worum es *grundsaetzlich* geht.",
+      "body": "Der Digital Asset Market Clarity Act soll erstmals klar regeln, welche US-Behoerde fuer welche Kryptowaehrung zustaendig ist -- SEC oder CFTC."
+    },
+    {
+      "type": "text",
+      "headline": "Die *CFTC* bekommt digitale Rohstoffe.",
+      "body": "Fuer 'digital commodities' -- Assets wie Bitcoin, deren Wert direkt aus der Nutzung einer Blockchain entsteht -- soll die CFTC die alleinige Aufsicht bekommen, inklusive Spot-Maerkten."
+    },
+    {
+      "type": "text",
+      "headline": "Die *SEC* bleibt fuer Wertpapiere zustaendig.",
+      "body": "Digitale Assets, die als Wertpapier gelten, bleiben bei der SEC wie bisher. Stablecoins bekommen eine gemeinsame Aufsicht von SEC und CFTC."
+    },
+    {
+      "type": "stats",
+      "headline": "Der *Zeitplan* bisher.",
+      "stats": [
+        ["Repraesentantenhaus", "Juli 2025", "294-134 angenommen", "green"],
+        ["Senats-Bankenausschuss", "14. Mai 2026", "15-9 angenommen", "green_mid"],
+        ["Vollabstimmung Senat", "verschoben auf", "15. September 2026", "ochre"]
+      ],
+      "note": "Die urspruengliche Deadline vor der Sommerpause (10. August) wurde verpasst."
+    },
+    {
+      "type": "text",
+      "headline": "Warum es sich *verzoegert*.",
+      "body": "Streitpunkte im Senat: Regulierung von DeFi, Aufsicht ueber Stablecoins, Meldepflichten gegen Geldwaesche und die genaue Abgrenzung zwischen den Behoerden."
+    },
+    {
+      "type": "text",
+      "headline": "Warum das fuer *Maerkte* relevant ist.",
+      "body": "Klare Zustaendigkeiten koennten fuer institutionelle Anleger den Einstieg erleichtern -- einige Analysten nennen deutlich hoehere Bitcoin-Kursziele bei Verabschiedung. Das ist eine Moeglichkeit, kein Versprechen."
+    }
+  ],
+  "cta_headline": "Ich beobachte den *Zeitplan* weiter.",
+  "cta_body": "Keine Prognose, ob oder wann das Gesetz kommt -- nur, was gerade im Verfahren passiert."
+}

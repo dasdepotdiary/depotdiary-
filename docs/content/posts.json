@@ -268,5 +268,14 @@
     "excerpt": "4.587 USD pro Unze, +12% allein im letzten Monat.",
     "cover": "assets/posts/marktupdate_goldpreis-2026/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_clarity-act",
+    "title": "Der CLARITY Act -- warum bewegt ein US-Gesetz den Bitcoin-Kurs?",
+    "category": "marktupdate",
+    "date": "2026-08-22",
+    "excerpt": "Ein Blick auf das wichtigste Krypto-Gesetzesvorhaben der USA gerade.",
+    "cover": "assets/posts/marktupdate_clarity-act/slide_1.webp",
+    "url": null
   }
 ]
