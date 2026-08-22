@@ -268,7 +268,9 @@
     "post_name": "marktupdate_clarity-act",
     "action": "story",
     "fire_at": "2026-08-22T16:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-22T14:56:59.198224+00:00",
+    "media_id": "18157236583484397"
   },
   {
     "post_name": "erklaerstueck_sparplan-vs-einmalanlage",
