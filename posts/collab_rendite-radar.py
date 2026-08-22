@@ -43,7 +43,7 @@ def draw_radar_rings(img, cx, cy, max_r, n=5):
     img.paste(Image.alpha_composite(img.convert("RGBA"), overlay).convert("RGB"), (0, 0))
 
 
-def draw_partner_half(img, ticker, headline, body, stat_value):
+def draw_partner_half(img, ticker, name, headline, body, stat_value):
     draw = ImageDraw.Draw(img)
     draw.rectangle([0, 0, W, MID], fill=RR_NAVY_DARK)
     draw_radar_rings(img, W // 2, 90, 520, n=5)
@@ -55,6 +55,7 @@ def draw_partner_half(img, ticker, headline, body, stat_value):
 
     label_font = font(B.SANS_BOLD, 20)
     ticker_font = font(B.SANS_BOLD, 40)
+    name_font = font(B.SANS_BOLD, 18)
     headline_font = font(B.SANS_BOLD, 28)
     body_font = font(B.SANS_BOLD, 20)
     stat_font = font(B.SANS_BOLD, 22)
@@ -65,6 +66,8 @@ def draw_partner_half(img, ticker, headline, body, stat_value):
     draw.text((x, y), "@RENDITE.RADAR.OFFICIAL", font=label_font, fill=RR_GREY)
     y += 34
     draw.text((x, y), ticker, font=ticker_font, fill=RR_WHITE)
+    tw = draw.textlength(ticker, font=ticker_font)
+    draw.text((x + tw + 14, y + 18), name, font=name_font, fill=RR_GREY)
     y += 52
     draw.text((x, y), headline, font=headline_font, fill=RR_WHITE)
     y += 40
@@ -82,12 +85,13 @@ def draw_partner_half(img, ticker, headline, body, stat_value):
     draw.text((x, card_bottom + 14), "RENDITE RADAR", font=wm_font, fill=RR_WHITE)
 
 
-def draw_depotdiary_half(draw, ticker, headline, body, stat_value):
+def draw_depotdiary_half(draw, ticker, name, headline, body, stat_value):
     pad_x = B.MARGIN_LEFT
     max_w_right = W - B.MARGIN_RIGHT
 
     owner_font = font(B.SANS_BOLD, 20)
     ticker_font = font(B.SERIF_BOLD, 44)
+    name_font = font(B.SERIF_REGULAR, 19)
     headline_font = font(B.SERIF_BOLD, 26)
     body_font = font(B.SERIF_REGULAR, 20)
 
@@ -95,6 +99,8 @@ def draw_depotdiary_half(draw, ticker, headline, body, stat_value):
     draw.text((pad_x, y), "@DASDEPOTDIARY", font=owner_font, fill=B.GREEN)
     y += 34
     draw.text((pad_x, y), ticker, font=ticker_font, fill=B.INK)
+    tw = draw.textlength(ticker, font=ticker_font)
+    draw.text((pad_x + tw + 14, y + 16), name, font=name_font, fill=B.SUBTEXT)
     y += 58
     draw.text((pad_x, y), headline, font=headline_font, fill=B.INK)
     y += 38
@@ -114,18 +120,22 @@ def draw_depotdiary_half(draw, ticker, headline, body, stat_value):
 
 def build_slide(n_total, idx, his, mine):
     img = Image.new("RGB", (W, H), B.BG)
-    draw_partner_half(img, his["ticker"], his["headline"], his["body"], his["stat_value"])
+    draw_partner_half(img, his["ticker"], his["name"], his["headline"], his["body"], his["stat_value"])
     draw = ImageDraw.Draw(img)
 
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=B.INK)
     draw.line([(0, MID), (W, MID)], fill=B.DIVIDER, width=3)
 
-    draw_depotdiary_half(draw, mine["ticker"], mine["headline"], mine["body"], mine["stat_value"])
+    draw_depotdiary_half(draw, mine["ticker"], mine["name"], mine["headline"], mine["body"], mine["stat_value"])
+
+    disclaimer_font = font(B.SERIF_REGULAR, 17)
+    draw.text((B.MARGIN_LEFT, H - 44), "Keine Anlageberatung. Beide Seiten: eigene Meinung, keine Empfehlung.",
+               font=disclaimer_font, fill=B.SUBTEXT)
 
     page_font = font(B.SANS_BOLD, 20)
     page_text = f"{idx:02d} / {n_total:02d}"
     pw = draw.textlength(page_text, font=page_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, H - 44), page_text, font=page_font, fill=B.SUBTEXT)
+    draw.text((W - B.MARGIN_RIGHT - pw, H - 70), page_text, font=page_font, fill=B.SUBTEXT)
 
     return img
 
@@ -137,49 +147,51 @@ def build_intro():
     draw.text((B.MARGIN_LEFT, 90), "CO-POST", font=font(B.SANS_BOLD, 22), fill=RR_GREY)
     draw.text((B.MARGIN_LEFT, 420), "10 Aktien.\n2 Accounts.\n1 Vergleich.",
                font=font(B.SANS_BOLD, 62), fill=RR_WHITE, spacing=18)
-    draw.text((B.MARGIN_LEFT, H - 90), "@RENDITE.RADAR.OFFICIAL  x  @DASDEPOTDIARY",
+    draw.text((B.MARGIN_LEFT, H - 120), "@RENDITE.RADAR.OFFICIAL  x  @DASDEPOTDIARY",
                font=font(B.SANS_BOLD, 22), fill=RR_GREY)
+    draw.text((B.MARGIN_LEFT, H - 80), "Keine Anlageberatung -- eigene Meinung, keine Empfehlung.",
+               font=font(B.SANS_BOLD, 18), fill=RR_GREY)
     return img
 
 
 PAIRS = [
     (
-        {"ticker": "AMZN", "headline": "Erstmals ueber 3 Bio. USD Marktkap.",
+        {"ticker": "AMZN", "name": "Amazon.com Inc.", "headline": "Erstmals ueber 3 Bio. USD Marktkap.",
          "body": ["Nach starken Quartalszahlen im", "August 2026 kurzzeitig durchbrochen."],
          "stat_value": "2,79 Bio. USD"},
-        {"ticker": "AMZN", "headline": "Beide sehen hier Potenzial",
+        {"ticker": "AMZN", "name": "Amazon.com Inc.", "headline": "In beiden Depots vertreten",
          "body": ["AWS waechst schneller als seit 2021,", "Cloud bleibt Wachstumstreiber."],
          "stat_value": "2,79 Bio. USD"},
     ),
     (
-        {"ticker": "ALV", "headline": "Einer der groessten Versicherer weltweit",
+        {"ticker": "ALV", "name": "Allianz SE", "headline": "Einer der groessten Versicherer weltweit",
          "body": ["Dividendenrendite rund 2,9%,", "KGV im Branchenvergleich moderat."],
          "stat_value": "168,5 Mrd. EUR"},
-        {"ticker": "NOW", "headline": "Forward-KGV deutlich unter TTM-KGV",
+        {"ticker": "NOW", "name": "ServiceNow Inc.", "headline": "Forward-KGV deutlich unter TTM-KGV",
          "body": ["Markt erwartet spuerbares", "Gewinnwachstum in den naechsten Jahren."],
          "stat_value": "132,9 Mrd. USD"},
     ),
     (
-        {"ticker": "JPM", "headline": "KGV 28% ueber 10-Jahres-Schnitt",
+        {"ticker": "JPM", "name": "JPMorgan Chase & Co.", "headline": "KGV 28% ueber 10-Jahres-Schnitt",
          "body": ["Groesste US-Bank nach Bilanzsumme,", "getragen von starkem Handelsgeschaeft."],
          "stat_value": "959,5 Mrd. USD"},
-        {"ticker": "V", "headline": "Stabiles Wachstum trotz Bewertungsfragen",
+        {"ticker": "V", "name": "Visa Inc.", "headline": "Stabiles Wachstum trotz Bewertungsfragen",
          "body": ["Zahlungsnetzwerk mit globaler Reichweite,", "KGV rund 31."],
          "stat_value": "684 Mrd. USD"},
     ),
     (
-        {"ticker": "HLAG", "headline": "Prognose fuer 2026 angehoben",
+        {"ticker": "HLAG", "name": "Hapag-Lloyd AG", "headline": "Prognose fuer 2026 angehoben",
          "body": ["Container-Reederei mit stark", "zyklischem Ergebnisverlauf."],
          "stat_value": "~21,7 Mrd. EUR"},
-        {"ticker": "ASML", "headline": "Forward-KGV unter TTM-KGV",
+        {"ticker": "ASML", "name": "ASML Holding N.V.", "headline": "Forward-KGV unter TTM-KGV",
          "body": ["Monopolist bei EUV-Lithografie-", "Anlagen fuer Halbleiterproduktion."],
          "stat_value": "725 Mrd. USD"},
     ),
     (
-        {"ticker": "HAG", "headline": "Deutscher Ruestungs- und Sensorkonzern",
+        {"ticker": "HAG", "name": "Hensoldt AG", "headline": "Deutscher Ruestungs- und Sensorkonzern",
          "body": ["Profitiert von hoeheren", "Verteidigungsausgaben in Europa."],
          "stat_value": "~9,3 Mrd. EUR"},
-        {"ticker": "ZETA", "headline": "Q2-Umsatz ueber Erwartungen",
+        {"ticker": "ZETA", "name": "Zeta Global Holdings", "headline": "Q2-Umsatz ueber Erwartungen",
          "body": ["443 Mio. USD Umsatz, Jahresprognose", "wegen KI-Nachfrage angehoben."],
          "stat_value": "7,2 Mrd. USD"},
     ),
