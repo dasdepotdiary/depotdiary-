@@ -156,13 +156,17 @@
     "action": "reel",
     "caption": "Was ist Inflation eigentlich genau?\n\nEin Wort, das jeder kennt -- aber was passiert wirklich:\n\n-> Dein Geld wird ueber Zeit weniger wert -- gemessen an einem Warenkorb\n-> Zentralbanken wie EZB und Fed streben meist rund 2% pro Jahr an\n-> Cash auf dem Konto verliert automatisch an Kaufkraft\n-> Loehne und Preise koennen sich gegenseitig hochschaukeln\n\nKeine Prognose von mir -- nur, warum diese Zahl fuer mein Depot relevant ist.\n\n#depotdiary #inflation #geldwissen #finanzen #erklaerstueck",
     "fire_at": "2026-08-22T19:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-22T17:45:42.704560+00:00",
+    "media_id": "18112719496965311"
   },
   {
     "post_name": "erklaerstueck_inflation",
     "action": "story",
     "fire_at": "2026-08-22T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-22T17:45:49.300409+00:00",
+    "media_id": "17941404243318229"
   },
   {
     "post_name": "erklaerstueck_rezession-korrektur-crash",
