@@ -225,13 +225,17 @@
     "caption": "Gold nahe Rekordhoch -- was steckt dahinter?\n\n4.587 USD pro Unze, +12% allein im letzten Monat:\n\n-> Schwache US-Arbeitsmarktdaten erhoehen Zinssenkungs-Erwartungen\n-> USA-Iran-Vereinbarung am 17.8. ohne Anschluss ausgelaufen, Spannungen am Golf\n-> Ein schwacher Dollar gibt Gold Rueckenwind\n-> Saisonal steigende physische Nachfrage in Asien\n\nKeine Bewertung, keine Kaufempfehlung -- nur die Zahlen und Zusammenhaenge dahinter.\n\n#depotdiary #gold #boerse #finanzen #marktupdate",
     "slide_count": 8,
     "fire_at": "2026-08-22T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-22T10:07:12.347560+00:00",
+    "media_id": "17971722590932821"
   },
   {
     "post_name": "marktupdate_goldpreis-2026",
     "action": "story",
     "fire_at": "2026-08-22T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-22T10:07:20.772170+00:00",
+    "media_id": "18113472947285565"
   },
   {
     "post_name": "erklaerstueck_fed-zinssenkung",
@@ -276,6 +280,19 @@
     "post_name": "erklaerstueck_sparplan-vs-einmalanlage",
     "action": "story",
     "fire_at": "2026-08-23T12:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_ezb-vs-fed",
+    "action": "reel",
+    "caption": "EZB vs. Fed -- was ist eigentlich der Unterschied?\n\nZwei Zentralbanken, zwei Systeme, zwei Ziele:\n\n-> Fed hat ein Doppel-Mandat: Preisstabilitaet UND Beschaeftigung\n-> EZB hat nur ein Ziel: Preisstabilitaet (rund 2% Inflation)\n-> Fed steuert einen Staat, die EZB zwanzig sehr unterschiedliche Volkswirtschaften\n-> Beide Zinsentscheidungen bewegen global die Maerkte\n\nKeine Prognose, keine Bewertung -- nur die strukturellen Unterschiede.\n\n#depotdiary #ezb #fed #zinsen #boerse",
+    "fire_at": "2026-08-23T19:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_ezb-vs-fed",
+    "action": "story",
+    "fire_at": "2026-08-23T19:03:00+02:00",
     "status": "pending"
   }
 ]

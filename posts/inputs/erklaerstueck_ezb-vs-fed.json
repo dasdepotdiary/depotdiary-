@@ -1,0 +1,33 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "EZB vs. *Fed* -- was ist eigentlich der Unterschied?",
+  "hook_sub": "Zwei Zentralbanken, zwei Systeme, zwei Ziele.",
+  "sections": [
+    {
+      "headline": "Die *Fed* hat ein Doppel-Mandat.",
+      "body": "Preisstabilitaet UND maximale Beschaeftigung -- gesetzlich festgelegt. Sie muss beides gegeneinander abwaegen."
+    },
+    {
+      "headline": "Die *EZB* hat nur ein Ziel.",
+      "body": "Preisstabilitaet, definiert als rund 2% Inflation. Beschaeftigung spielt fuer den Auftrag offiziell keine direkte Rolle."
+    },
+    {
+      "headline": "Die Fed steuert *einen* Staat, die EZB *zwanzig*.",
+      "body": "Die EZB muss eine gemeinsame Geldpolitik fuer sehr unterschiedliche Volkswirtschaften der Eurozone finden -- ein struktureller Unterschied zur Fed."
+    },
+    {
+      "headline": "Beide setzen *Leitzinsen*, anders getaktet.",
+      "body": "Die Fed hat acht Sitzungen pro Jahr, die EZB meist alle sechs Wochen -- beide Zinsentscheidungen bewegen global die Maerkte."
+    },
+    {
+      "headline": "Die Unabhaengigkeit ist *unterschiedlich verankert*.",
+      "body": "Beide gelten als unabhaengig von der Politik -- die EZB ist sogar vertraglich in EU-Recht abgesichert, staerker als es bei der Fed der Fall ist."
+    },
+    {
+      "headline": "Warum das fuer *Anleger* relevant ist.",
+      "body": "Zinsentscheidungen beider Banken wirken auf Wechselkurse, Anleihen und Aktien -- oft auch ueber den eigenen Waehrungsraum hinaus."
+    }
+  ],
+  "cta_headline": "Ich beobachte *beide* Sitzungstermine.",
+  "cta_body": "Keine Prognose, keine Bewertung -- nur die strukturellen Unterschiede."
+}
