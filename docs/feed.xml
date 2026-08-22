@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 21 Aug 2026 23:37:00 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 22 Aug 2026 09:44:55 +0000</lastBuildDate>
     <item>
       <title>Der CLARITY Act -- warum bewegt ein US-Gesetz den Bitcoin-Kurs?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -21,6 +21,14 @@
       <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Eine der haeufigsten Fragen, die mir gestellt werden.</description>
+    </item>
+    <item>
+      <title>EZB vs. Fed -- was ist eigentlich der Unterschied?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_ezb-vs-fed</guid>
+      <pubDate>Sat, 22 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Zwei Zentralbanken, zwei Systeme, zwei Ziele.</description>
     </item>
     <item>
       <title>Gold nahe Rekordhoch -- was steckt dahinter?</title>

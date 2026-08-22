@@ -286,5 +286,14 @@
     "excerpt": "Eine der haeufigsten Fragen, die mir gestellt werden.",
     "cover": "assets/posts/erklaerstueck_sparplan-vs-einmalanlage/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_ezb-vs-fed",
+    "title": "EZB vs. Fed -- was ist eigentlich der Unterschied?",
+    "category": "erklaerstueck",
+    "date": "2026-08-22",
+    "excerpt": "Zwei Zentralbanken, zwei Systeme, zwei Ziele.",
+    "cover": "assets/posts/erklaerstueck_ezb-vs-fed/slide_1.webp",
+    "url": null
   }
 ]
