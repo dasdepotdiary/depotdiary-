@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Nvidia berichtet am *26. August* -- was erwartet der Markt?",
+  "hook_sub": "Die meistbeachteten Quartalszahlen des KI-Booms stehen an.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Die *Analysten-Erwartungen*.",
+      "stats": [
+        ["Erwarteter Umsatz", "Q2 (Fiskaljahr 2027)", "rund 92 Mrd. USD", "green"],
+        ["Erwarteter Gewinn", "je Aktie (EPS)", "rund 2,06 USD", "green_mid"],
+        ["Berichtszeitraum", "Quartal endete", "27. Juli 2026", "grey"]
+      ],
+      "note": "Bericht nach US-Boersenschluss, Analysten-Call ca. 23 Uhr MEZ."
+    },
+    {
+      "type": "text",
+      "headline": "Warum diese Zahlen so *beachtet* werden.",
+      "body": "Nvidia gilt als Gradmesser fuer den gesamten KI-Boom -- schwaechere Zahlen als erwartet koennten breite Kurs-Reaktionen bei anderen KI-Aktien ausloesen, staerkere Zahlen ebenso."
+    },
+    {
+      "type": "text",
+      "headline": "Worauf viele *achten* werden.",
+      "body": "Neben Umsatz und Gewinn: der Ausblick fuer das naechste Quartal, die Nachfrage nach der neuen Blackwell-Chip-Generation, und moegliche Aussagen zu Exportbeschraenkungen nach China."
+    },
+    {
+      "type": "text",
+      "headline": "Schaetzungen sind *keine Garantie*.",
+      "body": "Analysten-Erwartungen wurden in der Vergangenheit von Nvidia oft übertroffen -- das ist aber keine Garantie fuer dieses Quartal."
+    }
+  ],
+  "cta_headline": "Ich schau mir die *echten Zahlen* an, sobald sie da sind.",
+  "cta_body": "Keine Prognose von mir, keine Kaufempfehlung -- nur, worauf ich am 26. August achte."
+}

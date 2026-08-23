@@ -283,16 +283,18 @@
     "slide_count": 7,
     "fire_at": "2026-08-23T12:00:00+02:00",
     "status": "done",
-    "published_at": "2026-08-23T10:56:21.970917+00:00",
-    "media_id": "18130182151566365"
+    "published_at": "2026-08-23T10:54:10.637449+00:00",
+    "media_id": "18171808846444038",
+    "note": "DUPLIKAT: Cloud-Cron und manueller Lauf haben beide innerhalb von 2 Minuten gepostet (Race Condition, kein Pull-Fehler) -- zweite media_id 18130182151566365"
   },
   {
     "post_name": "erklaerstueck_sparplan-vs-einmalanlage",
     "action": "story",
     "fire_at": "2026-08-23T12:03:00+02:00",
     "status": "done",
-    "published_at": "2026-08-23T10:56:31.366787+00:00",
-    "media_id": "18105236621599537"
+    "published_at": "2026-08-23T10:54:18.364898+00:00",
+    "media_id": "17870286552637022",
+    "note": "DUPLIKAT: Cloud-Cron und manueller Lauf haben beide innerhalb von 2 Minuten gepostet (Race Condition, kein Pull-Fehler) -- zweite media_id 18105236621599537"
   },
   {
     "post_name": "erklaerstueck_ezb-vs-fed",
@@ -305,6 +307,20 @@
     "post_name": "erklaerstueck_ezb-vs-fed",
     "action": "story",
     "fire_at": "2026-08-23T19:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_nvidia-q2-vorschau",
+    "action": "carousel",
+    "caption": "Nvidia berichtet am 26. August -- was erwartet der Markt?\n\nDie meistbeachteten Quartalszahlen des KI-Booms stehen an:\n\n-> Erwarteter Umsatz: rund 92 Mrd. USD\n-> Erwarteter Gewinn je Aktie: rund 2,06 USD\n-> Bericht nach US-Boersenschluss, Analysten-Call ca. 23 Uhr MEZ\n-> Im Fokus: Blackwell-Nachfrage, Ausblick, China-Exportfragen\n\nKeine Prognose von mir, keine Kaufempfehlung -- nur, worauf ich am 26. August achte.\n\n#depotdiary #nvidia #ki #quartalszahlen #boerse",
+    "slide_count": 6,
+    "fire_at": "2026-08-23T16:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_nvidia-q2-vorschau",
+    "action": "story",
+    "fire_at": "2026-08-23T16:03:00+02:00",
     "status": "pending"
   }
 ]

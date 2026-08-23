@@ -295,5 +295,14 @@
     "excerpt": "Zwei Zentralbanken, zwei Systeme, zwei Ziele.",
     "cover": "assets/posts/erklaerstueck_ezb-vs-fed/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_nvidia-q2-vorschau",
+    "title": "Nvidia berichtet am 26. August -- was erwartet der Markt?",
+    "category": "marktupdate",
+    "date": "2026-08-23",
+    "excerpt": "Die meistbeachteten Quartalszahlen des KI-Booms stehen an.",
+    "cover": "assets/posts/marktupdate_nvidia-q2-vorschau/slide_1.webp",
+    "url": null
   }
 ]
