@@ -315,12 +315,14 @@
     "caption": "Nvidia berichtet am 26. August -- was erwartet der Markt?\n\nDie meistbeachteten Quartalszahlen des KI-Booms stehen an:\n\n-> Erwarteter Umsatz: rund 92 Mrd. USD\n-> Erwarteter Gewinn je Aktie: rund 2,06 USD\n-> Bericht nach US-Boersenschluss, Analysten-Call ca. 23 Uhr MEZ\n-> Im Fokus: Blackwell-Nachfrage, Ausblick, China-Exportfragen\n\nKeine Prognose von mir, keine Kaufempfehlung -- nur, worauf ich am 26. August achte.\n\n#depotdiary #nvidia #ki #quartalszahlen #boerse",
     "slide_count": 6,
     "fire_at": "2026-08-23T16:00:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "marktupdate_nvidia-q2-vorschau",
     "action": "story",
     "fire_at": "2026-08-23T16:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   }
 ]
