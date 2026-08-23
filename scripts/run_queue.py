@@ -25,6 +25,7 @@ Aufruf (wie in der Action, postet wirklich faellige Eintraege):
 import argparse
 import json
 import os
+import subprocess
 import sys
 import time
 from datetime import datetime, timezone
@@ -151,11 +152,28 @@ def publish_story(token, ig_id, base_url, entry) -> dict:
 DISPATCH = {"carousel": publish_carousel, "reel": publish_reel, "story": publish_story}
 
 
+def sync_from_remote():
+    """Holt den aktuellen Stand von origin, BEVOR die Queue gelesen wird --
+    verhindert, dass ein lokaler manueller Lauf einen Eintrag doppelt
+    veroeffentlicht, den die GitHub-Actions-Cron zwischen 'pending pruefen'
+    und 'wirklich posten' bereits erledigt hat (echte Race Condition,
+    schon zweimal passiert). In CI ist der Checkout eh schon frisch,
+    dort ist das ein no-op."""
+    try:
+        subprocess.run(
+            ["git", "pull", "--rebase", "--autostash", "origin", "main"],
+            cwd=ROOT, capture_output=True, text=True, timeout=30, check=False,
+        )
+    except Exception:
+        pass  # kein Git verfuegbar o.ae. -- mit dem lokalen Stand weitermachen
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Zeigt faellige Eintraege, postet nichts wirklich")
     args = parser.parse_args()
 
+    sync_from_remote()
     token, ig_id, base_url = get_config()
     queue = load_queue()
     due = [e for e in queue if is_due(e)]
