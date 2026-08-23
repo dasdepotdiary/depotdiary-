@@ -301,13 +301,17 @@
     "action": "reel",
     "caption": "EZB vs. Fed -- was ist eigentlich der Unterschied?\n\nZwei Zentralbanken, zwei Systeme, zwei Ziele:\n\n-> Fed hat ein Doppel-Mandat: Preisstabilitaet UND Beschaeftigung\n-> EZB hat nur ein Ziel: Preisstabilitaet (rund 2% Inflation)\n-> Fed steuert einen Staat, die EZB zwanzig sehr unterschiedliche Volkswirtschaften\n-> Beide Zinsentscheidungen bewegen global die Maerkte\n\nKeine Prognose, keine Bewertung -- nur die strukturellen Unterschiede.\n\n#depotdiary #ezb #fed #zinsen #boerse",
     "fire_at": "2026-08-23T19:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-23T17:44:18.132326+00:00",
+    "media_id": "18093174977535018"
   },
   {
     "post_name": "erklaerstueck_ezb-vs-fed",
     "action": "story",
     "fire_at": "2026-08-23T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-23T17:44:24.426474+00:00",
+    "media_id": "17900499639555803"
   },
   {
     "post_name": "marktupdate_nvidia-q2-vorschau",
