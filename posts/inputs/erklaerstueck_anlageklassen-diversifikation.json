@@ -1,0 +1,25 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Diversifikation heisst nicht nur *mehrere Aktien*.",
+  "hook_sub": "Es geht um ganze Anlageklassen, nicht nur einzelne Positionen.",
+  "sections": [
+    {
+      "headline": "Aktien sind nur *eine* von mehreren Anlageklassen.",
+      "body": "Daneben gibt es Anleihen, Immobilien (z.B. ueber REITs), Rohstoffe wie Gold, und Cash -- jede reagiert anders auf dieselben Ereignisse."
+    },
+    {
+      "headline": "Anleihen verhalten sich oft *gegensaetzlich* zu Aktien.",
+      "body": "In Krisen suchen Anleger haeufig Sicherheit in Staatsanleihen -- das kann Aktienverluste im Depot teilweise ausgleichen."
+    },
+    {
+      "headline": "Gold gilt oft als *Absicherung*.",
+      "body": "Bei Inflation oder geopolitischer Unsicherheit steigt die Nachfrage nach Gold oft, unabhaengig davon, wie sich Aktien entwickeln."
+    },
+    {
+      "headline": "Cash ist auch eine *bewusste* Entscheidung.",
+      "body": "Liquiditaet zu halten bedeutet, kurzfristig flexibel zu bleiben -- auf Kosten von potenzieller Rendite."
+    }
+  ],
+  "cta_headline": "Keine *Empfehlung*, nur die Bausteine.",
+  "cta_body": "Wie du deine Anlageklassen mischst, ist deine eigene Entscheidung."
+}

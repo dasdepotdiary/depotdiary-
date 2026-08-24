@@ -1,0 +1,34 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Bitcoin im August: *volatil*, aber schwächer als vor einem Jahr.",
+  "hook_sub": "Ein Blick auf die Zahlen hinter der aktuellen Entwicklung.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Der *Kurs* aktuell.",
+      "stats": [
+        ["Bitcoin-Kurs", "24. August 2026", "78.976 USD", "green"],
+        ["Anfang August", "6. August 2026", "64.510 USD", "grey"],
+        ["Jahresvergleich", "zum Vorjahr", "rund -34.477 USD", "ochre"]
+      ],
+      "note": "Kurzfristig deutlich erholt, langfristig aber schwaecher als vor 12 Monaten."
+    },
+    {
+      "type": "text",
+      "headline": "*ETF-Zuflüsse* bleiben ein Faktor.",
+      "body": "An einzelnen Tagen flossen zuletzt ueber 200 Mio. USD in Bitcoin-ETFs -- trotzdem blieb ein klarer Ausbruch bislang aus."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Faktoren fuer die *naechste Bewegung*.",
+      "body": "Analysten nennen sinkende Mittelzuflüsse, eine Kluft zwischen kurzfristigen und langfristigen Haltern, sowie ein technisch eher baerisches Chartbild."
+    },
+    {
+      "type": "text",
+      "headline": "Verbindung zum *CLARITY Act*.",
+      "body": "Klarere regulatorische Zustaendigkeiten (siehe mein Post dazu) koennten laengerfristig fuer mehr institutionelle Nachfrage sorgen -- unabhaengig vom kurzfristigen Kursverlauf."
+    }
+  ],
+  "cta_headline": "Ich beobachte die *Entwicklung* weiter.",
+  "cta_body": "Keine Prognose, keine Kaufempfehlung -- nur die Zahlen dahinter."
+}

@@ -1,0 +1,29 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was ist eigentlich ein *REIT*?",
+  "hook_sub": "Immobilien investieren, ohne selbst eine zu kaufen.",
+  "sections": [
+    {
+      "headline": "Ein REIT ist eine *börsennotierte* Immobiliengesellschaft.",
+      "body": "Real Estate Investment Trust -- das Unternehmen besitzt und verwaltet Immobilien, die Aktie kannst du wie jede andere kaufen."
+    },
+    {
+      "headline": "REITs müssen den *Grossteil* ihrer Gewinne ausschütten.",
+      "body": "Meist gesetzlich vorgeschrieben (oft 90%+) -- dadurch sind REITs oft fuer hohe Dividendenrenditen bekannt."
+    },
+    {
+      "headline": "Du wirst *Miteigentümer*, kein Vermieter.",
+      "body": "Kein eigenes Objekt, keine Mieterverwaltung, keine grosse Einzelinvestition -- dafuer auch keine direkte Kontrolle ueber einzelne Immobilien."
+    },
+    {
+      "headline": "Es gibt sehr *unterschiedliche* REIT-Arten.",
+      "body": "Wohnimmobilien, Buerogebaeude, Rechenzentren, Logistikimmobilien, Einkaufszentren -- die Risiken unterscheiden sich je nach Sektor stark."
+    },
+    {
+      "headline": "REITs reagieren oft auf *Zinsen*.",
+      "body": "Steigende Zinsen erhoehen die Finanzierungskosten und machen Anleihen attraktiver -- REIT-Kurse reagieren darauf haeufig empfindlich."
+    }
+  ],
+  "cta_headline": "Keine *Empfehlung*, nur die Mechanik.",
+  "cta_body": "Ob REITs zu deiner Strategie passen, ist deine eigene Entscheidung."
+}

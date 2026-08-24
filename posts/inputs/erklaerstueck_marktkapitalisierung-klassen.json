@@ -1,0 +1,29 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Large Cap, Mid Cap, Small Cap -- was heisst das?",
+  "hook_sub": "Unternehmensgroesse nach Marktkapitalisierung eingeteilt.",
+  "sections": [
+    {
+      "headline": "Die *Marktkapitalisierung* ist einfach zu berechnen.",
+      "body": "Aktienkurs mal Anzahl aller ausstehenden Aktien -- ergibt den gesamten Marktwert eines Unternehmens an der Boerse."
+    },
+    {
+      "headline": "*Large Caps* sind die grossen, etablierten Konzerne.",
+      "body": "Meist ueber 10 Mrd. USD Marktkap. -- oft stabiler, aber mit begrenzterem Wachstumspotenzial als kleinere Unternehmen."
+    },
+    {
+      "headline": "*Mid Caps* liegen dazwischen.",
+      "body": "Grob 2 bis 10 Mrd. USD -- oft in einer Wachstumsphase, bei der noch nicht klar ist, ob sie zum Large Cap werden."
+    },
+    {
+      "headline": "*Small Caps* sind kleiner und riskanter.",
+      "body": "Unter etwa 2 Mrd. USD -- potenziell hoehere Wachstumschancen, aber auch hoehere Schwankungen und weniger Liquiditaet."
+    },
+    {
+      "headline": "Die Grenzen sind *nicht einheitlich* definiert.",
+      "body": "Verschiedene Indexanbieter und Broker ziehen die Grenzen leicht unterschiedlich -- es gibt keine offizielle, feste Definition."
+    }
+  ],
+  "cta_headline": "Keine *Empfehlung*, nur die Einteilung.",
+  "cta_body": "Groesse allein sagt nichts ueber Qualitaet eines Unternehmens aus."
+}

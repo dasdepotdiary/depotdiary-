@@ -374,5 +374,74 @@
     "fire_at": "2026-08-24T16:30:00+02:00",
     "status": "done",
     "note": "manuell veroeffentlicht, media_id 17953992078229193"
+  },
+  {
+    "post_name": "erklaerstueck_reit",
+    "action": "carousel",
+    "caption": "Was ist eigentlich ein REIT?\n\nImmobilien investieren, ohne selbst eine zu kaufen:\n\n-> Boersennotierte Immobiliengesellschaft, Aktie wie jede andere\n-> Muss Grossteil der Gewinne ausschuetten -- oft hohe Dividendenrenditen\n-> Du wirst Miteigentuemer, kein Vermieter\n-> Reagiert oft empfindlich auf Zinsaenderungen\n\nKeine Empfehlung, nur die Mechanik -- ob REITs zu deiner Strategie passen, ist deine Entscheidung.\n\n#depotdiary #reit #immobilien #boerse #finanzen",
+    "slide_count": 7,
+    "fire_at": "2026-08-25T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_reit",
+    "action": "story",
+    "fire_at": "2026-08-25T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_anlageklassen-diversifikation",
+    "action": "reel",
+    "caption": "Diversifikation heisst nicht nur mehrere Aktien.\n\nEs geht um ganze Anlageklassen:\n\n-> Aktien sind nur eine von mehreren -- daneben Anleihen, Immobilien, Rohstoffe, Cash\n-> Anleihen verhalten sich oft gegensaetzlich zu Aktien\n-> Gold gilt oft als Absicherung bei Inflation oder Unsicherheit\n-> Cash zu halten ist auch eine bewusste Entscheidung\n\nKeine Empfehlung, nur die Bausteine -- wie du mischst, ist deine Entscheidung.\n\n#depotdiary #diversifikation #boerse #finanzen #erklaerstueck",
+    "fire_at": "2026-08-25T19:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_anlageklassen-diversifikation",
+    "action": "story",
+    "fire_at": "2026-08-25T19:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_value-vs-growth",
+    "action": "carousel",
+    "caption": "Value oder Growth -- was ist der Unterschied?\n\nZwei grundlegend verschiedene Denkweisen beim Investieren:\n\n-> Value: unterbewertete Aktien, niedriges KGV, stabile Gewinne\n-> Growth: zahlt fuer zukuenftiges Wachstum, aktuelle Gewinne zweitrangig\n-> Beide Stile hatten abwechselnd ihre Phasen\n-> Breite ETFs mischen automatisch beide Ansaetze\n\nKeine Empfehlung, nur die Denkweisen dahinter.\n\n#depotdiary #value #growth #boerse #finanzen",
+    "slide_count": 7,
+    "fire_at": "2026-08-26T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_value-vs-growth",
+    "action": "story",
+    "fire_at": "2026-08-26T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_bitcoin-august-2026",
+    "action": "carousel",
+    "caption": "Bitcoin im August: volatil, aber schwaecher als vor einem Jahr.\n\nEin Blick auf die Zahlen hinter der aktuellen Entwicklung:\n\n-> Aktueller Kurs: 78.976 USD (24.8.), Anfang August noch 64.510 USD\n-> Im Jahresvergleich aber rund 34.477 USD niedriger\n-> Einzelne Tage mit ueber 200 Mio. USD ETF-Zufluss, trotzdem kein klarer Ausbruch\n-> Verbindung zum CLARITY Act: klarere Regulierung koennte langfristig Nachfrage staerken\n\nKeine Prognose, keine Kaufempfehlung -- nur die Zahlen dahinter.\n\n#depotdiary #bitcoin #krypto #boerse #marktupdate",
+    "slide_count": 6,
+    "fire_at": "2026-08-27T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_bitcoin-august-2026",
+    "action": "story",
+    "fire_at": "2026-08-27T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_marktkapitalisierung-klassen",
+    "action": "carousel",
+    "caption": "Large Cap, Mid Cap, Small Cap -- was heisst das?\n\nUnternehmensgroesse nach Marktkapitalisierung eingeteilt:\n\n-> Marktkap. = Aktienkurs mal Anzahl aller Aktien\n-> Large Caps: meist ueber 10 Mrd. USD, etabliert, stabiler\n-> Mid Caps: 2 bis 10 Mrd. USD, oft in Wachstumsphase\n-> Small Caps: unter 2 Mrd. USD, mehr Chance, mehr Schwankung\n\nKeine Empfehlung, nur die Einteilung -- Groesse allein sagt nichts ueber Qualitaet aus.\n\n#depotdiary #boerse #aktien #finanzen #geldwissen",
+    "slide_count": 7,
+    "fire_at": "2026-08-28T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_marktkapitalisierung-klassen",
+    "action": "story",
+    "fire_at": "2026-08-28T15:03:00+02:00",
+    "status": "pending"
   }
 ]

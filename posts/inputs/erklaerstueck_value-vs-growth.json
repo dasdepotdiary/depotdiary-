@@ -1,0 +1,29 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Value* oder *Growth* -- was ist der Unterschied?",
+  "hook_sub": "Zwei grundlegend verschiedene Denkweisen beim Investieren.",
+  "sections": [
+    {
+      "headline": "*Value*-Investoren suchen unterbewertete Aktien.",
+      "body": "Der Fokus liegt auf aktuellen Kennzahlen -- niedriges KGV, stabile Gewinne, oft etablierte, reifere Unternehmen."
+    },
+    {
+      "headline": "*Growth*-Investoren zahlen fuer zukuenftiges Wachstum.",
+      "body": "Aktuelle Gewinne spielen eine kleinere Rolle -- entscheidend ist die erwartete Wachstumsrate der naechsten Jahre."
+    },
+    {
+      "headline": "Die Kennzahlen sehen entsprechend *unterschiedlich* aus.",
+      "body": "Growth-Aktien haben oft hohe KGVs, Value-Aktien niedrige -- beides kann gerechtfertigt sein, je nach Geschaeftsmodell."
+    },
+    {
+      "headline": "Beide Stile hatten *abwechselnd* ihre Phasen.",
+      "body": "Es gibt laengere Zeitraeume, in denen Value outperformt hat, und andere, in denen Growth klar vorne lag."
+    },
+    {
+      "headline": "Viele ETFs *mischen* beide Ansaetze automatisch.",
+      "body": "Ein breiter marktbreiter ETF wie ein MSCI World enthaelt automatisch beide Stile, ohne dass du dich entscheiden musst."
+    }
+  ],
+  "cta_headline": "Keine *Empfehlung*, nur die Denkweisen dahinter.",
+  "cta_body": "Welcher Stil zu dir passt, ist deine eigene Entscheidung."
+}
