@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 24 Aug 2026 14:35:03 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 24 Aug 2026 20:12:06 +0000</lastBuildDate>
     <item>
       <title>Diese Woche an der Börse: DAX, Nvidia, Iran und Fed.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,46 @@
       <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Vier Themen, die gerade gleichzeitig auf die Märkte wirken.</description>
+    </item>
+    <item>
+      <title>Was ist eigentlich ein REIT?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_reit</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Immobilien investieren, ohne selbst eine zu kaufen.</description>
+    </item>
+    <item>
+      <title>Value oder Growth -- was ist der Unterschied?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_value-vs-growth</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Zwei grundlegend verschiedene Denkweisen beim Investieren.</description>
+    </item>
+    <item>
+      <title>Bitcoin im August: volatil, aber schwächer als vor einem Jahr.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_bitcoin-august-2026</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Ein Blick auf die Zahlen hinter der aktuellen Entwicklung.</description>
+    </item>
+    <item>
+      <title>Large Cap, Mid Cap, Small Cap -- was heisst das?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_marktkapitalisierung-klassen</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Unternehmensgroesse nach Marktkapitalisierung eingeteilt.</description>
+    </item>
+    <item>
+      <title>Diversifikation heisst nicht nur mehrere Aktien.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_anlageklassen-diversifikation</guid>
+      <pubDate>Mon, 24 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Es geht um ganze Anlageklassen, nicht nur einzelne Positionen.</description>
     </item>
     <item>
       <title>Nvidia berichtet am 26. August -- was erwartet der Markt?</title>

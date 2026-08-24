@@ -202,5 +202,56 @@
       "Beide gelten als unabhaengig von der Politik -- die EZB ist sogar vertraglich in EU-Recht abgesichert, staerker als es bei der Fed der Fall ist.",
       "Zinsentscheidungen beider Banken wirken auf Wechselkurse, Anleihen und Aktien -- oft auch ueber den eigenen Waehrungsraum hinaus."
     ]
+  },
+  {
+    "id": "reit",
+    "title": "Was ist eigentlich ein REIT?",
+    "date": "2026-08-24",
+    "body": [
+      "Immobilien investieren, ohne selbst eine zu kaufen.",
+      "Real Estate Investment Trust -- das Unternehmen besitzt und verwaltet Immobilien, die Aktie kannst du wie jede andere kaufen.",
+      "Meist gesetzlich vorgeschrieben (oft 90%+) -- dadurch sind REITs oft fuer hohe Dividendenrenditen bekannt.",
+      "Kein eigenes Objekt, keine Mieterverwaltung, keine grosse Einzelinvestition -- dafuer auch keine direkte Kontrolle ueber einzelne Immobilien.",
+      "Wohnimmobilien, Buerogebaeude, Rechenzentren, Logistikimmobilien, Einkaufszentren -- die Risiken unterscheiden sich je nach Sektor stark.",
+      "Steigende Zinsen erhoehen die Finanzierungskosten und machen Anleihen attraktiver -- REIT-Kurse reagieren darauf haeufig empfindlich."
+    ]
+  },
+  {
+    "id": "value-vs-growth",
+    "title": "Value oder Growth -- was ist der Unterschied?",
+    "date": "2026-08-24",
+    "body": [
+      "Zwei grundlegend verschiedene Denkweisen beim Investieren.",
+      "Der Fokus liegt auf aktuellen Kennzahlen -- niedriges KGV, stabile Gewinne, oft etablierte, reifere Unternehmen.",
+      "Aktuelle Gewinne spielen eine kleinere Rolle -- entscheidend ist die erwartete Wachstumsrate der naechsten Jahre.",
+      "Growth-Aktien haben oft hohe KGVs, Value-Aktien niedrige -- beides kann gerechtfertigt sein, je nach Geschaeftsmodell.",
+      "Es gibt laengere Zeitraeume, in denen Value outperformt hat, und andere, in denen Growth klar vorne lag.",
+      "Ein breiter marktbreiter ETF wie ein MSCI World enthaelt automatisch beide Stile, ohne dass du dich entscheiden musst."
+    ]
+  },
+  {
+    "id": "marktkapitalisierung-klassen",
+    "title": "Large Cap, Mid Cap, Small Cap -- was heisst das?",
+    "date": "2026-08-24",
+    "body": [
+      "Unternehmensgroesse nach Marktkapitalisierung eingeteilt.",
+      "Aktienkurs mal Anzahl aller ausstehenden Aktien -- ergibt den gesamten Marktwert eines Unternehmens an der Boerse.",
+      "Meist ueber 10 Mrd. USD Marktkap. -- oft stabiler, aber mit begrenzterem Wachstumspotenzial als kleinere Unternehmen.",
+      "Grob 2 bis 10 Mrd. USD -- oft in einer Wachstumsphase, bei der noch nicht klar ist, ob sie zum Large Cap werden.",
+      "Unter etwa 2 Mrd. USD -- potenziell hoehere Wachstumschancen, aber auch hoehere Schwankungen und weniger Liquiditaet.",
+      "Verschiedene Indexanbieter und Broker ziehen die Grenzen leicht unterschiedlich -- es gibt keine offizielle, feste Definition."
+    ]
+  },
+  {
+    "id": "anlageklassen-diversifikation",
+    "title": "Diversifikation heisst nicht nur mehrere Aktien.",
+    "date": "2026-08-24",
+    "body": [
+      "Es geht um ganze Anlageklassen, nicht nur einzelne Positionen.",
+      "Daneben gibt es Anleihen, Immobilien (z.B. ueber REITs), Rohstoffe wie Gold, und Cash -- jede reagiert anders auf dieselben Ereignisse.",
+      "In Krisen suchen Anleger haeufig Sicherheit in Staatsanleihen -- das kann Aktienverluste im Depot teilweise ausgleichen.",
+      "Bei Inflation oder geopolitischer Unsicherheit steigt die Nachfrage nach Gold oft, unabhaengig davon, wie sich Aktien entwickeln.",
+      "Liquiditaet zu halten bedeutet, kurzfristig flexibel zu bleiben -- auf Kosten von potenzieller Rendite."
+    ]
   }
 ]

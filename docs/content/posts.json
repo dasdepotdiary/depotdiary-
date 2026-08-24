@@ -313,5 +313,50 @@
     "excerpt": "Vier Themen, die gerade gleichzeitig auf die Märkte wirken.",
     "cover": "assets/posts/marktupdate_wochenausblick-24-08/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_reit",
+    "title": "Was ist eigentlich ein REIT?",
+    "category": "erklaerstueck",
+    "date": "2026-08-24",
+    "excerpt": "Immobilien investieren, ohne selbst eine zu kaufen.",
+    "cover": "assets/posts/erklaerstueck_reit/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_value-vs-growth",
+    "title": "Value oder Growth -- was ist der Unterschied?",
+    "category": "erklaerstueck",
+    "date": "2026-08-24",
+    "excerpt": "Zwei grundlegend verschiedene Denkweisen beim Investieren.",
+    "cover": "assets/posts/erklaerstueck_value-vs-growth/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_bitcoin-august-2026",
+    "title": "Bitcoin im August: volatil, aber schwächer als vor einem Jahr.",
+    "category": "marktupdate",
+    "date": "2026-08-24",
+    "excerpt": "Ein Blick auf die Zahlen hinter der aktuellen Entwicklung.",
+    "cover": "assets/posts/marktupdate_bitcoin-august-2026/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_marktkapitalisierung-klassen",
+    "title": "Large Cap, Mid Cap, Small Cap -- was heisst das?",
+    "category": "erklaerstueck",
+    "date": "2026-08-24",
+    "excerpt": "Unternehmensgroesse nach Marktkapitalisierung eingeteilt.",
+    "cover": "assets/posts/erklaerstueck_marktkapitalisierung-klassen/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_anlageklassen-diversifikation",
+    "title": "Diversifikation heisst nicht nur mehrere Aktien.",
+    "category": "erklaerstueck",
+    "date": "2026-08-24",
+    "excerpt": "Es geht um ganze Anlageklassen, nicht nur einzelne Positionen.",
+    "cover": "assets/posts/erklaerstueck_anlageklassen-diversifikation/slide_1.webp",
+    "url": null
   }
 ]
