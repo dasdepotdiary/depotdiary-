@@ -421,13 +421,13 @@
     "action": "carousel",
     "caption": "Bitcoin im August: volatil, aber schwaecher als vor einem Jahr.\n\nEin Blick auf die Zahlen hinter der aktuellen Entwicklung:\n\n-> Aktueller Kurs: 78.976 USD (24.8.), Anfang August noch 64.510 USD\n-> Im Jahresvergleich aber rund 34.477 USD niedriger\n-> Einzelne Tage mit ueber 200 Mio. USD ETF-Zufluss, trotzdem kein klarer Ausbruch\n-> Verbindung zum CLARITY Act: klarere Regulierung koennte langfristig Nachfrage staerken\n\nKeine Prognose, keine Kaufempfehlung -- nur die Zahlen dahinter.\n\n#depotdiary #bitcoin #krypto #boerse #marktupdate",
     "slide_count": 6,
-    "fire_at": "2026-08-27T15:00:00+02:00",
+    "fire_at": "2026-08-25T12:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_bitcoin-august-2026",
     "action": "story",
-    "fire_at": "2026-08-27T15:03:00+02:00",
+    "fire_at": "2026-08-25T12:03:00+02:00",
     "status": "pending"
   },
   {
