@@ -1,0 +1,39 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Woche an der Börse: *DAX, Nvidia, Iran und Fed*.",
+  "hook_sub": "Vier Themen, die gerade gleichzeitig auf die Märkte wirken.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Der DAX nimmt eine *Verschnaufpause*.",
+      "body": "Der deutsche Leitindex sank am 24. August um 0,26% auf 26.068 Punkte -- nach der Rally der letzten Wochen ein erster Daempfer."
+    },
+    {
+      "type": "text",
+      "headline": "Die *Straße von Hormus* bleibt Thema.",
+      "body": "Kaum Aussicht auf eine Oeffnung, neue US-Sanktionen gegen den Iran im Gespraech -- die Situation, ueber die ich hier schon berichtet habe, spitzt sich weiter zu."
+    },
+    {
+      "type": "text",
+      "headline": "*Anleiherenditen* steigen weltweit.",
+      "body": "Hoehere Renditen fuer Staatsanleihen belasten Aktienmaerkte zusaetzlich -- zusammen mit einem schwachen Dollar und starken Goldpreisen (siehe mein Gold-Post)."
+    },
+    {
+      "type": "text",
+      "headline": "*Nvidia* berichtet am Dienstag.",
+      "body": "Die meistbeachteten Quartalszahlen der Woche -- Details dazu hab ich bereits in einem eigenen Post."
+    },
+    {
+      "type": "text",
+      "headline": "Die *Fed* haelt ihr Jahressymposium ab.",
+      "body": "Ab Donnerstag trifft sich die US-Notenbank zum traditionellen Symposium -- Fed-Chef Kevin Warsh spricht am Freitag, mit moeglichen Signalen zur weiteren Zinspolitik."
+    },
+    {
+      "type": "text",
+      "headline": "Zusaetzlich: *Handelsstreit* USA-Kanada.",
+      "body": "Gescheiterte Verhandlungen und gegenseitige Zolldrohungen zwischen den USA und Kanada belasten zusaetzlich die globale Stimmung."
+    }
+  ],
+  "cta_headline": "Viel *gleichzeitig* diese Woche.",
+  "cta_body": "Keine Prognose, keine Bewertung -- nur, worauf ich diese Woche schaue."
+}

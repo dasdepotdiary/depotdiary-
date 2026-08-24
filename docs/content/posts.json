@@ -304,5 +304,14 @@
     "excerpt": "Die meistbeachteten Quartalszahlen des KI-Booms stehen an.",
     "cover": "assets/posts/marktupdate_nvidia-q2-vorschau/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-24-08",
+    "title": "Diese Woche an der Börse: DAX, Nvidia, Iran und Fed.",
+    "category": "marktupdate",
+    "date": "2026-08-24",
+    "excerpt": "Vier Themen, die gerade gleichzeitig auf die Märkte wirken.",
+    "cover": "assets/posts/marktupdate_wochenausblick-24-08/slide_1.webp",
+    "url": null
   }
 ]
