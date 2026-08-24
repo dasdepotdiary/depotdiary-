@@ -320,15 +320,17 @@
     "slide_count": 6,
     "fire_at": "2026-08-23T16:00:00+02:00",
     "status": "done",
-    "published_at": "2026-08-23T19:52:06.133400+00:00",
-    "media_id": "17970916674068635"
+    "published_at": "2026-08-23T19:47:30.080980+00:00",
+    "media_id": "17893639815396152",
+    "note": "DUPLIKAT: Cloud-Cron griff die von mir zurueckgesetzte 'pending'-Markierung ebenfalls auf und postete unabhaengig 5 Min. spaeter -- zweite media_id 17970916674068635. Grundproblem: Zuruecksetzen auf 'pending' fuer manuellen Retry macht den Eintrag wieder fuer die Cron sichtbar."
   },
   {
     "post_name": "marktupdate_nvidia-q2-vorschau",
     "action": "story",
     "fire_at": "2026-08-23T16:03:00+02:00",
     "status": "done",
-    "published_at": "2026-08-23T19:52:13.498537+00:00",
-    "media_id": "18161081707486032"
+    "published_at": "2026-08-23T19:47:39.292050+00:00",
+    "media_id": "17966422302070348",
+    "note": "DUPLIKAT: Cloud-Cron griff die von mir zurueckgesetzte 'pending'-Markierung ebenfalls auf und postete unabhaengig 5 Min. spaeter -- zweite media_id 18161081707486032. Grundproblem: Zuruecksetzen auf 'pending' fuer manuellen Retry macht den Eintrag wieder fuer die Cron sichtbar."
   }
 ]
