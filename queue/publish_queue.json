@@ -332,5 +332,47 @@
     "published_at": "2026-08-23T19:47:39.292050+00:00",
     "media_id": "17966422302070348",
     "note": "DUPLIKAT: Cloud-Cron griff die von mir zurueckgesetzte 'pending'-Markierung ebenfalls auf und postete unabhaengig 5 Min. spaeter -- zweite media_id 18161081707486032. Grundproblem: Zuruecksetzen auf 'pending' fuer manuellen Retry macht den Eintrag wieder fuer die Cron sichtbar."
+  },
+  {
+    "post_name": "personal_3-dinge",
+    "action": "reel",
+    "fire_at": "2026-08-24T16:00:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht (direkt, nicht ueber Pending-Queue, um Race Condition zu vermeiden), media_id 17960831717981203"
+  },
+  {
+    "post_name": "personal_3-dinge",
+    "action": "story",
+    "fire_at": "2026-08-24T16:00:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 18088898483427757"
+  },
+  {
+    "post_name": "personal_fehler-hindsight-bias",
+    "action": "reel",
+    "fire_at": "2026-08-24T16:05:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht (direkt, nicht ueber Pending-Queue, um Race Condition zu vermeiden), media_id 17891933673417018"
+  },
+  {
+    "post_name": "personal_fehler-hindsight-bias",
+    "action": "story",
+    "fire_at": "2026-08-24T16:05:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 17952438921252103"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-24-08",
+    "action": "carousel",
+    "fire_at": "2026-08-24T16:30:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht (direkt, nicht ueber Pending-Queue), media_id 17931795819366527"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-24-08",
+    "action": "story",
+    "fire_at": "2026-08-24T16:30:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht, media_id 17953992078229193"
   }
 ]
