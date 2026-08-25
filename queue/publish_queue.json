@@ -381,13 +381,15 @@
     "caption": "Was ist eigentlich ein REIT?\n\nImmobilien investieren, ohne selbst eine zu kaufen:\n\n-> Boersennotierte Immobiliengesellschaft, Aktie wie jede andere\n-> Muss Grossteil der Gewinne ausschuetten -- oft hohe Dividendenrenditen\n-> Du wirst Miteigentuemer, kein Vermieter\n-> Reagiert oft empfindlich auf Zinsaenderungen\n\nKeine Empfehlung, nur die Mechanik -- ob REITs zu deiner Strategie passen, ist deine Entscheidung.\n\n#depotdiary #reit #immobilien #boerse #finanzen",
     "slide_count": 7,
     "fire_at": "2026-08-25T15:00:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "erklaerstueck_reit",
     "action": "story",
     "fire_at": "2026-08-25T15:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "erklaerstueck_anlageklassen-diversifikation",
