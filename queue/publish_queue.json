@@ -443,5 +443,31 @@
     "action": "story",
     "fire_at": "2026-08-28T15:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "personal_warum-angefangen-v2",
+    "action": "reel",
+    "caption": "Warum fängt man mit 19 überhaupt an, sein Depot öffentlich zu zeigen?\n\nEhrlich gesagt: aus Frust. Ich hab online so viel Finanz-Content gesehen, der entweder komplett verkauft hat, oder so trocken war, dass ich abgeschaltet hab.\n\nAlso hab ich einfach angefangen, mein eigenes Depot zu zeigen.\n\nKeine Anlageberatung, keine Empfehlungen -- nur echte Zahlen und was ich daraus lerne.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-08-26T12:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_warum-angefangen-v2",
+    "action": "story",
+    "fire_at": "2026-08-26T12:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_wieviel-investieren-v2",
+    "action": "reel",
+    "caption": "Die Frage, die ich am häufigsten bekomme: Wie viel sollte ich denn investieren?\n\nIch hab keine Zahl für dich, weil die Antwort komplett von deiner Situation abhängt. Notgroschen zuerst, Schulden mit hohen Zinsen zuerst -- erst danach macht Investieren für mich überhaupt Sinn.\n\nKeine Anlageberatung -- nur, wie ich selbst darüber denke.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-08-27T12:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_wieviel-investieren-v2",
+    "action": "story",
+    "fire_at": "2026-08-27T12:03:00+02:00",
+    "status": "pending"
   }
 ]
