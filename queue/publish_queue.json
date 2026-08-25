@@ -381,28 +381,32 @@
     "caption": "Was ist eigentlich ein REIT?\n\nImmobilien investieren, ohne selbst eine zu kaufen:\n\n-> Boersennotierte Immobiliengesellschaft, Aktie wie jede andere\n-> Muss Grossteil der Gewinne ausschuetten -- oft hohe Dividendenrenditen\n-> Du wirst Miteigentuemer, kein Vermieter\n-> Reagiert oft empfindlich auf Zinsaenderungen\n\nKeine Empfehlung, nur die Mechanik -- ob REITs zu deiner Strategie passen, ist deine Entscheidung.\n\n#depotdiary #reit #immobilien #boerse #finanzen",
     "slide_count": 7,
     "fire_at": "2026-08-25T15:00:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "note": "manuell veroeffentlicht nach 400-Fehler (transient), media_id 18140439568590097"
   },
   {
     "post_name": "erklaerstueck_reit",
     "action": "story",
     "fire_at": "2026-08-25T15:03:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "note": "manuell veroeffentlicht nach 400-Fehler (transient), media_id 18075954230344799"
   },
   {
     "post_name": "erklaerstueck_anlageklassen-diversifikation",
     "action": "reel",
     "caption": "Diversifikation heisst nicht nur mehrere Aktien.\n\nEs geht um ganze Anlageklassen:\n\n-> Aktien sind nur eine von mehreren -- daneben Anleihen, Immobilien, Rohstoffe, Cash\n-> Anleihen verhalten sich oft gegensaetzlich zu Aktien\n-> Gold gilt oft als Absicherung bei Inflation oder Unsicherheit\n-> Cash zu halten ist auch eine bewusste Entscheidung\n\nKeine Empfehlung, nur die Bausteine -- wie du mischst, ist deine Entscheidung.\n\n#depotdiary #diversifikation #boerse #finanzen #erklaerstueck",
     "fire_at": "2026-08-25T19:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-25T17:45:44.590523+00:00",
+    "media_id": "18124255636699076"
   },
   {
     "post_name": "erklaerstueck_anlageklassen-diversifikation",
     "action": "story",
     "fire_at": "2026-08-25T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-25T17:46:09.166331+00:00",
+    "media_id": "17985195762021152"
   },
   {
     "post_name": "erklaerstueck_value-vs-growth",
