@@ -430,7 +430,9 @@
     "post_name": "marktupdate_bitcoin-august-2026",
     "action": "story",
     "fire_at": "2026-08-25T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-25T11:05:08.096495+00:00",
+    "media_id": "18142879732568605"
   },
   {
     "post_name": "erklaerstueck_marktkapitalisierung-klassen",
