@@ -358,5 +358,14 @@
     "excerpt": "Es geht um ganze Anlageklassen, nicht nur einzelne Positionen.",
     "cover": "assets/posts/erklaerstueck_anlageklassen-diversifikation/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_intuit-zoom-check",
+    "title": "Zwei Aktien im Check: Intuit und Zoom.",
+    "category": "marktupdate",
+    "date": "2026-08-25",
+    "excerpt": "Eine meldet heute Zahlen, die andere hat gerade erst geliefert.",
+    "cover": "assets/posts/marktupdate_intuit-zoom-check/slide_1.webp",
+    "url": null
   }
 ]

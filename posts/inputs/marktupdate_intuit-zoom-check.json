@@ -1,0 +1,39 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Zwei Aktien im Check: *Intuit* und *Zoom*.",
+  "hook_sub": "Eine meldet heute Zahlen, die andere hat gerade erst geliefert.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Intuit* -- Zahlen kommen heute Abend.",
+      "stats": [
+        ["Kurs", "24. August 2026", "367 USD", "green"],
+        ["KGV", "aktuell / erwartet", "21,9 / 15,1", "grey"],
+        ["Marktkap.", "aktuell", "100,4 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q4-Bericht heute nach US-Boersenschluss. Erwartet: rund 4,27 Mrd. USD Umsatz (+11,5%), 3,59 USD Gewinn je Aktie (+30,6%)."
+    },
+    {
+      "type": "text",
+      "headline": "Intuit: *deutliche Erholung*, aber Jahresminus.",
+      "body": "Die Aktie hat sich zuletzt stark erholt (+23,85% im letzten Monat), steht aber seit Jahresbeginn trotzdem rund 44% im Minus."
+    },
+    {
+      "type": "stats",
+      "headline": "*Zoom* -- Q2-Zahlen bereits da.",
+      "stats": [
+        ["Kurs", "aktuell", "89,77 USD", "green"],
+        ["Gewinn je Aktie", "Q2 2026", "1,19 USD", "green_mid"],
+        ["Umsatz", "Q2 2026", "1,22 Mrd. USD (+4,7%)", "grey"]
+      ],
+      "note": "Gewinn je Aktie lag rund 62% ueber der Analysten-Erwartung."
+    },
+    {
+      "type": "text",
+      "headline": "Zoom: von *Pandemie-Aktie* zu stabilem Wachstum.",
+      "body": "Nach Jahren des Umsatzrueckgangs seit dem Pandemie-Hoch zeigt Zoom jetzt wieder Wachstum -- moderat, aber wieder positiv."
+    }
+  ],
+  "cta_headline": "Zwei sehr *unterschiedliche* Geschichten.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}
