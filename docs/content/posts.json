@@ -385,5 +385,14 @@
     "excerpt": "Ein Thema, das jeden mit Depot betrifft.",
     "cover": "assets/posts/erklaerstueck_abgeltungssteuer/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_dltr-adsk-mrvl-ulta-check",
+    "title": "Vier Aktien im Blick: Dollar Tree, Autodesk, Marvell und Ulta Beauty.",
+    "category": "marktupdate",
+    "date": "2026-08-26",
+    "excerpt": "Alle vier legen heute Zahlen vor.",
+    "cover": "assets/posts/marktupdate_dltr-adsk-mrvl-ulta-check/slide_1.webp",
+    "url": null
   }
 ]

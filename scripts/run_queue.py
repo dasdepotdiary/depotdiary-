@@ -149,7 +149,34 @@ def publish_story(token, ig_id, base_url, entry) -> dict:
     raise RuntimeError(f"Story-Publish nach 4 Versuchen fehlgeschlagen: {last_error}")
 
 
-DISPATCH = {"carousel": publish_carousel, "reel": publish_reel, "story": publish_story}
+def publish_story_sequence(token, ig_id, base_url, entry) -> dict:
+    name = entry["post_name"]
+    story_dir = ROOT / "docs" / "assets" / "posts_9x16" / name
+    slides = sorted(story_dir.glob("slide_*.png"), key=lambda p: int(p.stem.split("_")[1]))
+    if not slides:
+        raise RuntimeError(f"Keine Slides gefunden in {story_dir}")
+    media_ids = []
+    for i, slide in enumerate(slides, 1):
+        image_url = f"{base_url}/assets/posts_9x16/{name}/{slide.name}?v={int(time.time())}"
+        resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
+            "image_url": image_url, "media_type": "STORIES", "access_token": token,
+        })
+        resp.raise_for_status()
+        container_id = resp.json()["id"]
+        resp2 = requests.post(f"{GRAPH_URL}/{ig_id}/media_publish", data={
+            "creation_id": container_id, "access_token": token,
+        })
+        resp2.raise_for_status()
+        media_ids.append(resp2.json()["id"])
+        if i < len(slides):
+            time.sleep(2)
+    return {"id": media_ids[0], "media_ids": media_ids}
+
+
+DISPATCH = {
+    "carousel": publish_carousel, "reel": publish_reel, "story": publish_story,
+    "story_sequence": publish_story_sequence,
+}
 
 
 def sync_from_remote():
@@ -191,6 +218,8 @@ def main():
             entry["status"] = "done"
             entry["published_at"] = datetime.now(timezone.utc).isoformat()
             entry["media_id"] = result.get("id")
+            if "media_ids" in result:
+                entry["media_ids"] = result["media_ids"]
             print(f"  Veroeffentlicht: {result}")
         except Exception as exc:
             entry["status"] = "error"

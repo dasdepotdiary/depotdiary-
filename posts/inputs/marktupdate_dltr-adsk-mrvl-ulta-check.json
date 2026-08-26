@@ -1,0 +1,54 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Vier Aktien im Blick: *Dollar Tree*, *Autodesk*, *Marvell* und *Ulta Beauty*.",
+  "hook_sub": "Alle vier legen heute Zahlen vor.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Dollar Tree* -- Zahlen vor US-Boersenoeffnung.",
+      "stats": [
+        ["Kurs", "26. August 2026", "128,15 USD", "grey"],
+        ["KGV", "aktuell", "20,6", "grey"],
+        ["Marktkap.", "aktuell", "24,8 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2026) heute vor US-Boersenoeffnung."
+    },
+    {
+      "type": "stats",
+      "headline": "*Autodesk* -- Zahlen nach US-Boersenschluss.",
+      "stats": [
+        ["Marktkap.", "aktuell", "64,9 Mrd. USD", "green_mid"],
+        ["Erwarteter Umsatz", "Q2 Fiskaljahr 2027", "2,01 Mrd. USD", "grey"],
+        ["Erwarteter Gewinn je Aktie", "Q2 Fiskaljahr 2027", "3,12 USD", "grey"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) heute nach US-Boersenschluss erwartet."
+    },
+    {
+      "type": "stats",
+      "headline": "*Marvell Technology* -- meistbeachtete Zahlen des Tages.",
+      "stats": [
+        ["Marktkap.", "aktuell", "~78 Mrd. USD", "green_mid"],
+        ["Erwarteter Umsatz", "Q2 Fiskaljahr 2027", "~2,71 Mrd. USD (+35%)", "grey"],
+        ["Erwarteter Gewinn je Aktie", "Q2 Fiskaljahr 2027", "~0,92-0,93 USD", "grey"]
+      ],
+      "note": "Aktie 2026 bisher rund +170% getrieben von KI-Chip- und Optik-Nachfrage. Bericht heute nach US-Boersenschluss."
+    },
+    {
+      "type": "stats",
+      "headline": "*Ulta Beauty* -- Q2-Zahlen nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "aktuell", "478,93 USD", "grey"],
+        ["KGV", "aktuell", "18,2", "grey"],
+        ["Jahresausblick EPS", "Fiskaljahr 2026", "28,36-28,80 USD", "green_mid"]
+      ],
+      "note": "Voriges Quartal lag der Gewinn je Aktie rund 12% ueber den Erwartungen -- Jahresausblick wurde daraufhin angehoben."
+    },
+    {
+      "type": "text",
+      "headline": "Vier Branchen, ein Tag.",
+      "body": "Einzelhandel, Design-Software, Halbleiter und Beauty -- heute zeigt sich, wie unterschiedlich die zweite Jahreshaelfte 2026 bisher gelaufen ist."
+    }
+  ],
+  "cta_headline": "Die Zahlen schau ich mir im Laufe des Tages an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

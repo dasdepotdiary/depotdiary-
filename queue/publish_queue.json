@@ -528,5 +528,11 @@
     "fire_at": "2026-08-26T21:45:00+02:00",
     "status": "done",
     "note": "echter Instagram-Collab, vom Nutzer selbst im App ausgeloest (nicht ueber Graph API, kein media_id verfuegbar) -- laeuft unter @dasdepotdiary und @finanzboerse"
+  },
+  {
+    "post_name": "marktupdate_dltr-adsk-mrvl-ulta-check",
+    "action": "story_sequence",
+    "fire_at": "2026-08-27T09:30:00+02:00",
+    "status": "pending"
   }
 ]
