@@ -1,0 +1,25 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Die *Abgeltungssteuer* -- was vom Gewinn wirklich übrig bleibt.",
+  "hook_sub": "Ein Thema, das jeden mit Depot betrifft.",
+  "sections": [
+    {
+      "headline": "*25%* auf Zinsen, Dividenden und Kursgewinne.",
+      "body": "In Deutschland gilt eine pauschale Kapitalertragsteuer von 25% -- dazu kommen 5,5% Solidaritätszuschlag auf die Steuer und, falls du kirchensteuerpflichtig bist, noch Kirchensteuer."
+    },
+    {
+      "headline": "Der *Sparerpauschbetrag*: 1.000 Euro bleiben steuerfrei.",
+      "body": "Pro Person sind 1.000 Euro Kapitalerträge im Jahr steuerfrei, bei Ehepaaren 2.000 Euro -- unabhängig davon, wie viele Depots oder Konten du hast."
+    },
+    {
+      "headline": "Ohne *Freistellungsauftrag* zieht die Bank trotzdem ab.",
+      "body": "Der Sparerpauschbetrag wird nicht automatisch berücksichtigt. Ohne hinterlegten Freistellungsauftrag behält deine Bank die Steuer sofort ein -- zurückholen geht dann nur noch über die Steuererklärung."
+    },
+    {
+      "headline": "Aufteilbar auf *mehrere Banken*.",
+      "body": "Hast du Depots bei mehreren Anbietern, kannst du den Freistellungsauftrag aufteilen -- die Summe darf insgesamt aber die 1.000 bzw. 2.000 Euro nicht übersteigen."
+    }
+  ],
+  "cta_headline": "Ein Formular, das schnell erledigt ist.",
+  "cta_body": "Keine Steuerberatung -- nur, wie der Mechanismus grundsätzlich funktioniert. Für deinen Einzelfall zählt dein Steuerberater."
+}

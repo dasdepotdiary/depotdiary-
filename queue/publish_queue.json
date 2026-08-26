@@ -494,5 +494,19 @@
     "fire_at": "2026-08-26T18:31:00+02:00",
     "status": "done",
     "note": "manuell veroeffentlicht (nicht ueber Pending-Queue), 7 Slides, media_ids 18118537193295877/18112837162804683/17980524861088760/18184190020365327/18101595476248870/18177461125423330/17963405727189203"
+  },
+  {
+    "post_name": "erklaerstueck_abgeltungssteuer",
+    "action": "carousel",
+    "caption": "Die Abgeltungssteuer -- was vom Gewinn wirklich uebrig bleibt.\n\nEin Thema, das jeden mit Depot betrifft:\n\n-> 25% pauschale Steuer auf Zinsen, Dividenden und Kursgewinne, plus Soli und ggf. Kirchensteuer\n-> Sparerpauschbetrag: 1.000 Euro pro Person im Jahr steuerfrei (2.000 Euro bei Ehepaaren)\n-> Ohne Freistellungsauftrag zieht die Bank trotzdem sofort ab -- Rueckholung nur ueber die Steuererklaerung\n-> Aufteilbar auf mehrere Banken\n\nKeine Steuerberatung -- nur, wie der Mechanismus grundsaetzlich funktioniert.\n\n#depotdiary #steuern #abgeltungssteuer #boerse #finanzen",
+    "slide_count": 6,
+    "fire_at": "2026-08-27T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_abgeltungssteuer",
+    "action": "story",
+    "fire_at": "2026-08-27T15:03:00+02:00",
+    "status": "pending"
   }
 ]

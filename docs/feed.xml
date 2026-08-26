@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 26 Aug 2026 16:29:06 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 16:44:17 +0000</lastBuildDate>
     <item>
       <title>Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,14 @@
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Drei davon melden heute Abend Zahlen.</description>
+    </item>
+    <item>
+      <title>Die Abgeltungssteuer -- was vom Gewinn wirklich übrig bleibt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_abgeltungssteuer</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ein Thema, das jeden mit Depot betrifft.</description>
     </item>
     <item>
       <title>Zwei Aktien im Check: Intuit und Zoom.</title>

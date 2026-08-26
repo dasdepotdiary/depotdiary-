@@ -376,5 +376,14 @@
     "excerpt": "Drei davon melden heute Abend Zahlen.",
     "cover": "assets/posts/marktupdate_snps-nvda-crm-okta-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_abgeltungssteuer",
+    "title": "Die Abgeltungssteuer -- was vom Gewinn wirklich übrig bleibt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-26",
+    "excerpt": "Ein Thema, das jeden mit Depot betrifft.",
+    "cover": "assets/posts/erklaerstueck_abgeltungssteuer/slide_1.webp",
+    "url": null
   }
 ]
