@@ -459,13 +459,17 @@
     "action": "reel",
     "caption": "Warum fängt man mit 19 überhaupt an, sein Depot öffentlich zu zeigen?\n\nEhrlich gesagt: aus Frust. Ich hab online so viel Finanz-Content gesehen, der entweder komplett verkauft hat, oder so trocken war, dass ich abgeschaltet hab.\n\nAlso hab ich einfach angefangen, mein eigenes Depot zu zeigen.\n\nKeine Anlageberatung, keine Empfehlungen -- nur echte Zahlen und was ich daraus lerne.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-26T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-26T10:09:37.528405+00:00",
+    "media_id": "18335373430275290"
   },
   {
     "post_name": "personal_warum-angefangen-v2",
     "action": "story",
     "fire_at": "2026-08-26T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-26T10:09:45.535103+00:00",
+    "media_id": "18364436476214314"
   },
   {
     "post_name": "personal_wieviel-investieren-v2",
