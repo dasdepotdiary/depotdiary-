@@ -414,13 +414,17 @@
     "caption": "Value oder Growth -- was ist der Unterschied?\n\nZwei grundlegend verschiedene Denkweisen beim Investieren:\n\n-> Value: unterbewertete Aktien, niedriges KGV, stabile Gewinne\n-> Growth: zahlt fuer zukuenftiges Wachstum, aktuelle Gewinne zweitrangig\n-> Beide Stile hatten abwechselnd ihre Phasen\n-> Breite ETFs mischen automatisch beide Ansaetze\n\nKeine Empfehlung, nur die Denkweisen dahinter.\n\n#depotdiary #value #growth #boerse #finanzen",
     "slide_count": 7,
     "fire_at": "2026-08-26T15:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-26T14:27:31.184113+00:00",
+    "media_id": "18188953000396388"
   },
   {
     "post_name": "erklaerstueck_value-vs-growth",
     "action": "story",
     "fire_at": "2026-08-26T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-26T14:27:36.869355+00:00",
+    "media_id": "18109283906163845"
   },
   {
     "post_name": "marktupdate_bitcoin-august-2026",
