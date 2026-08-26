@@ -367,5 +367,14 @@
     "excerpt": "Eine meldet heute Zahlen, die andere hat gerade erst geliefert.",
     "cover": "assets/posts/marktupdate_intuit-zoom-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_snps-nvda-crm-okta-check",
+    "title": "Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.",
+    "category": "marktupdate",
+    "date": "2026-08-26",
+    "excerpt": "Drei davon melden heute Abend Zahlen.",
+    "cover": "assets/posts/marktupdate_snps-nvda-crm-okta-check/slide_1.webp",
+    "url": null
   }
 ]

@@ -1,0 +1,54 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Vier Aktien im Blick: *Synopsys*, *Nvidia*, *Salesforce* und *Okta*.",
+  "hook_sub": "Drei davon melden heute Abend Zahlen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Synopsys* -- Zahlen kommen heute nach Boersenschluss.",
+      "stats": [
+        ["Kurs", "25. August 2026", "408,79 USD", "green"],
+        ["KGV", "aktuell / erwartet", "93,3 / 22,9", "grey"],
+        ["Marktkap.", "aktuell", "78,3 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q3-Bericht (Fiskaljahr 2026) heute nach US-Boersenschluss erwartet. Analysten rechnen mit rund 2,44 Mrd. USD Umsatz (+40%)."
+    },
+    {
+      "type": "stats",
+      "headline": "*Nvidia* -- die meistbeachteten Zahlen des Abends.",
+      "stats": [
+        ["Kurs", "25. August 2026", "213,05 USD", "green"],
+        ["KGV", "aktuell / erwartet", "31,9 / 23,8", "grey"],
+        ["Marktkap.", "aktuell", "5,16 Bio. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) heute nach US-Boersenschluss. Erwartet: rund 92 Mrd. USD Umsatz, 2,06 bis 2,09 USD Gewinn je Aktie."
+    },
+    {
+      "type": "stats",
+      "headline": "*Salesforce* -- heute keine Zahlen, aber zum Vergleich dabei.",
+      "stats": [
+        ["Kurs", "25. August 2026", "205,69 USD", "red"],
+        ["KGV", "aktuell / erwartet", "23,8 / 15,4", "grey"],
+        ["Marktkap.", "aktuell", "161,7 Mrd. USD", "green_mid"]
+      ],
+      "note": "Naechster Quartalsbericht erst im September erwartet -- deutlich guenstiger bewertet als die anderen drei heute."
+    },
+    {
+      "type": "stats",
+      "headline": "*Okta* -- ebenfalls heute Abend an der Reihe.",
+      "stats": [
+        ["Kurs", "25. August 2026", "130,61 USD", "grey"],
+        ["KGV", "aktuell / erwartet", "94,6 / 33,3", "grey"],
+        ["Marktkap.", "aktuell", "23,3 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) heute nach US-Boersenschluss. Eigene Prognose: 790-794 Mio. USD Umsatz (+9%), 0,95 bis 0,97 USD Gewinn je Aktie."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Zahlen, ein Abend.",
+      "body": "Synopsys, Nvidia und Okta berichten alle heute nach US-Boersenschluss -- Salesforce zieht nur zum Vergleich mit. Unterschiedliche Branchen, unterschiedliche Bewertungen, gleicher Abend."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen morgen an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}
