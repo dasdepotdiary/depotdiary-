@@ -541,5 +541,12 @@
     "action": "story_sequence",
     "fire_at": "2026-08-27T09:30:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_nvda-snps-ergebnisse",
+    "action": "story_sequence",
+    "fire_at": "2026-08-26T22:33:00+02:00",
+    "status": "done",
+    "note": "manuell veroeffentlicht (nicht ueber Pending-Queue), 6 Slides, media_ids 18106148237272083/18064498796739609/18058808564615798/18123885308493766/18108131996276639/18009957089755272. Okta-Zahlen waren beim Build noch nicht draussen -- ggf. Nachtrag noetig."
   }
 ]
