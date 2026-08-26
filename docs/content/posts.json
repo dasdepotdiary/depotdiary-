@@ -394,5 +394,14 @@
     "excerpt": "Alle vier legen heute Zahlen vor.",
     "cover": "assets/posts/marktupdate_dltr-adsk-mrvl-ulta-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_nvda-snps-ergebnisse",
+    "title": "Die Zahlen sind da: Nvidia und Synopsys haben geliefert.",
+    "category": "marktupdate",
+    "date": "2026-08-26",
+    "excerpt": "Beide klar ueber der eigenen Erwartung.",
+    "cover": "assets/posts/marktupdate_nvda-snps-ergebnisse/slide_1.webp",
+    "url": null
   }
 ]

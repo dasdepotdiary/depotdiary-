@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 26 Aug 2026 20:09:55 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 26 Aug 2026 20:30:56 +0000</lastBuildDate>
     <item>
       <title>Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -29,6 +29,14 @@
       <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Alle vier legen heute Zahlen vor.</description>
+    </item>
+    <item>
+      <title>Die Zahlen sind da: Nvidia und Synopsys haben geliefert.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_nvda-snps-ergebnisse</guid>
+      <pubDate>Wed, 26 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Beide klar ueber der eigenen Erwartung.</description>
     </item>
     <item>
       <title>Zwei Aktien im Check: Intuit und Zoom.</title>

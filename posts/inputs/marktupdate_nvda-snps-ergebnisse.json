@@ -1,0 +1,39 @@
+{
+  "eyebrow": "ERGEBNISSE",
+  "hook": "Die Zahlen sind da: *Nvidia* und *Synopsys* haben geliefert.",
+  "hook_sub": "Beide klar ueber der eigenen Erwartung.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Nvidia*: Umsatz deutlich ueber Erwartung.",
+      "stats": [
+        ["Umsatz", "Q2 Fiskaljahr 2027", "96,22 Mrd. USD", "green"],
+        ["Erwartet", "Analysten-Konsens", "92,17 Mrd. USD", "grey"],
+        ["Gewinn je Aktie", "non-GAAP", "2,22 USD", "green_mid"]
+      ],
+      "note": "Erwartet waren 2,10 USD je Aktie. Vorjahresquartal: 1,05 USD -- mehr als verdoppelt."
+    },
+    {
+      "type": "text",
+      "headline": "Eigene Prognose deutlich uebertroffen.",
+      "body": "Nvidia hatte selbst rund 91 Mrd. USD in Aussicht gestellt (+/- 2%) -- die tatsaechlichen 96,22 Mrd. USD liegen klar darueber."
+    },
+    {
+      "type": "stats",
+      "headline": "*Synopsys*: Jahresausblick angehoben.",
+      "stats": [
+        ["Umsatz", "Q3 Fiskaljahr 2026", "2,477 Mrd. USD", "green"],
+        ["Erwartet", "Analysten-Konsens", "2,44 Mrd. USD", "grey"],
+        ["Gewinn je Aktie", "non-GAAP", "3,91 USD", "green_mid"]
+      ],
+      "note": "Erwartet waren 3,67 USD je Aktie. Jahresausblick angehoben: rund 9,72 Mrd. USD Umsatz, 15,07 USD Gewinn je Aktie im Mittel."
+    },
+    {
+      "type": "text",
+      "headline": "Okta berichtet noch.",
+      "body": "Die Zahlen von Okta waren zum Zeitpunkt dieses Updates noch nicht veroeffentlicht -- die hol ich nach, sobald sie da sind."
+    }
+  ],
+  "cta_headline": "Zwei von drei -- der Rest folgt.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die schon da sind."
+}
