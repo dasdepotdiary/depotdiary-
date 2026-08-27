@@ -480,13 +480,15 @@
     "action": "reel",
     "caption": "Die Frage, die ich am häufigsten bekomme: Wie viel sollte ich denn investieren?\n\nIch hab keine Zahl für dich, weil die Antwort komplett von deiner Situation abhängt. Notgroschen zuerst, Schulden mit hohen Zinsen zuerst -- erst danach macht Investieren für mich überhaupt Sinn.\n\nKeine Anlageberatung -- nur, wie ich selbst darüber denke.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-27T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "note": "Automatik ist am 26.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht). Nutzer hat notgedrungen selbst ein Reel zum gleichen Thema mit eigener, improvisierter Caption gepostet, media_id 18096323426144406 -- dieser Eintrag daher nicht mehr feuern lassen, um kein Duplikat zu erzeugen."
   },
   {
     "post_name": "personal_wieviel-investieren-v2",
     "action": "story",
     "fire_at": "2026-08-27T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "note": "siehe Reel-Eintrag oben -- Automatik-Ausfall, manuell durch Nutzer ersetzt."
   },
   {
     "post_name": "marktupdate_snps-nvda-crm-okta-check",
@@ -500,13 +502,14 @@
     "action": "carousel",
     "caption": "Die Abgeltungssteuer -- was vom Gewinn wirklich uebrig bleibt.\n\nEin Thema, das jeden mit Depot betrifft:\n\n-> 25% pauschale Steuer auf Zinsen, Dividenden und Kursgewinne, plus Soli und ggf. Kirchensteuer\n-> Sparerpauschbetrag: 1.000 Euro pro Person im Jahr steuerfrei (2.000 Euro bei Ehepaaren)\n-> Ohne Freistellungsauftrag zieht die Bank trotzdem sofort ab -- Rueckholung nur ueber die Steuererklaerung\n-> Aufteilbar auf mehrere Banken\n\nKeine Steuerberatung -- nur, wie der Mechanismus grundsaetzlich funktioniert.\n\n#depotdiary #steuern #abgeltungssteuer #boerse #finanzen",
     "slide_count": 6,
-    "fire_at": "2026-08-27T15:00:00+02:00",
-    "status": "pending"
+    "fire_at": "2026-08-29T15:00:00+02:00",
+    "status": "pending",
+    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., um nicht mit erklaerstueck_marktkapitalisierung-klassen (28.08., 15 Uhr) am selben Tag zu kollidieren -- Inhalt ist zeitlos, kein Nachteil durch Verschiebung."
   },
   {
     "post_name": "erklaerstueck_abgeltungssteuer",
     "action": "story",
-    "fire_at": "2026-08-27T15:03:00+02:00",
+    "fire_at": "2026-08-29T15:03:00+02:00",
     "status": "pending"
   },
   {
@@ -540,7 +543,8 @@
     "post_name": "marktupdate_dltr-adsk-mrvl-ulta-check",
     "action": "story_sequence",
     "fire_at": "2026-08-27T09:30:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "Nicht gefeuert -- Automatik ist am 26./27.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht). Inhalt ('DLTR/ADSK/MRVL/ULTA berichten heute') ist jetzt einen Tag zu spaet und veraltet -- absichtlich nicht mehr feuern lassen. Bei Bedarf durch echten Ergebnisse-Post ersetzen, analog zu marktupdate_nvda-snps-ergebnisse."
   },
   {
     "post_name": "marktupdate_nvda-snps-ergebnisse",
