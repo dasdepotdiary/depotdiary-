@@ -676,5 +676,12 @@
     "action": "story",
     "fire_at": "2026-09-03T15:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "collab_finanzboerse_neustart",
+    "action": "carousel_collab",
+    "fire_at": "2026-08-28T23:30:00+02:00",
+    "status": "done",
+    "note": "echter Instagram-Collab (\"Wenn wir von null anfangen wuerden\", 10+10 Aktien), vom Nutzer selbst im App ausgeloest (nicht ueber Graph API, kein media_id verfuegbar) -- laeuft unter @dasdepotdiary und @finanzboerse"
   }
 ]
