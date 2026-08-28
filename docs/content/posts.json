@@ -412,5 +412,14 @@
     "excerpt": "Ohne dass sich an der Strategie etwas ändert.",
     "cover": "assets/posts/erklaerstueck_rebalancing/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_market-vs-limit-order",
+    "title": "Market Order oder Limit Order -- was ist der Unterschied?",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Zwei Arten, eine Aktie zu kaufen.",
+    "cover": "assets/posts/erklaerstueck_market-vs-limit-order/slide_1.webp",
+    "url": null
   }
 ]

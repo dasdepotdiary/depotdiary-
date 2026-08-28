@@ -276,5 +276,16 @@
       "Ueberproportional gewachsene Positionen werden reduziert, kleinere aufgestockt -- damit das Verhaeltnis wieder der geplanten Struktur entspricht.",
       "Es geht nicht darum, den richtigen Zeitpunkt zu treffen -- sondern darum, das Risiko wieder auf das Mass zurueckzuholen, das urspruenglich gewollt war."
     ]
+  },
+  {
+    "id": "market-vs-limit-order",
+    "title": "Market Order oder Limit Order -- was ist der Unterschied?",
+    "date": "2026-08-28",
+    "body": [
+      "Zwei Arten, eine Aktie zu kaufen.",
+      "Die Order wird zum naechstbesten verfuegbaren Kurs ausgefuehrt -- Geschwindigkeit steht im Vordergrund, nicht der exakte Preis.",
+      "Die Order wird nur ausgefuehrt, wenn der Kurs dein Limit erreicht -- kann laenger dauern oder ganz ausbleiben, wenn der Kurs nie dorthin kommt.",
+      "Eine Market Order kann in schnellen Maerkten zu einem ueberraschend schlechten Kurs ausgefuehrt werden -- eine Limit Order schuetzt davor, kostet aber Sicherheit bei der Ausfuehrung."
+    ]
   }
 ]

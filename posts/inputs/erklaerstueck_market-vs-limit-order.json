@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Market Order* oder *Limit Order* -- was ist der Unterschied?",
+  "hook_sub": "Zwei Arten, eine Aktie zu kaufen.",
+  "sections": [
+    {
+      "headline": "*Market Order*: sofort, zum aktuellen Preis.",
+      "body": "Die Order wird zum naechstbesten verfuegbaren Kurs ausgefuehrt -- Geschwindigkeit steht im Vordergrund, nicht der exakte Preis."
+    },
+    {
+      "headline": "*Limit Order*: du bestimmst den Preis.",
+      "body": "Die Order wird nur ausgefuehrt, wenn der Kurs dein Limit erreicht -- kann laenger dauern oder ganz ausbleiben, wenn der Kurs nie dorthin kommt."
+    },
+    {
+      "headline": "Bei hoher *Volatilitaet* macht der Unterschied sich bemerkbar.",
+      "body": "Eine Market Order kann in schnellen Maerkten zu einem ueberraschend schlechten Kurs ausgefuehrt werden -- eine Limit Order schuetzt davor, kostet aber Sicherheit bei der Ausfuehrung."
+    }
+  ],
+  "cta_headline": "Beides hat seinen Platz.",
+  "cta_body": "Keine Empfehlung, welche Ordertyp die richtige ist -- nur der Unterschied dahinter."
+}

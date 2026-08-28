@@ -1,0 +1,15 @@
+# Skript: Wie ich meine erste Aktie ausgesucht habe
+
+**Ziel-Länge:** ca. 35-40 Sekunden gesprochen
+
+---
+
+Meine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.
+
+Im Nachhinein war das mehr Glück als Plan. Ich hätte genauso gut ein Unternehmen erwischen können, das ich zwar mag, das aber wirtschaftlich schlecht dasteht.
+
+Heute würde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefällt.
+
+Keine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem verändert hat.
+
+#depotdiary #persoenlich #boerse #finanzen

@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:13:14 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 00:39:31 +0000</lastBuildDate>
     <item>
       <title>Rebalancing -- warum ein Depot ab und zu nachjustiert wird.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,14 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Ohne dass sich an der Strategie etwas ändert.</description>
+    </item>
+    <item>
+      <title>Market Order oder Limit Order -- was ist der Unterschied?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_market-vs-limit-order</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Zwei Arten, eine Aktie zu kaufen.</description>
     </item>
     <item>
       <title>Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.</title>
