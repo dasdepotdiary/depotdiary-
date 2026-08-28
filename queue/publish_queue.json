@@ -453,7 +453,7 @@
     "status": "done",
     "published_at": "2026-08-28T15:57:00+00:00",
     "media_id": "18351424750219901",
-    "note": "Cron immer noch komplett inaktiv (kein einziger Scheduled-Run seit 26.08. 14:26 UTC, bestaetigt) -- manuell nachgeholt, ca. 1 Std. verspaetet."
+    "note": "Cron immer noch komplett inaktiv (kein einziger Scheduled-Run seit 26.08. 14:26 UTC, bestaetigt) -- manuell nachgeholt, ca. 1 Std. verspaetet. Inhalt kollidierte mit dem Nutzer-eigenen improvisierten 'Large Cap vs. Small Cap'-Post vom 27.08. -- vom Nutzer nach Live-Gang selbst wieder geloescht. Post NICHT erneut ansetzen, Thema gilt als verbraucht/kollidiert."
   },
   {
     "post_name": "erklaerstueck_marktkapitalisierung-klassen",
@@ -462,7 +462,7 @@
     "status": "done",
     "published_at": "2026-08-28T15:57:10+00:00",
     "media_id": "18122946844866224",
-    "note": "manuell nachgeholt, siehe Carousel-Eintrag"
+    "note": "siehe Carousel-Eintrag -- ebenfalls vom Nutzer geloescht"
   },
   {
     "post_name": "personal_warum-angefangen-v2",
