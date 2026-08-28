@@ -481,14 +481,14 @@
     "caption": "Die Frage, die ich am häufigsten bekomme: Wie viel sollte ich denn investieren?\n\nIch hab keine Zahl für dich, weil die Antwort komplett von deiner Situation abhängt. Notgroschen zuerst, Schulden mit hohen Zinsen zuerst -- erst danach macht Investieren für mich überhaupt Sinn.\n\nKeine Anlageberatung -- nur, wie ich selbst darüber denke.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-27T12:00:00+02:00",
     "status": "done",
-    "note": "Automatik ist am 26.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht). Nutzer hat notgedrungen selbst ein Reel zum gleichen Thema mit eigener, improvisierter Caption gepostet, media_id 18096323426144406 -- dieser Eintrag daher nicht mehr feuern lassen, um kein Duplikat zu erzeugen."
+    "note": "DUPLIKAT: Automatik ist am 26.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht), Nutzer hat notgedrungen selbst ein Reel zum gleichen Thema mit eigener, improvisierter Caption gepostet (media_id 18096323426144406). Beim Reparaturversuch wurde dieser Eintrag dann versehentlich doch noch von einem manuell angestossenen Workflow-Lauf (mit veraltetem Queue-Stand) gefeuert, bevor der Fix committed war -- zweite media_id 18469375492117495 mit der urspruenglichen Original-Caption. Zwei Reels zum selben Thema sind jetzt live."
   },
   {
     "post_name": "personal_wieviel-investieren-v2",
     "action": "story",
     "fire_at": "2026-08-27T12:03:00+02:00",
     "status": "done",
-    "note": "siehe Reel-Eintrag oben -- Automatik-Ausfall, manuell durch Nutzer ersetzt."
+    "note": "DUPLIKAT, siehe Reel-Eintrag oben. Zweite media_id 18133944595558829 (nur 24h Story, laeuft von selbst aus)."
   },
   {
     "post_name": "marktupdate_snps-nvda-crm-okta-check",
@@ -504,7 +504,7 @@
     "slide_count": 6,
     "fire_at": "2026-08-29T15:00:00+02:00",
     "status": "pending",
-    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., um nicht mit erklaerstueck_marktkapitalisierung-klassen (28.08., 15 Uhr) am selben Tag zu kollidieren -- Inhalt ist zeitlos, kein Nachteil durch Verschiebung."
+    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., um nicht mit erklaerstueck_marktkapitalisierung-klassen (28.08., 15 Uhr) am selben Tag zu kollidieren -- Inhalt ist zeitlos, kein Nachteil durch Verschiebung. Ein verspaeteter manueller Workflow-Lauf (alter Queue-Stand) hat einen Publish-Versuch mit 400-Fehler unternommen, bevor die Verschiebung committed war -- nichts wurde veroeffentlicht, bestaetigt ueber die Graph API."
   },
   {
     "post_name": "erklaerstueck_abgeltungssteuer",
@@ -544,7 +544,7 @@
     "action": "story_sequence",
     "fire_at": "2026-08-27T09:30:00+02:00",
     "status": "error",
-    "error": "Nicht gefeuert -- Automatik ist am 26./27.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht). Inhalt ('DLTR/ADSK/MRVL/ULTA berichten heute') ist jetzt einen Tag zu spaet und veraltet -- absichtlich nicht mehr feuern lassen. Bei Bedarf durch echten Ergebnisse-Post ersetzen, analog zu marktupdate_nvda-snps-ergebnisse."
+    "error": "Nicht gefeuert -- Automatik ist am 26./27.08. komplett ausgefallen (Cron-Workflow lief 30+ Std. nicht). Inhalt ('DLTR/ADSK/MRVL/ULTA berichten heute') ist jetzt einen Tag zu spaet und veraltet -- absichtlich nicht mehr feuern lassen. Ein verspaeteter manueller Workflow-Lauf hat ebenfalls einen 400-Fehler produziert, keine Slides wurden veroeffentlicht (via Graph API bestaetigt: keine Stories mit diesem Thema live). Bei Bedarf durch echten Ergebnisse-Post ersetzen, analog zu marktupdate_nvda-snps-ergebnisse."
   },
   {
     "post_name": "marktupdate_nvda-snps-ergebnisse",
