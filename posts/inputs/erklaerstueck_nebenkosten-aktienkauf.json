@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Was beim Aktienkauf *nebenbei* noch mitkostet.",
+  "hook_sub": "Kleine Posten, die sich summieren.",
+  "sections": [
+    {
+      "headline": "*Ordergebuehren* variieren stark zwischen Brokern.",
+      "body": "Manche verlangen einen Fixbetrag pro Order, andere einen Prozentsatz vom Volumen -- bei kleinen Betraegen faellt das prozentual staerker ins Gewicht."
+    },
+    {
+      "headline": "Der *Spread* ist eine versteckte Kosten.",
+      "body": "Die Differenz zwischen Kauf- und Verkaufspreis wird selten explizit ausgewiesen, wirkt sich aber bei jedem Trade aus -- besonders bei weniger liquiden Werten."
+    },
+    {
+      "headline": "Bei Sparplaenen oft *guenstiger*, aber nicht immer kostenlos.",
+      "body": "Auch bei 0-Euro-Sparplaenen koennen Depotgebuehren oder Fremdkostenpauschalen anfallen -- ein Blick ins Preisverzeichnis lohnt sich."
+    }
+  ],
+  "cta_headline": "Kleine Zahlen, grosse Wirkung ueber Zeit.",
+  "cta_body": "Keine Empfehlung fuer einen bestimmten Broker -- nur, worauf ich selbst achte."
+}

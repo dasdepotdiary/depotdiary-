@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 28 Aug 2026 08:26:10 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 10:53:29 +0000</lastBuildDate>
     <item>
       <title>Rebalancing -- warum ein Depot ab und zu nachjustiert wird.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -37,6 +37,38 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Ein haeufiges Missverstaendnis.</description>
+    </item>
+    <item>
+      <title>Eine Watchlist ist mehr als eine Wunschliste.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_watchlist</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Wie ich sie tatsaechlich nutze.</description>
+    </item>
+    <item>
+      <title>Was beim Aktienkauf nebenbei noch mitkostet.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_nebenkosten-aktienkauf</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Kleine Posten, die sich summieren.</description>
+    </item>
+    <item>
+      <title>Warum der Kurs am Ex-Dividende-Tag automatisch sinkt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_ex-dividende-datum</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Kein Zufall, sondern Mechanik.</description>
+    </item>
+    <item>
+      <title>Buy and Hold oder aktives Trading -- zwei Philosophien.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_buy-and-hold-vs-trading</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Kein Urteil, nur der Unterschied.</description>
     </item>
     <item>
       <title>Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.</title>

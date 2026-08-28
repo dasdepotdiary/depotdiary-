@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Warum der Kurs am *Ex-Dividende-Tag* automatisch sinkt.",
+  "hook_sub": "Kein Zufall, sondern Mechanik.",
+  "sections": [
+    {
+      "headline": "Ab diesem Tag ist die Dividende *nicht mehr enthalten*.",
+      "body": "Wer die Aktie am oder nach dem Ex-Dividende-Datum kauft, bekommt die naechste Ausschuettung nicht mehr -- der Kurs wird rechnerisch um den Dividendenbetrag angepasst."
+    },
+    {
+      "headline": "Der Bestaende-Stichtag entscheidet, nicht der Kauf heute.",
+      "body": "Massgeblich ist, wer die Aktie am Record Date im Depot haelt -- das Ex-Dividende-Datum liegt meist kurz davor."
+    },
+    {
+      "headline": "Kein Grund zur *Verwunderung* beim Blick aufs Depot.",
+      "body": "Ein Kursruecksetzer am Ex-Tag bedeutet nicht automatisch schlechte Nachrichten -- oft ist es einfach diese Mechanik."
+    }
+  ],
+  "cta_headline": "Ein Datum, das oft uebersehen wird.",
+  "cta_body": "Keine Anlageberatung -- nur, wie der Mechanismus rechnerisch funktioniert."
+}

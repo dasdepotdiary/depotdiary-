@@ -614,5 +614,61 @@
     "action": "story",
     "fire_at": "2026-08-30T15:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_watchlist",
+    "action": "carousel",
+    "caption": "Eine Watchlist ist mehr als eine Wunschliste.\n\nWie ich sie tatsaechlich nutze:\n\n-> Nicht jede interessante Aktie wird sofort gekauft -- Watchlist trennt Beobachten von Kaufen\n-> Sie zeigt, ob mein Interesse ueber Zeit echt bleibt\n-> Weniger Fear of Missing Out beim Einstieg, weil ich das Unternehmen schon kenne\n\nKeine Empfehlung, wie du deine Watchlist fuehrst -- nur, wie ich sie nutze.\n\n#depotdiary #watchlist #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-08-31T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_watchlist",
+    "action": "story",
+    "fire_at": "2026-08-31T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_nebenkosten-aktienkauf",
+    "action": "carousel",
+    "caption": "Was beim Aktienkauf nebenbei noch mitkostet.\n\nKleine Posten, die sich summieren:\n\n-> Ordergebuehren variieren stark zwischen Brokern -- Fixbetrag oder Prozentsatz\n-> Der Spread ist eine versteckte Kosten, selten explizit ausgewiesen\n-> Auch guenstige Sparplaene sind nicht immer komplett kostenlos\n\nKeine Empfehlung fuer einen bestimmten Broker -- nur, worauf ich selbst achte.\n\n#depotdiary #boerse #aktien #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-01T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_nebenkosten-aktienkauf",
+    "action": "story",
+    "fire_at": "2026-09-01T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_ex-dividende-datum",
+    "action": "carousel",
+    "caption": "Warum der Kurs am Ex-Dividende-Tag automatisch sinkt.\n\nKein Zufall, sondern Mechanik:\n\n-> Ab diesem Tag ist die naechste Dividende nicht mehr enthalten -- Kurs wird rechnerisch angepasst\n-> Massgeblich ist der Bestand am Record Date, nicht der Kauf heute\n-> Ein Kursruecksetzer am Ex-Tag ist kein automatisches Warnsignal\n\nKeine Anlageberatung -- nur, wie der Mechanismus rechnerisch funktioniert.\n\n#depotdiary #dividende #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-02T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_ex-dividende-datum",
+    "action": "story",
+    "fire_at": "2026-09-02T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_buy-and-hold-vs-trading",
+    "action": "carousel",
+    "caption": "Buy and Hold oder aktives Trading -- zwei Philosophien.\n\nKein Urteil, nur der Unterschied:\n\n-> Buy and Hold: kaufen und Jahre liegen lassen, weniger Zeitaufwand und Kosten\n-> Aktives Trading: haeufiger Ein- und Ausstieg, mehr Aufwand und Steuerereignisse\n-> Die Mehrheit der Trader schlaegt den Markt nach Kosten selten dauerhaft\n\nKeine Empfehlung, welcher Stil der richtige ist -- nur die beiden Ansaetze im Vergleich.\n\n#depotdiary #trading #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-03T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_buy-and-hold-vs-trading",
+    "action": "story",
+    "fire_at": "2026-09-03T15:03:00+02:00",
+    "status": "pending"
   }
 ]

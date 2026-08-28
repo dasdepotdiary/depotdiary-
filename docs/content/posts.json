@@ -439,5 +439,41 @@
     "excerpt": "Ein haeufiges Missverstaendnis.",
     "cover": "assets/posts/erklaerstueck_aktiensplit/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_watchlist",
+    "title": "Eine Watchlist ist mehr als eine Wunschliste.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Wie ich sie tatsaechlich nutze.",
+    "cover": "assets/posts/erklaerstueck_watchlist/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_nebenkosten-aktienkauf",
+    "title": "Was beim Aktienkauf nebenbei noch mitkostet.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Kleine Posten, die sich summieren.",
+    "cover": "assets/posts/erklaerstueck_nebenkosten-aktienkauf/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_ex-dividende-datum",
+    "title": "Warum der Kurs am Ex-Dividende-Tag automatisch sinkt.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Kein Zufall, sondern Mechanik.",
+    "cover": "assets/posts/erklaerstueck_ex-dividende-datum/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_buy-and-hold-vs-trading",
+    "title": "Buy and Hold oder aktives Trading -- zwei Philosophien.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Kein Urteil, nur der Unterschied.",
+    "cover": "assets/posts/erklaerstueck_buy-and-hold-vs-trading/slide_1.webp",
+    "url": null
   }
 ]

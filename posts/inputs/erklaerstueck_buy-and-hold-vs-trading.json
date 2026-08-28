@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Buy and Hold* oder aktives Trading -- zwei Philosophien.",
+  "hook_sub": "Kein Urteil, nur der Unterschied.",
+  "sections": [
+    {
+      "headline": "*Buy and Hold*: kaufen und Jahre liegen lassen.",
+      "body": "Weniger Zeitaufwand, weniger Transaktionskosten -- der Erfolg haengt stark davon ab, die richtigen Unternehmen langfristig zu halten."
+    },
+    {
+      "headline": "Aktives Trading: haeufiger Ein- und Ausstieg.",
+      "body": "Mehr Zeitaufwand, mehr Transaktionen, mehr Steuerereignisse -- setzt auf kuerzere Kursbewegungen statt auf langfristiges Wachstum."
+    },
+    {
+      "headline": "Die Mehrheit der Trader schlaegt den Markt *nicht* dauerhaft.",
+      "body": "Historisch zeigen viele Studien, dass aktives Trading nach Kosten und Steuern selten besser abschneidet als simples Halten -- Ausnahmen gibt es trotzdem."
+    }
+  ],
+  "cta_headline": "Ich halte mich an das, was zu mir passt.",
+  "cta_body": "Keine Empfehlung, welcher Stil der richtige ist -- nur die beiden Ansaetze im Vergleich."
+}

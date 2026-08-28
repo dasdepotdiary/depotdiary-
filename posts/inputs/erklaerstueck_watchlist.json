@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Eine *Watchlist* ist mehr als eine Wunschliste.",
+  "hook_sub": "Wie ich sie tatsaechlich nutze.",
+  "sections": [
+    {
+      "headline": "Nicht jede interessante Aktie wird *gekauft*.",
+      "body": "Eine Watchlist trennt Beobachten von Kaufen -- ich kann ein Unternehmen verfolgen, ohne mich sofort entscheiden zu muessen."
+    },
+    {
+      "headline": "Sie zeigt, ob mein *Interesse* echt ist.",
+      "body": "Wenn ich eine Aktie ueber Wochen beobachte und mein Interesse bleibt, ist das ein anderes Signal als ein spontaner Kaufimpuls."
+    },
+    {
+      "headline": "Weniger *Fear of Missing Out* beim Einstieg.",
+      "body": "Weil ich das Unternehmen schon kenne, muss ich nicht unter Zeitdruck entscheiden, sobald der Kurs sich bewegt."
+    }
+  ],
+  "cta_headline": "Beobachten first, entscheiden spaeter.",
+  "cta_body": "Keine Empfehlung, wie du deine Watchlist fuehrst -- nur, wie ich sie nutze."
+}

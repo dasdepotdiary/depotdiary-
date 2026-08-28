@@ -309,5 +309,49 @@
       "Ein niedrigerer Kurs pro Aktie wirkt zugaenglicher und kann den Handel liquider machen -- eine psychologische und praktische Entscheidung, keine wirtschaftliche Verbesserung.",
       "Mehrere Aktien werden zu einer zusammengelegt, der Kurs steigt entsprechend -- oft genutzt, um Boersenregeln zum Mindestkurs zu erfuellen."
     ]
+  },
+  {
+    "id": "watchlist",
+    "title": "Eine Watchlist ist mehr als eine Wunschliste.",
+    "date": "2026-08-28",
+    "body": [
+      "Wie ich sie tatsaechlich nutze.",
+      "Eine Watchlist trennt Beobachten von Kaufen -- ich kann ein Unternehmen verfolgen, ohne mich sofort entscheiden zu muessen.",
+      "Wenn ich eine Aktie ueber Wochen beobachte und mein Interesse bleibt, ist das ein anderes Signal als ein spontaner Kaufimpuls.",
+      "Weil ich das Unternehmen schon kenne, muss ich nicht unter Zeitdruck entscheiden, sobald der Kurs sich bewegt."
+    ]
+  },
+  {
+    "id": "nebenkosten-aktienkauf",
+    "title": "Was beim Aktienkauf nebenbei noch mitkostet.",
+    "date": "2026-08-28",
+    "body": [
+      "Kleine Posten, die sich summieren.",
+      "Manche verlangen einen Fixbetrag pro Order, andere einen Prozentsatz vom Volumen -- bei kleinen Betraegen faellt das prozentual staerker ins Gewicht.",
+      "Die Differenz zwischen Kauf- und Verkaufspreis wird selten explizit ausgewiesen, wirkt sich aber bei jedem Trade aus -- besonders bei weniger liquiden Werten.",
+      "Auch bei 0-Euro-Sparplaenen koennen Depotgebuehren oder Fremdkostenpauschalen anfallen -- ein Blick ins Preisverzeichnis lohnt sich."
+    ]
+  },
+  {
+    "id": "ex-dividende-datum",
+    "title": "Warum der Kurs am Ex-Dividende-Tag automatisch sinkt.",
+    "date": "2026-08-28",
+    "body": [
+      "Kein Zufall, sondern Mechanik.",
+      "Wer die Aktie am oder nach dem Ex-Dividende-Datum kauft, bekommt die naechste Ausschuettung nicht mehr -- der Kurs wird rechnerisch um den Dividendenbetrag angepasst.",
+      "Massgeblich ist, wer die Aktie am Record Date im Depot haelt -- das Ex-Dividende-Datum liegt meist kurz davor.",
+      "Ein Kursruecksetzer am Ex-Tag bedeutet nicht automatisch schlechte Nachrichten -- oft ist es einfach diese Mechanik."
+    ]
+  },
+  {
+    "id": "buy-and-hold-vs-trading",
+    "title": "Buy and Hold oder aktives Trading -- zwei Philosophien.",
+    "date": "2026-08-28",
+    "body": [
+      "Kein Urteil, nur der Unterschied.",
+      "Weniger Zeitaufwand, weniger Transaktionskosten -- der Erfolg haengt stark davon ab, die richtigen Unternehmen langfristig zu halten.",
+      "Mehr Zeitaufwand, mehr Transaktionen, mehr Steuerereignisse -- setzt auf kuerzere Kursbewegungen statt auf langfristiges Wachstum.",
+      "Historisch zeigen viele Studien, dass aktives Trading nach Kosten und Steuern selten besser abschneidet als simples Halten -- Ausnahmen gibt es trotzdem."
+    ]
   }
 ]
