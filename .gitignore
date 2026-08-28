@@ -1,6 +1,7 @@
 .env
 output/
 data/
+assets/stock_clips/
 __pycache__/
 *.pyc
 .venv/
