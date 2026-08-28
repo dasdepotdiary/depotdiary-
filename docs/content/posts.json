@@ -421,5 +421,23 @@
     "excerpt": "Zwei Arten, eine Aktie zu kaufen.",
     "cover": "assets/posts/erklaerstueck_market-vs-limit-order/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_disziplin-sport-investieren",
+    "title": "Warum diszipliniert trainierende Menschen oft auch beim Investieren durchhalten.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Eine Vermutung, keine Studie.",
+    "cover": "assets/posts/erklaerstueck_disziplin-sport-investieren/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_aktiensplit",
+    "title": "Ein Aktiensplit -- mehr Aktien, aber nicht mehr wert.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Ein haeufiges Missverstaendnis.",
+    "cover": "assets/posts/erklaerstueck_aktiensplit/slide_1.webp",
+    "url": null
   }
 ]

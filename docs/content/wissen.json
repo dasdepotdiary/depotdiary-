@@ -287,5 +287,27 @@
       "Die Order wird nur ausgefuehrt, wenn der Kurs dein Limit erreicht -- kann laenger dauern oder ganz ausbleiben, wenn der Kurs nie dorthin kommt.",
       "Eine Market Order kann in schnellen Maerkten zu einem ueberraschend schlechten Kurs ausgefuehrt werden -- eine Limit Order schuetzt davor, kostet aber Sicherheit bei der Ausfuehrung."
     ]
+  },
+  {
+    "id": "disziplin-sport-investieren",
+    "title": "Warum diszipliniert trainierende Menschen oft auch beim Investieren durchhalten.",
+    "date": "2026-08-28",
+    "body": [
+      "Eine Vermutung, keine Studie.",
+      "Wer beim Sport oder bei der Ernaehrung Woche fuer Woche durchzieht, obwohl sich kurzfristig kaum etwas aendert, hat schon geuebt, was Investieren am meisten verlangt: Geduld ohne sofortige Bestaetigung.",
+      "Ein schlechter Trainingstag oder ein roter Boersentag fuehlen sich aehnlich an -- die Frage ist beide Male, ob man trotzdem beim Plan bleibt.",
+      "Wer nicht auf Motivation wartet, sondern einen festen Rhythmus hat -- beim Training wie beim Sparplan -- kommt einfach weiter, wenn andere aufhoeren."
+    ]
+  },
+  {
+    "id": "aktiensplit",
+    "title": "Ein Aktiensplit -- mehr Aktien, aber nicht mehr wert.",
+    "date": "2026-08-28",
+    "body": [
+      "Ein haeufiges Missverstaendnis.",
+      "Bei einem Split (z.B. 1:10) bekommst du fuer jede Aktie zehn neue -- der Kurs pro Aktie sinkt im gleichen Verhaeltnis. Dein Depotwert bleibt exakt gleich.",
+      "Ein niedrigerer Kurs pro Aktie wirkt zugaenglicher und kann den Handel liquider machen -- eine psychologische und praktische Entscheidung, keine wirtschaftliche Verbesserung.",
+      "Mehrere Aktien werden zu einer zusammengelegt, der Kurs steigt entsprechend -- oft genutzt, um Boersenregeln zum Mindestkurs zu erfuellen."
+    ]
   }
 ]

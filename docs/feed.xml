@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 28 Aug 2026 00:39:31 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 28 Aug 2026 08:26:10 +0000</lastBuildDate>
     <item>
       <title>Rebalancing -- warum ein Depot ab und zu nachjustiert wird.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -21,6 +21,22 @@
       <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Zwei Arten, eine Aktie zu kaufen.</description>
+    </item>
+    <item>
+      <title>Warum diszipliniert trainierende Menschen oft auch beim Investieren durchhalten.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_disziplin-sport-investieren</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Eine Vermutung, keine Studie.</description>
+    </item>
+    <item>
+      <title>Ein Aktiensplit -- mehr Aktien, aber nicht mehr wert.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_aktiensplit</guid>
+      <pubDate>Fri, 28 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ein haeufiges Missverstaendnis.</description>
     </item>
     <item>
       <title>Vier Aktien im Blick: Synopsys, Nvidia, Salesforce und Okta.</title>

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Ein *Aktiensplit* -- mehr Aktien, aber nicht mehr wert.",
+  "hook_sub": "Ein haeufiges Missverstaendnis.",
+  "sections": [
+    {
+      "headline": "Der Kuchen wird in *mehr Stuecke* geteilt.",
+      "body": "Bei einem Split (z.B. 1:10) bekommst du fuer jede Aktie zehn neue -- der Kurs pro Aktie sinkt im gleichen Verhaeltnis. Dein Depotwert bleibt exakt gleich."
+    },
+    {
+      "headline": "Warum Unternehmen das ueberhaupt machen.",
+      "body": "Ein niedrigerer Kurs pro Aktie wirkt zugaenglicher und kann den Handel liquider machen -- eine psychologische und praktische Entscheidung, keine wirtschaftliche Verbesserung."
+    },
+    {
+      "headline": "Auch das Gegenteil gibt es: der *Reverse Split*.",
+      "body": "Mehrere Aktien werden zu einer zusammengelegt, der Kurs steigt entsprechend -- oft genutzt, um Boersenregeln zum Mindestkurs zu erfuellen."
+    }
+  ],
+  "cta_headline": "Reine Mechanik, kein Kursgewinn.",
+  "cta_body": "Keine Bewertung, nur wie ein Split rechnerisch funktioniert."
+}
