@@ -517,13 +517,19 @@
     "action": "reel",
     "caption": "Der Zinseszins -- warum frueh anfangen so viel bringt.\n\nKeine Magie, nur Mathematik:\n\n-> Zinsen bekommst du auch auf Zinsen -- ab dem zweiten Jahr waechst auch das, was du im ersten Jahr schon dazubekommen hast\n-> Der Unterschied zeigt sich erst spaeter -- ueber Jahrzehnte wird aus der Kurve ein deutlicher Sprung\n-> Zeit schlaegt oft hohe Einzahlungen\n\nKeine Prognose, nur der Grund, warum ich frueh angefangen hab.\n\n#depotdiary #zinseszins #boerse #finanzen #erklaerstueck",
     "fire_at": "2026-08-28T19:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-28T10:52:00+00:00",
+    "media_id": "17898891960589201",
+    "note": "auf Nutzerwunsch vorgezogen und manuell veroeffentlicht (nicht ueber Pending-Queue)"
   },
   {
     "post_name": "erklaerstueck_zinseszins",
     "action": "story",
     "fire_at": "2026-08-28T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-28T10:52:05+00:00",
+    "media_id": "18034084637839177",
+    "note": "auf Nutzerwunsch vorgezogen und manuell veroeffentlicht (nicht ueber Pending-Queue)"
   },
   {
     "post_name": "collab_finanzboerse",
