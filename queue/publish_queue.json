@@ -450,13 +450,19 @@
     "caption": "Large Cap, Mid Cap, Small Cap -- was heisst das?\n\nUnternehmensgroesse nach Marktkapitalisierung eingeteilt:\n\n-> Marktkap. = Aktienkurs mal Anzahl aller Aktien\n-> Large Caps: meist ueber 10 Mrd. USD, etabliert, stabiler\n-> Mid Caps: 2 bis 10 Mrd. USD, oft in Wachstumsphase\n-> Small Caps: unter 2 Mrd. USD, mehr Chance, mehr Schwankung\n\nKeine Empfehlung, nur die Einteilung -- Groesse allein sagt nichts ueber Qualitaet aus.\n\n#depotdiary #boerse #aktien #finanzen #geldwissen",
     "slide_count": 7,
     "fire_at": "2026-08-28T15:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-28T15:57:00+00:00",
+    "media_id": "18351424750219901",
+    "note": "Cron immer noch komplett inaktiv (kein einziger Scheduled-Run seit 26.08. 14:26 UTC, bestaetigt) -- manuell nachgeholt, ca. 1 Std. verspaetet."
   },
   {
     "post_name": "erklaerstueck_marktkapitalisierung-klassen",
     "action": "story",
     "fire_at": "2026-08-28T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-28T15:57:10+00:00",
+    "media_id": "18122946844866224",
+    "note": "manuell nachgeholt, siehe Carousel-Eintrag"
   },
   {
     "post_name": "personal_warum-angefangen-v2",
