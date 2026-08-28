@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Rebalancing* -- warum ein Depot ab und zu nachjustiert wird.",
+  "hook_sub": "Ohne dass sich an der Strategie etwas ändert.",
+  "sections": [
+    {
+      "headline": "Gewinner wachsen -- und verschieben die *Gewichtung*.",
+      "body": "Steigt eine Position stark, macht sie irgendwann einen groesseren Anteil am Depot aus als urspruenglich geplant -- ganz von selbst, ohne dass man etwas gekauft hat."
+    },
+    {
+      "headline": "Rebalancing bringt die *urspruengliche Aufteilung* zurueck.",
+      "body": "Ueberproportional gewachsene Positionen werden reduziert, kleinere aufgestockt -- damit das Verhaeltnis wieder der geplanten Struktur entspricht."
+    },
+    {
+      "headline": "Kein *Markttiming*, sondern reine Mechanik.",
+      "body": "Es geht nicht darum, den richtigen Zeitpunkt zu treffen -- sondern darum, das Risiko wieder auf das Mass zurueckzuholen, das urspruenglich gewollt war."
+    }
+  ],
+  "cta_headline": "Fester Rhythmus statt Bauchgefuehl.",
+  "cta_body": "Keine Empfehlung, wie oft oder ob du rebalancierst -- nur die Mechanik dahinter."
+}

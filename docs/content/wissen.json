@@ -265,5 +265,16 @@
       "Der Sparerpauschbetrag wird nicht automatisch berücksichtigt. Ohne hinterlegten Freistellungsauftrag behält deine Bank die Steuer sofort ein -- zurückholen geht dann nur noch über die Steuererklärung.",
       "Hast du Depots bei mehreren Anbietern, kannst du den Freistellungsauftrag aufteilen -- die Summe darf insgesamt aber die 1.000 bzw. 2.000 Euro nicht übersteigen."
     ]
+  },
+  {
+    "id": "rebalancing",
+    "title": "Rebalancing -- warum ein Depot ab und zu nachjustiert wird.",
+    "date": "2026-08-28",
+    "body": [
+      "Ohne dass sich an der Strategie etwas ändert.",
+      "Steigt eine Position stark, macht sie irgendwann einen groesseren Anteil am Depot aus als urspruenglich geplant -- ganz von selbst, ohne dass man etwas gekauft hat.",
+      "Ueberproportional gewachsene Positionen werden reduziert, kleinere aufgestockt -- damit das Verhaeltnis wieder der geplanten Struktur entspricht.",
+      "Es geht nicht darum, den richtigen Zeitpunkt zu treffen -- sondern darum, das Risiko wieder auf das Mass zurueckzuholen, das urspruenglich gewollt war."
+    ]
   }
 ]

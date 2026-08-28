@@ -403,5 +403,14 @@
     "excerpt": "Beide klar ueber der eigenen Erwartung.",
     "cover": "assets/posts/marktupdate_nvda-snps-ergebnisse/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_rebalancing",
+    "title": "Rebalancing -- warum ein Depot ab und zu nachjustiert wird.",
+    "category": "erklaerstueck",
+    "date": "2026-08-28",
+    "excerpt": "Ohne dass sich an der Strategie etwas ändert.",
+    "cover": "assets/posts/erklaerstueck_rebalancing/slide_1.webp",
+    "url": null
   }
 ]
