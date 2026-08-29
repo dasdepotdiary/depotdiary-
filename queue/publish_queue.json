@@ -508,14 +508,14 @@
     "action": "carousel",
     "caption": "Die Abgeltungssteuer -- was vom Gewinn wirklich uebrig bleibt.\n\nEin Thema, das jeden mit Depot betrifft:\n\n-> 25% pauschale Steuer auf Zinsen, Dividenden und Kursgewinne, plus Soli und ggf. Kirchensteuer\n-> Sparerpauschbetrag: 1.000 Euro pro Person im Jahr steuerfrei (2.000 Euro bei Ehepaaren)\n-> Ohne Freistellungsauftrag zieht die Bank trotzdem sofort ab -- Rueckholung nur ueber die Steuererklaerung\n-> Aufteilbar auf mehrere Banken\n\nKeine Steuerberatung -- nur, wie der Mechanismus grundsaetzlich funktioniert.\n\n#depotdiary #steuern #abgeltungssteuer #boerse #finanzen",
     "slide_count": 6,
-    "fire_at": "2026-08-31T15:00:00+02:00",
+    "fire_at": "2026-08-30T19:00:00+02:00",
     "status": "pending",
-    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., dann auf Nutzerwunsch nochmal auf 31.08. verschoben, um am 29.08. 19 Uhr Platz fuer das frisch fertige personal_taeglich-checken-Reel zu machen."
+    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., dann auf Nutzerwunsch final auf 30.08. 19 Uhr verschoben."
   },
   {
     "post_name": "erklaerstueck_abgeltungssteuer",
     "action": "story",
-    "fire_at": "2026-08-31T15:03:00+02:00",
+    "fire_at": "2026-08-30T19:03:00+02:00",
     "status": "pending"
   },
   {
@@ -570,29 +570,33 @@
     "action": "carousel",
     "caption": "Rebalancing -- warum ein Depot ab und zu nachjustiert wird.\n\nOhne dass sich an der Strategie etwas aendert:\n\n-> Gewinner wachsen und verschieben die Gewichtung im Depot -- ganz von selbst\n-> Rebalancing bringt die urspruengliche Aufteilung zurueck\n-> Kein Markttiming, sondern reine Mechanik -- es geht um Risiko, nicht um den richtigen Zeitpunkt\n\nKeine Empfehlung, wie oft oder ob du rebalancierst -- nur die Mechanik dahinter.\n\n#depotdiary #rebalancing #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
-    "fire_at": "2026-08-31T19:00:00+02:00",
+    "fire_at": "2026-08-29T19:00:00+02:00",
     "status": "pending",
-    "note": "verschoben von 29.08. 19 Uhr auf 31.08. 19 Uhr, um Platz fuer das frisch fertige personal_taeglich-checken-Reel zu machen."
+    "note": "urspruenglicher Slot, blieb auf Nutzerwunsch doch am 29.08. -- personal_taeglich-checken laeuft stattdessen vorgezogen, nicht als Ersatz."
   },
   {
     "post_name": "erklaerstueck_rebalancing",
     "action": "story",
-    "fire_at": "2026-08-31T19:03:00+02:00",
+    "fire_at": "2026-08-29T19:03:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "personal_taeglich-checken",
     "action": "reel",
     "caption": "Ich schau mein Depot bewusst nicht jeden Tag an.\n\nNicht, weil es mich nicht interessiert -- sondern weil taegliche Kursschwankungen fuer eine langfristige Entscheidung fast nie relevant sind.\n\nWenn ich staendig hinschaue, fange ich an, auf Rauschen zu reagieren statt auf echte Veraenderungen. Also schau ich bewusst seltener hin -- meistens einmal die Woche.\n\nKeine Anlageberatung -- nur, wie ich selbst versuche, ruhiger zu bleiben.\n\n#depotdiary #persoenlich #boerse #finanzen",
-    "fire_at": "2026-08-29T19:00:00+02:00",
-    "status": "pending",
-    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, von dort als FINAL.mp4 in Downloads geliefert -- hier gestaged und eingeplant."
+    "fire_at": "2026-08-29T13:35:00+02:00",
+    "status": "done",
+    "published_at": "2026-08-29T11:35:00+00:00",
+    "media_id": "18282296875292542",
+    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, von dort als FINAL.mp4 in Downloads geliefert. Auf Nutzerwunsch sofort veroeffentlicht statt bis 19 Uhr zu warten -- Rebalancing-Carousel bleibt zusaetzlich um 19 Uhr bestehen."
   },
   {
     "post_name": "personal_taeglich-checken",
     "action": "story",
-    "fire_at": "2026-08-29T19:03:00+02:00",
-    "status": "pending"
+    "fire_at": "2026-08-29T13:35:00+02:00",
+    "status": "done",
+    "published_at": "2026-08-29T11:35:05+00:00",
+    "media_id": "18074794925707728"
   },
   {
     "post_name": "erklaerstueck_market-vs-limit-order",
