@@ -735,14 +735,14 @@
     "post_name": "personal_erste-aktie",
     "action": "reel",
     "caption": "Wie ich meine erste Aktie ausgesucht habe.\n\nMeine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.\n\nHeute wuerde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefaellt.\n\nKeine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem veraendert hat.\n\n#depotdiary #persoenlich #boerse #finanzen",
-    "fire_at": "2026-08-30T20:00:00+02:00",
+    "fire_at": "2026-08-31T15:00:00+02:00",
     "status": "pending",
-    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut."
+    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut. Auf Nutzerwunsch von 30.08. auf 31.08. verschoben."
   },
   {
     "post_name": "personal_erste-aktie",
     "action": "story",
-    "fire_at": "2026-08-30T20:03:00+02:00",
+    "fire_at": "2026-08-31T15:03:00+02:00",
     "status": "pending"
   }
 ]
