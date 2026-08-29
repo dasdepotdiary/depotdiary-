@@ -643,13 +643,14 @@
     "action": "carousel",
     "caption": "Ein Aktiensplit -- mehr Aktien, aber nicht mehr wert.\n\nEin haeufiges Missverstaendnis:\n\n-> Der Kuchen wird in mehr Stuecke geteilt -- Depotwert bleibt exakt gleich\n-> Niedrigerer Kurs wirkt zugaenglicher, ist aber keine wirtschaftliche Verbesserung\n-> Reverse Split macht das Gegenteil -- Aktien werden zusammengelegt, Kurs steigt entsprechend\n\nKeine Bewertung, nur wie ein Split rechnerisch funktioniert.\n\n#depotdiary #aktiensplit #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
-    "fire_at": "2026-08-30T15:00:00+02:00",
-    "status": "pending"
+    "fire_at": "2026-09-01T12:00:00+02:00",
+    "status": "pending",
+    "note": "verschoben von 30.08. 15 Uhr auf 01.09. 12 Uhr, um Platz fuer ein Reel am 30.08. zu machen."
   },
   {
     "post_name": "erklaerstueck_aktiensplit",
     "action": "story",
-    "fire_at": "2026-08-30T15:03:00+02:00",
+    "fire_at": "2026-09-01T12:03:00+02:00",
     "status": "pending"
   },
   {
