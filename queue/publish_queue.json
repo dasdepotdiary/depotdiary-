@@ -585,13 +585,15 @@
     "caption": "Market Order oder Limit Order -- was ist der Unterschied?\n\nZwei Arten, eine Aktie zu kaufen:\n\n-> Market Order: sofort zum naechstbesten Kurs, Geschwindigkeit vor Praezision\n-> Limit Order: du bestimmst den Preis, kann laenger dauern oder ausbleiben\n-> Bei hoher Volatilitaet macht der Unterschied sich besonders bemerkbar\n\nKeine Empfehlung, welcher Ordertyp der richtige ist -- nur der Unterschied dahinter.\n\n#depotdiary #boerse #aktien #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-08-29T12:00:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "erklaerstueck_market-vs-limit-order",
     "action": "story",
     "fire_at": "2026-08-29T12:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "erklaerstueck_disziplin-sport-investieren",
