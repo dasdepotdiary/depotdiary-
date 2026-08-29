@@ -716,5 +716,33 @@
     "fire_at": "2026-08-28T23:30:00+02:00",
     "status": "done",
     "note": "echter Instagram-Collab (\"Wenn wir von null anfangen wuerden\", 10+10 Aktien), vom Nutzer selbst im App ausgeloest (nicht ueber Graph API, kein media_id verfuegbar) -- laeuft unter @dasdepotdiary und @finanzboerse"
+  },
+  {
+    "post_name": "personal_regel-neue-position",
+    "action": "reel",
+    "caption": "Meine Regel vor jeder neuen Position.\n\nBevor ich eine neue Position aufbaue, warte ich mindestens eine Woche zwischen der ersten Idee und dem tatsaechlichen Kauf.\n\nIn dieser Woche passiert meistens eins von zwei Dingen: entweder die Ueberzeugung bleibt, oder sie verschwindet, sobald der erste Hype weg ist.\n\nKeine Anlageberatung -- nur eine Regel, die fuer mich persoenlich funktioniert.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-08-30T15:00:00+02:00",
+    "status": "pending",
+    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut."
+  },
+  {
+    "post_name": "personal_regel-neue-position",
+    "action": "story",
+    "fire_at": "2026-08-30T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_erste-aktie",
+    "action": "reel",
+    "caption": "Wie ich meine erste Aktie ausgesucht habe.\n\nMeine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.\n\nHeute wuerde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefaellt.\n\nKeine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem veraendert hat.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-08-30T20:00:00+02:00",
+    "status": "pending",
+    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut."
+  },
+  {
+    "post_name": "personal_erste-aktie",
+    "action": "story",
+    "fire_at": "2026-08-30T20:03:00+02:00",
+    "status": "pending"
   }
 ]
