@@ -585,15 +585,19 @@
     "caption": "Market Order oder Limit Order -- was ist der Unterschied?\n\nZwei Arten, eine Aktie zu kaufen:\n\n-> Market Order: sofort zum naechstbesten Kurs, Geschwindigkeit vor Praezision\n-> Limit Order: du bestimmst den Preis, kann laenger dauern oder ausbleiben\n-> Bei hoher Volatilitaet macht der Unterschied sich besonders bemerkbar\n\nKeine Empfehlung, welcher Ordertyp der richtige ist -- nur der Unterschied dahinter.\n\n#depotdiary #boerse #aktien #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-08-29T12:00:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "published_at": "2026-08-29T11:20:00+00:00",
+    "media_id": "18144671677505340",
+    "note": "Cron hat pünktlich versucht (400-Fehler beim media_publish, transient), manuell ca. 1 Std. spaeter nachgeholt."
   },
   {
     "post_name": "erklaerstueck_market-vs-limit-order",
     "action": "story",
     "fire_at": "2026-08-29T12:03:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "published_at": "2026-08-29T11:20:10+00:00",
+    "media_id": "18095026418381694",
+    "note": "manuell nachgeholt, siehe Carousel-Eintrag"
   },
   {
     "post_name": "erklaerstueck_disziplin-sport-investieren",
@@ -601,13 +605,15 @@
     "caption": "Warum diszipliniert trainierende Menschen oft auch beim Investieren durchhalten.\n\nEine Vermutung, keine Studie:\n\n-> Beides bringt keine schnellen Ergebnisse -- Geduld ohne sofortige Bestaetigung\n-> Ein schlechter Trainingstag und ein roter Boersentag fuehlen sich aehnlich an\n-> Feste Routine schlaegt Motivation -- beim Training wie beim Sparplan\n\nKeine Anlageberatung -- nur eine Beobachtung, kein Beweis.\n\n#depotdiary #mindset #boerse #finanzen #disziplin",
     "slide_count": 5,
     "fire_at": "2026-08-30T12:00:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "Absichtlich nicht gefeuert -- Reel zum selben Thema wurde bereits am 28.08. ueber einen anderen Claude-Chat (ElevenLabs-Handoff) gepostet. Carousel wuerde eine Themen-Doppelung erzeugen, aus der Queue effektiv entfernt."
   },
   {
     "post_name": "erklaerstueck_disziplin-sport-investieren",
     "action": "story",
     "fire_at": "2026-08-30T12:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "siehe Carousel-Eintrag -- absichtlich nicht gefeuert wegen Themen-Doppelung"
   },
   {
     "post_name": "erklaerstueck_aktiensplit",
@@ -628,13 +634,14 @@
     "action": "carousel",
     "caption": "Eine Watchlist ist mehr als eine Wunschliste.\n\nWie ich sie tatsaechlich nutze:\n\n-> Nicht jede interessante Aktie wird sofort gekauft -- Watchlist trennt Beobachten von Kaufen\n-> Sie zeigt, ob mein Interesse ueber Zeit echt bleibt\n-> Weniger Fear of Missing Out beim Einstieg, weil ich das Unternehmen schon kenne\n\nKeine Empfehlung, wie du deine Watchlist fuehrst -- nur, wie ich sie nutze.\n\n#depotdiary #watchlist #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
-    "fire_at": "2026-08-31T15:00:00+02:00",
-    "status": "pending"
+    "fire_at": "2026-08-30T12:00:00+02:00",
+    "status": "pending",
+    "note": "von 31.08. auf 30.08. 12 Uhr vorgezogen, um die durch die Disziplin-Kollision frei gewordene Luecke zu fuellen."
   },
   {
     "post_name": "erklaerstueck_watchlist",
     "action": "story",
-    "fire_at": "2026-08-31T15:03:00+02:00",
+    "fire_at": "2026-08-30T12:03:00+02:00",
     "status": "pending"
   },
   {
