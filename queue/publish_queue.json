@@ -726,14 +726,17 @@
     "action": "reel",
     "caption": "Meine Regel vor jeder neuen Position.\n\nBevor ich eine neue Position aufbaue, warte ich mindestens eine Woche zwischen der ersten Idee und dem tatsaechlichen Kauf.\n\nIn dieser Woche passiert meistens eins von zwei Dingen: entweder die Ueberzeugung bleibt, oder sie verschwindet, sobald der erste Hype weg ist.\n\nKeine Anlageberatung -- nur eine Regel, die fuer mich persoenlich funktioniert.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-30T15:00:00+02:00",
-    "status": "pending",
-    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut."
+    "status": "done",
+    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut.",
+    "published_at": "2026-08-30T13:09:07.797660+00:00",
+    "media_id": "18100803611610199"
   },
   {
     "post_name": "personal_regel-neue-position",
     "action": "story",
     "fire_at": "2026-08-30T15:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "personal_erste-aktie",
