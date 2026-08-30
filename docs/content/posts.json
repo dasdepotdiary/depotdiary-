@@ -475,5 +475,14 @@
     "excerpt": "Kein Urteil, nur der Unterschied.",
     "cover": "assets/posts/erklaerstueck_buy-and-hold-vs-trading/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_erste-aktie-persoenlich",
+    "title": "Wie ich meine erste Aktie ausgesucht habe.",
+    "category": "erklaerstueck",
+    "date": "2026-08-30",
+    "excerpt": "Ehrlich gesagt: mehr Zufall als Plan.",
+    "cover": "assets/posts/erklaerstueck_erste-aktie-persoenlich/slide_1.webp",
+    "url": null
   }
 ]
