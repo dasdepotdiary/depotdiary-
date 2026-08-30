@@ -731,16 +731,17 @@
     "caption": "Meine Regel vor jeder neuen Position.\n\nBevor ich eine neue Position aufbaue, warte ich mindestens eine Woche zwischen der ersten Idee und dem tatsaechlichen Kauf.\n\nIn dieser Woche passiert meistens eins von zwei Dingen: entweder die Ueberzeugung bleibt, oder sie verschwindet, sobald der erste Hype weg ist.\n\nKeine Anlageberatung -- nur eine Regel, die fuer mich persoenlich funktioniert.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-30T15:00:00+02:00",
     "status": "done",
-    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut.",
-    "published_at": "2026-08-30T13:09:07.797660+00:00",
-    "media_id": "18100803611610199"
+    "note": "Erstversion hatte den Untertitel-Bug (fixe 3-Wort-Bloecke), media_id 18100803611610199 -- vom Nutzer geloescht. Nach Code-Fix (split_into_phrases) neu gebaut und ersetzt.",
+    "published_at": "2026-08-30T17:57:00+00:00",
+    "media_id": "18553706404073676"
   },
   {
     "post_name": "personal_regel-neue-position",
     "action": "story",
     "fire_at": "2026-08-30T15:03:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "published_at": "2026-08-30T17:57:05+00:00",
+    "media_id": "18122156489309271"
   },
   {
     "post_name": "personal_erste-aktie",
@@ -804,6 +805,20 @@
     "post_name": "erklaerstueck_home-bias",
     "action": "story",
     "fire_at": "2026-08-31T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_erste-aktie",
+    "action": "reel",
+    "caption": "Wie ich meine erste Aktie ausgesucht habe.\n\nMeine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.\n\nHeute wuerde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefaellt.\n\nKeine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem veraendert hat.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-08-31T19:00:00+02:00",
+    "status": "pending",
+    "note": "Neu gebaut mit repariertem Untertitel-Code (split_into_phrases statt fixer 3-Wort-Bloecke), gleiche Original-Sprachaufnahme des Nutzers."
+  },
+  {
+    "post_name": "personal_erste-aktie",
+    "action": "story",
+    "fire_at": "2026-08-31T19:03:00+02:00",
     "status": "pending"
   }
 ]
