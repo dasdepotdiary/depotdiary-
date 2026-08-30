@@ -509,14 +509,18 @@
     "caption": "Die Abgeltungssteuer -- was vom Gewinn wirklich uebrig bleibt.\n\nEin Thema, das jeden mit Depot betrifft:\n\n-> 25% pauschale Steuer auf Zinsen, Dividenden und Kursgewinne, plus Soli und ggf. Kirchensteuer\n-> Sparerpauschbetrag: 1.000 Euro pro Person im Jahr steuerfrei (2.000 Euro bei Ehepaaren)\n-> Ohne Freistellungsauftrag zieht die Bank trotzdem sofort ab -- Rueckholung nur ueber die Steuererklaerung\n-> Aufteilbar auf mehrere Banken\n\nKeine Steuerberatung -- nur, wie der Mechanismus grundsaetzlich funktioniert.\n\n#depotdiary #steuern #abgeltungssteuer #boerse #finanzen",
     "slide_count": 6,
     "fire_at": "2026-08-30T19:00:00+02:00",
-    "status": "pending",
-    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., dann auf Nutzerwunsch final auf 30.08. 19 Uhr verschoben."
+    "status": "done",
+    "note": "verschoben von 27.08. (Automatik-Ausfall) auf 29.08., dann auf Nutzerwunsch final auf 30.08. 19 Uhr verschoben.",
+    "published_at": "2026-08-30T17:08:54.274849+00:00",
+    "media_id": "18106097615266733"
   },
   {
     "post_name": "erklaerstueck_abgeltungssteuer",
     "action": "story",
     "fire_at": "2026-08-30T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-30T17:09:04.079266+00:00",
+    "media_id": "18131974324726808"
   },
   {
     "post_name": "erklaerstueck_zinseszins",
