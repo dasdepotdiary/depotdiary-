@@ -747,17 +747,63 @@
     "action": "reel",
     "caption": "Wie ich meine erste Aktie ausgesucht habe.\n\nMeine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.\n\nHeute wuerde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefaellt.\n\nKeine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem veraendert hat.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-31T15:00:00+02:00",
-    "status": "done",
-    "published_at": "2026-08-29T19:56:00+00:00",
-    "media_id": "18112715348003627",
-    "note": "Eigene Stimmaufnahme des Nutzers, mit scripts/simple_voice_reel_captions.py gebaut. War fuer 31.08. eingeplant, auf Nutzerwunsch sofort veroeffentlicht."
+    "status": "error",
+    "error": "Vom Nutzer am 30.08. selbst wieder geloescht -- Untertitel waren fehlerhaft (fixe 3-Wort-Bloecke ohne Ruecksicht auf Satzgrenzen, z.B. 'AUSGESUCHT, ICH HAB', 'DAS ABER WIRTSCHAFTLICH'). Ersetzt durch erklaerstueck_erste-aktie-persoenlich (Carousel). Caption-Bug in video/assemble.py und scripts/simple_voice_reel_captions.py separat gefixt."
   },
   {
     "post_name": "personal_erste-aktie",
     "action": "story",
     "fire_at": "2026-08-31T15:03:00+02:00",
+    "status": "error",
+    "error": "siehe Reel-Eintrag -- ebenfalls geloescht"
+  },
+  {
+    "post_name": "erklaerstueck_erste-aktie-persoenlich",
+    "action": "carousel",
+    "fire_at": "2026-08-30T20:30:00+02:00",
     "status": "done",
-    "published_at": "2026-08-29T19:56:05+00:00",
-    "media_id": "18108411653588922"
+    "published_at": "2026-08-30T16:35:00+00:00",
+    "media_id": "18087504857661882",
+    "note": "Schneller Carousel-Ersatz fuer das geloeschte personal_erste-aktie-Reel (Untertitel-Bug), manuell veroeffentlicht."
+  },
+  {
+    "post_name": "erklaerstueck_erste-aktie-persoenlich",
+    "action": "story",
+    "fire_at": "2026-08-30T20:33:00+02:00",
+    "status": "done",
+    "published_at": "2026-08-30T16:35:05+00:00",
+    "media_id": "18104900692921764",
+    "note": "Vom Nutzer inzwischen wieder selbst geloescht."
+  },
+  {
+    "post_name": "erklaerstueck_aktiensplit",
+    "action": "carousel",
+    "caption": "Ein Aktiensplit -- mehr Aktien, aber nicht mehr wert.\n\nEin haeufiges Missverstaendnis:\n\n-> Der Kuchen wird in mehr Stuecke geteilt -- Depotwert bleibt exakt gleich\n-> Niedrigerer Kurs wirkt zugaenglicher, ist aber keine wirtschaftliche Verbesserung\n-> Reverse Split macht das Gegenteil -- Aktien werden zusammengelegt, Kurs steigt entsprechend\n\nKeine Bewertung, nur wie ein Split rechnerisch funktioniert.\n\n#depotdiary #aktiensplit #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-01T12:00:00+02:00",
+    "status": "done",
+    "media_id": "18304424680305162",
+    "note": "War fuer 01.09. eingeplant, auf Nutzerwunsch vorgezogen und manuell noch am 30.08. veroeffentlicht (Ersatz fuer geloeschtes Regel-Reel-Thema)."
+  },
+  {
+    "post_name": "erklaerstueck_aktiensplit",
+    "action": "story",
+    "fire_at": "2026-09-01T12:03:00+02:00",
+    "status": "done",
+    "media_id": "18086447348466226"
+  },
+  {
+    "post_name": "erklaerstueck_home-bias",
+    "action": "carousel",
+    "caption": "Home Bias -- warum die meisten zu viel im eigenen Land investieren.\n\nEin Denkfehler, den fast jeder hat:\n\n-> Deutschland macht nur 2-3% der globalen Marktkapitalisierung aus\n-> Vertrautheit fuehlt sich sicherer an, als es tatsaechlich ist\n-> Globale Streuung verteilt das Risiko breiter\n\nKeine Empfehlung, wie du streust -- nur, worauf der Effekt zurueckgeht.\n\n#depotdiary #homebias #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-08-31T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_home-bias",
+    "action": "story",
+    "fire_at": "2026-08-31T15:03:00+02:00",
+    "status": "pending"
   }
 ]

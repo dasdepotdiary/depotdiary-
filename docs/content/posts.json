@@ -484,5 +484,14 @@
     "excerpt": "Ehrlich gesagt: mehr Zufall als Plan.",
     "cover": "assets/posts/erklaerstueck_erste-aktie-persoenlich/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_home-bias",
+    "title": "Home Bias -- warum die meisten zu viel im eigenen Land investieren.",
+    "category": "erklaerstueck",
+    "date": "2026-08-30",
+    "excerpt": "Ein Denkfehler, den fast jeder hat.",
+    "cover": "assets/posts/erklaerstueck_home-bias/slide_1.webp",
+    "url": null
   }
 ]

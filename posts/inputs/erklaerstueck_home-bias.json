@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Home Bias* -- warum die meisten zu viel im eigenen Land investieren.",
+  "hook_sub": "Ein Denkfehler, den fast jeder hat.",
+  "sections": [
+    {
+      "headline": "Deutschland macht nur einen *kleinen Teil* der Weltwirtschaft aus.",
+      "body": "Rund 2-3% der globalen Marktkapitalisierung entfallen auf deutsche Unternehmen -- viele Depots sind trotzdem stark auf heimische Aktien konzentriert."
+    },
+    {
+      "headline": "Vertrautheit fuehlt sich sicherer an, als es *tatsaechlich* ist.",
+      "body": "Bekannte Namen und die eigene Waehrung wirken beruhigend -- das senkt aber nicht automatisch das Risiko im Depot."
+    },
+    {
+      "headline": "Globale Streuung verteilt das Risiko *breiter*.",
+      "body": "Wer nur in ein Land investiert, haengt staerker an dessen wirtschaftlicher Entwicklung -- unabhaengig davon, wie gut sich der Rest der Welt entwickelt."
+    }
+  ],
+  "cta_headline": "Vertraut ist nicht dasselbe wie sicher.",
+  "cta_body": "Keine Empfehlung, wie du streust -- nur, worauf der Effekt zurueckgeht."
+}

@@ -101,16 +101,33 @@ def render_caption_image(text: str, video_size: tuple[int, int], position: str =
     return np.array(img)
 
 
+def split_into_phrases(text: str, max_words: int = 5) -> list[str]:
+    """Teilt Text an Satzzeichen/Gedankenstrichen in Phrasen -- vermeidet
+    Bruchstuecke mitten im Satz (z.B. 'DAS ABER WIRTSCHAFTLICH'). Nur zu
+    lange Phrasen zwischen den Satzzeichen werden zusaetzlich an
+    Wortgrenzen aufgeteilt."""
+    text = text.replace(" -- ", ", ")
+    clauses = re.split(r"(?<=[.,!?;:])\s+", text.strip())
+    phrases = []
+    for clause in clauses:
+        clause = clause.strip()
+        if not clause:
+            continue
+        words = clause.split()
+        if len(words) <= max_words:
+            phrases.append(clause)
+        else:
+            for i in range(0, len(words), max_words):
+                phrases.append(" ".join(words[i:i + max_words]))
+    return phrases
+
+
 def caption_clips(sentences: list[dict], video_size: tuple[int, int], position: str = "top") -> list:
     clips = []
     for s in sentences:
-        words = re.findall(r"\S+", s["text"].replace("--", ""))
-        if not words:
+        phrases = split_into_phrases(s["text"])
+        if not phrases:
             continue
-        phrases = [
-            " ".join(words[i:i + CAPTION_WORDS_PER_PHRASE])
-            for i in range(0, len(words), CAPTION_WORDS_PER_PHRASE)
-        ]
         phrase_dur = s["duration"] / len(phrases)
         for i, phrase in enumerate(phrases):
             arr = render_caption_image(phrase, video_size, position=position)

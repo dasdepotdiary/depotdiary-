@@ -16,7 +16,7 @@ import brand as B
 from scripts.simple_voice_reel import build_title_slide
 
 sys.path.insert(0, str(Path(__file__).parent.parent / "video"))
-from assemble import render_caption_image, CAPTION_WORDS_PER_PHRASE
+from assemble import render_caption_image, split_into_phrases
 
 
 def get_audio_duration(path: str) -> float:
@@ -63,11 +63,9 @@ def main():
 
     caption_clips_list = []
     for s in sentences:
-        words = re.findall(r"\S+", s["text"])
-        phrases = [
-            " ".join(words[i:i + CAPTION_WORDS_PER_PHRASE])
-            for i in range(0, len(words), CAPTION_WORDS_PER_PHRASE)
-        ]
+        phrases = split_into_phrases(s["text"])
+        if not phrases:
+            continue
         phrase_dur = s["duration"] / len(phrases)
         for i, phrase in enumerate(phrases):
             arr = render_caption_image(phrase, (W, H), position="center")

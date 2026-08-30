@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 30 Aug 2026 16:29:51 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2026 20:40:53 +0000</lastBuildDate>
     <item>
       <title>Wie ich meine erste Aktie ausgesucht habe.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,14 @@
       <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Ehrlich gesagt: mehr Zufall als Plan.</description>
+    </item>
+    <item>
+      <title>Home Bias -- warum die meisten zu viel im eigenen Land investieren.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_home-bias</guid>
+      <pubDate>Sun, 30 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ein Denkfehler, den fast jeder hat.</description>
     </item>
     <item>
       <title>Rebalancing -- warum ein Depot ab und zu nachjustiert wird.</title>
