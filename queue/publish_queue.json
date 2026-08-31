@@ -935,9 +935,17 @@
     "post_name": "marktupdate_dell-panw-mdb-check",
     "action": "story_sequence",
     "fire_at": "2026-08-31T19:00:00+02:00",
-    "status": "error",
-    "note": "Schnell-Check vor den heutigen Nachboersen-Zahlen von Dell, Palo Alto Networks und MongoDB (alle post-market 2026-09-01 lt. Earnings-Kalender).",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "note": "Schnell-Check vor den heutigen Nachboersen-Zahlen von Dell, Palo Alto Networks und MongoDB. Folien 1-5 sind automatisch ueber den Cron um 19:00 Uhr (verzoegert gefeuert gg. 23:47 Uhr) live gegangen, Folie 6 (CTA) ist an einem 400er beim media_publish haengengeblieben (vermutlich kurzes Story-API-Rate-Limit nach 5 Story-Publishes in ~34 Sekunden) -- manuell um 2026-09-01T00:16 Uhr nachpubliziert.",
+    "media_ids": [
+      "18164411095479584",
+      "18075437654401616",
+      "17905254741554718",
+      "17874250284631433",
+      "18029006864674522",
+      "17966126400151200"
+    ],
+    "media_id": "18164411095479584"
   },
   {
     "post_name": "marktupdate_avgo-hpe-snow-check",
