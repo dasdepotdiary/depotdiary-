@@ -529,5 +529,14 @@
     "excerpt": "Der Weg vom privaten zum oeffentlichen Unternehmen.",
     "cover": "assets/posts/erklaerstueck_ipo/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_dell-panw-mdb-check",
+    "title": "Drei Aktien im Blick: Dell, Palo Alto Networks und MongoDB.",
+    "category": "marktupdate",
+    "date": "2026-08-31",
+    "excerpt": "Alle drei melden heute nach Boersenschluss Zahlen.",
+    "cover": "assets/posts/marktupdate_dell-panw-mdb-check/slide_1.webp",
+    "url": null
   }
 ]

@@ -1,0 +1,44 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Drei Aktien im Blick: *Dell*, *Palo Alto Networks* und *MongoDB*.",
+  "hook_sub": "Alle drei melden heute nach Boersenschluss Zahlen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Dell Technologies* -- Zahlen heute nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "31. August 2026", "457,39 USD", "green"],
+        ["KGV", "aktuell / erwartet", "36,4 / 25,7", "grey"],
+        ["Marktkap.", "aktuell", "294,8 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) heute nach US-Boersenschluss. Analysten rechnen mit rund 4,72 USD Gewinn je Aktie."
+    },
+    {
+      "type": "stats",
+      "headline": "*Palo Alto Networks* -- ebenfalls heute Abend an der Reihe.",
+      "stats": [
+        ["Kurs", "31. August 2026", "382,13 USD", "green"],
+        ["KGV", "aktuell / erwartet", "334,8 / 92,6", "grey"],
+        ["Marktkap.", "aktuell", "302,8 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q4-Bericht (Fiskaljahr 2026) heute nach US-Boersenschluss. Analysten rechnen mit rund 0,51 USD Gewinn je Aktie. Das hohe aktuelle KGV zeigt: die operative Marge steht gerade unter Druck."
+    },
+    {
+      "type": "stats",
+      "headline": "*MongoDB* -- kleinster der drei, aber stark beachtet.",
+      "stats": [
+        ["Kurs", "31. August 2026", "453,37 USD", "green"],
+        ["KGV", "aktuell / erwartet", "--- / 74,1", "grey"],
+        ["Marktkap.", "aktuell", "35,9 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) heute nach US-Boersenschluss. Aktuell noch kein positiver Gewinn je Aktie (TTM), Analysten rechnen aber mit rund 0,08 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Zahlen, ein Abend.",
+      "body": "Dell, Palo Alto Networks und MongoDB berichten alle heute nach US-Boersenschluss -- Hardware, Cybersecurity und Datenbank-Software in einer Nacht. Ich schau mir die Ergebnisse morgen frueh an."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen morgen an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

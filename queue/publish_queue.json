@@ -930,5 +930,12 @@
     "action": "story",
     "fire_at": "2026-09-03T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_dell-panw-mdb-check",
+    "action": "story_sequence",
+    "fire_at": "2026-08-31T19:00:00+02:00",
+    "status": "pending",
+    "note": "Schnell-Check vor den heutigen Nachboersen-Zahlen von Dell, Palo Alto Networks und MongoDB (alle post-market 2026-09-01 lt. Earnings-Kalender)."
   }
 ]
