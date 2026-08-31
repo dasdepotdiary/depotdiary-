@@ -888,5 +888,19 @@
     "action": "story",
     "fire_at": "2026-09-03T12:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "personal_finfluencer-kursziele",
+    "action": "reel",
+    "caption": "Ich hab aufgehoert, Finanz-Content mit konkreten Kurszielen zu folgen.\n\nNiemand kann die Zukunft vorhersagen -- auch nicht mit noch so vielen Followern oder noch so ueberzeugendem Auftreten.\n\nWas mir stattdessen hilft: Leute zu verfolgen, die zeigen, wie sie denken, nicht was sie kaufen sollen.\n\nKeine Anlageberatung -- nur, worauf ich selbst mittlerweile achte.\n\n#depotdiary #persoenlich #boerse #finanzen",
+    "fire_at": "2026-09-01T09:00:00+02:00",
+    "status": "pending",
+    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL.mp4 geliefert -- hier gestaged."
+  },
+  {
+    "post_name": "personal_finfluencer-kursziele",
+    "action": "story",
+    "fire_at": "2026-09-01T09:03:00+02:00",
+    "status": "pending"
   }
 ]
