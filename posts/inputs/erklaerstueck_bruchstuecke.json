@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Bruchstücke* -- warum du auch halbe Aktien kaufen kannst.",
+  "hook_sub": "Fractional Shares, einfach erklaert.",
+  "sections": [
+    {
+      "headline": "Du kaufst einen *Anteil* an einer ganzen Aktie.",
+      "body": "Statt einer vollen Aktie fuer z.B. 3.000 Euro kannst du bei manchen Brokern auch nur 0,1 Anteile fuer 300 Euro kaufen."
+    },
+    {
+      "headline": "Macht teure Aktien *zugaenglich*.",
+      "body": "Einzelne Aktien kosten teils mehrere hundert oder tausend Euro pro Stueck -- Bruchstuecke senken die Einstiegshuerde deutlich."
+    },
+    {
+      "headline": "Nicht jeder Broker bietet das *gleich* an.",
+      "body": "Verfuegbarkeit, Mindestbetraege und ob Bruchstuecke bei Kapitalmassnahmen (z.B. Spin-offs) mitgezaehlt werden, unterscheidet sich stark."
+    }
+  ],
+  "cta_headline": "Kleiner Betrag, echter Anteil.",
+  "cta_body": "Keine Empfehlung fuer einen Broker -- nur, wie das Prinzip funktioniert."
+}

@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*IPO* -- was beim Börsengang eigentlich passiert.",
+  "hook_sub": "Der Weg vom privaten zum oeffentlichen Unternehmen.",
+  "sections": [
+    {
+      "headline": "Das Unternehmen gibt zum ersten Mal *Aktien* aus.",
+      "body": "Vorher gehoerte das Unternehmen Gruendern, Investoren oder Mitarbeitern -- ab dem IPO koennen auch oeffentliche Anleger Anteile kaufen."
+    },
+    {
+      "headline": "Der *Ausgabepreis* wird vorab festgelegt.",
+      "body": "Banken (Konsortialbanken) begleiten den Prozess und ermitteln zusammen mit dem Unternehmen einen Preis, zu dem die ersten Aktien verkauft werden."
+    },
+    {
+      "headline": "Die ersten Handelstage sind oft besonders *volatil*.",
+      "body": "Ohne laengere Kurshistorie und mit hoher Nachfrage schwanken frisch gelistete Aktien anfangs meist staerker als etablierte Werte."
+    }
+  ],
+  "cta_headline": "Ein Boersengang ist ein Prozess, kein einzelner Moment.",
+  "cta_body": "Keine Bewertung einzelner IPOs -- nur, wie der Ablauf grundsaetzlich funktioniert."
+}

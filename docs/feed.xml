@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 31 Aug 2026 20:58:37 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 21:11:29 +0000</lastBuildDate>
     <item>
       <title>Stop-Loss -- eine automatische Verkaufsgrenze.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -21,6 +21,22 @@
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Betrifft vor allem ETFs und Fonds.</description>
+    </item>
+    <item>
+      <title>Bruchstücke -- warum du auch halbe Aktien kaufen kannst.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_bruchstuecke</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Fractional Shares, einfach erklaert.</description>
+    </item>
+    <item>
+      <title>IPO -- was beim Börsengang eigentlich passiert.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_ipo</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Der Weg vom privaten zum oeffentlichen Unternehmen.</description>
     </item>
     <item>
       <title>Wie ich meine erste Aktie ausgesucht habe.</title>

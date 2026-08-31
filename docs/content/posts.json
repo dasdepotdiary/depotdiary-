@@ -511,5 +511,23 @@
     "excerpt": "Betrifft vor allem ETFs und Fonds.",
     "cover": "assets/posts/erklaerstueck_thesaurierend-ausschuettend/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_bruchstuecke",
+    "title": "Bruchstücke -- warum du auch halbe Aktien kaufen kannst.",
+    "category": "erklaerstueck",
+    "date": "2026-08-31",
+    "excerpt": "Fractional Shares, einfach erklaert.",
+    "cover": "assets/posts/erklaerstueck_bruchstuecke/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_ipo",
+    "title": "IPO -- was beim Börsengang eigentlich passiert.",
+    "category": "erklaerstueck",
+    "date": "2026-08-31",
+    "excerpt": "Der Weg vom privaten zum oeffentlichen Unternehmen.",
+    "cover": "assets/posts/erklaerstueck_ipo/slide_1.webp",
+    "url": null
   }
 ]

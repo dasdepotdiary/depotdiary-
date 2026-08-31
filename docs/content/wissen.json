@@ -397,5 +397,27 @@
       "Statt auszuzahlen, kauft der Fonds von den Ertraegen automatisch weitere Anteile -- der Zinseszinseffekt wirkt ohne eigenes Zutun.",
       "Seit der Investmentsteuerreform 2018 zahlst du bei thesaurierenden Fonds eine Vorabpauschale -- der grosse Steueraufschub-Vorteil von frueher ist weitgehend weg."
     ]
+  },
+  {
+    "id": "bruchstuecke",
+    "title": "Bruchstücke -- warum du auch halbe Aktien kaufen kannst.",
+    "date": "2026-08-31",
+    "body": [
+      "Fractional Shares, einfach erklaert.",
+      "Statt einer vollen Aktie fuer z.B. 3.000 Euro kannst du bei manchen Brokern auch nur 0,1 Anteile fuer 300 Euro kaufen.",
+      "Einzelne Aktien kosten teils mehrere hundert oder tausend Euro pro Stueck -- Bruchstuecke senken die Einstiegshuerde deutlich.",
+      "Verfuegbarkeit, Mindestbetraege und ob Bruchstuecke bei Kapitalmassnahmen (z.B. Spin-offs) mitgezaehlt werden, unterscheidet sich stark."
+    ]
+  },
+  {
+    "id": "ipo",
+    "title": "IPO -- was beim Börsengang eigentlich passiert.",
+    "date": "2026-08-31",
+    "body": [
+      "Der Weg vom privaten zum oeffentlichen Unternehmen.",
+      "Vorher gehoerte das Unternehmen Gruendern, Investoren oder Mitarbeitern -- ab dem IPO koennen auch oeffentliche Anleger Anteile kaufen.",
+      "Banken (Konsortialbanken) begleiten den Prozess und ermitteln zusammen mit dem Unternehmen einen Preis, zu dem die ersten Aktien verkauft werden.",
+      "Ohne laengere Kurshistorie und mit hoher Nachfrage schwanken frisch gelistete Aktien anfangs meist staerker als etablierte Werte."
+    ]
   }
 ]
