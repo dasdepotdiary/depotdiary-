@@ -816,13 +816,17 @@
     "action": "reel",
     "caption": "Wie ich meine erste Aktie ausgesucht habe.\n\nMeine erste Aktie hab ich nicht nach einer Strategie ausgesucht -- ich hab einfach ein Unternehmen gekauft, das ich kannte, dessen Produkte ich selbst benutzt hab.\n\nHeute wuerde ich zuerst auf die Zahlen schauen -- und erst danach, ob mir das Produkt gefaellt.\n\nKeine Anlageberatung -- nur, wie sich mein eigener Ansatz seitdem veraendert hat.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-08-31T19:00:00+02:00",
-    "status": "pending",
-    "note": "Neu gebaut mit repariertem Untertitel-Code (split_into_phrases statt fixer 3-Wort-Bloecke), gleiche Original-Sprachaufnahme des Nutzers."
+    "status": "done",
+    "note": "Neu gebaut mit repariertem Untertitel-Code (split_into_phrases statt fixer 3-Wort-Bloecke), gleiche Original-Sprachaufnahme des Nutzers.",
+    "published_at": "2026-08-31T17:09:45.327862+00:00",
+    "media_id": "18127004317694062"
   },
   {
     "post_name": "personal_erste-aktie",
     "action": "story",
     "fire_at": "2026-08-31T19:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-08-31T17:09:53.460607+00:00",
+    "media_id": "18119192926920456"
   }
 ]
