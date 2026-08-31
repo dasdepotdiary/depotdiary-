@@ -375,5 +375,27 @@
       "Bekannte Namen und die eigene Waehrung wirken beruhigend -- das senkt aber nicht automatisch das Risiko im Depot.",
       "Wer nur in ein Land investiert, haengt staerker an dessen wirtschaftlicher Entwicklung -- unabhaengig davon, wie gut sich der Rest der Welt entwickelt."
     ]
+  },
+  {
+    "id": "ordertypen-stop-loss",
+    "title": "Stop-Loss -- eine automatische Verkaufsgrenze.",
+    "date": "2026-08-31",
+    "body": [
+      "Wie sie funktioniert, nicht ob du sie brauchst.",
+      "Sobald der Kurs eine vorher festgelegte Grenze erreicht, wird die Position verkauft -- ohne dass du in dem Moment eingreifen musst.",
+      "Bei schnellen Kurssprüngen kann der tatsaechliche Verkaufspreis unter der gesetzten Grenze liegen (Slippage).",
+      "Ein Stop-Loss direkt unter dem Kaufkurs kann schon bei ganz normaler Volatilitaet auslösen -- nicht nur bei echten Trendwenden."
+    ]
+  },
+  {
+    "id": "thesaurierend-ausschuettend",
+    "title": "Thesaurierend oder ausschuettend -- was ist der Unterschied?",
+    "date": "2026-08-31",
+    "body": [
+      "Betrifft vor allem ETFs und Fonds.",
+      "Dividenden und Zinsen werden regelmaessig ausgezahlt -- sichtbares Geld, aber auch sofort steuerrelevant.",
+      "Statt auszuzahlen, kauft der Fonds von den Ertraegen automatisch weitere Anteile -- der Zinseszinseffekt wirkt ohne eigenes Zutun.",
+      "Seit der Investmentsteuerreform 2018 zahlst du bei thesaurierenden Fonds eine Vorabpauschale -- der grosse Steueraufschub-Vorteil von frueher ist weitgehend weg."
+    ]
   }
 ]

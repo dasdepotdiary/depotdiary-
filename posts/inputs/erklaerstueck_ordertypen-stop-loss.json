@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Stop-Loss* -- eine automatische Verkaufsgrenze.",
+  "hook_sub": "Wie sie funktioniert, nicht ob du sie brauchst.",
+  "sections": [
+    {
+      "headline": "Ein Stop-Loss loest *automatisch* einen Verkauf aus.",
+      "body": "Sobald der Kurs eine vorher festgelegte Grenze erreicht, wird die Position verkauft -- ohne dass du in dem Moment eingreifen musst."
+    },
+    {
+      "headline": "Schuetzt vor *groesseren* Verlusten -- nicht vor jedem.",
+      "body": "Bei schnellen Kurssprüngen kann der tatsaechliche Verkaufspreis unter der gesetzten Grenze liegen (Slippage)."
+    },
+    {
+      "headline": "Zu eng gesetzt, greift er bei normaler *Schwankung*.",
+      "body": "Ein Stop-Loss direkt unter dem Kaufkurs kann schon bei ganz normaler Volatilitaet auslösen -- nicht nur bei echten Trendwenden."
+    }
+  ],
+  "cta_headline": "Ein Werkzeug, keine Garantie.",
+  "cta_body": "Keine Empfehlung, ob oder wie du ihn einsetzt -- nur die Mechanik dahinter."
+}

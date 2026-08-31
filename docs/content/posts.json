@@ -493,5 +493,23 @@
     "excerpt": "Ein Denkfehler, den fast jeder hat.",
     "cover": "assets/posts/erklaerstueck_home-bias/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_ordertypen-stop-loss",
+    "title": "Stop-Loss -- eine automatische Verkaufsgrenze.",
+    "category": "erklaerstueck",
+    "date": "2026-08-31",
+    "excerpt": "Wie sie funktioniert, nicht ob du sie brauchst.",
+    "cover": "assets/posts/erklaerstueck_ordertypen-stop-loss/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_thesaurierend-ausschuettend",
+    "title": "Thesaurierend oder ausschuettend -- was ist der Unterschied?",
+    "category": "erklaerstueck",
+    "date": "2026-08-31",
+    "excerpt": "Betrifft vor allem ETFs und Fonds.",
+    "cover": "assets/posts/erklaerstueck_thesaurierend-ausschuettend/slide_1.webp",
+    "url": null
   }
 ]

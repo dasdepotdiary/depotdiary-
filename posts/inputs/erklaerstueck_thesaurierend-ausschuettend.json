@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Thesaurierend* oder *ausschuettend* -- was ist der Unterschied?",
+  "hook_sub": "Betrifft vor allem ETFs und Fonds.",
+  "sections": [
+    {
+      "headline": "*Ausschuettend*: Ertraege landen auf dem Konto.",
+      "body": "Dividenden und Zinsen werden regelmaessig ausgezahlt -- sichtbares Geld, aber auch sofort steuerrelevant."
+    },
+    {
+      "headline": "*Thesaurierend*: Ertraege werden automatisch reinvestiert.",
+      "body": "Statt auszuzahlen, kauft der Fonds von den Ertraegen automatisch weitere Anteile -- der Zinseszinseffekt wirkt ohne eigenes Zutun."
+    },
+    {
+      "headline": "Steuerlich sind *beide* Varianten heute aehnlich behandelt.",
+      "body": "Seit der Investmentsteuerreform 2018 zahlst du bei thesaurierenden Fonds eine Vorabpauschale -- der grosse Steueraufschub-Vorteil von frueher ist weitgehend weg."
+    }
+  ],
+  "cta_headline": "Eine Frage der Bequemlichkeit, nicht nur der Steuer.",
+  "cta_body": "Keine Empfehlung, welche Variante besser ist -- nur der Unterschied dahinter."
+}
