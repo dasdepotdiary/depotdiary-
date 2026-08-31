@@ -538,5 +538,23 @@
     "excerpt": "Alle drei melden heute nach Boersenschluss Zahlen.",
     "cover": "assets/posts/marktupdate_dell-panw-mdb-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_avgo-hpe-snow-check",
+    "title": "Drei Aktien im Blick: Broadcom, HPE und Snowflake.",
+    "category": "marktupdate",
+    "date": "2026-08-31",
+    "excerpt": "Alle drei melden morgen nach Boersenschluss Zahlen.",
+    "cover": "assets/posts/marktupdate_avgo-hpe-snow-check/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_docu-lulu-path-check",
+    "title": "Drei Aktien im Blick: Docusign, Lululemon und UiPath.",
+    "category": "marktupdate",
+    "date": "2026-08-31",
+    "excerpt": "Alle drei melden am 3. September nach Boersenschluss Zahlen.",
+    "cover": "assets/posts/marktupdate_docu-lulu-path-check/slide_1.webp",
+    "url": null
   }
 ]

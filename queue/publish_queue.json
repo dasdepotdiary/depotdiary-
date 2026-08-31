@@ -937,5 +937,19 @@
     "fire_at": "2026-08-31T19:00:00+02:00",
     "status": "pending",
     "note": "Schnell-Check vor den heutigen Nachboersen-Zahlen von Dell, Palo Alto Networks und MongoDB (alle post-market 2026-09-01 lt. Earnings-Kalender)."
+  },
+  {
+    "post_name": "marktupdate_avgo-hpe-snow-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-01T19:00:00+02:00",
+    "status": "pending",
+    "note": "Schnell-Check vor den Nachboersen-Zahlen von Broadcom, HPE und Snowflake (alle post-market 2026-09-02 lt. Earnings-Kalender)."
+  },
+  {
+    "post_name": "marktupdate_docu-lulu-path-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-02T19:00:00+02:00",
+    "status": "pending",
+    "note": "Schnell-Check vor den Nachboersen-Zahlen von Docusign, Lululemon und UiPath (alle post-market 2026-09-03 lt. Earnings-Kalender)."
   }
 ]

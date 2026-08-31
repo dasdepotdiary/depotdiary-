@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 31 Aug 2026 21:37:51 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2026 21:40:26 +0000</lastBuildDate>
     <item>
       <title>Stop-Loss -- eine automatische Verkaufsgrenze.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -45,6 +45,22 @@
       <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Alle drei melden heute nach Boersenschluss Zahlen.</description>
+    </item>
+    <item>
+      <title>Drei Aktien im Blick: Broadcom, HPE und Snowflake.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_avgo-hpe-snow-check</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Alle drei melden morgen nach Boersenschluss Zahlen.</description>
+    </item>
+    <item>
+      <title>Drei Aktien im Blick: Docusign, Lululemon und UiPath.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_docu-lulu-path-check</guid>
+      <pubDate>Mon, 31 Aug 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Alle drei melden am 3. September nach Boersenschluss Zahlen.</description>
     </item>
     <item>
       <title>Wie ich meine erste Aktie ausgesucht habe.</title>

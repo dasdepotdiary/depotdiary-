@@ -1,0 +1,44 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Drei Aktien im Blick: *Docusign*, *Lululemon* und *UiPath*.",
+  "hook_sub": "Alle drei melden am 3. September nach Boersenschluss Zahlen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Docusign* -- Software-Wert mit solider Marge.",
+      "stats": [
+        ["Kurs", "31. August 2026", "66,27 USD", "green"],
+        ["KGV", "aktuell / erwartet", "41,6 / 14,0", "grey"],
+        ["Marktkap.", "aktuell", "12,2 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) am 3. September nach US-Boersenschluss. Analysten rechnen mit rund 0,44 USD Gewinn je Aktie."
+    },
+    {
+      "type": "stats",
+      "headline": "*Lululemon* -- der einzige Einzelhaendler in der Runde.",
+      "stats": [
+        ["Kurs", "31. August 2026", "120,26 USD", "red"],
+        ["KGV", "aktuell / erwartet", "9,3 / 10,4", "grey"],
+        ["Marktkap.", "aktuell", "rund 13,5 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) am 3. September nach US-Boersenschluss. Sehr niedrig bewertet im Vergleich zum eigenen 10-Jahres-Durchschnitt. Analysten rechnen mit rund 1,79 USD Gewinn je Aktie."
+    },
+    {
+      "type": "stats",
+      "headline": "*UiPath* -- kleinster der drei, klar defensiver bewertet.",
+      "stats": [
+        ["Kurs", "31. August 2026", "18,65 USD", "green"],
+        ["KGV", "aktuell / erwartet", "30,3 / 20,1", "grey"],
+        ["Marktkap.", "aktuell", "rund 8,2 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) am 3. September nach US-Boersenschluss. Analysten rechnen mit rund 0,04 USD Gewinn je Aktie -- knapp positiv."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Zahlen, ein Abend.",
+      "body": "Docusign, Lululemon und UiPath berichten alle am 3. September nach US-Boersenschluss -- E-Signatur-Software, Sportmode und Automatisierungs-Software in einer Nacht. Ich schau mir die Ergebnisse danach an."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen danach an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

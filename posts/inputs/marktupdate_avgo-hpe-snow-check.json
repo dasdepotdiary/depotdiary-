@@ -1,0 +1,44 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Drei Aktien im Blick: *Broadcom*, *HPE* und *Snowflake*.",
+  "hook_sub": "Alle drei melden morgen nach Boersenschluss Zahlen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Broadcom* -- der Schwergewicht des Abends.",
+      "stats": [
+        ["Kurs", "31. August 2026", "370,34 USD", "green"],
+        ["KGV", "aktuell / erwartet", "61,8 / 19,9", "grey"],
+        ["Marktkap.", "aktuell", "1,75 Bio. USD", "green_mid"]
+      ],
+      "note": "Q3-Bericht (Fiskaljahr 2026) morgen nach US-Boersenschluss. Wird am Markt vor allem wegen KI-Chips und Custom-Silicon-Geschaeft beachtet."
+    },
+    {
+      "type": "stats",
+      "headline": "*HPE* -- deutlich guenstiger bewertet als die anderen beiden.",
+      "stats": [
+        ["Kurs", "31. August 2026", "52,26 USD", "red"],
+        ["KGV", "aktuell / erwartet", "48,9 / 14,0", "grey"],
+        ["Marktkap.", "aktuell", "69,3 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q3-Bericht (Fiskaljahr 2026) morgen nach US-Boersenschluss. Gewinn zuletzt ruecklaeufig (-30% zum Vorjahresquartal), Umsatz aber weiter im Plus."
+    },
+    {
+      "type": "stats",
+      "headline": "*Snowflake* -- noch ohne Gewinn, aber hoch bewertet.",
+      "stats": [
+        ["Kurs", "31. August 2026", "331,44 USD", "green"],
+        ["KGV", "aktuell / erwartet", "--- / 166,7", "grey"],
+        ["Marktkap.", "aktuell", "113,7 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2027) morgen nach US-Boersenschluss. Aktuell noch kein positiver Gewinn je Aktie (TTM), Analysten erwarten aber einen kleinen Quartalsverlust von -0,51 USD je Aktie."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Zahlen, ein Abend.",
+      "body": "Broadcom, HPE und Snowflake berichten alle morgen nach US-Boersenschluss -- Halbleiter, Server-Hardware und Cloud-Datenplattform in einer Nacht. Ich schau mir die Ergebnisse danach an."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen danach an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}
