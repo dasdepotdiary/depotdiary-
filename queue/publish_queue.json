@@ -964,8 +964,18 @@
     "post_name": "marktupdate_avgo-hpe-snow-check",
     "action": "story_sequence",
     "fire_at": "2026-09-01T19:00:00+02:00",
-    "status": "pending",
-    "note": "Schnell-Check vor den Nachboersen-Zahlen von Broadcom, HPE und Snowflake (alle post-market 2026-09-02 lt. Earnings-Kalender)."
+    "status": "done",
+    "note": "Schnell-Check vor den Nachboersen-Zahlen von Broadcom, HPE und Snowflake (alle post-market 2026-09-02 lt. Earnings-Kalender).",
+    "published_at": "2026-09-01T17:17:38.950509+00:00",
+    "media_id": "18617116519045662",
+    "media_ids": [
+      "18617116519045662",
+      "18069443396753646",
+      "17966876406149082",
+      "18102192289973964",
+      "18086583350379530",
+      "17992107192043424"
+    ]
   },
   {
     "post_name": "marktupdate_docu-lulu-path-check",
