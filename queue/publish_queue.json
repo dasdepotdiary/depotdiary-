@@ -894,14 +894,17 @@
     "action": "reel",
     "caption": "Ich hab aufgehoert, Finanz-Content mit konkreten Kurszielen zu folgen.\n\nNiemand kann die Zukunft vorhersagen -- auch nicht mit noch so vielen Followern oder noch so ueberzeugendem Auftreten.\n\nWas mir stattdessen hilft: Leute zu verfolgen, die zeigen, wie sie denken, nicht was sie kaufen sollen.\n\nKeine Anlageberatung -- nur, worauf ich selbst mittlerweile achte.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-09-01T09:00:00+02:00",
-    "status": "pending",
-    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL.mp4 geliefert -- hier gestaged."
+    "status": "done",
+    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL.mp4 geliefert -- hier gestaged.",
+    "published_at": "2026-09-01T07:15:14.245562+00:00",
+    "media_id": "17965139802160767"
   },
   {
     "post_name": "personal_finfluencer-kursziele",
     "action": "story",
     "fire_at": "2026-09-01T09:03:00+02:00",
-    "status": "pending"
+    "status": "error",
+    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
   },
   {
     "post_name": "personal_dauerauftrag",
