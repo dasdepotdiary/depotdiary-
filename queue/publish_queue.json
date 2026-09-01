@@ -903,8 +903,10 @@
     "post_name": "personal_finfluencer-kursziele",
     "action": "story",
     "fire_at": "2026-09-01T09:03:00+02:00",
-    "status": "error",
-    "error": "400 Client Error: Bad Request for url: https://graph.facebook.com/v21.0/17841440893045606/media_publish"
+    "status": "done",
+    "published_at": "2026-09-01T07:36:00+00:00",
+    "media_id": "18140722177588471",
+    "note": "Story-Publish um 09:03 Uhr schlug mit 400er bei media_publish fehl (zweiter Fall dieses Musters binnen 12h), manuell nachpubliziert."
   },
   {
     "post_name": "personal_dauerauftrag",

@@ -45,6 +45,22 @@ GRAPH_VERSION = "v21.0"
 GRAPH_URL = f"https://graph.facebook.com/{GRAPH_VERSION}"
 
 
+def _graph_post(url, data, attempts=4, backoff=30):
+    """POST mit Retry+Backoff -- gilt fuer Media-Erstellung UND media_publish gleichermassen.
+    War vorher nur um die Erstellung gebaut; media_publish schlug am 2026-08-31 und 2026-09-01
+    je einmal mit einem 400er fehl (vermutlich kurzes Story-API-Rate-Limit) und brach die
+    jeweilige Aktion sofort ohne Retry ab -- deshalb hier fuer beide Schritte einheitlich."""
+    last_error = None
+    for attempt in range(attempts):
+        resp = requests.post(url, data=data)
+        if resp.ok:
+            return resp
+        last_error = resp.text
+        if attempt < attempts - 1:
+            time.sleep(backoff)
+    raise RuntimeError(f"POST {url} nach {attempts} Versuchen fehlgeschlagen: {last_error}")
+
+
 def get_config():
     token = os.environ.get("INSTAGRAM_ACCESS_TOKEN")
     ig_id = os.environ.get("INSTAGRAM_BUSINESS_ACCOUNT_ID")
@@ -77,33 +93,29 @@ def publish_carousel(token, ig_id, base_url, entry) -> dict:
     children_ids = []
     for i in range(1, entry["slide_count"] + 1):
         image_url = f"{base_url}/assets/posts/{name}/slide_{i}.png?v={int(time.time())}"
-        resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
+        resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
             "image_url": image_url, "is_carousel_item": "true", "access_token": token,
         })
-        resp.raise_for_status()
         children_ids.append(resp.json()["id"])
         time.sleep(1)
-    resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
         "media_type": "CAROUSEL", "children": ",".join(children_ids),
         "caption": entry.get("caption", ""), "access_token": token,
     })
-    resp.raise_for_status()
     creation_id = resp.json()["id"]
-    resp = requests.post(f"{GRAPH_URL}/{ig_id}/media_publish", data={
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media_publish", {
         "creation_id": creation_id, "access_token": token,
     })
-    resp.raise_for_status()
     return resp.json()
 
 
 def publish_reel(token, ig_id, base_url, entry) -> dict:
     name = entry["post_name"]
     video_url = f"{base_url}/assets/posts_video/{name}/reel.mp4"
-    resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
         "media_type": "REELS", "video_url": video_url,
         "caption": entry.get("caption", ""), "access_token": token,
     })
-    resp.raise_for_status()
     container_id = resp.json()["id"]
 
     start = time.time()
@@ -120,10 +132,9 @@ def publish_reel(token, ig_id, base_url, entry) -> dict:
     else:
         raise RuntimeError("Timeout bei Video-Verarbeitung")
 
-    resp = requests.post(f"{GRAPH_URL}/{ig_id}/media_publish", data={
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media_publish", {
         "creation_id": container_id, "access_token": token,
     })
-    resp.raise_for_status()
     return resp.json()
 
 
@@ -131,22 +142,15 @@ def publish_story(token, ig_id, base_url, entry) -> dict:
     name = entry["post_name"]
     story_dir = ROOT / "docs" / "assets" / "posts_9x16" / name
     filename = "story_announcement.png" if (story_dir / "story_announcement.png").exists() else "slide_1.png"
-    last_error = None
-    for attempt in range(4):
-        image_url = f"{base_url}/assets/posts_9x16/{name}/{filename}?v={int(time.time())}"
-        resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
-            "image_url": image_url, "media_type": "STORIES", "access_token": token,
-        })
-        if resp.ok:
-            container_id = resp.json()["id"]
-            resp2 = requests.post(f"{GRAPH_URL}/{ig_id}/media_publish", data={
-                "creation_id": container_id, "access_token": token,
-            })
-            resp2.raise_for_status()
-            return resp2.json()
-        last_error = resp.text
-        time.sleep(30)
-    raise RuntimeError(f"Story-Publish nach 4 Versuchen fehlgeschlagen: {last_error}")
+    image_url = f"{base_url}/assets/posts_9x16/{name}/{filename}?v={int(time.time())}"
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
+        "image_url": image_url, "media_type": "STORIES", "access_token": token,
+    })
+    container_id = resp.json()["id"]
+    resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media_publish", {
+        "creation_id": container_id, "access_token": token,
+    })
+    return resp.json()
 
 
 def publish_story_sequence(token, ig_id, base_url, entry) -> dict:
@@ -158,16 +162,19 @@ def publish_story_sequence(token, ig_id, base_url, entry) -> dict:
     media_ids = []
     for i, slide in enumerate(slides, 1):
         image_url = f"{base_url}/assets/posts_9x16/{name}/{slide.name}?v={int(time.time())}"
-        resp = requests.post(f"{GRAPH_URL}/{ig_id}/media", data={
-            "image_url": image_url, "media_type": "STORIES", "access_token": token,
-        })
-        resp.raise_for_status()
-        container_id = resp.json()["id"]
-        resp2 = requests.post(f"{GRAPH_URL}/{ig_id}/media_publish", data={
-            "creation_id": container_id, "access_token": token,
-        })
-        resp2.raise_for_status()
-        media_ids.append(resp2.json()["id"])
+        try:
+            resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
+                "image_url": image_url, "media_type": "STORIES", "access_token": token,
+            })
+            container_id = resp.json()["id"]
+            resp2 = _graph_post(f"{GRAPH_URL}/{ig_id}/media_publish", {
+                "creation_id": container_id, "access_token": token,
+            })
+            media_ids.append(resp2.json()["id"])
+        except Exception as exc:
+            raise RuntimeError(
+                f"Folie {i}/{len(slides)} fehlgeschlagen, bereits veroeffentlicht: {media_ids}: {exc}"
+            ) from exc
         if i < len(slides):
             time.sleep(2)
     return {"id": media_ids[0], "media_ids": media_ids}
