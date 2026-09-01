@@ -963,5 +963,12 @@
     "fire_at": "2026-09-02T19:00:00+02:00",
     "status": "pending",
     "note": "Schnell-Check vor den Nachboersen-Zahlen von Docusign, Lululemon und UiPath (alle post-market 2026-09-03 lt. Earnings-Kalender)."
+  },
+  {
+    "post_name": "collab_bitcoinhelfer",
+    "action": "carousel_collab",
+    "fire_at": "2026-09-01T10:01:51+02:00",
+    "status": "done",
+    "note": "echter Instagram-Collab (5 Gruende fuer Bitcoin + Allokations-Vergleich), vom Nutzer selbst im App ausgeloest (nicht ueber Graph API, kein media_id verfuegbar) -- laeuft unter @dasdepotdiary und @bitcoinhelfer"
   }
 ]
