@@ -838,13 +838,17 @@
     "caption": "Stop-Loss -- eine automatische Verkaufsgrenze.\n\nWie sie funktioniert, nicht ob du sie brauchst:\n\n-> Loest automatisch einen Verkauf aus, sobald der Kurs eine Grenze erreicht\n-> Schuetzt vor groesseren Verlusten -- nicht vor jedem (Slippage moeglich)\n-> Zu eng gesetzt, greift er schon bei normaler Schwankung\n\nKeine Empfehlung, ob oder wie du ihn einsetzt -- nur die Mechanik dahinter.\n\n#depotdiary #boerse #aktien #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-01T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-01T10:16:01.899708+00:00",
+    "media_id": "18331031803273497"
   },
   {
     "post_name": "erklaerstueck_ordertypen-stop-loss",
     "action": "story",
     "fire_at": "2026-09-01T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-01T10:16:07.860775+00:00",
+    "media_id": "18019999628707353"
   },
   {
     "post_name": "erklaerstueck_thesaurierend-ausschuettend",
