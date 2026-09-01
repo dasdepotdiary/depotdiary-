@@ -870,14 +870,18 @@
     "caption": "Bruchstuecke -- warum du auch halbe Aktien kaufen kannst.\n\nFractional Shares, einfach erklaert:\n\n-> Du kaufst einen Anteil an einer ganzen Aktie, nicht das volle Stueck\n-> Macht teure Aktien (mehrere hundert/tausend Euro) zugaenglich\n-> Nicht jeder Broker bietet das gleich an -- Mindestbetraege variieren\n\nKeine Empfehlung fuer einen Broker -- nur, wie das Prinzip funktioniert.\n\n#depotdiary #boerse #aktien #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-01T15:00:00+02:00",
-    "status": "pending",
-    "note": "Ersatz fuer erklaerstueck_nebenkosten-aktienkauf, das der Nutzer bereits selbst am 31.08. gepostet hat."
+    "status": "done",
+    "note": "Ersatz fuer erklaerstueck_nebenkosten-aktienkauf, das der Nutzer bereits selbst am 31.08. gepostet hat.",
+    "published_at": "2026-09-01T13:18:23.453111+00:00",
+    "media_id": "18071673335487350"
   },
   {
     "post_name": "erklaerstueck_bruchstuecke",
     "action": "story",
     "fire_at": "2026-09-01T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-01T13:18:29.598055+00:00",
+    "media_id": "17905905288491179"
   },
   {
     "post_name": "erklaerstueck_ipo",
