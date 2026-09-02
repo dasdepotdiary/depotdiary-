@@ -1007,8 +1007,18 @@
     "post_name": "marktupdate_dell-panw-mdb-ergebnisse",
     "action": "story_sequence",
     "fire_at": "2026-09-02T17:00:00+02:00",
-    "status": "pending",
-    "note": "Folgepost zum Schnell-Check vom 31.08. -- echte Q2-Ergebnisse von Dell, Palo Alto Networks und MongoDB, alle drei Beats mit sehr unterschiedlicher Kursreaktion."
+    "status": "done",
+    "note": "Folgepost zum Schnell-Check vom 31.08. -- echte Q2-Ergebnisse von Dell, Palo Alto Networks und MongoDB, alle drei Beats mit sehr unterschiedlicher Kursreaktion.",
+    "published_at": "2026-09-02T15:22:20.032807+00:00",
+    "media_id": "18026055461688553",
+    "media_ids": [
+      "18026055461688553",
+      "18114159755517353",
+      "18112404443097967",
+      "18032462219839907",
+      "18118072267934258",
+      "18552392845073336"
+    ]
   },
   {
     "post_name": "personal_cash-puffer",
