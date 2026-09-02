@@ -1,0 +1,44 @@
+{
+  "eyebrow": "ERGEBNISSE",
+  "hook": "Die Zahlen sind da: *Dell*, *Palo Alto Networks* und *MongoDB*.",
+  "hook_sub": "Drei Beats, drei sehr unterschiedliche Reaktionen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Dell* -- klarer Beat, klar positiv aufgenommen.",
+      "stats": [
+        ["Umsatz Q2", "erwartet 44,89 Mrd. USD", "46,97 Mrd. USD", "green"],
+        ["EPS", "erwartet 4,92 USD", "7,04 USD", "green"],
+        ["Veraenderung", "seit Zahlen", "AI-Backlog 95 Mrd.", "green_mid"]
+      ],
+      "note": "Umsatz +58% YoY, EPS +203% YoY. AI-Server-Auftragseingang 60,9 Mrd. USD. FY-Ausblick angehoben auf 25,50 USD EPS / 192 Mrd. USD Umsatz."
+    },
+    {
+      "type": "stats",
+      "headline": "*Palo Alto Networks* -- Beat, aber Aktie im Minus.",
+      "stats": [
+        ["Umsatz Q4", "erwartet 3,35 Mrd. USD", "3,41 Mrd. USD", "green"],
+        ["EPS", "erwartet 0,98 USD", "1,02 USD", "green"],
+        ["Kursreaktion", "nach Zahlen", "rund -7%", "red"]
+      ],
+      "note": "Trotz Beat bei Umsatz und EPS: Aktie -5,3% im regulaeren Handel, zusaetzlich nachboerslich im Minus. Fokus lag auf Marge und dem FY27-Ausblick, nicht auf dem Quartal selbst."
+    },
+    {
+      "type": "stats",
+      "headline": "*MongoDB* -- staerkster Beat, staerkste Kursreaktion.",
+      "stats": [
+        ["Umsatz Q2", "erwartet 735,2 Mio. USD", "771,8 Mio. USD", "green"],
+        ["EPS", "erwartet 1,60 USD", "1,90 USD", "green"],
+        ["Kursreaktion", "nachboerslich", "rund -13%", "red"]
+      ],
+      "note": "Umsatz +30% YoY, Prognose fuer das Gesamtjahr angehoben -- trotzdem der staerkste Kursrueckgang der drei. Atlas-Wachstum blieb hinter sehr hohen Investorenerwartungen zurueck, dazu Gewinnmitnahmen nach starkem Lauf."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Beats, drei Reaktionen.",
+      "body": "Alle drei haben die Analystenerwartungen bei Umsatz und Gewinn uebertroffen -- trotzdem ist nur Dell klar positiv aufgenommen worden. Zeigt fuer mich: an der Boerse zaehlt nicht nur das Ergebnis selbst, sondern auch, was vorher schon im Kurs eingepreist war."
+    }
+  ],
+  "cta_headline": "Reine Fakten, keine Bewertung.",
+  "cta_body": "Keine Anlageberatung -- nur, was ich in den Zahlen gelesen habe."
+}

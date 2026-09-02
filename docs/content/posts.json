@@ -556,5 +556,14 @@
     "excerpt": "Alle drei melden am 3. September nach Boersenschluss Zahlen.",
     "cover": "assets/posts/marktupdate_docu-lulu-path-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_dell-panw-mdb-ergebnisse",
+    "title": "Die Zahlen sind da: Dell, Palo Alto Networks und MongoDB.",
+    "category": "marktupdate",
+    "date": "2026-09-02",
+    "excerpt": "Drei Beats, drei sehr unterschiedliche Reaktionen.",
+    "cover": "assets/posts/marktupdate_dell-panw-mdb-ergebnisse/slide_1.webp",
+    "url": null
   }
 ]

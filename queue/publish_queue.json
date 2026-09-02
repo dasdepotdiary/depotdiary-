@@ -994,5 +994,12 @@
     "fire_at": "2026-09-01T10:01:51+02:00",
     "status": "done",
     "note": "echter Instagram-Collab (5 Gruende fuer Bitcoin + Allokations-Vergleich), vom Nutzer selbst im App ausgeloest (nicht ueber Graph API, kein media_id verfuegbar) -- laeuft unter @dasdepotdiary und @bitcoinhelfer"
+  },
+  {
+    "post_name": "marktupdate_dell-panw-mdb-ergebnisse",
+    "action": "story_sequence",
+    "fire_at": "2026-09-02T17:00:00+02:00",
+    "status": "pending",
+    "note": "Folgepost zum Schnell-Check vom 31.08. -- echte Q2-Ergebnisse von Dell, Palo Alto Networks und MongoDB, alle drei Beats mit sehr unterschiedlicher Kursreaktion."
   }
 ]
