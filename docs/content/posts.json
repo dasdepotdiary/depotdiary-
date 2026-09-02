@@ -565,5 +565,14 @@
     "excerpt": "Drei Beats, drei sehr unterschiedliche Reaktionen.",
     "cover": "assets/posts/marktupdate_dell-panw-mdb-ergebnisse/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_avgo-hpe-snow-ergebnisse",
+    "title": "Die Zahlen sind da: Broadcom, HPE und Snowflake.",
+    "category": "marktupdate",
+    "date": "2026-09-03",
+    "excerpt": "Drei Beats -- und diesmal eine Aktie, die komplett aus der Reihe tanzt.",
+    "cover": "assets/posts/marktupdate_avgo-hpe-snow-ergebnisse/slide_1.webp",
+    "url": null
   }
 ]

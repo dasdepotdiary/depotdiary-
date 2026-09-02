@@ -1,0 +1,44 @@
+{
+  "eyebrow": "ERGEBNISSE",
+  "hook": "Die Zahlen sind da: *Broadcom*, *HPE* und *Snowflake*.",
+  "hook_sub": "Drei Beats -- und diesmal eine Aktie, die komplett aus der Reihe tanzt.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Broadcom* -- Beat, aber Aktie im Minus.",
+      "stats": [
+        ["Umsatz Q3", "erwartet 29,36 Mrd. USD", "29,59 Mrd. USD", "green"],
+        ["EPS", "erwartet 3,24 USD", "3,32 USD", "green"],
+        ["Kursreaktion", "nach Zahlen", "rund -6,5%", "red"]
+      ],
+      "note": "AI-Umsatz +221% auf 16,7 Mrd. USD. Software-Segment knapp unter Konsens, Q4-Umsatzausblick (34,8 Mrd. USD) unter den erwarteten 35,03 Mrd. USD -- das hat die Aktie belastet, nicht das Quartal selbst."
+    },
+    {
+      "type": "stats",
+      "headline": "*HPE* -- klarer Beat, angehobene Prognose, trotzdem Minus.",
+      "stats": [
+        ["Umsatz Q3", "erwartet 11,91 Mrd. USD", "12,2 Mrd. USD", "green"],
+        ["EPS", "erwartet 0,93 USD", "1,11 USD", "green"],
+        ["Kursreaktion", "nach Zahlen", "im Minus", "red"]
+      ],
+      "note": "Umsatz +34% YoY, EPS-Beat um rund 19%. FY-Ausblick deutlich angehoben (EPS 3,75-3,85 USD vs. Konsens 3,43 USD). Trotzdem gaben die Aktien nach den Zahlen nach."
+    },
+    {
+      "type": "stats",
+      "headline": "*Snowflake* -- staerkster Beat, Aktie +22%.",
+      "stats": [
+        ["Umsatz Q2", "erwartet 1,48 Mrd. USD", "1,55 Mrd. USD", "green"],
+        ["EPS", "erwartet 0,45 USD", "0,62 USD", "green"],
+        ["Kursreaktion", "nach Zahlen", "rund +22%", "green"]
+      ],
+      "note": "Net Revenue Retention 126%. Produktumsatz-Prognose fuers Gesamtjahr angehoben (6,07 statt 5,84 Mrd. USD), KI-Nutzung (u.a. der Coding-Agent 'Cortex') treibt drittes Quartal in Folge beschleunigtes Wachstum."
+    },
+    {
+      "type": "text",
+      "headline": "Drei Beats -- eine Aktie tanzt aus der Reihe.",
+      "body": "Broadcom und HPE haben trotz guter Zahlen und (bei HPE) angehobener Prognose Kursverluste hinnehmen muessen -- bei Broadcom war es der schwaechere Q4-Ausblick, bei HPE ist der genaue Grund weniger eindeutig. Snowflake dagegen sprang nach dem staerksten Beat der drei um 22%. Nochmal ein Beispiel dafuer: die Reaktion haengt oft mehr von Erwartungen und Ausblick ab als vom reinen Ergebnis."
+    }
+  ],
+  "cta_headline": "Reine Fakten, keine Bewertung.",
+  "cta_body": "Keine Anlageberatung -- nur, was ich in den Zahlen gelesen habe."
+}
