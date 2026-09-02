@@ -921,14 +921,18 @@
     "action": "reel",
     "caption": "Ich entscheide nicht mehr jeden Monat neu, ob ich investiere.\n\nIch hab einen Dauerauftrag eingerichtet, der einfach laeuft -- unabhaengig von meiner Stimmung oder den Nachrichten an dem Tag.\n\nSo kaufe ich nicht aus Angst zu verkaufen oder aus Euphorie zu viel zu kaufen.\n\nKeine Anlageberatung -- nur, wie ich es mir selbst einfacher gemacht habe.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-09-02T09:00:00+02:00",
-    "status": "pending",
-    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL1.mp4 geliefert -- hier gestaged."
+    "status": "done",
+    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL1.mp4 geliefert -- hier gestaged.",
+    "published_at": "2026-09-02T07:15:22.084341+00:00",
+    "media_id": "18056533385548974"
   },
   {
     "post_name": "personal_dauerauftrag",
     "action": "story",
     "fire_at": "2026-09-02T09:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-02T07:15:29.484152+00:00",
+    "media_id": "18059480927539984"
   },
   {
     "post_name": "personal_vergleichen-neid",
