@@ -1048,7 +1048,17 @@
     "post_name": "marktupdate_avgo-hpe-snow-ergebnisse",
     "action": "story_sequence",
     "fire_at": "2026-09-02T20:30:00+02:00",
-    "status": "pending",
-    "note": "Folgepost zum Schnell-Check vom 01.09. -- echte Q3/Q2-Ergebnisse von Broadcom, HPE und Snowflake. Broadcom/HPE trotz Beat im Minus, Snowflake +22%."
+    "status": "done",
+    "note": "Folgepost zum Schnell-Check vom 01.09. -- echte Q3/Q2-Ergebnisse von Broadcom, HPE und Snowflake. Broadcom/HPE trotz Beat im Minus, Snowflake +22%.",
+    "published_at": "2026-09-02T23:07:46.401835+00:00",
+    "media_id": "18005652050973100",
+    "media_ids": [
+      "18005652050973100",
+      "18163519297430738",
+      "18111117863009864",
+      "18039759683821870",
+      "18109404890328949",
+      "18094822388562793"
+    ]
   }
 ]
