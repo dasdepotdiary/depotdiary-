@@ -699,13 +699,17 @@
     "caption": "Warum der Kurs am Ex-Dividende-Tag automatisch sinkt.\n\nKein Zufall, sondern Mechanik:\n\n-> Ab diesem Tag ist die naechste Dividende nicht mehr enthalten -- Kurs wird rechnerisch angepasst\n-> Massgeblich ist der Bestand am Record Date, nicht der Kauf heute\n-> Ein Kursruecksetzer am Ex-Tag ist kein automatisches Warnsignal\n\nKeine Anlageberatung -- nur, wie der Mechanismus rechnerisch funktioniert.\n\n#depotdiary #dividende #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-02T15:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-02T13:16:17.977711+00:00",
+    "media_id": "17912697663460007"
   },
   {
     "post_name": "erklaerstueck_ex-dividende-datum",
     "action": "story",
     "fire_at": "2026-09-02T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-02T13:16:25.363423+00:00",
+    "media_id": "18422403247146124"
   },
   {
     "post_name": "erklaerstueck_buy-and-hold-vs-trading",
