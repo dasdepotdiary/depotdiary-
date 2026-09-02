@@ -993,8 +993,18 @@
     "post_name": "marktupdate_docu-lulu-path-check",
     "action": "story_sequence",
     "fire_at": "2026-09-02T19:00:00+02:00",
-    "status": "pending",
-    "note": "Schnell-Check vor den Nachboersen-Zahlen von Docusign, Lululemon und UiPath (alle post-market 2026-09-03 lt. Earnings-Kalender)."
+    "status": "done",
+    "note": "Schnell-Check vor den Nachboersen-Zahlen von Docusign, Lululemon und UiPath (alle post-market 2026-09-03 lt. Earnings-Kalender).",
+    "published_at": "2026-09-02T17:15:15.446470+00:00",
+    "media_id": "18025237709906574",
+    "media_ids": [
+      "18025237709906574",
+      "18196791385376331",
+      "18029950277847553",
+      "18038538647828357",
+      "18174418201432238",
+      "17906737077472001"
+    ]
   },
   {
     "post_name": "collab_bitcoinhelfer",
