@@ -163,6 +163,22 @@ def font(path, size):
     return ImageFont.truetype(path, size)
 
 
+def wrap_text(draw, text, f, max_w):
+    words = text.split()
+    lines, cur = [], ""
+    for w in words:
+        test = (cur + " " + w).strip()
+        if draw.textlength(test, font=f) <= max_w:
+            cur = test
+        else:
+            if cur:
+                lines.append(cur)
+            cur = w
+    if cur:
+        lines.append(cur)
+    return lines
+
+
 def draw_logo_circle(img, draw, cx, cy, r, pick):
     draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CREAM, outline=GOLD, width=2)
     if pick.get("logo_path"):
@@ -276,8 +292,13 @@ def build_intro():
         tw = draw.textlength(pick["ticker"], font=name_font)
         draw.text((right_x + col_w / 2 - tw / 2, cy + logo_r + 14), pick["ticker"], font=name_font, fill=CREAM)
 
-    draw.text((B.MARGIN_LEFT, H - 60), "Keine Anlageberatung -- nur, welche Aktien wir persoenlich halten.",
-               font=font(B.SANS_BOLD, 17), fill=MUTED)
+    disclaimer_font = font(B.SANS_BOLD, 30)
+    disclaimer_lines = wrap_text(draw, "Keine Anlageberatung -- nur, welche Aktien wir persoenlich halten.",
+                                  disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    dy = H - 40 - 36 * len(disclaimer_lines)
+    for line in disclaimer_lines:
+        draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
+        dy += 36
     return img
 
 
@@ -328,13 +349,19 @@ def build_stock_slide(pick, idx, n_total):
         draw.text((B.MARGIN_LEFT, y), line, font=body_font, fill=CREAM)
         y += 33
 
-    draw.line([(B.MARGIN_LEFT, H - 76), (W - B.MARGIN_RIGHT, H - 76)], fill=CARD_BORDER, width=1)
-    draw.text((B.MARGIN_LEFT, H - 60), "Keine Anlageberatung. Beide Seiten: eigene Meinung, keine Empfehlung.",
-               font=font(B.SANS_BOLD, 16), fill=MUTED)
-    page_font = font(B.SANS_BOLD, 18)
+    disclaimer_font = font(B.SANS_BOLD, 28)
+    disclaimer_lines = wrap_text(draw, "Keine Anlageberatung. Beide Seiten: eigene Meinung, keine Empfehlung.",
+                                  disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 140)
+    divider_y = H - 44 - 34 * len(disclaimer_lines) - 14
+    draw.line([(B.MARGIN_LEFT, divider_y), (W - B.MARGIN_RIGHT, divider_y)], fill=CARD_BORDER, width=1)
+    dy = divider_y + 14
+    for line in disclaimer_lines:
+        draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
+        dy += 34
+    page_font = font(B.SANS_BOLD, 28)
     page_text = f"{idx:02d} / {n_total:02d}"
     pw = draw.textlength(page_text, font=page_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, H - 60), page_text, font=page_font, fill=MUTED)
+    draw.text((W - B.MARGIN_RIGHT - pw, divider_y + 14), page_text, font=page_font, fill=MUTED)
 
     return img
 
