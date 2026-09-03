@@ -1086,5 +1086,33 @@
     "action": "story",
     "fire_at": "2026-09-05T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_freistellungsauftrag",
+    "action": "carousel",
+    "caption": "Freistellungsauftrag -- wie du Steuern auf Kapitalertraege sparst.\n\nEin Formular, das schnell erledigt ist:\n\n-> Sparerpauschbetrag: 1.000 Euro pro Jahr (2.000 bei Verheirateten) steuerfrei\n-> Ohne Freistellungsauftrag zieht die Bank die Abgeltungssteuer trotzdem automatisch ab\n-> Bei mehreren Brokern: Betrag aufteilen, Summe darf 1.000 Euro nicht ueberschreiten\n\nKeine Steuerberatung -- nur, wie das Prinzip grundsaetzlich funktioniert.\n\n#depotdiary #steuern #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-04T12:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_freistellungsauftrag",
+    "action": "story",
+    "fire_at": "2026-09-04T12:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_aktienrueckkaeufe",
+    "action": "carousel",
+    "caption": "Aktienrueckkaeufe -- was passiert, wenn ein Unternehmen eigene Aktien kauft.\n\nEin zweiter Weg, Geld an Aktionaere zurueckzugeben:\n\n-> Unternehmen kauft eigene Aktien am Markt und zieht sie ein\n-> Weniger Aktien im Umlauf -> Gewinn je Aktie (EPS) steigt rechnerisch\n-> Anders als bei der Dividende: kein sofortiger steuerpflichtiger Zufluss\n\nKeine Bewertung, ob Rueckkaeufe sinnvoll sind -- nur, wie der Mechanismus funktioniert.\n\n#depotdiary #aktien #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-04T15:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_aktienrueckkaeufe",
+    "action": "story",
+    "fire_at": "2026-09-04T15:03:00+02:00",
+    "status": "pending"
   }
 ]

@@ -419,5 +419,27 @@
       "Banken (Konsortialbanken) begleiten den Prozess und ermitteln zusammen mit dem Unternehmen einen Preis, zu dem die ersten Aktien verkauft werden.",
       "Ohne laengere Kurshistorie und mit hoher Nachfrage schwanken frisch gelistete Aktien anfangs meist staerker als etablierte Werte."
     ]
+  },
+  {
+    "id": "freistellungsauftrag",
+    "title": "Freistellungsauftrag -- wie du Steuern auf Kapitalerträge sparst.",
+    "date": "2026-09-03",
+    "body": [
+      "Ein Formular, das schnell erledigt ist.",
+      "Aktuell 1.000 Euro pro Jahr (2.000 Euro bei Verheirateten) an Kapitalertraegen -- Zinsen, Dividenden, Kursgewinne -- bleiben ohne Steuerabzug.",
+      "Die Abgeltungssteuer (25% plus Soli/ggf. Kirchensteuer) wird automatisch einbehalten -- der Freistellungsauftrag bei deiner Bank/deinem Broker sorgt dafuer, dass das bis zur Pauschbetrags-Grenze nicht passiert.",
+      "Wer bei mehreren Banken Konten/Depots hat, teilt den Pauschbetrag entsprechend auf -- die Summe aller Auftraege darf die 1.000 Euro nicht ueberschreiten."
+    ]
+  },
+  {
+    "id": "aktienrueckkaeufe",
+    "title": "Aktienrückkäufe -- was passiert, wenn ein Unternehmen eigene Aktien kauft.",
+    "date": "2026-09-03",
+    "body": [
+      "Ein zweiter Weg, Geld an Aktionaere zurueckzugeben.",
+      "Statt (oder zusaetzlich zu) einer Dividende nutzt das Unternehmen liquide Mittel, um eigene Aktien am Markt zu kaufen und einzuziehen.",
+      "Sinkt die Anzahl der Aktien, steigt rechnerisch der Gewinn je Aktie (EPS) -- auch wenn der Gesamtgewinn des Unternehmens gleich bleibt.",
+      "Bei einem Rueckkauf bekommst du als Aktionaer kein direktes Geld ausgezahlt -- es gibt daher (anders als bei der Dividende) keinen sofortigen steuerpflichtigen Zufluss."
+    ]
   }
 ]

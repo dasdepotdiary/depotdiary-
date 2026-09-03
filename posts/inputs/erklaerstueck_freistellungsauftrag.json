@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Freistellungsauftrag* -- wie du Steuern auf Kapitalerträge sparst.",
+  "hook_sub": "Ein Formular, das schnell erledigt ist.",
+  "sections": [
+    {
+      "headline": "Der *Sparerpauschbetrag* ist steuerfrei.",
+      "body": "Aktuell 1.000 Euro pro Jahr (2.000 Euro bei Verheirateten) an Kapitalertraegen -- Zinsen, Dividenden, Kursgewinne -- bleiben ohne Steuerabzug."
+    },
+    {
+      "headline": "Ohne *Freistellungsauftrag* zieht die Bank trotzdem ab.",
+      "body": "Die Abgeltungssteuer (25% plus Soli/ggf. Kirchensteuer) wird automatisch einbehalten -- der Freistellungsauftrag bei deiner Bank/deinem Broker sorgt dafuer, dass das bis zur Pauschbetrags-Grenze nicht passiert."
+    },
+    {
+      "headline": "Du kannst den Betrag auf *mehrere Broker* aufteilen.",
+      "body": "Wer bei mehreren Banken Konten/Depots hat, teilt den Pauschbetrag entsprechend auf -- die Summe aller Auftraege darf die 1.000 Euro nicht ueberschreiten."
+    }
+  ],
+  "cta_headline": "Einmal einrichten, jedes Jahr sparen.",
+  "cta_body": "Keine Steuerberatung -- nur, wie das Prinzip grundsaetzlich funktioniert."
+}

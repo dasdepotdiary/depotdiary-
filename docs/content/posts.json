@@ -574,5 +574,23 @@
     "excerpt": "Drei Beats -- und diesmal eine Aktie, die komplett aus der Reihe tanzt.",
     "cover": "assets/posts/marktupdate_avgo-hpe-snow-ergebnisse/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_freistellungsauftrag",
+    "title": "Freistellungsauftrag -- wie du Steuern auf Kapitalerträge sparst.",
+    "category": "erklaerstueck",
+    "date": "2026-09-03",
+    "excerpt": "Ein Formular, das schnell erledigt ist.",
+    "cover": "assets/posts/erklaerstueck_freistellungsauftrag/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_aktienrueckkaeufe",
+    "title": "Aktienrückkäufe -- was passiert, wenn ein Unternehmen eigene Aktien kauft.",
+    "category": "erklaerstueck",
+    "date": "2026-09-03",
+    "excerpt": "Ein zweiter Weg, Geld an Aktionaere zurueckzugeben.",
+    "cover": "assets/posts/erklaerstueck_aktienrueckkaeufe/slide_1.webp",
+    "url": null
   }
 ]

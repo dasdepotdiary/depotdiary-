@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Aktienrückkäufe* -- was passiert, wenn ein Unternehmen eigene Aktien kauft.",
+  "hook_sub": "Ein zweiter Weg, Geld an Aktionaere zurueckzugeben.",
+  "sections": [
+    {
+      "headline": "Das Unternehmen kauft *eigene Aktien* zurueck.",
+      "body": "Statt (oder zusaetzlich zu) einer Dividende nutzt das Unternehmen liquide Mittel, um eigene Aktien am Markt zu kaufen und einzuziehen."
+    },
+    {
+      "headline": "Weniger Aktien im Umlauf, gleicher Gewinn.",
+      "body": "Sinkt die Anzahl der Aktien, steigt rechnerisch der Gewinn je Aktie (EPS) -- auch wenn der Gesamtgewinn des Unternehmens gleich bleibt."
+    },
+    {
+      "headline": "Anders als Dividenden: *keine sofortige* Steuer.",
+      "body": "Bei einem Rueckkauf bekommst du als Aktionaer kein direktes Geld ausgezahlt -- es gibt daher (anders als bei der Dividende) keinen sofortigen steuerpflichtigen Zufluss."
+    }
+  ],
+  "cta_headline": "Zwei Wege, Kapital zurueckzugeben.",
+  "cta_body": "Keine Bewertung, ob Rueckkaeufe sinnvoll sind -- nur, wie der Mechanismus funktioniert."
+}
