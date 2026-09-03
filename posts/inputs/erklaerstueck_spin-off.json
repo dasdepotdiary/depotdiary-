@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*Spin-off* -- was passiert, wenn ein Konzern sich aufspaltet.",
+  "hook_sub": "Ploetzlich zwei Aktien statt einer im Depot.",
+  "sections": [
+    {
+      "headline": "Ein *Unternehmensteil* wird verselbststaendigt.",
+      "body": "Der Mutterkonzern gliedert eine Sparte als eigenstaendige, boersennotierte Firma aus -- z.B. AT&T und die Abspaltung von WarnerMedia."
+    },
+    {
+      "headline": "Bestehende Aktionaere bekommen *automatisch* Anteile.",
+      "body": "Wer die Mutteraktie zum Stichtag haelt, erhaelt in der Regel anteilig Aktien der neuen, abgespaltenen Firma -- ohne zusaetzlichen Kauf."
+    },
+    {
+      "headline": "Der Kurs der *Mutteraktie* wird rechnerisch angepasst.",
+      "body": "Weil ein Unternehmensteil abgeht, sinkt der Kurs der urspruenglichen Aktie am Spin-off-Tag entsprechend -- kein Kursverlust, sondern eine Verschiebung in die neue Aktie."
+    }
+  ],
+  "cta_headline": "Aus eins mach zwei -- ohne Wertverlust.",
+  "cta_body": "Keine Bewertung einzelner Spin-offs -- nur, wie der Mechanismus funktioniert."
+}

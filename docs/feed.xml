@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Thu, 03 Sep 2026 16:38:15 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2026 17:05:31 +0000</lastBuildDate>
     <item>
       <title>Die Zahlen sind da: Broadcom, HPE und Snowflake.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -29,6 +29,22 @@
       <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Ein zweiter Weg, Geld an Aktionaere zurueckzugeben.</description>
+    </item>
+    <item>
+      <title>ESG -- was hinter dem Kürzel bei nachhaltigen Fonds steckt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_esg-investing</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Environmental, Social, Governance.</description>
+    </item>
+    <item>
+      <title>Spin-off -- was passiert, wenn ein Konzern sich aufspaltet.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_spin-off</guid>
+      <pubDate>Thu, 03 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Ploetzlich zwei Aktien statt einer im Depot.</description>
     </item>
     <item>
       <title>Die Zahlen sind da: Dell, Palo Alto Networks und MongoDB.</title>

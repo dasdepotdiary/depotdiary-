@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "*ESG* -- was hinter dem Kürzel bei nachhaltigen Fonds steckt.",
+  "hook_sub": "Environmental, Social, Governance.",
+  "sections": [
+    {
+      "headline": "Drei *Kriterien* statt nur Rendite.",
+      "body": "Environmental (Umwelt), Social (Soziales) und Governance (Unternehmensfuehrung) fliessen zusaetzlich zu den klassischen Finanzkennzahlen in die Bewertung ein."
+    },
+    {
+      "headline": "*ESG-Ratings* unterscheiden sich stark je Anbieter.",
+      "body": "MSCI, Sustainalytics und andere Agenturen bewerten dieselbe Aktie teils sehr unterschiedlich -- es gibt keinen einheitlichen Standard, was 'nachhaltig' genau bedeutet."
+    },
+    {
+      "headline": "*Ausschlusskriterien* vs. *Best-in-Class*.",
+      "body": "Manche ESG-Fonds schliessen ganze Branchen aus (z.B. Ruestung, Kohle), andere waehlen nur die relativ nachhaltigsten Unternehmen jeder Branche aus -- zwei sehr unterschiedliche Ansaetze."
+    }
+  ],
+  "cta_headline": "Ein Kuerzel, viele Definitionen.",
+  "cta_body": "Keine Bewertung einzelner ESG-Fonds -- nur, was das Kuerzel bedeutet."
+}

@@ -592,5 +592,23 @@
     "excerpt": "Ein zweiter Weg, Geld an Aktionaere zurueckzugeben.",
     "cover": "assets/posts/erklaerstueck_aktienrueckkaeufe/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_esg-investing",
+    "title": "ESG -- was hinter dem Kürzel bei nachhaltigen Fonds steckt.",
+    "category": "erklaerstueck",
+    "date": "2026-09-03",
+    "excerpt": "Environmental, Social, Governance.",
+    "cover": "assets/posts/erklaerstueck_esg-investing/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_spin-off",
+    "title": "Spin-off -- was passiert, wenn ein Konzern sich aufspaltet.",
+    "category": "erklaerstueck",
+    "date": "2026-09-03",
+    "excerpt": "Ploetzlich zwei Aktien statt einer im Depot.",
+    "cover": "assets/posts/erklaerstueck_spin-off/slide_1.webp",
+    "url": null
   }
 ]

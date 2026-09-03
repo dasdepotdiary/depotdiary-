@@ -441,5 +441,27 @@
       "Sinkt die Anzahl der Aktien, steigt rechnerisch der Gewinn je Aktie (EPS) -- auch wenn der Gesamtgewinn des Unternehmens gleich bleibt.",
       "Bei einem Rueckkauf bekommst du als Aktionaer kein direktes Geld ausgezahlt -- es gibt daher (anders als bei der Dividende) keinen sofortigen steuerpflichtigen Zufluss."
     ]
+  },
+  {
+    "id": "esg-investing",
+    "title": "ESG -- was hinter dem Kürzel bei nachhaltigen Fonds steckt.",
+    "date": "2026-09-03",
+    "body": [
+      "Environmental, Social, Governance.",
+      "Environmental (Umwelt), Social (Soziales) und Governance (Unternehmensfuehrung) fliessen zusaetzlich zu den klassischen Finanzkennzahlen in die Bewertung ein.",
+      "MSCI, Sustainalytics und andere Agenturen bewerten dieselbe Aktie teils sehr unterschiedlich -- es gibt keinen einheitlichen Standard, was 'nachhaltig' genau bedeutet.",
+      "Manche ESG-Fonds schliessen ganze Branchen aus (z.B. Ruestung, Kohle), andere waehlen nur die relativ nachhaltigsten Unternehmen jeder Branche aus -- zwei sehr unterschiedliche Ansaetze."
+    ]
+  },
+  {
+    "id": "spin-off",
+    "title": "Spin-off -- was passiert, wenn ein Konzern sich aufspaltet.",
+    "date": "2026-09-03",
+    "body": [
+      "Ploetzlich zwei Aktien statt einer im Depot.",
+      "Der Mutterkonzern gliedert eine Sparte als eigenstaendige, boersennotierte Firma aus -- z.B. AT&T und die Abspaltung von WarnerMedia.",
+      "Wer die Mutteraktie zum Stichtag haelt, erhaelt in der Regel anteilig Aktien der neuen, abgespaltenen Firma -- ohne zusaetzlichen Kauf.",
+      "Weil ein Unternehmensteil abgeht, sinkt der Kurs der urspruenglichen Aktie am Spin-off-Tag entsprechend -- kein Kursverlust, sondern eine Verschiebung in die neue Aktie."
+    ]
   }
 ]
