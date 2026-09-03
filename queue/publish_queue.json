@@ -1149,5 +1149,20 @@
     "action": "story",
     "fire_at": "2026-09-05T15:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "personal_portfolio_update",
+    "action": "carousel",
+    "caption": "Depot-Update -- was sich diese Woche bei mir getan hat.\n\nPalantir verkauft, Broadcom-Limit-Order gesetzt, Zeta Global teilverkauft -- mit echten Zahlen und meiner Begruendung.\n\nKeine Anlageberatung -- nur, was ich selbst gemacht habe.\n\n#depotdiary #depot #boerse #finanzen #persoenlich",
+    "slide_count": 4,
+    "fire_at": "2026-09-05T15:00:00+02:00",
+    "status": "pending",
+    "note": "Neues eigenstaendiges Daten-Karten-Format (posts/personal_portfolio_update.py), aus dem Collab-Format extrahiert. Echte Kursdaten/Logos, Nutzer-eigene Begruendung."
+  },
+  {
+    "post_name": "personal_portfolio_update",
+    "action": "story",
+    "fire_at": "2026-09-05T15:03:00+02:00",
+    "status": "pending"
   }
 ]
