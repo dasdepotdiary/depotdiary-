@@ -947,14 +947,18 @@
     "action": "reel",
     "caption": "Die Screenshots, die man sieht, sind fast immer die besten Tage -- unabhaengig davon, was gerade online kursiert.\n\nWenn ich anfange zu vergleichen, treffe ich Entscheidungen aus Neid, nicht aus Ueberzeugung.\n\nKeine Anlageberatung -- nur, wie ich versuche, bei mir zu bleiben.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-09-03T09:00:00+02:00",
-    "status": "pending",
-    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL2.mp4 geliefert -- hier gestaged."
+    "status": "done",
+    "note": "Ueber ElevenLabs-Handoff in einem anderen Claude-Chat gebaut, als FINAL2.mp4 geliefert -- hier gestaged.",
+    "published_at": "2026-09-03T07:16:20.596713+00:00",
+    "media_id": "18140206996593342"
   },
   {
     "post_name": "personal_vergleichen-neid",
     "action": "story",
     "fire_at": "2026-09-03T09:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-03T07:17:02.367204+00:00",
+    "media_id": "18328428103273702"
   },
   {
     "post_name": "marktupdate_dell-panw-mdb-check",
