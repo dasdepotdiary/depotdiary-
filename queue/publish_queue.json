@@ -1187,5 +1187,14 @@
     "note": "Erster Post im neuen Deep-Dive-Format (posts/personal_deep_dive.py) -- 7 Folien, Akzentfarbe an Firmenlogo angepasst (Standardregel fuer die Reihe), CTA-Folie in der Mitte.",
     "published_at": "2026-09-04T14:37:50.757963+00:00",
     "media_id": "18444762253122397"
+  },
+  {
+    "post_name": "personal_deep_dive_axon",
+    "action": "carousel",
+    "caption": "Deep Dive: Axon Enterprise (AXON).\n\nMein zweiter ausfuehrlicher Blick auf eine einzelne Aktie:\n\n-> KGV rund 186x -- eine der teuersten Bewertungen, die ich mir bisher angeschaut habe\n-> Auftragsbestand von 15,1 Mrd. USD\n-> Kurs aktuell rund 35% unter dem 52-Wochen-Hoch\n-> Insider verkaufen regelmaessig -- aber ausschliesslich ueber planmaessige 10b5-1-Handelsplaene\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #axon #boerse #finanzen #deepdive",
+    "slide_count": 7,
+    "fire_at": "2026-09-05T18:00:00+02:00",
+    "status": "pending",
+    "note": "Zweiter Post im Deep-Dive-Format (posts/personal_deep_dive_axon.py) -- Akzentfarbe Gelb (Axon-Logo)."
   }
 ]
