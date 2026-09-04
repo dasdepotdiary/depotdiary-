@@ -1196,5 +1196,14 @@
     "fire_at": "2026-09-05T18:00:00+02:00",
     "status": "pending",
     "note": "Zweiter Post im Deep-Dive-Format (posts/personal_deep_dive_axon.py) -- Akzentfarbe Gelb (Axon-Logo)."
+  },
+  {
+    "post_name": "personal_etf_steckbrief_msciworld",
+    "action": "carousel",
+    "caption": "ETF-Steckbrief: iShares Core MSCI World.\n\nNeues Format -- diesmal kein Einzelaktien-Deep-Dive, sondern ein ganzer ETF zerlegt:\n\n-> TER 0,20%, Fondsvolumen 127,6 Mrd. EUR, 1.323 Positionen\n-> Top-5-Holdings machen zusammen rund 18% aus\n-> USA-Anteil: rund 69%\n-> Technologie groesster Sektor mit rund 29,5%\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #etf #msciworld #boerse #finanzen",
+    "slide_count": 7,
+    "fire_at": "2026-09-06T12:00:00+02:00",
+    "status": "pending",
+    "note": "Neues Format (posts/personal_etf_steckbrief.py) -- ETF-Zusammensetzung statt Einzelaktie, Akzentfarbe Blau (iShares)."
   }
 ]
