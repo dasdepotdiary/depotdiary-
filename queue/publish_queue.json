@@ -1115,13 +1115,17 @@
     "caption": "Aktienrueckkaeufe -- was passiert, wenn ein Unternehmen eigene Aktien kauft.\n\nEin zweiter Weg, Geld an Aktionaere zurueckzugeben:\n\n-> Unternehmen kauft eigene Aktien am Markt und zieht sie ein\n-> Weniger Aktien im Umlauf -> Gewinn je Aktie (EPS) steigt rechnerisch\n-> Anders als bei der Dividende: kein sofortiger steuerpflichtiger Zufluss\n\nKeine Bewertung, ob Rueckkaeufe sinnvoll sind -- nur, wie der Mechanismus funktioniert.\n\n#depotdiary #aktien #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-04T15:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-04T13:19:29.559443+00:00",
+    "media_id": "18103170191193991"
   },
   {
     "post_name": "erklaerstueck_aktienrueckkaeufe",
     "action": "story",
     "fire_at": "2026-09-04T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-04T13:20:06.908448+00:00",
+    "media_id": "18094567481393847"
   },
   {
     "post_name": "collab_aktienanalyst",
