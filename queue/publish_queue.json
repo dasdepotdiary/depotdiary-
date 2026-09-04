@@ -1047,14 +1047,18 @@
     "action": "reel",
     "caption": "Ich halte immer einen Cash-Puffer, auch wenn er gerade nichts bringt.\n\nNicht um auf den perfekten Einstiegszeitpunkt zu warten, sondern damit ich im Notfall nichts verkaufen muss.\n\nDas kostet mich vielleicht etwas Rendite -- aber dafuer schlafe ich ruhiger.\n\nKeine Anlageberatung -- nur, wie ich fuer mich persoenlich damit umgehe.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-09-04T09:00:00+02:00",
-    "status": "pending",
-    "note": "Selbst per ElevenLabs gebaut (neuer Account/Key), echte faster-whisper-Zeitstempel fuer synchrone Untertitel, pure-footage-Stil mit echtem B-Roll."
+    "status": "done",
+    "note": "Selbst per ElevenLabs gebaut (neuer Account/Key), echte faster-whisper-Zeitstempel fuer synchrone Untertitel, pure-footage-Stil mit echtem B-Roll.",
+    "published_at": "2026-09-04T07:16:44.125411+00:00",
+    "media_id": "18140811016581259"
   },
   {
     "post_name": "personal_cash-puffer",
     "action": "story",
     "fire_at": "2026-09-04T09:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-04T07:16:51.549675+00:00",
+    "media_id": "18010451735956711"
   },
   {
     "post_name": "marktupdate_avgo-hpe-snow-ergebnisse",
