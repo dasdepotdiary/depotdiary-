@@ -1097,13 +1097,17 @@
     "caption": "Freistellungsauftrag -- wie du Steuern auf Kapitalertraege sparst.\n\nEin Formular, das schnell erledigt ist:\n\n-> Sparerpauschbetrag: 1.000 Euro pro Jahr (2.000 bei Verheirateten) steuerfrei\n-> Ohne Freistellungsauftrag zieht die Bank die Abgeltungssteuer trotzdem automatisch ab\n-> Bei mehreren Brokern: Betrag aufteilen, Summe darf 1.000 Euro nicht ueberschreiten\n\nKeine Steuerberatung -- nur, wie das Prinzip grundsaetzlich funktioniert.\n\n#depotdiary #steuern #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-04T12:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-04T10:16:37.302946+00:00",
+    "media_id": "17986306026052070"
   },
   {
     "post_name": "erklaerstueck_freistellungsauftrag",
     "action": "story",
     "fire_at": "2026-09-04T12:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-04T10:17:15.762999+00:00",
+    "media_id": "18112766686993443"
   },
   {
     "post_name": "erklaerstueck_aktienrueckkaeufe",
