@@ -1223,5 +1223,19 @@
     "fire_at": "2026-09-06T12:00:00+02:00",
     "status": "pending",
     "note": "Neues Format (posts/personal_etf_steckbrief.py) -- ETF-Zusammensetzung statt Einzelaktie, Akzentfarbe Blau (iShares)."
+  },
+  {
+    "post_name": "personal_fehler-zu-frueh-verkauft",
+    "action": "reel",
+    "caption": "Mein zweitgroesster Fehler: Ich hab Gewinner zu frueh verkauft, nur weil ich nervoes wurde.\n\nEine Position lief gut, und je hoeher der Gewinn stand, desto mehr Angst hatte ich, ihn wieder herzugeben -- also hab ich verkauft, obwohl sich an meiner urspruenglichen Einschaetzung nichts geaendert hatte.\n\nDas Problem: ich hab damit nicht auf die Fakten reagiert, sondern nur auf mein eigenes Unwohlsein.\n\nKeine Anlageberatung -- nur, wie oft meine eigene Nervositaet die eigentliche Entscheidung ueberstimmt hat.\n\n#depotdiary #persoenlich #boerse #finanzen #fehler",
+    "fire_at": "2026-09-06T09:00:00+02:00",
+    "status": "pending",
+    "note": "Start der neuen Fehler-Reihe (Teil 2, Teil 1 folgt als personal_fehler-hindsight-bias). Per ElevenLabs gebaut, echte faster-whisper-Zeitstempel."
+  },
+  {
+    "post_name": "personal_fehler-zu-frueh-verkauft",
+    "action": "story",
+    "fire_at": "2026-09-06T09:03:00+02:00",
+    "status": "pending"
   }
 ]
