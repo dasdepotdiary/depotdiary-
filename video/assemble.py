@@ -123,9 +123,15 @@ def split_into_phrases(text: str, max_words: int = 5) -> list[str]:
 
 
 def caption_clips(sentences: list[dict], video_size: tuple[int, int], position: str = "top") -> list:
+    """Bei echten Whisper-Zeitstempeln (pure-footage-Reels) sind sentences
+    bereits einzelne, gut geschnittene Phrasen (siehe scripts/simple_voice_reel_captions.py
+    group_into_phrases) -- ein zu niedriges max_words hier wuerde sie erneut
+    zerteilen und Bruchstuecke wie "AN," erzeugen (am 2026-09-05 live beobachtet).
+    max_words=8 laesst diese Phrasen unangetastet, splittet aber weiterhin die
+    langen ganzen Saetze aus voiceover.py fuer die Karten-Slide-Videos."""
     clips = []
     for s in sentences:
-        phrases = split_into_phrases(s["text"])
+        phrases = split_into_phrases(s["text"], max_words=8)
         if not phrases:
             continue
         phrase_dur = s["duration"] / len(phrases)
