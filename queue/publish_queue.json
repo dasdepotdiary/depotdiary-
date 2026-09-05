@@ -1162,13 +1162,17 @@
     "caption": "Spin-off -- was passiert, wenn ein Konzern sich aufspaltet.\n\nPloetzlich zwei Aktien statt einer im Depot:\n\n-> Ein Unternehmensteil wird als eigene, boersennotierte Firma ausgegliedert\n-> Bestehende Aktionaere bekommen automatisch anteilig Aktien der neuen Firma\n-> Der Kurs der Mutteraktie wird rechnerisch angepasst -- kein Wertverlust\n\nKeine Bewertung einzelner Spin-offs -- nur, wie der Mechanismus funktioniert.\n\n#depotdiary #aktien #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-05T15:00:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-05T13:14:00.557389+00:00",
+    "media_id": "18132164338644059"
   },
   {
     "post_name": "erklaerstueck_spin-off",
     "action": "story",
     "fire_at": "2026-09-05T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-05T13:14:06.347384+00:00",
+    "media_id": "17951792319257170"
   },
   {
     "post_name": "personal_portfolio_update",
@@ -1176,14 +1180,17 @@
     "caption": "Depot-Update -- was sich diese Woche bei mir getan hat.\n\nPalantir verkauft, Broadcom-Limit-Order gesetzt, Zeta Global teilverkauft -- mit echten Zahlen und meiner Begruendung.\n\nKeine Anlageberatung -- nur, was ich selbst gemacht habe.\n\n#depotdiary #depot #boerse #finanzen #persoenlich",
     "slide_count": 4,
     "fire_at": "2026-09-05T15:00:00+02:00",
-    "status": "pending",
-    "note": "Neues eigenstaendiges Daten-Karten-Format (posts/personal_portfolio_update.py), aus dem Collab-Format extrahiert. Echte Kursdaten/Logos, Nutzer-eigene Begruendung."
+    "status": "error",
+    "note": "Neues eigenstaendiges Daten-Karten-Format (posts/personal_portfolio_update.py), aus dem Collab-Format extrahiert. Echte Kursdaten/Logos, Nutzer-eigene Begruendung.",
+    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Medien-Download fehlgeschlagen. Die Medien-URI entspricht nicht unseren Anforderungen.\",\"error_user_msg\":\"Die Mediendatei konnte nicht von dieser URI abgerufen werden: https:\\/\\/dasdepotdiary.github.io\\/depotdiary-\\/assets\\/posts\\/personal_portfolio_update\\/slide_1.png?v=1788614046.Weitere Informationen findest du im Abschnitt \\u201eEinschr\\u00e4nkungen\\u201c in unserer Entwicklerdokumentation: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"A0xEijabbZWoE6FcFllCPzM\"}}"
   },
   {
     "post_name": "personal_portfolio_update",
     "action": "story",
     "fire_at": "2026-09-05T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-05T13:15:46.121103+00:00",
+    "media_id": "18007572656988351"
   },
   {
     "post_name": "personal_deep_dive_rklb",
