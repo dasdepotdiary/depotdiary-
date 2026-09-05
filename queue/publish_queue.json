@@ -1082,14 +1082,18 @@
     "action": "reel",
     "caption": "Wenn eine Position bei mir tief im Minus steht, ist mein erster Impuls fast immer: sofort verkaufen, den Verlust nicht mehr sehen muessen.\n\nAber genau diesen Impuls versuch ich zu ignorieren. Ich frag mich stattdessen: wuerde ich die Aktie heute zu diesem Preis neu kaufen, wenn ich sie noch nicht haette?\n\nWenn ja, aendert der Verlust auf dem Papier eigentlich nichts an meiner Meinung. Wenn nein, ist das ein ehrlicheres Signal als der rote Kurs allein.\n\nKeine Anlageberatung -- nur, wie ich selbst mit Verlusten umgehe.\n\n#depotdiary #persoenlich #boerse #finanzen",
     "fire_at": "2026-09-05T09:00:00+02:00",
-    "status": "pending",
-    "note": "Eigene Stimme (WhatsApp-Aufnahme, 2026-09-03 01:02 Uhr), echte faster-whisper-Zeitstempel fuer synchrone Untertitel, weisse Titel-Folie."
+    "status": "done",
+    "note": "Eigene Stimme (WhatsApp-Aufnahme, 2026-09-03 01:02 Uhr), echte faster-whisper-Zeitstempel fuer synchrone Untertitel, weisse Titel-Folie.",
+    "published_at": "2026-09-05T07:13:31.071289+00:00",
+    "media_id": "18189554773400177"
   },
   {
     "post_name": "personal_umgang-mit-verlust",
     "action": "story",
     "fire_at": "2026-09-05T09:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-05T07:13:38.396546+00:00",
+    "media_id": "17901851652589833"
   },
   {
     "post_name": "erklaerstueck_freistellungsauftrag",
