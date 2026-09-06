@@ -1331,5 +1331,35 @@
     "fire_at": "2026-09-10T20:00:00+02:00",
     "status": "pending",
     "note": "Kroger Q2-Zahlen Fr 11.9. vor Boersenoeffnung (Call 8:00 ET) -- Abend vorher gepostet."
+  },
+  {
+    "post_name": "personal_deep_dive_micron",
+    "action": "carousel",
+    "caption": "Deep Dive: Micron Technology (MU).\n\nDer bisher staerkste Kursverlauf in dieser Reihe -- getragen vom echten KI-Speicherboom:\n\n-> +764% in 12 Monaten, Forward-KGV nur noch 7,1x\n-> Aktie aktuell rund 19% unter ihrem 52-Wochen-Hoch von 1.255 USD\n-> CEO Sanjay Mehrotra verkaufte bis Juli eigene Aktien, Grossinvestoren wie Druckenmiller stiegen im Q2 komplett aus\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #micron #boerse #finanzen #deepdive #ki",
+    "slide_count": 7,
+    "fire_at": "2026-09-07T18:00:00+02:00",
+    "status": "pending",
+    "note": "Deep Dive #4 -- Akzentfarbe Micron-Blau (#0077C8), staerkste 12M-Performance aller Deep Dives (+764%)."
+  },
+  {
+    "post_name": "personal_deep_dive_micron",
+    "action": "story",
+    "fire_at": "2026-09-07T18:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "personal_deep_dive_nvidia",
+    "action": "carousel",
+    "caption": "Deep Dive: Nvidia (NVDA).\n\nDas wertvollste Unternehmen der Welt, 5,56 Billionen USD Marktkap -- mein bisher groesster Deep Dive:\n\n-> Letztes Quartal: 96,2 Mrd. USD Umsatz, 2,22 USD Gewinn je Aktie -- beides deutlich ueber den Erwartungen\n-> Aktie nur rund 3% unter dem 52-Wochen-Hoch\n-> CEO Jensen Huang hat seinen 10b5-1-Verkaufsplan (bis zu 6 Mio. Aktien) inzwischen abgeschlossen, haelt weiter Hunderte Millionen Aktien\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #nvidia #boerse #finanzen #deepdive #ki",
+    "slide_count": 7,
+    "fire_at": "2026-09-08T18:00:00+02:00",
+    "status": "pending",
+    "note": "Deep Dive #5 -- Akzentfarbe Nvidia-Gruen (#76B900), groesste Marktkap. aller Deep Dives (5,56 Bio. USD)."
+  },
+  {
+    "post_name": "personal_deep_dive_nvidia",
+    "action": "story",
+    "fire_at": "2026-09-08T18:03:00+02:00",
+    "status": "pending"
   }
 ]
