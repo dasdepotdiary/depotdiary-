@@ -1262,5 +1262,19 @@
     "status": "done",
     "published_at": "2026-09-06T13:14:37.163242+00:00",
     "media_id": "18159765829433876"
+  },
+  {
+    "post_name": "personal_fehler-zu-frueh-verkauft",
+    "action": "reel",
+    "caption": "Mein zweitgroesster Fehler: Ich hab Gewinner zu frueh verkauft, nur weil ich nervoes wurde.\n\nEine Position lief gut, und je hoeher der Gewinn stand, desto mehr Angst hatte ich, ihn wieder herzugeben -- also hab ich verkauft, obwohl sich an meiner urspruenglichen Einschaetzung nichts geaendert hatte.\n\nDas Problem: ich hab damit nicht auf die Fakten reagiert, sondern nur auf mein eigenes Unwohlsein.\n\nKeine Anlageberatung -- nur, wie oft meine eigene Nervositaet die eigentliche Entscheidung ueberstimmt hat.\n\n#depotdiary #persoenlich #boerse #finanzen #fehler",
+    "fire_at": "2026-09-06T16:31:00+02:00",
+    "status": "pending",
+    "note": "Re-Upload: Untertitel-Timing-Bug (slide_starts vs. echte Whisper-Zeitstempel) gefixt, Original-Post manuell geloescht."
+  },
+  {
+    "post_name": "personal_fehler-zu-frueh-verkauft",
+    "action": "story",
+    "fire_at": "2026-09-06T16:34:00+02:00",
+    "status": "pending"
   }
 ]
