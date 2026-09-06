@@ -1,0 +1,39 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Iran, Jobs-Report, KI-Bilanzen*.",
+  "hook_sub": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Die Woche startete mit *neuen Spannungen* am Golf.",
+      "body": "Am Montag griffen die USA erneut iranische Ziele nahe der Straße von Hormus an -- Öl zog an, Benzinpreise in den USA lagen im August erstmals im Monatsschnitt über 4 Dollar pro Gallone, die Börsen gaben zum Wochenstart nach."
+    },
+    {
+      "type": "text",
+      "headline": "Am Freitag überraschte der *US-Arbeitsmarkt*.",
+      "body": "162.000 neue Stellen im August -- Ökonomen hatten im Schnitt nur rund 56.000 erwartet. Die Arbeitslosenquote blieb bei 4,1%, die Juli-Zahl wurde von -23.000 auf +21.000 nach oben revidiert."
+    },
+    {
+      "type": "text",
+      "headline": "Gute Zahlen, *rote Vorbörse*.",
+      "body": "Starke Jobdaten erhöhen die Wahrscheinlichkeit einer Fed-Zinserhöhung am 15./16. September -- die Markterwartung dafür stieg auf rund 58%. Der Dow gab am Freitag deshalb nach."
+    },
+    {
+      "type": "text",
+      "headline": "Die Woche insgesamt: *uneinheitlich*.",
+      "body": "Der Dow schloss die Woche nahezu unverändert, der S&P 500 legte rund 0,4% zu, der Nasdaq rund 0,8% -- Technologiewerte zeigten sich robuster als der Rest des Marktes."
+    },
+    {
+      "type": "text",
+      "headline": "*Anleiherenditen* bleiben erhöht.",
+      "body": "Die 10-jährige US-Staatsanleihe rentierte zum Wochenschluss bei 4,76%, die 2-jährige bei 4,34% -- beide deutlich über den Werten von Jahresbeginn."
+    },
+    {
+      "type": "text",
+      "headline": "Dazu: eine volle *Earnings-Woche*.",
+      "body": "Broadcom, Lululemon, UiPath und Docusign legten Zahlen vor -- meine Einzel-Checks dazu findet ihr in den letzten Posts."
+    }
+  ],
+  "cta_headline": "Nächste Woche wird *nicht ruhiger*.",
+  "cta_body": "Oracle, Adobe, GameStop, Chewy und Kroger berichten -- plus US-Inflationsdaten am Freitag. Dazu mehr in den kommenden Posts. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

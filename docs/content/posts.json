@@ -610,5 +610,14 @@
     "excerpt": "Ploetzlich zwei Aktien statt einer im Depot.",
     "cover": "assets/posts/erklaerstueck_spin-off/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-06-09",
+    "title": "Diese Börsenwoche im Rückblick: Iran, Jobs-Report, KI-Bilanzen.",
+    "category": "marktupdate",
+    "date": "2026-09-06",
+    "excerpt": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-06-09/slide_1.webp",
+    "url": null
   }
 ]
