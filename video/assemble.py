@@ -300,11 +300,25 @@ def main():
     video = concatenate_videoclips(clips, method="compose", padding=padding)
 
     if sentences and not args.no_captions:
-        scaled_sentences = [
-            {**s, "start": slide_starts[i], "duration": durations[i]}
-            for i, s in enumerate(sentences)
-        ]
-        subs = caption_clips(scaled_sentences, video.size, position="center" if args.pure_footage else "top")
+        if args.pure_footage:
+            # Bei pure-footage kommen die sentences aus echten Whisper-
+            # Zeitstempeln der tatsaechlichen Aufnahme (siehe scripts/
+            # simple_voice_reel_captions.py) -- die Original-start/duration-
+            # Werte sind bereits exakt audiogenau. slide_starts/durations
+            # sind dagegen die VISUELLE, durch Crossfade-Ueberlappungen
+            # (cursor -= FADE bei jedem Clip-Wechsel) komprimierte Zeitachse
+            # der Video-Segmente -- captions daran auszurichten liess sie mit
+            # jeder Ueberblendung frueher rutschen und driftete ueber die
+            # Laufzeit zunehmend vom echten Ton weg (live beobachtet
+            # 2026-09-06, ca. 1,5s Vorlauf nach 6 Uebergaengen). Deshalb hier
+            # bewusst die unveraenderten Original-Zeitstempel verwenden.
+            caption_sentences = sentences
+        else:
+            caption_sentences = [
+                {**s, "start": slide_starts[i], "duration": durations[i]}
+                for i, s in enumerate(sentences)
+            ]
+        subs = caption_clips(caption_sentences, video.size, position="center" if args.pure_footage else "top")
         if subs:
             video = CompositeVideoClip([video] + subs, size=video.size).with_duration(video.duration)
 
