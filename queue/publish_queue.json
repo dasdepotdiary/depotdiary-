@@ -1269,7 +1269,7 @@
     "caption": "Mein zweitgroesster Fehler: Ich hab Gewinner zu frueh verkauft, nur weil ich nervoes wurde.\n\nEine Position lief gut, und je hoeher der Gewinn stand, desto mehr Angst hatte ich, ihn wieder herzugeben -- also hab ich verkauft, obwohl sich an meiner urspruenglichen Einschaetzung nichts geaendert hatte.\n\nDas Problem: ich hab damit nicht auf die Fakten reagiert, sondern nur auf mein eigenes Unwohlsein.\n\nKeine Anlageberatung -- nur, wie oft meine eigene Nervositaet die eigentliche Entscheidung ueberstimmt hat.\n\n#depotdiary #persoenlich #boerse #finanzen #fehler",
     "fire_at": "2026-09-06T16:31:00+02:00",
     "status": "done",
-    "note": "Re-Upload: Untertitel-Timing-Bug (slide_starts vs. echte Whisper-Zeitstempel) gefixt, Original-Post manuell geloescht.",
+    "note": "Re-Upload: Untertitel-Timing-Bug (slide_starts vs. echte Whisper-Zeitstempel) gefixt, Original-Post manuell geloescht. ACHTUNG: durch Race Condition zwischen lokalem Lauf und GitHub-Actions-Cron doppelt veroeffentlicht -- zweiter Post media_id 18132104584655925 (https://www.instagram.com/reel/Dc8wegtAuqv/) muss manuell geloescht werden.",
     "published_at": "2026-09-06T14:31:42.594199+00:00",
     "media_id": "18124227626298993"
   },
