@@ -1298,6 +1298,8 @@
     "post_name": "marktupdate_wochenrueckblick-06-09",
     "action": "story",
     "fire_at": "2026-09-06T17:18:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-8572-45be1c55",
+    "claimed_at": "2026-09-06T21:12:08.113246+00:00"
   }
 ]
