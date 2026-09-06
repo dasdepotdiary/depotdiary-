@@ -1250,13 +1250,17 @@
     "caption": "Deep Dive: Vistra Corp (VST).\n\nMein dritter Blick auf eine einzelne Aktie -- diesmal mit einem echten Insider-KAUF statt nur Verkaeufen:\n\n-> Forward-KGV 13,4x (trailing 23,5x)\n-> Aktie rund 32% unter dem 52-Wochen-Hoch, -27% auf 12 Monate\n-> CEO James Burke kauft Anfang September fuer rund 900.000 USD eigene Aktien\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #vistra #boerse #finanzen #deepdive",
     "slide_count": 7,
     "fire_at": "2026-09-06T15:00:00+02:00",
-    "status": "pending",
-    "note": "Dritter Post im Deep-Dive-Format -- Akzentfarbe Gruen (Vistra-Logo), erster Deep Dive mit echtem Insider-Kauf statt nur Verkaeufen."
+    "status": "done",
+    "note": "Dritter Post im Deep-Dive-Format -- Akzentfarbe Gruen (Vistra-Logo), erster Deep Dive mit echtem Insider-Kauf statt nur Verkaeufen.",
+    "published_at": "2026-09-06T13:14:31.160244+00:00",
+    "media_id": "18117630448961064"
   },
   {
     "post_name": "personal_deep_dive_vst",
     "action": "story",
     "fire_at": "2026-09-06T15:03:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-06T13:14:37.163242+00:00",
+    "media_id": "18159765829433876"
   }
 ]
