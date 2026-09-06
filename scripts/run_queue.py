@@ -25,9 +25,11 @@ Aufruf (wie in der Action, postet wirklich faellige Eintraege):
 import argparse
 import json
 import os
+import socket
 import subprocess
 import sys
 import time
+import uuid
 from datetime import datetime, timezone
 from pathlib import Path
 
@@ -43,6 +45,9 @@ except ImportError:
 QUEUE_PATH = ROOT / "queue" / "publish_queue.json"
 GRAPH_VERSION = "v21.0"
 GRAPH_URL = f"https://graph.facebook.com/{GRAPH_VERSION}"
+
+RUN_ID = f"{socket.gethostname()}-{os.getpid()}-{uuid.uuid4().hex[:8]}"
+STALE_CLAIM_SECONDS = 900  # haengengebliebener Claim (Absturz/Timeout) wird nach 15 Min wieder freigegeben
 
 
 def _graph_post(url, data, attempts=4, backoff=30):
@@ -81,11 +86,33 @@ def save_queue(queue):
     QUEUE_PATH.write_text(json.dumps(queue, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
-def is_due(entry) -> bool:
-    if entry.get("status") != "pending":
+def entry_key(entry):
+    """Identifiziert einen Queue-Eintrag ueber Lauf-Grenzen hinweg (keine echte ID im Schema)."""
+    return (entry.get("post_name"), entry.get("action"), entry.get("fire_at"))
+
+
+def find_entry(queue, key):
+    for e in queue:
+        if entry_key(e) == key:
+            return e
+    return None
+
+
+def is_due(entry, now=None) -> bool:
+    now = now or datetime.now(timezone.utc)
+    status = entry.get("status")
+    if status == "claiming":
+        claimed_at = entry.get("claimed_at")
+        if not claimed_at:
+            return False
+        claimed_dt = datetime.fromisoformat(claimed_at).astimezone(timezone.utc)
+        if (now - claimed_dt).total_seconds() < STALE_CLAIM_SECONDS:
+            return False  # noch von einem laufenden Prozess beansprucht
+        # verwaister Claim (Absturz/Timeout) -- wieder freigeben, unten neu beanspruchbar
+    elif status != "pending":
         return False
     fire_at = datetime.fromisoformat(entry["fire_at"])
-    return datetime.now(timezone.utc) >= fire_at.astimezone(timezone.utc)
+    return now >= fire_at.astimezone(timezone.utc)
 
 
 def publish_carousel(token, ig_id, base_url, entry) -> dict:
@@ -202,6 +229,54 @@ def sync_from_remote():
         pass  # kein Git verfuegbar o.ae. -- mit dem lokalen Stand weitermachen
 
 
+def _run_git(args, timeout=30):
+    return subprocess.run(["git", *args], cwd=ROOT, capture_output=True, text=True, timeout=timeout)
+
+
+def _repo_is_clean_except_queue() -> bool:
+    """Nur wenn sonst nichts Unbezogenes im Arbeitsbaum steht, machen wir automatisch
+    Commits/Pushes fuer die Queue-Datei -- sonst wuerden wir unabhaengige, noch nicht
+    committete Arbeit des Nutzers mit reinziehen."""
+    status = _run_git(["status", "--porcelain"])
+    dirty_other = [l for l in status.stdout.splitlines() if l.strip() and "publish_queue.json" not in l]
+    return not dirty_other
+
+
+def _git_commit_and_push(message, retries=3) -> bool:
+    """Committet & pusht die aktuelle queue/publish_queue.json. Bei Push-Konflikt (ein
+    anderer Lauf -- lokal oder Cron -- war schneller) wird per rebase integriert und
+    erneut versucht; bei echtem inhaltlichen Konflikt auf DIESER Datei (beide Seiten haben
+    denselben Eintrag angefasst) wird abgebrochen statt automatisch 'geloest' -- der
+    Aufrufer muss dann den Fernstand neu laden und pruefen, ob er das Rennen verloren hat.
+    Genau diese fehlende Sperre hat am 2026-09-06 zu einem doppelt veroeffentlichten Reel
+    gefuehrt (lokaler Re-Upload-Lauf + GitHub-Actions-Cron haben denselben pending-Eintrag
+    fast zeitgleich abgefeuert)."""
+    _run_git(["add", str(QUEUE_PATH)])
+    diff = _run_git(["diff", "--cached", "--quiet", "--", str(QUEUE_PATH)])
+    if diff.returncode == 0:
+        return True  # nichts zu committen
+    commit = _run_git(["commit", "-m", message])
+    if commit.returncode != 0:
+        return False
+    for _ in range(retries):
+        push = _run_git(["push", "origin", "main"])
+        if push.returncode == 0:
+            return True
+        pull = _run_git(["pull", "--rebase", "--autostash", "origin", "main"])
+        if pull.returncode != 0:
+            _run_git(["rebase", "--abort"])
+            return False
+    return False
+
+
+def _discard_failed_claim_and_sync():
+    """Wirft einen gescheiterten lokalen Claim-Versuch weg und synct hart auf den
+    Fernstand -- wird nur aufgerufen, nachdem _git_commit_and_push() False zurueckgegeben
+    hat, der Claim also ohnehin verloren ist."""
+    _run_git(["fetch", "origin", "main"])
+    _run_git(["reset", "--hard", "origin/main"])
+
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dry-run", action="store_true", help="Zeigt faellige Eintraege, postet nichts wirklich")
@@ -210,16 +285,47 @@ def main():
     sync_from_remote()
     token, ig_id, base_url = get_config()
     queue = load_queue()
-    due = [e for e in queue if is_due(e)]
+    now = datetime.now(timezone.utc)
+    due_keys = [entry_key(e) for e in queue if is_due(e, now)]
 
-    if not due:
+    if not due_keys:
         print("Nichts faellig.")
         return
 
-    for entry in due:
-        print(f"Faellig: {entry['post_name']} ({entry['action']})")
-        if args.dry_run:
+    if args.dry_run:
+        for key in due_keys:
+            print(f"Faellig: {key[0]} ({key[1]})")
+        return
+
+    use_lock = _repo_is_clean_except_queue()
+    if not use_lock:
+        print("WARNUNG: Arbeitsbaum hat unabhaengige, unbezogene Aenderungen -- "
+              "Claim-Sperre wird uebersprungen, Queue-Status wird nur lokal gespeichert (nicht gepusht).")
+
+    for key in due_keys:
+        queue = load_queue()
+        entry = find_entry(queue, key)
+        if entry is None or not is_due(entry, datetime.now(timezone.utc)):
+            print(f"Uebersprungen (nicht mehr faellig, vermutlich schon von anderem Lauf erledigt): {key[0]} ({key[1]})")
             continue
+
+        label = f"{entry['post_name']} ({entry['action']})"
+        print(f"Faellig: {label}")
+
+        if use_lock:
+            entry["status"] = "claiming"
+            entry["claimed_by"] = RUN_ID
+            entry["claimed_at"] = datetime.now(timezone.utc).isoformat()
+            save_queue(queue)
+            if not _git_commit_and_push(f"Claim: {label} [skip ci]"):
+                print(f"  Uebersprungen: Rennen verloren (ein anderer Lauf war schneller) -- {label}")
+                _discard_failed_claim_and_sync()
+                continue
+            # Nach Push (moeglicherweise inkl. Rebase) den Eintrag frisch von der Platte
+            # lesen -- die In-Memory-Kopie kann durch den Rebase veraltet sein.
+            queue = load_queue()
+            entry = find_entry(queue, key)
+
         try:
             result = DISPATCH[entry["action"]](token, ig_id, base_url, entry)
             entry["status"] = "done"
@@ -233,8 +339,10 @@ def main():
             entry["error"] = str(exc)
             print(f"  FEHLER: {exc}")
 
-    if not args.dry_run:
         save_queue(queue)
+        if use_lock:
+            if not _git_commit_and_push(f"Queue-Status: {label} [skip ci]"):
+                print(f"  WARNUNG: Ergebnis fuer {label} konnte nicht gepusht werden -- bitte manuell pruefen/pushen.")
 
 
 if __name__ == "__main__":
