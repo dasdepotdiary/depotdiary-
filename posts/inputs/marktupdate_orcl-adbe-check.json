@@ -1,0 +1,34 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "Die zwei *größten Zahlen* dieser Woche: Oracle und Adobe.",
+  "hook_sub": "Beide berichten am Donnerstag nach US-Börsenschluss.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Oracle* -- letzter der großen KI-Cloud-Anbieter, der berichtet.",
+      "stats": [
+        ["Kurs", "4. September 2026", "158,78 USD", "green"],
+        ["KGV", "aktuell / erwartet", "27,2 / 19,7", "grey"],
+        ["Marktkap.", "aktuell", "457,4 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q1-Bericht (Fiskaljahr 2027) am Donnerstag nach US-Börsenschluss. Die Aktie steht rund ein Viertel unter dem Jahresbeginn -- die Frage im Raum: wie tragfähig sind die hohen KI-Investitionen und die dafür aufgenommenen Schulden."
+      },
+    {
+      "type": "stats",
+      "headline": "*Adobe* -- mit frischem Wechsel an der Spitze.",
+      "stats": [
+        ["Kurs", "4. September 2026", "266,51 USD", "green"],
+        ["KGV", "aktuell / erwartet", "15,2 / 10,3", "grey"],
+        ["Marktkap.", "aktuell", "105,9 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q3-Bericht (Fiskaljahr 2026) ebenfalls am Donnerstag nach US-Börsenschluss."
+    },
+    {
+      "type": "text",
+      "headline": "Dazu: ein *CEO-Wechsel* mitten in der Earnings-Woche.",
+      "body": "Adobe kündigte am Donnerstag an, dass Anil Chakravarthy zum 1. Dezember die Nachfolge von Shantanu Narayen als CEO antritt -- die Aktie gab am selben Tag rund 7% nach. Die Zahlen am Donnerstag kommen also mit einem zusätzlichen Blickwinkel."
+    }
+  ],
+  "cta_headline": "Ich schau mir beide Zahlen direkt danach an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

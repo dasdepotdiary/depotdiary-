@@ -619,5 +619,41 @@
     "excerpt": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
     "cover": "assets/posts/marktupdate_wochenrueckblick-06-09/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_orcl-adbe-check",
+    "title": "Die zwei größten Zahlen dieser Woche: Oracle und Adobe.",
+    "category": "marktupdate",
+    "date": "2026-09-06",
+    "excerpt": "Beide berichten am Donnerstag nach US-Börsenschluss.",
+    "cover": "assets/posts/marktupdate_orcl-adbe-check/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_gme-check",
+    "title": "GameStop berichtet Dienstag -- und hat schon vorab geliefert.",
+    "category": "marktupdate",
+    "date": "2026-09-06",
+    "excerpt": "Ein echter Meme-Stock mit ungewöhnlicher Story im Hintergrund.",
+    "cover": "assets/posts/marktupdate_gme-check/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_chwy-check",
+    "title": "Chewy berichtet Mittwoch -- Haustierbedarf im Fokus.",
+    "category": "marktupdate",
+    "date": "2026-09-06",
+    "excerpt": "Der Online-Händler für Tierbedarf legt Q2-Zahlen vor.",
+    "cover": "assets/posts/marktupdate_chwy-check/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_kr-check",
+    "title": "Kroger berichtet Freitag -- gleicher Tag wie die Inflationsdaten.",
+    "category": "marktupdate",
+    "date": "2026-09-06",
+    "excerpt": "Amerikas größter reiner Supermarktbetreiber legt Q2-Zahlen vor.",
+    "cover": "assets/posts/marktupdate_kr-check/slide_1.webp",
+    "url": null
   }
 ]

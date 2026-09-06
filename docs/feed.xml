@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 06 Sep 2026 21:08:44 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2026 21:22:38 +0000</lastBuildDate>
     <item>
       <title>Diese Börsenwoche im Rückblick: Iran, Jobs-Report, KI-Bilanzen.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -13,6 +13,38 @@
       <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.</description>
+    </item>
+    <item>
+      <title>Die zwei größten Zahlen dieser Woche: Oracle und Adobe.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_orcl-adbe-check</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Beide berichten am Donnerstag nach US-Börsenschluss.</description>
+    </item>
+    <item>
+      <title>GameStop berichtet Dienstag -- und hat schon vorab geliefert.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_gme-check</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Ein echter Meme-Stock mit ungewöhnlicher Story im Hintergrund.</description>
+    </item>
+    <item>
+      <title>Chewy berichtet Mittwoch -- Haustierbedarf im Fokus.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_chwy-check</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Der Online-Händler für Tierbedarf legt Q2-Zahlen vor.</description>
+    </item>
+    <item>
+      <title>Kroger berichtet Freitag -- gleicher Tag wie die Inflationsdaten.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">marktupdate_kr-check</guid>
+      <pubDate>Sun, 06 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Amerikas größter reiner Supermarktbetreiber legt Q2-Zahlen vor.</description>
     </item>
     <item>
       <title>Die Zahlen sind da: Broadcom, HPE und Snowflake.</title>

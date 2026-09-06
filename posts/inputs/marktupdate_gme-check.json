@@ -1,0 +1,24 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "*GameStop* berichtet Dienstag -- und hat schon vorab geliefert.",
+  "hook_sub": "Ein echter Meme-Stock mit ungewöhnlicher Story im Hintergrund.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*GameStop* -- vorläufige Zahlen kamen schon am Montag.",
+      "stats": [
+        ["Kurs", "4. September 2026", "19,16 USD", "green"],
+        ["KGV", "aktuell / erwartet", "14,3 / 14,5", "grey"],
+        ["Marktkap.", "aktuell", "8,6 Mrd. USD", "green_mid"]
+      ],
+      "note": "Voller Q2-Bericht am Dienstag nach US-Börsenschluss. Vorab gemeldet: Nettogewinn 290-310 Mio. USD (Vorjahr: 168,6 Mio.) bei sinkendem Umsatz (780-800 statt 972 Mio. USD) -- der Gewinnsprung kommt vor allem aus der eBay-Beteiligung."
+    },
+    {
+      "type": "text",
+      "headline": "Der Hintergrund: eine *fast 5-Milliarden-Wette* auf eBay.",
+      "body": "GameStop hält rund 43,4 Mio. eBay-Aktien im Wert von knapp 5 Mrd. USD -- CEO Ryan Cohen hatte eBay lange als Übernahmeziel im Blick, zieht sich aber offenbar Richtung Partnerschaft statt Komplettübernahme zurück."
+    }
+  ],
+  "cta_headline": "Ich schau mir die vollen Zahlen am Mittwoch an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

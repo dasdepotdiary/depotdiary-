@@ -1,0 +1,19 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "*Chewy* berichtet Mittwoch -- Haustierbedarf im Fokus.",
+  "hook_sub": "Der Online-Händler für Tierbedarf legt Q2-Zahlen vor.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Chewy* -- Zahlen Mittwoch nach US-Börsenschluss.",
+      "stats": [
+        ["Kurs", "4. September 2026", "23,66 USD", "green"],
+        ["KGV", "aktuell / erwartet", "39,5 / 15,0", "grey"],
+        ["Marktkap.", "aktuell", "9,7 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht (Fiskaljahr 2026) am Mittwoch nach US-Börsenschluss. Die Aktie steht rund 45% unter ihrem 52-Wochen-Hoch von 43,50 USD -- der deutliche Unterschied zwischen aktuellem und erwartetem KGV zeigt, dass Analysten für die kommenden Quartale wieder mit mehr Gewinn rechnen."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen am Donnerstag an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}

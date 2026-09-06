@@ -1303,5 +1303,33 @@
     "claimed_at": "2026-09-06T21:12:08.113246+00:00",
     "published_at": "2026-09-06T21:12:18.618107+00:00",
     "media_id": "18089689286657016"
+  },
+  {
+    "post_name": "marktupdate_orcl-adbe-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-07T10:00:00+02:00",
+    "status": "pending",
+    "note": "Vorschau auf Oracle+Adobe Zahlen (Do 10.9. nach Boersenschluss) -- inkl. Adobe-CEO-Wechsel (Chakravarthy ab 1.12.)."
+  },
+  {
+    "post_name": "marktupdate_gme-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-08T15:00:00+02:00",
+    "status": "pending",
+    "note": "GameStop Q2-Zahlen Di 8.9. nach Boersenschluss -- vorlaeufige Zahlen + eBay-Beteiligung."
+  },
+  {
+    "post_name": "marktupdate_chwy-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-09T15:00:00+02:00",
+    "status": "pending",
+    "note": "Chewy Q2-Zahlen Mi 9.9. nach Boersenschluss."
+  },
+  {
+    "post_name": "marktupdate_kr-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-10T20:00:00+02:00",
+    "status": "pending",
+    "note": "Kroger Q2-Zahlen Fr 11.9. vor Boersenoeffnung (Call 8:00 ET) -- Abend vorher gepostet."
   }
 ]

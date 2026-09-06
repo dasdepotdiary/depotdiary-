@@ -1,0 +1,19 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "*Kroger* berichtet Freitag -- gleicher Tag wie die Inflationsdaten.",
+  "hook_sub": "Amerikas größter reiner Supermarktbetreiber legt Q2-Zahlen vor.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Kroger* -- Zahlen Freitag vor US-Börsenöffnung.",
+      "stats": [
+        ["Kurs", "4. September 2026", "58,59 USD", "green"],
+        ["KGV", "aktuell / erwartet", "35,9 / 11,1", "grey"],
+        ["Marktkap.", "aktuell", "35,9 Mrd. USD", "green_mid"]
+      ],
+      "note": "Q2-Bericht am Freitag, Analysten-Call um 8:00 Uhr ET -- noch vor der Veröffentlichung der US-Inflationsdaten um 8:30 Uhr ET. Der Nettogewinn ist im Jahresvergleich deutlich gesunken, das niedrige erwartete KGV zeigt aber, dass Analysten für die kommenden Quartale wieder mit spürbar mehr Gewinn rechnen."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen am Freitag an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe."
+}
