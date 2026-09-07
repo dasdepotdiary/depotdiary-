@@ -1450,7 +1450,9 @@
     "post_name": "erklaerstueck_kgv",
     "action": "story",
     "fire_at": "2026-09-07T16:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmejwal-2317-793c8409",
+    "claimed_at": "2026-09-07T14:16:33.368751+00:00"
   },
   {
     "post_name": "fehler_meme-stock",
