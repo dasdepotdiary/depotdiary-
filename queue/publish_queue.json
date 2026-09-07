@@ -1360,7 +1360,9 @@
     "post_name": "personal_deep_dive_micron",
     "action": "story",
     "fire_at": "2026-09-07T18:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmejwal-2318-4a294da0",
+    "claimed_at": "2026-09-07T16:15:59.314830+00:00"
   },
   {
     "post_name": "personal_deep_dive_nvidia",
