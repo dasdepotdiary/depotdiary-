@@ -1308,8 +1308,10 @@
     "post_name": "marktupdate_orcl-adbe-check",
     "action": "story_sequence",
     "fire_at": "2026-09-07T10:00:00+02:00",
-    "status": "pending",
-    "note": "Vorschau auf Oracle+Adobe Zahlen (Do 10.9. nach Boersenschluss) -- inkl. Adobe-CEO-Wechsel (Chakravarthy ab 1.12.)."
+    "status": "claiming",
+    "note": "Vorschau auf Oracle+Adobe Zahlen (Do 10.9. nach Boersenschluss) -- inkl. Adobe-CEO-Wechsel (Chakravarthy ab 1.12.).",
+    "claimed_by": "runnervmejwal-2325-9ae6d75c",
+    "claimed_at": "2026-09-07T08:17:43.636438+00:00"
   },
   {
     "post_name": "marktupdate_gme-check",
