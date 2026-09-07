@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Mon, 07 Sep 2026 11:51:39 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 17:19:28 +0000</lastBuildDate>
     <item>
       <title>Ist das eine KI-Blase?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -21,6 +21,22 @@
       <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Eine Kennzahl, kein Urteil.</description>
+    </item>
+    <item>
+      <title>Warum Insider legal eigene Aktien verkaufen dürfen.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_10b5-1-plan</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Taucht diese Woche gleich in zwei Deep Dives auf.</description>
+    </item>
+    <item>
+      <title>Warum Aktien nachts schon reagieren.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_after-hours-handel</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Diese Woche wichtig: Oracle und Adobe berichten nach Börsenschluss.</description>
     </item>
     <item>
       <title>Diese Börsenwoche im Rückblick: Iran, Jobs-Report, KI-Bilanzen.</title>

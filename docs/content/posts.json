@@ -655,5 +655,23 @@
     "excerpt": "Eine Kennzahl, kein Urteil.",
     "cover": "assets/posts/erklaerstueck_kgv/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_10b5-1-plan",
+    "title": "Warum Insider legal eigene Aktien verkaufen dürfen.",
+    "category": "erklaerstueck",
+    "date": "2026-09-07",
+    "excerpt": "Taucht diese Woche gleich in zwei Deep Dives auf.",
+    "cover": "assets/posts/erklaerstueck_10b5-1-plan/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_after-hours-handel",
+    "title": "Warum Aktien nachts schon reagieren.",
+    "category": "erklaerstueck",
+    "date": "2026-09-07",
+    "excerpt": "Diese Woche wichtig: Oracle und Adobe berichten nach Börsenschluss.",
+    "cover": "assets/posts/erklaerstueck_after-hours-handel/slide_1.webp",
+    "url": null
   }
 ]

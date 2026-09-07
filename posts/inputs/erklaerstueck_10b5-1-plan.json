@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Warum Insider *legal* eigene Aktien verkaufen dürfen.",
+  "hook_sub": "Taucht diese Woche gleich in zwei Deep Dives auf.",
+  "sections": [
+    {
+      "headline": "Ein *10b5-1-Plan* legt Verkäufe im Voraus fest.",
+      "body": "Führungskräfte legen Preis, Menge und Zeitpunkt fest, bevor sie etwas Kursrelevantes wissen können -- danach läuft der Plan automatisch ab."
+    },
+    {
+      "headline": "Der Grund: *Insiderhandel* vermeiden.",
+      "body": "Ohne festen Plan dürften Insider kaum je verkaufen, ohne Verdacht auf Insiderwissen zu wecken. Der Plan trennt die Entscheidung vom aktuellen Wissensstand."
+    },
+    {
+      "headline": "Ein Verkauf unter 10b5-1 ist *kein* Warnsignal.",
+      "body": "Jensen Huang (Nvidia) und James Burke (Vistra) haben beide solche Pläne -- planmäßige Verkäufe sagen nichts über die aktuelle Einschätzung des Managements aus, anders als spontane Verkäufe außerhalb eines Plans."
+    }
+  ],
+  "cta_headline": "Ich schau mir Insider-Aktivität trotzdem *an*.",
+  "cta_body": "Kein Warnsignal für sich allein -- aber ein Datenpunkt, den ich in jedem Deep Dive mit aufnehme."
+}

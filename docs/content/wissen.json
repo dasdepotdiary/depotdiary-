@@ -463,5 +463,27 @@
       "Ein KGV von 30 kann bei einem schnell wachsenden Unternehmen niedrig sein, bei einem stagnierenden hoch. Ich schaue mir das KGV nie isoliert an.",
       "Wie liegt das aktuelle KGV im Vergleich zum 5-Jahres-Durchschnitt desselben Unternehmens -- das sagt mir mehr als ein fixer Schwellenwert."
     ]
+  },
+  {
+    "id": "10b5-1-plan",
+    "title": "Warum Insider legal eigene Aktien verkaufen dürfen.",
+    "date": "2026-09-07",
+    "body": [
+      "Taucht diese Woche gleich in zwei Deep Dives auf.",
+      "Führungskräfte legen Preis, Menge und Zeitpunkt fest, bevor sie etwas Kursrelevantes wissen können -- danach läuft der Plan automatisch ab.",
+      "Ohne festen Plan dürften Insider kaum je verkaufen, ohne Verdacht auf Insiderwissen zu wecken. Der Plan trennt die Entscheidung vom aktuellen Wissensstand.",
+      "Jensen Huang (Nvidia) und James Burke (Vistra) haben beide solche Pläne -- planmäßige Verkäufe sagen nichts über die aktuelle Einschätzung des Managements aus, anders als spontane Verkäufe außerhalb eines Plans."
+    ]
+  },
+  {
+    "id": "after-hours-handel",
+    "title": "Warum Aktien nachts schon reagieren.",
+    "date": "2026-09-07",
+    "body": [
+      "Diese Woche wichtig: Oracle und Adobe berichten nach Börsenschluss.",
+      "Nach dem offiziellen US-Börsenschluss (16 Uhr ET) können Aktien noch bis 20 Uhr ET gehandelt werden -- mit deutlich weniger Volumen als tagsüber.",
+      "Quartalszahlen kommen fast immer entweder vor Handelsstart oder direkt nach Handelsschluss -- das gibt allen Anlegern gleichzeitig Zeit, die Zahlen zu lesen, bevor der reguläre Handel weitergeht.",
+      "Wegen des geringen Volumens können After-Hours-Kursbewegungen übertrieben ausfallen -- der Kurs am nächsten regulären Handelstag weicht nicht selten deutlich von der ersten Nacht-Reaktion ab."
+    ]
   }
 ]

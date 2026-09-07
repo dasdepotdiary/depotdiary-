@@ -1,0 +1,21 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Warum Aktien *nachts* schon reagieren.",
+  "hook_sub": "Diese Woche wichtig: Oracle und Adobe berichten nach Börsenschluss.",
+  "sections": [
+    {
+      "headline": "Der *After-Hours-Handel* läuft nach 22 Uhr MEZ weiter.",
+      "body": "Nach dem offiziellen US-Börsenschluss (16 Uhr ET) können Aktien noch bis 20 Uhr ET gehandelt werden -- mit deutlich weniger Volumen als tagsüber."
+    },
+    {
+      "headline": "Die meisten großen Unternehmen berichten *dann*.",
+      "body": "Quartalszahlen kommen fast immer entweder vor Handelsstart oder direkt nach Handelsschluss -- das gibt allen Anlegern gleichzeitig Zeit, die Zahlen zu lesen, bevor der reguläre Handel weitergeht."
+    },
+    {
+      "headline": "Die erste Reaktion ist oft *nicht* die endgültige.",
+      "body": "Wegen des geringen Volumens können After-Hours-Kursbewegungen übertrieben ausfallen -- der Kurs am nächsten regulären Handelstag weicht nicht selten deutlich von der ersten Nacht-Reaktion ab."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen erst am *nächsten* Tag richtig an.",
+  "cta_body": "Keine Prognose -- nur, warum ich mich von der ersten Nacht-Reaktion nicht hetzen lasse."
+}

@@ -1463,5 +1463,35 @@
     "claimed_at": "2026-09-07T14:16:33.368751+00:00",
     "published_at": "2026-09-07T14:16:41.078228+00:00",
     "media_id": "17913641067264523"
+  },
+  {
+    "post_name": "erklaerstueck_10b5-1-plan",
+    "action": "carousel",
+    "caption": "Warum Insider legal eigene Aktien verkaufen duerfen.\n\nTaucht diese Woche gleich in zwei Deep Dives auf (Nvidia, Vistra):\n\n-> Ein 10b5-1-Plan legt Preis, Menge und Zeitpunkt im Voraus fest\n-> Grund: Insiderhandel-Verdacht vermeiden\n-> Ein Verkauf unter so einem Plan ist kein Warnsignal fuer sich allein\n\nKein Warnsignal -- aber ein Datenpunkt, den ich mir trotzdem anschaue.\n\n#depotdiary #erklaerstueck #boerse #finanzen",
+    "slide_count": 5,
+    "fire_at": "2026-09-09T12:00:00+02:00",
+    "status": "pending",
+    "note": "Fuellt die Luecke, die durch das Entfernen von fehler_meme-stock entstanden ist -- thematisch an die Insider-Slides der Deep Dives angeknuepft."
+  },
+  {
+    "post_name": "erklaerstueck_10b5-1-plan",
+    "action": "story",
+    "fire_at": "2026-09-09T12:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_after-hours-handel",
+    "action": "carousel",
+    "caption": "Warum Aktien nachts schon reagieren.\n\nDiese Woche wichtig: Oracle und Adobe berichten nach Boersenschluss.\n\n-> After-Hours-Handel laeuft nach 22 Uhr MEZ weiter, deutlich weniger Volumen\n-> Deshalb berichten die meisten Unternehmen genau dann\n-> Die erste Reaktion ist oft nicht die endgueltige\n\nKeine Prognose -- nur, warum ich mich von der ersten Nacht-Reaktion nicht hetzen lasse.\n\n#depotdiary #erklaerstueck #boerse #finanzen",
+    "slide_count": 5,
+    "fire_at": "2026-09-10T12:00:00+02:00",
+    "status": "pending",
+    "note": "Fuellt die Luecke, die durch das Entfernen von erklaerstueck_etf-ter entstanden ist -- passt zu Oracle/Adobe-Zahlen am Donnerstagabend."
+  },
+  {
+    "post_name": "erklaerstueck_after-hours-handel",
+    "action": "story",
+    "fire_at": "2026-09-10T12:03:00+02:00",
+    "status": "pending"
   }
 ]
