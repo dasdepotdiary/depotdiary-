@@ -1416,10 +1416,12 @@
     "action": "reel",
     "caption": "Ist das eine KI-Blase?\n\nDrei Zahlen zur Einordnung, keine Antwort:\n\n-> Bewertungen sind historisch hoch\n-> Umsaetze wachsen aber tatsaechlich, anders als in der Dotcom-Zeit\n-> Kapitalausgaben fuer Rechenzentren/Chips explodieren -- Frage ist, ob sich das auszahlt\n\nKeine Prognose von mir -- nur die Fakten, die ich im Blick behalte.\n\n#depotdiary #erklaerstueck #ki #boerse #finanzen",
     "fire_at": "2026-09-07T15:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Bereits am 17.8. fertig produziertes Reel (Card-Slide-Stil, ElevenLabs) -- damals nie gequeued/veroeffentlicht, jetzt passend zur AI-lastigen Deep-Dive-Woche nachgeholt.",
     "claimed_by": "runnervmejwal-2311-abee8cf6",
-    "claimed_at": "2026-09-07T13:16:40.983110+00:00"
+    "claimed_at": "2026-09-07T13:16:40.983110+00:00",
+    "published_at": "2026-09-07T13:17:28.460618+00:00",
+    "media_id": "18100753895072711"
   },
   {
     "post_name": "erklaerstueck_ki-blase",
