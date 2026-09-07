@@ -1463,35 +1463,5 @@
     "claimed_at": "2026-09-07T14:16:33.368751+00:00",
     "published_at": "2026-09-07T14:16:41.078228+00:00",
     "media_id": "17913641067264523"
-  },
-  {
-    "post_name": "fehler_meme-stock",
-    "action": "carousel",
-    "caption": "Ein Meme-Stock, weil ich's auf Twitter gelesen hab.\n\nEine der teuersten Lektionen bisher: eingestiegen ohne eigene Recherche, im Plus nicht verkauft, dann ging's runter. Position halte ich bis heute.\n\nFehler gehoeren dazu -- was war deine erste teure Lektion?\n\n#depotdiary #fehler #persoenlich #boerse #finanzen",
-    "slide_count": 5,
-    "fire_at": "2026-09-09T12:00:00+02:00",
-    "status": "pending",
-    "note": "War schon lange fertig gerendert (beide Ordner), aber nie gequeued -- beim Aufraeumen entdeckt."
-  },
-  {
-    "post_name": "fehler_meme-stock",
-    "action": "story",
-    "fire_at": "2026-09-09T12:03:00+02:00",
-    "status": "pending"
-  },
-  {
-    "post_name": "erklaerstueck_etf-ter",
-    "action": "carousel",
-    "caption": "Was die TER eines ETFs wirklich kostet.\n\nKlingt klein, wirkt aber jedes Jahr: 0,2% statt 0,7% TER macht ueber 20-30 Jahre durch den Zinseszinseffekt einen spuerbaren Unterschied.\n\nMein Ansatz: erst Index pruefen, dann TER vergleichen -- und bei teuren Nischen-ETFs schau ich mir lieber einzelne Aktien im Sektor an.\n\n#depotdiary #erklaerstueck #etf #boerse #finanzen",
-    "slide_count": 7,
-    "fire_at": "2026-09-10T12:00:00+02:00",
-    "status": "pending",
-    "note": "War schon lange fertig gerendert (beide Ordner), aber nie gequeued -- beim Aufraeumen entdeckt."
-  },
-  {
-    "post_name": "erklaerstueck_etf-ter",
-    "action": "story",
-    "fire_at": "2026-09-10T12:03:00+02:00",
-    "status": "pending"
   }
 ]
