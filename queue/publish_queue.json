@@ -1427,7 +1427,9 @@
     "post_name": "erklaerstueck_ki-blase",
     "action": "story",
     "fire_at": "2026-09-07T15:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmejwal-2311-abee8cf6",
+    "claimed_at": "2026-09-07T13:17:29.679483+00:00"
   },
   {
     "post_name": "erklaerstueck_kgv",
