@@ -1410,5 +1410,34 @@
     "action": "story",
     "fire_at": "2026-09-08T12:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_ki-blase",
+    "action": "reel",
+    "caption": "Ist das eine KI-Blase?\n\nDrei Zahlen zur Einordnung, keine Antwort:\n\n-> Bewertungen sind historisch hoch\n-> Umsaetze wachsen aber tatsaechlich, anders als in der Dotcom-Zeit\n-> Kapitalausgaben fuer Rechenzentren/Chips explodieren -- Frage ist, ob sich das auszahlt\n\nKeine Prognose von mir -- nur die Fakten, die ich im Blick behalte.\n\n#depotdiary #erklaerstueck #ki #boerse #finanzen",
+    "fire_at": "2026-09-07T15:00:00+02:00",
+    "status": "pending",
+    "note": "Bereits am 17.8. fertig produziertes Reel (Card-Slide-Stil, ElevenLabs) -- damals nie gequeued/veroeffentlicht, jetzt passend zur AI-lastigen Deep-Dive-Woche nachgeholt."
+  },
+  {
+    "post_name": "erklaerstueck_ki-blase",
+    "action": "story",
+    "fire_at": "2026-09-07T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_kgv",
+    "action": "carousel",
+    "caption": "Was ein KGV eigentlich aussagt.\n\nTaucht diese Woche in jedem Deep Dive auf -- deshalb kurz erklaert:\n\n-> Kurs geteilt durch Gewinn je Aktie -- fuer wie viele Jahre Gewinn zahle ich gerade\n-> Sagt nichts absolut aus, nur im Vergleich (Wachstum, eigener Schnitt)\n-> Ich schaue es mir nie isoliert an\n\nWelche Kennzahl soll ich als naechstes erklaeren?\n\n#depotdiary #erklaerstueck #kgv #boerse #finanzen",
+    "slide_count": 5,
+    "fire_at": "2026-09-07T16:00:00+02:00",
+    "status": "pending",
+    "note": "Erklaerstueck als Ergaenzung zur Deep-Dive-Woche -- KGV wird in jedem Deep-Dive-Post zitiert."
+  },
+  {
+    "post_name": "erklaerstueck_kgv",
+    "action": "story",
+    "fire_at": "2026-09-07T16:03:00+02:00",
+    "status": "pending"
   }
 ]

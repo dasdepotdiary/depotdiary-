@@ -9,15 +9,6 @@
     "url": null
   },
   {
-    "id": "erklaerstueck_kgv",
-    "title": "Was ein KGV eigentlich aussagt.",
-    "category": "erklaerstueck",
-    "date": "2026-08-15",
-    "excerpt": "Eine Kennzahl, kein Urteil.",
-    "cover": "assets/posts/erklaerstueck_kgv/slide_1.webp",
-    "url": "https://www.instagram.com/p/DcEifOLFiZW/"
-  },
-  {
     "id": "erklaerstueck_etf-ter",
     "title": "Was die TER eines ETFs wirklich kostet.",
     "category": "erklaerstueck",
@@ -42,15 +33,6 @@
     "date": "2026-08-04",
     "excerpt": "Veröffentlichte Zahlen zu Q2 2026, Quelle: Quartalsbericht Zeta Global Holdings Corp, 04.08.2026.",
     "cover": "assets/posts/quartalszahlen_zeta-q2-2026/slide_1.webp",
-    "url": null
-  },
-  {
-    "id": "erklaerstueck_ki-blase",
-    "title": "Ist das eine KI-Blase?",
-    "category": "erklaerstueck",
-    "date": "2026-08-17",
-    "excerpt": "Drei Zahlen zur Einordnung, keine Antwort.",
-    "cover": "assets/posts/erklaerstueck_ki-blase/slide_1.webp",
     "url": null
   },
   {
@@ -654,6 +636,24 @@
     "date": "2026-09-06",
     "excerpt": "Amerikas größter reiner Supermarktbetreiber legt Q2-Zahlen vor.",
     "cover": "assets/posts/marktupdate_kr-check/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_ki-blase",
+    "title": "Ist das eine KI-Blase?",
+    "category": "erklaerstueck",
+    "date": "2026-09-07",
+    "excerpt": "Drei Zahlen zur Einordnung, keine Antwort.",
+    "cover": "assets/posts/erklaerstueck_ki-blase/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_kgv",
+    "title": "Was ein KGV eigentlich aussagt.",
+    "category": "erklaerstueck",
+    "date": "2026-09-07",
+    "excerpt": "Eine Kennzahl, kein Urteil.",
+    "cover": "assets/posts/erklaerstueck_kgv/slide_1.webp",
     "url": null
   }
 ]

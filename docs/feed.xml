@@ -5,7 +5,23 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 06 Sep 2026 21:22:38 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2026 11:51:39 +0000</lastBuildDate>
+    <item>
+      <title>Ist das eine KI-Blase?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_ki-blase</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Drei Zahlen zur Einordnung, keine Antwort.</description>
+    </item>
+    <item>
+      <title>Was ein KGV eigentlich aussagt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_kgv</guid>
+      <pubDate>Mon, 07 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Eine Kennzahl, kein Urteil.</description>
+    </item>
     <item>
       <title>Diese Börsenwoche im Rückblick: Iran, Jobs-Report, KI-Bilanzen.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -519,14 +535,6 @@
       <description>Q2 2026, veröffentlicht am 18. August 2026.</description>
     </item>
     <item>
-      <title>Ist das eine KI-Blase?</title>
-      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
-      <guid isPermaLink="false">erklaerstueck_ki-blase</guid>
-      <pubDate>Mon, 17 Aug 2026 00:00:00 +0000</pubDate>
-      <category>Erklärstück</category>
-      <description>Drei Zahlen zur Einordnung, keine Antwort.</description>
-    </item>
-    <item>
       <title>Warum wird Arbeitsspeicher gerade so teuer?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
       <guid isPermaLink="false">marktupdate_speicherchips</guid>
@@ -565,14 +573,6 @@
       <pubDate>Sun, 16 Aug 2026 00:00:00 +0000</pubDate>
       <category>Fehler</category>
       <description>Eine der teuersten Lektionen bisher.</description>
-    </item>
-    <item>
-      <title>Was ein KGV eigentlich aussagt.</title>
-      <link>https://www.instagram.com/p/DcEifOLFiZW/</link>
-      <guid isPermaLink="false">erklaerstueck_kgv</guid>
-      <pubDate>Sat, 15 Aug 2026 00:00:00 +0000</pubDate>
-      <category>Erklärstück</category>
-      <description>Eine Kennzahl, kein Urteil.</description>
     </item>
     <item>
       <title>Mein Depot in Zahlen</title>
