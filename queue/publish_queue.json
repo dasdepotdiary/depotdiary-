@@ -1390,7 +1390,9 @@
     "post_name": "personal_deep_dive_oracle",
     "action": "story",
     "fire_at": "2026-09-07T12:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmejwal-2282-4c33840f",
+    "claimed_at": "2026-09-07T10:16:50.621966+00:00"
   },
   {
     "post_name": "personal_deep_dive_adobe",
