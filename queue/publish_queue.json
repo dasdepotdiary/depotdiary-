@@ -1427,9 +1427,11 @@
     "post_name": "erklaerstueck_ki-blase",
     "action": "story",
     "fire_at": "2026-09-07T15:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmejwal-2311-abee8cf6",
-    "claimed_at": "2026-09-07T13:17:29.679483+00:00"
+    "claimed_at": "2026-09-07T13:17:29.679483+00:00",
+    "published_at": "2026-09-07T13:18:08.621703+00:00",
+    "media_id": "18128779345766721"
   },
   {
     "post_name": "erklaerstueck_kgv",
