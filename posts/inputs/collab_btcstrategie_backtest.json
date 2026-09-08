@@ -2,14 +2,16 @@
   "meta": {
     "partner_handle": "@BTCSTRATEGIE",
     "title": "Bitcoin -- oft \"Koenig der Kryptowaehrungen\" genannt.",
-    "subtitle": "Hier seht ihr, wie es sich die letzten 10 Jahre gegen andere Anlageklassen geschlagen hat.",
+    "subtitle": "Hier seht ihr, wie es sich die letzten 10 Jahre gegen fuenf andere Anlageformen geschlagen hat.",
     "asof": "Stand 8.9.2026, 1.000 EUR vor 10 Jahren angelegt.",
     "rows": [
-      {"label": "GOLD", "asset_value": "3.087 EUR (+209%)", "btc_value": "123.608 EUR (+12.261%)"},
-      {"label": "SILBER", "asset_value": "3.219 EUR (+222%)", "btc_value": "123.608 EUR (+12.261%)"},
-      {"label": "AKTIEN (S&P 500)", "asset_value": "3.450 EUR (+245%)", "btc_value": "123.608 EUR (+12.261%)"}
+      {"label": "GOLD", "kind": "bar", "prices": "GOLD10Y", "asset_value": "3.087 EUR (+209%)", "btc_value": "123.608 EUR (+12.261%)", "btc_prices": "BTC10Y"},
+      {"label": "SILBER", "kind": "bar", "prices": "SILVER10Y", "asset_value": "3.219 EUR (+222%)", "btc_value": "123.608 EUR (+12.261%)", "btc_prices": "BTC10Y"},
+      {"label": "AKTIEN (S&P 500)", "kind": "chart", "prices": "SP500_10Y", "asset_value": "3.450 EUR (+245%)", "btc_value": "123.608 EUR (+12.261%)", "btc_prices": "BTC10Y"},
+      {"label": "EINZELAKTIE (APPLE)", "kind": "chart", "prices": "AAPL10Y", "asset_value": "10.561 EUR (+956%)", "btc_value": "123.608 EUR (+12.261%)", "btc_prices": "BTC10Y"},
+      {"label": "SPARBUCH", "kind": "flat", "prices": "SPARBUCH10Y", "asset_value": "1.041 EUR (+4%)", "btc_value": "123.608 EUR (+12.261%)", "btc_prices": "BTC10Y"}
     ],
-    "note": "Berechnet auf Basis echter Schlusskurse (Gold/Silber ETFs, S&P 500, Bitcoin, EUR/USD) -- inklusive Waehrungseffekt. Keine Beruecksichtigung von Steuern/Gebuehren.",
-    "cta": "Reiner Rueckblick auf einen einzelnen 10-Jahres-Zeitraum -- keine Prognose. Bitcoin schwankt auch deutlich staerker als Gold, Silber oder Aktien."
+    "note": "Berechnet auf Basis echter Schlusskurse (Gold/Silber-ETFs, S&P 500, Apple, Bitcoin, EUR/USD) bzw. des historischen Durchschnittszinses fuer Sparbuecher in Deutschland (~0,4% p.a., Quelle: tagesgeldvergleich.net). Keine Beruecksichtigung von Steuern/Gebuehren.",
+    "cta": "Reiner Rueckblick auf einen einzelnen 10-Jahres-Zeitraum -- keine Prognose. Bitcoin schwankt auch deutlich staerker als jede der anderen Anlageformen hier."
   }
 }
