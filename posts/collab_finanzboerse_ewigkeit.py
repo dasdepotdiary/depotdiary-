@@ -1,21 +1,25 @@
-"""Collab mit @finanzboerse: "5 Aktien fuer die Ewigkeit" -- auf Nutzerwunsch
-vom 2026-09-08, neuer Stil ggue. den bisherigen finanzboerse-Collabs
-(collab_finanzboerse_quotes.py, dunkles Gold/Navy-Palette bleibt, aber
-Profilkarten-Layout statt Zitat-Paaren).
+"""Collab mit @finanzboerse: "5 Aktien fuer die Ewigkeit" -- auf
+Nutzerwunsch vom 2026-09-08 ueberarbeitet: echtes Paar-Format
+("Verschmelzung unserer Formate"), oben @finanzboerse's Pick, unten
+@dasdepotdiary's Pick, pro Slide -- Struktur analog zu
+draw_quote_half()/build_paired_slide() aus collab_finanzboerse_quotes.py,
+aber mit Logo-Karten statt Zitaten.
 
-Bewusst OHNE Kurs/KGV/Marktkap-Zahlen -- eine "fuer die Ewigkeit"-Auswahl mit
-tagesaktuellen Bewertungszahlen zu unterlegen waere sowohl inhaltlich
+Ticker vom Nutzer vorgegeben: @finanzboerse waehlt Amazon, Berkshire
+Hathaway, Visa, Alphabet, Microsoft; @dasdepotdiary (eigene Auswahl,
+teils bewusst im selben Sektor gepaart) Apple, Novo Nordisk, Mastercard,
+Costco, Nvidia.
+
+Bewusst OHNE Kurs/KGV/Marktkap-Zahlen -- eine "fuer die Ewigkeit"-Auswahl
+mit tagesaktuellen Bewertungszahlen zu unterlegen waere sowohl inhaltlich
 unpassend (die Zahlen veralten, der Titel nicht) als auch naeher an einer
-Kaufempfehlung. Stattdessen rein qualitative, zeitlose Geschaeftsmodell-
-Gruende (Moat/Diversifikation) -- explizit als persoenliche Auswahl markiert,
-keine Bewertung, keine Empfehlung.
-
-Ticker vom Nutzer vorgegeben: Amazon, Berkshire Hathaway, Visa, Alphabet,
-Microsoft.
+Kaufempfehlung. Rein qualitative, zeitlose Geschaeftsmodell-Gruende,
+explizit als persoenliche Auswahl markiert, keine Rangfolge.
 
 Aufruf:
   python posts/collab_finanzboerse_ewigkeit.py
 """
+import json
 import sys
 from pathlib import Path
 
@@ -38,44 +42,14 @@ FB_BG = (9, 13, 22)
 FB_CARD = (17, 23, 37)
 FB_CARD_BORDER = (40, 46, 62)
 FB_GOLD = (201, 162, 57)
-FB_GOLD_HEX = "#C9A239"
 CREAM = (240, 238, 230)
 MUTED = (140, 145, 158)
+GREEN = B.GREEN_MID
 
 PARTNER_HANDLE = "@FINANZBOERSE"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
-STOCKS = [
-    {
-        "ticker": "AMZN", "name": "Amazon", "logo": "amzn_logo_icon.png",
-        "why": "E-Commerce-Marktfuehrer und mit AWS gleichzeitig das Cloud-Rueckgrat, "
-               "auf dem ein grosser Teil des Internets laeuft -- zwei fuehrende "
-               "Geschaeftsmodelle in einem Unternehmen.",
-    },
-    {
-        "ticker": "BRK.B", "name": "Berkshire Hathaway", "logo": "brk_logo_icon.png",
-        "why": "Kein einzelnes Unternehmen, sondern ein breit gestreutes Konglomerat -- "
-               "Versicherung, Eisenbahn, Energie und ein eigenes Aktienportfolio in "
-               "einer einzigen Position.",
-    },
-    {
-        "ticker": "V", "name": "Visa", "logo": "v_logo_icon.png",
-        "why": "Betreibt das Zahlungsnetzwerk, nicht das Kreditrisiko -- verdient an "
-               "jeder Kartentransaktion weltweit, unabhaengig davon, ob Kunden ihre "
-               "Rechnung bezahlen koennen.",
-    },
-    {
-        "ticker": "GOOGL", "name": "Alphabet", "logo": "googl_logo_icon.png",
-        "why": "Google-Suche, YouTube, Cloud und Waymo unter einem Dach -- eine "
-               "der breitesten Datengrundlagen im gesamten Tech-Sektor.",
-    },
-    {
-        "ticker": "MSFT", "name": "Microsoft", "logo": "msft_logo_icon.png",
-        "why": "Windows und Office als Unternehmens-Standard weltweit, dazu Azure als "
-               "eine der groessten Cloud-Plattformen -- tief in den Alltag von "
-               "Firmen jeder Groesse eingebaut.",
-    },
-]
+PAIRS = json.loads((ROOT / "posts" / "inputs" / "collab_finanzboerse_ewigkeit.json").read_text(encoding="utf-8"))["pairs"]
 
 
 def font(path, size):
@@ -98,37 +72,13 @@ def wrap_text(draw, text, f, max_w):
     return lines
 
 
-def build_header(draw, y=40):
+def build_header(draw, y=36):
     handle_font = font(B.SANS_BOLD, 18)
     text = f"{OWN_HANDLE}  x  {PARTNER_HANDLE}"
     draw.text((B.MARGIN_LEFT, y), text, font=handle_font, fill=FB_GOLD)
-    y += 30
+    y += 28
     draw.line([(B.MARGIN_LEFT, y), (W - B.MARGIN_RIGHT, y)], fill=FB_CARD_BORDER, width=1)
-    return y + 22
-
-
-def draw_footer(draw, idx, n_total, text="Keine Anlageberatung -- meine persoenliche Auswahl, kein Ratschlag."):
-    disclaimer_font = font(B.SANS_BOLD, 18)
-    lines = wrap_text(draw, text, disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 100)
-    divider_y = H - 40 - 26 * len(lines) - 12
-    draw.line([(B.MARGIN_LEFT, divider_y), (W - B.MARGIN_RIGHT, divider_y)], fill=FB_CARD_BORDER, width=1)
-    dy = divider_y + 12
-    for line in lines:
-        draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
-        dy += 26
-    page_font = font(B.SANS_BOLD, 18)
-    page_text = f"{idx:02d} / {n_total:02d}"
-    pw = draw.textlength(page_text, font=page_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, divider_y + 12), page_text, font=page_font, fill=MUTED)
-
-
-def draw_logo_circle(img, draw, cx, cy, r, logo_path):
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CREAM, outline=FB_GOLD, width=2)
-    logo = Image.open(logo_path).convert("RGBA")
-    target = int(r * 1.5)
-    ratio = min(target / logo.width, target / logo.height)
-    logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
-    img.paste(logo, (cx - logo.width // 2, cy - logo.height // 2), logo)
+    return y + 18
 
 
 def base_slide():
@@ -138,6 +88,38 @@ def base_slide():
     return img, draw
 
 
+def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
+    half_h = bottom - top
+    draw.text((B.MARGIN_LEFT, top), who_label, font=font(B.SANS_BOLD, 15), fill=accent)
+
+    logo_r = 46
+    logo_cx = B.MARGIN_LEFT + logo_r
+    logo_cy = top + 34 + logo_r
+    draw.ellipse([logo_cx - logo_r, logo_cy - logo_r, logo_cx + logo_r, logo_cy + logo_r],
+                 fill=CREAM, outline=accent, width=2)
+    logo = Image.open(ROOT / "assets" / pick["logo"]).convert("RGBA")
+    target = int(logo_r * 1.5)
+    ratio = min(target / logo.width, target / logo.height)
+    logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
+    img.paste(logo, (logo_cx - logo.width // 2, logo_cy - logo.height // 2), logo)
+    draw = ImageDraw.Draw(img)
+
+    text_x = logo_cx + logo_r + 24
+    name_font = font(B.SANS_BOLD, 26)
+    draw.text((text_x, top + 30), pick["name"], font=name_font, fill=CREAM)
+    ticker_font = font(B.SANS_BOLD, 17)
+    draw.text((text_x, top + 62), pick["ticker"], font=ticker_font, fill=accent)
+
+    why_font = font(B.SANS_BOLD, 18)
+    max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
+    lines = wrap_text(draw, pick["why"], why_font, max_w)
+    y = logo_cy + logo_r + 20
+    for line in lines[:4]:
+        draw.text((B.MARGIN_LEFT, y), line, font=why_font, fill=MUTED)
+        y += 25
+    return draw
+
+
 def slide_intro():
     img, draw = base_slide()
     build_header(draw)
@@ -145,71 +127,65 @@ def slide_intro():
     eyebrow_font = font(B.SANS_BOLD, 18)
     draw.text((B.MARGIN_LEFT, 110), "COLLAB", font=eyebrow_font, fill=FB_GOLD)
 
-    title_font = font(B.SANS_BOLD, 52)
+    title_font = font(B.SANS_BOLD, 50)
     lines = wrap_text(draw, "5 Aktien fuer die Ewigkeit.", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     y = 160
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 62
+        y += 60
 
-    y += 20
-    sub_font = font(B.SANS_BOLD, 24)
-    sub_lines = wrap_text(draw, "Zwei Accounts, zwei eigene Auswahlen -- das hier sind meine "
-                                 "fuenf Positionen, die ich mir zutraue, sehr lange zu halten.",
+    y += 16
+    sub_font = font(B.SANS_BOLD, 23)
+    sub_lines = wrap_text(draw, "Zwei Accounts, zwei eigene Auswahlen -- oben jeweils der Pick "
+                                 "von @finanzboerse, unten meiner. Keine Rangfolge.",
                            sub_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in sub_lines:
         draw.text((B.MARGIN_LEFT, y), line, font=sub_font, fill=FB_GOLD)
-        y += 32
+        y += 30
 
     y += 30
     draw.line([(B.MARGIN_LEFT, y), (W - B.MARGIN_RIGHT, y)], fill=FB_CARD_BORDER, width=1)
-    y += 24
-    note_font = font(B.SANS_BOLD, 19)
-    note_lines = wrap_text(draw, "Keine Rangfolge, keine Kaufempfehlung -- nur Unternehmen, "
-                                  "deren Geschaeftsmodell ich langfristig fuer robust halte.",
+    y += 22
+    note_font = font(B.SANS_BOLD, 18)
+    note_lines = wrap_text(draw, "Keine Kaufempfehlung -- nur Unternehmen, deren Geschaeftsmodell "
+                                  "wir beide langfristig fuer robust halten.",
                             note_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in note_lines:
         draw.text((B.MARGIN_LEFT, y), line, font=note_font, fill=MUTED)
-        y += 26
+        y += 25
 
     draw_footer(draw, 1, 7)
     return img
 
 
-def slide_stock(stock, idx, n_total):
-    img, draw = base_slide()
-    y = build_header(draw)
-
-    draw.text((B.MARGIN_LEFT, y), f"{idx-1:02d} / 05", font=font(B.SANS_BOLD, 17), fill=FB_GOLD)
-    y += 40
-
-    logo_r = 70
-    logo_cx = W // 2
-    logo_cy = y + logo_r + 20
-    draw_logo_circle(img, draw, logo_cx, logo_cy, logo_r, ROOT / "assets" / stock["logo"])
-    draw = ImageDraw.Draw(img)
-
-    y = logo_cy + logo_r + 40
-    name_font = font(B.SANS_BOLD, 44)
-    name_text = stock["name"]
-    nw = draw.textlength(name_text, font=name_font)
-    draw.text((W / 2 - nw / 2, y), name_text, font=name_font, fill=CREAM)
-    y += 56
-
-    ticker_font = font(B.SANS_BOLD, 22)
-    ticker_text = stock["ticker"]
-    tw = draw.textlength(ticker_text, font=ticker_font)
-    draw.text((W / 2 - tw / 2, y), ticker_text, font=ticker_font, fill=FB_GOLD)
-    y += 60
-
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + 260], radius=14,
-                            fill=FB_CARD, outline=FB_CARD_BORDER, width=1)
-    body_font = font(B.SANS_BOLD, 24)
-    lines = wrap_text(draw, stock["why"], body_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 56)
-    by = y + 28
+def draw_footer(draw, idx, n_total, text="Keine Anlageberatung -- persoenliche Auswahl, kein Ratschlag."):
+    disclaimer_font = font(B.SANS_BOLD, 17)
+    lines = wrap_text(draw, text, disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 100)
+    divider_y = H - 36 - 24 * len(lines) - 10
+    draw.line([(B.MARGIN_LEFT, divider_y), (W - B.MARGIN_RIGHT, divider_y)], fill=FB_CARD_BORDER, width=1)
+    dy = divider_y + 10
     for line in lines:
-        draw.text((B.MARGIN_LEFT + 28, by), line, font=body_font, fill=CREAM)
-        by += 34
+        draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
+        dy += 24
+    page_font = font(B.SANS_BOLD, 17)
+    page_text = f"{idx:02d} / {n_total:02d}"
+    pw = draw.textlength(page_text, font=page_font)
+    draw.text((W - B.MARGIN_RIGHT - pw, divider_y + 10), page_text, font=page_font, fill=MUTED)
+
+
+def slide_pair(pair, idx, n_total):
+    img, draw = base_slide()
+    top = build_header(draw)
+
+    footer_h = 70
+    footer_top = H - footer_h
+    usable_bottom = footer_top - 10
+    half_h = (usable_bottom - top - 16) // 2
+    mid_y = top + half_h + 8
+
+    draw = draw_pick_half(img, draw, top, mid_y - 8, pair["partner"], f"PICK VON {PARTNER_HANDLE}", FB_GOLD)
+    draw.line([(B.MARGIN_LEFT, mid_y), (W - B.MARGIN_RIGHT, mid_y)], fill=FB_CARD_BORDER, width=1)
+    draw = draw_pick_half(img, draw, mid_y + 14, usable_bottom, pair["own"], f"MEIN PICK ({OWN_HANDLE})", GREEN)
 
     draw_footer(draw, idx, n_total)
     return img
@@ -220,27 +196,27 @@ def slide_outro():
     y = build_header(draw)
 
     y += 20
-    title_font = font(B.SANS_BOLD, 40)
-    lines = wrap_text(draw, "Und die 5 von @finanzboerse?", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    title_font = font(B.SANS_BOLD, 38)
+    lines = wrap_text(draw, "Welche der 10 wuerdest du", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 50
+        y += 48
+    draw.text((B.MARGIN_LEFT, y), "selbst halten?", font=title_font, fill=CREAM)
+    y += 70
 
-    y += 20
-    body_font = font(B.SANS_BOLD, 24)
-    lines2 = wrap_text(draw, "Schau auf seinem Account vorbei fuer seine eigene Auswahl -- "
-                              "spannend zu sehen, wo sich unsere Listen ueberschneiden und wo nicht.",
+    body_font = font(B.SANS_BOLD, 23)
+    lines2 = wrap_text(draw, "Schreib's uns in die Kommentare -- bei beiden Accounts.",
                         body_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in lines2:
         draw.text((B.MARGIN_LEFT, y), line, font=body_font, fill=FB_GOLD)
-        y += 32
+        y += 30
 
     y += 40
     draw.line([(B.MARGIN_LEFT, y), (B.MARGIN_LEFT + 90, y)], fill=FB_GOLD, width=3)
     y += 24
     draw.text((B.MARGIN_LEFT, y), "Keine Rangfolge, keine Bewertung --", font=font(B.SANS_BOLD, 22), fill=CREAM)
     y += 32
-    draw.text((B.MARGIN_LEFT, y), "nur meine persoenliche, langfristige Auswahl.", font=font(B.SANS_BOLD, 22), fill=CREAM)
+    draw.text((B.MARGIN_LEFT, y), "nur unsere persoenliche, langfristige Auswahl.", font=font(B.SANS_BOLD, 22), fill=CREAM)
 
     draw_footer(draw, 7, 7)
     return img
@@ -248,8 +224,8 @@ def slide_outro():
 
 def main():
     slides = [slide_intro]
-    for i, stock in enumerate(STOCKS, start=2):
-        slides.append(lambda s=stock, i=i: slide_stock(s, i, 7))
+    for i, pair in enumerate(PAIRS, start=2):
+        slides.append(lambda p=pair, i=i: slide_pair(p, i, 7))
     slides.append(slide_outro)
 
     for i, fn in enumerate(slides, start=1):
