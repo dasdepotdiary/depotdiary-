@@ -120,70 +120,99 @@ def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
     return draw
 
 
-def draw_vs_badge(img, draw, cx, cy, r=44):
-    """Zweigeteiltes Rundbadge (Gold oben/Gruen unten) mit 'VS' in der Mitte --
-    sitzt zentriert auf der Trennlinie zwischen den beiden Picks, damit sich
-    jedes Paar wie ein echtes Showdown-Duell statt nur zwei Karten liest."""
-    mask = Image.new("L", (r * 2, r * 2), 0)
+def draw_vs_badge(img, draw, cx, cy, r=52):
+    """Zweigeteiltes Rundbadge (Gold/Gruen diagonal) mit 'VS' und Schlagschatten --
+    sitzt auf der Trennlinie zwischen den beiden Picks, damit sich jedes Paar
+    wie ein echtes Showdown-Duell statt nur zwei uebereinander gestapelte
+    Karten liest."""
+    pad = 10
+    size = (r + pad) * 2
+    layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
+    ldraw = ImageDraw.Draw(layer)
+
+    shadow_off = 5
+    ldraw.ellipse([pad - shadow_off + shadow_off, pad - shadow_off + shadow_off,
+                   pad + 2 * r + shadow_off, pad + 2 * r + shadow_off], fill=(0, 0, 0, 110))
+
+    mask = Image.new("L", (size, size), 0)
     mdraw = ImageDraw.Draw(mask)
-    mdraw.ellipse([0, 0, r * 2, r * 2], fill=255)
+    mdraw.ellipse([pad, pad, pad + 2 * r, pad + 2 * r], fill=255)
 
-    badge = Image.new("RGB", (r * 2, r * 2), FB_GOLD)
+    badge = Image.new("RGB", (size, size), FB_GOLD)
     bdraw = ImageDraw.Draw(badge)
-    bdraw.rectangle([0, r, r * 2, r * 2], fill=GREEN)
-    bdraw.line([(0, r), (r * 2, r)], fill=CREAM, width=3)
+    bdraw.polygon([(pad, pad + 2 * r), (pad + 2 * r, pad), (pad + 2 * r, pad + 2 * r)], fill=GREEN)
+    bdraw.line([(pad, pad + 2 * r), (pad + 2 * r, pad)], fill=CREAM, width=4)
 
-    img.paste(badge, (cx - r, cy - r), mask)
+    layer.paste(badge, (0, 0), mask)
+    img.paste(layer, (cx - size // 2, cy - size // 2), layer)
     draw = ImageDraw.Draw(img)
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=CREAM, width=3)
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=CREAM, width=4)
 
-    vs_font = font(B.SANS_BOLD, 30)
+    vs_font = font(B.SANS_BOLD, 34)
     vs_text = "VS"
     tw = draw.textlength(vs_text, font=vs_font)
-    draw.text((cx - tw / 2, cy - 19), vs_text, font=vs_font, fill=(20, 18, 15),
-              stroke_width=2, stroke_fill=CREAM)
+    draw.text((cx - tw / 2 + 2, cy - 21 + 2), vs_text, font=vs_font, fill=(0, 0, 0, 90))
+    draw.text((cx - tw / 2, cy - 21), vs_text, font=vs_font, fill=CREAM,
+              stroke_width=3, stroke_fill=(20, 18, 15))
     return draw
 
 
+def draw_mini_logo(img, cx, cy, r, logo_path, ring_color):
+    draw = ImageDraw.Draw(img)
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CREAM, outline=ring_color, width=3)
+    logo = Image.open(ROOT / "assets" / logo_path).convert("RGBA")
+    target = int(r * 1.4)
+    ratio = min(target / logo.width, target / logo.height)
+    logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
+    img.paste(logo, (cx - logo.width // 2, cy - logo.height // 2), logo)
+
+
 def slide_intro():
+    """Titelfolie im Stil von collab_aktienanalyst.py ("3 gegen 3"): zwei
+    Spalten mit allen Logos untereinander, eine Spalte pro Account -- die
+    "Verschmelzung" beider Formate, die es bei den alten Collabs schon gab,
+    jetzt fuer 5 gegen 5 statt 3 gegen 3, plus VS-Badge auf der Trennlinie."""
     img, draw = base_slide()
     build_header(draw)
 
     eyebrow_font = font(B.SANS_BOLD, 18)
-    draw.text((B.MARGIN_LEFT, 100), "COLLAB · SHOWDOWN", font=eyebrow_font, fill=FB_GOLD)
+    draw.text((B.MARGIN_LEFT, 90), "COLLAB · SHOWDOWN", font=eyebrow_font, fill=FB_GOLD)
 
-    title_font = font(B.SANS_BOLD, 58)
-    lines = wrap_text(draw, "5 gegen 5:", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    y = 148
-    for line in lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 68
-    lines2 = wrap_text(draw, "Aktien fuer die Ewigkeit.", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    for line in lines2:
-        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=FB_GOLD)
-        y += 68
+    y = 128
+    draw.text((B.MARGIN_LEFT, y), "5 gegen 5.", font=font(B.SANS_BOLD, 56), fill=CREAM)
+    y += 66
+    draw.text((B.MARGIN_LEFT, y), "Aktien fuer die Ewigkeit.", font=font(B.SANS_BOLD, 34), fill=FB_GOLD)
+    y += 46
+    draw.text((B.MARGIN_LEFT, y), "Je fuenf Picks pro Seite -- ein Duell pro Slide.",
+               font=font(B.SANS_BOLD, 20), fill=MUTED)
+    y += 46
 
-    y += 14
-    sub_font = font(B.SANS_BOLD, 23)
-    sub_lines = wrap_text(draw, "Zwei Accounts, zwei eigene Auswahlen, ein Duell pro Slide -- "
-                                 "oben @finanzboerse, unten ich. Keine Rangfolge.",
-                           sub_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    for line in sub_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=sub_font, fill=CREAM)
-        y += 30
+    col_w = (W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 60) / 2
+    left_x = B.MARGIN_LEFT
+    right_x = B.MARGIN_LEFT + col_w + 60
+    draw.text((left_x, y), PARTNER_HANDLE, font=font(B.SANS_BOLD, 19), fill=FB_GOLD)
+    draw.text((right_x, y), OWN_HANDLE, font=font(B.SANS_BOLD, 19), fill=GREEN)
+    y += 36
 
-    y += 20
-    draw_vs_badge(img, draw, W // 2, y + 44, r=44)
-    draw = ImageDraw.Draw(img)
-    y += 108
+    mid_x = left_x + col_w + 30
+    rows_top = y
+    row_gap = 128
+    logo_r = 40
+    name_font = font(B.SANS_BOLD, 18)
 
-    note_font = font(B.SANS_BOLD, 18)
-    note_lines = wrap_text(draw, "Keine Kaufempfehlung -- nur Unternehmen, deren Geschaeftsmodell "
-                                  "wir beide langfristig fuer robust halten.",
-                            note_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    for line in note_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=note_font, fill=MUTED)
-        y += 25
+    for i, pair in enumerate(PAIRS):
+        cy = rows_top + logo_r + i * row_gap
+        draw_mini_logo(img, int(left_x + col_w / 2), cy, logo_r, pair["partner"]["logo"], FB_GOLD)
+        tw = draw.textlength(pair["partner"]["ticker"], font=name_font)
+        draw.text((left_x + col_w / 2 - tw / 2, cy + logo_r + 10), pair["partner"]["ticker"], font=name_font, fill=CREAM)
+
+        draw_mini_logo(img, int(right_x + col_w / 2), cy, logo_r, pair["own"]["logo"], GREEN)
+        tw = draw.textlength(pair["own"]["ticker"], font=name_font)
+        draw.text((right_x + col_w / 2 - tw / 2, cy + logo_r + 10), pair["own"]["ticker"], font=name_font, fill=CREAM)
+
+    rows_bottom = rows_top + logo_r + (len(PAIRS) - 1) * row_gap + logo_r + 30
+    draw.line([(mid_x, rows_top - 6), (mid_x, rows_bottom)], fill=FB_CARD_BORDER, width=1)
+    draw = draw_vs_badge(img, draw, int(mid_x), int((rows_top + rows_bottom) / 2), r=40)
 
     draw_footer(draw, 1, 7)
     return img
