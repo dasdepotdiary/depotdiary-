@@ -1,4 +1,4 @@
-"""Collab mit @btcstrategie -- zweite grosse Ueberarbeitung auf
+"""Collab mit @btcstratege -- zweite grosse Ueberarbeitung auf
 Nutzerwunsch vom 2026-09-08: mehr Beispiele (Gold, Silber, Aktienindex,
 Einzelaktie Apple, Sparbuch -- alle gegen Bitcoin ueber 10 Jahre), echte
 Mini-Kurscharts statt nur Stat-Boxen, komplett neuer Verlaufs-Hintergrund
@@ -19,7 +19,7 @@ als synthetische Zinseszins-Reihe fuer den Mini-Chart nachgebildet (keine
 Marktdaten fuer ein Sparbuch verfuegbar).
 
 Aufruf:
-  python posts/collab_btcstrategie_backtest.py
+  python posts/collab_btcstratege_backtest.py
 """
 import json
 import sys
@@ -31,7 +31,7 @@ sys.path.insert(0, str(Path(__file__).parent.parent))
 import brand as B
 
 ROOT = Path(__file__).parent.parent
-NAME = "collab_btcstrategie_backtest"
+NAME = "collab_btcstratege_backtest"
 OUTPUT = ROOT / "output" / NAME
 IG_DIR = OUTPUT / "instagram_4x5"
 TT_DIR = OUTPUT / "tiktok_9x16"
@@ -51,7 +51,7 @@ CARD_BORDER = (58, 50, 38)
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 
-DATA = json.loads((ROOT / "posts" / "inputs" / "collab_btcstrategie_backtest.json").read_text(encoding="utf-8"))["meta"]
+DATA = json.loads((ROOT / "posts" / "inputs" / "collab_btcstratege_backtest.json").read_text(encoding="utf-8"))["meta"]
 
 ASSET_COLORS = {
     "GOLD": GOLD_COLOR, "SILBER": SILVER_COLOR, "AKTIEN (S&P 500)": GREEN,
