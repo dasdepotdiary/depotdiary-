@@ -44,7 +44,7 @@ FB_CARD_BORDER = (40, 46, 62)
 FB_GOLD = (201, 162, 57)
 CREAM = (240, 238, 230)
 MUTED = (140, 145, 158)
-GREEN = B.GREEN_MID
+GREEN = (74, 222, 128)  # helles, kraeftiges Gruen -- bewusst heller als das Partner-Gold, auf Nutzerwunsch
 
 PARTNER_HANDLE = "@FINANZBOERSE"
 OWN_HANDLE = "@DASDEPOTDIARY"
@@ -110,50 +110,13 @@ def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
     ticker_font = font(B.SANS_BOLD, 17)
     draw.text((text_x, top + 62), pick["ticker"], font=ticker_font, fill=accent)
 
-    why_font = font(B.SANS_BOLD, 18)
+    why_font = font(B.SANS_BOLD, 17)
     max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
     lines = wrap_text(draw, pick["why"], why_font, max_w)
-    y = logo_cy + logo_r + 20
-    for line in lines[:4]:
+    y = logo_cy + logo_r + 18
+    for line in lines[:7]:
         draw.text((B.MARGIN_LEFT, y), line, font=why_font, fill=MUTED)
-        y += 25
-    return draw
-
-
-def draw_vs_badge(img, draw, cx, cy, r=52):
-    """Zweigeteiltes Rundbadge (Gold/Gruen diagonal) mit 'VS' und Schlagschatten --
-    sitzt auf der Trennlinie zwischen den beiden Picks, damit sich jedes Paar
-    wie ein echtes Showdown-Duell statt nur zwei uebereinander gestapelte
-    Karten liest."""
-    pad = 10
-    size = (r + pad) * 2
-    layer = Image.new("RGBA", (size, size), (0, 0, 0, 0))
-    ldraw = ImageDraw.Draw(layer)
-
-    shadow_off = 5
-    ldraw.ellipse([pad - shadow_off + shadow_off, pad - shadow_off + shadow_off,
-                   pad + 2 * r + shadow_off, pad + 2 * r + shadow_off], fill=(0, 0, 0, 110))
-
-    mask = Image.new("L", (size, size), 0)
-    mdraw = ImageDraw.Draw(mask)
-    mdraw.ellipse([pad, pad, pad + 2 * r, pad + 2 * r], fill=255)
-
-    badge = Image.new("RGB", (size, size), FB_GOLD)
-    bdraw = ImageDraw.Draw(badge)
-    bdraw.polygon([(pad, pad + 2 * r), (pad + 2 * r, pad), (pad + 2 * r, pad + 2 * r)], fill=GREEN)
-    bdraw.line([(pad, pad + 2 * r), (pad + 2 * r, pad)], fill=CREAM, width=4)
-
-    layer.paste(badge, (0, 0), mask)
-    img.paste(layer, (cx - size // 2, cy - size // 2), layer)
-    draw = ImageDraw.Draw(img)
-    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=CREAM, width=4)
-
-    vs_font = font(B.SANS_BOLD, 34)
-    vs_text = "VS"
-    tw = draw.textlength(vs_text, font=vs_font)
-    draw.text((cx - tw / 2 + 2, cy - 21 + 2), vs_text, font=vs_font, fill=(0, 0, 0, 90))
-    draw.text((cx - tw / 2, cy - 21), vs_text, font=vs_font, fill=CREAM,
-              stroke_width=3, stroke_fill=(20, 18, 15))
+        y += 23
     return draw
 
 
@@ -171,7 +134,8 @@ def slide_intro():
     """Titelfolie im Stil von collab_aktienanalyst.py ("3 gegen 3"): zwei
     Spalten mit allen Logos untereinander, eine Spalte pro Account -- die
     "Verschmelzung" beider Formate, die es bei den alten Collabs schon gab,
-    jetzt fuer 5 gegen 5 statt 3 gegen 3, plus VS-Badge auf der Trennlinie."""
+    jetzt fuer 5 gegen 5 statt 3 gegen 3. Kein VS-Badge (Nutzer-Feedback:
+    sah nicht gut aus) -- die Trennlinie plus Farbcode traegt genug."""
     img, draw = base_slide()
     build_header(draw)
 
@@ -211,8 +175,7 @@ def slide_intro():
         draw.text((right_x + col_w / 2 - tw / 2, cy + logo_r + 10), pair["own"]["ticker"], font=name_font, fill=CREAM)
 
     rows_bottom = rows_top + logo_r + (len(PAIRS) - 1) * row_gap + logo_r + 30
-    draw.line([(mid_x, rows_top - 6), (mid_x, rows_bottom)], fill=FB_CARD_BORDER, width=1)
-    draw = draw_vs_badge(img, draw, int(mid_x), int((rows_top + rows_bottom) / 2), r=40)
+    draw.line([(mid_x, rows_top - 6), (mid_x, rows_bottom)], fill=FB_CARD_BORDER, width=2)
 
     draw_footer(draw, 1, 7)
     return img
@@ -244,11 +207,8 @@ def slide_pair(pair, idx, n_total):
     mid_y = top + half_h + 8
 
     draw = draw_pick_half(img, draw, top, mid_y - 8, pair["partner"], f"PICK VON {PARTNER_HANDLE}", FB_GOLD)
-    draw.line([(B.MARGIN_LEFT, mid_y), (W - B.MARGIN_RIGHT, mid_y)], fill=FB_CARD_BORDER, width=1)
+    draw.line([(B.MARGIN_LEFT, mid_y), (W - B.MARGIN_RIGHT, mid_y)], fill=FB_CARD_BORDER, width=2)
     draw = draw_pick_half(img, draw, mid_y + 14, usable_bottom, pair["own"], f"MEIN PICK ({OWN_HANDLE})", GREEN)
-
-    draw_vs_badge(img, draw, W - B.MARGIN_RIGHT - 60, mid_y, r=34)
-    draw = ImageDraw.Draw(img)
 
     draw_footer(draw, idx, n_total)
     return img

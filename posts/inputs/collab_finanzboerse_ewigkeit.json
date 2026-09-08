@@ -2,33 +2,33 @@
   "pairs": [
     {
       "partner": {"ticker": "AMZN", "name": "Amazon", "logo": "amzn_logo_icon.png",
-        "why": "E-Commerce-Marktfuehrer und mit AWS gleichzeitig das Cloud-Rueckgrat vieler Unternehmen."},
+        "why": "E-Commerce-Marktfuehrer und mit AWS gleichzeitig das Cloud-Rueckgrat vieler Unternehmen. Zwei sehr unterschiedliche Geschaeftsmodelle unter einem Dach -- der Handel waechst margenschwach, AWS liefert dafuer den Grossteil des operativen Gewinns."},
       "own": {"ticker": "AAPL", "name": "Apple", "logo": "aapl_logo_icon.png",
-        "why": "Oekosystem aus Hardware, Software und Diensten, das Kunden extrem stark bindet -- eine der treuesten Kundenbasen im Tech-Sektor."}
+        "why": "Oekosystem aus Hardware, Software und Diensten, das Kunden extrem stark bindet -- eine der treuesten Kundenbasen im gesamten Tech-Sektor. Wer einmal drin ist (iPhone, Mac, Watch, Dienste), wechselt selten komplett zu einem Wettbewerber."}
     },
     {
       "partner": {"ticker": "BRK.B", "name": "Berkshire Hathaway", "logo": "brk_logo_icon.png",
-        "why": "Kein einzelnes Unternehmen, sondern ein breit gestreutes Konglomerat -- Versicherung, Eisenbahn, Energie und Aktienportfolio in einer Position."},
+        "why": "Kein einzelnes Unternehmen, sondern ein breit gestreutes Konglomerat -- Versicherung, Eisenbahn, Energie und ein eigenes Aktienportfolio in einer Position. Die Versicherungssparte liefert laufend Kapital, das in die anderen Sparten reinvestiert wird."},
       "own": {"ticker": "RMS", "name": "Hermes", "logo": "rms_logo_icon.png",
-        "why": "Luxusmarke mit extremer Preissetzungsmacht und bewusst begrenztem Angebot -- Nachfrage bleibt hoch, egal wie stark die Preise steigen."}
+        "why": "Luxusmarke mit extremer Preissetzungsmacht und bewusst begrenztem Angebot -- Nachfrage bleibt hoch, egal wie stark die Preise steigen. Anders als viele Luxuslabels wird bewusst wenig produziert, statt auf Masse zu skalieren."}
     },
     {
       "partner": {"ticker": "V", "name": "Visa", "logo": "v_logo_icon.png",
-        "why": "Betreibt das Zahlungsnetzwerk, nicht das Kreditrisiko -- verdient an jeder Kartentransaktion weltweit."},
+        "why": "Betreibt das Zahlungsnetzwerk, nicht das Kreditrisiko -- verdient an jeder Kartentransaktion weltweit, unabhaengig davon, ob Kunden ihre Rechnung bezahlen koennen. Praktisch jede Bank weltweit ist auf dieses Netzwerk angewiesen."},
       "own": {"ticker": "V", "name": "Visa", "logo": "v_logo_icon.png",
-        "why": "Reines Zahlungsnetzwerk ohne eigenes Kreditrisiko -- profitiert vom weltweiten Wachstum des bargeldlosen Zahlens, unabhaengig davon, wer die Karte ausgibt."}
+        "why": "Beide unabhaengig auf dasselbe Unternehmen gekommen -- reines Zahlungsnetzwerk ohne eigenes Kreditrisiko, profitiert vom weltweiten Wachstum des bargeldlosen Zahlens, egal wer die Karte ausgibt."}
     },
     {
       "partner": {"ticker": "GOOGL", "name": "Alphabet", "logo": "googl_logo_icon.png",
-        "why": "Google-Suche, YouTube, Cloud und Waymo unter einem Dach -- eine der breitesten Datengrundlagen im Tech-Sektor."},
+        "why": "Google-Suche, YouTube, Cloud und Waymo unter einem Dach -- eine der breitesten Datengrundlagen im gesamten Tech-Sektor. Die Suche allein finanziert die riskanteren Wetten wie autonomes Fahren mit."},
       "own": {"ticker": "AVGO", "name": "Broadcom", "logo": "avgo_logo_icon.png",
-        "why": "Halbleiter UND Unternehmenssoftware in einem -- tief verankerte Technologie, die sich nur schwer ersetzen laesst."}
+        "why": "Halbleiter UND Unternehmenssoftware in einem -- tief verankerte Technologie, die sich nur schwer ersetzen laesst. Viele Broadcom-Chips stecken in Netzwerk-Infrastruktur, die niemand gern austauscht, sobald sie einmal laeuft."}
     },
     {
       "partner": {"ticker": "MSFT", "name": "Microsoft", "logo": "msft_logo_icon.png",
-        "why": "Windows und Office als Unternehmens-Standard weltweit, dazu Azure als eine der groessten Cloud-Plattformen."},
+        "why": "Windows und Office als Unternehmens-Standard weltweit, dazu Azure als eine der groessten Cloud-Plattformen. Kaum ein Unternehmen weltweit kommt komplett ohne Microsoft-Software aus."},
       "own": {"ticker": "NVDA", "name": "Nvidia", "logo": "nvda_logo_icon.png",
-        "why": "Dominanter Anbieter der Chips, auf denen ein Grossteil der aktuellen KI-Infrastruktur laeuft -- diese Woche schon eigener Deep Dive."}
+        "why": "Dominanter Anbieter der Chips, auf denen ein Grossteil der aktuellen KI-Infrastruktur laeuft -- diese Woche schon eigener Deep Dive. Die eigene CUDA-Software macht einen Wechsel zu einem anderen Anbieter fuer viele Kunden aufwaendig."}
     }
   ]
 }
