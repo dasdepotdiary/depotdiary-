@@ -17,6 +17,7 @@ import sys
 from datetime import date
 from pathlib import Path
 
+import requests
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
@@ -48,29 +49,84 @@ CAT_VIOLET = "#8B7FE8"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 DATE_LABEL = date.today().strftime("%d.%m.%Y")
-GROUPS = [
-    {"label": "INDIZES", "color": CAT_GOLD, "rows": [
-        ("S&P 500", "7.673,52", -0.16),
-        ("Nasdaq", "26.421,41", +0.19),
-        ("DAX", "26.006,50", +0.14),
-        ("KOSPI", "6.954,52", +1.74),
-        ("Hang Seng (China)", "25.317,18", -0.05),
+
+# Symbol-Listen pro Kategorie -- (Yahoo-Ticker, Anzeigename)
+ASSET_GROUPS = [
+    {"label": "INDIZES", "color": CAT_GOLD, "assets": [
+        ("^GSPC", "S&P 500"), ("^IXIC", "Nasdaq"), ("^GDAXI", "DAX"),
+        ("^KS11", "KOSPI"), ("^HSI", "Hang Seng (China)"),
     ]},
-    {"label": "ROHSTOFFE", "color": CAT_COPPER, "rows": [
-        ("Gold (USD/oz)", "4.397,30", +0.71),
-        ("Silber (USD/oz)", "66,23", +2.32),
-        ("Oel WTI (USD/Barrel)", "94,27", +3.58),
+    {"label": "ROHSTOFFE", "color": CAT_COPPER, "assets": [
+        ("GC=F", "Gold (USD/oz)"), ("SI=F", "Silber (USD/oz)"), ("CL=F", "Oel WTI (USD/Barrel)"),
     ]},
-    {"label": "SENTIMENT", "color": CAT_RUST, "rows": [
-        ("VIX (Volatilitaet)", "15,72", +3.42),
-        ("Fear & Greed Index", "40,8 -- Fear", None),
+    {"label": "SENTIMENT", "color": CAT_RUST, "assets": [
+        ("^VIX", "VIX (Volatilitaet)"),
     ]},
-    {"label": "KRYPTO", "color": CAT_VIOLET, "rows": [
-        ("Bitcoin", "78.497,78", -1.47),
-        ("Ethereum", "2.485,95", +1.22),
-        ("Solana", "103,39", +1.41),
+    {"label": "KRYPTO", "color": CAT_VIOLET, "assets": [
+        ("BTC-USD", "Bitcoin"), ("ETH-USD", "Ethereum"), ("SOL-USD", "Solana"),
     ]},
 ]
+
+FEAR_GREED_DE = {
+    "extreme fear": "Extreme Angst", "fear": "Angst", "neutral": "Neutral",
+    "greed": "Gier", "extreme greed": "Extreme Gier",
+}
+
+
+def fmt_de(value, decimals=2):
+    return f"{value:,.{decimals}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def fetch_yahoo(symbol):
+    url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
+    r = requests.get(url, params={"range": "5d", "interval": "1d"},
+                      headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
+    r.raise_for_status()
+    meta = r.json()["chart"]["result"][0]["meta"]
+    price = meta["regularMarketPrice"]
+    prev = meta.get("previousClose") or meta.get("chartPreviousClose")
+    change = (price / prev - 1) * 100 if prev else None
+    return price, change
+
+
+def fetch_fear_greed():
+    url = "https://production.dataviz.cnn.io/index/fearandgreed/graphdata"
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                      "(KHTML, like Gecko) Chrome/120.0 Safari/537.36",
+        "Referer": "https://edition.cnn.com/markets/fear-and-greed",
+        "Accept": "application/json",
+    }
+    r = requests.get(url, headers=headers, timeout=15)
+    r.raise_for_status()
+    data = r.json()["fear_and_greed"]
+    return data["score"], data["rating"]
+
+
+def build_groups():
+    """Holt alle Werte live -- Grundlage fuer den taeglichen Scheduled Task,
+    damit nicht jedes Mal Zahlen von Hand eingetragen werden muessen."""
+    groups = []
+    for cat in ASSET_GROUPS:
+        rows = []
+        for symbol, name in cat["assets"]:
+            try:
+                price, change = fetch_yahoo(symbol)
+                rows.append((name, fmt_de(price), change))
+            except Exception as exc:
+                print(f"WARNUNG: {symbol} ({name}) konnte nicht geladen werden: {exc}")
+        if cat["label"] == "SENTIMENT":
+            try:
+                score, rating = fetch_fear_greed()
+                label_de = FEAR_GREED_DE.get(rating.lower(), rating.title())
+                rows.append(("Fear & Greed Index", f"{fmt_de(score, 1)} -- {label_de}", None))
+            except Exception as exc:
+                print(f"WARNUNG: Fear & Greed Index konnte nicht geladen werden: {exc}")
+        groups.append({"label": cat["label"], "color": cat["color"], "rows": rows})
+    return groups
+
+
+GROUPS = build_groups()
 
 
 def font(path, size):
