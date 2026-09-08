@@ -120,32 +120,63 @@ def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
     return draw
 
 
+def draw_vs_badge(img, draw, cx, cy, r=44):
+    """Zweigeteiltes Rundbadge (Gold oben/Gruen unten) mit 'VS' in der Mitte --
+    sitzt zentriert auf der Trennlinie zwischen den beiden Picks, damit sich
+    jedes Paar wie ein echtes Showdown-Duell statt nur zwei Karten liest."""
+    mask = Image.new("L", (r * 2, r * 2), 0)
+    mdraw = ImageDraw.Draw(mask)
+    mdraw.ellipse([0, 0, r * 2, r * 2], fill=255)
+
+    badge = Image.new("RGB", (r * 2, r * 2), FB_GOLD)
+    bdraw = ImageDraw.Draw(badge)
+    bdraw.rectangle([0, r, r * 2, r * 2], fill=GREEN)
+    bdraw.line([(0, r), (r * 2, r)], fill=CREAM, width=3)
+
+    img.paste(badge, (cx - r, cy - r), mask)
+    draw = ImageDraw.Draw(img)
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], outline=CREAM, width=3)
+
+    vs_font = font(B.SANS_BOLD, 30)
+    vs_text = "VS"
+    tw = draw.textlength(vs_text, font=vs_font)
+    draw.text((cx - tw / 2, cy - 19), vs_text, font=vs_font, fill=(20, 18, 15),
+              stroke_width=2, stroke_fill=CREAM)
+    return draw
+
+
 def slide_intro():
     img, draw = base_slide()
     build_header(draw)
 
     eyebrow_font = font(B.SANS_BOLD, 18)
-    draw.text((B.MARGIN_LEFT, 110), "COLLAB", font=eyebrow_font, fill=FB_GOLD)
+    draw.text((B.MARGIN_LEFT, 100), "COLLAB · SHOWDOWN", font=eyebrow_font, fill=FB_GOLD)
 
-    title_font = font(B.SANS_BOLD, 50)
-    lines = wrap_text(draw, "5 Aktien fuer die Ewigkeit.", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    y = 160
+    title_font = font(B.SANS_BOLD, 58)
+    lines = wrap_text(draw, "5 gegen 5:", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    y = 148
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 60
+        y += 68
+    lines2 = wrap_text(draw, "Aktien fuer die Ewigkeit.", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    for line in lines2:
+        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=FB_GOLD)
+        y += 68
 
-    y += 16
+    y += 14
     sub_font = font(B.SANS_BOLD, 23)
-    sub_lines = wrap_text(draw, "Zwei Accounts, zwei eigene Auswahlen -- oben jeweils der Pick "
-                                 "von @finanzboerse, unten meiner. Keine Rangfolge.",
+    sub_lines = wrap_text(draw, "Zwei Accounts, zwei eigene Auswahlen, ein Duell pro Slide -- "
+                                 "oben @finanzboerse, unten ich. Keine Rangfolge.",
                            sub_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in sub_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=sub_font, fill=FB_GOLD)
+        draw.text((B.MARGIN_LEFT, y), line, font=sub_font, fill=CREAM)
         y += 30
 
-    y += 30
-    draw.line([(B.MARGIN_LEFT, y), (W - B.MARGIN_RIGHT, y)], fill=FB_CARD_BORDER, width=1)
-    y += 22
+    y += 20
+    draw_vs_badge(img, draw, W // 2, y + 44, r=44)
+    draw = ImageDraw.Draw(img)
+    y += 108
+
     note_font = font(B.SANS_BOLD, 18)
     note_lines = wrap_text(draw, "Keine Kaufempfehlung -- nur Unternehmen, deren Geschaeftsmodell "
                                   "wir beide langfristig fuer robust halten.",
@@ -186,6 +217,9 @@ def slide_pair(pair, idx, n_total):
     draw = draw_pick_half(img, draw, top, mid_y - 8, pair["partner"], f"PICK VON {PARTNER_HANDLE}", FB_GOLD)
     draw.line([(B.MARGIN_LEFT, mid_y), (W - B.MARGIN_RIGHT, mid_y)], fill=FB_CARD_BORDER, width=1)
     draw = draw_pick_half(img, draw, mid_y + 14, usable_bottom, pair["own"], f"MEIN PICK ({OWN_HANDLE})", GREEN)
+
+    draw_vs_badge(img, draw, W - B.MARGIN_RIGHT - 60, mid_y, r=34)
+    draw = ImageDraw.Draw(img)
 
     draw_footer(draw, idx, n_total)
     return img
