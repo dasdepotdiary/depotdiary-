@@ -1533,5 +1533,19 @@
     "action": "story",
     "fire_at": "2026-09-09T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "personal_woche-in-zahlen",
+    "action": "reel",
+    "caption": "Diese Woche in vier Zahlen:\n\nMicron: plus 764% in zwoelf Monaten.\nNvidia: 5,56 Billionen USD Marktkapitalisierung -- das groesste Unternehmen der Welt.\nOracle: 54% unter dem Jahreshoch, trotz steigender Umsaetze.\nUnd Adobe: ein ueberraschender CEO-Wechsel mitten in der wichtigsten Berichtswoche.\n\nVier Deep Dives, vier komplett unterschiedliche Geschichten.\n\nKeine Anlageberatung -- nur die Zahlen, die mir diese Woche aufgefallen sind.\n\n#depotdiary #boerse #finanzen #deepdive",
+    "fire_at": "2026-09-08T21:17:00+02:00",
+    "status": "pending",
+    "note": "Neues Format: Wochen-Zahlen-Recap (Rapid-Fire, 4 Aktien/4 Zahlen) statt persoenlicher Reflexion -- auf Nutzerwunsch, sofort veroeffentlicht."
+  },
+  {
+    "post_name": "personal_woche-in-zahlen",
+    "action": "story",
+    "fire_at": "2026-09-08T21:18:00+02:00",
+    "status": "pending"
   }
 ]
