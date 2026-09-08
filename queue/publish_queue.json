@@ -1421,9 +1421,11 @@
     "post_name": "personal_deep_dive_adobe",
     "action": "story",
     "fire_at": "2026-09-08T12:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmejwal-2090-081e5a66",
-    "claimed_at": "2026-09-08T10:17:25.651147+00:00"
+    "claimed_at": "2026-09-08T10:17:25.651147+00:00",
+    "published_at": "2026-09-08T10:17:32.812215+00:00",
+    "media_id": "18127280752734359"
   },
   {
     "post_name": "erklaerstueck_ki-blase",
