@@ -6,4 +6,8 @@ __pycache__/
 *.pyc
 .venv/
 .claude/settings.local.json
-posts/collab_bitcoinhelfer.py
+posts/collab_bitcoinhelfer*.py
+posts/inputs/collab_bitcoinhelfer*.json
+docs/assets/posts/collab_bitcoinhelfer*/
+docs/assets/posts_9x16/collab_bitcoinhelfer*/
+docs/assets/posts_video/collab_bitcoinhelfer*/
