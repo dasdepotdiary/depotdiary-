@@ -1393,9 +1393,11 @@
     "post_name": "personal_deep_dive_nvidia",
     "action": "story",
     "fire_at": "2026-09-08T18:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmejwal-2273-ff5c35e8",
-    "claimed_at": "2026-09-08T16:17:42.937239+00:00"
+    "claimed_at": "2026-09-08T16:17:42.937239+00:00",
+    "published_at": "2026-09-08T16:17:54.165337+00:00",
+    "media_id": "17963984226192564"
   },
   {
     "post_name": "personal_deep_dive_oracle",
