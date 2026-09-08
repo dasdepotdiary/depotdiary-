@@ -1326,8 +1326,10 @@
     "post_name": "marktupdate_gme-check",
     "action": "story_sequence",
     "fire_at": "2026-09-08T15:00:00+02:00",
-    "status": "pending",
-    "note": "GameStop Q2-Zahlen Di 8.9. nach Boersenschluss -- vorlaeufige Zahlen + eBay-Beteiligung."
+    "status": "claiming",
+    "note": "GameStop Q2-Zahlen Di 8.9. nach Boersenschluss -- vorlaeufige Zahlen + eBay-Beteiligung.",
+    "claimed_by": "runnervmlun5p-2211-424ca824",
+    "claimed_at": "2026-09-08T13:17:52.798892+00:00"
   },
   {
     "post_name": "marktupdate_chwy-check",
