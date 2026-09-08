@@ -1,13 +1,17 @@
-"""Collab mit @btcstrategie: "1.000EUR vor 1/3/5 Jahren -- Aktien oder
-Bitcoin?" -- auf Nutzerwunsch vom 2026-09-08 (Partner-Account per
-WhatsApp-Screenrecording identifiziert: @btcstrategie, Stuttgart,
-Bitcoin-Erklaer-Content).
+"""Collab mit @btcstrategie -- ueberarbeitet auf Nutzerwunsch vom
+2026-09-08: Bitcoin als "Koenig" mit Krone auf der Titelseite, danach
+1.000 EUR vor 10 Jahren angelegt in Gold/Silber/Aktien (S&P 500) jeweils
+gegen Bitcoin im selben Zeitraum.
 
-Reiner historischer Backtest, echte Schlusskurse (S&P 500, Bitcoin,
-EUR/USD zur Waehrungsumrechnung, Yahoo Finance) -- explizit als
-Rueckblick markiert, KEINE Prognose, keine Kaufempfehlung fuer eine der
-beiden Anlageklassen. Ergebnis ist bewusst nicht einseitig (1 Jahr:
-Aktien vorn, 3 Jahre: Bitcoin vorn, 5 Jahre: fast gleichauf).
+WICHTIG zur Compliance: "Koenig der Kryptowaehrungen" ist ein tatsaechlich
+gebraeuchlicher, verifizierbarer Spitzname fuer Bitcoin (nicht meine
+eigene Bewertung) -- bewusst NICHT als "Bitcoin ist die beste Anlage"
+formuliert, das waere eine Bewertung/Empfehlung und damit ein Verstoss
+gegen die Account-Regel (siehe CLAUDE.md, vgl. die abgelehnte "HOT-Rating"-
+Idee bei collab_aktienanalyst.py). Die Ueberperformance wird als reiner,
+einmaliger historischer Rueckblick praesentiert (echte Kurse, ein fest
+gewaehlter Zeitraum), explizit mit Volatilitaets-Hinweis im Fazit --
+nicht als Kaufargument.
 
 Aufruf:
   python posts/collab_btcstrategie_backtest.py
@@ -38,10 +42,14 @@ CREAM = "#F2F0EA"
 MUTED = "#9B9587"
 GREEN = B.GREEN_MID
 BTC_ORANGE = "#F7931A"
+GOLD_COLOR = "#D4AF37"
+SILVER_COLOR = "#C0C0C8"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 DATA = json.loads((ROOT / "posts" / "inputs" / "collab_btcstrategie_backtest.json").read_text(encoding="utf-8"))["meta"]
+
+ASSET_COLORS = {"GOLD": GOLD_COLOR, "SILBER": SILVER_COLOR, "AKTIEN (S&P 500)": GREEN}
 
 
 def font(path, size):
@@ -95,16 +103,55 @@ def base_slide():
     return img, draw
 
 
-def draw_vs_box(draw, x, y, w, h, label, value, color):
-    draw.rounded_rectangle([x, y, x + w, y + h], radius=14, fill=CARD, outline=color, width=2)
-    label_font = font(B.SANS_BOLD, 18)
-    draw.text((x + 24, y + 22), label, font=label_font, fill=color)
-    value_font = font(B.SANS_BOLD, 34)
-    lines = wrap_text(draw, value, value_font, w - 48)
-    vy = y + 62
-    for line in lines:
-        draw.text((x + 24, vy), line, font=value_font, fill=CREAM)
-        vy += 42
+def draw_crown(draw, cx, top_y, w=140, h=64):
+    """Einfache Kronen-Silhouette (Gold) -- sitzt ueber dem Bitcoin-Logo auf
+    der Titelseite, passend zum "Koenig der Kryptowaehrungen"-Spitznamen."""
+    left = cx - w / 2
+    right = cx + w / 2
+    base_y = top_y + h
+    band_h = h * 0.32
+    points = [
+        (left, base_y),
+        (left, base_y - band_h),
+        (left, top_y + h * 0.15),
+        (left + w * 0.25, base_y - band_h - h * 0.3),
+        (left + w * 0.5, top_y),
+        (left + w * 0.75, base_y - band_h - h * 0.3),
+        (right, top_y + h * 0.15),
+        (right, base_y - band_h),
+        (right, base_y),
+    ]
+    draw.polygon(points, fill=GOLD_COLOR, outline=CREAM)
+    draw.rectangle([left, base_y - band_h, right, base_y], fill=GOLD_COLOR, outline=CREAM)
+    for jx in (left, left + w * 0.25, left + w * 0.5, left + w * 0.75, right):
+        r = 7
+        draw.ellipse([jx - r, top_y - r + (h * 0.15 if jx in (left, right) else 0),
+                      jx + r, top_y + r + (h * 0.15 if jx in (left, right) else 0)], fill=CREAM)
+
+
+def draw_logo_circle(img, draw, cx, cy, r, logo_path, ring_color):
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CREAM, outline=ring_color, width=3)
+    logo = Image.open(ROOT / "assets" / logo_path).convert("RGBA")
+    target = int(r * 1.5)
+    ratio = min(target / logo.width, target / logo.height)
+    logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
+    img.paste(logo, (cx - logo.width // 2, cy - logo.height // 2), logo)
+
+
+def draw_asset_icon(img, cx, cy, r, kind, color):
+    draw = ImageDraw.Draw(img)
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill=CREAM, outline=color, width=3)
+    if kind == "bar":
+        bw, bh = r * 1.1, r * 0.7
+        draw.polygon([(cx - bw / 2, cy + bh / 2), (cx + bw / 2, cy + bh / 2),
+                      (cx + bw / 2 - 6, cy - bh / 2), (cx - bw / 2 + 6, cy - bh / 2)],
+                     fill=color, outline=(60, 50, 20))
+    elif kind == "chart":
+        pts = [(cx - r * 0.55, cy + r * 0.35), (cx - r * 0.2, cy - r * 0.05),
+               (cx + r * 0.1, cy + r * 0.15), (cx + r * 0.5, cy - r * 0.45)]
+        draw.line(pts, fill=color, width=6, joint="curve")
+        draw.polygon([(cx + r * 0.5, cy - r * 0.45), (cx + r * 0.32, cy - r * 0.45),
+                      (cx + r * 0.5, cy - r * 0.2)], fill=color)
 
 
 def slide_intro():
@@ -112,29 +159,39 @@ def slide_intro():
     build_header(draw)
 
     eyebrow_font = font(B.SANS_BOLD, 18)
-    draw.text((B.MARGIN_LEFT, 110), "COLLAB · BACKTEST", font=eyebrow_font, fill=BTC_ORANGE)
+    draw.text((B.MARGIN_LEFT, 96), "COLLAB · 10 JAHRE ZURUECKGEBLICKT", font=eyebrow_font, fill=BTC_ORANGE)
 
-    title_font = font(B.SANS_BOLD, 46)
+    logo_r = 78
+    logo_cx = W // 2
+    crown_top = 150
+    draw_crown(draw, logo_cx, crown_top, w=150, h=70)
+    logo_cy = crown_top + 70 + 18 + logo_r
+    draw_logo_circle(img, draw, logo_cx, logo_cy, logo_r, "btc_logo_icon.png", BTC_ORANGE)
+    draw = ImageDraw.Draw(img)
+
+    y = logo_cy + logo_r + 30
+    title_font = font(B.SANS_BOLD, 40)
     lines = wrap_text(draw, DATA["title"], title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    y = 160
     for line in lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 56
+        tw = draw.textlength(line, font=title_font)
+        draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
+        y += 48
 
-    y += 20
-    sub_font = font(B.SANS_BOLD, 24)
-    sub_lines = wrap_text(draw, DATA["subtitle"], sub_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    y += 10
+    sub_font = font(B.SANS_BOLD, 23)
+    sub_lines = wrap_text(draw, DATA["subtitle"], sub_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 80)
     for line in sub_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=sub_font, fill=BTC_ORANGE)
-        y += 32
+        tw = draw.textlength(line, font=sub_font)
+        draw.text((W / 2 - tw / 2, y), line, font=sub_font, fill=BTC_ORANGE)
+        y += 30
 
-    y += 40
-    legend_font = font(B.SANS_BOLD, 20)
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + 26, y + 26], radius=6, fill=GREEN)
-    draw.text((B.MARGIN_LEFT + 38, y + 2), "S&P 500 (Aktienmarkt)", font=legend_font, fill=CREAM)
-    y += 42
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + 26, y + 26], radius=6, fill=BTC_ORANGE)
-    draw.text((B.MARGIN_LEFT + 38, y + 2), "Bitcoin", font=legend_font, fill=CREAM)
+    y += 24
+    note_font = font(B.SANS_BOLD, 18)
+    note_lines = wrap_text(draw, DATA["asof"], note_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    for line in note_lines:
+        tw = draw.textlength(line, font=note_font)
+        draw.text((W / 2 - tw / 2, y), line, font=note_font, fill=MUTED)
+        y += 25
 
     draw_footer(draw, 1, 5)
     return img
@@ -144,21 +201,54 @@ def slide_row(row, idx, n_total):
     img, draw = base_slide()
     y = build_header(draw)
 
-    headline_font = font(B.SANS_BOLD, 38)
-    draw.text((B.MARGIN_LEFT, y + 20), f"1.000 € {row['label'].replace('VOR ', 'vor ').lower()}.", font=headline_font, fill=CREAM)
-    y += 100
+    color = ASSET_COLORS[row["label"]]
+    kind = "chart" if row["label"].startswith("AKTIEN") else "bar"
 
-    box_h = 130
-    draw_vs_box(draw, B.MARGIN_LEFT, y, W - B.MARGIN_LEFT - B.MARGIN_RIGHT, box_h, "AKTIEN (S&P 500)", row["stocks"], GREEN)
-    y += box_h + 16
-    draw_vs_box(draw, B.MARGIN_LEFT, y, W - B.MARGIN_LEFT - B.MARGIN_RIGHT, box_h, "BITCOIN", row["btc"], BTC_ORANGE)
-    y += box_h + 40
+    headline_font = font(B.SANS_BOLD, 32)
+    draw.text((B.MARGIN_LEFT, y + 14), f"{row['label'].title()} gegen Bitcoin.", font=headline_font, fill=CREAM)
+    y += 90
 
-    note_font = font(B.SANS_BOLD, 19)
+    col_w = (W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 40) / 2
+    left_x = B.MARGIN_LEFT
+    right_x = B.MARGIN_LEFT + col_w + 40
+    icon_r = 44
+
+    draw_asset_icon(img, int(left_x + col_w / 2), y + icon_r, icon_r, kind, color)
+    draw = ImageDraw.Draw(img)
+    draw_logo_circle(img, draw, int(right_x + col_w / 2), y + icon_r, icon_r, "btc_logo_icon.png", BTC_ORANGE)
+    draw = ImageDraw.Draw(img)
+    y += icon_r * 2 + 20
+
+    label_font = font(B.SANS_BOLD, 16)
+    lt = row["label"]
+    ltw = draw.textlength(lt, font=label_font)
+    draw.text((left_x + col_w / 2 - ltw / 2, y), lt, font=label_font, fill=color)
+    rtw = draw.textlength("BITCOIN", font=label_font)
+    draw.text((right_x + col_w / 2 - rtw / 2, y), "BITCOIN", font=label_font, fill=BTC_ORANGE)
+    y += 30
+
+    val_font = font(B.SANS_BOLD, 24)
+    lines_l = wrap_text(draw, row["asset_value"], val_font, col_w)
+    ly = y
+    for line in lines_l:
+        lw = draw.textlength(line, font=val_font)
+        draw.text((left_x + col_w / 2 - lw / 2, ly), line, font=val_font, fill=CREAM)
+        ly += 30
+    lines_r = wrap_text(draw, row["btc_value"], val_font, col_w)
+    ry = y
+    for line in lines_r:
+        rw = draw.textlength(line, font=val_font)
+        draw.text((right_x + col_w / 2 - rw / 2, ry), line, font=val_font, fill=CREAM)
+        ry += 30
+
+    y = max(ly, ry) + 30
+    draw.line([(B.MARGIN_LEFT, y), (W - B.MARGIN_RIGHT, y)], fill=CARD_BORDER, width=1)
+    y += 20
+    note_font = font(B.SANS_BOLD, 18)
     note_lines = wrap_text(draw, DATA["note"], note_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in note_lines:
         draw.text((B.MARGIN_LEFT, y), line, font=note_font, fill=MUTED)
-        y += 26
+        y += 25
 
     draw_footer(draw, idx, n_total)
     return img
@@ -169,21 +259,21 @@ def slide_fazit():
     y = build_header(draw)
 
     y += 20
-    title_font = font(B.SANS_BOLD, 38)
-    lines = wrap_text(draw, "Der Zeitraum entscheidet mehr", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    title_font = font(B.SANS_BOLD, 36)
+    lines = wrap_text(draw, "Starke Vergangenheits-Rendite,", title_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 48
-    draw.text((B.MARGIN_LEFT, y), "als die Anlageklasse.", font=title_font, fill=CREAM)
-    y += 70
+        y += 46
+    draw.text((B.MARGIN_LEFT, y), "aber auch starke Schwankungen.", font=title_font, fill=CREAM)
+    y += 66
 
     body_font = font(B.SANS_BOLD, 24)
-    body_lines = wrap_text(draw, DATA["cta"], body_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    for line in body_lines:
+    lines2 = wrap_text(draw, DATA["cta"], body_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+    for line in lines2:
         draw.text((B.MARGIN_LEFT, y), line, font=body_font, fill=BTC_ORANGE)
         y += 32
 
-    y += 40
+    y += 30
     note_font = font(B.SANS_BOLD, 24)
     note_lines = wrap_text(draw, f"Schau bei {DATA['partner_handle']} vorbei fuer die Bitcoin-Perspektive "
                                   "auf dieselben Zahlen.", note_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
@@ -191,7 +281,7 @@ def slide_fazit():
         draw.text((B.MARGIN_LEFT, y), line, font=note_font, fill=CREAM)
         y += 32
 
-    y += 40
+    y += 30
     draw.line([(B.MARGIN_LEFT, y), (B.MARGIN_LEFT + 90, y)], fill=BTC_ORANGE, width=3)
     y += 24
     draw.text((B.MARGIN_LEFT, y), "Keine Anlageberatung, keine Prognose --", font=font(B.SANS_BOLD, 22), fill=CREAM)
@@ -220,7 +310,6 @@ def main():
         canvas.paste(src, (x, y))
         canvas.save(TT_DIR / f"slide_{i}.png")
 
-    cols = 5
     gap = 16
     sheet = Image.new("RGB", (W * n + gap * (n + 1), H + gap * 2), (25, 25, 25))
     for i in range(1, n + 1):
