@@ -1565,13 +1565,14 @@
     "action": "carousel",
     "caption": "Tagesupdate: Indizes, Rohstoffe, Sentiment und Krypto im Überblick.\n\nKeine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen",
     "slide_count": 1,
-    "fire_at": "2026-09-09T10:30:00+02:00",
-    "status": "pending"
+    "fire_at": "2026-09-09T13:00:00+02:00",
+    "status": "pending",
+    "note": "urspruenglich fuer 10:30 geplant, aber verpasst -- auf Nutzerhinweis auf 13:00 verschoben, Abstand zum 12:00-Uhr-Slot (erklaerstueck_10b5-1-plan) gehalten."
   },
   {
     "post_name": "tagesupdate_2026-09-09",
     "action": "story",
-    "fire_at": "2026-09-09T10:30:00+02:00",
+    "fire_at": "2026-09-09T13:00:00+02:00",
     "status": "pending"
   }
 ]
