@@ -1,0 +1,46 @@
+{
+  "pairs": [
+    {
+      "partner": {
+        "name": "MSCI World",
+        "ticker": "iShares Core",
+        "logo": "ishares_logo_icon.png",
+        "why": "Bildet rund 1.300 Unternehmen aus 23 Industrielaendern ab -- der Klassiker unter den breiten Welt-ETFs, TER 0,20% p.a."
+      },
+      "own": {
+        "name": "S&P 500",
+        "ticker": "USA",
+        "logo": "ishares_logo_icon.png",
+        "why": "Die 500 groessten US-Unternehmen -- historisch der meistgenutzte Referenzindex fuer den US-Aktienmarkt."
+      }
+    },
+    {
+      "partner": {
+        "name": "FTSE All-World",
+        "ticker": "Vanguard",
+        "logo": "vanguard_logo_icon.png",
+        "why": "Ueber 3.600 Unternehmen aus Industrie- UND Schwellenlaendern in einem einzigen ETF -- noch breiter gestreut als reine Industrielaender-Indizes, TER 0,22% p.a."
+      },
+      "own": {
+        "name": "MSCI World ex USA",
+        "ticker": "Ex USA",
+        "logo": "ishares_logo_icon.png",
+        "why": "Derselbe MSCI-World-Ansatz, aber ohne die USA -- fuer alle, die ihr US-Uebergewicht separat steuern wollen."
+      }
+    },
+    {
+      "partner": {
+        "name": "MSCI Emerging Markets",
+        "ticker": "Amundi",
+        "logo": "amundi_logo_icon.png",
+        "why": "Schwellenlaender wie China, Indien, Taiwan und Brasilien -- ueber 1.300 Unternehmen aus Regionen mit ueberdurchschnittlichem Wirtschaftswachstum."
+      },
+      "own": {
+        "name": "Core MSCI EM",
+        "ticker": "iShares",
+        "logo": "ishares_logo_icon.png",
+        "why": "Gleicher Schwellenlaender-Fokus, andere Fondsgesellschaft -- Streuung ueber mehrere Emerging-Markets-Volkswirtschaften."
+      }
+    }
+  ]
+}
