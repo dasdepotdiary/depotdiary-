@@ -35,7 +35,14 @@ DEFAULT_SLIDE_SECONDS = 4.0
 OCHRE_RGB = (176, 138, 46)
 
 CAPTION_WORDS_PER_PHRASE = 3
-CAPTION_FONT = ImageFont.truetype(B.SANS_BOLD, 44)
+CAPTION_FONT = ImageFont.truetype(B.SANS_BOLD, 50)
+# Caption-Stil "1 zu 1" nach @rendite.radar.official (Nutzerwunsch 2026-09-10):
+# Text direkt auf der Aufnahme mit schwarzer Kontur statt dunklem Balken,
+# ein Schluesselwort pro Phrase gelb hervorgehoben.
+CAPTION_HIGHLIGHT = (247, 197, 24, 255)
+CAPTION_WHITE = (255, 255, 255, 255)
+CAPTION_STROKE = (8, 8, 10, 255)
+CAPTION_STROKE_WIDTH = 6
 # Die tiktok_9x16-Slides sind das 4:5-Bild (1350px hoch), zentriert in eine
 # 1920px-Leinwand gepastet -- oben und unten bleiben dadurch ca. 285px reine
 # Leerflaeche, IMMER, unabhaengig vom Slide-Inhalt (siehe render.py export()).
@@ -62,40 +69,61 @@ def _wrap_caption(draw: ImageDraw.ImageDraw, text: str, font: ImageFont.FreeType
     return lines
 
 
+def _pick_highlight_word(display_words: list[str]) -> str | None:
+    """Automatisches Gelb-Hervorheben, wenn der Text kein explizites
+    *Wort*-Markup enthaelt -- das laengste Wort (ohne Satzzeichen) ist meist
+    der inhaltstragende Begriff (Ticker, Fachbegriff, Zahl+Einheit)."""
+    candidates = [wd.strip(".,!?;:") for wd in display_words if len(wd.strip(".,!?;:")) >= 4]
+    if not candidates:
+        return None
+    return max(candidates, key=len)
+
+
 def render_caption_image(text: str, video_size: tuple[int, int], position: str = "top") -> np.ndarray:
-    """Kurze Untertitel-Phrase: weisser fetter Text auf dunklem Balken (INK,
-    hoher Kontrast). position="top": garantiert leere obere Letterbox-Zone
-    der tiktok_9x16-Slides (Karten-Modus, ueberschneidet nie echten Inhalt).
-    position="center": klassische Untertitel-Position im unteren Drittel,
-    fuer --pure-footage, wo der ganze Bildschirm echtes Video ist und die
-    Untertitel selbst der Inhalt sind, nicht nur eine Ergaenzung."""
+    """Text direkt auf der Aufnahme, schwarze Kontur statt Balken, ein
+    Schluesselwort gelb hervorgehoben -- Stil "1 zu 1" nach
+    @rendite.radar.official (Nutzerwunsch 2026-09-10). Hervorhebung per
+    *Wort*-Markup im Text moeglich, sonst automatisch das laengste Wort.
+    position="top": garantiert leere obere Letterbox-Zone der tiktok_9x16-
+    Slides (Karten-Modus, ueberschneidet nie echten Inhalt). position="center":
+    klassische Untertitel-Position im unteren Drittel, fuer --pure-footage."""
     w, h = video_size
     img = Image.new("RGBA", (w, h), (0, 0, 0, 0))
     draw = ImageDraw.Draw(img)
 
-    max_text_w = w - 160
-    lines = _wrap_caption(draw, text.upper(), CAPTION_FONT, max_text_w)
-    line_h = CAPTION_FONT.size + 12
+    has_markup = "*" in text
+    raw_words = text.upper().split()
+    display_words = [wd.strip("*") for wd in raw_words]
+    if has_markup:
+        marked = next((wd for wd in raw_words if wd.startswith("*") or wd.endswith("*")), None)
+        highlight_word = marked.strip("*").strip(".,!?;:") if marked else None
+    else:
+        highlight_word = _pick_highlight_word(display_words)
+
+    max_text_w = w - 140
+    lines = _wrap_caption(draw, " ".join(display_words), CAPTION_FONT, max_text_w)
+    line_h = CAPTION_FONT.size + 16
     block_h = len(lines) * line_h
-    pad_y = 20
-    bar_h = block_h + pad_y * 2
 
     if position == "center":
         # unteres Drittel, aber klar oberhalb der IG/TikTok-eigenen UI
         # (Like/Kommentar/Story-Infos liegen im untersten ~18%)
-        bar_top = int(h * 0.68) - bar_h // 2
+        top = int(h * 0.68) - block_h // 2
     else:
-        bar_top = CAPTION_TOP_PADDING_PX
+        top = CAPTION_TOP_PADDING_PX
 
-    draw.rounded_rectangle(
-        [70, bar_top, w - 70, bar_top + bar_h], radius=16, fill=(22, 24, 28, 230)
-    )
-
-    y = bar_top + pad_y
+    space_w = draw.textlength(" ", font=CAPTION_FONT)
+    y = top
     for line in lines:
-        tw = draw.textlength(line, font=CAPTION_FONT)
-        x = (w - tw) / 2
-        draw.text((x, y), line, font=CAPTION_FONT, fill=(255, 255, 255, 255))
+        words_in_line = line.split()
+        total_w = sum(draw.textlength(wd, font=CAPTION_FONT) for wd in words_in_line) + space_w * (len(words_in_line) - 1)
+        x = (w - total_w) / 2
+        for wd in words_in_line:
+            clean = wd.strip(".,!?;:")
+            color = CAPTION_HIGHLIGHT if highlight_word and clean == highlight_word else CAPTION_WHITE
+            draw.text((x, y), wd, font=CAPTION_FONT, fill=color,
+                      stroke_width=CAPTION_STROKE_WIDTH, stroke_fill=CAPTION_STROKE)
+            x += draw.textlength(wd, font=CAPTION_FONT) + space_w
         y += line_h
 
     return np.array(img)
