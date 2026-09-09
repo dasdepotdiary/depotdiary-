@@ -1583,8 +1583,10 @@
     "caption": "Tagesupdate: Indizes, Rohstoffe, Sentiment und Krypto im Überblick.\n\nKeine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen",
     "slide_count": 1,
     "fire_at": "2026-09-09T13:00:00+02:00",
-    "status": "pending",
-    "note": "Retry nach Bugfix: slide_count=1 wird jetzt als Einzelbild statt ungueltigem Carousel gepostet (siehe run_queue.py)."
+    "status": "claiming",
+    "note": "Retry nach Bugfix: slide_count=1 wird jetzt als Einzelbild statt ungueltigem Carousel gepostet (siehe run_queue.py).",
+    "claimed_by": "runnervmlun5p-2053-f6d28935",
+    "claimed_at": "2026-09-09T20:16:01.687226+00:00"
   },
   {
     "post_name": "tagesupdate_2026-09-09",
