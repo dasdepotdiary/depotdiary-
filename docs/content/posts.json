@@ -673,5 +673,14 @@
     "excerpt": "Diese Woche wichtig: Oracle und Adobe berichten nach Börsenschluss.",
     "cover": "assets/posts/erklaerstueck_after-hours-handel/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "guess_the_stock_netflix",
+    "title": "Guess the Stock: Kennst du dieses Unternehmen?",
+    "category": "ratespiel",
+    "date": "2026-09-10",
+    "excerpt": "Neues Format: 4 echte Hinweise, 1 Unternehmen -- schaffst du es vor der Aufloesung?",
+    "cover": "assets/posts/guess_the_stock_netflix/slide_1.webp",
+    "url": null
   }
 ]

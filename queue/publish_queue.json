@@ -1598,5 +1598,19 @@
     "claimed_at": "2026-09-09T11:16:38.444665+00:00",
     "published_at": "2026-09-09T11:16:47.917577+00:00",
     "media_id": "18101387984370001"
+  },
+  {
+    "post_name": "guess_the_stock_netflix",
+    "action": "reel",
+    "caption": "Guess the Stock: 4 echte Hinweise, 1 Unternehmen -- schaffst du's vor der Aufloesung?\n\nNeues Format hier im Account: keine Bewertung, kein Kursziel -- einfach ein kleines Ratespiel mit oeffentlich bekannten Fakten.\n\nKeine Anlageberatung -- nur ein Ratespiel mit echten Fakten.\n\n#depotdiary #boerse #finanzen #ratespiel #guessthestock",
+    "fire_at": "2026-09-10T09:00:00+02:00",
+    "status": "pending",
+    "note": "Neues Format Guess the Stock (Netflix) -- Nutzer hat das Reel gesehen und ausdruecklich zum Posten freigegeben (2026-09-09)."
+  },
+  {
+    "post_name": "guess_the_stock_netflix",
+    "action": "story",
+    "fire_at": "2026-09-10T09:03:00+02:00",
+    "status": "pending"
   }
 ]
