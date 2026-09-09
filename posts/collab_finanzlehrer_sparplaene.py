@@ -42,17 +42,20 @@ TT_DIR.mkdir(parents=True, exist_ok=True)
 
 W, H = B.FEED_SIZE
 
-BG = (4, 4, 6)  # echtes Schwarz statt Dunkelnavy -- Nutzerwunsch 2026-09-10
-CARD_BORDER = (44, 44, 50)
-GOLD = (201, 162, 57)
+# Update 2026-09-10, zweite Runde: Nutzer wollte die Vielfarbigkeit wieder
+# raus -- "nur ein Rot" und dunkelgrauer statt schwarzer Hintergrund.
+# GOLD/GREEN/CYAN/AMBER ersetzt durch ein einziges Rot, das ueberall
+# (Partner UND eigene Seite, alle Badges) verwendet wird -- Unterscheidung
+# Partner/eigene Seite laeuft jetzt rein ueber die Label-Texte.
+BG = (30, 30, 32)
+CARD_BORDER = (58, 56, 58)
+RED = (214, 69, 65)
 CREAM = (240, 238, 230)
-MUTED = (150, 150, 158)
-GREEN = (74, 222, 128)
-# Zusaetzliche bunte Akzente fuer die TER/Fondsgroesse-Badges (Nutzerwunsch
-# "mehr Kontext" + "bunte Akzente") -- eigene Farben statt nur Gold/Gruen,
-# damit die Fakten-Badges auf einen Blick auseinanderzuhalten sind.
-CYAN = (56, 189, 248)
-AMBER = (245, 166, 35)
+MUTED = (168, 165, 168)
+GOLD = RED
+GREEN = RED
+CYAN = RED
+AMBER = RED
 
 PARTNER_HANDLE = "@FINANZLEHRER.AT"
 OWN_HANDLE = "@DASDEPOTDIARY"
