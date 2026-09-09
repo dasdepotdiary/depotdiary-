@@ -1507,9 +1507,11 @@
     "post_name": "erklaerstueck_10b5-1-plan",
     "action": "story",
     "fire_at": "2026-09-09T12:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmejwal-2313-fde4b66d",
-    "claimed_at": "2026-09-09T10:16:42.047573+00:00"
+    "claimed_at": "2026-09-09T10:16:42.047573+00:00",
+    "published_at": "2026-09-09T10:17:21.200037+00:00",
+    "media_id": "18195687199380567"
   },
   {
     "post_name": "erklaerstueck_after-hours-handel",
