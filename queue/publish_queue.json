@@ -1536,7 +1536,9 @@
     "post_name": "personal_fehler-verlierer-gehalten",
     "action": "story",
     "fire_at": "2026-09-09T09:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmejwal-2108-1d329ae0",
+    "claimed_at": "2026-09-09T07:18:20.312806+00:00"
   },
   {
     "post_name": "personal_woche-in-zahlen",
