@@ -45,6 +45,7 @@ CAT_GOLD = "#C9A239"
 CAT_COPPER = "#C77D3B"
 CAT_RUST = "#C2573B"
 CAT_VIOLET = "#8B7FE8"
+CAT_TEAL = "#3FA9A0"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 
@@ -242,8 +243,16 @@ def draw_candlestick_field(img):
     img.paste(layer, (0, 0), layer)
 
 
-def slide_update():
-    img = gradient_background((22, 18, 14), (12, 10, 8))
+def slide_update(earnings_today=None):
+    global H
+    # Canvas waechst mit, wenn die Quartalszahlen-Kategorie dazukommt --
+    # sonst wird der Footer/die letzten Zeilen vom festen FEED_SIZE
+    # abgeschnitten (live beobachtet 2026-09-09 beim ersten Testlauf).
+    extra_rows = len(earnings_today) if earnings_today else 0
+    extra_h = (24 + extra_rows * (66 + 6) + 10) if extra_rows else 0
+    H = B.FEED_SIZE[1] + extra_h
+
+    img = gradient_background((22, 18, 14), (12, 10, 8), h=H)
     draw_candlestick_field(img)
     add_radial_glow(img, W // 2, -80, 560, (120, 95, 40), strength=45)
     draw = ImageDraw.Draw(img)
@@ -251,10 +260,20 @@ def slide_update():
 
     y = build_header(draw)
 
+    groups = list(GROUPS)
+    if earnings_today:
+        # Ab 2026-09-14 auf Nutzerwunsch taeglich dazu: welche bekannten
+        # Unternehmen heute Quartalszahlen bringen -- eigene Kategorie statt
+        # Kursdaten, deshalb "heute" als Wert statt Preis/Prozent-Aenderung.
+        groups.append({
+            "label": "QUARTALSZAHLEN HEUTE", "color": CAT_TEAL,
+            "rows": [(name, "heute", None) for name in earnings_today],
+        })
+
     group_label_font = font(B.SANS_BOLD, 16)
     row_gap = 6
     group_gap = 16
-    for group in GROUPS:
+    for group in groups:
         draw.text((B.MARGIN_LEFT, y), group["label"], font=group_label_font, fill=group["color"])
         y += 24
         for name, value, change in group["rows"]:
@@ -267,7 +286,14 @@ def slide_update():
 
 
 def main():
-    img = slide_update()
+    import argparse
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--earnings-today", default="",
+                         help="Kommagetrennte Liste bekannter Unternehmen, die heute Quartalszahlen bringen (ab 2026-09-14 vom Scheduled Task befuellt)")
+    args = parser.parse_args()
+    earnings_today = [n.strip() for n in args.earnings_today.split(",") if n.strip()]
+
+    img = slide_update(earnings_today)
     img.save(IG_DIR / "slide_1.png")
 
     canvas = Image.new("RGB", B.STORY_SIZE, BG)
