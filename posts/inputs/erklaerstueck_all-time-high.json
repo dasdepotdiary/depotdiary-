@@ -1,0 +1,22 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Ein *All-Time-High* ist seltener eine Warnung, als es klingt.",
+  "hook_sub": "Nur ein neuer Höchststand -- mehr nicht.",
+  "sections": [
+    {
+      "headline": "Es bedeutet nur: *neuer Rekordkurs*.",
+      "body": "Ein All-Time-High heisst schlicht, dass eine Aktie oder ein Index gerade so hoch steht wie noch nie zuvor -- nicht mehr und nicht weniger."
+    },
+    {
+      "headline": "Indizes sind *öfter* auf einem ATH, als man denkt.",
+      "body": "Der S&P 500 zum Beispiel markiert historisch betrachtet an vielen Handelstagen im Jahr ein neues Hoch -- weil wachsende Wirtschaften über lange Zeiträume tendenziell steigen."
+    },
+    {
+      "headline": "'Hoch' heisst nicht automatisch *teuer* oder *günstig*.",
+      "body": "Ob ein Kurs angemessen bewertet ist, hängt von vielen Faktoren ab -- der Höchststand allein sagt darüber nichts aus."
+    }
+  ],
+  "cta_headline": "Ich seh ein ATH deshalb einfach als *Meldung*, nicht als Signal.",
+  "cta_body": "Keine Anlageberatung -- nur wie ich die Meldung für mich einordne.",
+  "date": "2026-09-18"
+}

@@ -700,5 +700,32 @@
     "excerpt": "Drei Wissensfragen zur Boersenmechanik -- kein Rating, kein Kursziel, einfach ein Ratespiel.",
     "cover": "assets/posts/format_aktienquiz/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_geld-brief-spanne",
+    "title": "Die Geld-Brief-Spanne -- der kleine Unterschied, den kaum jemand bemerkt.",
+    "category": "erklaerstueck",
+    "date": "2026-09-13",
+    "excerpt": "Zwei Preise, jede Sekunde.",
+    "cover": "assets/posts/erklaerstueck_geld-brief-spanne/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_blue-chips",
+    "title": "Was ist eigentlich ein Blue Chip?",
+    "category": "erklaerstueck",
+    "date": "2026-09-17",
+    "excerpt": "Der Begriff kommt nicht von der Börse.",
+    "cover": "assets/posts/erklaerstueck_blue-chips/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "erklaerstueck_all-time-high",
+    "title": "Ein All-Time-High ist seltener eine Warnung, als es klingt.",
+    "category": "erklaerstueck",
+    "date": "2026-09-18",
+    "excerpt": "Nur ein neuer Höchststand -- mehr nicht.",
+    "cover": "assets/posts/erklaerstueck_all-time-high/slide_1.webp",
+    "url": null
   }
 ]

@@ -1,0 +1,22 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Die *Geld-Brief-Spanne* -- der kleine Unterschied, den kaum jemand bemerkt.",
+  "hook_sub": "Zwei Preise, jede Sekunde.",
+  "sections": [
+    {
+      "headline": "Jede Aktie hat eigentlich *zwei* Preise.",
+      "body": "Den 'Geld'-Kurs (was Käufer gerade zahlen wollen) und den 'Brief'-Kurs (was Verkäufer gerade verlangen) -- der Kurs, den du in der App siehst, ist meist nur der letzte tatsächliche Handel."
+    },
+    {
+      "headline": "Die Lücke dazwischen heißt *Spread*.",
+      "body": "Bei sehr liquiden Aktien wie Apple ist sie winzig -- bei kleinen, selten gehandelten Werten kann sie deutlich größer ausfallen."
+    },
+    {
+      "headline": "Der Spread ist eine *versteckte Kostenkomponente*.",
+      "body": "Er kommt zusätzlich zur Orderprovision und wird nirgends extra ausgewiesen -- du zahlst ihn einfach, indem du minimal teurer kaufst und minimal günstiger verkaufst, als der letzte Kurs zeigt."
+    }
+  ],
+  "cta_headline": "Deshalb schau ich vor *jeder* Order kurz auf den Spread.",
+  "cta_body": "Keine Anlageberatung -- nur eine Gewohnheit, die mir schon ein paar Mal aufgefallen ist.",
+  "date": "2026-09-13"
+}

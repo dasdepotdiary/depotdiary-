@@ -485,5 +485,38 @@
       "Quartalszahlen kommen fast immer entweder vor Handelsstart oder direkt nach Handelsschluss -- das gibt allen Anlegern gleichzeitig Zeit, die Zahlen zu lesen, bevor der reguläre Handel weitergeht.",
       "Wegen des geringen Volumens können After-Hours-Kursbewegungen übertrieben ausfallen -- der Kurs am nächsten regulären Handelstag weicht nicht selten deutlich von der ersten Nacht-Reaktion ab."
     ]
+  },
+  {
+    "id": "geld-brief-spanne",
+    "title": "Die Geld-Brief-Spanne -- der kleine Unterschied, den kaum jemand bemerkt.",
+    "date": "2026-09-13",
+    "body": [
+      "Zwei Preise, jede Sekunde.",
+      "Den 'Geld'-Kurs (was Käufer gerade zahlen wollen) und den 'Brief'-Kurs (was Verkäufer gerade verlangen) -- der Kurs, den du in der App siehst, ist meist nur der letzte tatsächliche Handel.",
+      "Bei sehr liquiden Aktien wie Apple ist sie winzig -- bei kleinen, selten gehandelten Werten kann sie deutlich größer ausfallen.",
+      "Er kommt zusätzlich zur Orderprovision und wird nirgends extra ausgewiesen -- du zahlst ihn einfach, indem du minimal teurer kaufst und minimal günstiger verkaufst, als der letzte Kurs zeigt."
+    ]
+  },
+  {
+    "id": "blue-chips",
+    "title": "Was ist eigentlich ein Blue Chip?",
+    "date": "2026-09-17",
+    "body": [
+      "Der Begriff kommt nicht von der Börse.",
+      "Im Poker sind blaue Chips traditionell die wertvollsten -- der Begriff wurde in den 1920ern auf besonders etablierte, große Börsenunternehmen übertragen.",
+      "Gemeint sind meist grosse, seit langem am Markt etablierte Unternehmen mit stabilem Geschäftsmodell und hoher Marktkapitalisierung -- eine feste Liste oder Grenze gibt es dafür nicht.",
+      "Der Begriff beschreibt die Grösse und Etabliertheit eines Unternehmens -- nicht, ob die Aktie gerade günstig oder teuer bewertet ist oder wie sie sich entwickeln wird."
+    ]
+  },
+  {
+    "id": "all-time-high",
+    "title": "Ein All-Time-High ist seltener eine Warnung, als es klingt.",
+    "date": "2026-09-18",
+    "body": [
+      "Nur ein neuer Höchststand -- mehr nicht.",
+      "Ein All-Time-High heisst schlicht, dass eine Aktie oder ein Index gerade so hoch steht wie noch nie zuvor -- nicht mehr und nicht weniger.",
+      "Der S&P 500 zum Beispiel markiert historisch betrachtet an vielen Handelstagen im Jahr ein neues Hoch -- weil wachsende Wirtschaften über lange Zeiträume tendenziell steigen.",
+      "Ob ein Kurs angemessen bewertet ist, hängt von vielen Faktoren ab -- der Höchststand allein sagt darüber nichts aus."
+    ]
   }
 ]

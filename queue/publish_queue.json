@@ -1641,5 +1641,32 @@
     "action": "story",
     "fire_at": "2026-09-15T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_geld-brief-spanne",
+    "action": "carousel",
+    "caption": "Die Geld-Brief-Spanne -- der kleine Unterschied, den kaum jemand bemerkt.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-13T09:00:00+02:00",
+    "status": "pending",
+    "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels)."
+  },
+  {
+    "post_name": "erklaerstueck_blue-chips",
+    "action": "carousel",
+    "caption": "Was ist eigentlich ein Blue Chip?\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-17T09:00:00+02:00",
+    "status": "pending",
+    "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels)."
+  },
+  {
+    "post_name": "erklaerstueck_all-time-high",
+    "action": "carousel",
+    "caption": "Ein All-Time-High ist seltener eine Warnung, als es klingt.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-18T09:00:00+02:00",
+    "status": "pending",
+    "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels)."
   }
 ]
