@@ -1613,5 +1613,33 @@
     "action": "story",
     "fire_at": "2026-09-10T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "format_wochenbewegung",
+    "action": "reel",
+    "caption": "3 Aktien, die diese Woche stark in Bewegung waren.\n\nOracle, Adobe und GameStop nach den Quartalszahlen -- reine Marktbeobachtung, keine Bewertung.\n\nKeine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen",
+    "fire_at": "2026-09-11T09:00:00+02:00",
+    "status": "pending",
+    "note": "Neues Format, Nutzer hat Posting-Kalender fuer die neuen Formate am 2026-09-09 explizit freigegeben (max 1-2/Tag, ueber mehrere Tage verteilt)."
+  },
+  {
+    "post_name": "format_wochenbewegung",
+    "action": "story",
+    "fire_at": "2026-09-11T09:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "format_aktienquiz",
+    "action": "reel",
+    "caption": "Aktienquiz: 3 Fragen, schaffst du alle?\n\nBoersenwissen statt Kursziele -- reines Ratespiel zu KGV, Earnings-Rhythmus und Aktiensplit.\n\nKeine Anlageberatung -- nur ein Wissensquiz.\n\n#depotdiary #boerse #finanzen #ratespiel",
+    "fire_at": "2026-09-15T09:00:00+02:00",
+    "status": "pending",
+    "note": "Neues Format, bewusst auf Dienstag gelegt (Montag ist bereits die automatische Earnings-Woche-Uebersicht -- max 1-2 Posts/Tag)."
+  },
+  {
+    "post_name": "format_aktienquiz",
+    "action": "story",
+    "fire_at": "2026-09-15T09:03:00+02:00",
+    "status": "pending"
   }
 ]

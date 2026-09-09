@@ -682,5 +682,23 @@
     "excerpt": "Neues Format: 4 echte Hinweise, 1 Unternehmen -- schaffst du es vor der Aufloesung?",
     "cover": "assets/posts/guess_the_stock_netflix/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "format_wochenbewegung",
+    "title": "3 Aktien, die sich diese Woche stark bewegt haben",
+    "category": "marktupdate",
+    "date": "2026-09-11",
+    "excerpt": "Oracle, Adobe und GameStop nach den Quartalszahlen -- reine Marktbeobachtung, keine Bewertung.",
+    "cover": "assets/posts/format_wochenbewegung/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "format_aktienquiz",
+    "title": "Aktienquiz: KGV, Earnings-Rhythmus und Aktiensplit",
+    "category": "erklaerstueck",
+    "date": "2026-09-15",
+    "excerpt": "Drei Wissensfragen zur Boersenmechanik -- kein Rating, kein Kursziel, einfach ein Ratespiel.",
+    "cover": "assets/posts/format_aktienquiz/slide_1.webp",
+    "url": null
   }
 ]

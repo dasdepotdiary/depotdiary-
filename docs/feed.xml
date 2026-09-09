@@ -5,7 +5,23 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 09 Sep 2026 20:02:38 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 21:42:57 +0000</lastBuildDate>
+    <item>
+      <title>Aktienquiz: KGV, Earnings-Rhythmus und Aktiensplit</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">format_aktienquiz</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Drei Wissensfragen zur Boersenmechanik -- kein Rating, kein Kursziel, einfach ein Ratespiel.</description>
+    </item>
+    <item>
+      <title>3 Aktien, die sich diese Woche stark bewegt haben</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">format_wochenbewegung</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Oracle, Adobe und GameStop nach den Quartalszahlen -- reine Marktbeobachtung, keine Bewertung.</description>
+    </item>
     <item>
       <title>Guess the Stock: Kennst du dieses Unternehmen?</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
