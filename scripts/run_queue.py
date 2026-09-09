@@ -116,7 +116,23 @@ def is_due(entry, now=None) -> bool:
 
 
 def publish_carousel(token, ig_id, base_url, entry) -> dict:
+    # Graph API lehnt CAROUSEL-Container mit nur 1 Kind-Medium ab ("Untergeordnet
+    # darf nicht weniger als 2 Medien-IDs enthalten") -- live beobachtet am
+    # 2026-09-09 bei tagesupdate.py, das bewusst nur 1 Slide erzeugt (siehe
+    # [[project_depotdiary_earnings_woche_task]]). Bei slide_count 1 also ganz
+    # normal als Einzelbild posten statt als Carousel.
     name = entry["post_name"]
+    if entry["slide_count"] == 1:
+        image_url = f"{base_url}/assets/posts/{name}/slide_1.png?v={int(time.time())}"
+        resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media", {
+            "image_url": image_url, "caption": entry.get("caption", ""), "access_token": token,
+        })
+        creation_id = resp.json()["id"]
+        resp = _graph_post(f"{GRAPH_URL}/{ig_id}/media_publish", {
+            "creation_id": creation_id, "access_token": token,
+        })
+        return resp.json()
+
     children_ids = []
     for i in range(1, entry["slide_count"] + 1):
         image_url = f"{base_url}/assets/posts/{name}/slide_{i}.png?v={int(time.time())}"

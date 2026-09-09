@@ -1583,11 +1583,8 @@
     "caption": "Tagesupdate: Indizes, Rohstoffe, Sentiment und Krypto im Überblick.\n\nKeine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen",
     "slide_count": 1,
     "fire_at": "2026-09-09T13:00:00+02:00",
-    "status": "error",
-    "note": "urspruenglich fuer 10:30 geplant, aber verpasst -- auf Nutzerhinweis auf 13:00 verschoben, Abstand zum 12:00-Uhr-Slot (erklaerstueck_10b5-1-plan) gehalten.",
-    "claimed_by": "runnervmejwal-2296-5c7dd90f",
-    "claimed_at": "2026-09-09T11:14:58.083732+00:00",
-    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Invalid parameter\",\"type\":\"OAuthException\",\"code\":100,\"error_subcode\":2207088,\"is_transient\":false,\"error_user_title\":\"Feld \\u201eUntergeordnet\\u201c darf nicht weniger als 2\\u00a0Medien-IDs enthalten\",\"error_user_msg\":\"Das Feld \\u201eUntergeordnet\\u201c muss zur Erstellung von Carousel-Medien mindestens 2\\u00a0Medien-IDs oder mehr enthalten.\",\"fbtrace_id\":\"AMrRp9Y38n4tvGa2eMN7NWv\"}}"
+    "status": "pending",
+    "note": "Retry nach Bugfix: slide_count=1 wird jetzt als Einzelbild statt ungueltigem Carousel gepostet (siehe run_queue.py)."
   },
   {
     "post_name": "tagesupdate_2026-09-09",
