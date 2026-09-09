@@ -42,12 +42,17 @@ TT_DIR.mkdir(parents=True, exist_ok=True)
 
 W, H = B.FEED_SIZE
 
-BG = (9, 13, 22)
-CARD_BORDER = (40, 46, 62)
+BG = (4, 4, 6)  # echtes Schwarz statt Dunkelnavy -- Nutzerwunsch 2026-09-10
+CARD_BORDER = (44, 44, 50)
 GOLD = (201, 162, 57)
 CREAM = (240, 238, 230)
-MUTED = (140, 145, 158)
+MUTED = (150, 150, 158)
 GREEN = (74, 222, 128)
+# Zusaetzliche bunte Akzente fuer die TER/Fondsgroesse-Badges (Nutzerwunsch
+# "mehr Kontext" + "bunte Akzente") -- eigene Farben statt nur Gold/Gruen,
+# damit die Fakten-Badges auf einen Blick auseinanderzuhalten sind.
+CYAN = (56, 189, 248)
+AMBER = (245, 166, 35)
 
 PARTNER_HANDLE = "@FINANZLEHRER.AT"
 OWN_HANDLE = "@DASDEPOTDIARY"
@@ -84,11 +89,41 @@ def build_header(draw, y=36):
     return y + 18
 
 
-def base_slide():
+def _scatter_particles(img, seed):
+    """Dezente bunte Akzent-Punkte/Rauten im Hintergrund -- Anlehnung an den
+    @rendite.radar.official-Look (Nutzerwunsch 2026-09-10), aber eigenstaendig
+    statt kopiert: sehr kleine, gedaempfte Formen, stoeren den Text nie."""
+    import random
+    rnd = random.Random(seed)
+    draw = ImageDraw.Draw(img, "RGBA")
+    colors = [(*GOLD, 60), (*GREEN, 55), (*CYAN, 55), (*AMBER, 55)]
+    for _ in range(14):
+        x = rnd.randint(40, W - 40)
+        y = rnd.randint(40, H - 40)
+        r = rnd.randint(3, 7)
+        color = rnd.choice(colors)
+        if rnd.random() < 0.5:
+            draw.ellipse([x - r, y - r, x + r, y + r], fill=color)
+        else:
+            draw.polygon([(x, y - r), (x + r, y), (x, y + r), (x - r, y)], fill=color)
+
+
+def base_slide(seed=1):
     img = Image.new("RGB", (W, H), BG)
+    _scatter_particles(img, seed)
     draw = ImageDraw.Draw(img)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=GOLD)
     return img, draw
+
+
+def draw_badge(draw, x, y, label, color):
+    badge_font = font(B.SANS_BOLD, 15)
+    tw = draw.textlength(label, font=badge_font)
+    pad_x, pad_y = 12, 6
+    draw.rounded_rectangle([x, y, x + tw + pad_x * 2, y + 15 + pad_y * 2], radius=12,
+                            outline=color, width=2)
+    draw.text((x + pad_x, y + pad_y), label, font=badge_font, fill=color)
+    return tw + pad_x * 2
 
 
 def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
@@ -112,11 +147,20 @@ def draw_pick_half(img, draw, top, bottom, pick, who_label, accent):
     ticker_font = font(B.SANS_BOLD, 17)
     draw.text((text_x, top + 62), pick["ticker"], font=ticker_font, fill=accent)
 
+    # Bunte Fakten-Badges (TER/Fondsgroesse) -- "mehr Kontext" auf einen Blick,
+    # eigene Akzentfarben statt nur Gold/Gruen (Nutzerwunsch 2026-09-10).
+    badge_y = logo_cy + logo_r + 14
+    bx = B.MARGIN_LEFT
+    if pick.get("ter"):
+        bx += draw_badge(draw, bx, badge_y, f"TER {pick['ter']}", CYAN) + 10
+    if pick.get("aum"):
+        draw_badge(draw, bx, badge_y, f"Volumen {pick['aum']}", AMBER)
+
     why_font = font(B.SANS_BOLD, 17)
     max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
     lines = wrap_text(draw, pick["why"], why_font, max_w)
-    y = logo_cy + logo_r + 18
-    for line in lines[:7]:
+    y = badge_y + 38
+    for line in lines[:6]:
         draw.text((B.MARGIN_LEFT, y), line, font=why_font, fill=MUTED)
         y += 23
     return draw
@@ -197,7 +241,7 @@ def slide_intro():
 
 
 def slide_pair(pair, idx, n_total):
-    img, draw = base_slide()
+    img, draw = base_slide(seed=idx)
     top = build_header(draw)
 
     footer_h = 70
