@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 09 Sep 2026 21:46:43 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 21:50:36 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -53,6 +53,14 @@
       <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
       <category>ratespiel</category>
       <description>Neues Format: 4 echte Hinweise, 1 Unternehmen -- schaffst du es vor der Aufloesung?</description>
+    </item>
+    <item>
+      <title>3 Mythen über die Börse -- und was wirklich stimmt.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">mythos_realitaet_einsteiger-mythen</guid>
+      <pubDate>Thu, 10 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Einsteiger-Ausgabe.</description>
     </item>
     <item>
       <title>Ist das eine KI-Blase?</title>

@@ -400,6 +400,59 @@ class Post:
         self._finish(img, draw)
         return img
 
+    # --- slide_contrast(eyebrow, headline, wrong_label, wrong_text, right_label, right_text) ---
+    # Neues Format "Mythos vs. Realitaet" (2026-09-09). Nutzt bewusst NUR die
+    # bestehenden Brand-Farben RED/GREEN statt einer neuen Palette -- der
+    # Nutzer hat gerade darauf hingewiesen, dass zu viele neue Formate mit
+    # eigenen Farbwelten die Wiedererkennbarkeit des Accounts verwaessern.
+    # Gleiche Rot/Gruen-Sprache wie ueberall sonst im Account (Kursverlauf,
+    # Change-Werte) -- hier fuer "falsche Annahme" vs. "was stimmt".
+    def slide_contrast(self, eyebrow, headline, wrong_label, wrong_text, right_label, right_text):
+        img, draw = _new_canvas()
+        _draw_eyebrow(draw, eyebrow)
+        max_w = self._max_width()
+        top, bottom = _content_area()
+
+        h_lines, h_size, h_h = _headline_block(draw, headline, max_w)
+
+        pill_font = _font(B.SANS_BOLD, 20)
+        body_size = 26
+        inner_w = max_w - 56
+        wb_lines, _, wb_h = _body_block(draw, wrong_text, inner_w, size=body_size, max_lines=4)
+        rb_lines, _, rb_h = _body_block(draw, right_text, inner_w, size=body_size, max_lines=4)
+
+        pad = 28
+        pill_h = 40
+        card1_h = pill_h + 14 + wb_h + pad * 2
+        card2_h = pill_h + 14 + rb_h + pad * 2
+        card_gap = 20
+
+        block_h = (h_h + BLOCK_GAP + _accent_line_height() + BLOCK_GAP
+                   + card1_h + card_gap + card2_h)
+        y = top + max(0, (bottom - top - block_h) // 2)
+
+        y = _draw_headline(draw, h_lines, h_size, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+        y = _draw_accent_line(draw, B.MARGIN_LEFT, y)
+        y += BLOCK_GAP
+
+        def draw_card(y, accent, pill_text, lines, card_h):
+            draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + max_w, y + card_h], fill=B.CARD)
+            draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + 6, y + card_h], fill=accent)
+            pw = _text_w(draw, pill_text, pill_font) + 28
+            py = y + pad - 6
+            draw.rounded_rectangle([B.MARGIN_LEFT + pad, py, B.MARGIN_LEFT + pad + pw, py + pill_h],
+                                    radius=pill_h // 2, fill=accent)
+            draw.text((B.MARGIN_LEFT + pad + 14, py + pill_h / 2 - 12), pill_text, font=pill_font, fill=B.BG)
+            _draw_body(draw, lines, body_size, B.MARGIN_LEFT + pad, y + pad + pill_h + 14)
+
+        draw_card(y, B.RED, wrong_label.upper(), wb_lines, card1_h)
+        y += card1_h + card_gap
+        draw_card(y, B.GREEN, right_label.upper(), rb_lines, card2_h)
+
+        self._finish(img, draw)
+        return img
+
     # --- slide_card(eyebrow, headline, big, small, body) ---
     def slide_card(self, eyebrow, headline, big, small, body=""):
         img, draw = _new_canvas()

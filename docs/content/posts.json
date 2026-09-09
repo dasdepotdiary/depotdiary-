@@ -727,5 +727,14 @@
     "excerpt": "Nur ein neuer Höchststand -- mehr nicht.",
     "cover": "assets/posts/erklaerstueck_all-time-high/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "mythos_realitaet_einsteiger-mythen",
+    "title": "3 Mythen über die Börse -- und was wirklich stimmt.",
+    "category": "erklaerstueck",
+    "date": "2026-09-10",
+    "excerpt": "Einsteiger-Ausgabe.",
+    "cover": "assets/posts/mythos_realitaet_einsteiger-mythen/slide_1.webp",
+    "url": null
   }
 ]

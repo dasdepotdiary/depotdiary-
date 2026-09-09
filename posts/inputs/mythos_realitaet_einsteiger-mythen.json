@@ -1,0 +1,31 @@
+{
+  "eyebrow": "MYTHOS VS. REALITÄT",
+  "hook": "3 *Mythen* über die Börse -- und was wirklich stimmt.",
+  "hook_sub": "Einsteiger-Ausgabe.",
+  "items": [
+    {
+      "headline": "\"Man braucht *viel Geld*, um zu starten.\"",
+      "wrong_label": "Mythos",
+      "wrong_text": "Ohne ein grösseres Startkapital lohnt sich der Einstieg nicht.",
+      "right_label": "Realität",
+      "right_text": "Sparpläne funktionieren bei vielen Brokern schon ab wenigen Euro im Monat -- und Bruchstücke machen auch teure Einzelaktien in kleinen Beträgen zugänglich."
+    },
+    {
+      "headline": "\"Ein *fallender* Kurs heisst, etwas läuft falsch.\"",
+      "wrong_label": "Mythos",
+      "wrong_text": "Wenn eine Aktie oder ein Index fällt, war die Entscheidung ein Fehler.",
+      "right_label": "Realität",
+      "right_text": "Schwankungen sind ein normaler Teil des Marktes -- auch etablierte Indizes wie der S&P 500 hatten historisch in fast jedem Jahr zwischenzeitliche Rückgänge."
+    },
+    {
+      "headline": "\"*Häufiger* handeln bringt automatisch mehr.\"",
+      "wrong_label": "Mythos",
+      "wrong_text": "Wer öfter kauft und verkauft, verpasst weniger Chancen und verdient mehr.",
+      "right_label": "Realität",
+      "right_text": "Jeder Handel kann zusätzliche Kosten (Spread, Gebühren) verursachen -- mehr Aktivität allein ist kein Erfolgsfaktor."
+    }
+  ],
+  "cta_headline": "Deshalb halt ich mich lieber an *einfache* Grundregeln.",
+  "cta_body": "Keine Anlageberatung -- nur, wie ich für mich mit diesen drei Mythen umgehe.",
+  "date": "2026-09-10"
+}
