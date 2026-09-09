@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 09 Sep 2026 21:50:36 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 09 Sep 2026 21:55:49 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -21,6 +21,14 @@
       <pubDate>Thu, 17 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Der Begriff kommt nicht von der Börse.</description>
+    </item>
+    <item>
+      <title>Deep Dive: Palantir (PLTR)</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">personal_deep_dive_palantir</guid>
+      <pubDate>Wed, 16 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Vom Geheimdienst-Dienstleister zu einem der umsatzstaerksten KI-Software-Unternehmen der Welt -- Fakten, Kennzahlen, Auftragslage.</description>
     </item>
     <item>
       <title>Aktienquiz: KGV, Earnings-Rhythmus und Aktiensplit</title>

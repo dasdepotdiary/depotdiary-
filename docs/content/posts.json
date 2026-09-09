@@ -736,5 +736,14 @@
     "excerpt": "Einsteiger-Ausgabe.",
     "cover": "assets/posts/mythos_realitaet_einsteiger-mythen/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "personal_deep_dive_palantir",
+    "title": "Deep Dive: Palantir (PLTR)",
+    "category": "marktupdate",
+    "date": "2026-09-16",
+    "excerpt": "Vom Geheimdienst-Dienstleister zu einem der umsatzstaerksten KI-Software-Unternehmen der Welt -- Fakten, Kennzahlen, Auftragslage.",
+    "cover": "assets/posts/personal_deep_dive_palantir/slide_1.webp",
+    "url": null
   }
 ]
