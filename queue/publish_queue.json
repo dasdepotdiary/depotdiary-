@@ -1683,15 +1683,15 @@
     "action": "carousel",
     "caption": "Deep Dive: Palantir (PLTR).\n\nVom Geheimdienst-Dienstleister mit CIA-Anschubfinanzierung zu einem der umsatzstaerksten KI-Software-Unternehmen der Welt:\n\n-> Q2 2026: Umsatz +93% auf 1,94 Mrd. USD, US-Commercial-Geschaeft +149%\n-> Rund 4.500 Mitarbeiter weltweit, Marktkapitalisierung ueber 400 Mrd. USD\n-> Aktie 2026 zwischen Rekordhoch und harter Korrektur -- zuletzt neuer Grossauftrag der US Army (TITAN-Bodenstationen, 3. September)\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #palantir #pltr #boerse #finanzen #deepdive #ki",
     "slide_count": 7,
-    "fire_at": "2026-09-16T09:00:00+02:00",
+    "fire_at": "2026-09-11T12:00:00+02:00",
     "status": "pending",
-    "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09 fuer autonomen Hintergrund-Aufbau, ohne weitere Rueckfrage bauen und queuen. Termin bewusst auf Mi 16.9. gelegt, um bestehende Queue-Eintraege nicht zu ueberschneiden (Guess the Stock Do 10.9., Wochenbewegung Fr 11.9., Aktienquiz Di 15.9., Earnings-Woche-Automatik Mo 14.9.). Gleiche Struktur/Optik wie die Oracle- und Adobe-Deep-Dives dieser Woche (reines Karussell, kein Voiceover/Video -- wie bei beiden Vorlagen), aber bewusst ohne eigene 'Bewertung'-Folie mit Guenstig/Teuer-Einordnung (KGV-Vergleich, 'kein Schnaeppchen-KGV' o.ae.), da das gegen die harte Compliance-Regel in CLAUDE.md verstossen wuerde -- stattdessen eine neutrale Kennzahlen-Folie ohne Einordnung."
+    "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09 fuer autonomen Hintergrund-Aufbau. Auf Nutzerwunsch 2026-09-10 vorgezogen von Mi 16.9. auf Fr 11.9. (Schema: Deep Dive/ETF zaehlen als Carousel-Slot, ergaenzend zum Wochenbewegung-Reel desselben Tages)."
   },
   {
     "post_name": "personal_deep_dive_palantir",
     "action": "story",
-    "fire_at": "2026-09-16T09:03:00+02:00",
+    "fire_at": "2026-09-11T12:03:00+02:00",
     "status": "pending",
-    "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09, siehe Notiz beim Carousel-Eintrag."
+    "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09 fuer autonomen Hintergrund-Aufbau. Auf Nutzerwunsch 2026-09-10 vorgezogen von Mi 16.9. auf Fr 11.9. (Schema: Deep Dive/ETF zaehlen als Carousel-Slot, ergaenzend zum Wochenbewegung-Reel desselben Tages)."
   }
 ]
