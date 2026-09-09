@@ -79,7 +79,7 @@ def fmt_de(value, decimals=2):
 
 def fetch_yahoo(symbol):
     url = f"https://query1.finance.yahoo.com/v8/finance/chart/{symbol}"
-    r = requests.get(url, params={"range": "5d", "interval": "1d"},
+    r = requests.get(url, params={"range": "1d", "interval": "1d"},
                       headers={"User-Agent": "Mozilla/5.0"}, timeout=15)
     r.raise_for_status()
     meta = r.json()["chart"]["result"][0]["meta"]
