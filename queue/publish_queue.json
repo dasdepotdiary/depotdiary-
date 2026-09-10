@@ -1691,10 +1691,12 @@
     "caption": "3 Mythen ueber die Boerse -- und was wirklich stimmt.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #mythbusting",
     "slide_count": 5,
     "fire_at": "2026-09-10T12:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Neues Carousel-Format \"Mythos vs. Realitaet\" -- Nutzerwunsch 2026-09-09: neues Format, aber bewusst nur bestehende Brand-Farben (RED/GREEN), keine neue Palette, um die visuelle Konsistenz des Accounts nicht weiter zu verwaessern.",
     "claimed_by": "runnervmlun5p-2283-60869662",
-    "claimed_at": "2026-09-10T10:16:56.077872+00:00"
+    "claimed_at": "2026-09-10T10:16:56.077872+00:00",
+    "published_at": "2026-09-10T10:17:31.810853+00:00",
+    "media_id": "18116325610991100"
   },
   {
     "post_name": "personal_deep_dive_palantir",
