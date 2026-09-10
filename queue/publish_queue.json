@@ -1528,10 +1528,12 @@
     "caption": "Warum Aktien nachts schon reagieren.\n\nDiese Woche wichtig: Oracle und Adobe berichten nach Boersenschluss.\n\n-> After-Hours-Handel laeuft nach 22 Uhr MEZ weiter, deutlich weniger Volumen\n-> Deshalb berichten die meisten Unternehmen genau dann\n-> Die erste Reaktion ist oft nicht die endgueltige\n\nKeine Prognose -- nur, warum ich mich von der ersten Nacht-Reaktion nicht hetzen lasse.\n\n#depotdiary #erklaerstueck #boerse #finanzen",
     "slide_count": 5,
     "fire_at": "2026-09-10T12:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Fuellt die Luecke, die durch das Entfernen von erklaerstueck_etf-ter entstanden ist -- passt zu Oracle/Adobe-Zahlen am Donnerstagabend.",
     "claimed_by": "runnervmlun5p-2283-60869662",
-    "claimed_at": "2026-09-10T10:16:09.978628+00:00"
+    "claimed_at": "2026-09-10T10:16:09.978628+00:00",
+    "published_at": "2026-09-10T10:16:44.975896+00:00",
+    "media_id": "18172160446452215"
   },
   {
     "post_name": "erklaerstueck_after-hours-handel",
