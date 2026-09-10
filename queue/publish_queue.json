@@ -1359,10 +1359,17 @@
     "post_name": "marktupdate_kr-check",
     "action": "story_sequence",
     "fire_at": "2026-09-10T20:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Kroger Q2-Zahlen Fr 11.9. vor Boersenoeffnung (Call 8:00 ET) -- Abend vorher gepostet.",
     "claimed_by": "runnervmlun5p-2231-d3319e8a",
-    "claimed_at": "2026-09-10T18:17:15.451989+00:00"
+    "claimed_at": "2026-09-10T18:17:15.451989+00:00",
+    "published_at": "2026-09-10T18:18:25.868013+00:00",
+    "media_id": "18622542904029233",
+    "media_ids": [
+      "18622542904029233",
+      "18164088586464746",
+      "18026695265890783"
+    ]
   },
   {
     "post_name": "personal_deep_dive_micron",
