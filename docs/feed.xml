@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Wed, 09 Sep 2026 21:55:49 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2026 17:54:54 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -45,6 +45,14 @@
       <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Zwei Preise, jede Sekunde.</description>
+    </item>
+    <item>
+      <title>Palantir: 127 Millionen Dollar vom US-Militaer</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">reel_palantir_titan</guid>
+      <pubDate>Sat, 12 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Die US-Armee hat Palantir und Anduril 192 Millionen Dollar fuer das KI-gestuetzte TITAN-Programm zugesprochen.</description>
     </item>
     <item>
       <title>3 Aktien, die sich diese Woche stark bewegt haben</title>
