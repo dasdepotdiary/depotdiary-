@@ -1718,7 +1718,9 @@
     "post_name": "tagesupdate_2026-09-10",
     "action": "story",
     "fire_at": "2026-09-10T19:26:00+02:00",
-    "status": "pending",
-    "note": "Nachgeholt -- der Scheduled Task ist heute zwar um 13:51 gelaufen (lastRunAt), hat aber aus ungeklaertem Grund keinen Queue-Eintrag erzeugt (kein Staging, kein Commit). Manuell nachgebaut und gequeued, 19:25 Uhr."
+    "status": "claiming",
+    "note": "Nachgeholt -- der Scheduled Task ist heute zwar um 13:51 gelaufen (lastRunAt), hat aber aus ungeklaertem Grund keinen Queue-Eintrag erzeugt (kein Staging, kein Commit). Manuell nachgebaut und gequeued, 19:25 Uhr.",
+    "claimed_by": "runnervmlun5p-2296-89ba03c5",
+    "claimed_at": "2026-09-10T17:31:13.824639+00:00"
   }
 ]
