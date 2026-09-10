@@ -1713,5 +1713,12 @@
     "fire_at": "2026-09-11T12:03:00+02:00",
     "status": "pending",
     "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09 fuer autonomen Hintergrund-Aufbau. Auf Nutzerwunsch 2026-09-10 vorgezogen von Mi 16.9. auf Fr 11.9. (Schema: Deep Dive/ETF zaehlen als Carousel-Slot, ergaenzend zum Wochenbewegung-Reel desselben Tages)."
+  },
+  {
+    "post_name": "tagesupdate_2026-09-10",
+    "action": "story",
+    "fire_at": "2026-09-10T19:26:00+02:00",
+    "status": "pending",
+    "note": "Nachgeholt -- der Scheduled Task ist heute zwar um 13:51 gelaufen (lastRunAt), hat aber aus ungeklaertem Grund keinen Queue-Eintrag erzeugt (kein Staging, kein Commit). Manuell nachgebaut und gequeued, 19:25 Uhr."
   }
 ]
