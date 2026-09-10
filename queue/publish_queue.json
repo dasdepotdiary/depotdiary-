@@ -1539,9 +1539,11 @@
     "post_name": "erklaerstueck_after-hours-handel",
     "action": "story",
     "fire_at": "2026-09-10T12:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2283-60869662",
-    "claimed_at": "2026-09-10T10:16:46.385573+00:00"
+    "claimed_at": "2026-09-10T10:16:46.385573+00:00",
+    "published_at": "2026-09-10T10:16:54.592893+00:00",
+    "media_id": "18093117344553743"
   },
   {
     "post_name": "personal_fehler-verlierer-gehalten",
