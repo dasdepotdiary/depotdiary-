@@ -1605,10 +1605,12 @@
     "action": "reel",
     "caption": "Guess the Stock: 4 echte Hinweise, 1 Unternehmen -- schaffst du's vor der Aufloesung?\n\nNeues Format hier im Account: keine Bewertung, kein Kursziel -- einfach ein kleines Ratespiel mit oeffentlich bekannten Fakten.\n\nKeine Anlageberatung -- nur ein Ratespiel mit echten Fakten.\n\n#depotdiary #boerse #finanzen #ratespiel #guessthestock",
     "fire_at": "2026-09-10T09:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Neues Format Guess the Stock (Netflix) -- Nutzer hat das Reel gesehen und ausdruecklich zum Posten freigegeben (2026-09-09).",
     "claimed_by": "runnervmlun5p-2055-5b228a33",
-    "claimed_at": "2026-09-10T07:16:49.657882+00:00"
+    "claimed_at": "2026-09-10T07:16:49.657882+00:00",
+    "published_at": "2026-09-10T07:17:46.968260+00:00",
+    "media_id": "18115077634799447"
   },
   {
     "post_name": "guess_the_stock_netflix",
