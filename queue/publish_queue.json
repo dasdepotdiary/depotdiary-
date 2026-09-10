@@ -1616,9 +1616,11 @@
     "post_name": "guess_the_stock_netflix",
     "action": "story",
     "fire_at": "2026-09-10T09:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2055-5b228a33",
-    "claimed_at": "2026-09-10T07:17:48.186063+00:00"
+    "claimed_at": "2026-09-10T07:17:48.186063+00:00",
+    "published_at": "2026-09-10T07:18:29.063207+00:00",
+    "media_id": "18018682946871086"
   },
   {
     "post_name": "format_wochenbewegung",
