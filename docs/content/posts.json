@@ -754,5 +754,14 @@
     "excerpt": "Die US-Armee hat Palantir und Anduril 192 Millionen Dollar fuer das KI-gestuetzte TITAN-Programm zugesprochen.",
     "cover": "assets/posts/reel_palantir_titan/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "format_depotranking",
+    "title": "Depot-Ranking: 5 fiktive Depots im Tier-Check",
+    "category": "erklaerstueck",
+    "date": "2026-09-11",
+    "excerpt": "5 erfundene Depots von Chaos bis Meisterklasse -- rein strukturell bewertet, keine Anlageberatung.",
+    "cover": "assets/posts/format_depotranking/slide_1.webp",
+    "url": null
   }
 ]

@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Thu, 10 Sep 2026 17:54:54 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 13:38:16 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -61,6 +61,14 @@
       <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Oracle, Adobe und GameStop nach den Quartalszahlen -- reine Marktbeobachtung, keine Bewertung.</description>
+    </item>
+    <item>
+      <title>Depot-Ranking: 5 fiktive Depots im Tier-Check</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">format_depotranking</guid>
+      <pubDate>Fri, 11 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>5 erfundene Depots von Chaos bis Meisterklasse -- rein strukturell bewertet, keine Anlageberatung.</description>
     </item>
     <item>
       <title>Guess the Stock: Kennst du dieses Unternehmen?</title>
