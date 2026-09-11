@@ -1777,8 +1777,10 @@
     "action": "reel",
     "caption": "Depot-Ranking: 5 erfundene Depots, von Chaos bis Meisterklasse.\n\nBewertet wird nur die Struktur -- Diversifikation, Konzentrationsrisiko -- nie einzelne Aktien.\n\nAlle Depots frei erfunden. Keine Anlageberatung.\n\n#depotdiary #boerse #finanzen #depotranking",
     "fire_at": "2026-09-11T15:38:28+02:00",
-    "status": "pending",
-    "note": "Testreel -- Nutzer hat explizit sofortige manuelle Veroeffentlichung angefragt (2026-09-11)."
+    "status": "claiming",
+    "note": "Testreel -- Nutzer hat explizit sofortige manuelle Veroeffentlichung angefragt (2026-09-11).",
+    "claimed_by": "runnervmlun5p-2292-1d693cee",
+    "claimed_at": "2026-09-11T13:51:03.474704+00:00"
   },
   {
     "post_name": "format_depotranking",
