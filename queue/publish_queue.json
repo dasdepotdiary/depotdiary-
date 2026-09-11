@@ -1644,8 +1644,10 @@
     "action": "reel",
     "caption": "3 Aktien, die diese Woche stark in Bewegung waren.\n\nOracle, Adobe und GameStop nach den Quartalszahlen -- reine Marktbeobachtung, keine Bewertung.\n\nKeine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen",
     "fire_at": "2026-09-11T09:00:00+02:00",
-    "status": "pending",
-    "note": "Neues Format, Nutzer hat Posting-Kalender fuer die neuen Formate am 2026-09-09 explizit freigegeben (max 1-2/Tag, ueber mehrere Tage verteilt)."
+    "status": "claiming",
+    "note": "Neues Format, Nutzer hat Posting-Kalender fuer die neuen Formate am 2026-09-09 explizit freigegeben (max 1-2/Tag, ueber mehrere Tage verteilt).",
+    "claimed_by": "runnervmlun5p-2075-55423c9a",
+    "claimed_at": "2026-09-11T07:19:11.089737+00:00"
   },
   {
     "post_name": "format_wochenbewegung",
