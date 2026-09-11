@@ -1732,10 +1732,12 @@
     "post_name": "personal_deep_dive_palantir",
     "action": "story",
     "fire_at": "2026-09-11T12:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Deep Dive #8 (Palantir/PLTR) -- Nutzerfreigabe 2026-09-09 fuer autonomen Hintergrund-Aufbau. Auf Nutzerwunsch 2026-09-10 vorgezogen von Mi 16.9. auf Fr 11.9. (Schema: Deep Dive/ETF zaehlen als Carousel-Slot, ergaenzend zum Wochenbewegung-Reel desselben Tages).",
     "claimed_by": "runnervmlun5p-2345-4db54688",
-    "claimed_at": "2026-09-11T10:16:55.839986+00:00"
+    "claimed_at": "2026-09-11T10:16:55.839986+00:00",
+    "published_at": "2026-09-11T10:17:07.432832+00:00",
+    "media_id": "18174821968384514"
   },
   {
     "post_name": "tagesupdate_2026-09-10",
