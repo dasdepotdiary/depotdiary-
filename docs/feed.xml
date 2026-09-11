@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 11 Sep 2026 13:38:16 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2026 14:23:55 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -45,6 +45,14 @@
       <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Zwei Preise, jede Sekunde.</description>
+    </item>
+    <item>
+      <title>Oelpreis durchbricht wieder die 100-Dollar-Marke</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">reel_oelpreis</guid>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Brent-Rohoel ueber 100 Dollar pro Barrel -- erstmals seit sechs Wochen, getrieben von der Lage im Nahen Osten.</description>
     </item>
     <item>
       <title>Palantir: 127 Millionen Dollar vom US-Militaer</title>

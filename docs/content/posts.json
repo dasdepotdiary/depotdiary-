@@ -763,5 +763,14 @@
     "excerpt": "5 erfundene Depots von Chaos bis Meisterklasse -- rein strukturell bewertet, keine Anlageberatung.",
     "cover": "assets/posts/format_depotranking/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "reel_oelpreis",
+    "title": "Oelpreis durchbricht wieder die 100-Dollar-Marke",
+    "category": "marktupdate",
+    "date": "2026-09-13",
+    "excerpt": "Brent-Rohoel ueber 100 Dollar pro Barrel -- erstmals seit sechs Wochen, getrieben von der Lage im Nahen Osten.",
+    "cover": "assets/posts/reel_oelpreis/slide_1.webp",
+    "url": null
   }
 ]
