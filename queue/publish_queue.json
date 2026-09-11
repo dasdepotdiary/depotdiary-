@@ -1795,7 +1795,9 @@
     "post_name": "story_depotranking_cta",
     "action": "story",
     "fire_at": "2026-09-11T16:02:06+02:00",
-    "status": "pending",
-    "note": "Call-to-Action fuer echte Depot-Ranking-Einsendungen (Follower schicken Depot-Struktur per DM). Nutzerwunsch 2026-09-11."
+    "status": "claiming",
+    "note": "Call-to-Action fuer echte Depot-Ranking-Einsendungen (Follower schicken Depot-Struktur per DM). Nutzerwunsch 2026-09-11.",
+    "claimed_by": "runnervmlun5p-2300-fe7cc6aa",
+    "claimed_at": "2026-09-11T14:16:08.938245+00:00"
   }
 ]
