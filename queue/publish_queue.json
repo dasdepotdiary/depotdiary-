@@ -1788,8 +1788,10 @@
     "post_name": "format_depotranking",
     "action": "story",
     "fire_at": "2026-09-11T15:38:28+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2292-1d693cee",
-    "claimed_at": "2026-09-11T13:52:08.116108+00:00"
+    "claimed_at": "2026-09-11T13:52:08.116108+00:00",
+    "published_at": "2026-09-11T13:52:21.025480+00:00",
+    "media_id": "18123935773804282"
   }
 ]
