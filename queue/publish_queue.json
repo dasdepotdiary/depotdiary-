@@ -1790,5 +1790,12 @@
     "note": "DOPPELT VEROEFFENTLICHT (Story ist ohnehin 24h-vergaenglich, geringere Prioritaet). Zweiter Media-ID: 18123935773804282 (13:52:21 Uhr).",
     "published_at": "2026-09-11T13:44:04.865060+00:00",
     "media_id": "17860519902695339"
+  },
+  {
+    "post_name": "story_depotranking_cta",
+    "action": "story",
+    "fire_at": "2026-09-11T16:02:06+02:00",
+    "status": "pending",
+    "note": "Call-to-Action fuer echte Depot-Ranking-Einsendungen (Follower schicken Depot-Struktur per DM). Nutzerwunsch 2026-09-11."
   }
 ]
