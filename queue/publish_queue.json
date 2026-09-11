@@ -1776,22 +1776,19 @@
     "post_name": "format_depotranking",
     "action": "reel",
     "caption": "Depot-Ranking: 5 erfundene Depots, von Chaos bis Meisterklasse.\n\nBewertet wird nur die Struktur -- Diversifikation, Konzentrationsrisiko -- nie einzelne Aktien.\n\nAlle Depots frei erfunden. Keine Anlageberatung.\n\n#depotdiary #boerse #finanzen #depotranking",
-    "fire_at": "2026-09-11T15:38:28+02:00",
+    "fire_at": "2026-09-11T15:41:47+02:00",
     "status": "done",
-    "note": "Testreel -- Nutzer hat explizit sofortige manuelle Veroeffentlichung angefragt (2026-09-11).",
-    "claimed_by": "runnervmlun5p-2292-1d693cee",
-    "claimed_at": "2026-09-11T13:51:03.474704+00:00",
-    "published_at": "2026-09-11T13:52:06.662402+00:00",
-    "media_id": "17914557018449887"
+    "note": "DOPPELT VEROEFFENTLICHT: mein lokaler run_queue.py-Lauf hat die Claim-Sperre uebersprungen (Arbeitsbaum war wegen assets/pexels_library/ nicht sauber) und parallel hat der GitHub-Actions-Cron denselben Eintrag ebenfalls geclaimt+gepostet. Zweiter Media-ID: 17914557018449887 (13:52:06 Uhr, claimed_by runnervmlun5p-2292-1d693cee). Muss ggf. manuell in Instagram bereinigt werden.",
+    "published_at": "2026-09-11T13:43:47.793157+00:00",
+    "media_id": "18095593730648267"
   },
   {
     "post_name": "format_depotranking",
     "action": "story",
-    "fire_at": "2026-09-11T15:38:28+02:00",
+    "fire_at": "2026-09-11T15:41:47+02:00",
     "status": "done",
-    "claimed_by": "runnervmlun5p-2292-1d693cee",
-    "claimed_at": "2026-09-11T13:52:08.116108+00:00",
-    "published_at": "2026-09-11T13:52:21.025480+00:00",
-    "media_id": "18123935773804282"
+    "note": "DOPPELT VEROEFFENTLICHT (Story ist ohnehin 24h-vergaenglich, geringere Prioritaet). Zweiter Media-ID: 18123935773804282 (13:52:21 Uhr).",
+    "published_at": "2026-09-11T13:44:04.865060+00:00",
+    "media_id": "17860519902695339"
   }
 ]
