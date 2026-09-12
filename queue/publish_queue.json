@@ -1766,9 +1766,11 @@
     "post_name": "reel_palantir_titan",
     "action": "story",
     "fire_at": "2026-09-12T09:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2355-eee40755",
-    "claimed_at": "2026-09-12T07:13:43.284066+00:00"
+    "claimed_at": "2026-09-12T07:13:43.284066+00:00",
+    "published_at": "2026-09-12T07:13:51.097964+00:00",
+    "media_id": "17895127332601360"
   },
   {
     "post_name": "tagesupdate_2026-09-11",
