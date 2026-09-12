@@ -1755,8 +1755,10 @@
     "action": "reel",
     "caption": "Palantir bekommt gerade 127 Millionen Dollar vom US-Militaer -- fuer das KI-gestuetzte TITAN-Programm.\n\nAcht Systeme, 18 Monate Lieferzeit, Teil eines 192-Millionen-Dollar-Pakets mit Anduril.\n\nKeine Anlageberatung -- nur eine Nachricht, die mir diese Woche aufgefallen ist.\n\n#depotdiary #palantir #pltr #boerse #finanzen",
     "fire_at": "2026-09-12T09:00:00+02:00",
-    "status": "pending",
-    "note": "Renditeradar-Style-Reel (echtes Pexels-B-Roll + gelbe Keyword-Highlight-Untertitel) -- autonom gebaut und gequeued (Pexels-Reels laufen laut Nutzerfreigabe 2026-09-09 komplett autonom). Fuellt Samstag, der bisher keinen eigenen Post hatte (Wochenrueckblick wird zwar samstags gebaut, aber erst sonntags veroeffentlicht)."
+    "status": "claiming",
+    "note": "Renditeradar-Style-Reel (echtes Pexels-B-Roll + gelbe Keyword-Highlight-Untertitel) -- autonom gebaut und gequeued (Pexels-Reels laufen laut Nutzerfreigabe 2026-09-09 komplett autonom). Fuellt Samstag, der bisher keinen eigenen Post hatte (Wochenrueckblick wird zwar samstags gebaut, aber erst sonntags veroeffentlicht).",
+    "claimed_by": "runnervmlun5p-2355-eee40755",
+    "claimed_at": "2026-09-12T07:12:56.275862+00:00"
   },
   {
     "post_name": "reel_palantir_titan",
