@@ -529,5 +529,16 @@
       "Mythos: Wenn eine Aktie oder ein Index fällt, war die Entscheidung ein Fehler. Realität: Schwankungen sind ein normaler Teil des Marktes -- auch etablierte Indizes wie der S&P 500 hatten historisch in fast jedem Jahr zwischenzeitliche Rückgänge.",
       "Mythos: Wer öfter kauft und verkauft, verpasst weniger Chancen und verdient mehr. Realität: Jeder Handel kann zusätzliche Kosten (Spread, Gebühren) verursachen -- mehr Aktivität allein ist kein Erfolgsfaktor."
     ]
+  },
+  {
+    "id": "payout-ratio",
+    "title": "Die Ausschüttungsquote -- wie viel vom Gewinn wirklich rausgeht.",
+    "date": "2026-09-13",
+    "body": [
+      "Nicht jeder Gewinn wird ausgezahlt.",
+      "Die Ausschüttungsquote (Payout Ratio) sagt, wie viel Prozent des Nettogewinns ein Unternehmen als Dividende an Aktionäre auszahlt -- der Rest bleibt im Unternehmen.",
+      "Schüttet ein Unternehmen fast seinen gesamten Gewinn aus, bleibt wenig Puffer für schlechte Jahre -- die Dividende kann dann schneller gekürzt werden.",
+      "Viele Wachstumsunternehmen schütten bewusst wenig oder nichts aus, weil sie den Gewinn lieber ins eigene Wachstum investieren."
+    ]
   }
 ]

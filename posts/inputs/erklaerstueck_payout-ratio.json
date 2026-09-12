@@ -1,0 +1,22 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Die *Ausschüttungsquote* -- wie viel vom Gewinn wirklich rausgeht.",
+  "hook_sub": "Nicht jeder Gewinn wird ausgezahlt.",
+  "sections": [
+    {
+      "headline": "Sie zeigt den *Anteil* des Gewinns.",
+      "body": "Die Ausschüttungsquote (Payout Ratio) sagt, wie viel Prozent des Nettogewinns ein Unternehmen als Dividende an Aktionäre auszahlt -- der Rest bleibt im Unternehmen."
+    },
+    {
+      "headline": "Eine *hohe* Quote ist nicht automatisch gut.",
+      "body": "Schüttet ein Unternehmen fast seinen gesamten Gewinn aus, bleibt wenig Puffer für schlechte Jahre -- die Dividende kann dann schneller gekürzt werden."
+    },
+    {
+      "headline": "Eine *niedrige* Quote ist nicht automatisch schlecht.",
+      "body": "Viele Wachstumsunternehmen schütten bewusst wenig oder nichts aus, weil sie den Gewinn lieber ins eigene Wachstum investieren."
+    }
+  ],
+  "cta_headline": "Deshalb schau ich mir *beides* an -- Quote und Kontext.",
+  "cta_body": "Keine Anlageberatung -- nur eine Kennzahl, die ich mir gerne anschaue.",
+  "date": "2026-09-13"
+}

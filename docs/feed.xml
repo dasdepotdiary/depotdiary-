@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Fri, 11 Sep 2026 14:23:55 +0000</lastBuildDate>
+    <lastBuildDate>Sat, 12 Sep 2026 23:02:36 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -53,6 +53,22 @@
       <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
       <category>marktupdate</category>
       <description>Brent-Rohoel ueber 100 Dollar pro Barrel -- erstmals seit sechs Wochen, getrieben von der Lage im Nahen Osten.</description>
+    </item>
+    <item>
+      <title>Die Ausschüttungsquote -- wie viel vom Gewinn wirklich rausgeht.</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">erklaerstueck_payout-ratio</guid>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <category>Erklärstück</category>
+      <description>Nicht jeder Gewinn wird ausgezahlt.</description>
+    </item>
+    <item>
+      <title>Guess the Stock: Wer ist Europas wertvollstes Tech-Unternehmen?</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">guess_the_stock_asml</guid>
+      <pubDate>Sun, 13 Sep 2026 00:00:00 +0000</pubDate>
+      <category>ratespiel</category>
+      <description>4 echte Hinweise, 1 Unternehmen -- Runde 2 des Ratespiel-Formats.</description>
     </item>
     <item>
       <title>Palantir: 127 Millionen Dollar vom US-Militaer</title>

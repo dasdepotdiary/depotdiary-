@@ -772,5 +772,23 @@
     "excerpt": "Brent-Rohoel ueber 100 Dollar pro Barrel -- erstmals seit sechs Wochen, getrieben von der Lage im Nahen Osten.",
     "cover": "assets/posts/reel_oelpreis/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_payout-ratio",
+    "title": "Die Ausschüttungsquote -- wie viel vom Gewinn wirklich rausgeht.",
+    "category": "erklaerstueck",
+    "date": "2026-09-13",
+    "excerpt": "Nicht jeder Gewinn wird ausgezahlt.",
+    "cover": "assets/posts/erklaerstueck_payout-ratio/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "guess_the_stock_asml",
+    "title": "Guess the Stock: Wer ist Europas wertvollstes Tech-Unternehmen?",
+    "category": "ratespiel",
+    "date": "2026-09-13",
+    "excerpt": "4 echte Hinweise, 1 Unternehmen -- Runde 2 des Ratespiel-Formats.",
+    "cover": "assets/posts/guess_the_stock_asml/slide_1.webp",
+    "url": null
   }
 ]

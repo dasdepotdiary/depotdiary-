@@ -1823,5 +1823,28 @@
     "action": "story",
     "fire_at": "2026-09-13T09:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "guess_the_stock_asml",
+    "action": "reel",
+    "caption": "Guess the Stock, Runde 2: 4 echte Hinweise, 1 Unternehmen.\n\nDas Unternehmen hat ein 100%-Monopol auf eine Technologie, die jeder moderne Hochleistungs-Chip braucht.\n\nKeine Anlageberatung -- nur ein Ratespiel mit echten Fakten.\n\n#depotdiary #boerse #finanzen #ratespiel #guessthestock",
+    "fire_at": "2026-09-13T15:00:00+02:00",
+    "status": "pending",
+    "note": "Guess the Stock Runde 2 (ASML) -- fuer heute Nachmittag gequeued, drittes Stueck des Tages."
+  },
+  {
+    "post_name": "guess_the_stock_asml",
+    "action": "story",
+    "fire_at": "2026-09-13T15:03:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "erklaerstueck_payout-ratio",
+    "action": "carousel",
+    "caption": "Die Ausschuettungsquote -- wie viel vom Gewinn wirklich rausgeht.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
+    "slide_count": 5,
+    "fire_at": "2026-09-16T09:00:00+02:00",
+    "status": "pending",
+    "note": "Einfaches Erklaerstueck fuer Mittwoch (bisher offener Tag), autonom gebaut."
   }
 ]
