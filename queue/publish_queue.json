@@ -1870,5 +1870,19 @@
     "claimed_at": "2026-09-12T23:10:18.306705+00:00",
     "published_at": "2026-09-12T23:10:59.541004+00:00",
     "media_id": "18111546359131551"
+  },
+  {
+    "post_name": "reel_fedzinsen",
+    "action": "reel",
+    "caption": "90% Wahrscheinlichkeit fuer eine Zinserhoehung -- diesen Mittwoch.\n\nDie US-Notenbank trifft sich am 16. September. Nicht eine Senkung, eine Erhoehung -- um die Inflation zu bremsen.\n\nKeine Anlageberatung -- nur eine Zahl, die mir diese Woche aufgefallen ist.\n\n#depotdiary #boerse #finanzen #fed #zinsen",
+    "fire_at": "2026-09-14T09:00:00+02:00",
+    "status": "pending",
+    "note": "Renditeradar-Style-Reel zur bevorstehenden Fed-Entscheidung -- fuellt Montag, bisher offener Tag."
+  },
+  {
+    "post_name": "reel_fedzinsen",
+    "action": "story",
+    "fire_at": "2026-09-14T09:03:00+02:00",
+    "status": "pending"
   }
 ]

@@ -790,5 +790,14 @@
     "excerpt": "4 echte Hinweise, 1 Unternehmen -- Runde 2 des Ratespiel-Formats.",
     "cover": "assets/posts/guess_the_stock_asml/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "reel_fedzinsen",
+    "title": "Fed-Entscheidung: 90% Wahrscheinlichkeit fuer Zinserhoehung",
+    "category": "marktupdate",
+    "date": "2026-09-14",
+    "excerpt": "Die US-Notenbank trifft sich am 16. September -- der Markt preist eine Zinserhoehung ein, nicht eine Senkung.",
+    "cover": "assets/posts/reel_fedzinsen/slide_1.webp",
+    "url": null
   }
 ]

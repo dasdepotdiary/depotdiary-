@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sat, 12 Sep 2026 23:02:36 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 20:27:23 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -37,6 +37,14 @@
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Drei Wissensfragen zur Boersenmechanik -- kein Rating, kein Kursziel, einfach ein Ratespiel.</description>
+    </item>
+    <item>
+      <title>Fed-Entscheidung: 90% Wahrscheinlichkeit fuer Zinserhoehung</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">reel_fedzinsen</guid>
+      <pubDate>Mon, 14 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Die US-Notenbank trifft sich am 16. September -- der Markt preist eine Zinserhoehung ein, nicht eine Senkung.</description>
     </item>
     <item>
       <title>Die Geld-Brief-Spanne -- der kleine Unterschied, den kaum jemand bemerkt.</title>
