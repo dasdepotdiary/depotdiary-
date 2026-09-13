@@ -799,5 +799,14 @@
     "excerpt": "Die US-Notenbank trifft sich am 16. September -- der Markt preist eine Zinserhoehung ein, nicht eine Senkung.",
     "cover": "assets/posts/reel_fedzinsen/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_staatsverschuldung",
+    "title": "Wie hoch ist die Staatsverschuldung wirklich?",
+    "category": "erklaerstueck",
+    "date": "2026-09-13",
+    "excerpt": "USA und Deutschland im Vergleich -- nur die Zahlen.",
+    "cover": "assets/posts/erklaerstueck_staatsverschuldung/slide_1.webp",
+    "url": null
   }
 ]

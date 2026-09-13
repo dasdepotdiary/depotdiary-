@@ -1,0 +1,22 @@
+{
+  "eyebrow": "ERKLÄRSTÜCK",
+  "hook": "Wie hoch ist die *Staatsverschuldung* wirklich?",
+  "hook_sub": "USA und Deutschland im Vergleich -- nur die Zahlen.",
+  "sections": [
+    {
+      "headline": "Die USA: über *38 Billionen* Dollar.",
+      "body": "Ein historisches Allzeithoch (Stand Sommer 2025). Allein 2024 gab die Regierung 6,8 Billionen Dollar aus, nahm aber nur 4,9 Billionen ein -- die Differenz von 1,8 Billionen kam als neue Schulden obendrauf."
+    },
+    {
+      "headline": "Deutschland: rund *2,5 Billionen* Euro.",
+      "body": "Das entspricht etwa 63,5% der deutschen Wirtschaftsleistung (BIP) -- rein rechnerisch knapp 30.000 Euro Schulden pro Kopf."
+    },
+    {
+      "headline": "Beide Zahlen wachsen -- *unterschiedlich* schnell.",
+      "body": "Die USA haben in 92 der letzten 125 Jahre mehr ausgegeben als eingenommen. In Deutschland bremst die Schuldenbremse das Wachstum staerker, auch wenn die Schulden zuletzt wieder gestiegen sind."
+    }
+  ],
+  "cta_headline": "Zwei *völlig* unterschiedliche Grössenordnungen.",
+  "cta_body": "Keine Bewertung, keine Politik -- nur die nackten Zahlen, wie sie oeffentlich gemeldet werden.",
+  "date": "2026-09-13"
+}
