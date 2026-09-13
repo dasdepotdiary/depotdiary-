@@ -1830,7 +1830,9 @@
     "post_name": "reel_oelpreis",
     "action": "story",
     "fire_at": "2026-09-13T09:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2305-973855e9",
+    "claimed_at": "2026-09-13T10:39:05.669808+00:00"
   },
   {
     "post_name": "guess_the_stock_asml",
