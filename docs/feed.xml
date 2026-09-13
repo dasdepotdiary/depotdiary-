@@ -5,7 +5,7 @@
     <link>https://dasdepotdiary.github.io/depotdiary-/</link>
     <description>Ein 19-jähriges Depot, offen dokumentiert. Keine Anlageberatung, nur mein eigener Weg.</description>
     <language>de-AT</language>
-    <lastBuildDate>Sun, 13 Sep 2026 20:28:34 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2026 20:44:15 +0000</lastBuildDate>
     <item>
       <title>Ein All-Time-High ist seltener eine Warnung, als es klingt.</title>
       <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
@@ -37,6 +37,14 @@
       <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
       <category>Erklärstück</category>
       <description>Drei Wissensfragen zur Boersenmechanik -- kein Rating, kein Kursziel, einfach ein Ratespiel.</description>
+    </item>
+    <item>
+      <title>OpenAI verschiebt Boersengang wegen KI-Sicherheitsbedenken</title>
+      <link>https://dasdepotdiary.github.io/depotdiary-/archiv/</link>
+      <guid isPermaLink="false">reel_openai_pause</guid>
+      <pubDate>Tue, 15 Sep 2026 00:00:00 +0000</pubDate>
+      <category>marktupdate</category>
+      <description>Sam Altman pausiert den geplanten Boersengang -- einen Tag, nachdem Anthropic-Chef Dario Amodei zu einem Tempo-Wechsel bei der KI-Entwicklung aufgerufen hat.</description>
     </item>
     <item>
       <title>Fed-Entscheidung: 90% Wahrscheinlichkeit fuer Zinserhoehung</title>

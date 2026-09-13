@@ -808,5 +808,14 @@
     "excerpt": "USA und Deutschland im Vergleich -- nur die Zahlen.",
     "cover": "assets/posts/erklaerstueck_staatsverschuldung/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "reel_openai_pause",
+    "title": "OpenAI verschiebt Boersengang wegen KI-Sicherheitsbedenken",
+    "category": "marktupdate",
+    "date": "2026-09-15",
+    "excerpt": "Sam Altman pausiert den geplanten Boersengang -- einen Tag, nachdem Anthropic-Chef Dario Amodei zu einem Tempo-Wechsel bei der KI-Entwicklung aufgerufen hat.",
+    "cover": "assets/posts/reel_openai_pause/slide_1.webp",
+    "url": null
   }
 ]
