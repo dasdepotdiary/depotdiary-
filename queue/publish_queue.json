@@ -1852,9 +1852,11 @@
     "post_name": "guess_the_stock_asml",
     "action": "story",
     "fire_at": "2026-09-13T15:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2121-666c8de0",
-    "claimed_at": "2026-09-13T14:42:34.445814+00:00"
+    "claimed_at": "2026-09-13T14:42:34.445814+00:00",
+    "published_at": "2026-09-13T14:43:11.641868+00:00",
+    "media_id": "18119767657908028"
   },
   {
     "post_name": "erklaerstueck_payout-ratio",
