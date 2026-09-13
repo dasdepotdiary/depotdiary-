@@ -83,8 +83,8 @@ def photo_background(seed=1):
     x_off = int((resized.width - W) * (0.3 + 0.1 * (seed % 3)))
     y_off = int((resized.height - H) * 0.2)
     cropped = resized.crop((x_off, y_off, x_off + W, y_off + H))
-    darkened = ImageEnhance.Brightness(cropped).enhance(0.22)
-    darkened = ImageEnhance.Contrast(darkened).enhance(1.1)
+    darkened = ImageEnhance.Brightness(cropped).enhance(0.42)
+    darkened = ImageEnhance.Contrast(darkened).enhance(1.15)
     # leichte dunkle Vignette oben/unten fuer Textkontrast
     img = darkened.convert("RGB")
     vignette = Image.new("L", (W, H), 0)
@@ -108,33 +108,33 @@ def base_slide(seed=1):
 
 
 def build_header(draw, y=36):
-    handle_font = font(B.SANS_BOLD, 17)
+    handle_font = font(B.SANS_BOLD, 20)
     text = f"{OWN_HANDLE}  x  {PARTNER_HANDLE}"
     tw = draw.textlength(text, font=handle_font)
     draw.text((W / 2 - tw / 2, y), text, font=handle_font, fill=CREAM)
-    y += 26
+    y += 30
     return y + 12
 
 
 def draw_footer(draw, idx, n_total, text="Keine Anlageberatung -- persoenliche Auswahl, kein Ratschlag."):
-    disclaimer_font = font(B.SANS_BOLD, 16)
+    disclaimer_font = font(B.SANS_BOLD, 18)
     lines = wrap_text(draw, text, disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 100)
-    dy = H - 34 - 22 * len(lines)
+    dy = H - 36 - 24 * len(lines)
     for line in lines:
         draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
-        dy += 22
-    page_font = font(B.SANS_BOLD, 16)
+        dy += 24
+    page_font = font(B.SANS_BOLD, 18)
     page_text = f"{idx:02d} / {n_total:02d}"
     pw = draw.textlength(page_text, font=page_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, H - 34 - 22 * len(lines)), page_text, font=page_font, fill=MUTED)
+    draw.text((W - B.MARGIN_RIGHT - pw, H - 36 - 24 * len(lines)), page_text, font=page_font, fill=MUTED)
 
 
 def draw_position_card(img, draw, top, pos, accent):
-    logo_r = 40
+    logo_r = 52
     logo_cx = B.MARGIN_LEFT + logo_r
     logo_cy = top + logo_r + 4
     draw.ellipse([logo_cx - logo_r, logo_cy - logo_r, logo_cx + logo_r, logo_cy + logo_r],
-                 fill=CREAM, outline=accent, width=3)
+                 fill=CREAM, outline=accent, width=4)
     if pos.get("logo"):
         logo = Image.open(ROOT / "assets" / pos["logo"]).convert("RGBA")
         target = int(logo_r * 1.5)
@@ -143,24 +143,24 @@ def draw_position_card(img, draw, top, pos, accent):
         img.paste(logo, (logo_cx - logo.width // 2, logo_cy - logo.height // 2), logo)
         draw = ImageDraw.Draw(img)
     else:
-        etf_font = font(B.SANS_BOLD, 14)
+        etf_font = font(B.SANS_BOLD, 18)
         tw = draw.textlength("ETF", font=etf_font)
-        draw.text((logo_cx - tw / 2, logo_cy - 8), "ETF", font=etf_font, fill=accent)
+        draw.text((logo_cx - tw / 2, logo_cy - 10), "ETF", font=etf_font, fill=accent)
 
-    text_x = logo_cx + logo_r + 20
-    name_font = font(B.SANS_BOLD, 26)
-    draw.text((text_x, top), pos["name"].upper(), font=name_font, fill=CREAM)
-    amt_font = font(B.SANS_BOLD, 19)
-    draw.text((text_x, top + 32), pos["amount"], font=amt_font, fill=accent)
-    brush_underline(draw, text_x, top + 58, 60, accent, thickness=5)
+    text_x = logo_cx + logo_r + 24
+    name_font = font(B.SANS_BOLD, 34)
+    draw.text((text_x, top + 4), pos["name"].upper(), font=name_font, fill=CREAM)
+    amt_font = font(B.SANS_BOLD, 25)
+    draw.text((text_x, top + 44), pos["amount"], font=amt_font, fill=accent)
+    brush_underline(draw, text_x, top + 78, 70, accent, thickness=6)
 
-    why_font = font(B.SANS_BOLD, 16)
+    why_font = font(B.SANS_BOLD, 21)
     max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
     lines = wrap_text(draw, pos["why"], why_font, max_w)
-    y = logo_cy + logo_r + 20
+    y = logo_cy + logo_r + 26
     for line in lines[:5]:
         draw.text((B.MARGIN_LEFT, y), line, font=why_font, fill=MUTED)
-        y += 21
+        y += 27
     return y
 
 
@@ -168,32 +168,32 @@ def slide_intro():
     img, draw = base_slide(seed=1)
     build_header(draw)
 
-    eyebrow_font = font(B.SANS_BOLD, 17)
+    eyebrow_font = font(B.SANS_BOLD, 20)
     draw.text((B.MARGIN_LEFT, 100), "COLLAB · GEDANKENEXPERIMENT", font=eyebrow_font, fill=TEAL)
 
-    y = 138
-    draw.text((B.MARGIN_LEFT, y), "10.000 EURO.", font=font(B.SANS_BOLD, 58), fill=CREAM)
-    y += 66
-    draw.text((B.MARGIN_LEFT, y), "WIE WUERDEN WIR SIE", font=font(B.SANS_BOLD, 34), fill=CREAM)
-    y += 40
-    draw.text((B.MARGIN_LEFT, y), "AUFTEILEN?", font=font(B.SANS_BOLD, 34), fill=CREAM)
-    y += 44
-    brush_underline(draw, B.MARGIN_LEFT, y, 140, TEAL, thickness=8)
-    y += 40
+    y = 142
+    draw.text((B.MARGIN_LEFT, y), "10.000 EURO.", font=font(B.SANS_BOLD, 72), fill=CREAM)
+    y += 82
+    draw.text((B.MARGIN_LEFT, y), "WIE WUERDEN WIR SIE", font=font(B.SANS_BOLD, 42), fill=CREAM)
+    y += 50
+    draw.text((B.MARGIN_LEFT, y), "AUFTEILEN?", font=font(B.SANS_BOLD, 42), fill=CREAM)
+    y += 54
+    brush_underline(draw, B.MARGIN_LEFT, y, 160, TEAL, thickness=9)
+    y += 48
     sub_lines = wrap_text(draw, "Zwei komplett unterschiedliche Ansaetze -- ein Welt-ETF als Basis vs. gezielte Einzelaktien.",
-                           font(B.SANS_BOLD, 19), W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
+                           font(B.SANS_BOLD, 24), W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in sub_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 19), fill=MUTED)
-        y += 26
+        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 24), fill=MUTED)
+        y += 32
 
-    y += 40
-    draw.text((B.MARGIN_LEFT, y), PARTNER_HANDLE, font=font(B.SANS_BOLD, 18), fill=TEAL)
-    y += 26
-    draw.text((B.MARGIN_LEFT, y), "50% ETF · 30% Wachstum · 20% Bitcoin", font=font(B.SANS_BOLD, 21), fill=CREAM)
-    y += 46
-    draw.text((B.MARGIN_LEFT, y), OWN_HANDLE, font=font(B.SANS_BOLD, 18), fill=RED)
-    y += 26
-    draw.text((B.MARGIN_LEFT, y), "5x 20% -- Einzelaktien + Bitcoin, gleich gewichtet", font=font(B.SANS_BOLD, 21), fill=CREAM)
+    y += 50
+    draw.text((B.MARGIN_LEFT, y), PARTNER_HANDLE, font=font(B.SANS_BOLD, 22), fill=TEAL)
+    y += 32
+    draw.text((B.MARGIN_LEFT, y), "50% ETF · 30% Wachstum · 20% Bitcoin", font=font(B.SANS_BOLD, 26), fill=CREAM)
+    y += 56
+    draw.text((B.MARGIN_LEFT, y), OWN_HANDLE, font=font(B.SANS_BOLD, 22), fill=RED)
+    y += 32
+    draw.text((B.MARGIN_LEFT, y), "5x 20% -- Einzelaktien + Bitcoin, gleich gewichtet", font=font(B.SANS_BOLD, 26), fill=CREAM)
 
     draw_footer(draw, 1, 9)
     return img
@@ -203,16 +203,16 @@ def slide_positions(seed, idx, n_total, label, handle, accent, positions):
     img, draw = base_slide(seed=seed)
     y = build_header(draw)
 
-    badge_font = font(B.SANS_BOLD, 16)
+    badge_font = font(B.SANS_BOLD, 20)
     draw.text((B.MARGIN_LEFT, y), f"{label} -- {handle}", font=badge_font, fill=accent)
-    y += 30
-    brush_underline(draw, B.MARGIN_LEFT, y, 90, accent, thickness=5)
-    y += 30
+    y += 34
+    brush_underline(draw, B.MARGIN_LEFT, y, 100, accent, thickness=6)
+    y += 36
 
     for pos in positions:
         y = draw_position_card(img, draw, y, pos, accent)
         draw = ImageDraw.Draw(img)
-        y += 36
+        y += 48
 
     draw_footer(draw, idx, n_total)
     return img
@@ -221,17 +221,17 @@ def slide_positions(seed, idx, n_total, label, handle, accent, positions):
 def slide_closing_quote(idx, n_total):
     img, draw = base_slide(seed=42)
     y = build_header(draw)
-    y += 30
+    y += 50
 
-    eyebrow_font = font(B.SANS_BOLD, 17)
+    eyebrow_font = font(B.SANS_BOLD, 20)
     draw.text((B.MARGIN_LEFT, y), f"{PARTNER_HANDLE} DAZU", font=eyebrow_font, fill=TEAL)
-    y += 40
+    y += 52
 
-    quote_font = font(B.SANS_BOLD, 27)
+    quote_font = font(B.SANS_BOLD, 36)
     lines = wrap_text(draw, f'"{PARTNER_CLOSING}"', quote_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=quote_font, fill=CREAM)
-        y += 36
+        y += 46
 
     draw_footer(draw, idx, n_total)
     return img
@@ -242,25 +242,25 @@ def slide_overlap(idx, n_total):
     y = build_header(draw)
     y += 50
 
-    eyebrow_font = font(B.SANS_BOLD, 17)
+    eyebrow_font = font(B.SANS_BOLD, 20)
     draw.text((B.MARGIN_LEFT, y), "ZUFALL?", font=eyebrow_font, fill=RED)
-    y += 44
+    y += 50
 
     title_lines = ["BEIDE HABEN", "UNABHAENGIG VONEINANDER", "AUF SERVICENOW GESETZT."]
     for line in title_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 34), fill=CREAM)
-        y += 42
-    brush_underline(draw, B.MARGIN_LEFT, y + 4, 140, RED, thickness=8)
-    y += 44
+        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 44), fill=CREAM)
+        y += 54
+    brush_underline(draw, B.MARGIN_LEFT, y + 4, 160, RED, thickness=9)
+    y += 54
 
     body_lines = wrap_text(
         draw,
         "Ohne Absprache sind wir beide bei derselben Aktie gelandet -- ein Zeichen dafuer, dass die Story hinter dem Unternehmen bei mehreren unabhaengig ueberzeugt.",
-        font(B.SANS_BOLD, 20), W - B.MARGIN_LEFT - B.MARGIN_RIGHT,
+        font(B.SANS_BOLD, 26), W - B.MARGIN_LEFT - B.MARGIN_RIGHT,
     )
     for line in body_lines:
-        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 20), fill=MUTED)
-        y += 28
+        draw.text((B.MARGIN_LEFT, y), line, font=font(B.SANS_BOLD, 26), fill=MUTED)
+        y += 34
 
     draw_footer(draw, idx, n_total)
     return img
@@ -269,26 +269,26 @@ def slide_overlap(idx, n_total):
 def slide_outro(idx, n_total):
     img, draw = base_slide(seed=7)
     y = build_header(draw)
-    y += 40
-
-    title_font = font(B.SANS_BOLD, 38)
-    for line in ["WELCHEN ANSATZ", "WUERDEST DU WAEHLEN?"]:
-        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
-        y += 46
-    brush_underline(draw, B.MARGIN_LEFT, y + 4, 140, TEAL, thickness=8)
     y += 50
 
-    body_font = font(B.SANS_BOLD, 21)
+    title_font = font(B.SANS_BOLD, 48)
+    for line in ["WELCHEN ANSATZ", "WUERDEST DU WAEHLEN?"]:
+        draw.text((B.MARGIN_LEFT, y), line, font=title_font, fill=CREAM)
+        y += 58
+    brush_underline(draw, B.MARGIN_LEFT, y + 4, 160, TEAL, thickness=9)
+    y += 60
+
+    body_font = font(B.SANS_BOLD, 26)
     lines = wrap_text(draw, "Schreib's uns in die Kommentare -- bei beiden Accounts.", body_font,
                        W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
     for line in lines:
         draw.text((B.MARGIN_LEFT, y), line, font=body_font, fill=CREAM)
-        y += 28
+        y += 34
 
-    y += 50
-    draw.text((B.MARGIN_LEFT, y), "Rein hypothetisch, keine Rangfolge --", font=font(B.SANS_BOLD, 19), fill=MUTED)
-    y += 26
-    draw.text((B.MARGIN_LEFT, y), "nur zwei persoenliche Denkweisen.", font=font(B.SANS_BOLD, 19), fill=MUTED)
+    y += 60
+    draw.text((B.MARGIN_LEFT, y), "Rein hypothetisch, keine Rangfolge --", font=font(B.SANS_BOLD, 24), fill=MUTED)
+    y += 32
+    draw.text((B.MARGIN_LEFT, y), "nur zwei persoenliche Denkweisen.", font=font(B.SANS_BOLD, 24), fill=MUTED)
 
     draw_footer(draw, idx, n_total)
     return img
