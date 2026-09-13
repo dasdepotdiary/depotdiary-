@@ -1920,10 +1920,12 @@
     "action": "reel",
     "caption": "Diese Woche in meinem Depot -- kurzer Rueckblick, was sich getan hat.\n\nHermes und Metaplanet aufgestockt, Uber neu dazu, Sparplaene liefen normal -- nichts verkauft.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #depotupdate",
     "fire_at": "2026-09-14T00:17:58+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Als Reel statt Carousel, auf Nutzerwunsch -- sofort veroeffentlicht.",
     "claimed_by": "Surface4RA-26000-d32be8a3",
-    "claimed_at": "2026-09-13T22:24:23.415176+00:00"
+    "claimed_at": "2026-09-13T22:24:23.415176+00:00",
+    "published_at": "2026-09-13T22:25:14.987959+00:00",
+    "media_id": "18189899986400804"
   },
   {
     "post_name": "erklaerstueck_woche-im-depot",
