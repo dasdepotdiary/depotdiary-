@@ -1,14 +1,15 @@
 {
   "partner_positions": [
     {"name": "Globaler ETF", "amount": "5.000 € (50%)", "logo": null, "ticker": "WELT-ETF",
-     "why": "Ein moeglichst breit aufgestellter Welt-ETF sorgt fuer Diversifikation ueber viele Unternehmen und Regionen -- das Fundament des langfristigen Vermoegensaufbaus."},
+     "why": "Das waere fuer mich die Basis. Ein moeglichst breit aufgestellter Welt-ETF sorgt fuer Diversifikation ueber viele Unternehmen und Regionen und bildet das Fundament meines langfristigen Vermoegensaufbaus."},
     {"name": "MercadoLibre", "amount": "1.500 € (15%)", "logo": "mercadolibre_logo_icon.png", "ticker": "MELI",
-     "why": "Langfristig grosses Wachstumspotenzial durch die Kombination aus E-Commerce und Fintech -- die Entwicklung des lateinamerikanischen Marktes ist spannend."},
+     "why": "Hier sehe ich langfristig grosses Wachstumspotenzial durch die Kombination aus E-Commerce und Fintech. Gerade die Entwicklung des lateinamerikanischen Marktes finde ich spannend."},
     {"name": "ServiceNow", "amount": "1.500 € (15%)", "logo": "servicenow_logo_icon.png", "ticker": "NOW",
-     "why": "Interessantes Wachstumsunternehmen im Bereich Digitalisierung und Unternehmenssoftware -- die starke Position bei Workflow-Automatisierung macht die Aktie spannend."},
+     "why": "ServiceNow ist fuer mich ein interessantes Wachstumsunternehmen im Bereich Digitalisierung und Unternehmenssoftware. Die starke Position im Bereich Workflow-Automatisierung und die langfristige Entwicklung rund um KI machen die Aktie fuer mich sehr interessant."},
     {"name": "Bitcoin", "amount": "2.000 € (20%)", "logo": "btc_logo_icon.png", "ticker": "BTC",
-     "why": "Die risikoreichste Position -- langfristig Potenzial in einem knappen, digitalen Asset, aber bewusst auf 20% begrenzt wegen der hoeheren Schwankungen."}
+     "why": "Bitcoin waere fuer mich die risikoreichste Position. Ich sehe langfristig Potenzial in einem knappen, digitalen und dezentralen Asset. Gleichzeitig ist mir bewusst, dass die Schwankungen deutlich hoeher sind -- deshalb wuerde ich es bewusst auf 20% begrenzen."}
   ],
+  "partner_closing": "Ich brauche fuer mich nicht moeglichst viele Positionen. Entscheidend ist, dass jede Position eine klare Aufgabe im System hat und ich auch langfristig hinter der Investmentthese stehe.",
   "own_positions": [
     {"name": "Amazon", "amount": "2.000 € (20%)", "logo": "amzn_logo_icon.png", "ticker": "AMZN",
      "why": "E-Commerce-Marktfuehrer mit AWS als margenstarkem Cloud-Standbein -- nicht nur ein Online-Shop, sondern auch die groesste Cloud-Infrastruktur der Welt."},
@@ -16,11 +17,9 @@
      "why": "Praktisch jeder moderne Hochleistungs-Chip laeuft ueber TSMCs Fertigung -- eine Marktstellung, die kein Wettbewerber kurzfristig einholen kann."},
     {"name": "Visa", "amount": "2.000 € (20%)", "logo": "v_logo_icon.png", "ticker": "V",
      "why": "Zahlungsnetzwerk mit enormer Skalierbarkeit -- jede Kartenzahlung weltweit bringt Gebuehren, ohne dass Visa selbst das Kreditrisiko traegt."},
-    {"name": "ServiceNow", "amount": "1.000 € (10%)", "logo": "servicenow_logo_icon.png", "ticker": "NOW",
+    {"name": "ServiceNow", "amount": "2.000 € (20%)", "logo": "servicenow_logo_icon.png", "ticker": "NOW",
      "why": "Unternehmenssoftware fuer Workflow-Automatisierung, die mit KI-Integration strukturell weiterwachsen duerfte -- hohe Kundenbindung durch zentrale Systeme."},
     {"name": "Bitcoin", "amount": "2.000 € (20%)", "logo": "btc_logo_icon.png", "ticker": "BTC",
-     "why": "Knappes, dezentrales Asset als Beimischung -- bewusst nicht mehr als 20%, weil die Schwankungen deutlich hoeher sind als bei den Aktienpositionen."},
-    {"name": "CoreWeave", "amount": "1.000 € (10%)", "logo": "coreweave_logo_icon.png", "ticker": "CRWV",
-     "why": "Spezialisierter Cloud-Anbieter fuer KI-Rechenleistung -- die spekulativste Position im Depot, genau deshalb bewusst nur mit kleinem Anteil dabei."}
+     "why": "Knappes, dezentrales Asset als Beimischung -- bewusst genauso hoch gewichtet wie die Einzelaktien, weil ich langfristig an das asymmetrische Potenzial glaube."}
   ]
 }
