@@ -1681,10 +1681,12 @@
     "caption": "Die Geld-Brief-Spanne -- der kleine Unterschied, den kaum jemand bemerkt.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-13T09:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels).",
     "claimed_by": "runnervmlun5p-2305-973855e9",
-    "claimed_at": "2026-09-13T10:36:58.951220+00:00"
+    "claimed_at": "2026-09-13T10:36:58.951220+00:00",
+    "published_at": "2026-09-13T10:37:29.943068+00:00",
+    "media_id": "18116683288968613"
   },
   {
     "post_name": "erklaerstueck_blue-chips",
