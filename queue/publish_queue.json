@@ -1914,5 +1914,14 @@
     "fire_at": "2026-09-16T20:00:00+02:00",
     "status": "pending",
     "note": "Carnival Q3-Zahlen Do 17.9. vor Boersenoeffnung -- Abend vorher gepostet, matcht das etablierte Schnell-Check-Muster (Kroger/GameStop/Chewy)."
+  },
+  {
+    "post_name": "erklaerstueck_woche-im-depot",
+    "action": "carousel",
+    "caption": "Diese Woche in meinem Depot -- kurzer Rueckblick, was sich getan hat.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #depotupdate",
+    "slide_count": 5,
+    "fire_at": "2026-09-14T00:09:12+02:00",
+    "status": "pending",
+    "note": "Wochenrueckblick zum eigenen Depot -- reale Aktivitaet (Hermes/Metaplanet aufgestockt, Uber neu, Sparplaene normal), sofort auf Nutzerwunsch."
   }
 ]

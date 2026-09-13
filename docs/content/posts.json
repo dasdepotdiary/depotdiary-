@@ -826,5 +826,14 @@
     "excerpt": "Die weltgrößte Kreuzfahrtreederei legt Q3-Zahlen vor.",
     "cover": "assets/posts/marktupdate_ccl-check/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "erklaerstueck_woche-im-depot",
+    "title": "Diese Woche in meinem Depot.",
+    "category": "erklaerstueck",
+    "date": "2026-09-14",
+    "excerpt": "Kurzer Rueckblick, was sich getan hat.",
+    "cover": "assets/posts/erklaerstueck_woche-im-depot/slide_1.webp",
+    "url": null
   }
 ]

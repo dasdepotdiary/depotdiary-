@@ -1,0 +1,22 @@
+{
+  "eyebrow": "DEPOT-UPDATE",
+  "hook": "Diese *Woche* in meinem Depot.",
+  "hook_sub": "Kurzer Rueckblick, was sich getan hat.",
+  "sections": [
+    {
+      "headline": "Zugekauft: *Hermès* und *Metaplanet*.",
+      "body": "Zwei bestehende Positionen aufgestockt -- beide waren schon vorher im Depot, jetzt mit etwas mehr Gewicht."
+    },
+    {
+      "headline": "Neu dazugekommen: *Uber*.",
+      "body": "Eine neue Position diese Woche -- der erste Kauf in dieses Unternehmen."
+    },
+    {
+      "headline": "Sparplaene liefen *wie immer*.",
+      "body": "Ganz normal weitergelaufen, keine Aenderungen -- und verkauft habe ich diese Woche nichts."
+    }
+  ],
+  "cta_headline": "Naechste Woche zeig ich wieder, was sich getan hat.",
+  "cta_body": "Keine Anlageberatung -- nur mein eigenes Depot.",
+  "date": "2026-09-14"
+}
