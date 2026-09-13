@@ -1931,8 +1931,10 @@
     "post_name": "erklaerstueck_woche-im-depot",
     "action": "story",
     "fire_at": "2026-09-14T00:17:58+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-26000-d32be8a3",
-    "claimed_at": "2026-09-13T22:25:19.120774+00:00"
+    "claimed_at": "2026-09-13T22:25:19.120774+00:00",
+    "published_at": "2026-09-13T22:25:35.773611+00:00",
+    "media_id": "18016023074950183"
   }
 ]
