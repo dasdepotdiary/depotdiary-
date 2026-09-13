@@ -817,5 +817,14 @@
     "excerpt": "Sam Altman pausiert den geplanten Boersengang -- einen Tag, nachdem Anthropic-Chef Dario Amodei zu einem Tempo-Wechsel bei der KI-Entwicklung aufgerufen hat.",
     "cover": "assets/posts/reel_openai_pause/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_ccl-check",
+    "title": "Carnival berichtet Donnerstag vor US-Börsenöffnung.",
+    "category": "marktupdate",
+    "date": "2026-09-16",
+    "excerpt": "Die weltgrößte Kreuzfahrtreederei legt Q3-Zahlen vor.",
+    "cover": "assets/posts/marktupdate_ccl-check/slide_1.webp",
+    "url": null
   }
 ]

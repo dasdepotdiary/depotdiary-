@@ -1,0 +1,20 @@
+{
+  "eyebrow": "SCHNELL-CHECK",
+  "hook": "*Carnival* berichtet Donnerstag vor US-Börsenöffnung.",
+  "hook_sub": "Die weltgrößte Kreuzfahrtreederei legt Q3-Zahlen vor.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Carnival* -- Zahlen Donnerstag, 17.9., vor US-Börsenöffnung.",
+      "stats": [
+        ["Kurs", "13. September 2026", "22,75 USD", "green"],
+        ["KGV", "aktuell (TTM)", "10,3x", "grey"],
+        ["Marktkap.", "aktuell", "rund 31 Mrd. USD", "green_mid"]
+      ],
+      "note": "Aktie notiert aktuell nahe ihrem 52-Wochen-Tief (22,28 USD) -- trotzdem liegt Carnival seit Jahresbeginn mit +24% klar vor dem S&P 500 (+12%). Analysten erwarten 1,29 USD Gewinn je Aktie."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Zahlen am Donnerstag an.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe.",
+  "date": "2026-09-16"
+}

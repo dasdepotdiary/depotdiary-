@@ -1907,5 +1907,12 @@
     "action": "story",
     "fire_at": "2026-09-15T12:03:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_ccl-check",
+    "action": "story_sequence",
+    "fire_at": "2026-09-16T20:00:00+02:00",
+    "status": "pending",
+    "note": "Carnival Q3-Zahlen Do 17.9. vor Boersenoeffnung -- Abend vorher gepostet, matcht das etablierte Schnell-Check-Muster (Kroger/GameStop/Chewy)."
   }
 ]
