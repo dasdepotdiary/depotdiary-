@@ -1841,8 +1841,10 @@
     "action": "reel",
     "caption": "Guess the Stock, Runde 2: 4 echte Hinweise, 1 Unternehmen.\n\nDas Unternehmen hat ein 100%-Monopol auf eine Technologie, die jeder moderne Hochleistungs-Chip braucht.\n\nKeine Anlageberatung -- nur ein Ratespiel mit echten Fakten.\n\n#depotdiary #boerse #finanzen #ratespiel #guessthestock",
     "fire_at": "2026-09-13T15:00:00+02:00",
-    "status": "pending",
-    "note": "Guess the Stock Runde 2 (ASML) -- fuer heute Nachmittag gequeued, drittes Stueck des Tages."
+    "status": "claiming",
+    "note": "Guess the Stock Runde 2 (ASML) -- fuer heute Nachmittag gequeued, drittes Stueck des Tages.",
+    "claimed_by": "runnervmlun5p-2121-666c8de0",
+    "claimed_at": "2026-09-13T14:41:40.850204+00:00"
   },
   {
     "post_name": "guess_the_stock_asml",
