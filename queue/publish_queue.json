@@ -1899,8 +1899,10 @@
     "caption": "Wie hoch ist die Staatsverschuldung wirklich? USA und Deutschland im Vergleich -- nur die Zahlen.\n\nKeine Bewertung, keine Politik -- nur oeffentlich gemeldete Zahlen. Keine Anlageberatung.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-14T12:00:00+02:00",
-    "status": "pending",
-    "note": "Neutrale, rein faktische Staatsverschuldung-USA-vs-Deutschland-Karte -- bewusst ohne politische Wertung. Ergaenzt den Fed-Reel desselben Tages (9:00)."
+    "status": "claiming",
+    "note": "Neutrale, rein faktische Staatsverschuldung-USA-vs-Deutschland-Karte -- bewusst ohne politische Wertung. Ergaenzt den Fed-Reel desselben Tages (9:00).",
+    "claimed_by": "Surface4RA-21516-06e9f0db",
+    "claimed_at": "2026-09-14T11:46:32.215452+00:00"
   },
   {
     "post_name": "reel_openai_pause",
