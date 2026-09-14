@@ -1887,7 +1887,9 @@
     "post_name": "reel_fedzinsen",
     "action": "story",
     "fire_at": "2026-09-14T09:03:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-21516-06e9f0db",
+    "claimed_at": "2026-09-14T11:46:07.714858+00:00"
   },
   {
     "post_name": "erklaerstueck_staatsverschuldung",
