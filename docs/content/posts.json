@@ -835,5 +835,14 @@
     "excerpt": "Kurzer Rueckblick, was sich getan hat.",
     "cover": "assets/posts/erklaerstueck_woche-im-depot/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_earnings-woche-2026-09-14",
+    "title": "Drei Berichte diese Woche: Trip.com, Lennar und VinFast.",
+    "category": "marktupdate",
+    "date": "2026-09-14",
+    "excerpt": "Reise, Wohnungsbau und E-Autos -- drei Branchen, eine Woche.",
+    "cover": "assets/posts/marktupdate_earnings-woche-2026-09-14/slide_1.webp",
+    "url": null
   }
 ]

@@ -1,0 +1,45 @@
+{
+  "eyebrow": "EARNINGS-WOCHE",
+  "hook": "Drei Berichte diese Woche: *Trip.com*, *Lennar* und *VinFast*.",
+  "hook_sub": "Reise, Wohnungsbau und E-Autos -- drei Branchen, eine Woche.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Trip.com* -- Dienstag, 15.9., nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "11. September 2026", "39,02 USD", "green"],
+        ["KGV", "aktuell / erwartet", "5,8 / 11,0", "grey"],
+        ["Marktkap.", "aktuell", "24,6 Mrd. USD", "green_mid"]
+      ],
+      "note": "Chinesischer Reisekonzern (Buchungen, Tickets, Pauschalreisen). Analysten rechnen mit rund 0,84 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*Lennar* -- Mittwoch, 16.9., nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "11. September 2026", "79,60 USD", "green"],
+        ["KGV", "aktuell / erwartet", "12,5 / 12,2", "grey"],
+        ["Marktkap.", "aktuell", "19,2 Mrd. USD", "green_mid"]
+      ],
+      "note": "Einer der groessten US-Baukonzerne (Wohnungsbau). Analysten rechnen mit rund 1,30 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*VinFast* -- Donnerstag, 17.9., Zeitpunkt noch offen.",
+      "stats": [
+        ["Kurs", "11. September 2026", "3,21 USD", "green"],
+        ["KGV", "aktuell / erwartet", "--- (kein Gewinn)", "grey"],
+        ["Marktkap.", "aktuell", "7,5 Mrd. USD", "green_mid"]
+      ],
+      "note": "Vietnamesischer E-Auto-Hersteller. Aktuell noch kein positiver Gewinn je Aktie (TTM), Analysten rechnen mit rund -0,26 USD je Aktie fuer das Quartal."
+    },
+    {
+      "type": "text",
+      "headline": "Drei sehr unterschiedliche Geschichten.",
+      "body": "Ein etablierter Reisekonzern mit niedrigem KGV, ein Baukonzern mitten im US-Immobilienzyklus, und ein junger E-Auto-Hersteller ohne Gewinn -- diese Woche zeigt, wie unterschiedlich 'Quartalszahlen' je nach Unternehmen aussehen koennen."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Ergebnisse an, sobald sie da sind.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe.",
+  "date": "2026-09-14"
+}

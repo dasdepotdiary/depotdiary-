@@ -1921,13 +1921,6 @@
     "status": "pending"
   },
   {
-    "post_name": "marktupdate_ccl-check",
-    "action": "story_sequence",
-    "fire_at": "2026-09-16T20:00:00+02:00",
-    "status": "pending",
-    "note": "Carnival Q3-Zahlen Do 17.9. vor Boersenoeffnung -- Abend vorher gepostet, matcht das etablierte Schnell-Check-Muster (Kroger/GameStop/Chewy)."
-  },
-  {
     "post_name": "erklaerstueck_woche-im-depot",
     "action": "reel",
     "caption": "Diese Woche in meinem Depot -- kurzer Rueckblick, was sich getan hat.\n\nHermes und Metaplanet aufgestockt, Uber neu dazu, Sparplaene liefen normal -- nichts verkauft.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #depotupdate",
@@ -1948,5 +1941,25 @@
     "claimed_at": "2026-09-13T22:25:19.120774+00:00",
     "published_at": "2026-09-13T22:25:35.773611+00:00",
     "media_id": "18016023074950183"
+  },
+  {
+    "post_name": "tagesupdate_2026-09-14",
+    "action": "story",
+    "fire_at": "2026-09-14T14:10:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_earnings-woche-2026-09-14",
+    "action": "carousel",
+    "caption": "Drei Berichte diese Woche: Trip.com, Lennar und VinFast -- Reise, Wohnungsbau und E-Autos.\n\nKeine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #finanzen #earnings",
+    "slide_count": 6,
+    "fire_at": "2026-09-14T14:15:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_earnings-woche-2026-09-14",
+    "action": "story",
+    "fire_at": "2026-09-14T14:20:00+02:00",
+    "status": "pending"
   }
 ]
