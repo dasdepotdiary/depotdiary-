@@ -1946,9 +1946,11 @@
     "post_name": "tagesupdate_2026-09-14",
     "action": "story",
     "fire_at": "2026-09-14T14:02:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-27896-3d0efa36",
-    "claimed_at": "2026-09-14T12:02:48.456008+00:00"
+    "claimed_at": "2026-09-14T12:02:48.456008+00:00",
+    "published_at": "2026-09-14T12:03:07.097390+00:00",
+    "media_id": "17863200495679714"
   },
   {
     "post_name": "marktupdate_earnings-woche-2026-09-14",
