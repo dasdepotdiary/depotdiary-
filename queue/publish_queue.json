@@ -1968,6 +1968,8 @@
     "post_name": "marktupdate_earnings-woche-2026-09-14",
     "action": "story",
     "fire_at": "2026-09-14T14:02:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-27896-3d0efa36",
+    "claimed_at": "2026-09-14T12:04:36.176910+00:00"
   }
 ]
