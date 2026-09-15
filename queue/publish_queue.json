@@ -1919,8 +1919,10 @@
     "action": "reel",
     "caption": "Der wohl groesste Boersengang des Jahres wurde gerade verschoben.\n\nOpenAI-Chef Sam Altman: kein Boersengang mehr in diesem Jahr -- wegen Sicherheitsbedenken. Einen Tag zuvor hatte Anthropic-Chef Dario Amodei oeffentlich zu einem Tempo-Wechsel bei der KI-Entwicklung aufgerufen.\n\nKeine Anlageberatung -- nur eine Entwicklung, die mir diese Woche aufgefallen ist.\n\n#depotdiary #boerse #finanzen #ki #openai",
     "fire_at": "2026-09-15T12:00:00+02:00",
-    "status": "pending",
-    "note": "Renditeradar-Style-Reel zur OpenAI-IPO-Pause/Anthropic-Slowdown-Debatte -- bewusst auf den Markt-Aspekt (IPO-Verschiebung) fokussiert, ohne die politische Dimension (Trump-Reaktion) zu beruehren. Dienstag 12:00, damit kein Clash mit dem Aktienquiz-Reel (9:00 desselben Tages)."
+    "status": "claiming",
+    "note": "Renditeradar-Style-Reel zur OpenAI-IPO-Pause/Anthropic-Slowdown-Debatte -- bewusst auf den Markt-Aspekt (IPO-Verschiebung) fokussiert, ohne die politische Dimension (Trump-Reaktion) zu beruehren. Dienstag 12:00, damit kein Clash mit dem Aktienquiz-Reel (9:00 desselben Tages).",
+    "claimed_by": "runnervmlun5p-2295-d3170d5d",
+    "claimed_at": "2026-09-15T11:39:02.073015+00:00"
   },
   {
     "post_name": "reel_openai_pause",
