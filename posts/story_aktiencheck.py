@@ -48,7 +48,7 @@ OCHRE = "#D4AF4A"
 CAT_TEAL = "#4FBFB5"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
-DATE_LABEL = date.today().strftime("%d.%m.%Y")
+DATE_LABEL = (sys.argv[1] if len(sys.argv) > 1 else date.today().strftime("%d.%m.%Y"))
 
 
 def font(path, size):
@@ -59,13 +59,26 @@ def fmt_de(value, decimals=2):
     return f"{value:,.{decimals}f}".replace(",", "X").replace(".", ",").replace("X", ".")
 
 
-def gradient_background():
+def _hex_to_rgb(hex_color):
+    hex_color = hex_color.lstrip("#")
+    return tuple(int(hex_color[i:i + 2], 16) for i in (0, 2, 4))
+
+
+def gradient_background(tint_hex=None, tint_strength=0.05):
+    """Fast schwarz, aber pro Aktie leicht in Richtung ihrer Akzentfarbe
+    eingefaerbt -- Nutzer-Feedback 2026-09-15: 'ein bisschen eine
+    Veraenderung, andere Hintergrundfarbe' bei gleichzeitig schwarzer Basis."""
+    top, bottom = BG_TOP, BG_BOTTOM
+    if tint_hex:
+        tr, tg, tb = _hex_to_rgb(tint_hex)
+        top = tuple(int(top[i] + (tr, tg, tb)[i] * tint_strength) for i in range(3))
+        bottom = tuple(int(bottom[i] + (tr, tg, tb)[i] * (tint_strength * 0.4)) for i in range(3))
     base = Image.new("RGB", (1, H))
     for y in range(H):
         t = y / max(H - 1, 1)
-        r = int(BG_TOP[0] + (BG_BOTTOM[0] - BG_TOP[0]) * t)
-        g = int(BG_TOP[1] + (BG_BOTTOM[1] - BG_TOP[1]) * t)
-        b = int(BG_TOP[2] + (BG_BOTTOM[2] - BG_TOP[2]) * t)
+        r = int(top[0] + (bottom[0] - top[0]) * t)
+        g = int(top[1] + (bottom[1] - top[1]) * t)
+        b = int(top[2] + (bottom[2] - top[2]) * t)
         base.putpixel((0, y), (r, g, b))
     return base.resize((W, H))
 
@@ -90,7 +103,7 @@ def render_chart(csv_path, accent_hex, out_path, days=90):
     rows = rows[-days:]
     closes = [r[1] for r in rows]
 
-    fig, ax = plt.subplots(figsize=(9.6, 5.4), dpi=100)
+    fig, ax = plt.subplots(figsize=(9.6, 4.7), dpi=100)
     fig.patch.set_alpha(0.0)
     ax.set_facecolor("none")
 
@@ -141,10 +154,10 @@ def draw_range_bar(draw, x, y, w, low, high, current, accent):
 
 
 def slide_stock(stock, idx, total):
-    img = gradient_background()
+    accent = stock.get("accent", OCHRE)
+    img = gradient_background(tint_hex=accent, tint_strength=0.06)
     add_glow(img, W * 0.5, -100, 620, (40, 40, 40), strength=22)
     draw = ImageDraw.Draw(img)
-    accent = stock.get("accent", OCHRE)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=accent)
 
     y = build_header(draw, 64, idx, total)
@@ -162,7 +175,7 @@ def slide_stock(stock, idx, total):
     draw.text((W - B.MARGIN_RIGHT - pw, y - 36), price_text, font=price_font, fill=CREAM)
     change = stock["change_pct"]
     change_font = font(B.SANS_BOLD, 22)
-    change_text = f"{change:+.2f}% heute"
+    change_text = f"{change:+.2f}% (Stand {stock.get('as_of', DATE_LABEL)})"
     cw = draw.textlength(change_text, font=change_font)
     change_color = GREEN if change >= 0 else RED
     draw.text((W - B.MARGIN_RIGHT - cw, y + 14), change_text, font=change_font, fill=change_color)
@@ -187,9 +200,11 @@ def slide_stock(stock, idx, total):
         ("Dividendenrendite", f"{fmt_de(stock['div_yield'], 2)} %" if stock.get("div_yield") else "keine"),
         ("Marktkap.", stock["market_cap"]),
         ("Tagesvolumen", stock["volume"]),
+        ("Gewinnwachstum (YoY)", f"{stock['earnings_growth']:+.1f} %" if stock.get("earnings_growth") is not None else "---"),
+        ("Beta (Volatilitaet)", fmt_de(stock["beta"], 2) if stock.get("beta") is not None else "---"),
     ]
     row_h = 64
-    grid_h = 3 * row_h
+    grid_h = 4 * row_h
     card_h = grid_h + 100
     draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + card_h], radius=16, fill=CARD, outline=CARD_BORDER, width=1)
 
@@ -236,18 +251,18 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Apple", "ticker": "AAPL", "price": 333.08, "change_pct": 0.24, "pe": 38.2,
-         "forward_pe": 33.9, "peg": 2.61, "div_yield": 0.32,
+        {"name": "Apple", "ticker": "AAPL", "price": 333.08, "change_pct": 0.24, "as_of": "14.09.", "pe": 38.2,
+         "forward_pe": 33.9, "peg": 2.61, "div_yield": 0.32, "earnings_growth": 28.7, "beta": 1.09,
          "market_cap": "4,86 Bio. USD", "volume": "39,3 Mio.", "week52_low": 235.78, "week52_high": 344.27,
          "note": "Nahe am 52-Wochen-Hoch. KGV von 38 liegt ueber dem eigenen 5-Jahres-Schnitt. Dividendenrendite mit 0,32% niedrig -- Apple setzt staerker auf Aktienrueckkaeufe.",
          "csv_path": DATA_DIR / "AAPL.csv", "accent": OCHRE},
-        {"name": "Nvidia", "ticker": "NVDA", "price": 210.96, "change_pct": -3.36, "pe": 26.7,
-         "forward_pe": 24.04, "peg": 0.46, "div_yield": 0.13,
+        {"name": "Nvidia", "ticker": "NVDA", "price": 210.96, "change_pct": -3.36, "as_of": "14.09.", "pe": 26.7,
+         "forward_pe": 24.04, "peg": 0.46, "div_yield": 0.13, "earnings_growth": 127.8, "beta": 2.22,
          "market_cap": "5,09 Bio. USD", "volume": "132,3 Mio.", "week52_low": 163.90, "week52_high": 236.00,
          "note": "Deutlicher Tagesverlust von -3,4%. KGV trotz Ruecksetzer moderat bei 27, PEG-Ratio von 0,46 deutlich unter 1 -- der Markt preist das Gewinnwachstum vergleichsweise guenstig ein.",
          "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
-        {"name": "Palantir", "ticker": "PLTR", "price": 173.31, "change_pct": 3.64, "pe": 148.1,
-         "forward_pe": 74.63, "peg": 1.61, "div_yield": None,
+        {"name": "Palantir", "ticker": "PLTR", "price": 173.31, "change_pct": 3.64, "as_of": "14.09.", "pe": 148.1,
+         "forward_pe": 74.63, "peg": 1.61, "div_yield": None, "earnings_growth": 215.4, "beta": 1.62,
          "market_cap": "416 Mrd. USD", "volume": "29,1 Mio.", "week52_low": 106.37, "week52_high": 207.52,
          "note": "Mit Abstand hoechstes KGV der drei (148). PEG-Ratio von 1,6 relativiert das etwas -- der Markt preist sehr hohes erwartetes Wachstum ein. Keine Dividende.",
          "csv_path": DATA_DIR / "PLTR.csv", "accent": CAT_TEAL},
