@@ -1,0 +1,264 @@
+"""Taegliches Story-Format "AKTIEN-CHECK" -- eine volle Story-Slide pro Aktie
+(story_sequence), mit echtem Kurschart (matplotlib, aus lokal abgelegten
+Tagesschlusskursen) plus Fundamentaldaten. Reine Fakten (Kurs, KGV, Marktkap,
+52W-Range) -- keine Kaufempfehlung, keine Kursziele.
+
+v2 (2026-09-15, Nutzer-Feedback "Farben nicht optimal" + "brauche Charts"):
+warmes Dunkel-Palette passend zur Marke (Ochre/Gruen statt Blau) statt der
+ersten Blau-Version; echter Kurschart statt nur 52W-Positionsbalken; eine
+ganze Slide pro Aktie statt drei Karten auf einer Slide.
+
+Input: Liste von Dicts mit name, ticker, price, change_pct, pe, market_cap,
+week52_low, week52_high, note, csv_path (lokale Datei mit timestamp,close).
+
+Aufruf (Prototyp/Test):
+  python posts/story_aktiencheck.py
+"""
+import sys
+from datetime import date
+from pathlib import Path
+
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
+import matplotlib.font_manager as fm
+from PIL import Image, ImageDraw, ImageFilter, ImageFont
+
+sys.path.insert(0, str(Path(__file__).parent.parent))
+import brand as B
+
+ROOT = Path(__file__).parent.parent
+NAME = "story_aktiencheck"
+OUTPUT = ROOT / "output" / NAME
+TT_DIR = OUTPUT / "tiktok_9x16"
+DATA_DIR = OUTPUT / "data"
+TT_DIR.mkdir(parents=True, exist_ok=True)
+
+W, H = B.STORY_SIZE
+
+BG_TOP = (6, 6, 6)
+BG_BOTTOM = (0, 0, 0)
+CARD = "#141414"
+CARD_BORDER = "#2E2E2E"
+CREAM = "#F5F5F3"
+MUTED = "#8F8F8C"
+GREEN = "#5CA87F"
+RED = "#C25C51"
+OCHRE = "#D4AF4A"
+CAT_TEAL = "#4FBFB5"
+
+OWN_HANDLE = "@DASDEPOTDIARY"
+DATE_LABEL = date.today().strftime("%d.%m.%Y")
+
+
+def font(path, size):
+    return ImageFont.truetype(path, size)
+
+
+def fmt_de(value, decimals=2):
+    return f"{value:,.{decimals}f}".replace(",", "X").replace(".", ",").replace("X", ".")
+
+
+def gradient_background():
+    base = Image.new("RGB", (1, H))
+    for y in range(H):
+        t = y / max(H - 1, 1)
+        r = int(BG_TOP[0] + (BG_BOTTOM[0] - BG_TOP[0]) * t)
+        g = int(BG_TOP[1] + (BG_BOTTOM[1] - BG_TOP[1]) * t)
+        b = int(BG_TOP[2] + (BG_BOTTOM[2] - BG_TOP[2]) * t)
+        base.putpixel((0, y), (r, g, b))
+    return base.resize((W, H))
+
+
+def add_glow(img, cx, cy, radius, color, strength=45):
+    glow = Image.new("L", (W, H), 0)
+    gdraw = ImageDraw.Draw(glow)
+    gdraw.ellipse([cx - radius, cy - radius, cx + radius, cy + radius], fill=strength)
+    glow = glow.filter(ImageFilter.GaussianBlur(radius * 0.6))
+    color_layer = Image.new("RGB", (W, H), color)
+    img.paste(color_layer, (0, 0), glow)
+
+
+def render_chart(csv_path, accent_hex, out_path, days=90):
+    rows = []
+    with open(csv_path, encoding="utf-8") as f:
+        next(f)
+        for line in f:
+            ts, close = line.strip().split(",")
+            rows.append((ts, float(close)))
+    rows.sort(key=lambda r: r[0])
+    rows = rows[-days:]
+    closes = [r[1] for r in rows]
+
+    fig, ax = plt.subplots(figsize=(9.6, 5.4), dpi=100)
+    fig.patch.set_alpha(0.0)
+    ax.set_facecolor("none")
+
+    x = list(range(len(closes)))
+    line_color = accent_hex
+    ax.plot(x, closes, color=line_color, linewidth=3.5, solid_capstyle="round")
+    ax.fill_between(x, closes, min(closes) * 0.97, color=line_color, alpha=0.12)
+
+    ax.set_xlim(0, len(closes) - 1)
+    ax.set_ylim(min(closes) * 0.97, max(closes) * 1.03)
+    for spine in ax.spines.values():
+        spine.set_visible(False)
+    ax.set_xticks([])
+    ax.tick_params(axis="y", colors=MUTED, labelsize=15)
+    ax.yaxis.set_major_formatter(lambda v, pos: fmt_de(v, 0))
+    ax.grid(axis="y", color="#3A352C", linewidth=0.6, alpha=0.5)
+
+    plt.tight_layout(pad=0.3)
+    fig.savefig(out_path, transparent=True)
+    plt.close(fig)
+
+
+def build_header(draw, y, idx, total):
+    handle_font = font(B.SANS_BOLD, 20)
+    draw.text((B.MARGIN_LEFT, y), OWN_HANDLE, font=handle_font, fill=CREAM)
+    y += 32
+    title_font = font(B.SANS_BOLD, 44)
+    draw.text((B.MARGIN_LEFT, y), "AKTIEN-CHECK", font=title_font, fill=CREAM)
+    y += 56
+    date_font = font(B.SANS_BOLD, 20)
+    draw.text((B.MARGIN_LEFT, y), f"{DATE_LABEL} -- {idx}/{total}", font=date_font, fill=MUTED)
+    y += 38
+    draw.line([(B.MARGIN_LEFT, y), (W - B.MARGIN_RIGHT, y)], fill=CARD_BORDER, width=1)
+    return y + 44
+
+
+def draw_range_bar(draw, x, y, w, low, high, current, accent):
+    bar_h = 8
+    draw.rounded_rectangle([x, y, x + w, y + bar_h], radius=4, fill="#2A2620")
+    pos = max(0.0, min(1.0, (current - low) / (high - low))) if high > low else 0.5
+    marker_x = x + w * pos
+    draw.ellipse([marker_x - 9, y + bar_h / 2 - 9, marker_x + 9, y + bar_h / 2 + 9], fill=accent, outline=CREAM, width=2)
+    label_font = font(B.SANS_BOLD, 16)
+    draw.text((x, y + bar_h + 10), f"52W-Tief {fmt_de(low)}", font=label_font, fill=MUTED)
+    hi_text = f"52W-Hoch {fmt_de(high)}"
+    hw = draw.textlength(hi_text, font=label_font)
+    draw.text((x + w - hw, y + bar_h + 10), hi_text, font=label_font, fill=MUTED)
+
+
+def slide_stock(stock, idx, total):
+    img = gradient_background()
+    add_glow(img, W * 0.5, -100, 620, (40, 40, 40), strength=22)
+    draw = ImageDraw.Draw(img)
+    accent = stock.get("accent", OCHRE)
+    draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=accent)
+
+    y = build_header(draw, 64, idx, total)
+    y += 60
+
+    name_font = font(B.SANS_BOLD, 48)
+    ticker_font = font(B.SANS_BOLD, 24)
+    draw.text((B.MARGIN_LEFT, y), stock["name"], font=name_font, fill=CREAM)
+    y += 60
+    draw.text((B.MARGIN_LEFT, y), stock["ticker"], font=ticker_font, fill=accent)
+
+    price_font = font(B.SANS_BOLD, 40)
+    price_text = f"{fmt_de(stock['price'])} USD"
+    pw = draw.textlength(price_text, font=price_font)
+    draw.text((W - B.MARGIN_RIGHT - pw, y - 36), price_text, font=price_font, fill=CREAM)
+    change = stock["change_pct"]
+    change_font = font(B.SANS_BOLD, 22)
+    change_text = f"{change:+.2f}% heute"
+    cw = draw.textlength(change_text, font=change_font)
+    change_color = GREEN if change >= 0 else RED
+    draw.text((W - B.MARGIN_RIGHT - cw, y + 14), change_text, font=change_font, fill=change_color)
+    y += 70
+
+    # Chart
+    chart_path = OUTPUT / f"_chart_{stock['ticker']}.png"
+    render_chart(stock["csv_path"], accent, chart_path)
+    chart_img = Image.open(chart_path).convert("RGBA")
+    chart_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
+    chart_h = int(chart_img.height * chart_w / chart_img.width)
+    chart_img = chart_img.resize((chart_w, chart_h))
+    img.paste(chart_img, (B.MARGIN_LEFT, y), chart_img)
+    y += chart_h + 24
+
+    # Fundamentaldaten-Karte: 2x3-Kennzahlen-Grid + Range-Bar
+    pad = 28
+    stats = [
+        ("KGV (aktuell)", fmt_de(stock["pe"], 1)),
+        ("KGV (erwartet)", fmt_de(stock["forward_pe"], 1) if stock.get("forward_pe") else "---"),
+        ("PEG-Ratio", fmt_de(stock["peg"], 2) if stock.get("peg") else "---"),
+        ("Dividendenrendite", f"{fmt_de(stock['div_yield'], 2)} %" if stock.get("div_yield") else "keine"),
+        ("Marktkap.", stock["market_cap"]),
+        ("Tagesvolumen", stock["volume"]),
+    ]
+    row_h = 64
+    grid_h = 3 * row_h
+    card_h = grid_h + 100
+    draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + card_h], radius=16, fill=CARD, outline=CARD_BORDER, width=1)
+
+    col_w = (W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad) / 2
+    label_font = font(B.SANS_BOLD, 17)
+    value_font = font(B.SANS_BOLD, 25)
+    for i, (label, value) in enumerate(stats):
+        col = i % 2
+        row = i // 2
+        cx = B.MARGIN_LEFT + pad + col * col_w
+        cy = y + 24 + row * row_h
+        draw.text((cx, cy), label.upper(), font=label_font, fill=MUTED)
+        draw.text((cx, cy + 24), value, font=value_font, fill=CREAM)
+
+    draw_range_bar(draw, B.MARGIN_LEFT + pad, y + grid_h + 44, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad,
+                    stock["week52_low"], stock["week52_high"], stock["price"], accent)
+
+    note_font = font(B.SANS_BOLD, 19)
+    words = stock["note"].split()
+    lines, cur = [], ""
+    max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad
+    for word in words:
+        test = (cur + " " + word).strip()
+        if draw.textlength(test, font=note_font) <= max_w:
+            cur = test
+        else:
+            lines.append(cur)
+            cur = word
+    if cur:
+        lines.append(cur)
+    ny = y + card_h + 30
+    for line in lines[:3]:
+        draw.text((B.MARGIN_LEFT, ny), line, font=note_font, fill=MUTED)
+        ny += 26
+
+    text = "Keine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe."
+    disclaimer_font = font(B.SANS_BOLD, 18)
+    draw.line([(B.MARGIN_LEFT, H - 90), (W - B.MARGIN_RIGHT, H - 90)], fill=CARD_BORDER, width=1)
+    draw.text((B.MARGIN_LEFT, H - 68), text, font=disclaimer_font, fill=MUTED)
+
+    chart_path.unlink(missing_ok=True)
+    return img
+
+
+def main():
+    stocks = [
+        {"name": "Apple", "ticker": "AAPL", "price": 333.08, "change_pct": 0.24, "pe": 38.2,
+         "forward_pe": 33.9, "peg": 2.61, "div_yield": 0.32,
+         "market_cap": "4,86 Bio. USD", "volume": "39,3 Mio.", "week52_low": 235.78, "week52_high": 344.27,
+         "note": "Nahe am 52-Wochen-Hoch. KGV von 38 liegt ueber dem eigenen 5-Jahres-Schnitt. Dividendenrendite mit 0,32% niedrig -- Apple setzt staerker auf Aktienrueckkaeufe.",
+         "csv_path": DATA_DIR / "AAPL.csv", "accent": OCHRE},
+        {"name": "Nvidia", "ticker": "NVDA", "price": 210.96, "change_pct": -3.36, "pe": 26.7,
+         "forward_pe": 24.04, "peg": 0.46, "div_yield": 0.13,
+         "market_cap": "5,09 Bio. USD", "volume": "132,3 Mio.", "week52_low": 163.90, "week52_high": 236.00,
+         "note": "Deutlicher Tagesverlust von -3,4%. KGV trotz Ruecksetzer moderat bei 27, PEG-Ratio von 0,46 deutlich unter 1 -- der Markt preist das Gewinnwachstum vergleichsweise guenstig ein.",
+         "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
+        {"name": "Palantir", "ticker": "PLTR", "price": 173.31, "change_pct": 3.64, "pe": 148.1,
+         "forward_pe": 74.63, "peg": 1.61, "div_yield": None,
+         "market_cap": "416 Mrd. USD", "volume": "29,1 Mio.", "week52_low": 106.37, "week52_high": 207.52,
+         "note": "Mit Abstand hoechstes KGV der drei (148). PEG-Ratio von 1,6 relativiert das etwas -- der Markt preist sehr hohes erwartetes Wachstum ein. Keine Dividende.",
+         "csv_path": DATA_DIR / "PLTR.csv", "accent": CAT_TEAL},
+    ]
+    for i, stock in enumerate(stocks, start=1):
+        img = slide_stock(stock, i, len(stocks))
+        img.save(TT_DIR / f"slide_{i}.png")
+        if i == 1:
+            img.save(OUTPUT / "uebersicht.png")
+    print(f"Fertig: {len(stocks)} Slides in {TT_DIR}")
+
+
+if __name__ == "__main__":
+    main()
