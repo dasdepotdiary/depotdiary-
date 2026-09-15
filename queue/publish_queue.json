@@ -1930,9 +1930,11 @@
     "post_name": "reel_openai_pause",
     "action": "story",
     "fire_at": "2026-09-15T12:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2295-d3170d5d",
-    "claimed_at": "2026-09-15T11:39:41.195905+00:00"
+    "claimed_at": "2026-09-15T11:39:41.195905+00:00",
+    "published_at": "2026-09-15T11:40:19.175826+00:00",
+    "media_id": "18156517381510584"
   },
   {
     "post_name": "erklaerstueck_woche-im-depot",
