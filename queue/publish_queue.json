@@ -1666,10 +1666,12 @@
     "action": "reel",
     "caption": "Aktienquiz: 3 Fragen, schaffst du alle?\n\nBoersenwissen statt Kursziele -- reines Ratespiel zu KGV, Earnings-Rhythmus und Aktiensplit.\n\nKeine Anlageberatung -- nur ein Wissensquiz.\n\n#depotdiary #boerse #finanzen #ratespiel",
     "fire_at": "2026-09-15T09:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Neues Format, bewusst auf Dienstag gelegt (Montag ist bereits die automatische Earnings-Woche-Uebersicht -- max 1-2 Posts/Tag).",
     "claimed_by": "runnervmlun5p-2295-d3170d5d",
-    "claimed_at": "2026-09-15T11:37:31.445554+00:00"
+    "claimed_at": "2026-09-15T11:37:31.445554+00:00",
+    "published_at": "2026-09-15T11:38:19.029755+00:00",
+    "media_id": "18067234826772694"
   },
   {
     "post_name": "format_aktienquiz",
