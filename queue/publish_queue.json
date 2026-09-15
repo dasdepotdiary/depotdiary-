@@ -1677,9 +1677,11 @@
     "post_name": "format_aktienquiz",
     "action": "story",
     "fire_at": "2026-09-15T09:03:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2295-d3170d5d",
-    "claimed_at": "2026-09-15T11:38:20.299647+00:00"
+    "claimed_at": "2026-09-15T11:38:20.299647+00:00",
+    "published_at": "2026-09-15T11:39:00.710777+00:00",
+    "media_id": "18103127996370991"
   },
   {
     "post_name": "erklaerstueck_geld-brief-spanne",
