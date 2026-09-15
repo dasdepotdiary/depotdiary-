@@ -1994,6 +1994,8 @@
     "post_name": "tagesupdate_2026-09-15",
     "action": "story",
     "fire_at": "2026-09-15T19:58:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-18648-cdbacf1e",
+    "claimed_at": "2026-09-15T18:00:34.688301+00:00"
   }
 ]
