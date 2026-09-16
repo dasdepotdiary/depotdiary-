@@ -2058,6 +2058,8 @@
     "post_name": "story_depotfrage_cta",
     "action": "story",
     "fire_at": "2026-09-16T21:48:29+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-2300-c958f9f6",
+    "claimed_at": "2026-09-16T19:50:43.906814+00:00"
   }
 ]
