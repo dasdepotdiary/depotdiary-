@@ -41,14 +41,14 @@ TT_DIR.mkdir(parents=True, exist_ok=True)
 
 W, H = B.FEED_SIZE
 
-TABLE_BG = "#15130F"
-PAPER = "#FAF7F0"
-PAPER_SHADOW = "#EDE8DA"
-INK = "#211E19"
-FAINT = "#8A8478"
-DASH = "#C9C2B0"
-RED_STAMP = "#B5453A"
-GREEN_STAMP = "#3F6B4E"
+TABLE_BG = "#050504"
+PAPER = "#211E19"
+PAPER_SHADOW = "#141210"
+INK = "#F2EFE8"
+FAINT = "#9C948A"
+DASH = "#4A453C"
+RED_STAMP = "#D9776B"
+GREEN_STAMP = "#7FBF9E"
 
 MONO = str(ROOT / "assets" / "fonts" / "SpaceMono-Regular.ttf")
 MONO_BOLD = str(ROOT / "assets" / "fonts" / "SpaceMono-Bold.ttf")
@@ -244,22 +244,26 @@ def slide_own():
     return img
 
 
-def slide_outro():
+def slide_comparison():
     img, draw = receipt_canvas()
-    y = draw_receipt_header(draw, ["ENDSUMME"], "Keine Rangfolge, keine Bewertung -- nur zwei unterschiedliche Ansaetze.")
+    y = draw_receipt_header(draw, ["GEGENUEBERSTELLUNG"], "Keine Rangfolge, keine Bewertung -- nur zwei unterschiedliche Ansaetze.")
     y += 10
     f_label = font(MONO, 20)
     f_val = font(MONO_BOLD, 46)
-    for handle, total, color in [(PARTNER_HANDLE, 250, RED_STAMP), (OWN_HANDLE, 310, GREEN_STAMP)]:
+    f_sub = font(MONO, 17)
+    for handle, total, n_pos, color in [(PARTNER_HANDLE, 250, 5, RED_STAMP), (OWN_HANDLE, 310, 7, GREEN_STAMP)]:
         draw.text((80, y), handle, font=f_label, fill=FAINT)
         y += 28
         val_text = eur(total)
         draw.text((80, y), val_text, font=f_val, fill=color)
+        sub_text = f"{n_pos} Positionen"
+        sw = draw.textlength(sub_text, font=f_sub)
+        draw.text((W - 80 - sw, y + 12), sub_text, font=f_sub, fill=FAINT)
         y += 66
     dashed_line(draw, 80, W - 80, y)
     y += 30
     f_cta = font(MONO_BOLD, 22)
-    lines = wrap_mono(draw, "WELCHE DER 12 AKTIEN HAST DU SELBST IM DEPOT?", f_cta, W - 160)
+    lines = wrap_mono(draw, "WELCHE SEITE FINDEST DU BESSER?", f_cta, W - 160)
     for line in lines:
         draw.text((W / 2 - draw.textlength(line, font=f_cta) / 2, y), line, font=f_cta, fill=INK)
         y += 30
@@ -268,12 +272,37 @@ def slide_outro():
     for line in wrap_mono(draw, "Schreib's uns in die Kommentare -- bei beiden Accounts.", f_body, W - 160):
         draw.text((W / 2 - draw.textlength(line, font=f_body) / 2, y), line, font=f_body, fill=FAINT)
         y += 24
-    draw_footer(draw, 4, 4)
+    draw_footer(draw, 4, 5)
+    return img
+
+
+def slide_engagement():
+    img, draw = receipt_canvas()
+    y = draw_receipt_header(draw, ["ZUM SCHLUSS"], "Vier Dinge, die uns richtig helfen.")
+    y += 20
+    items = [
+        ("[ ]", "LIKEN", "beide Posts -- hier und bei " + PARTNER_HANDLE + "."),
+        ("[ ]", "REPOSTEN", "in deine eigene Story, wenn's dir gefaellt."),
+        ("[ ]", "FOLGEN", OWN_HANDLE + " und " + PARTNER_HANDLE + "."),
+        ("[ ]", "KOMMENTIEREN", "welche Seite und welche Aktie du selbst hast."),
+    ]
+    f_box = font(MONO_BOLD, 26)
+    f_label = font(MONO_BOLD, 24)
+    f_body = font(MONO, 18)
+    for box, label, body in items:
+        draw.text((80, y), box, font=f_box, fill=RED_STAMP)
+        draw.text((150, y), label, font=f_label, fill=INK)
+        y += 34
+        for line in wrap_mono(draw, body, f_body, W - 230):
+            draw.text((150, y), line, font=f_body, fill=FAINT)
+            y += 24
+        y += 22
+    draw_footer(draw, 5, 5)
     return img
 
 
 def main():
-    slides = [slide_intro, slide_partner, slide_own, slide_outro]
+    slides = [slide_intro, slide_partner, slide_own, slide_comparison, slide_engagement]
     for i, fn in enumerate(slides, start=1):
         fn().save(IG_DIR / f"slide_{i}.png")
 
