@@ -133,6 +133,12 @@ def main():
          "body": "Gemischte Reaktion auf die Fed-Entscheidung -- der Dow reagierte am staerksten negativ."},
         {"headline": "Oelpreis bleibt ueber 100 USD/Barrel.",
          "body": "Der andauernde Konflikt zwischen den USA und dem Iran haelt den Preis hoch, auch wenn er am Mittwoch leicht nachgab."},
+        {"headline": "CLARITY Act im US-Senat gescheitert.",
+         "body": "Das Krypto-Regulierungsgesetz verfehlte in einer prozeduralen Abstimmung knapp die noetigen 60 Stimmen (49-50)."},
+        {"headline": "Bitcoin faellt auf rund 75.800 USD, Ethereum auf ca. 2.400 USD.",
+         "body": "Beide im Rueckzug -- Reaktion auf das gescheiterte CLARITY Act und die Erwartung der Fed-Zinsentscheidung."},
+        {"headline": "Lennar meldet heute nach Boersenschluss Quartalszahlen.",
+         "body": "Der US-Baukonzern berichtet in einem Umfeld hoher Hypothekenzinsen -- Neubauverkaeufe zuletzt 10,5% unter Juni-Niveau."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
