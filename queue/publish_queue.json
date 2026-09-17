@@ -2086,9 +2086,16 @@
     "post_name": "aktiencheck_2026-09-17",
     "action": "story_sequence",
     "fire_at": "2026-09-17T22:04:47+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-23440-9daa8e9e",
-    "claimed_at": "2026-09-17T20:07:25.710045+00:00"
+    "claimed_at": "2026-09-17T20:07:25.710045+00:00",
+    "published_at": "2026-09-17T20:08:19.269271+00:00",
+    "media_id": "17907316086497679",
+    "media_ids": [
+      "17907316086497679",
+      "17876936322652132",
+      "17966459828964519"
+    ]
   },
   {
     "post_name": "tagesereignisse_2026-09-17",
