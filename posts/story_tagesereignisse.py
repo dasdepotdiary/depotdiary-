@@ -127,18 +127,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Fed hebt Leitzins um 0,25 Punkte auf 3,75-4,00% an.",
-         "body": "Erste Zinserhoehung seit Juli 2023 -- die Fed signalisiert fuer den Rest des Jahres 2026 moeglicherweise einen weiteren Schritt."},
-        {"headline": "Dow -0,9%, S&P 500 -0,3%, Nasdaq nahezu unveraendert.",
-         "body": "Gemischte Reaktion auf die Fed-Entscheidung -- der Dow reagierte am staerksten negativ."},
-        {"headline": "Oelpreis bleibt ueber 100 USD/Barrel.",
-         "body": "Der andauernde Konflikt zwischen den USA und dem Iran haelt den Preis hoch, auch wenn er am Mittwoch leicht nachgab."},
-        {"headline": "CLARITY Act im US-Senat gescheitert.",
-         "body": "Das Krypto-Regulierungsgesetz verfehlte in einer prozeduralen Abstimmung knapp die noetigen 60 Stimmen (49-50)."},
-        {"headline": "Bitcoin faellt auf rund 75.800 USD, Ethereum auf ca. 2.400 USD.",
-         "body": "Beide im Rueckzug -- Reaktion auf das gescheiterte CLARITY Act und die Erwartung der Fed-Zinsentscheidung."},
-        {"headline": "Lennar meldet heute nach Boersenschluss Quartalszahlen.",
-         "body": "Der US-Baukonzern berichtet in einem Umfeld hoher Hypothekenzinsen -- Neubauverkaeufe zuletzt 10,5% unter Juni-Niveau."},
+        {"headline": "Dow +0,7%, S&P 500 +1,1%, Nasdaq +1,6%.",
+         "body": "Deutliche Erholung einen Tag nach der Fed-Zinserhoehung -- der Nasdaq machte den Vortagesverlust mehr als wett."},
+        {"headline": "Fed-Chef Kevin Warsh: 'Inflation ist zu hoch und das schon zu lange.'",
+         "body": "Die juengsten Fed-Projektionen deuten auf einen weiteren Zinsschritt im Jahr 2026 hin."},
+        {"headline": "Micron-Aktie springt um mehr als 5%.",
+         "body": "Intel-CEO Lip-Bu Tan sagte auf einer Branchenkonferenz, die Nachfrage nach Speicherchips lasse nicht nach -- Preise duerften weiter steigen."},
+        {"headline": "Oelpreis bei rund 102 USD/Barrel, leicht ruecklaeufig.",
+         "body": "Trotz neuer Berichte ueber Angriffe im Nahen Osten gab der Preis am Donnerstag leicht nach."},
+        {"headline": "Bitcoin bei rund 76.850 USD, +1,6%.",
+         "body": "Erholung nach den Verlusten der Vortage -- Kurs bewegt sich trotz der Fed-Entscheidung wieder aufwaerts."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

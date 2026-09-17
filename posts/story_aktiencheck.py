@@ -251,17 +251,17 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Apple", "ticker": "AAPL", "price": 333.08, "change_pct": 0.24, "as_of": "14.09.", "pe": 38.2,
+        {"name": "Apple", "ticker": "AAPL", "price": 332.41, "change_pct": 0.32, "as_of": "16.09.", "pe": 38.2,
          "forward_pe": 33.9, "peg": 2.61, "div_yield": 0.32, "earnings_growth": 28.7, "beta": 1.09,
          "market_cap": "4,86 Bio. USD", "volume": "39,3 Mio.", "week52_low": 235.78, "week52_high": 344.27,
          "note": "Nahe am 52-Wochen-Hoch. KGV von 38 liegt ueber dem eigenen 5-Jahres-Schnitt. Dividendenrendite mit 0,32% niedrig -- Apple setzt staerker auf Aktienrueckkaeufe.",
          "csv_path": DATA_DIR / "AAPL.csv", "accent": OCHRE},
-        {"name": "Nvidia", "ticker": "NVDA", "price": 210.96, "change_pct": -3.36, "as_of": "14.09.", "pe": 26.7,
+        {"name": "Nvidia", "ticker": "NVDA", "price": 213.90, "change_pct": 0.82, "as_of": "16.09.", "pe": 26.7,
          "forward_pe": 24.04, "peg": 0.46, "div_yield": 0.13, "earnings_growth": 127.8, "beta": 2.22,
          "market_cap": "5,09 Bio. USD", "volume": "132,3 Mio.", "week52_low": 163.90, "week52_high": 236.00,
          "note": "Deutlicher Tagesverlust von -3,4%. KGV trotz Ruecksetzer moderat bei 27, PEG-Ratio von 0,46 deutlich unter 1 -- der Markt preist das Gewinnwachstum vergleichsweise guenstig ein.",
          "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
-        {"name": "Palantir", "ticker": "PLTR", "price": 173.31, "change_pct": 3.64, "as_of": "14.09.", "pe": 148.1,
+        {"name": "Palantir", "ticker": "PLTR", "price": 174.34, "change_pct": 1.03, "as_of": "16.09.", "pe": 148.1,
          "forward_pe": 74.63, "peg": 1.61, "div_yield": None, "earnings_growth": 215.4, "beta": 1.62,
          "market_cap": "416 Mrd. USD", "volume": "29,1 Mio.", "week52_low": 106.37, "week52_high": 207.52,
          "note": "Mit Abstand hoechstes KGV der drei (148). PEG-Ratio von 1,6 relativiert das etwas -- der Markt preist sehr hohes erwartetes Wachstum ein. Keine Dividende.",
