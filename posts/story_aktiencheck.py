@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Apple", "ticker": "AAPL", "price": 332.41, "change_pct": 0.32, "as_of": "16.09.", "pe": 38.2,
-         "forward_pe": 33.9, "peg": 2.61, "div_yield": 0.32, "earnings_growth": 28.7, "beta": 1.09,
-         "market_cap": "4,86 Bio. USD", "volume": "39,3 Mio.", "week52_low": 235.78, "week52_high": 344.27,
-         "note": "Nahe am 52-Wochen-Hoch. KGV von 38 liegt ueber dem eigenen 5-Jahres-Schnitt. Dividendenrendite mit 0,32% niedrig -- Apple setzt staerker auf Aktienrueckkaeufe.",
-         "csv_path": DATA_DIR / "AAPL.csv", "accent": OCHRE},
-        {"name": "Nvidia", "ticker": "NVDA", "price": 213.90, "change_pct": 0.82, "as_of": "16.09.", "pe": 26.7,
-         "forward_pe": 24.04, "peg": 0.46, "div_yield": 0.13, "earnings_growth": 127.8, "beta": 2.22,
-         "market_cap": "5,09 Bio. USD", "volume": "132,3 Mio.", "week52_low": 163.90, "week52_high": 236.00,
-         "note": "Deutlicher Tagesverlust von -3,4%. KGV trotz Ruecksetzer moderat bei 27, PEG-Ratio von 0,46 deutlich unter 1 -- der Markt preist das Gewinnwachstum vergleichsweise guenstig ein.",
-         "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
-        {"name": "Palantir", "ticker": "PLTR", "price": 174.34, "change_pct": 1.03, "as_of": "16.09.", "pe": 148.1,
-         "forward_pe": 74.63, "peg": 1.61, "div_yield": None, "earnings_growth": 215.4, "beta": 1.62,
-         "market_cap": "416 Mrd. USD", "volume": "29,1 Mio.", "week52_low": 106.37, "week52_high": 207.52,
-         "note": "Mit Abstand hoechstes KGV der drei (148). PEG-Ratio von 1,6 relativiert das etwas -- der Markt preist sehr hohes erwartetes Wachstum ein. Keine Dividende.",
-         "csv_path": DATA_DIR / "PLTR.csv", "accent": CAT_TEAL},
+        {"name": "Microsoft", "ticker": "MSFT", "price": 497.75, "change_pct": 1.52, "as_of": "17.09.", "pe": 27.7,
+         "forward_pe": 25.06, "peg": 1.61, "div_yield": 0.73, "earnings_growth": 31.7, "beta": 1.11,
+         "market_cap": "3,64 Bio. USD", "volume": "17,8 Mio.", "week52_low": 348.54, "week52_high": 549.20,
+         "note": "Deutliches Tagesplus. KGV von 28 nahe am eigenen Durchschnitt, Dividendenrendite mit 0,73% moderat -- eine der wenigen Big-Tech-Aktien mit regelmaessiger Ausschuettung.",
+         "csv_path": DATA_DIR / "MSFT.csv", "accent": OCHRE},
+        {"name": "Amazon", "ticker": "AMZN", "price": 251.19, "change_pct": 2.13, "as_of": "17.09.", "pe": 20.0,
+         "forward_pe": 23.26, "peg": 1.45, "div_yield": None, "earnings_growth": 242.3, "beta": 1.44,
+         "market_cap": "2,65 Bio. USD", "volume": "30,3 Mio.", "week52_low": 196.00, "week52_high": 287.20,
+         "note": "KGV von 20 niedriger als bei den meisten Big-Tech-Werten. Gewinnwachstum von ueber 240% im letzten Quartal, allerdings von einer niedrigeren Basis aus. Keine Dividende.",
+         "csv_path": DATA_DIR / "AMZN.csv", "accent": GREEN},
+        {"name": "Tesla", "ticker": "TSLA", "price": 366.20, "change_pct": 2.27, "as_of": "17.09.", "pe": 334.7,
+         "forward_pe": 149.25, "peg": 4.26, "div_yield": None, "earnings_growth": -3.0, "beta": 1.85,
+         "market_cap": "1,41 Bio. USD", "volume": "38,8 Mio.", "week52_low": 297.38, "week52_high": 498.83,
+         "note": "Mit Abstand hoechstes KGV der drei (335). Gewinn zuletzt leicht ruecklaeufig (-3% YoY) -- der Markt preist vor allem zukuenftiges Wachstum jenseits des Autogeschaefts ein.",
+         "csv_path": DATA_DIR / "TSLA.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
