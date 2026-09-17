@@ -1702,10 +1702,12 @@
     "caption": "Was ist eigentlich ein Blue Chip?\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
     "fire_at": "2026-09-17T09:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels).",
     "claimed_by": "runnervmlun5p-2290-2fc6c7ee",
-    "claimed_at": "2026-09-17T10:25:14.257490+00:00"
+    "claimed_at": "2026-09-17T10:25:14.257490+00:00",
+    "published_at": "2026-09-17T10:25:49.159376+00:00",
+    "media_id": "18018065612729084"
   },
   {
     "post_name": "erklaerstueck_all-time-high",
