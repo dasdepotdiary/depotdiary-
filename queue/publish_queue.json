@@ -2076,9 +2076,11 @@
     "post_name": "tagesupdate_2026-09-17",
     "action": "story",
     "fire_at": "2026-09-17T22:04:47+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-23440-9daa8e9e",
-    "claimed_at": "2026-09-17T20:07:00.783857+00:00"
+    "claimed_at": "2026-09-17T20:07:00.783857+00:00",
+    "published_at": "2026-09-17T20:07:21.160515+00:00",
+    "media_id": "18131227975662788"
   },
   {
     "post_name": "aktiencheck_2026-09-17",
