@@ -2121,6 +2121,8 @@
     "post_name": "aktiencheck_2026-09-18",
     "action": "story_sequence",
     "fire_at": "2026-09-18T00:25:29+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-18468-9e1795d5",
+    "claimed_at": "2026-09-17T22:27:30.088334+00:00"
   }
 ]
