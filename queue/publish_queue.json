@@ -2111,6 +2111,8 @@
     "post_name": "heute-agenda_2026-09-18",
     "action": "story",
     "fire_at": "2026-09-18T00:21:42+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-19888-3ce421ab",
+    "claimed_at": "2026-09-17T22:23:29.574794+00:00"
   }
 ]
