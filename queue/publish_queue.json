@@ -2015,7 +2015,9 @@
     "post_name": "watchlist_donnerstag_vrt",
     "action": "story",
     "fire_at": "2026-09-17T17:30:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2225-77ef7fc6",
+    "claimed_at": "2026-09-17T19:07:38.475649+00:00"
   },
   {
     "post_name": "watchlist_freitag_btc",
