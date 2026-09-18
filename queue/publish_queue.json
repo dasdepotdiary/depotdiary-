@@ -2144,7 +2144,9 @@
     "post_name": "story_depotfrage_cta",
     "action": "story",
     "fire_at": "2026-09-18T11:00:00+02:00",
-    "status": "pending",
-    "note": "Erneute Depot-Anforderung fuer echtes Depot-Ranking, auf Nutzerwunsch 2026-09-18 fuer morgen."
+    "status": "claiming",
+    "note": "Erneute Depot-Anforderung fuer echtes Depot-Ranking, auf Nutzerwunsch 2026-09-18 fuer morgen.",
+    "claimed_by": "Surface4RA-34772-3364e28a",
+    "claimed_at": "2026-09-18T10:11:58.290394+00:00"
   }
 ]
