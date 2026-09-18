@@ -2143,7 +2143,7 @@
   {
     "post_name": "story_depotfrage_cta",
     "action": "story",
-    "fire_at": "2026-09-19T18:00:00+02:00",
+    "fire_at": "2026-09-18T11:00:00+02:00",
     "status": "pending",
     "note": "Erneute Depot-Anforderung fuer echtes Depot-Ranking, auf Nutzerwunsch 2026-09-18 fuer morgen."
   }
