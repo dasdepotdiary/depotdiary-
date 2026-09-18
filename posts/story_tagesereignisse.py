@@ -127,16 +127,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Dow +0,7%, S&P 500 +1,1%, Nasdaq +1,6%.",
-         "body": "Deutliche Erholung einen Tag nach der Fed-Zinserhoehung -- der Nasdaq machte den Vortagesverlust mehr als wett."},
-        {"headline": "Fed-Chef Kevin Warsh: 'Inflation ist zu hoch und das schon zu lange.'",
-         "body": "Die juengsten Fed-Projektionen deuten auf einen weiteren Zinsschritt im Jahr 2026 hin."},
-        {"headline": "Micron-Aktie springt um mehr als 5%.",
-         "body": "Intel-CEO Lip-Bu Tan sagte auf einer Branchenkonferenz, die Nachfrage nach Speicherchips lasse nicht nach -- Preise duerften weiter steigen."},
-        {"headline": "Oelpreis bei rund 102 USD/Barrel, leicht ruecklaeufig.",
-         "body": "Trotz neuer Berichte ueber Angriffe im Nahen Osten gab der Preis am Donnerstag leicht nach."},
-        {"headline": "Bitcoin bei rund 76.850 USD, +1,6%.",
-         "body": "Erholung nach den Verlusten der Vortage -- Kurs bewegt sich trotz der Fed-Entscheidung wieder aufwaerts."},
+        {"headline": "Bank of Japan hebt Leitzins auf 1,25% an.",
+         "body": "Der Schritt kommt einen Tag nach der Fed-Zinserhoehung und beeinflusst weltweit die Erwartungen an die Geldpolitik."},
+        {"headline": "S&P 500 und Nasdaq 100 hatten ihren besten Tag seit Anfang August.",
+         "body": "Die Rallye setzte sich in Asien fort -- der MSCI-Asien-Index stieg um 0,8%."},
+        {"headline": "Micron-Aktie springt um weitere 5,5% auf 977,50 USD.",
+         "body": "Nach dem Kurssprung vom Vortag geht die Rallye bei Speicherchip-Werten weiter."},
+        {"headline": "Samsung und SK Hynix legen deutlich zu.",
+         "body": "Die asiatischen Chiphersteller profitieren von einem optimistischen Ausblick von Nvidia."},
+        {"headline": "Ein Stratege empfiehlt, wieder etwas in Anleihen umzuschichten.",
+         "body": "Nach der Fed-Zinserhoehung rät Chef-Aktienstratege Julian Emanuel zu etwas mehr Balance zwischen Aktien und festverzinslichen Wertpapieren."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

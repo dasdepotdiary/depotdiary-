@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "Basispunkt",
-        "definition": "Ein Basispunkt ist ein Hundertstel Prozent (0,01%). Wenn die Fed den Leitzins um 25 Basispunkte anhebt, heisst das: um 0,25 Prozentpunkte.",
-        "example": "Beispiel von heute: Die Fed hat den Leitzins um 25 Basispunkte auf 3,75-4,00% angehoben.",
+        "term": "Leitzins",
+        "definition": "Der Leitzins ist der Zinssatz, zu dem sich Banken Geld von ihrer Zentralbank leihen. Steigt er, werden Kredite teurer -- das soll die Wirtschaft und damit die Inflation bremsen.",
+        "example": "Beispiel von dieser Woche: Erst die Fed (auf 3,75-4,00%), jetzt die Bank of Japan (auf 1,25%) -- zwei Zentralbanken, zwei Erhoehungen.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
