@@ -2189,6 +2189,8 @@
     "post_name": "story_damals_investiert_nvda-aapl-mnst-btc-eth",
     "action": "story",
     "fire_at": "2026-09-18T17:46:27+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-23232-423b261d",
+    "claimed_at": "2026-09-18T15:49:02.565932+00:00"
   }
 ]
