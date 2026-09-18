@@ -2165,7 +2165,9 @@
     "post_name": "tagesereignisse_2026-09-18b",
     "action": "story",
     "fire_at": "2026-09-18T12:13:52+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-2208-4ea3316f",
+    "claimed_at": "2026-09-18T10:16:33.978662+00:00"
   },
   {
     "post_name": "fachbegriff_2026-09-18",
