@@ -18,20 +18,27 @@ sys.path.insert(0, str(Path(__file__).parent))
 import brand as B
 from story_aktiencheck import font
 
+ROOT = Path(__file__).parent.parent
 NAME = "story_tagesereignisse"
-OUTPUT = Path(__file__).parent.parent / "output" / NAME
+OUTPUT = ROOT / "output" / NAME
 TT_DIR = OUTPUT / "tiktok_9x16"
 TT_DIR.mkdir(parents=True, exist_ok=True)
 
 W, H = B.STORY_SIZE
 # v2 (2026-09-16, Nutzer: "Layout ist gleich wie Aktien-Check, mach andere"):
-# bewusst helle/cremefarbene Editorial-Optik statt der dunklen Karten-Optik
-# von Aktien-Check/Watchlist -- grosse nummerierte Schlagzeilen, keine Boxen.
+# bewusst helle editorial Optik statt dunkler Karten -- grosse nummerierte
+# Schlagzeilen, keine Boxen.
+# v3 (2026-09-18, Nutzer: "mach das auf helle Skyline, neues Pexels-Tagesfoto"):
+# statt flacher Creme-Flaeche ein echtes Tageslicht-Skyline-Foto (klarer
+# blauer Himmel oben, Gebaeude unten) mit einem weissen Verlaufs-Scrim fuer
+# Lesbarkeit -- bewusst ANDERES Foto als das Nacht-Skyline-Bild, das schon im
+# Vermoegensingenieur-Collab und bei "Damals investiert" verwendet wird.
 BG = "#F2F0EA"
+SKYLINE_PHOTO = ROOT / "assets" / "skyline_day_still.png"
 INK = B.INK
 SUBTEXT = B.SUBTEXT
 DIVIDER = B.DIVIDER
-OCHRE = B.OCHRE
+OCHRE = "#2E86AB"  # sky-blau statt Ochre/Gelb -- Nutzerwunsch 2026-09-18, siehe feedback_depotdiary_design_experimentation
 GREEN = B.GREEN
 
 DATE_LABEL = (sys.argv[1] if len(sys.argv) > 1 else date.today().strftime("%d.%m.%Y"))
@@ -90,8 +97,25 @@ def draw_event_entry(draw, x, y, w, num, event):
     return entry_h
 
 
+def skyline_day_background():
+    img = Image.open(SKYLINE_PHOTO).convert("RGB")
+    if img.size != (W, H):
+        img = img.resize((W, H))
+    # Weisser Verlaufs-Scrim von unten (staerker, wo der Text steht) fuer
+    # Lesbarkeit -- oberer Himmelsbereich bleibt weitgehend klar sichtbar.
+    scrim = Image.new("L", (W, H), 0)
+    sdraw = ImageDraw.Draw(scrim)
+    for yy in range(H):
+        t = yy / H
+        alpha = int(max(0, (t - 0.28)) / 0.72 * 235)
+        sdraw.line([(0, yy), (W, yy)], fill=min(235, alpha))
+    white = Image.new("RGB", (W, H), (255, 255, 255))
+    img = Image.composite(white, img, scrim)
+    return img
+
+
 def slide_tagesereignisse(events):
-    img = Image.new("RGB", (W, H), BG)
+    img = skyline_day_background()
     draw = ImageDraw.Draw(img)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=OCHRE)
 
