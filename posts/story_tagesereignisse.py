@@ -34,7 +34,7 @@ W, H = B.STORY_SIZE
 # Lesbarkeit -- bewusst ANDERES Foto als das Nacht-Skyline-Bild, das schon im
 # Vermoegensingenieur-Collab und bei "Damals investiert" verwendet wird.
 BG = "#F2F0EA"
-SKYLINE_PHOTO = ROOT / "assets" / "skyline_day_still.png"
+SKYLINE_PHOTO = ROOT / "assets" / "downtown_street_still.png"
 INK = B.INK
 SUBTEXT = B.SUBTEXT
 DIVIDER = B.DIVIDER
@@ -57,6 +57,17 @@ def wrap_text(draw, text, fnt, max_w):
     if cur:
         lines.append(cur)
     return lines
+
+
+def skyline_photo_background():
+    """Nicht mehr verwendet -- drei Foto-Versuche (Vollbild-Scrim auf
+    Skyline-Foto, Masthead-Banner, Vollbild-Scrim auf Strassenfoto) wurden
+    alle vom Nutzer 2026-09-18 abgelehnt (zu unauffaellig / Gebaeude nicht
+    sichtbar / Text unlesbar wegen zu vielen Bilddetails). Zurueck auf die
+    flache Creme-Optik. Beide Fotos (assets/skyline_day_still.png,
+    assets/downtown_street_still.png) bleiben als Assets fuer ein anderes,
+    besser geeignetes Format aufgehoben."""
+    return Image.new("RGB", (W, H), BG)
 
 
 def draw_header(draw, y):
@@ -98,11 +109,7 @@ def draw_event_entry(draw, x, y, w, num, event):
 
 
 def slide_tagesereignisse(events):
-    # v3 mit Tages-Skyline-Foto wurde vom Nutzer 2026-09-18 abgelehnt
-    # ("nicht so der Fan") -- zurueck auf die flache Creme-Optik von v2,
-    # die gut ankam. Das Tages-Skyline-Foto (assets/skyline_day_still.png)
-    # bleibt als Asset fuer ein anderes Format aufgehoben.
-    img = Image.new("RGB", (W, H), BG)
+    img = skyline_photo_background()
     draw = ImageDraw.Draw(img)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=OCHRE)
 
