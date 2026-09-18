@@ -97,25 +97,12 @@ def draw_event_entry(draw, x, y, w, num, event):
     return entry_h
 
 
-def skyline_day_background():
-    img = Image.open(SKYLINE_PHOTO).convert("RGB")
-    if img.size != (W, H):
-        img = img.resize((W, H))
-    # Weisser Verlaufs-Scrim von unten (staerker, wo der Text steht) fuer
-    # Lesbarkeit -- oberer Himmelsbereich bleibt weitgehend klar sichtbar.
-    scrim = Image.new("L", (W, H), 0)
-    sdraw = ImageDraw.Draw(scrim)
-    for yy in range(H):
-        t = yy / H
-        alpha = int(max(0, (t - 0.28)) / 0.72 * 235)
-        sdraw.line([(0, yy), (W, yy)], fill=min(235, alpha))
-    white = Image.new("RGB", (W, H), (255, 255, 255))
-    img = Image.composite(white, img, scrim)
-    return img
-
-
 def slide_tagesereignisse(events):
-    img = skyline_day_background()
+    # v3 mit Tages-Skyline-Foto wurde vom Nutzer 2026-09-18 abgelehnt
+    # ("nicht so der Fan") -- zurueck auf die flache Creme-Optik von v2,
+    # die gut ankam. Das Tages-Skyline-Foto (assets/skyline_day_still.png)
+    # bleibt als Asset fuer ein anderes Format aufgehoben.
+    img = Image.new("RGB", (W, H), BG)
     draw = ImageDraw.Draw(img)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=OCHRE)
 
