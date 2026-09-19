@@ -59,28 +59,31 @@ def wrap_text(draw, text, fnt, max_w):
     return lines
 
 
-def skyline_photo_background():
-    """Nicht mehr verwendet -- drei Foto-Versuche (Vollbild-Scrim auf
-    Skyline-Foto, Masthead-Banner, Vollbild-Scrim auf Strassenfoto) wurden
-    alle vom Nutzer 2026-09-18 abgelehnt (zu unauffaellig / Gebaeude nicht
-    sichtbar / Text unlesbar wegen zu vielen Bilddetails). Zurueck auf die
-    flache Creme-Optik. Beide Fotos (assets/skyline_day_still.png,
-    assets/downtown_street_still.png) bleiben als Assets fuer ein anderes,
-    besser geeignetes Format aufgehoben."""
-    return Image.new("RGB", (W, H), BG)
+MASTHEAD_H = 340
+INK_DARK = "#16181C"
+
+
+def draw_masthead(img):
+    """v6 (2026-09-18): kein Foto mehr (drei Versuche verworfen), aber die
+    reine Creme-Flaeche fand der Nutzer "etwas fad" -- stattdessen ein
+    dunkles Zeitungs-Masthead oben (analog echter Zeitungs-Kopfzeilen) fuer
+    mehr visuellen Kontrast, darunter die gewohnte Creme-Flaeche."""
+    draw = ImageDraw.Draw(img)
+    draw.rectangle([0, 0, W, MASTHEAD_H], fill=INK_DARK)
+    return draw
 
 
 def draw_header(draw, y):
     eyebrow_font = font(B.SANS_BOLD, 18)
-    draw.text((B.MARGIN_LEFT, y), "@DASDEPOTDIARY  —  " + DATE_LABEL, font=eyebrow_font, fill=SUBTEXT)
+    draw.text((B.MARGIN_LEFT, y), "@DASDEPOTDIARY  —  " + DATE_LABEL, font=eyebrow_font, fill="#9B9587")
     y += 44
     title_font = font(B.SERIF_BOLD, 56)
-    draw.text((B.MARGIN_LEFT, y), "Was ist heute", font=title_font, fill=INK)
+    draw.text((B.MARGIN_LEFT, y), "Was ist heute", font=title_font, fill="#F5F2EA")
     y += 66
-    draw.text((B.MARGIN_LEFT, y), "passiert.", font=title_font, fill=INK)
+    draw.text((B.MARGIN_LEFT, y), "passiert.", font=title_font, fill="#F5F2EA")
     y += 78
     draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + B.ACCENT_LINE_WIDTH, y + B.ACCENT_LINE_HEIGHT], fill=OCHRE)
-    return y + 50
+    return y + 46
 
 
 def draw_event_entry(draw, x, y, w, num, event):
@@ -109,11 +112,12 @@ def draw_event_entry(draw, x, y, w, num, event):
 
 
 def slide_tagesereignisse(events):
-    img = skyline_photo_background()
-    draw = ImageDraw.Draw(img)
+    img = Image.new("RGB", (W, H), BG)
+    draw = draw_masthead(img)
     draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=OCHRE)
 
-    header_end_y = draw_header(draw, 70)
+    header_end_y = draw_header(draw, 56)
+    header_end_y = max(header_end_y, MASTHEAD_H + 40)
     entry_gap = 44
     content_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
     heights = []
