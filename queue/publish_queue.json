@@ -1714,9 +1714,9 @@
     "action": "carousel",
     "caption": "Ein All-Time-High ist seltener eine Warnung, als es klingt.\n\nKeine Anlageberatung -- nur mein eigenes Depot.\n\n#depotdiary #boerse #finanzen #erklaerstueck",
     "slide_count": 5,
-    "fire_at": "2026-09-19T21:00:00+02:00",
+    "fire_at": "2026-09-21T09:30:00+02:00",
     "status": "pending",
-    "note": "Einfaches Erklaerstueck zum Fuellen offener Kalendertage, autonom gebaut und gequeued (Nutzerfreigabe 2026-09-09, siehe feedback_depotdiary_autonomy_levels). Auf Nutzerwunsch 2026-09-18 nachts auf morgen Abend 21 Uhr verschoben."
+    "note": "Auf Nutzerwunsch (19.9. abends) von heute 21:00 auf Montag verschoben -- heute nur noch Stories, kein Post."
   },
   {
     "post_name": "mythos_realitaet_einsteiger-mythen",
@@ -2238,6 +2238,18 @@
     "post_name": "deepdivepoll_2026-09-19",
     "action": "story",
     "fire_at": "2026-09-19T19:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "watchlist_samstag_gev",
+    "action": "story",
+    "fire_at": "2026-09-19T20:00:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "watchlist_sonntag_isrg",
+    "action": "story",
+    "fire_at": "2026-09-20T15:00:00+02:00",
     "status": "pending"
   }
 ]

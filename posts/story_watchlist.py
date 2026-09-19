@@ -163,21 +163,16 @@ def slide_watchlist(entry, weekday_label):
 
 
 WATCHLIST_WEEK = [
-    {"weekday": "Mittwoch", "date_label": "16.09.2026", "name": "Broadcom", "ticker": "AVGO", "kind": "stock",
-     "price": 344.72, "change_pct": -4.77, "as_of": "14.09.", "pe": 43.86, "forward_pe": 19.27,
-     "peg": 0.36, "div_yield": 0.72, "market_cap": "1,65 Bio. USD", "volume": "32,7 Mio.",
-     "csv_path": DATA_DIR / "AVGO.csv", "accent": OCHRE,
-     "quote": "Ich beobachte, wie tief die Aktie noch fallen koennte -- Broadcom gehoert gerade zu den am staerksten betroffenen Werten im aktuellen Ausverkauf."},
-    {"weekday": "Donnerstag", "date_label": "17.09.2026", "name": "Vertiv", "ticker": "VRT", "kind": "stock",
-     "price": 237.39, "change_pct": -7.63, "as_of": "14.09.", "pe": 53.71, "forward_pe": 28.65,
-     "peg": 0.87, "div_yield": 0.07, "market_cap": "91,4 Mrd. USD", "volume": "10,9 Mio.",
-     "csv_path": DATA_DIR / "VRT.csv", "accent": GREEN,
-     "quote": "Ich hab schon eine erste Tranche gekauft. Aktuell sehr spannend -- ich ueberlege, ob ich gerade nachkaufe."},
-    {"weekday": "Freitag", "date_label": "18.09.2026", "name": "Bitcoin", "ticker": "BTC", "kind": "crypto",
-     "price": 77992.49, "change_pct": -0.23, "as_of": "15.09.", "change_7d": -0.58,
-     "market_cap": "ca. 1,55 Bio. USD", "range_low": 57717.55, "range_high": 82814.23,
-     "csv_path": DATA_DIR / "BTC.csv", "accent": CAT_TEAL,
-     "quote": "Einfach interessant gerade -- ich kaufe sowieso aktuell nach."},
+    {"weekday": "Samstag", "date_label": "19.09.2026", "name": "GE Vernova", "ticker": "GEV", "kind": "stock",
+     "price": 940.33, "change_pct": 1.67, "as_of": "18.09.", "pe": 26.53, "forward_pe": 37.59,
+     "peg": 1.80, "div_yield": 0.19, "market_cap": "250,4 Mrd. USD", "volume": "4,1 Mio.",
+     "csv_path": DATA_DIR / "GEV.csv", "accent": GREEN,
+     "quote": "Ich beobachte GE Vernova, weil das Unternehmen mitten im Strombedarf-Boom durch KI-Rechenzentren steckt -- Gasturbinen und Netztechnik sind genau das, was gerade gebraucht wird."},
+    {"weekday": "Sonntag", "date_label": "20.09.2026", "name": "Intuitive Surgical", "ticker": "ISRG", "kind": "stock",
+     "price": 393.33, "change_pct": 2.55, "as_of": "18.09.", "pe": 44.05, "forward_pe": 31.75,
+     "peg": 1.79, "div_yield": None, "market_cap": "140,9 Mrd. USD", "volume": "4,9 Mio.",
+     "csv_path": DATA_DIR / "ISRG.csv", "accent": CAT_TEAL,
+     "quote": "Ich schau mir Intuitive Surgical an, weil sich die Aktie nach dem Ruecksetzer im Sommer wieder deutlich erholt hat -- Robotik in der Medizintechnik bleibt fuer mich ein spannendes langfristiges Thema."},
 ]
 
 
