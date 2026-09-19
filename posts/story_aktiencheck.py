@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Microsoft", "ticker": "MSFT", "price": 497.75, "change_pct": 1.52, "as_of": "17.09.", "pe": 27.7,
-         "forward_pe": 25.06, "peg": 1.61, "div_yield": 0.73, "earnings_growth": 31.7, "beta": 1.11,
-         "market_cap": "3,64 Bio. USD", "volume": "17,8 Mio.", "week52_low": 348.54, "week52_high": 549.20,
-         "note": "Deutliches Tagesplus. KGV von 28 nahe am eigenen Durchschnitt, Dividendenrendite mit 0,73% moderat -- eine der wenigen Big-Tech-Aktien mit regelmaessiger Ausschuettung.",
-         "csv_path": DATA_DIR / "MSFT.csv", "accent": OCHRE},
-        {"name": "Amazon", "ticker": "AMZN", "price": 251.19, "change_pct": 2.13, "as_of": "17.09.", "pe": 20.0,
-         "forward_pe": 23.26, "peg": 1.45, "div_yield": None, "earnings_growth": 242.3, "beta": 1.44,
-         "market_cap": "2,65 Bio. USD", "volume": "30,3 Mio.", "week52_low": 196.00, "week52_high": 287.20,
-         "note": "KGV von 20 niedriger als bei den meisten Big-Tech-Werten. Gewinnwachstum von ueber 240% im letzten Quartal, allerdings von einer niedrigeren Basis aus. Keine Dividende.",
-         "csv_path": DATA_DIR / "AMZN.csv", "accent": GREEN},
-        {"name": "Tesla", "ticker": "TSLA", "price": 366.20, "change_pct": 2.27, "as_of": "17.09.", "pe": 334.7,
-         "forward_pe": 149.25, "peg": 4.26, "div_yield": None, "earnings_growth": -3.0, "beta": 1.85,
-         "market_cap": "1,41 Bio. USD", "volume": "38,8 Mio.", "week52_low": 297.38, "week52_high": 498.83,
-         "note": "Mit Abstand hoechstes KGV der drei (335). Gewinn zuletzt leicht ruecklaeufig (-3% YoY) -- der Markt preist vor allem zukuenftiges Wachstum jenseits des Autogeschaefts ein.",
-         "csv_path": DATA_DIR / "TSLA.csv", "accent": CAT_TEAL},
+        {"name": "SAP", "ticker": "SAP", "price": 209.45, "change_pct": -1.97, "as_of": "18.09.", "pe": 27.6,
+         "forward_pe": 21.98, "peg": 1.62, "div_yield": 1.37, "earnings_growth": 30.6, "beta": 0.78,
+         "market_cap": "246,6 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 144.97, "week52_high": 276.56,
+         "note": "Deutscher Softwarekonzern, Tagesminus von rund 2%. Dividendenrendite mit 1,37% eine der hoechsten unter den grossen Softwarewerten.",
+         "csv_path": DATA_DIR / "SAP.csv", "accent": OCHRE},
+        {"name": "Alphabet", "ticker": "GOOGL", "price": 349.54, "change_pct": 0.64, "as_of": "18.09.", "pe": 17.4,
+         "forward_pe": 22.57, "peg": 1.24, "div_yield": 0.24, "earnings_growth": 294.0, "beta": 1.23,
+         "market_cap": "4,27 Bio. USD", "volume": "47,6 Mio.", "week52_low": 235.23, "week52_high": 408.10,
+         "note": "Niedrigstes KGV der drei Big-Tech-Konzerne im Vergleich. Gewinnwachstum von fast 300% im letzten Quartal YoY.",
+         "csv_path": DATA_DIR / "GOOGL.csv", "accent": GREEN},
+        {"name": "Costco", "ticker": "COST", "price": 895.31, "change_pct": 0.15, "as_of": "18.09.", "pe": 45.0,
+         "forward_pe": 39.84, "peg": 4.38, "div_yield": 0.60, "earnings_growth": 15.2, "beta": 0.86,
+         "market_cap": "397,1 Mrd. USD", "volume": "4,2 Mio.", "week52_low": 840.35, "week52_high": 1094.76,
+         "note": "Mit Abstand hoechstes KGV der drei (45). Niedrige Profitmarge (3%) ist bei Mitgliedschafts-Grosshaendlern wie Costco branchentypisch.",
+         "csv_path": DATA_DIR / "COST.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

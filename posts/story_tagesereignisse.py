@@ -149,16 +149,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Bank of Japan hebt Leitzins auf 1,25% an.",
-         "body": "Der Schritt kommt einen Tag nach der Fed-Zinserhoehung und beeinflusst weltweit die Erwartungen an die Geldpolitik."},
-        {"headline": "S&P 500 und Nasdaq 100 hatten ihren besten Tag seit Anfang August.",
-         "body": "Die Rallye setzte sich in Asien fort -- der MSCI-Asien-Index stieg um 0,8%."},
-        {"headline": "Micron-Aktie springt um weitere 5,5% auf 977,50 USD.",
-         "body": "Nach dem Kurssprung vom Vortag geht die Rallye bei Speicherchip-Werten weiter."},
-        {"headline": "Samsung und SK Hynix legen deutlich zu.",
-         "body": "Die asiatischen Chiphersteller profitieren von einem optimistischen Ausblick von Nvidia."},
-        {"headline": "Ein Stratege empfiehlt, wieder etwas in Anleihen umzuschichten.",
-         "body": "Nach der Fed-Zinserhoehung rät Chef-Aktienstratege Julian Emanuel zu etwas mehr Balance zwischen Aktien und festverzinslichen Wertpapieren."},
+        {"headline": "Freitag: Dow -0,18%, S&P 500 +0,2%, Nasdaq +0,7%.",
+         "body": "Gemischter Wochenschluss -- fuer den Dow war es die dritte Verlustwoche in Folge."},
+        {"headline": "Rekordverdaechtiger 'Triple Witching': rund 7 Billionen USD an Optionen liefen aus.",
+         "body": "Der zweitgroesste Verfallstermin der Geschichte -- Options-, Futures- und Aktienkontrakte laufen gleichzeitig aus."},
+        {"headline": "Verlierer des Tages: IBM -3,2%, Disney -2,7%, Nike -2,3%.",
+         "body": "Drei grosse Namen mit deutlichen Abschlaegen zum Wochenschluss."},
+        {"headline": "Gewinner des Tages: Amgen +1,5%, Nvidia +1,3%, Caterpillar +1,2%.",
+         "body": "Auf der anderen Seite legten diese drei Standardwerte zu."},
+        {"headline": "10-Jahres-Rendite zieht wieder an.",
+         "body": "Anhaltende Unsicherheit ueber die Oelversorgung aus dem Nahen Osten trieb Treibstoff- und Gaspreise -- und damit die Rendite -- nach oben."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

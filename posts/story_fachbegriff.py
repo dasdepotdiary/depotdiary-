@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "Leitzins",
-        "definition": "Der Leitzins ist der Zinssatz, zu dem sich Banken Geld von ihrer Zentralbank leihen. Steigt er, werden Kredite teurer -- das soll die Wirtschaft und damit die Inflation bremsen.",
-        "example": "Beispiel von dieser Woche: Erst die Fed (auf 3,75-4,00%), jetzt die Bank of Japan (auf 1,25%) -- zwei Zentralbanken, zwei Erhoehungen.",
+        "term": "Triple Witching",
+        "definition": "Ein Tag, an dem drei Arten von Terminkontrakten gleichzeitig auslaufen: Aktienindex-Optionen, -Futures und Einzelaktien-Optionen. Das passiert am dritten Freitag von Maerz, Juni, September und Dezember.",
+        "example": "Beispiel von gestern: rund 7 Billionen USD an Optionen liefen aus -- der zweitgroesste Verfallstermin der Geschichte.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
