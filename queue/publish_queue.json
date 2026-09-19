@@ -2248,9 +2248,11 @@
     "post_name": "watchlist_samstag_gev",
     "action": "story",
     "fire_at": "2026-09-19T20:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2146-12dbefb3",
-    "claimed_at": "2026-09-19T19:35:51.839745+00:00"
+    "claimed_at": "2026-09-19T19:35:51.839745+00:00",
+    "published_at": "2026-09-19T19:36:01.696335+00:00",
+    "media_id": "18132515704660974"
   },
   {
     "post_name": "watchlist_sonntag_isrg",
