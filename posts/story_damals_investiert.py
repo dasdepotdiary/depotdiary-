@@ -220,18 +220,18 @@ def slide_damals(entries, years_ago, brightness=0.34):
 
 def main():
     entries = [
-        {"name": "Nvidia", "ticker": "NVDA", "start_date": "09/2021", "start_price": 20.6256, "end_price": 219.34,
-         "invested": 1000, "csv_path": DATA_DIR / "NVDA_5y.csv", "accent": GOLD},
-        {"name": "Apple", "ticker": "AAPL", "start_date": "09/2021", "start_price": 138.02, "end_price": 334.59,
-         "invested": 1000, "csv_path": DATA_DIR / "AAPL_5y.csv", "accent": SKYBLUE},
-        {"name": "Monster Energy", "ticker": "MNST", "start_date": "09/2021", "start_price": 22.2075, "end_price": 44.51,
-         "invested": 1000, "csv_path": DATA_DIR / "MNST_5y.csv", "accent": TEAL},
-        {"name": "Bitcoin", "ticker": "BTC", "start_date": "09/2021", "start_price": 43790.89, "end_price": 80786.54,
-         "invested": 1000, "csv_path": DATA_DIR / "BTC_5y.csv", "accent": "#C77D3B"},
-        {"name": "Ethereum", "ticker": "ETH", "start_date": "09/2021", "start_price": 3001.68, "end_price": 2582.67,
-         "invested": 1000, "csv_path": DATA_DIR / "ETH_5y.csv", "accent": RED},
+        {"name": "Netflix", "ticker": "NFLX", "start_date": "09/2023", "start_price": 37.76, "end_price": 71.79,
+         "invested": 1000, "csv_path": DATA_DIR / "NFLX_3y.csv", "accent": RED},
+        {"name": "Eli Lilly", "ticker": "LLY", "start_date": "09/2023", "start_price": 526.2055, "end_price": 1152.93,
+         "invested": 1000, "csv_path": DATA_DIR / "LLY_3y.csv", "accent": TEAL},
+        {"name": "Uber", "ticker": "UBER", "start_date": "09/2023", "start_price": 45.99, "end_price": 70.50,
+         "invested": 1000, "csv_path": DATA_DIR / "UBER_3y.csv", "accent": SKYBLUE},
+        {"name": "Robinhood", "ticker": "HOOD", "start_date": "09/2023", "start_price": 9.81, "end_price": 119.82,
+         "invested": 1000, "csv_path": DATA_DIR / "HOOD_3y.csv", "accent": GOLD},
+        {"name": "Solana", "ticker": "SOL", "start_date": "09/2023", "start_price": 21.4624, "end_price": 113.23,
+         "invested": 1000, "csv_path": DATA_DIR / "SOL_3y.csv", "accent": "#C77D3B"},
     ]
-    img = slide_damals(entries, years_ago=5, brightness=0.85)
+    img = slide_damals(entries, years_ago=3, brightness=0.85)
     img.save(TT_DIR / "slide_1.png")
     img.save(OUTPUT / "uebersicht.png")
     print(f"Fertig: {OUTPUT / 'uebersicht.png'}")
