@@ -2326,7 +2326,9 @@
     "post_name": "wochencheck_2026-09-20",
     "action": "story_sequence",
     "fire_at": "2026-09-20T18:30:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2299-54cb7cc3",
+    "claimed_at": "2026-09-20T17:23:16.632626+00:00"
   },
   {
     "post_name": "aktiencheck_2026-09-20",
