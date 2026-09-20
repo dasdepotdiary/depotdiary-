@@ -2258,9 +2258,11 @@
     "post_name": "watchlist_sonntag_isrg",
     "action": "story",
     "fire_at": "2026-09-20T15:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2090-1ce744a3",
-    "claimed_at": "2026-09-20T13:43:26.987303+00:00"
+    "claimed_at": "2026-09-20T13:43:26.987303+00:00",
+    "published_at": "2026-09-20T13:44:07.560897+00:00",
+    "media_id": "18141575734600577"
   },
   {
     "post_name": "damalsinvestiert_2026-09-19",
