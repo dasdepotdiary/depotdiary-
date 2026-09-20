@@ -2275,8 +2275,10 @@
     "action": "carousel",
     "slide_count": 1,
     "fire_at": "2026-09-20T11:51:50+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-23056-e4e366e0",
-    "claimed_at": "2026-09-20T09:53:42.063461+00:00"
+    "claimed_at": "2026-09-20T09:53:42.063461+00:00",
+    "published_at": "2026-09-20T09:54:02.731369+00:00",
+    "media_id": "18443065726121380"
   }
 ]
