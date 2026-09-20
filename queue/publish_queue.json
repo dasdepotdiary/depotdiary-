@@ -2315,10 +2315,12 @@
     "action": "carousel",
     "slide_count": 9,
     "fire_at": "2026-09-20T18:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "caption": "Wochenrueckblick -- mein Depot.\n\n+1,61% diese Woche.\nGekauft: Sparplan, Broadcom (297 EUR), Vistra (301 EUR), Uber (400 EUR, letzte Woche), Bitcoin (64.000 EUR).\nVerkauft: nichts.\n\nWie lief eure Woche? Schreibt es mir in die Kommentare oder per DM -- bin gespannt!\n\nKeine Anlageberatung -- nur mein eigenes Depot.",
     "claimed_by": "runnervmlun5p-2299-54cb7cc3",
-    "claimed_at": "2026-09-20T17:21:51.050755+00:00"
+    "claimed_at": "2026-09-20T17:21:51.050755+00:00",
+    "published_at": "2026-09-20T17:23:15.159354+00:00",
+    "media_id": "18049255619602073"
   },
   {
     "post_name": "wochencheck_2026-09-20",
