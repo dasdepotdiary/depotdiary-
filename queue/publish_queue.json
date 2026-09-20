@@ -2355,8 +2355,10 @@
     "post_name": "fachbegriff_2026-09-20",
     "action": "story",
     "fire_at": "2026-09-20T17:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2299-54cb7cc3",
-    "claimed_at": "2026-09-20T17:23:35.280150+00:00"
+    "claimed_at": "2026-09-20T17:23:35.280150+00:00",
+    "published_at": "2026-09-20T17:23:45.302488+00:00",
+    "media_id": "18146095279564281"
   }
 ]
