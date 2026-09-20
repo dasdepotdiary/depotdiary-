@@ -1,0 +1,40 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Fed-Entscheidung, Triple Witching*.",
+  "hook_sub": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Die Woche stand im Zeichen der *Fed-Sitzung*.",
+      "body": "Am Mittwoch entschied die US-Notenbank über den Leitzins -- die Reaktion an den Maerkten war deutlich zu spueren, unter anderem bei Speicherchip-Werten wie Micron."
+    },
+    {
+      "type": "text",
+      "headline": "Am Freitag: *Triple Witching*.",
+      "body": "Rund 7 Billionen USD an Optionen liefen gleichzeitig aus -- der zweitgroesste Verfallstermin der Geschichte. Aktienindex-Optionen, -Futures und Einzelaktien-Optionen verfallen an diesem Tag alle zusammen."
+    },
+    {
+      "type": "text",
+      "headline": "Wochenschluss: *uneinheitlich*.",
+      "body": "Der Dow gab am Freitag um 0,18% nach -- die dritte Verlustwoche in Folge fuer den Index. S&P 500 (+0,2%) und Nasdaq (+0,7%) legten dagegen zu."
+    },
+    {
+      "type": "stats",
+      "headline": "Gewinner und *Verlierer* des Freitags.",
+      "stats": [
+        ["Amgen", "+1,5%", "Gewinner", "green"],
+        ["Nvidia", "+1,3%", "Gewinner", "green"],
+        ["IBM", "-3,2%", "Verlierer", "red"],
+        ["Disney", "-2,7%", "Verlierer", "red"]
+      ],
+      "note": "Schlusskurse vom Freitag, 18.09."
+    },
+    {
+      "type": "text",
+      "headline": "*Anleiherenditen* zogen wieder an.",
+      "body": "Anhaltende Unsicherheit ueber die Oelversorgung aus dem Nahen Osten trieb Treibstoff- und Gaspreise -- und damit die 10-Jahres-Rendite -- nach oben."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Costco, AutoZone & Co* legen Zahlen vor.",
+  "cta_body": "Unter anderem AutoZone, Costco, Cintas, General Mills, Paychex, Darden Restaurants und BlackBerry berichten. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

@@ -844,5 +844,23 @@
     "excerpt": "Reise, Wohnungsbau und E-Autos -- drei Branchen, eine Woche.",
     "cover": "assets/posts/marktupdate_earnings-woche-2026-09-14/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-20-09",
+    "title": "Diese Börsenwoche im Rückblick: Fed-Entscheidung, Triple Witching.",
+    "category": "marktupdate",
+    "date": "2026-09-20",
+    "excerpt": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-20-09/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-21-09",
+    "title": "Die kommende Börsenwoche: volle Earnings-Woche voraus.",
+    "category": "marktupdate",
+    "date": "2026-09-20",
+    "excerpt": "Das steht zwischen Montag und Freitag an -- rein faktisch, keine Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-21-09/slide_1.webp",
+    "url": null
   }
 ]

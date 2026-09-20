@@ -1,0 +1,35 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Die kommende Börsenwoche: *volle Earnings-Woche* voraus.",
+  "hook_sub": "Das steht zwischen Montag und Freitag an -- rein faktisch, keine Prognose.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag startet mit *AutoZone* und *KB Home*.",
+      "body": "AutoZone berichtet am Dienstag, KB Home ebenfalls -- ein erster Blick auf Konsumklima und Wohnungsbau."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *Cintas*, *General Mills* und *Paychex*.",
+      "body": "Drei sehr unterschiedliche Branchen an einem Tag -- Arbeitskleidung/Dienstleistungen, Lebensmittel und Gehaltsabrechnung/HR."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *Costco* im Fokus.",
+      "stats": [
+        ["Costco", "24.09.", "Quartalszahlen", "ink"],
+        ["Darden Restaurants", "24.09.", "Quartalszahlen", "ink"],
+        ["BlackBerry", "24.09.", "Quartalszahlen", "ink"],
+        ["TD Synnex", "24.09.", "Quartalszahlen", "ink"]
+      ],
+      "note": "Costco war diese Woche bereits Thema im Aktien-Check -- jetzt zeigen die Zahlen, wie es dem Unternehmen operativ geht."
+    },
+    {
+      "type": "text",
+      "headline": "Keine grossen *Zentralbank-Termine* diese Woche.",
+      "body": "Nach der Fed-Sitzung letzte Woche steht kein neuer Zinsentscheid an -- der Fokus liegt auf den Unternehmenszahlen."
+    }
+  ],
+  "cta_headline": "Eine Aktie aus dieser Liste wird *diese Woche* Thema im Aktien-Check.",
+  "cta_body": "Welche, entscheidet sich an den Zahlen selbst. Keine Anlageberatung -- nur, was diese Woche ansteht."
+}
