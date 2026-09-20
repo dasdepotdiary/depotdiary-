@@ -2324,9 +2324,16 @@
     "post_name": "aktiencheck_2026-09-20",
     "action": "story_sequence",
     "fire_at": "2026-09-20T12:44:43+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "Surface4RA-15480-cddd3995",
-    "claimed_at": "2026-09-20T10:47:38.480497+00:00"
+    "claimed_at": "2026-09-20T10:47:38.480497+00:00",
+    "published_at": "2026-09-20T10:48:12.140103+00:00",
+    "media_id": "18131114974679582",
+    "media_ids": [
+      "18131114974679582",
+      "18091655366249032",
+      "17863813923676940"
+    ]
   },
   {
     "post_name": "fachbegriff_2026-09-20",
