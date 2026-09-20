@@ -2286,7 +2286,9 @@
     "action": "carousel",
     "slide_count": 7,
     "fire_at": "2026-09-20T12:30:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-15480-cddd3995",
+    "claimed_at": "2026-09-20T10:46:39.452221+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-21-09",
