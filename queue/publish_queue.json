@@ -2355,6 +2355,8 @@
     "post_name": "fachbegriff_2026-09-20",
     "action": "story",
     "fire_at": "2026-09-20T17:00:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2299-54cb7cc3",
+    "claimed_at": "2026-09-20T17:23:35.280150+00:00"
   }
 ]
