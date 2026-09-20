@@ -1,13 +1,11 @@
-"""Design-Alternative C fuer "Wochenrueckblick -- Mein Depot" (2026-09-20,
-Nutzerwunsch): helles Tages-Skyline-Foto als Hintergrund (assets/
-skyline_day_still.png -- bisher fuer Tagesereignisse getestet und dort
-verworfen, laut Memory "fuer ein anderes Format aufheben"). Fuenf Slides,
-alle Infos (Performance, Kaeufe, Verkaeufe) + eine Engagement-Slide
-(Like/Kommentar/Teilen, wie beim Deep-Dive-Format).
-
-Lesbarkeit: dunkle halbtransparente Karten ueber dem Foto (wie schon bei
-story_damals_investiert.py bewaehrt) statt eines duennen Verlaufs-Scrims,
-der bei einem detailreichen Foto zuvor nicht ausreichte.
+"""Design-Alternative C fuer "Wochenrueckblick -- Mein Depot", v2
+(2026-09-20, Nutzer-Feedback zu v1: "Hintergrund ist schoen, aber das
+Design ist extrem schlecht -- Kaeufe separat auf einer Seite mit Logo,
+jeden einzelnen Kauf einzeln"): helles Tages-Skyline-Foto als Hintergrund
+bleibt (assets/skyline_day_still.png), aber JEDER Kauf bekommt jetzt eine
+eigene volle Slide mit Firmenlogo (wie personal_portfolio_update.py/
+personal_deep_dive*.py), der Sparplan einmal als eigene Uebersichts-Slide
+ohne Logo (kein einzelnes Wertpapier).
 
 Aufruf (Prototyp/Test):
   python posts/format_wochenrueckblick_depot_skyline.py
@@ -32,11 +30,9 @@ W, H = B.FEED_SIZE
 
 INK = "#16181C"
 CREAM = "#F2F0EA"
-MUTED = "#5A564C"
+MUTED_LIGHT = "#C9C4B6"
 GOLD = "#B08A2E"
-GREEN = "#1A4D3C"
-RED = "#C0392B"
-CARD = (16, 16, 14, 168)
+CARD = (16, 16, 14, 172)
 CARD_BORDER = "#D8D2C2"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
@@ -67,8 +63,6 @@ def skyline_background():
     photo = photo.resize((W, H)) if photo.size != (W, H) else photo
     img = ImageEnhance.Brightness(photo).enhance(1.05)
     img = ImageEnhance.Contrast(img).enhance(1.05)
-    # dezente helle Vignette oben/unten, damit Header/Footer-Text immer
-    # lesbar bleibt, auch ausserhalb der dunklen Info-Karten
     vignette = Image.new("L", (W, H), 0)
     vdraw = ImageDraw.Draw(vignette)
     vdraw.rectangle([0, 0, W, 170], fill=90)
@@ -95,14 +89,23 @@ def footer(draw, idx, n_total):
     disclaimer_font = font(B.SANS_BOLD, 18)
     text = "Keine Anlageberatung -- nur, was ich selbst gemacht habe."
     tw = draw.textlength(text, font=disclaimer_font)
-    draw.text((W / 2 - tw / 2, H - 56), text, font=disclaimer_font, fill=MUTED)
+    draw.text((W / 2 - tw / 2, H - 56), text, font=disclaimer_font, fill=INK)
     page_font = font(B.SANS_BOLD, 18)
     page_text = f"{idx:02d} / {n_total:02d}"
     pw = draw.textlength(page_text, font=page_font)
     draw.text((W - B.MARGIN_RIGHT - pw, 56), page_text, font=page_font, fill=INK)
 
 
-def slide_intro(date_label):
+def draw_logo_circle(img, draw, cx, cy, r, logo_path):
+    draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#FFFFFF", outline=GOLD, width=3)
+    logo = Image.open(logo_path).convert("RGBA")
+    target = int(r * 1.5)
+    ratio = min(target / logo.width, target / logo.height)
+    logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
+    img.paste(logo, (cx - logo.width // 2, cy - logo.height // 2), logo)
+
+
+def slide_intro(date_label, n_total):
     img = skyline_background()
     draw = ImageDraw.Draw(img)
     header(draw)
@@ -118,11 +121,11 @@ def slide_intro(date_label):
     sub_font = font(B.SANS_BOLD, 22)
     draw.text((cx + 40, ty), date_label, font=sub_font, fill=GOLD)
 
-    footer(draw, 1, 5)
+    footer(draw, 1, n_total)
     return img
 
 
-def slide_performance(pct):
+def slide_performance(pct, idx, n_total):
     img = skyline_background()
     draw = ImageDraw.Draw(img)
     header(draw)
@@ -138,48 +141,76 @@ def slide_performance(pct):
     draw.text((cx + 40, cy + 80), text, font=perf_font, fill=color)
 
     sub_font = font(B.SANS_BOLD, 24)
-    sub_lines = wrap_text(draw, "So hat sich mein Depot diese Woche entwickelt -- reine Prozentangabe.",
-                           sub_font, cw - 80)
     sy = cy + 220
-    for line in sub_lines:
-        draw.text((cx + 40, sy), line, font=sub_font, fill=CREAM)
+    for line in wrap_text(draw, "So hat sich mein Depot diese Woche entwickelt -- reine Prozentangabe.",
+                           sub_font, cw - 80):
+        draw.text((cx + 40, sy), line, font=sub_font, fill=MUTED_LIGHT)
         sy += 30
 
-    footer(draw, 2, 5)
+    footer(draw, idx, n_total)
     return img
 
 
-def slide_kaeufe(rows):
+def slide_sparplan(idx, n_total):
     img = skyline_background()
     draw = ImageDraw.Draw(img)
     header(draw)
 
-    row_h, gap = 88, 14
-    ch = 70 + len(rows) * (row_h + gap)
-    cx, cy, cw = 60, 400, W - 120
+    cx, cy, cw, ch = 60, 620, W - 120, 340
     card(img, draw, cx, cy, cw, ch)
     label_font = font(B.SANS_BOLD, 22)
-    draw.text((cx + 40, cy + 30), "KÄUFE DIESE WOCHE", font=label_font, fill=GOLD)
+    draw.text((cx + 40, cy + 32), "KAUF 1 VON 5", font=label_font, fill=GOLD)
 
-    y = cy + 74
-    for r in rows:
-        draw.rounded_rectangle([cx + 30, y, cx + cw - 30, y + row_h], radius=14,
-                                outline=CARD_BORDER, width=1)
-        name_font = font(B.SANS_BOLD, 26)
-        draw.text((cx + 54, y + 14), r["label"], font=name_font, fill=CREAM)
-        note_font = font(B.SANS_BOLD, 17)
-        draw.text((cx + 54, y + 50), r["note"], font=note_font, fill="#C9C4B6")
-        if r.get("price"):
-            price_font = font(B.SANS_BOLD, 24)
-            pw = draw.textlength(r["price"], font=price_font)
-            draw.text((cx + cw - 60 - pw, y + 30), r["price"], font=price_font, fill=GOLD)
-        y += row_h + gap
+    title_font = font(B.SERIF_BOLD, 44)
+    draw.text((cx + 40, cy + 80), "Mein Sparplan.", font=title_font, fill=CREAM)
 
-    footer(draw, 3, 5)
+    sub_font = font(B.SANS_BOLD, 24)
+    sy = cy + 150
+    for line in wrap_text(draw, "Wie jeden Monat -- automatische Ausfuehrung, unabhaengig von "
+                                 "Kurs oder Tagesform. Laeuft im Hintergrund weiter, ohne dass "
+                                 "ich manuell eingreife.", sub_font, cw - 80):
+        draw.text((cx + 40, sy), line, font=sub_font, fill=MUTED_LIGHT)
+        sy += 32
+
+    footer(draw, idx, n_total)
     return img
 
 
-def slide_verkaeufe(sells):
+def slide_position(pos, kauf_nr, idx, n_total):
+    img = skyline_background()
+    draw = ImageDraw.Draw(img)
+    header(draw)
+
+    cx, cy, cw, ch = 60, 560, W - 120, 400
+    card(img, draw, cx, cy, cw, ch)
+    label_font = font(B.SANS_BOLD, 22)
+    draw.text((cx + 40, cy + 32), f"KAUF {kauf_nr} VON 5", font=label_font, fill=GOLD)
+
+    logo_r = 56
+    logo_cx, logo_cy = cx + 40 + logo_r, cy + 100 + logo_r
+    draw_logo_circle(img, draw, logo_cx, logo_cy, logo_r, pos["logo_path"])
+    draw = ImageDraw.Draw(img)
+
+    name_x = logo_cx + logo_r + 24
+    name_font = font(B.SANS_BOLD, 32)
+    draw.text((name_x, logo_cy - 30), pos["name"], font=name_font, fill=CREAM)
+    ticker_font = font(B.SANS_BOLD, 19)
+    draw.text((name_x, logo_cy + 8), pos["ticker"], font=ticker_font, fill=GOLD)
+
+    y = logo_cy + logo_r + 40
+    price_font = font(B.SERIF_BOLD, 56)
+    draw.text((cx + 40, y), pos["price"], font=price_font, fill=CREAM)
+    y += 74
+    note_font = font(B.SANS_BOLD, 22)
+    for line in wrap_text(draw, pos["note"], note_font, cw - 80):
+        draw.text((cx + 40, y), line, font=note_font, fill=MUTED_LIGHT)
+        y += 30
+
+    footer(draw, idx, n_total)
+    return img
+
+
+def slide_verkaeufe(sells, idx, n_total):
     img = skyline_background()
     draw = ImageDraw.Draw(img)
     header(draw)
@@ -193,7 +224,7 @@ def slide_verkaeufe(sells):
     for line in wrap_text(draw, text, text_font, cw - 80):
         draw.text((cx + 40, cy + 84), line, font=text_font, fill=CREAM)
 
-    footer(draw, 4, 5)
+    footer(draw, idx, n_total)
     return img
 
 
@@ -219,7 +250,7 @@ def draw_share_icon(draw, cx, cy, size, color):
                   (cx + size * 0.82, cy - size * 0.15)], fill=color)
 
 
-def slide_engagement():
+def slide_engagement(idx, n_total):
     img = skyline_background()
     draw = ImageDraw.Draw(img)
     header(draw)
@@ -236,7 +267,7 @@ def slide_engagement():
     sub_font = font(B.SANS_BOLD, 22)
     for line in wrap_text(draw, "Dann liken, kommentieren und teilen -- hilft dem Account wirklich weiter.",
                            sub_font, cw - 80):
-        draw.text((cx + 40, ty), line, font=sub_font, fill="#C9C4B6")
+        draw.text((cx + 40, ty), line, font=sub_font, fill=MUTED_LIGHT)
         ty += 30
 
     icon_size = 70
@@ -252,34 +283,49 @@ def slide_engagement():
         lw = draw.textlength(label, font=label_font)
         draw.text((start_x + i * gap - lw / 2, icon_y + icon_size / 2 + 22), label, font=label_font, fill=CREAM)
 
-    footer(draw, 5, 5)
+    footer(draw, idx, n_total)
     return img
 
 
-def main(date_label, performance_pct, buys, sells):
-    slides = [
-        slide_intro(date_label),
-        slide_performance(performance_pct),
-        slide_kaeufe(buys),
-        slide_verkaeufe(sells),
-        slide_engagement(),
-    ]
+def main(date_label, performance_pct, positions, sells):
+    # Gesamtzahl: Intro(1) + Performance(1) + je Position(len, inkl. Sparplan) + Verkaeufe(1) + Engagement(1)
+    total = 2 + len(positions) + 1 + 1
+    slides = [slide_intro(date_label, total)]
+    slides.append(slide_performance(performance_pct, 2, total))
+    kauf_nr = 1
+    for i, pos in enumerate(positions, start=3):
+        if pos.get("is_sparplan"):
+            slides.append(slide_sparplan(i, total))
+        else:
+            slides.append(slide_position(pos, kauf_nr, i, total))
+        kauf_nr += 1
+    slides.append(slide_verkaeufe(sells, len(positions) + 3, total))
+    slides.append(slide_engagement(len(positions) + 4, total))
+
     for i, img in enumerate(slides, start=1):
         img.save(IG_DIR / f"slide_{i}.png")
     n = len(slides)
     gap = 16
-    sheet = Image.new("RGB", (W * n + gap * (n + 1), H + gap * 2), (240, 238, 232))
+    cols = 5
+    rows = (n + cols - 1) // cols
+    sheet = Image.new("RGB", (W * cols + gap * (cols + 1), H * rows + gap * (rows + 1)), (240, 238, 232))
     for i, img in enumerate(slides, start=1):
-        sheet.paste(img, (gap + (i - 1) * (W + gap), gap))
+        r, c = divmod(i - 1, cols)
+        sheet.paste(img, (gap + c * (W + gap), gap + r * (H + gap)))
     sheet.save(OUTPUT / "uebersicht.png")
     print(f"Fertig: {OUTPUT / 'uebersicht.png'}, {n} Folien")
 
 
 if __name__ == "__main__":
-    buys = [
-        {"label": "Sparplan", "note": "Wie jeden Monat -- automatische Ausführung.", "price": ""},
-        {"label": "Broadcom (AVGO)", "note": "Einzelkauf diesen Monat.", "price": "297 USD"},
-        {"label": "Vistra (VST)", "note": "Einzelkauf diesen Monat.", "price": "301 USD"},
-        {"label": "Uber (UBER)", "note": "Bereits letzte Woche gekauft.", "price": "400 USD"},
+    positions = [
+        {"is_sparplan": True},
+        {"name": "Broadcom", "ticker": "AVGO", "price": "297 EUR",
+         "note": "Einzelkauf diesen Monat.", "logo_path": ROOT / "assets" / "avgo_logo_icon.png"},
+        {"name": "Vistra", "ticker": "VST", "price": "301 EUR",
+         "note": "Einzelkauf diesen Monat.", "logo_path": ROOT / "assets" / "vst_logo_icon.png"},
+        {"name": "Uber", "ticker": "UBER", "price": "400 EUR",
+         "note": "Bereits letzte Woche gekauft.", "logo_path": ROOT / "assets" / "uber_logo_icon.png"},
+        {"name": "Bitcoin", "ticker": "BTC", "price": "64.000 EUR",
+         "note": "Einzelkauf diesen Monat.", "logo_path": ROOT / "assets" / "btc_logo_icon.png"},
     ]
-    main("20.09.2026", 1.61, buys, sells=[])
+    main("20.09.2026", 1.61, positions, sells=[])
