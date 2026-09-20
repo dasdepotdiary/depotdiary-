@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "SAP", "ticker": "SAP", "price": 209.45, "change_pct": -1.97, "as_of": "18.09.", "pe": 27.6,
-         "forward_pe": 21.98, "peg": 1.62, "div_yield": 1.37, "earnings_growth": 30.6, "beta": 0.78,
-         "market_cap": "246,6 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 144.97, "week52_high": 276.56,
-         "note": "Deutscher Softwarekonzern, Tagesminus von rund 2%. Dividendenrendite mit 1,37% eine der hoechsten unter den grossen Softwarewerten.",
-         "csv_path": DATA_DIR / "SAP.csv", "accent": OCHRE},
-        {"name": "Alphabet", "ticker": "GOOGL", "price": 349.54, "change_pct": 0.64, "as_of": "18.09.", "pe": 17.4,
-         "forward_pe": 22.57, "peg": 1.24, "div_yield": 0.24, "earnings_growth": 294.0, "beta": 1.23,
-         "market_cap": "4,27 Bio. USD", "volume": "47,6 Mio.", "week52_low": 235.23, "week52_high": 408.10,
-         "note": "Niedrigstes KGV der drei Big-Tech-Konzerne im Vergleich. Gewinnwachstum von fast 300% im letzten Quartal YoY.",
-         "csv_path": DATA_DIR / "GOOGL.csv", "accent": GREEN},
-        {"name": "Costco", "ticker": "COST", "price": 895.31, "change_pct": 0.15, "as_of": "18.09.", "pe": 45.0,
-         "forward_pe": 39.84, "peg": 4.38, "div_yield": 0.60, "earnings_growth": 15.2, "beta": 0.86,
-         "market_cap": "397,1 Mrd. USD", "volume": "4,2 Mio.", "week52_low": 840.35, "week52_high": 1094.76,
-         "note": "Mit Abstand hoechstes KGV der drei (45). Niedrige Profitmarge (3%) ist bei Mitgliedschafts-Grosshaendlern wie Costco branchentypisch.",
-         "csv_path": DATA_DIR / "COST.csv", "accent": CAT_TEAL},
+        {"name": "Meta Platforms", "ticker": "META", "price": 665.75, "change_pct": -2.43, "as_of": "18.09.", "pe": 25.1,
+         "forward_pe": 19.72, "peg": 0.88, "div_yield": 0.31, "earnings_growth": -13.4, "beta": 1.24,
+         "market_cap": "1,70 Bio. USD", "volume": "27,6 Mio.", "week52_low": 519.78, "week52_high": 783.69,
+         "note": "Tagesminus von rund 2,4%. Gewinn im letzten Quartal YoY rueckläufig (-13,4%), trotzdem niedrigstes KGV der drei im Vergleich.",
+         "csv_path": DATA_DIR / "META.csv", "accent": OCHRE},
+        {"name": "Visa", "ticker": "V", "price": 368.29, "change_pct": -0.44, "as_of": "18.09.", "pe": 31.3,
+         "forward_pe": 24.51, "peg": 1.67, "div_yield": 0.72, "earnings_growth": 10.2, "beta": 0.76,
+         "market_cap": "691,4 Mrd. USD", "volume": "19,6 Mio.", "week52_low": 292.74, "week52_high": 385.57,
+         "note": "Niedrigstes Beta der drei (0,76) -- historisch die schwankungsaermste Aktie im heutigen Vergleich.",
+         "csv_path": DATA_DIR / "V.csv", "accent": GREEN},
+        {"name": "ASML", "ticker": "ASML", "price": 1679.92, "change_pct": 3.08, "as_of": "18.09.", "pe": 57.8,
+         "forward_pe": 26.88, "peg": 1.46, "div_yield": 0.54, "earnings_growth": 28.5, "beta": 1.36,
+         "market_cap": "645,3 Mrd. USD", "volume": "2,5 Mio.", "week52_low": 929.29, "week52_high": 1997.38,
+         "note": "Groesster Tagesgewinn der drei (+3,1%). Mit Abstand hoechstes KGV (57,8) -- einziger Halbleiterausruester im Vergleich.",
+         "csv_path": DATA_DIR / "ASML.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

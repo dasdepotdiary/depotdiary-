@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "Triple Witching",
-        "definition": "Ein Tag, an dem drei Arten von Terminkontrakten gleichzeitig auslaufen: Aktienindex-Optionen, -Futures und Einzelaktien-Optionen. Das passiert am dritten Freitag von Maerz, Juni, September und Dezember.",
-        "example": "Beispiel von gestern: rund 7 Billionen USD an Optionen liefen aus -- der zweitgroesste Verfallstermin der Geschichte.",
+        "term": "PEG-Ratio",
+        "definition": "Das KGV (Kurs-Gewinn-Verhaeltnis) geteilt durch das erwartete Gewinnwachstum. Setzt eine Bewertung damit ins Verhaeltnis zum Wachstum -- ein hohes KGV kann bei starkem Wachstum trotzdem 'guenstig' im Verhaeltnis aussehen.",
+        "example": "Beispiel von heute: Meta hat ein KGV von 25,1 -- klingt erstmal viel. Die PEG-Ratio liegt aber nur bei 0,88, weil das erwartete Gewinnwachstum hoch eingepreist ist.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
