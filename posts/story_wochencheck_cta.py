@@ -72,18 +72,21 @@ def add_radial_glow(img, cx, cy, radius, color, strength=55):
     img.paste(color_layer, (0, 0), glow)
 
 
-def main(week_label):
+def slide_base():
     img = gradient_background(BG_TOP, BG_BOTTOM)
     add_radial_glow(img, W // 2, H * 0.22, 480, (110, 56, 30), strength=55)
     draw = ImageDraw.Draw(img)
-
     handle_font = font(B.SANS_BOLD, 24)
     tw = draw.textlength(OWN_HANDLE, font=handle_font)
     draw.text((W / 2 - tw / 2, 60), OWN_HANDLE, font=handle_font, fill=MUTED)
+    return img, draw
 
+
+def slide_rueckblick(week_label):
+    img, draw = slide_base()
     y = H * 0.24
     label_font = font(B.SANS_BOLD, 28)
-    label = "WOCHEN-CHECK"
+    label = "WOCHEN-CHECK  ·  1/2"
     tw = draw.textlength(label, font=label_font)
     draw.text((W / 2 - tw / 2, y), label, font=label_font, fill=TERRACOTTA)
     y += 58
@@ -112,11 +115,58 @@ def main(week_label):
     note = "Keine Anlageberatung -- reine Community-Frage."
     tw = draw.textlength(note, font=note_font)
     draw.text((W / 2 - tw / 2, H - 60), note, font=note_font, fill=MUTED)
+    return img
 
-    img.save(TT_DIR / "slide_1.png")
-    img.save(OUTPUT / "uebersicht.png")
-    print(f"Fertig: {OUTPUT / 'uebersicht.png'}")
+
+def slide_ausblick(earnings_names):
+    img, draw = slide_base()
+    y = H * 0.22
+    label_font = font(B.SANS_BOLD, 28)
+    label = "WOCHEN-CHECK  ·  2/2"
+    tw = draw.textlength(label, font=label_font)
+    draw.text((W / 2 - tw / 2, y), label, font=label_font, fill=TERRACOTTA)
+    y += 58
+
+    title_font = font(B.SANS_BOLD, 48)
+    for line in ["UND WIE WIRD DIE", "KOMMENDE WOCHE?"]:
+        tw = draw.textlength(line, font=title_font)
+        draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
+        y += 58
+
+    y += 26
+    sub_font = font(B.SANS_BOLD, 24)
+    sub = "Diese Woche berichten u.a. " + ", ".join(earnings_names) + " -- volle Earnings-Woche."
+    for line in wrap_text(draw, sub, sub_font, W - 160):
+        tw = draw.textlength(line, font=sub_font)
+        draw.text((W / 2 - tw / 2, y), line, font=sub_font, fill=MUTED)
+        y += 32
+
+    y += 40
+    cta_font = font(B.SANS_BOLD, 32)
+    for line in ["Worauf achtest du naechste", "Woche am meisten?"]:
+        tw = draw.textlength(line, font=cta_font)
+        draw.text((W / 2 - tw / 2, y), line, font=cta_font, fill=TERRACOTTA)
+        y += 40
+
+    y += 20
+    cta2_font = font(B.SANS_BOLD, 28)
+    cta2 = "Schreib's mir per DM oder Kommentar."
+    tw = draw.textlength(cta2, font=cta2_font)
+    draw.text((W / 2 - tw / 2, y), cta2, font=cta2_font, fill=CREAM)
+
+    note_font = font(B.SANS_BOLD, 20)
+    note = "Keine Anlageberatung -- reine Community-Frage."
+    tw = draw.textlength(note, font=note_font)
+    draw.text((W / 2 - tw / 2, H - 60), note, font=note_font, fill=MUTED)
+    return img
+
+
+def main(week_label, earnings_names):
+    slide_rueckblick(week_label).save(TT_DIR / "slide_1.png")
+    slide_ausblick(earnings_names).save(TT_DIR / "slide_2.png")
+    slide_rueckblick(week_label).save(OUTPUT / "uebersicht.png")
+    print(f"Fertig: 2 Slides in {TT_DIR}")
 
 
 if __name__ == "__main__":
-    main("+1,61 %")
+    main("+1,61 %", ["AutoZone", "Costco", "Cintas", "General Mills", "Paychex"])
