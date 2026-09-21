@@ -2305,7 +2305,9 @@
     "action": "carousel",
     "slide_count": 6,
     "fire_at": "2026-09-21T11:00:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2310-3dbfc879",
+    "claimed_at": "2026-09-21T10:51:58.121513+00:00"
   },
   {
     "post_name": "personal_deep_dive_gev",
