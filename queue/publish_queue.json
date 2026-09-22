@@ -2425,8 +2425,10 @@
     "action": "carousel",
     "slide_count": 7,
     "fire_at": "2026-09-22T11:38:07+02:00",
-    "status": "pending",
-    "note": "Restore -- vom Nutzer versehentlich/geloescht, auf Wunsch neu veroeffentlicht"
+    "status": "claiming",
+    "note": "Restore -- vom Nutzer versehentlich/geloescht, auf Wunsch neu veroeffentlicht",
+    "claimed_by": "Surface4RA-6812-7535de68",
+    "claimed_at": "2026-09-22T09:38:19.584479+00:00"
   },
   {
     "post_name": "erklaerstueck_all-time-high",
