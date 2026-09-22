@@ -2437,9 +2437,11 @@
     "action": "carousel",
     "slide_count": 5,
     "fire_at": "2026-09-22T11:38:07+02:00",
-    "status": "claiming",
+    "status": "done",
     "note": "Restore -- vom Nutzer versehentlich/geloescht, auf Wunsch neu veroeffentlicht",
     "claimed_by": "Surface4RA-6812-7535de68",
-    "claimed_at": "2026-09-22T09:39:13.531723+00:00"
+    "claimed_at": "2026-09-22T09:39:13.531723+00:00",
+    "published_at": "2026-09-22T09:39:51.987045+00:00",
+    "media_id": "17886011712619381"
   }
 ]
