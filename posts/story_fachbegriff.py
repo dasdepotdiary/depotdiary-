@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "PEG-Ratio",
-        "definition": "Das KGV (Kurs-Gewinn-Verhaeltnis) geteilt durch das erwartete Gewinnwachstum. Setzt eine Bewertung damit ins Verhaeltnis zum Wachstum -- ein hohes KGV kann bei starkem Wachstum trotzdem 'guenstig' im Verhaeltnis aussehen.",
-        "example": "Beispiel von heute: Meta hat ein KGV von 25,1 -- klingt erstmal viel. Die PEG-Ratio liegt aber nur bei 0,88, weil das erwartete Gewinnwachstum hoch eingepreist ist.",
+        "term": "Drawdown",
+        "definition": "Der prozentuale Rueckgang eines Depots oder einer Aktie vom bisherigen Hoechststand bis zum tiefsten Punkt danach. Der 'Max Drawdown' zeigt, wie schmerzhaft der schlimmste Einbruch in einem bestimmten Zeitraum war.",
+        "example": "Wer langfristig investiert bleibt, sollte auch mit Drawdowns von 20-30 % rechnen -- das ist normal, keine Ausnahme.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
