@@ -509,17 +509,6 @@
     ]
   },
   {
-    "id": "all-time-high",
-    "title": "Ein All-Time-High ist seltener eine Warnung, als es klingt.",
-    "date": "2026-09-18",
-    "body": [
-      "Nur ein neuer Höchststand -- mehr nicht.",
-      "Ein All-Time-High heisst schlicht, dass eine Aktie oder ein Index gerade so hoch steht wie noch nie zuvor -- nicht mehr und nicht weniger.",
-      "Der S&P 500 zum Beispiel markiert historisch betrachtet an vielen Handelstagen im Jahr ein neues Hoch -- weil wachsende Wirtschaften über lange Zeiträume tendenziell steigen.",
-      "Ob ein Kurs angemessen bewertet ist, hängt von vielen Faktoren ab -- der Höchststand allein sagt darüber nichts aus."
-    ]
-  },
-  {
     "id": "einsteiger-mythen",
     "title": "3 Mythen über die Börse -- und was wirklich stimmt.",
     "date": "2026-09-10",
@@ -561,6 +550,17 @@
       "Zwei bestehende Positionen aufgestockt -- beide waren schon vorher im Depot, jetzt mit etwas mehr Gewicht.",
       "Eine neue Position diese Woche -- der erste Kauf in dieses Unternehmen.",
       "Ganz normal weitergelaufen, keine Aenderungen -- und verkauft habe ich diese Woche nichts."
+    ]
+  },
+  {
+    "id": "all-time-high",
+    "title": "Ein All-Time-High ist seltener eine Warnung, als es klingt.",
+    "date": "2026-09-18",
+    "body": [
+      "Nur ein neuer Höchststand -- mehr nicht.",
+      "Ein All-Time-High heisst schlicht, dass eine Aktie oder ein Index gerade so hoch steht wie noch nie zuvor -- nicht mehr und nicht weniger.",
+      "Der S&P 500 zum Beispiel markiert historisch betrachtet an vielen Handelstagen im Jahr ein neues Hoch -- weil wachsende Wirtschaften über lange Zeiträume tendenziell steigen.",
+      "Ob ein Kurs angemessen bewertet ist, hängt von vielen Faktoren ab -- der Höchststand allein sagt darüber nichts aus."
     ]
   }
 ]

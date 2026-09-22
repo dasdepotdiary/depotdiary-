@@ -152,14 +152,14 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "HEUTE", "headline": "Bank of Japan veroeffentlicht Zinsentscheid.",
-         "body": "Nach der zweitaegigen Sitzung (17.-18.9.) folgt heute die geldpolitische Erklaerung."},
-        {"time": "RUHIG", "headline": "Keine grossen bekannten US-Earnings heute.",
-         "body": "Freitag ohne Schwergewichte im Kalender -- die naechste Berichtswelle startet naechste Woche."},
-        {"time": "09:00", "headline": "Unser Carousel 'All-Time-High' geht live.",
-         "body": "Im Feed -- schau vorbei, wenn du magst."},
-        {"time": "17:30", "headline": "Watchlist: Bitcoin steht heute auf dem Programm.",
-         "body": "Meine eigene Beobachtung von dieser Woche, mit Begruendung."},
+        {"time": "VORBOERSLICH", "headline": "AutoZone (AZO) veroeffentlicht Quartalszahlen.",
+         "body": "Bericht vor US-Boersenoeffnung -- einer der wenigen bekannten Namen im heutigen Kalender."},
+        {"time": "13:00", "headline": "EZB-Praesidentin Lagarde haelt eine Rede.",
+         "body": "Ausserdem sprechen heute gleich mehrere Fed-Vertreter (Williams, Jefferson, Barkin)."},
+        {"time": "NACHBOERSLICH", "headline": "KB Home (KBH) legt Zahlen nach Handelsschluss vor.",
+         "body": "Der US-Hausbauer berichtet fuer das abgelaufene Quartal nach US-Boersenschluss."},
+        {"time": "RUHIG", "headline": "Keine grossen Konjunkturdaten heute.",
+         "body": "Der Tag wird eher von Notenbank-Reden geprägt als von harten Zahlen."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")

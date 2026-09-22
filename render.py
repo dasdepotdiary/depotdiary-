@@ -33,6 +33,21 @@ OUTPUT = Path(__file__).parent / "output"
 LINE_SPACING = 14
 BLOCK_GAP = 28
 
+# Optionale Farb-Palette pro Post ueberschreibbar (Post(..., palette=...)) --
+# damit koennen einzelne Formate (z.B. die "Zahlen-Update"-Reihe: Wochen-
+# rueckblick/Wochenausblick/Earnings-Uebersicht/Marktupdate) eine eigene,
+# vom Standard-Creme abweichende Optik bekommen, ohne dass sich Erklaerstueck/
+# Depot-Update (die auf der Standardfarbe bleiben sollen) mitaendern.
+_DEFAULT_PALETTE = {
+    "BG": B.BG, "INK": B.INK, "GREEN": B.GREEN, "SUBTEXT": B.SUBTEXT,
+    "CARD": B.CARD, "DIVIDER": B.DIVIDER, "BODY_TEXT": B.BODY_TEXT, "RED": B.RED,
+}
+_active_palette = dict(_DEFAULT_PALETTE)
+
+
+def _c(key):
+    return _active_palette[key]
+
 _font_cache: dict[tuple[str, int], ImageFont.FreeTypeFont] = {}
 
 
@@ -209,9 +224,9 @@ def _wrapped_height(n_lines, font_regular_path, size):
 # --- Canvas / Grundelemente ---
 
 def _new_canvas():
-    img = Image.new("RGB", B.FEED_SIZE, B.BG)
+    img = Image.new("RGB", B.FEED_SIZE, _c("BG"))
     draw = ImageDraw.Draw(img)
-    draw.rectangle([0, 0, B.BAR_WIDTH, B.FEED_SIZE[1]], fill=B.INK)
+    draw.rectangle([0, 0, B.BAR_WIDTH, B.FEED_SIZE[1]], fill=_c("INK"))
     return img, draw
 
 
@@ -219,23 +234,23 @@ def _draw_eyebrow(draw, eyebrow):
     if not eyebrow:
         return
     font = _font(B.SANS_BOLD, B.EYEBROW_SIZE)
-    _draw_tracked(draw, (B.MARGIN_LEFT, 72), eyebrow.upper(), font, B.SUBTEXT, B.EYEBROW_TRACKING)
+    _draw_tracked(draw, (B.MARGIN_LEFT, 72), eyebrow.upper(), font, _c("SUBTEXT"), B.EYEBROW_TRACKING)
 
 
 def _draw_footer(draw, page_no, total_pages):
     W, H = B.FEED_SIZE
     y_divider = int(H * 0.90)
-    draw.line([(B.MARGIN_LEFT, y_divider), (W - B.MARGIN_RIGHT, y_divider)], fill=B.DIVIDER, width=2)
+    draw.line([(B.MARGIN_LEFT, y_divider), (W - B.MARGIN_RIGHT, y_divider)], fill=_c("DIVIDER"), width=2)
 
     font_word = _font(B.SANS_BOLD, B.FOOTER_SIZE)
-    _draw_tracked(draw, (B.MARGIN_LEFT, y_divider + 18), B.WORDMARK, font_word, B.INK, 3)
+    _draw_tracked(draw, (B.MARGIN_LEFT, y_divider + 18), B.WORDMARK, font_word, _c("INK"), 3)
 
     page_text = f"{page_no:02d} / {total_pages:02d}"
     pw = _text_w(draw, page_text, font_word)
-    draw.text((W - B.MARGIN_RIGHT - pw, y_divider + 18), page_text, font=font_word, fill=B.SUBTEXT)
+    draw.text((W - B.MARGIN_RIGHT - pw, y_divider + 18), page_text, font=font_word, fill=_c("SUBTEXT"))
 
     font_disc = _font(B.SERIF_REGULAR, B.DISCLAIMER_SIZE)
-    draw.text((B.MARGIN_LEFT, y_divider + 54), B.DISCLAIMER, font=font_disc, fill=B.SUBTEXT)
+    draw.text((B.MARGIN_LEFT, y_divider + 54), B.DISCLAIMER, font=font_disc, fill=_c("SUBTEXT"))
 
 
 def _content_area():
@@ -254,7 +269,7 @@ def _headline_block(draw, headline, max_width, size=B.HEADLINE_SIZE, max_lines=3
 
 
 def _draw_headline(draw, lines, size, x, y):
-    return _draw_wrapped(draw, lines, x, y, B.SERIF_BOLD, B.SERIF_BOLD_ITALIC, size, B.INK, B.GREEN)
+    return _draw_wrapped(draw, lines, x, y, B.SERIF_BOLD, B.SERIF_BOLD_ITALIC, size, _c("INK"), _c("GREEN"))
 
 
 def _accent_line_height():
@@ -262,7 +277,7 @@ def _accent_line_height():
 
 
 def _draw_accent_line(draw, x, y):
-    draw.rectangle([x, y, x + B.ACCENT_LINE_WIDTH, y + B.ACCENT_LINE_HEIGHT], fill=B.GREEN)
+    draw.rectangle([x, y, x + B.ACCENT_LINE_WIDTH, y + B.ACCENT_LINE_HEIGHT], fill=_c("GREEN"))
     return y + B.ACCENT_LINE_HEIGHT
 
 
@@ -275,14 +290,16 @@ def _body_block(draw, body, max_width, size=B.BODY_SIZE, max_lines=8):
 
 
 def _draw_body(draw, lines, size, x, y):
-    return _draw_wrapped(draw, lines, x, y, B.SERIF_REGULAR, B.SERIF_BOLD_ITALIC, size, B.BODY_TEXT, B.GREEN)
+    return _draw_wrapped(draw, lines, x, y, B.SERIF_REGULAR, B.SERIF_BOLD_ITALIC, size, _c("BODY_TEXT"), _c("GREEN"))
 
 
 class Post:
-    def __init__(self, name: str, total_slides: int):
+    def __init__(self, name: str, total_slides: int, palette: dict | None = None):
         self.name = name
         self.total = total_slides
         self.slides: list[Image.Image] = []
+        global _active_palette
+        _active_palette = {**_DEFAULT_PALETTE, **(palette or {})}
 
     def _next_page(self):
         return len(self.slides) + 1
@@ -317,7 +334,7 @@ class Post:
         if subline:
             y += BLOCK_GAP
             _draw_wrapped(draw, sub_lines, B.MARGIN_LEFT, y, B.SERIF_BOLD_ITALIC, B.SERIF_BOLD_ITALIC,
-                          sub_size, B.GREEN, B.GREEN)
+                          sub_size, _c("GREEN"), _c("GREEN"))
 
         self._finish(img, draw)
         return img
@@ -539,10 +556,10 @@ class Post:
         tile_w = max_w
         usable_w = tile_w - 48
         for label, sublabel, value, color in stats:
-            draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + tile_w, y + tile_h], fill=B.CARD)
-            draw.text((B.MARGIN_LEFT + 24, y + tile_pad), label, font=label_font, fill=B.INK)
+            draw.rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + tile_w, y + tile_h], fill=_c("CARD"))
+            draw.text((B.MARGIN_LEFT + 24, y + tile_pad), label, font=label_font, fill=_c("INK"))
             draw.text((B.MARGIN_LEFT + 24, y + tile_pad + label_h + 4), sublabel,
-                       font=sublabel_font, fill=B.SUBTEXT)
+                       font=sublabel_font, fill=_c("SUBTEXT"))
             tile_value_size = _fit_stat_value_font_size(draw, label, value, label_font, usable_w)
             tile_value_font = _font(B.SERIF_BOLD, tile_value_size)
             vw = _text_w(draw, value, tile_value_font)
@@ -554,7 +571,7 @@ class Post:
         if note:
             y += BLOCK_GAP
             _draw_wrapped(draw, note_lines, B.MARGIN_LEFT, y, B.SERIF_REGULAR, B.SERIF_BOLD_ITALIC,
-                          note_size, B.SUBTEXT, B.GREEN)
+                          note_size, _c("SUBTEXT"), _c("GREEN"))
 
         self._finish(img, draw)
         return img
@@ -583,7 +600,7 @@ class Post:
             y += BLOCK_GAP
             y = _draw_body(draw, b_lines, b_size, B.MARGIN_LEFT, y)
         y += BLOCK_GAP
-        draw.text((B.MARGIN_LEFT, y), cta_text, font=cta_font, fill=B.GREEN)
+        draw.text((B.MARGIN_LEFT, y), cta_text, font=cta_font, fill=_c("GREEN"))
 
         self._finish(img, draw)
         return img
@@ -614,7 +631,7 @@ class Post:
         if subtitle:
             y += BLOCK_GAP
             _draw_wrapped(draw, sub_lines, B.MARGIN_LEFT, y, B.SERIF_BOLD_ITALIC, B.SERIF_BOLD_ITALIC,
-                          sub_size, B.GREEN, B.GREEN)
+                          sub_size, _c("GREEN"), _c("GREEN"))
 
         self._finish(img, draw)
         return img
@@ -628,7 +645,7 @@ class Post:
 
         for i, img in enumerate(self.slides, start=1):
             img.save(ig_dir / f"slide_{i}.png")
-            canvas = Image.new("RGB", B.STORY_SIZE, B.BG)
+            canvas = Image.new("RGB", B.STORY_SIZE, _c("BG"))
             x = (B.STORY_SIZE[0] - img.width) // 2
             y = (B.STORY_SIZE[1] - img.height) // 2
             canvas.paste(img, (x, y))
@@ -648,7 +665,7 @@ class Post:
         pad = 20
         sheet_w = cols * thumb_w + (cols + 1) * pad
         sheet_h = rows * thumb_h + (rows + 1) * pad
-        sheet = Image.new("RGB", (sheet_w, sheet_h), B.BG)
+        sheet = Image.new("RGB", (sheet_w, sheet_h), _c("BG"))
         for i, img in enumerate(self.slides):
             thumb = img.resize((thumb_w, thumb_h))
             r, c = divmod(i, cols)

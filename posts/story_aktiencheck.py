@@ -194,7 +194,7 @@ def slide_stock(stock, idx, total):
     # Fundamentaldaten-Karte: 2x3-Kennzahlen-Grid + Range-Bar
     pad = 28
     stats = [
-        ("KGV (aktuell)", fmt_de(stock["pe"], 1)),
+        ("KGV (aktuell)", fmt_de(stock["pe"], 1) if stock.get("pe") else "---"),
         ("KGV (erwartet)", fmt_de(stock["forward_pe"], 1) if stock.get("forward_pe") else "---"),
         ("PEG-Ratio", fmt_de(stock["peg"], 2) if stock.get("peg") else "---"),
         ("Dividendenrendite", f"{fmt_de(stock['div_yield'], 2)} %" if stock.get("div_yield") else "keine"),
@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Meta Platforms", "ticker": "META", "price": 665.75, "change_pct": -2.43, "as_of": "18.09.", "pe": 25.1,
-         "forward_pe": 19.72, "peg": 0.88, "div_yield": 0.31, "earnings_growth": -13.4, "beta": 1.24,
-         "market_cap": "1,70 Bio. USD", "volume": "27,6 Mio.", "week52_low": 519.78, "week52_high": 783.69,
-         "note": "Tagesminus von rund 2,4%. Gewinn im letzten Quartal YoY rueckläufig (-13,4%), trotzdem niedrigstes KGV der drei im Vergleich.",
-         "csv_path": DATA_DIR / "META.csv", "accent": OCHRE},
-        {"name": "Visa", "ticker": "V", "price": 368.29, "change_pct": -0.44, "as_of": "18.09.", "pe": 31.3,
-         "forward_pe": 24.51, "peg": 1.67, "div_yield": 0.72, "earnings_growth": 10.2, "beta": 0.76,
-         "market_cap": "691,4 Mrd. USD", "volume": "19,6 Mio.", "week52_low": 292.74, "week52_high": 385.57,
-         "note": "Niedrigstes Beta der drei (0,76) -- historisch die schwankungsaermste Aktie im heutigen Vergleich.",
-         "csv_path": DATA_DIR / "V.csv", "accent": GREEN},
-        {"name": "ASML", "ticker": "ASML", "price": 1679.92, "change_pct": 3.08, "as_of": "18.09.", "pe": 57.8,
-         "forward_pe": 26.88, "peg": 1.46, "div_yield": 0.54, "earnings_growth": 28.5, "beta": 1.36,
-         "market_cap": "645,3 Mrd. USD", "volume": "2,5 Mio.", "week52_low": 929.29, "week52_high": 1997.38,
-         "note": "Groesster Tagesgewinn der drei (+3,1%). Mit Abstand hoechstes KGV (57,8) -- einziger Halbleiterausruester im Vergleich.",
-         "csv_path": DATA_DIR / "ASML.csv", "accent": CAT_TEAL},
+        {"name": "Intel", "ticker": "INTC", "price": 121.78, "change_pct": 12.14, "as_of": "21.09.", "pe": None,
+         "forward_pe": 56.5, "peg": 0.50, "div_yield": None, "earnings_growth": -71.7, "beta": 2.23,
+         "market_cap": "643,7 Mrd. USD", "volume": "191,6 Mio.", "week52_low": 28.82, "week52_high": 142.35,
+         "note": "Groesster Tagesgewinn der drei (+12,1%) bei sehr hohem Handelsvolumen. Hoechstes Beta im Vergleich (2,23) -- die schwankungsstaerkste Aktie heute.",
+         "csv_path": DATA_DIR / "INTC.csv", "accent": OCHRE},
+        {"name": "Warner Bros Discovery", "ticker": "WBD", "price": 30.80, "change_pct": 10.79, "as_of": "21.09.", "pe": None,
+         "forward_pe": 344.83, "peg": 55.18, "div_yield": None, "earnings_growth": -90.6, "beta": 1.57,
+         "market_cap": "69,7 Mrd. USD", "volume": "234,1 Mio.", "week52_low": 17.07, "week52_high": 30.92,
+         "note": "Zweitgroesster Tagesgewinn der drei (+10,8%). Gewinn im letzten Quartal YoY deutlich rueckläufig (-90,6%), bei insgesamt negativem Jahresergebnis.",
+         "csv_path": DATA_DIR / "WBD.csv", "accent": GREEN},
+        {"name": "Bank of America", "ticker": "BAC", "price": 57.96, "change_pct": 0.40, "as_of": "21.09.", "pe": 13.33,
+         "forward_pe": 11.09, "peg": 0.87, "div_yield": 1.93, "earnings_growth": 34.1, "beta": 1.16,
+         "market_cap": "403,7 Mrd. USD", "volume": "33,2 Mio.", "week52_low": 45.65, "week52_high": 64.90,
+         "note": "Einzige Bank im heutigen Vergleich -- kaum Kursbewegung (+0,4%), dafuer mit Abstand niedrigstes KGV (13,3) und niedrigstes Beta (1,16).",
+         "csv_path": DATA_DIR / "BAC.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

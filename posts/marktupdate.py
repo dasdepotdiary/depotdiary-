@@ -1,6 +1,14 @@
-"""Marktupdate-Post im Datenkarten-Format (slide_stats), fuer Themen wie
-Speicherchip-Preise, Sektorverteilung, Fed-Zinsentscheidung -- rein faktisch,
+"""Marktupdate-Post im Datenkarten-Format (slide_stats), fuer die "Zahlen-
+Update"-Reihe (Wochenrueckblick, Wochenausblick, Earnings-Uebersicht,
+Themen wie Speicherchip-Preise/Fed-Zinsentscheidung) -- rein faktisch,
 keine Kursziele, keine Kauf-/Verkaufsempfehlung.
+
+v2 (2026-09-22, Nutzer-Feedback "das alte beige Design gefaellt mir nicht
+mehr"): eigene dunkle Navy/Stahlblau-Palette statt des Standard-Creme aus
+brand.py -- ueber render.Post(..., palette=DARK_PALETTE). Erklaerstueck/
+Depot-Update bleiben bewusst auf der Standard-Cremefarbe (siehe
+[[depotdiary-design-experimente]]/Design-Rotationsprinzip), nur die
+"Zahlen-Check"-Reihe hier bekommt die neue Optik.
 
 Input: posts/inputs/marktupdate_<slug>.json
 
@@ -22,9 +30,15 @@ import site_sync
 
 INPUTS_DIR = Path(__file__).parent / "inputs"
 
+DARK_PALETTE = {
+    "BG": "#12151F", "INK": "#F0F2F5", "GREEN": "#5FD9A6", "SUBTEXT": "#8891A8",
+    "CARD": "#1C2130", "DIVIDER": "#2E3548", "BODY_TEXT": "#C7CCDC", "RED": "#E8697A",
+}
+
 COLOR_MAP = {
-    "ink": B.INK, "green": B.GREEN, "green_mid": B.GREEN_MID,
-    "ochre": B.OCHRE, "grey": B.GREY, "red": B.RED, "subtext": B.SUBTEXT,
+    "ink": DARK_PALETTE["INK"], "green": DARK_PALETTE["GREEN"], "green_mid": DARK_PALETTE["GREEN"],
+    "ochre": "#E8B85F", "grey": DARK_PALETTE["SUBTEXT"], "red": DARK_PALETTE["RED"],
+    "subtext": DARK_PALETTE["SUBTEXT"],
 }
 
 
@@ -36,7 +50,7 @@ def load_input(slug: str) -> dict:
 
 
 def stats_tuples(stats):
-    return [(s[0], s[1], s[2], COLOR_MAP.get(s[3], B.INK)) for s in stats]
+    return [(s[0], s[1], s[2], COLOR_MAP.get(s[3], DARK_PALETTE["INK"])) for s in stats]
 
 
 def stats_sentence(headline, stats):
@@ -52,7 +66,7 @@ def main():
 
     total = 2 + len(data["sections"])
     post_name = f"marktupdate_{slug}"
-    post = Post(post_name, total_slides=total)
+    post = Post(post_name, total_slides=total, palette=DARK_PALETTE)
 
     eyebrow = data.get("eyebrow", "MARKTUPDATE")
     post.slide_hook(eyebrow, data["hook"], data.get("hook_sub", ""))
