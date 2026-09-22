@@ -2418,7 +2418,9 @@
     "post_name": "earnings_woche_2026-09-21",
     "action": "story",
     "fire_at": "2026-09-22T14:00:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmtr4k5-2223-b0c95a3a",
+    "claimed_at": "2026-09-22T14:33:12.433737+00:00"
   },
   {
     "post_name": "personal_deep_dive_gev",
