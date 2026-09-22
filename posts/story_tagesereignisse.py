@@ -149,16 +149,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Freitag: Dow -0,18%, S&P 500 +0,2%, Nasdaq +0,7%.",
-         "body": "Gemischter Wochenschluss -- fuer den Dow war es die dritte Verlustwoche in Folge."},
-        {"headline": "Rekordverdaechtiger 'Triple Witching': rund 7 Billionen USD an Optionen liefen aus.",
-         "body": "Der zweitgroesste Verfallstermin der Geschichte -- Options-, Futures- und Aktienkontrakte laufen gleichzeitig aus."},
-        {"headline": "Verlierer des Tages: IBM -3,2%, Disney -2,7%, Nike -2,3%.",
-         "body": "Drei grosse Namen mit deutlichen Abschlaegen zum Wochenschluss."},
-        {"headline": "Gewinner des Tages: Amgen +1,5%, Nvidia +1,3%, Caterpillar +1,2%.",
-         "body": "Auf der anderen Seite legten diese drei Standardwerte zu."},
-        {"headline": "10-Jahres-Rendite zieht wieder an.",
-         "body": "Anhaltende Unsicherheit ueber die Oelversorgung aus dem Nahen Osten trieb Treibstoff- und Gaspreise -- und damit die Rendite -- nach oben."},
+        {"headline": "Montagsschluss: Nasdaq (QQQ) +2,88% auf 741,47 USD, S&P 500 (SPY) +1,55% auf 773,50 USD, Dow (DIA) +0,76% auf 519,78 USD.",
+         "body": "Der Nasdaq fuehrte die drei US-Leitindizes mit deutlichem Abstand an."},
+        {"headline": "Groesster Gewinner unter den meistgehandelten Werten: Intel +12,1% auf 121,78 USD.",
+         "body": "Bei ueber 188 Millionen gehandelten Aktien der staerkste Tagesgewinn unter den grossen Namen."},
+        {"headline": "CF Industries -6,1%, nachdem US-Praesident Trump guenstigere Kali-Importe aus Belarus ins Spiel brachte.",
+         "body": "Die Aussicht auf mehr Duengemittel-Importe druckte auf die Aktie des US-Herstellers."},
+        {"headline": "Alibaba stellt neuen KI-Chip 'Zhenwu V900' vor -- verspricht laut Unternehmen dreifache Leistung.",
+         "body": "Der Chip soll Rechenzentren mit einer Gesamtleistung von bis zu 20 Gigawatt anvisieren."},
+        {"headline": "Nvidia +2,3% auf 227,38 USD -- eine der meistgehandelten US-Aktien des Tages.",
+         "body": "Neben Intel und Nvidia sorgten hohe Handelsvolumina bei mehreren Tech-Werten fuer regen Handel."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

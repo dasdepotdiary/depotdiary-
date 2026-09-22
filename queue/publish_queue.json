@@ -2372,5 +2372,17 @@
     "claimed_at": "2026-09-20T17:23:35.280150+00:00",
     "published_at": "2026-09-20T17:23:45.302488+00:00",
     "media_id": "18146095279564281"
+  },
+  {
+    "post_name": "tagesupdate_2026-09-22",
+    "action": "story",
+    "fire_at": "2026-09-22T10:30:00+02:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "tagesereignisse_2026-09-22",
+    "action": "story",
+    "fire_at": "2026-09-22T20:30:00+02:00",
+    "status": "pending"
   }
 ]
