@@ -2377,7 +2377,9 @@
     "post_name": "tagesupdate_2026-09-22",
     "action": "story",
     "fire_at": "2026-09-22T10:30:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-22T09:36:24.203139+00:00",
+    "media_id": "18098258081065438"
   },
   {
     "post_name": "tagesereignisse_2026-09-22",
@@ -2389,7 +2391,9 @@
     "post_name": "heuteagenda_2026-09-22",
     "action": "story",
     "fire_at": "2026-09-22T09:30:00+02:00",
-    "status": "pending"
+    "status": "done",
+    "published_at": "2026-09-22T09:36:33.571202+00:00",
+    "media_id": "18130798954675757"
   },
   {
     "post_name": "fachbegriff_2026-09-22",
@@ -2401,6 +2405,19 @@
     "post_name": "aktiencheck_2026-09-22",
     "action": "story_sequence",
     "fire_at": "2026-09-22T11:32:47+02:00",
+    "status": "done",
+    "published_at": "2026-09-22T09:37:01.409747+00:00",
+    "media_id": "18027221480909788",
+    "media_ids": [
+      "18027221480909788",
+      "18117235547029679",
+      "18409512055091620"
+    ]
+  },
+  {
+    "post_name": "earnings_woche_2026-09-21",
+    "action": "story",
+    "fire_at": "2026-09-22T14:00:00+02:00",
     "status": "pending"
   }
 ]
