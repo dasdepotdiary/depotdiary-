@@ -2385,9 +2385,11 @@
     "post_name": "tagesereignisse_2026-09-22",
     "action": "story",
     "fire_at": "2026-09-22T20:30:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2332-d18e8236",
-    "claimed_at": "2026-09-22T21:28:56.147328+00:00"
+    "claimed_at": "2026-09-22T21:28:56.147328+00:00",
+    "published_at": "2026-09-22T21:29:05.005658+00:00",
+    "media_id": "18108401177241839"
   },
   {
     "post_name": "heuteagenda_2026-09-22",
