@@ -2399,7 +2399,9 @@
     "post_name": "fachbegriff_2026-09-22",
     "action": "story",
     "fire_at": "2026-09-22T16:45:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2309-6d0cb646",
+    "claimed_at": "2026-09-22T18:16:42.354138+00:00"
   },
   {
     "post_name": "aktiencheck_2026-09-22",
