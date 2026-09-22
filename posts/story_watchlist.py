@@ -81,7 +81,7 @@ def slide_watchlist(entry, weekday_label):
     draw.text((B.MARGIN_LEFT, y), entry["ticker"], font=ticker_font, fill=accent)
 
     price_font = font(B.SANS_BOLD, 40)
-    price_text = f"{fmt_de(entry['price'])} USD"
+    price_text = f"{fmt_de(entry['price'])} {entry.get('currency', 'USD')}"
     pw = draw.textlength(price_text, font=price_font)
     draw.text((W - B.MARGIN_RIGHT - pw, y - 36), price_text, font=price_font, fill=CREAM)
     change = entry["change_pct"]
@@ -163,16 +163,12 @@ def slide_watchlist(entry, weekday_label):
 
 
 WATCHLIST_WEEK = [
-    {"weekday": "Samstag", "date_label": "19.09.2026", "name": "GE Vernova", "ticker": "GEV", "kind": "stock",
-     "price": 940.33, "change_pct": 1.67, "as_of": "18.09.", "pe": 26.53, "forward_pe": 37.59,
-     "peg": 1.80, "div_yield": 0.19, "market_cap": "250,4 Mrd. USD", "volume": "4,1 Mio.",
-     "csv_path": DATA_DIR / "GEV.csv", "accent": GREEN,
-     "quote": "Ich beobachte GE Vernova, weil das Unternehmen mitten im Strombedarf-Boom durch KI-Rechenzentren steckt -- Gasturbinen und Netztechnik sind genau das, was gerade gebraucht wird."},
-    {"weekday": "Sonntag", "date_label": "20.09.2026", "name": "Intuitive Surgical", "ticker": "ISRG", "kind": "stock",
-     "price": 393.33, "change_pct": 2.55, "as_of": "18.09.", "pe": 44.05, "forward_pe": 31.75,
-     "peg": 1.79, "div_yield": None, "market_cap": "140,9 Mrd. USD", "volume": "4,9 Mio.",
-     "csv_path": DATA_DIR / "ISRG.csv", "accent": CAT_TEAL,
-     "quote": "Ich schau mir Intuitive Surgical an, weil sich die Aktie nach dem Ruecksetzer im Sommer wieder deutlich erholt hat -- Robotik in der Medizintechnik bleibt fuer mich ein spannendes langfristiges Thema."},
+    {"weekday": "Dienstag", "date_label": "22.09.2026", "name": "Hermès", "ticker": "RMS", "kind": "stock",
+     "price": 1346.50, "change_pct": 0.19, "as_of": "22.09.", "pe": 31.17, "forward_pe": None,
+     "peg": None, "div_yield": 1.35, "market_cap": "140,4 Mrd. EUR", "volume": "18,6 Tsd.",
+     "currency": "EUR",
+     "csv_path": DATA_DIR / "RMS.csv", "accent": OCHRE,
+     "quote": "Ich beobachte Hermès, weil die Aktie rund 41% unter ihrem 52-Wochen-Hoch liegt -- der gesamte Luxussektor kaempft gerade mit schwaecherer Nachfrage, vor allem aus China."},
 ]
 
 
