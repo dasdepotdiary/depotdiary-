@@ -152,14 +152,14 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VORBOERSLICH", "headline": "AutoZone (AZO) veroeffentlicht Quartalszahlen.",
-         "body": "Bericht vor US-Boersenoeffnung -- einer der wenigen bekannten Namen im heutigen Kalender."},
-        {"time": "13:00", "headline": "EZB-Praesidentin Lagarde haelt eine Rede.",
-         "body": "Ausserdem sprechen heute gleich mehrere Fed-Vertreter (Williams, Jefferson, Barkin)."},
-        {"time": "NACHBOERSLICH", "headline": "KB Home (KBH) legt Zahlen nach Handelsschluss vor.",
-         "body": "Der US-Hausbauer berichtet fuer das abgelaufene Quartal nach US-Boersenschluss."},
-        {"time": "RUHIG", "headline": "Keine grossen Konjunkturdaten heute.",
-         "body": "Der Tag wird eher von Notenbank-Reden geprägt als von harten Zahlen."},
+        {"time": "VORBOERSLICH", "headline": "General Mills (GIS) veroeffentlicht Quartalszahlen.",
+         "body": "Der US-Lebensmittelkonzern hinter Cheerios und Haeagen-Dazs berichtet vor US-Boersenoeffnung."},
+        {"time": "VORBOERSLICH", "headline": "Manchester United (MANU) legt Zahlen vor.",
+         "body": "Der Premier-League-Klub veroeffentlicht seinen Quartalsbericht vor US-Boersenoeffnung."},
+        {"time": "VORBOERSLICH", "headline": "Cracker Barrel (CBRL) berichtet heute.",
+         "body": "Die US-Restaurantkette, die im Fruehjahr wegen ihrer Logo-Aenderung viral ging, legt Zahlen vor."},
+        {"time": "RUHIG", "headline": "Keine grossen Notenbank-Termine oder Konjunkturdaten heute.",
+         "body": "Der Tag steht vor allem im Zeichen der laufenden US-Earnings-Saison im Konsumsektor."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
