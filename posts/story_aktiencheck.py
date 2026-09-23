@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Intel", "ticker": "INTC", "price": 121.78, "change_pct": 12.14, "as_of": "21.09.", "pe": None,
-         "forward_pe": 56.5, "peg": 0.50, "div_yield": None, "earnings_growth": -71.7, "beta": 2.23,
-         "market_cap": "643,7 Mrd. USD", "volume": "191,6 Mio.", "week52_low": 28.82, "week52_high": 142.35,
-         "note": "Groesster Tagesgewinn der drei (+12,1%) bei sehr hohem Handelsvolumen. Hoechstes Beta im Vergleich (2,23) -- die schwankungsstaerkste Aktie heute.",
-         "csv_path": DATA_DIR / "INTC.csv", "accent": OCHRE},
-        {"name": "Warner Bros Discovery", "ticker": "WBD", "price": 30.80, "change_pct": 10.79, "as_of": "21.09.", "pe": None,
-         "forward_pe": 344.83, "peg": 55.18, "div_yield": None, "earnings_growth": -90.6, "beta": 1.57,
-         "market_cap": "69,7 Mrd. USD", "volume": "234,1 Mio.", "week52_low": 17.07, "week52_high": 30.92,
-         "note": "Zweitgroesster Tagesgewinn der drei (+10,8%). Gewinn im letzten Quartal YoY deutlich rueckläufig (-90,6%), bei insgesamt negativem Jahresergebnis.",
-         "csv_path": DATA_DIR / "WBD.csv", "accent": GREEN},
-        {"name": "Bank of America", "ticker": "BAC", "price": 57.96, "change_pct": 0.40, "as_of": "21.09.", "pe": 13.33,
-         "forward_pe": 11.09, "peg": 0.87, "div_yield": 1.93, "earnings_growth": 34.1, "beta": 1.16,
-         "market_cap": "403,7 Mrd. USD", "volume": "33,2 Mio.", "week52_low": 45.65, "week52_high": 64.90,
-         "note": "Einzige Bank im heutigen Vergleich -- kaum Kursbewegung (+0,4%), dafuer mit Abstand niedrigstes KGV (13,3) und niedrigstes Beta (1,16).",
-         "csv_path": DATA_DIR / "BAC.csv", "accent": CAT_TEAL},
+        {"name": "Oracle", "ticker": "ORCL", "price": 144.56, "change_pct": -3.11, "as_of": "23.09.", "pe": 23.42,
+         "forward_pe": 18.25, "peg": 0.83, "div_yield": 1.35, "earnings_growth": 54.5, "beta": 1.73,
+         "market_cap": "451,1 Mrd. USD", "volume": "22,1 Mio.", "week52_low": 114.50, "week52_high": 319.46,
+         "note": "Groesster Tagesverlust der drei (-3,1%) an einem insgesamt schwachen Tag fuer Tech-Werte. Gewinn im letzten Quartal YoY deutlich gestiegen (+54,5%).",
+         "csv_path": DATA_DIR / "ORCL.csv", "accent": OCHRE},
+        {"name": "McDonald's", "ticker": "MCD", "price": 238.34, "change_pct": -4.80, "as_of": "23.09.", "pe": 20.32,
+         "forward_pe": 17.76, "peg": 2.14, "div_yield": 2.97, "earnings_growth": 5.7, "beta": 0.41,
+         "market_cap": "177,2 Mrd. USD", "volume": "16,5 Mio.", "week52_low": 234.04, "week52_high": 335.18,
+         "note": "Zweitgroesster Tagesverlust der drei (-4,8%), heute neues 52-Wochen-Tief markiert -- am Tag der Ankuendigung von 8,5 Mrd. USD fuer die Modernisierung von Franchise-Restaurants.",
+         "csv_path": DATA_DIR / "MCD.csv", "accent": GREEN},
+        {"name": "JPMorgan Chase", "ticker": "JPM", "price": 337.68, "change_pct": -0.68, "as_of": "23.09.", "pe": 14.57,
+         "forward_pe": 14.08, "peg": 1.64, "div_yield": 1.70, "earnings_growth": 46.9, "beta": 0.98,
+         "market_cap": "903,8 Mrd. USD", "volume": "7,0 Mio.", "week52_low": 276.44, "week52_high": 366.50,
+         "note": "Geringste Tagesbewegung der drei (-0,7%) an einem Tag, an dem Anleger aus einzelnen Tech-Werten in Bankaktien rotierten. Mit Abstand niedrigstes KGV im Vergleich (14,6).",
+         "csv_path": DATA_DIR / "JPM.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
