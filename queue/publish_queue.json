@@ -2495,5 +2495,12 @@
     "action": "story",
     "fire_at": "2026-09-23T20:30:00+02:00",
     "status": "pending"
+  },
+  {
+    "post_name": "reel_ge_vernova",
+    "action": "reel",
+    "fire_at": "2026-09-24T08:00:00+02:00",
+    "status": "pending",
+    "caption": "GE Vernova -- euer Sieger der Deep-Dive-Abstimmung.\n\nUmsatz +21,9%, Gewinn +32,8% im letzten Quartal (YoY). Kurs seit dem Spin-off von General Electric 2024 vervielfacht, aktuell aber rund 21% unter dem 52-Wochen-Hoch.\n\nKeine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe.\n\nFolgen fuer mehr Deep Dives."
   }
 ]
