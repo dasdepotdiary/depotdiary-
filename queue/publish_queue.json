@@ -2515,7 +2515,9 @@
     "post_name": "tagesereignisse_2026-09-23",
     "action": "story",
     "fire_at": "2026-09-23T20:30:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmlun5p-2299-e83a1bdb",
+    "claimed_at": "2026-09-23T21:51:03.012090+00:00"
   },
   {
     "post_name": "reel_ge_vernova",
