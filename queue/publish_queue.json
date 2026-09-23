@@ -2480,9 +2480,11 @@
     "post_name": "heuteagenda_2026-09-23",
     "action": "story",
     "fire_at": "2026-09-23T09:30:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmlun5p-2299-e83a1bdb",
-    "claimed_at": "2026-09-23T21:48:09.884479+00:00"
+    "claimed_at": "2026-09-23T21:48:09.884479+00:00",
+    "published_at": "2026-09-23T21:48:49.646947+00:00",
+    "media_id": "18128650780746304"
   },
   {
     "post_name": "aktiencheck_2026-09-23",
