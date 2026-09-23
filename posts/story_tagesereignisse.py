@@ -149,16 +149,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Montagsschluss: Nasdaq (QQQ) +2,88% auf 741,47 USD, S&P 500 (SPY) +1,55% auf 773,50 USD, Dow (DIA) +0,76% auf 519,78 USD.",
-         "body": "Der Nasdaq fuehrte die drei US-Leitindizes mit deutlichem Abstand an."},
-        {"headline": "Groesster Gewinner unter den meistgehandelten Werten: Intel +12,1% auf 121,78 USD.",
-         "body": "Bei ueber 188 Millionen gehandelten Aktien der staerkste Tagesgewinn unter den grossen Namen."},
-        {"headline": "CF Industries -6,1%, nachdem US-Praesident Trump guenstigere Kali-Importe aus Belarus ins Spiel brachte.",
-         "body": "Die Aussicht auf mehr Duengemittel-Importe druckte auf die Aktie des US-Herstellers."},
-        {"headline": "Alibaba stellt neuen KI-Chip 'Zhenwu V900' vor -- verspricht laut Unternehmen dreifache Leistung.",
-         "body": "Der Chip soll Rechenzentren mit einer Gesamtleistung von bis zu 20 Gigawatt anvisieren."},
-        {"headline": "Nvidia +2,3% auf 227,38 USD -- eine der meistgehandelten US-Aktien des Tages.",
-         "body": "Neben Intel und Nvidia sorgten hohe Handelsvolumina bei mehreren Tech-Werten fuer regen Handel."},
+        {"headline": "Mittwochsschluss: Nasdaq (QQQ) -0,84% auf 741,21 USD, S&P 500 (SPY) -0,72% auf 767,83 USD, Dow (DIA) -0,70% auf 514,35 USD.",
+         "body": "Alle drei US-Leitindizes schlossen im Minus, angefuehrt vom Nasdaq."},
+        {"headline": "Die Rendite der 10-jaehrigen US-Staatsanleihe stieg auf 5,135% -- den hoechsten Stand seit Juli 2007.",
+         "body": "Steigende Anleiherenditen begleiteten den Rueckgang an den Aktienmaerkten."},
+        {"headline": "IonQ +12%, nachdem das Unternehmen nach eigenen Angaben den ersten Echtzeit-Quantenfehlerdekoder der Branche getestet hat.",
+         "body": "Der Quantencomputing-Titel gehoerte damit zu den staerksten Einzelwerten des Tages."},
+        {"headline": "Intel -1,02% auf 122,60 USD bei einem Handelsvolumen von rund 84 Millionen Aktien.",
+         "body": "Der Chiphersteller gab damit einen Teil seiner juengsten Gewinne wieder ab."},
+        {"headline": "Gold fiel um 1,14% auf 4.314,38 USD je Feinunze.",
+         "body": "Anleger beobachteten unterdessen die Entwicklungen zwischen den USA, China und dem Iran."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
