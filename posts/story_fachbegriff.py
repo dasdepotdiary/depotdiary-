@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "Drawdown",
-        "definition": "Der prozentuale Rueckgang eines Depots oder einer Aktie vom bisherigen Hoechststand bis zum tiefsten Punkt danach. Der 'Max Drawdown' zeigt, wie schmerzhaft der schlimmste Einbruch in einem bestimmten Zeitraum war.",
-        "example": "Wer langfristig investiert bleibt, sollte auch mit Drawdowns von 20-30 % rechnen -- das ist normal, keine Ausnahme.",
+        "term": "Insider-Transaktion",
+        "definition": "Kaufen oder verkaufen Fuehrungskraefte oder Grossaktionaere Aktien der eigenen Firma, muessen sie das oeffentlich melden (in den USA per SEC-'Form 4'). Das ist legal und Pflicht -- kein Insiderhandel im strafrechtlichen Sinn.",
+        "example": "Heute meldeten u.a. die CEOs von Verizon und Westinghouse Air Brake Aktienverkaeufe per Form 4 -- oft reine Portfolio-Diversifikation, kein Alarmsignal.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
