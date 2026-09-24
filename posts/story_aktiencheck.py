@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Oracle", "ticker": "ORCL", "price": 144.56, "change_pct": -3.11, "as_of": "23.09.", "pe": 23.42,
-         "forward_pe": 18.25, "peg": 0.83, "div_yield": 1.35, "earnings_growth": 54.5, "beta": 1.73,
-         "market_cap": "451,1 Mrd. USD", "volume": "22,1 Mio.", "week52_low": 114.50, "week52_high": 319.46,
-         "note": "Groesster Tagesverlust der drei (-3,1%) an einem insgesamt schwachen Tag fuer Tech-Werte. Gewinn im letzten Quartal YoY deutlich gestiegen (+54,5%).",
-         "csv_path": DATA_DIR / "ORCL.csv", "accent": OCHRE},
-        {"name": "McDonald's", "ticker": "MCD", "price": 238.34, "change_pct": -4.80, "as_of": "23.09.", "pe": 20.32,
-         "forward_pe": 17.76, "peg": 2.14, "div_yield": 2.97, "earnings_growth": 5.7, "beta": 0.41,
-         "market_cap": "177,2 Mrd. USD", "volume": "16,5 Mio.", "week52_low": 234.04, "week52_high": 335.18,
-         "note": "Zweitgroesster Tagesverlust der drei (-4,8%), heute neues 52-Wochen-Tief markiert -- am Tag der Ankuendigung von 8,5 Mrd. USD fuer die Modernisierung von Franchise-Restaurants.",
-         "csv_path": DATA_DIR / "MCD.csv", "accent": GREEN},
-        {"name": "JPMorgan Chase", "ticker": "JPM", "price": 337.68, "change_pct": -0.68, "as_of": "23.09.", "pe": 14.57,
-         "forward_pe": 14.08, "peg": 1.64, "div_yield": 1.70, "earnings_growth": 46.9, "beta": 0.98,
-         "market_cap": "903,8 Mrd. USD", "volume": "7,0 Mio.", "week52_low": 276.44, "week52_high": 366.50,
-         "note": "Geringste Tagesbewegung der drei (-0,7%) an einem Tag, an dem Anleger aus einzelnen Tech-Werten in Bankaktien rotierten. Mit Abstand niedrigstes KGV im Vergleich (14,6).",
-         "csv_path": DATA_DIR / "JPM.csv", "accent": CAT_TEAL},
+        {"name": "Adobe", "ticker": "ADBE", "price": 238.93, "change_pct": -0.73, "as_of": "24.09.", "pe": 13.3,
+         "forward_pe": 8.64, "peg": 0.58, "div_yield": None, "earnings_growth": 10.5, "beta": 1.42,
+         "market_cap": "95,7 Mrd. USD", "volume": "3,7 Mio.", "week52_low": 190.12, "week52_high": 363.70,
+         "note": "Notiert rund 34% unter dem 52-Wochen-Hoch (363,70 USD) und zahlt keine Dividende -- der gesamte Ertrag kommt ueber den Kurs.",
+         "csv_path": DATA_DIR / "ADBE.csv", "accent": OCHRE},
+        {"name": "Qualcomm", "ticker": "QCOM", "price": 194.26, "change_pct": -1.51, "as_of": "24.09.", "pe": 22.57,
+         "forward_pe": 19.65, "peg": 0.88, "div_yield": 1.81, "earnings_growth": -23.0, "beta": 1.68,
+         "market_cap": "210,7 Mrd. USD", "volume": "9,1 Mio.", "week52_low": 120.88, "week52_high": 257.56,
+         "note": "Hat heute das Patent-Lizenzabkommen mit Apple erneuert -- trotzdem Quartalsgewinn im Jahresvergleich um 23% gesunken (letztes verfuegbares Quartal).",
+         "csv_path": DATA_DIR / "QCOM.csv", "accent": GREEN},
+        {"name": "T-Mobile US", "ticker": "TMUS", "price": 165.35, "change_pct": -0.19, "as_of": "24.09.", "pe": 16.97,
+         "forward_pe": 11.51, "peg": 0.57, "div_yield": 2.51, "earnings_growth": 5.3, "beta": 0.33,
+         "market_cap": "177,7 Mrd. USD", "volume": "5,0 Mio.", "week52_low": 161.14, "week52_high": 235.97,
+         "note": "Hat die Quartalsdividende gerade um 15% auf 1,17 USD je Aktie erhoeht. Mit Abstand niedrigstes Beta der drei (0,33) -- deutlich ruhiger als der Gesamtmarkt.",
+         "csv_path": DATA_DIR / "TMUS.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
