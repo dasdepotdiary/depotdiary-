@@ -152,14 +152,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VORBOERSLICH", "headline": "General Mills (GIS) veroeffentlicht Quartalszahlen.",
-         "body": "Der US-Lebensmittelkonzern hinter Cheerios und Haeagen-Dazs berichtet vor US-Boersenoeffnung."},
-        {"time": "VORBOERSLICH", "headline": "Manchester United (MANU) legt Zahlen vor.",
-         "body": "Der Premier-League-Klub veroeffentlicht seinen Quartalsbericht vor US-Boersenoeffnung."},
-        {"time": "VORBOERSLICH", "headline": "Cracker Barrel (CBRL) berichtet heute.",
-         "body": "Die US-Restaurantkette, die im Fruehjahr wegen ihrer Logo-Aenderung viral ging, legt Zahlen vor."},
-        {"time": "RUHIG", "headline": "Keine grossen Notenbank-Termine oder Konjunkturdaten heute.",
-         "body": "Der Tag steht vor allem im Zeichen der laufenden US-Earnings-Saison im Konsumsektor."},
+        {"time": "14:30 UHR", "headline": "US-Auftragseingaenge langlebiger Gueter (August).",
+         "body": "Das Handelsministerium veroeffentlicht die monatlichen Bestelldaten fuer Maschinen, Elektronik und Co."},
+        {"time": "16:00 UHR", "headline": "Uni-Michigan-Verbrauchervertrauen, finale September-Zahl.",
+         "body": "Die ueberarbeitete Stimmungsumfrage unter US-Konsumenten gilt als Fruehindikator fuer den privaten Konsum."},
+        {"time": "RUHIG", "headline": "Kaum grosse Quartalszahlen heute.",
+         "body": "Nach Costco und Darden gestern pausiert die US-Berichtssaison kurz -- die naechste grosse Welle folgt Anfang Oktober."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
