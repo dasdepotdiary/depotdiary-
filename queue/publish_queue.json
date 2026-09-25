@@ -2579,9 +2579,11 @@
     "post_name": "tagesupdate_2026-09-25",
     "action": "story",
     "fire_at": "2026-09-25T10:30:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmtr4k5-2224-27289fe2",
-    "claimed_at": "2026-09-25T11:43:16.784642+00:00"
+    "claimed_at": "2026-09-25T11:43:16.784642+00:00",
+    "published_at": "2026-09-25T11:43:26.322791+00:00",
+    "media_id": "18105412025615392"
   },
   {
     "post_name": "aktiencheck_2026-09-25",
