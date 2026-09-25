@@ -2577,7 +2577,9 @@
     "post_name": "format_wochenlogos",
     "action": "story_sequence",
     "fire_at": "2026-09-25T15:15:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmtr4k5-2302-60cef14b",
+    "claimed_at": "2026-09-25T16:57:16.069346+00:00"
   },
   {
     "post_name": "tagesupdate_2026-09-25",
