@@ -2566,10 +2566,12 @@
     "action": "carousel",
     "slide_count": 4,
     "fire_at": "2026-09-25T15:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "caption": "15 Aktien im Check -- alle Aktien aus meinem Aktien-Check dieser Woche (15.-24.09.) auf einen Blick.\n\nSAP, Alphabet, Costco, Meta, Visa, ASML, Intel, Warner Bros Discovery, Bank of America, Oracle, McDonald's, JPMorgan Chase, Netflix, Home Depot, PayPal.\n\nWelche war fuer dich am spannendsten? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
     "claimed_by": "runnervmtr4k5-2302-60cef14b",
-    "claimed_at": "2026-09-25T16:56:19.796919+00:00"
+    "claimed_at": "2026-09-25T16:56:19.796919+00:00",
+    "published_at": "2026-09-25T16:57:14.686962+00:00",
+    "media_id": "17891924742437272"
   },
   {
     "post_name": "format_wochenlogos",
