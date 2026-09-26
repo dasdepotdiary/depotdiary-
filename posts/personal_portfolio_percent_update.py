@@ -44,7 +44,7 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 # Feste Kategorie-Reihenfolge -- eine Akzentfarbe (Teal) fuer alle Balken,
 # konsistent mit dem Vermoegensingenieur-Stil (eine Signalfarbe, nicht bunt).
 DATA = json.loads((ROOT / "data" / "depot_2026-08.json").read_text(encoding="utf-8"))
-STAND = "14.08.2026"
+STAND = "26.09.2026"
 
 _SKYLINE_SRC = Image.open(ROOT / "assets" / "skyline_still_1.png").convert("RGB")
 
