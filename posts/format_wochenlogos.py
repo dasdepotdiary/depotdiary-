@@ -45,7 +45,26 @@ CARD = "#161616"
 CARD_BORDER = "#2C2C2C"
 CREAM = "#F5F3EE"
 MUTED = "#8C8C88"
-ACCENT = "#4CC9F0"
+ACCENT = "#4CC9F0"  # Fallback/Default, siehe ACCENT_COLORS fuer die Rotation
+
+# Rotierender Pool greller, kraeftiger, heller Akzentfarben -- Nutzerwunsch:
+# "Farbe der Schrift auch jedes mal abaendern, grelle kraeftige helle Farben".
+# Deterministisch per Post-Name gewaehlt (siehe photo_for), nicht zufaellig.
+ACCENT_COLORS = [
+    "#4CC9F0",  # hellblau
+    "#FF3EA5",  # knalliges pink
+    "#B6FF3D",  # neongruen
+    "#FFDD3D",  # kraeftiges gelb
+    "#7B5CFF",  # kraeftiges violett
+]
+
+_active_accent = ACCENT
+
+
+def accent_for(name):
+    import hashlib
+    digest = hashlib.md5((name + "-accent").encode("utf-8")).hexdigest()
+    return ACCENT_COLORS[int(digest, 16) % len(ACCENT_COLORS)]
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 WORDMARK = ROOT / "assets" / "logo_depotdiary_stacked_transparent.png"
@@ -162,7 +181,7 @@ def slide_hook(week_label, n_stocks, label="DIESE WOCHE", headline_lines=None, s
 
     y = H * 0.60
     label_font = font(B.SANS_BOLD, 28)
-    draw.text((80, y), label, font=label_font, fill=ACCENT)
+    draw.text((80, y), label, font=label_font, fill=_active_accent)
     y += 58
 
     title_font = font(B.SANS_BOLD, 88)
@@ -270,7 +289,7 @@ def draw_info_grid_slide(stocks, page_label):
         text_top = cy - r
         draw.text((text_x, text_top), f"{s['name']}  ", font=name_font, fill=CREAM)
         nm_w = draw.textlength(s["name"] + "  ", font=name_font)
-        draw.text((text_x + nm_w, text_top + 4), s["ticker"], font=ticker_font, fill=ACCENT)
+        draw.text((text_x + nm_w, text_top + 4), s["ticker"], font=ticker_font, fill=_active_accent)
         info = s.get("info", "")
         if info:
             for j, line in enumerate(wrap_text(draw, info, info_font, right - text_x)):
@@ -322,16 +341,16 @@ def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
     cta_font = font(B.SANS_BOLD, 32)
     cta = cta_text
     tw = draw.textlength(cta, font=cta_font)
-    draw.text((W / 2 - tw / 2, y), cta, font=cta_font, fill=ACCENT)
+    draw.text((W / 2 - tw / 2, y), cta, font=cta_font, fill=_active_accent)
 
     y += 90
     icon_size = 76
     gap = 128
     total_w = 3 * icon_size + 2 * (gap - icon_size)
     start_x = W / 2 - total_w / 2 + icon_size / 2
-    draw_heart_icon(draw, start_x, y, icon_size, ACCENT)
-    draw_comment_icon(draw, start_x + gap, y, icon_size, ACCENT)
-    draw_share_icon(draw, start_x + 2 * gap, y, icon_size, ACCENT)
+    draw_heart_icon(draw, start_x, y, icon_size, _active_accent)
+    draw_comment_icon(draw, start_x + gap, y, icon_size, _active_accent)
+    draw_share_icon(draw, start_x + 2 * gap, y, icon_size, _active_accent)
     label_font = font(B.SANS_BOLD, 16)
     for i, label in enumerate(["LIKE", "KOMMENTAR", "TEILEN"]):
         lw = draw.textlength(label, font=label_font)
@@ -349,6 +368,8 @@ def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
 def build(name, week_label, stocks, hook_label="DIESE WOCHE", headline_lines=None,
           sub_text=None, cta_question_lines=None, cta_text="Schreib's in die Kommentare.",
           grid_label="DIE AKTIEN", layout="circles"):
+    global _active_accent
+    _active_accent = accent_for(name)
     output, ig_dir, tt_dir = paths_for(name)
 
     slides = [slide_hook(week_label, len(stocks), label=hook_label,
