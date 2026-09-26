@@ -2643,10 +2643,17 @@
   {
     "post_name": "format_dividenden_check",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-26T00:00:00+02:00",
     "claimed_by": "Surface4RA-24896-5193e0c3",
-    "claimed_at": "2026-09-26T08:18:58.335417+00:00"
+    "claimed_at": "2026-09-26T08:18:58.335417+00:00",
+    "published_at": "2026-09-26T08:19:32.040092+00:00",
+    "media_id": "17949405837270943",
+    "media_ids": [
+      "17949405837270943",
+      "18172579096459281",
+      "18335183734272905"
+    ]
   },
   {
     "post_name": "personal_portfolio_percent_update",
