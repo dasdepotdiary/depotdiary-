@@ -2683,12 +2683,14 @@
     "post_name": "format_dividenden_check",
     "action": "carousel",
     "slide_count": 4,
-    "status": "claiming",
+    "status": "done",
     "note": "Wartet auf explizites Go vom Nutzer -- Status auf pending setzen, wenn er sagt posten.",
     "caption": "Bekannte Dividendenzahler aus verschiedenen Branchen -- auf einen Blick.\n\nJPMorgan Chase, McDonald's, Coca-Cola, Procter & Gamble, PepsiCo, Bank of America, RTX, AT&T, Eaton, Costco, Broadcom, Novo Nordisk.\n\nWelche Dividende gefaellt dir am besten? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
     "fire_at": "2026-09-26T00:00:00+02:00",
     "claimed_by": "Surface4RA-16752-1d37b204",
-    "claimed_at": "2026-09-26T13:27:12.110692+00:00"
+    "claimed_at": "2026-09-26T13:27:12.110692+00:00",
+    "published_at": "2026-09-26T13:27:51.792394+00:00",
+    "media_id": "18108041555267003"
   },
   {
     "post_name": "story_post_ankuendigung_dividenden",
