@@ -2675,9 +2675,10 @@
     "post_name": "format_sektor_tech",
     "action": "carousel",
     "slide_count": 5,
-    "status": "draft_held",
+    "status": "pending",
     "note": "Wartet auf explizites Go vom Nutzer -- Status auf pending setzen, wenn er sagt posten.",
-    "caption": "21 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave, ASML, Broadcom, SAP, MercadoLibre, Axon, Rocket Lab.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "caption": "21 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave, ASML, Broadcom, SAP, MercadoLibre, Axon, Rocket Lab.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
+    "fire_at": "2026-09-27T08:30:00+02:00"
   },
   {
     "post_name": "format_dividenden_check",
@@ -2733,5 +2734,11 @@
       "18140391667723457",
       "18101630396203346"
     ]
+  },
+  {
+    "post_name": "story_post_ankuendigung_tech",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-09-27T08:35:00+02:00"
   }
 ]
