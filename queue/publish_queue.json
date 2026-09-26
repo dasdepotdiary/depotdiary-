@@ -2658,8 +2658,10 @@
   {
     "post_name": "personal_portfolio_percent_update",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-09-26T00:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-09-26T00:00:00+02:00",
+    "claimed_by": "Surface4RA-24896-5193e0c3",
+    "claimed_at": "2026-09-26T08:19:35.894455+00:00"
   },
   {
     "post_name": "format_sektor_tech",
