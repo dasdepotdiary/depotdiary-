@@ -88,7 +88,6 @@ def main():
         grid_label="DIE AKTIEN",
         cta_question_lines=["WELCHE HAST DU", "SELBST IM DEPOT?"],
         cta_text="Schreib's in die Kommentare.",
-        layout="info_rows",
     )
     build(
         "format_dividenden_check",
@@ -100,7 +99,6 @@ def main():
         grid_label="DIE AKTIEN",
         cta_question_lines=["WELCHE DIVIDENDE", "GEFAELLT DIR AM BESTEN?"],
         cta_text="Schreib's in die Kommentare.",
-        layout="info_rows",
     )
 
 
