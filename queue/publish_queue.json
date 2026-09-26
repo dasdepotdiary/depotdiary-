@@ -2695,9 +2695,11 @@
   {
     "post_name": "story_post_ankuendigung_dividenden",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-26T00:05:00+02:00",
     "claimed_by": "Surface4RA-21428-8a5e053c",
-    "claimed_at": "2026-09-26T13:30:27.806625+00:00"
+    "claimed_at": "2026-09-26T13:30:27.806625+00:00",
+    "published_at": "2026-09-26T13:30:41.673201+00:00",
+    "media_id": "18130103536684419"
   }
 ]
