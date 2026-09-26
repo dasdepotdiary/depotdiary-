@@ -136,9 +136,9 @@ def slide_fachbegriff(entry):
 
 def main():
     entry = {
-        "term": "Insider-Transaktion",
-        "definition": "Kaufen oder verkaufen Fuehrungskraefte oder Grossaktionaere Aktien der eigenen Firma, muessen sie das oeffentlich melden (in den USA per SEC-'Form 4'). Das ist legal und Pflicht -- kein Insiderhandel im strafrechtlichen Sinn.",
-        "example": "Heute meldeten u.a. die CEOs von Verizon und Westinghouse Air Brake Aktienverkaeufe per Form 4 -- oft reine Portfolio-Diversifikation, kein Alarmsignal.",
+        "term": "Wirtschaftlicher Burggraben",
+        "definition": "Ein dauerhafter Wettbewerbsvorteil, der ein Unternehmen vor Konkurrenz schuetzt -- zum Beispiel eine starke Marke, Netzwerkeffekte oder hohe Wechselkosten fuer Kunden. Der Begriff (englisch 'Moat') stammt von Warren Buffett.",
+        "example": "Je breiter der Burggraben, desto schwerer faellt es anderen Firmen, Marktanteile oder Preissetzungsmacht wegzunehmen.",
     }
     img = slide_fachbegriff(entry)
     img.save(TT_DIR / "slide_1.png")
