@@ -2627,10 +2627,18 @@
   {
     "post_name": "format_sektor_tech",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-26T00:00:00+02:00",
     "claimed_by": "Surface4RA-24896-5193e0c3",
-    "claimed_at": "2026-09-26T08:18:10.805160+00:00"
+    "claimed_at": "2026-09-26T08:18:10.805160+00:00",
+    "published_at": "2026-09-26T08:18:54.379176+00:00",
+    "media_id": "18165750430417861",
+    "media_ids": [
+      "18165750430417861",
+      "18122457328921672",
+      "18141221653609041",
+      "18354380200172508"
+    ]
   },
   {
     "post_name": "format_dividenden_check",
