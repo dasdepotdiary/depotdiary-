@@ -49,34 +49,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was bedeutet das KGV (Kurs-Gewinn-Verhaeltnis)?",
+        "q": "Was ist ein ETF?",
         "options": [
-            "Wie teuer eine Aktie im Verhaeltnis zum Gewinn ist",
-            "Wie viel Dividende gezahlt wird",
-            "Wie stark eine Aktie schwankt",
+            "Ein an der Boerse gehandelter, meist passiv verwalteter Fonds",
+            "Eine Aktie mit garantierter Dividende",
+            "Ein Kredit zum Aktienkauf auf Pump",
         ],
         "correct": 0,
-        "explain": "Das KGV setzt den Aktienkurs ins Verhaeltnis zum Gewinn je Aktie -- eine von vielen Kennzahlen zur Einordnung, kein Kaufsignal fuer sich allein.",
+        "explain": "ETF steht fuer Exchange Traded Fund -- er bildet meist einen Index nach und wird wie eine Aktie an der Boerse gehandelt.",
     },
     {
-        "q": "Wie oft veroeffentlichen die meisten US-Unternehmen ihre Quartalszahlen?",
+        "q": "Was bedeutet 'Diversifikation'?",
         "options": [
-            "Einmal im Jahr",
-            "Alle drei Monate",
-            "Alle sechs Monate",
+            "Alles Geld in eine einzelne Aktie stecken",
+            "Das Geld auf mehrere Anlagen/Branchen verteilen",
+            "Nur in einer Waehrung investieren",
         ],
         "correct": 1,
-        "explain": "Vier Berichte pro Jahr -- daher auch 'Earnings Season' viermal im Jahr, wenn viele Unternehmen kurz hintereinander berichten.",
+        "explain": "Diversifikation streut das Risiko ueber mehrere Anlagen -- faellt eine Position, reisst sie nicht das ganze Depot mit.",
     },
     {
-        "q": "Was passiert bei einem Aktiensplit?",
+        "q": "Wofuer steht der VIX (der 'Angstbarometer' der Wall Street)?",
         "options": [
-            "Die Aktie wird in mehr, guenstigere Stuecke aufgeteilt",
-            "Das Unternehmen verkauft die Haelfte des Geschaefts",
-            "Der Aktienkurs faellt dauerhaft",
+            "Ein US-Leitzins der Notenbank",
+            "Ein Aktienindex wie der Dow Jones",
+            "Ein Mass fuer die erwartete Schwankungsbreite des Marktes",
         ],
-        "correct": 0,
-        "explain": "Die Marktkapitalisierung bleibt gleich -- es gibt nur mehr Aktien zu einem niedrigeren Stueckpreis, am Unternehmenswert selbst aendert sich nichts.",
+        "correct": 2,
+        "explain": "Der VIX misst die vom Optionsmarkt erwartete Volatilitaet des S&P 500 -- steigt er stark, rechnen Anleger mit mehr Unsicherheit.",
     },
 ]
 
@@ -282,21 +282,40 @@ def slide_answer(idx, item):
 
 
 def slide_outro():
+    """Visuelles Abstimmungs-Design (Kacheln wie bei den Fragen) statt reiner
+    Text-CTA -- ein ECHTER nativer Instagram-Umfrage-Sticker laesst sich ueber
+    die Graph-API nicht automatisiert setzen (nur manuell in der App), daher
+    dieser optische Ersatz: gleiche Antwort-Kachel-Optik, motiviert zum
+    Kommentieren wie eine Abstimmung."""
     img, draw = base_slide()
     y = build_header(draw)
-    y += 100
+    y += 50
 
-    title_font = font(B.SANS_BOLD, 52)
-    for line in ["WIE VIELE RICHTIG?", "SCHREIB'S UNTEN REIN."]:
+    title_font = font(B.SANS_BOLD, 44)
+    for line in ["WIE VIELE HATTEST", "DU RICHTIG?"]:
         tw = draw.textlength(line, font=title_font)
         draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
-        y += 62
+        y += 56
+    y += 50
 
-    y += 30
-    sub_font = font(B.SANS_BOLD, 30)
-    sub = "Und folge fuer mehr Quiz-Runden."
-    tw = draw.textlength(sub, font=sub_font)
-    draw.text((W / 2 - tw / 2, y), sub, font=sub_font, fill=AMBER)
+    opt_font = font(B.SANS_BOLD, 34)
+    tile_h = 150
+    gap = 30
+    options = ["0-1 RICHTIG", "2 RICHTIG", "3 RICHTIG -- ALLE!"]
+    for i, opt in enumerate(options):
+        color = OPTION_COLORS[i]
+        draw.rounded_rectangle([80, y, W - 80, y + tile_h], radius=22, fill=color)
+        tw = draw.textlength(opt, font=opt_font)
+        draw.text((W / 2 - tw / 2, y + tile_h / 2 - 20), opt, font=opt_font, fill=CREAM)
+        y += tile_h + gap
+
+    y += 20
+    sub_font = font(B.SANS_BOLD, 26)
+    sub = "Schreib deine Kachel in die Kommentare -- und folge fuer mehr Quiz-Runden."
+    for line in wrap_text(draw, sub, sub_font, W - 160):
+        tw = draw.textlength(line, font=sub_font)
+        draw.text((W / 2 - tw / 2, y), line, font=sub_font, fill=AMBER)
+        y += 34
 
     footer_disclaimer(draw)
     return img
@@ -339,7 +358,7 @@ def main():
         sentences.append(f"{item['q']} Pausier kurz und ueberleg.")
         correct_letter = OPTION_LETTERS[item["correct"]]
         sentences.append(f"Richtig ist {correct_letter}. {item['explain']}")
-    sentences.append("Wie viele hattest du richtig? Schreib's in die Kommentare und folge fuer mehr Quiz-Runden.")
+    sentences.append("Wie viele hattest du richtig -- null bis eins, zwei, oder alle drei? Schreib's in die Kommentare und folge fuer mehr Quiz-Runden.")
 
     voiceover.write(NAME, sentences, output_root=ROOT / "output")
     print(f"Voiceover-Skript geschrieben: output/{NAME}/script.md + timing.json")
