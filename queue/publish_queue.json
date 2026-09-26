@@ -2695,10 +2695,7 @@
   {
     "post_name": "story_post_ankuendigung_dividenden",
     "action": "story",
-    "status": "error",
-    "fire_at": "2026-09-26T00:05:00+02:00",
-    "claimed_by": "Surface4RA-16752-1d37b204",
-    "claimed_at": "2026-09-26T13:27:56.452392+00:00",
-    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Only photo or video can be accepted as media type.\",\"type\":\"OAuthException\",\"code\":9004,\"error_subcode\":2207052,\"is_transient\":false,\"error_user_title\":\"Medien-Download fehlgeschlagen. Die Medien-URI entspricht nicht unseren Anforderungen.\",\"error_user_msg\":\"Die Mediendatei konnte nicht von dieser URI abgerufen werden: https:\\/\\/dasdepotdiary.github.io\\/depotdiary-\\/assets\\/posts_9x16\\/story_post_ankuendigung_dividenden\\/slide_1.png?v=1790429280.Weitere Informationen findest du im Abschnitt \\u201eEinschr\\u00e4nkungen\\u201c in unserer Entwicklerdokumentation: https:\\/\\/developers.facebook.com\\/docs\\/instagram-platform\\/instagram-graph-api\\/reference\\/ig-user\\/media#creating\",\"fbtrace_id\":\"AnmXK6GtVsjcR5yuUk5XYJX\"}}"
+    "status": "pending",
+    "fire_at": "2026-09-26T00:05:00+02:00"
   }
 ]
