@@ -2658,10 +2658,18 @@
   {
     "post_name": "personal_portfolio_percent_update",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-26T00:00:00+02:00",
     "claimed_by": "Surface4RA-24896-5193e0c3",
-    "claimed_at": "2026-09-26T08:19:35.894455+00:00"
+    "claimed_at": "2026-09-26T08:19:35.894455+00:00",
+    "published_at": "2026-09-26T08:20:18.346969+00:00",
+    "media_id": "18378549694236847",
+    "media_ids": [
+      "18378549694236847",
+      "18029223398886277",
+      "18142813177717663",
+      "18066641579785716"
+    ]
   },
   {
     "post_name": "format_sektor_tech",
