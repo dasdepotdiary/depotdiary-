@@ -2738,8 +2738,9 @@
     "post_name": "format_ki_infrastruktur",
     "action": "carousel",
     "slide_count": 3,
-    "status": "draft_held",
-    "caption": "KI-Infrastruktur im Check -- 9 Werte, die vom KI-Rechenzentrums-Boom profitieren, auf einen Blick.\n\nNvidia, TSMC, ASML, Broadcom, Micron, Intel, CoreWeave, Oracle, ServiceNow.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "status": "pending",
+    "caption": "KI-Infrastruktur im Check -- 9 Werte, die vom KI-Rechenzentrums-Boom profitieren, auf einen Blick.\n\nNvidia, TSMC, ASML, Broadcom, Micron, Intel, CoreWeave, Oracle, ServiceNow.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
+    "fire_at": "2026-09-28T17:00:00+02:00"
   },
   {
     "post_name": "format_ecommerce_zahlungen",
@@ -2777,5 +2778,11 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-10-02T17:00:00+02:00"
+  },
+  {
+    "post_name": "story_post_ankuendigung_ki",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-09-28T17:05:00+02:00"
   }
 ]
