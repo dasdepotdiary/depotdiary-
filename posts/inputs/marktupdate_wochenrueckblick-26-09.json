@@ -1,0 +1,45 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Anleiherenditen auf 19-Jahres-Hoch*.",
+  "hook_sub": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Start mit *kräftigem Plus*.",
+      "body": "Am Montag legte der S&P 500 um 1,5% auf 7.764,70 Punkte zu, der Nasdaq sprang um 2,3% auf 27.122,09 Punkte -- getragen von Tech- und Kommunikationswerten."
+    },
+    {
+      "type": "text",
+      "headline": "Dienstag: *Gegenbewegung*.",
+      "body": "Der S&P 500 gab um 0,75% auf 7.706,03 Punkte nach, der Nasdaq verlor 1,13% auf 26.936,04 Punkte."
+    },
+    {
+      "type": "text",
+      "headline": "*Anleiherenditen* auf 19-Jahres-Hoch.",
+      "body": "Die Rendite der 10-jährigen US-Staatsanleihe stieg am Donnerstag auf 5,208% -- den höchsten Stand seit 19 Jahren, getrieben von starken Konjunkturdaten und steigenden Ölpreisen."
+    },
+    {
+      "type": "text",
+      "headline": "*GameStop*: Chef kauft nach.",
+      "body": "GameStop-CEO Ryan Cohen kaufte am Montag rund 1,15 Millionen eigene Aktien im Wert von etwa 26,4 Mio. USD -- die Aktie legte am selben Tag um 4,08% zu."
+    },
+    {
+      "type": "stats",
+      "headline": "Gewinner und *Verlierer* der Woche.",
+      "stats": [
+        ["GameStop", "+4,08%", "Gewinner", "green"],
+        ["Expedia", "-22,59%", "Verlierer", "red"],
+        ["Medpace", "-21,82%", "Verlierer", "red"],
+        ["Allstate", "-5,26%", "Verlierer", "red"]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 25.09."
+    },
+    {
+      "type": "text",
+      "headline": "Wochenschluss: *Erholung am Freitag*.",
+      "body": "Trotz des Renditen-Anstiegs legte der S&P 500 am Freitag um 0,51% auf 7.743,41 Punkte zu, der Nasdaq gewann 0,5% auf 27.068,72 Punkte."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Micron & Nike* legen Zahlen vor.",
+  "cta_body": "Micron berichtet am 30.09., Nike am 01.10. -- unter anderem Speicherchip-Nachfrage und Chinas Konsum im Fokus. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

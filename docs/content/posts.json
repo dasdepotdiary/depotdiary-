@@ -862,5 +862,14 @@
     "excerpt": "Nur ein neuer Höchststand -- mehr nicht.",
     "cover": "assets/posts/erklaerstueck_all-time-high/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-26-09",
+    "title": "Diese Börsenwoche im Rückblick: Anleiherenditen auf 19-Jahres-Hoch.",
+    "category": "marktupdate",
+    "date": "2026-09-26",
+    "excerpt": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-26-09/slide_1.webp",
+    "url": null
   }
 ]
