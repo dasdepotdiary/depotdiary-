@@ -51,6 +51,26 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 WORDMARK = ROOT / "assets" / "logo_depotdiary_stacked_transparent.png"
 HOOK_PHOTO = ROOT / "assets" / "downtown_street_still.png"
 
+# Rotierender Pool starker, dramatischer Foto-Hintergruende fuer die
+# Titelfolie -- Nutzerwunsch: "probier andere Bilder, aber sehr sehr stark"
+# + "rotier die immer durch". Deterministisch nach Post-Name gewaehlt (nicht
+# zufaellig), damit derselbe Post beim Neu-Rendern immer gleich aussieht.
+HOOK_PHOTOS = [
+    ROOT / "assets" / "wallstreet_bull_still.jpg",
+    ROOT / "assets" / "nyse_flag_still.jpg",
+    ROOT / "assets" / "downtown_street_still.png",
+    ROOT / "assets" / "skyline_day_still.png",
+]
+
+
+def photo_for(name):
+    # Python randomisiert hash() fuer Strings pro Prozess (PYTHONHASHSEED) --
+    # fuer eine wirklich stabile Zuordnung ueber mehrere Läufe hinweg + gute
+    # Streuung ueber den Foto-Pool wird stattdessen md5 verwendet.
+    import hashlib
+    digest = hashlib.md5(name.encode("utf-8")).hexdigest()
+    return HOOK_PHOTOS[int(digest, 16) % len(HOOK_PHOTOS)]
+
 
 def font(path, size):
     return ImageFont.truetype(path, size)
@@ -133,8 +153,8 @@ def hook_photo_background(photo_path=HOOK_PHOTO):
     return img
 
 
-def slide_hook(week_label, n_stocks, label="DIESE WOCHE", headline_lines=None, sub_text=None):
-    img = hook_photo_background()
+def slide_hook(week_label, n_stocks, label="DIESE WOCHE", headline_lines=None, sub_text=None, photo_path=HOOK_PHOTO):
+    img = hook_photo_background(photo_path)
     draw = ImageDraw.Draw(img)
 
     handle_font = font(B.SANS_BOLD, 24)
@@ -332,7 +352,8 @@ def build(name, week_label, stocks, hook_label="DIESE WOCHE", headline_lines=Non
     output, ig_dir, tt_dir = paths_for(name)
 
     slides = [slide_hook(week_label, len(stocks), label=hook_label,
-                          headline_lines=headline_lines, sub_text=sub_text)]
+                          headline_lines=headline_lines, sub_text=sub_text,
+                          photo_path=photo_for(name))]
     per_page = 9 if layout == "circles" else 8
     grid_fn = draw_logo_grid_slide if layout == "circles" else draw_info_grid_slide
     pages = [stocks[i:i + per_page] for i in range(0, len(stocks), per_page)]
