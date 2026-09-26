@@ -25,11 +25,18 @@ import brand as B
 
 ROOT = Path(__file__).parent.parent
 NAME = "format_wochenlogos"
-OUTPUT = ROOT / "output" / NAME
-IG_DIR = OUTPUT / "instagram_4x5"
-TT_DIR = OUTPUT / "tiktok_9x16"
-IG_DIR.mkdir(parents=True, exist_ok=True)
-TT_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def paths_for(name):
+    output = ROOT / "output" / name
+    ig_dir = output / "instagram_4x5"
+    tt_dir = output / "tiktok_9x16"
+    ig_dir.mkdir(parents=True, exist_ok=True)
+    tt_dir.mkdir(parents=True, exist_ok=True)
+    return output, ig_dir, tt_dir
+
+
+OUTPUT, IG_DIR, TT_DIR = paths_for(NAME)
 
 W, H = B.FEED_SIZE
 
@@ -89,7 +96,7 @@ def base_slide():
     return img, draw
 
 
-def slide_hook(week_label, n_stocks):
+def slide_hook(week_label, n_stocks, label="DIESE WOCHE", headline_lines=None, sub_text=None):
     img, draw = base_slide()
     handle_font = font(B.SANS_BOLD, 24)
     tw = draw.textlength(OWN_HANDLE, font=handle_font)
@@ -97,20 +104,21 @@ def slide_hook(week_label, n_stocks):
 
     y = H * 0.30
     label_font = font(B.SANS_BOLD, 28)
-    label = "DIESE WOCHE"
     tw = draw.textlength(label, font=label_font)
     draw.text((W / 2 - tw / 2, y), label, font=label_font, fill=ACCENT)
     y += 62
 
     title_font = font(B.SANS_BOLD, 84)
-    for line in [f"{n_stocks} AKTIEN", "IM CHECK."]:
+    if headline_lines is None:
+        headline_lines = [f"{n_stocks} AKTIEN", "IM CHECK."]
+    for line in headline_lines:
         tw = draw.textlength(line, font=title_font)
         draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
         y += 92
 
     y += 30
     sub_font = font(B.SANS_BOLD, 30)
-    sub = f"Alle Aktien aus meinem Aktien-Check {week_label} -- auf einen Blick."
+    sub = sub_text or f"Alle Aktien aus meinem Aktien-Check {week_label} -- auf einen Blick."
     for line in wrap_text(draw, sub, sub_font, W - 180):
         tw = draw.textlength(line, font=sub_font)
         draw.text((W / 2 - tw / 2, y), line, font=sub_font, fill=MUTED)
@@ -167,7 +175,7 @@ def draw_logo_grid_slide(stocks, page_label):
     return img
 
 
-def slide_cta():
+def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
     img, draw = base_slide()
     handle_font = font(B.SANS_BOLD, 24)
     tw = draw.textlength(OWN_HANDLE, font=handle_font)
@@ -175,14 +183,16 @@ def slide_cta():
 
     y = H * 0.36
     title_font = font(B.SANS_BOLD, 54)
-    for line in ["WELCHE WAR FUER", "DICH AM SPANNENDSTEN?"]:
+    if question_lines is None:
+        question_lines = ["WELCHE WAR FUER", "DICH AM SPANNENDSTEN?"]
+    for line in question_lines:
         tw = draw.textlength(line, font=title_font)
         draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
         y += 64
 
     y += 40
     cta_font = font(B.SANS_BOLD, 32)
-    cta = "Schreib's in die Kommentare."
+    cta = cta_text
     tw = draw.textlength(cta, font=cta_font)
     draw.text((W / 2 - tw / 2, y), cta, font=cta_font, fill=ACCENT)
 
@@ -195,25 +205,30 @@ def slide_cta():
     return img
 
 
-def main(week_label, stocks):
-    slides = [slide_hook(week_label, len(stocks))]
+def build(name, week_label, stocks, hook_label="DIESE WOCHE", headline_lines=None,
+          sub_text=None, cta_question_lines=None, cta_text="Schreib's in die Kommentare.",
+          grid_label="DIE AKTIEN"):
+    output, ig_dir, tt_dir = paths_for(name)
+
+    slides = [slide_hook(week_label, len(stocks), label=hook_label,
+                          headline_lines=headline_lines, sub_text=sub_text)]
     per_page = 9
     pages = [stocks[i:i + per_page] for i in range(0, len(stocks), per_page)]
     for i, page in enumerate(pages, start=1):
-        label = "DIE AKTIEN" if len(pages) == 1 else f"DIE AKTIEN ({i}/{len(pages)})"
-        slides.append(draw_logo_grid_slide(page, label))
-    slides.append(slide_cta())
+        page_label = grid_label if len(pages) == 1 else f"{grid_label} ({i}/{len(pages)})"
+        slides.append(draw_logo_grid_slide(page, page_label))
+    slides.append(slide_cta(question_lines=cta_question_lines, cta_text=cta_text))
 
     for i, img in enumerate(slides, start=1):
-        img.save(IG_DIR / f"slide_{i}.png")
+        img.save(ig_dir / f"slide_{i}.png")
 
     for i in range(1, len(slides) + 1):
-        src = Image.open(IG_DIR / f"slide_{i}.png")
+        src = Image.open(ig_dir / f"slide_{i}.png")
         canvas = Image.new("RGB", B.STORY_SIZE, BG)
         x = (B.STORY_SIZE[0] - src.width) // 2
         y = (B.STORY_SIZE[1] - src.height) // 2
         canvas.paste(src, (x, y))
-        canvas.save(TT_DIR / f"slide_{i}.png")
+        canvas.save(tt_dir / f"slide_{i}.png")
 
     n = len(slides)
     cols = 3
@@ -221,11 +236,15 @@ def main(week_label, stocks):
     gap = 16
     sheet = Image.new("RGB", (W * cols + gap * (cols + 1), H * rows + gap * (rows + 1)), (20, 20, 20))
     for i in range(1, n + 1):
-        im = Image.open(IG_DIR / f"slide_{i}.png")
+        im = Image.open(ig_dir / f"slide_{i}.png")
         r, c = divmod(i - 1, cols)
         sheet.paste(im, (gap + c * (W + gap), gap + r * (H + gap)))
-    sheet.save(OUTPUT / "uebersicht.png")
-    print(f"Fertig: {OUTPUT / 'uebersicht.png'}, {n} Folien")
+    sheet.save(output / "uebersicht.png")
+    print(f"Fertig: {output / 'uebersicht.png'}, {n} Folien")
+
+
+def main(week_label, stocks):
+    build(NAME, week_label, stocks)
 
 
 if __name__ == "__main__":
