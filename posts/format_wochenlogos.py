@@ -18,7 +18,7 @@ Aufruf (Prototyp/Test):
 import sys
 from pathlib import Path
 
-from PIL import Image, ImageDraw, ImageFilter, ImageFont
+from PIL import Image, ImageDraw, ImageEnhance, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 import brand as B
@@ -49,6 +49,7 @@ ACCENT = "#FF5A36"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 WORDMARK = ROOT / "assets" / "logo_depotdiary_stacked_transparent.png"
+HOOK_PHOTO = ROOT / "assets" / "downtown_street_still.png"
 
 
 def font(path, size):
@@ -96,38 +97,71 @@ def base_slide():
     return img, draw
 
 
+def hook_photo_background(photo_path=HOOK_PHOTO):
+    """Echtes Foto + dunkler Verlauf von unten -- Finanzhafen-inspirierte
+    Titelfolie (Foto+fette Headline) statt der flachen Farbflaeche."""
+    photo = Image.open(photo_path).convert("RGB")
+    if photo.size != (W, H):
+        src_ratio = photo.width / photo.height
+        dst_ratio = W / H
+        if src_ratio > dst_ratio:
+            new_w = int(photo.height * dst_ratio)
+            x0 = (photo.width - new_w) // 2
+            photo = photo.crop((x0, 0, x0 + new_w, photo.height))
+        else:
+            new_h = int(photo.width / dst_ratio)
+            y0 = (photo.height - new_h) // 2
+            photo = photo.crop((0, y0, photo.width, y0 + new_h))
+        photo = photo.resize((W, H))
+    img = ImageEnhance.Brightness(photo).enhance(0.85)
+    img = ImageEnhance.Contrast(img).enhance(1.08)
+    img = ImageEnhance.Color(img).enhance(0.9)
+
+    scrim = Image.new("L", (W, H), 0)
+    sdraw = ImageDraw.Draw(scrim)
+    for yy in range(H):
+        t = yy / H
+        if t < 0.35:
+            a = int(160 * (1 - t / 0.35))
+        elif t < 0.55:
+            a = 0
+        else:
+            a = int(235 * ((t - 0.55) / 0.45))
+        sdraw.line([(0, yy), (W, yy)], fill=a)
+    black = Image.new("RGB", (W, H), (6, 5, 5))
+    img = Image.composite(black, img, scrim)
+    return img
+
+
 def slide_hook(week_label, n_stocks, label="DIESE WOCHE", headline_lines=None, sub_text=None):
-    img, draw = base_slide()
+    img = hook_photo_background()
+    draw = ImageDraw.Draw(img)
+
     handle_font = font(B.SANS_BOLD, 24)
-    tw = draw.textlength(OWN_HANDLE, font=handle_font)
-    draw.text((W / 2 - tw / 2, 64), OWN_HANDLE, font=handle_font, fill=MUTED)
+    draw.text((80, 64), OWN_HANDLE, font=handle_font, fill=CREAM)
 
-    y = H * 0.30
+    y = H * 0.60
     label_font = font(B.SANS_BOLD, 28)
-    tw = draw.textlength(label, font=label_font)
-    draw.text((W / 2 - tw / 2, y), label, font=label_font, fill=ACCENT)
-    y += 62
+    draw.text((80, y), label, font=label_font, fill=ACCENT)
+    y += 58
 
-    title_font = font(B.SANS_BOLD, 84)
+    title_font = font(B.SANS_BOLD, 88)
     if headline_lines is None:
         headline_lines = [f"{n_stocks} AKTIEN", "IM CHECK."]
     for line in headline_lines:
-        tw = draw.textlength(line, font=title_font)
-        draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
-        y += 92
+        draw.text((80, y), line, font=title_font, fill=CREAM)
+        y += 96
 
-    y += 30
-    sub_font = font(B.SANS_BOLD, 30)
+    y += 26
+    sub_font = font(B.SANS_BOLD, 28)
     sub = sub_text or f"Alle Aktien aus meinem Aktien-Check {week_label} -- auf einen Blick."
-    for line in wrap_text(draw, sub, sub_font, W - 180):
-        tw = draw.textlength(line, font=sub_font)
-        draw.text((W / 2 - tw / 2, y), line, font=sub_font, fill=MUTED)
-        y += 40
+    for line in wrap_text(draw, sub, sub_font, W - 160):
+        draw.text((80, y), line, font=sub_font, fill="#D8D5CE")
+        y += 38
 
-    note_font = font(B.SANS_BOLD, 20)
+    note_font = font(B.SANS_BOLD, 19)
     note = "Keine Anlageberatung -- reine Uebersicht."
-    tw = draw.textlength(note, font=note_font)
-    draw.text((W / 2 - tw / 2, H - 140), note, font=note_font, fill=MUTED)
+    draw.text((80, H - 70), note, font=note_font, fill="#B8B4AC")
 
     draw_wordmark_anchor(img, draw)
     return img
