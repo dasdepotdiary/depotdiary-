@@ -2733,5 +2733,19 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-09-28T07:10:00+02:00"
+  },
+  {
+    "post_name": "format_ki_infrastruktur",
+    "action": "carousel",
+    "slide_count": 3,
+    "status": "draft_held",
+    "caption": "KI-Infrastruktur im Check -- 9 Werte, die vom KI-Rechenzentrums-Boom profitieren, auf einen Blick.\n\nNvidia, TSMC, ASML, Broadcom, Micron, Intel, CoreWeave, Oracle, ServiceNow.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+  },
+  {
+    "post_name": "format_ecommerce_zahlungen",
+    "action": "carousel",
+    "slide_count": 3,
+    "status": "draft_held",
+    "caption": "E-Commerce & Zahlungen -- 7 Werte aus Online-Handel und digitalen Zahlungen, auf einen Blick.\n\nAmazon, MercadoLibre, PayPal, Visa, Uber, Costco, Home Depot.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
   }
 ]
