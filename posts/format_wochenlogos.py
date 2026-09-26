@@ -175,6 +175,58 @@ def draw_logo_grid_slide(stocks, page_label):
     return img
 
 
+def draw_info_grid_slide(stocks, page_label):
+    """Modernere Variante: Logo + Name + eine kurze Sachinfo pro Zeile statt
+    reiner Logo-Kreise -- mehr Kontext pro Aktie, weiterhin rein beschreibend
+    (keine Bewertung/Empfehlung)."""
+    img, draw = base_slide()
+    handle_font = font(B.SANS_BOLD, 22)
+    tw = draw.textlength(OWN_HANDLE, font=handle_font)
+    draw.text((W / 2 - tw / 2, 56), OWN_HANDLE, font=handle_font, fill=MUTED)
+
+    title_font = font(B.SANS_BOLD, 30)
+    tw = draw.textlength(page_label, font=title_font)
+    draw.text((W / 2 - tw / 2, 100), page_label, font=title_font, fill=CREAM)
+
+    left = 70
+    right = W - 70
+    top = 168
+    row_h = 118
+    r = 34
+    name_font = font(B.SANS_BOLD, 26)
+    ticker_font = font(B.SANS_BOLD, 18)
+    info_font = font(B.SANS_BOLD, 19)
+
+    for i, s in enumerate(stocks):
+        cy = top + i * row_h + r
+        cx = left + r
+        draw.ellipse([cx - r, cy - r, cx + r, cy + r], fill="#FFFFFF", outline=CARD_BORDER, width=2)
+        try:
+            logo = Image.open(s["logo_path"]).convert("RGBA")
+            target = int(r * 1.35)
+            ratio = min(target / logo.width, target / logo.height)
+            logo = logo.resize((max(1, int(logo.width * ratio)), max(1, int(logo.height * ratio))))
+            img.paste(logo, (int(cx - logo.width / 2), int(cy - logo.height / 2)), logo)
+        except FileNotFoundError:
+            tf = font(B.SANS_BOLD, 18)
+            tw2 = draw.textlength(s["ticker"], font=tf)
+            draw.text((cx - tw2 / 2, cy - 10), s["ticker"], font=tf, fill="#111111")
+
+        text_x = left + 2 * r + 26
+        text_top = cy - r
+        draw.text((text_x, text_top), f"{s['name']}  ", font=name_font, fill=CREAM)
+        nm_w = draw.textlength(s["name"] + "  ", font=name_font)
+        draw.text((text_x + nm_w, text_top + 4), s["ticker"], font=ticker_font, fill=ACCENT)
+        info = s.get("info", "")
+        if info:
+            for j, line in enumerate(wrap_text(draw, info, info_font, right - text_x)):
+                draw.text((text_x, text_top + 38 + j * 24), line, font=info_font, fill=MUTED)
+        draw.line([(left, cy + r + 20), (right, cy + r + 20)], fill="#241C18", width=1)
+
+    draw_wordmark_anchor(img, draw)
+    return img
+
+
 def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
     img, draw = base_slide()
     handle_font = font(B.SANS_BOLD, 24)
@@ -207,16 +259,17 @@ def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
 
 def build(name, week_label, stocks, hook_label="DIESE WOCHE", headline_lines=None,
           sub_text=None, cta_question_lines=None, cta_text="Schreib's in die Kommentare.",
-          grid_label="DIE AKTIEN"):
+          grid_label="DIE AKTIEN", layout="circles"):
     output, ig_dir, tt_dir = paths_for(name)
 
     slides = [slide_hook(week_label, len(stocks), label=hook_label,
                           headline_lines=headline_lines, sub_text=sub_text)]
-    per_page = 9
+    per_page = 9 if layout == "circles" else 8
+    grid_fn = draw_logo_grid_slide if layout == "circles" else draw_info_grid_slide
     pages = [stocks[i:i + per_page] for i in range(0, len(stocks), per_page)]
     for i, page in enumerate(pages, start=1):
         page_label = grid_label if len(pages) == 1 else f"{grid_label} ({i}/{len(pages)})"
-        slides.append(draw_logo_grid_slide(page, page_label))
+        slides.append(grid_fn(page, page_label))
     slides.append(slide_cta(question_lines=cta_question_lines, cta_text=cta_text))
 
     for i, img in enumerate(slides, start=1):
