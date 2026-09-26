@@ -45,7 +45,7 @@ CARD = "#161616"
 CARD_BORDER = "#2C2C2C"
 CREAM = "#F5F3EE"
 MUTED = "#8C8C88"
-ACCENT = "#FF5A36"
+ACCENT = "#4CC9F0"
 
 OWN_HANDLE = "@DASDEPOTDIARY"
 WORDMARK = ROOT / "assets" / "logo_depotdiary_stacked_transparent.png"
@@ -91,8 +91,8 @@ def base_slide():
     gdraw = ImageDraw.Draw(glow)
     gdraw.ellipse([W / 2 - 500, -350, W / 2 + 500, 400], fill=45)
     glow = glow.filter(ImageFilter.GaussianBlur(160))
-    red_layer = Image.new("RGB", (W, H), (70, 24, 14))
-    img.paste(red_layer, (0, 0), glow)
+    accent_layer = Image.new("RGB", (W, H), (14, 40, 56))
+    img.paste(accent_layer, (0, 0), glow)
     draw = ImageDraw.Draw(img)
     return img, draw
 
@@ -261,13 +261,35 @@ def draw_info_grid_slide(stocks, page_label):
     return img
 
 
+def draw_heart_icon(draw, cx, cy, size, color):
+    r = size * 0.28
+    draw.ellipse([cx - size * 0.5, cy - size * 0.28, cx - size * 0.5 + 2 * r, cy - size * 0.28 + 2 * r], fill=color)
+    draw.ellipse([cx, cy - size * 0.28, cx + 2 * r, cy - size * 0.28 + 2 * r], fill=color)
+    draw.polygon([(cx - size * 0.5, cy), (cx + size * 0.5, cy), (cx, cy + size * 0.55)], fill=color)
+
+
+def draw_comment_icon(draw, cx, cy, size, color):
+    draw.rounded_rectangle([cx - size * 0.55, cy - size * 0.4, cx + size * 0.55, cy + size * 0.35],
+                            radius=size * 0.18, outline=color, width=max(3, int(size * 0.09)))
+    draw.polygon([(cx - size * 0.15, cy + size * 0.3), (cx + size * 0.1, cy + size * 0.3),
+                  (cx - size * 0.2, cy + size * 0.62)], fill=color)
+
+
+def draw_share_icon(draw, cx, cy, size, color):
+    w = max(3, int(size * 0.1))
+    draw.line([(cx - size * 0.5, cy + size * 0.35), (cx - size * 0.5, cy - size * 0.15),
+               (cx + size * 0.5, cy - size * 0.15)], fill=color, width=w, joint="curve")
+    draw.polygon([(cx + size * 0.5, cy - size * 0.42), (cx + size * 0.5, cy + size * 0.12),
+                  (cx + size * 0.82, cy - size * 0.15)], fill=color)
+
+
 def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
     img, draw = base_slide()
     handle_font = font(B.SANS_BOLD, 24)
     tw = draw.textlength(OWN_HANDLE, font=handle_font)
     draw.text((W / 2 - tw / 2, 64), OWN_HANDLE, font=handle_font, fill=MUTED)
 
-    y = H * 0.36
+    y = H * 0.30
     title_font = font(B.SANS_BOLD, 54)
     if question_lines is None:
         question_lines = ["WELCHE WAR FUER", "DICH AM SPANNENDSTEN?"]
@@ -281,6 +303,19 @@ def slide_cta(question_lines=None, cta_text="Schreib's in die Kommentare."):
     cta = cta_text
     tw = draw.textlength(cta, font=cta_font)
     draw.text((W / 2 - tw / 2, y), cta, font=cta_font, fill=ACCENT)
+
+    y += 90
+    icon_size = 76
+    gap = 128
+    total_w = 3 * icon_size + 2 * (gap - icon_size)
+    start_x = W / 2 - total_w / 2 + icon_size / 2
+    draw_heart_icon(draw, start_x, y, icon_size, ACCENT)
+    draw_comment_icon(draw, start_x + gap, y, icon_size, ACCENT)
+    draw_share_icon(draw, start_x + 2 * gap, y, icon_size, ACCENT)
+    label_font = font(B.SANS_BOLD, 16)
+    for i, label in enumerate(["LIKE", "KOMMENTAR", "TEILEN"]):
+        lw = draw.textlength(label, font=label_font)
+        draw.text((start_x + i * gap - lw / 2, y + icon_size / 2 + 24), label, font=label_font, fill=MUTED)
 
     note_font = font(B.SANS_BOLD, 20)
     note = "Keine Anlageberatung -- reine Uebersicht, keine Bewertung."

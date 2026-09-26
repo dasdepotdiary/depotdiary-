@@ -55,6 +55,18 @@ TECH_GIGANTEN = [
      "info": "Fahrdienst- und Lieferplattform, in vielen Laendern aktiv."},
     {"name": "CoreWeave", "ticker": "CRWV", "logo_path": logo("coreweave"),
      "info": "Cloud-Infrastruktur spezialisiert auf KI-Rechenleistung."},
+    {"name": "ASML", "ticker": "ASML", "logo_path": logo("asml"),
+     "info": "Einziger Hersteller der EUV-Lithografiemaschinen fuer modernste Chips."},
+    {"name": "Broadcom", "ticker": "AVGO", "logo_path": logo("avgo"),
+     "info": "Halbleiter und Infrastruktur-Software (u.a. VMware)."},
+    {"name": "SAP", "ticker": "SAP", "logo_path": logo("sap"),
+     "info": "Groesster europaeischer Softwarekonzern, ERP-Systeme fuer Unternehmen."},
+    {"name": "MercadoLibre", "ticker": "MELI", "logo_path": logo("mercadolibre"),
+     "info": "Groesste E-Commerce- und Fintech-Plattform Lateinamerikas."},
+    {"name": "Axon", "ticker": "AXON", "logo_path": logo("axon"),
+     "info": "Technologie fuer Sicherheitsbehoerden (u.a. Taser, Bodycams)."},
+    {"name": "Rocket Lab", "ticker": "RKLB", "logo_path": logo("rklb"),
+     "info": "Raumfahrtunternehmen, Raketen und Satelliten."},
 ]
 
 DIVIDENDEN_AKTIEN = [
@@ -74,6 +86,14 @@ DIVIDENDEN_AKTIEN = [
      "info": "Luft- und Raumfahrt sowie Ruestungstechnik (u.a. Raytheon, Collins)."},
     {"name": "AT&T", "ticker": "T", "logo_path": logo("t"),
      "info": "US-Telekomkonzern, bekannt fuer hohe Dividendenrendite."},
+    {"name": "Eaton", "ticker": "ETN", "logo_path": logo("eaton"),
+     "info": "Elektrotechnik-Konzern, u.a. fuer Energieinfrastruktur."},
+    {"name": "Costco", "ticker": "COST", "logo_path": logo("cost"),
+     "info": "Mitglieder-Grosshandelsketten, bekannt fuer Sonderdividenden."},
+    {"name": "Broadcom", "ticker": "AVGO", "logo_path": logo("avgo"),
+     "info": "Halbleiter und Infrastruktur-Software, zahlt seit Jahren steigende Dividende."},
+    {"name": "Novo Nordisk", "ticker": "NVO", "logo_path": logo("nvo"),
+     "info": "Daenischer Pharmakonzern, bekannt u.a. fuer Diabetes-/Abnehmmedikamente."},
 ]
 
 
@@ -84,7 +104,7 @@ def main():
         TECH_GIGANTEN,
         hook_label="SEKTOR-CHECK",
         headline_lines=["TECH-GIGANTEN", "IM VERGLEICH."],
-        sub_text="15 grosse Tech-Werte, die in vielen Depots stecken -- auf einen Blick.",
+        sub_text=f"{len(TECH_GIGANTEN)} grosse Tech-Werte, die in vielen Depots stecken -- auf einen Blick.",
         grid_label="DIE AKTIEN",
         cta_question_lines=["WELCHE HAST DU", "SELBST IM DEPOT?"],
         cta_text="Schreib's in die Kommentare.",

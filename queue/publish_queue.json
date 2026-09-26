@@ -2674,17 +2674,17 @@
   {
     "post_name": "format_sektor_tech",
     "action": "carousel",
-    "slide_count": 4,
+    "slide_count": 5,
     "status": "draft_held",
     "note": "Wartet auf explizites Go vom Nutzer -- Status auf pending setzen, wenn er sagt posten.",
-    "caption": "15 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "caption": "21 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave, ASML, Broadcom, SAP, MercadoLibre, Axon, Rocket Lab.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
   },
   {
     "post_name": "format_dividenden_check",
     "action": "carousel",
-    "slide_count": 3,
+    "slide_count": 4,
     "status": "draft_held",
     "note": "Wartet auf explizites Go vom Nutzer -- Status auf pending setzen, wenn er sagt posten.",
-    "caption": "Bekannte Dividendenzahler aus verschiedenen Branchen -- auf einen Blick.\n\nJPMorgan Chase, McDonald's, Coca-Cola, Procter & Gamble, PepsiCo, Bank of America, RTX, AT&T.\n\nWelche Dividende gefaellt dir am besten? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "caption": "Bekannte Dividendenzahler aus verschiedenen Branchen -- auf einen Blick.\n\nJPMorgan Chase, McDonald's, Coca-Cola, Procter & Gamble, PepsiCo, Bank of America, RTX, AT&T, Eaton, Costco, Broadcom, Novo Nordisk.\n\nWelche Dividende gefaellt dir am besten? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
   }
 ]
