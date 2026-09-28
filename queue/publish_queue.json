@@ -2812,8 +2812,10 @@
   {
     "post_name": "story_post_ankuendigung_ki",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-09-28T17:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-09-28T17:05:00+02:00",
+    "claimed_by": "runnervmtr4k5-2301-cdc3e1bf",
+    "claimed_at": "2026-09-28T17:01:52.648844+00:00"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-26-09",
