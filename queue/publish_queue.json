@@ -2749,10 +2749,12 @@
   {
     "post_name": "story_post_ankuendigung_wochenrueckblick",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-28T07:10:00+02:00",
     "claimed_by": "runnervmtr4k5-2277-33c3e336",
-    "claimed_at": "2026-09-28T08:29:06.463632+00:00"
+    "claimed_at": "2026-09-28T08:29:06.463632+00:00",
+    "published_at": "2026-09-28T08:29:17.702546+00:00",
+    "media_id": "18224624920334011"
   },
   {
     "post_name": "format_ki_infrastruktur",
