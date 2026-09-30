@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Adobe", "ticker": "ADBE", "price": 238.93, "change_pct": -0.73, "as_of": "24.09.", "pe": 13.3,
-         "forward_pe": 8.64, "peg": 0.58, "div_yield": None, "earnings_growth": 10.5, "beta": 1.42,
-         "market_cap": "95,7 Mrd. USD", "volume": "3,7 Mio.", "week52_low": 190.12, "week52_high": 363.70,
-         "note": "Notiert rund 34% unter dem 52-Wochen-Hoch (363,70 USD) und zahlt keine Dividende -- der gesamte Ertrag kommt ueber den Kurs.",
-         "csv_path": DATA_DIR / "ADBE.csv", "accent": OCHRE},
-        {"name": "Qualcomm", "ticker": "QCOM", "price": 194.26, "change_pct": -1.51, "as_of": "24.09.", "pe": 22.57,
-         "forward_pe": 19.65, "peg": 0.88, "div_yield": 1.81, "earnings_growth": -23.0, "beta": 1.68,
-         "market_cap": "210,7 Mrd. USD", "volume": "9,1 Mio.", "week52_low": 120.88, "week52_high": 257.56,
-         "note": "Hat heute das Patent-Lizenzabkommen mit Apple erneuert -- trotzdem Quartalsgewinn im Jahresvergleich um 23% gesunken (letztes verfuegbares Quartal).",
-         "csv_path": DATA_DIR / "QCOM.csv", "accent": GREEN},
-        {"name": "T-Mobile US", "ticker": "TMUS", "price": 165.35, "change_pct": -0.19, "as_of": "24.09.", "pe": 16.97,
-         "forward_pe": 11.51, "peg": 0.57, "div_yield": 2.51, "earnings_growth": 5.3, "beta": 0.33,
-         "market_cap": "177,7 Mrd. USD", "volume": "5,0 Mio.", "week52_low": 161.14, "week52_high": 235.97,
-         "note": "Hat die Quartalsdividende gerade um 15% auf 1,17 USD je Aktie erhoeht. Mit Abstand niedrigstes Beta der drei (0,33) -- deutlich ruhiger als der Gesamtmarkt.",
-         "csv_path": DATA_DIR / "TMUS.csv", "accent": CAT_TEAL},
+        {"name": "Nike", "ticker": "NKE", "price": 35.84, "change_pct": -1.51, "as_of": "29.09.", "pe": 17.07,
+         "forward_pe": 21.01, "peg": 1.40, "div_yield": 4.48, "earnings_growth": 428.0, "beta": 1.11,
+         "market_cap": "53,2 Mrd. USD", "volume": "29,0 Mio.", "week52_low": 35.22, "week52_high": 74.51,
+         "note": "Notiert nur knapp ueber dem 52-Wochen-Tief (35,22 USD) und rund 52% unter dem Hoch -- dadurch liegt die Dividendenrendite aktuell bei 4,5%.",
+         "csv_path": DATA_DIR / "NKE.csv", "accent": OCHRE},
+        {"name": "Micron", "ticker": "MU", "price": 1065.08, "change_pct": 1.05, "as_of": "29.09.", "pe": 23.81,
+         "forward_pe": 7.02, "peg": 0.16, "div_yield": 0.05, "earnings_growth": 1369.0, "beta": 2.22,
+         "market_cap": "1,20 Bio. USD", "volume": "19,7 Mio.", "week52_low": 179.43, "week52_high": 1254.81,
+         "note": "Kurs hat sich seit dem 52-Wochen-Tief (179,43 USD) fast versechsfacht. Beta von 2,2: schwankt gut doppelt so stark wie der Gesamtmarkt.",
+         "csv_path": DATA_DIR / "MU.csv", "accent": GREEN},
+        {"name": "Disney", "ticker": "DIS", "price": 105.41, "change_pct": -0.17, "as_of": "29.09.", "pe": 21.78,
+         "forward_pe": 13.81, "peg": 3.37, "div_yield": 1.42, "earnings_growth": -48.3, "beta": 1.41,
+         "market_cap": "182,0 Mrd. USD", "volume": "7,3 Mio.", "week52_low": 91.49, "week52_high": 115.42,
+         "note": "Bewegt sich seit einem Jahr in einer vergleichsweise engen Spanne (91,49-115,42 USD) -- Quartalsgewinn im Jahresvergleich um 48% gesunken (letztes verfuegbares Quartal).",
+         "csv_path": DATA_DIR / "DIS.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
