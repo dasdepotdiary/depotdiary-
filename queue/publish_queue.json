@@ -2891,9 +2891,11 @@
     "post_name": "tagesupdate_2026-09-30",
     "action": "story",
     "fire_at": "2026-09-30T10:30:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmtr4k5-2104-37393776",
-    "claimed_at": "2026-09-30T21:21:00.317995+00:00"
+    "claimed_at": "2026-09-30T21:21:00.317995+00:00",
+    "published_at": "2026-09-30T21:21:09.007903+00:00",
+    "media_id": "17928879525408773"
   },
   {
     "post_name": "earnings_woche_2026-09-28",
