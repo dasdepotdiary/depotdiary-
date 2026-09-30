@@ -871,5 +871,14 @@
     "excerpt": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
     "cover": "assets/posts/marktupdate_wochenrueckblick-26-09/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-05-10",
+    "title": "Die kommende Börsenwoche: Fed-Protokoll und vier grosse Bilanzen.",
+    "category": "marktupdate",
+    "date": "2026-09-30",
+    "excerpt": "Das steht zwischen Montag (05.10.) und Freitag (09.10.) an -- rein faktisch, keine Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-05-10/slide_1.webp",
+    "url": null
   }
 ]

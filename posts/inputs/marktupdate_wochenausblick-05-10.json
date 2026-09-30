@@ -1,0 +1,35 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Die kommende Börsenwoche: *Fed-Protokoll* und vier grosse Bilanzen.",
+  "hook_sub": "Das steht zwischen Montag (05.10.) und Freitag (09.10.) an -- rein faktisch, keine Prognose.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag: *ISM-Servicedaten* für September.",
+      "body": "Der ISM-Einkaufsmanagerindex für den Dienstleistungssektor zeigt, wie sich der grösste Teil der US-Wirtschaft im September entwickelt hat -- die Industriedaten (ISM Manufacturing) kamen bereits letzte Woche."
+    },
+    {
+      "type": "stats",
+      "headline": "Vier grosse Konzerne legen Quartalszahlen vor.",
+      "stats": [
+        ["Constellation Brands", "06.10., vor Börsenstart", "EPS-Konsens $3,62", "ink"],
+        ["Levi Strauss", "07.10., nach Börsenschluss", "EPS-Konsens $0,36", "ink"],
+        ["PepsiCo", "08.10., vor Börsenstart", "EPS-Konsens $2,29", "ink"],
+        ["Delta Air Lines", "09.10.", "EPS-Konsens $1,96", "ink"]
+      ],
+      "note": "Delta eröffnet traditionell den Blick auf den Transportsektor -- die grossen US-Banken folgen mit ihren Zahlen erst ab Mitte Oktober."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *Fed-Sitzungsprotokoll* vom September.",
+      "body": "Am 07.10. veröffentlicht die Fed die Protokolle des September-Meetings -- ein Blick darauf, wie diskutiert wurde. Die nächste Zinsentscheidung fällt erst am 27./28.10."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: Verbraucherstimmung und Chinas Inflation.",
+      "body": "Die vorläufigen Zahlen zur US-Verbraucherstimmung (University of Michigan) sowie der chinesische Verbraucherpreisindex (CPI) runden die Woche ab."
+    }
+  ],
+  "cta_headline": "Die eigentliche Berichtssaison nimmt erst ab Mitte Oktober Fahrt auf.",
+  "cta_body": "Keine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+}
