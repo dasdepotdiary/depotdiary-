@@ -10,6 +10,7 @@ keine Kursziele/Bewertungen).
 Aufruf:
   python posts/story_earnings_woche.py <post_name>
 """
+import json
 import sys
 from pathlib import Path
 
@@ -142,7 +143,13 @@ def main():
     tt_dir = output / "tiktok_9x16"
     tt_dir.mkdir(parents=True, exist_ok=True)
 
-    img = slide_earnings_woche(EVENTS, date_label)
+    # Optionales Input-JSON posts/inputs/<post_name>.json: {"events": [...]}
+    input_path = ROOT / "posts" / "inputs" / f"{post_name}.json"
+    events = EVENTS
+    if input_path.exists():
+        events = json.loads(input_path.read_text(encoding="utf-8"))["events"]
+
+    img = slide_earnings_woche(events, date_label)
     img.save(tt_dir / "slide_1.png")
     img.save(output / "uebersicht.png")
     print(f"Fertig: {output / 'uebersicht.png'}")
