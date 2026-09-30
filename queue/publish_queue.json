@@ -2907,9 +2907,16 @@
     "post_name": "aktiencheck_2026-09-30",
     "action": "story_sequence",
     "fire_at": "2026-09-30T12:00:00+02:00",
-    "status": "claiming",
+    "status": "done",
     "claimed_by": "runnervmtr4k5-2104-37393776",
-    "claimed_at": "2026-09-30T21:21:10.569254+00:00"
+    "claimed_at": "2026-09-30T21:21:10.569254+00:00",
+    "published_at": "2026-09-30T21:22:36.856818+00:00",
+    "media_id": "18095461151392003",
+    "media_ids": [
+      "18095461151392003",
+      "17964766290215746",
+      "18134790611502005"
+    ]
   },
   {
     "post_name": "marktupdate_wochenausblick-05-10",
