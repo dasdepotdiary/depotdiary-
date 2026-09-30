@@ -2936,11 +2936,13 @@
     "post_name": "marktupdate_wochenausblick-30-09",
     "action": "carousel",
     "slide_count": 6,
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-30T00:00:00+02:00",
     "caption": "Was diese Woche noch ansteht: Nike, Accenture & der US-Arbeitsmarktbericht.\n\nDonnerstag: Nike und Accenture legen Zahlen vor (Konsens-EPS Accenture 3,18 USD, McCormick 0,76 USD). Freitag: US-Arbeitsmarktbericht fuer September, 14:30 Uhr MEZ.\n\nSchon jetzt auf dem Radar: Fed-Sitzung 27./28.10., naechster CPI-Bericht 14.10.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.",
     "claimed_by": "runnervmtr4k5-2104-37393776",
-    "claimed_at": "2026-09-30T21:22:38.375052+00:00"
+    "claimed_at": "2026-09-30T21:22:38.375052+00:00",
+    "published_at": "2026-09-30T21:23:51.192055+00:00",
+    "media_id": "18412879558083224"
   },
   {
     "post_name": "marktupdate_wochenausblick-30-09",
