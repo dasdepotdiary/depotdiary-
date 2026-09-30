@@ -2947,9 +2947,11 @@
   {
     "post_name": "marktupdate_wochenausblick-30-09",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-09-30T00:05:00+02:00",
     "claimed_by": "runnervmtr4k5-2104-37393776",
-    "claimed_at": "2026-09-30T21:23:52.733408+00:00"
+    "claimed_at": "2026-09-30T21:23:52.733408+00:00",
+    "published_at": "2026-09-30T21:24:30.916491+00:00",
+    "media_id": "18081609515706026"
   }
 ]
