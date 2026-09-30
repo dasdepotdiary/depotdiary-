@@ -1,0 +1,33 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Was diese Woche noch ansteht: *Nike, Accenture & der US-Arbeitsmarktbericht*.",
+  "hook_sub": "Die wichtigsten bekannten Termine bis Freitag.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Donnerstag: *Nike* legt Zahlen vor.",
+      "body": "Nike berichtet am Donnerstag nach Boersenschluss -- im Fokus stehen Umsatzentwicklung und das China-Geschaeft."
+    },
+    {
+      "type": "text",
+      "headline": "Ebenfalls Donnerstag: *Accenture*.",
+      "body": "Der IT-Dienstleister veroeffentlicht seine Quartalszahlen, die Konsens-Schaetzung liegt bei 3,18 USD Gewinn je Aktie."
+    },
+    {
+      "type": "stats",
+      "headline": "Konsens-Schaetzungen fuer *Donnerstag*.",
+      "stats": [
+        ["Accenture", "Vor Boersenschluss", "3,18 USD", "gold"],
+        ["McCormick", "Vor Boersenschluss", "0,76 USD", "gold"]
+      ],
+      "note": "Konsens-EPS-Schaetzungen, keine eigene Prognose."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *US-Arbeitsmarktbericht*.",
+      "body": "Der Jobs-Report fuer September erscheint am Freitag um 14:30 Uhr MEZ -- einer der meistbeachteten Konjunkturtermine ueberhaupt."
+    }
+  ],
+  "cta_headline": "Naechste grosse Termine: *Fed-Sitzung 27./28.10., CPI 14.10.*",
+  "cta_body": "Beide noch etwas entfernt, aber schon jetzt auf dem Radar. Keine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+}
