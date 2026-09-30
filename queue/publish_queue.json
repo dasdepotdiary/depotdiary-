@@ -2907,7 +2907,9 @@
     "post_name": "aktiencheck_2026-09-30",
     "action": "story_sequence",
     "fire_at": "2026-09-30T12:00:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervmtr4k5-2104-37393776",
+    "claimed_at": "2026-09-30T21:21:10.569254+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-05-10",
