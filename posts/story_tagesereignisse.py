@@ -149,16 +149,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "Mittwochsschluss: Nasdaq (QQQ) -0,84% auf 741,21 USD, S&P 500 (SPY) -0,72% auf 767,83 USD, Dow (DIA) -0,70% auf 514,35 USD.",
-         "body": "Alle drei US-Leitindizes schlossen im Minus, angefuehrt vom Nasdaq."},
-        {"headline": "Die Rendite der 10-jaehrigen US-Staatsanleihe stieg auf 5,135% -- den hoechsten Stand seit Juli 2007.",
-         "body": "Steigende Anleiherenditen begleiteten den Rueckgang an den Aktienmaerkten."},
-        {"headline": "IonQ +12%, nachdem das Unternehmen nach eigenen Angaben den ersten Echtzeit-Quantenfehlerdekoder der Branche getestet hat.",
-         "body": "Der Quantencomputing-Titel gehoerte damit zu den staerksten Einzelwerten des Tages."},
-        {"headline": "Intel -1,02% auf 122,60 USD bei einem Handelsvolumen von rund 84 Millionen Aktien.",
-         "body": "Der Chiphersteller gab damit einen Teil seiner juengsten Gewinne wieder ab."},
-        {"headline": "Gold fiel um 1,14% auf 4.314,38 USD je Feinunze.",
-         "body": "Anleger beobachteten unterdessen die Entwicklungen zwischen den USA, China und dem Iran."},
+        {"headline": "US-Stand am Nachmittag: Nasdaq +0,94% auf 27.049 Punkte, S&P 500 +0,40% auf 7.701, Dow -0,29% auf 51.203.",
+         "body": "Tech-Werte fuehrten die Gewinne an, der Dow lag leicht im Minus."},
+        {"headline": "Die US-Inflation nach PCE-Index lag im August bei 3,4% zum Vorjahr -- erwartet waren 3,7%.",
+         "body": "Zum Vormonat stieg der Index um 0,2% statt der erwarteten 0,3%; auch die Kernrate fiel niedriger aus."},
+        {"headline": "Die Rendite der 10-jaehrigen US-Staatsanleihe stand bei rund 5,30%.",
+         "body": "Das entspricht einem Anstieg um rund 0,05 Prozentpunkte gegenueber dem Vortag."},
+        {"headline": "Mattel -3%, nachdem der Abgang von CEO Ynon Kreiz bekannt gegeben wurde.",
+         "body": "Der Spielzeughersteller gehoerte damit zu den auffaelligen Einzelwerten des Tages."},
+        {"headline": "Micron legt heute nach US-Boersenschluss seine Quartalszahlen vor.",
+         "body": "Die Aktie notierte vorab bei rund 1.069 USD, +0,39%."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
