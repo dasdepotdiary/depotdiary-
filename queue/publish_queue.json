@@ -2989,8 +2989,10 @@
   {
     "post_name": "story_post_ankuendigung_ecommerce",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-03T18:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-03T18:05:00+02:00",
+    "claimed_by": "runnervm8df0l-2398-980ec64d",
+    "claimed_at": "2026-10-03T18:37:41.822482+00:00"
   },
   {
     "post_name": "format_aktienquiz_2026-10-03",
