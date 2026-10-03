@@ -2975,8 +2975,10 @@
   {
     "post_name": "story_post_ankuendigung_tech2",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-03T00:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-03T00:05:00+02:00",
+    "claimed_by": "Surface4RA-25128-9d0539a8",
+    "claimed_at": "2026-10-03T11:06:22.351164+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_ecommerce",
