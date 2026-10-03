@@ -49,34 +49,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was ist ein ETF?",
+        "q": "Was zeigt die Dividendenrendite?",
         "options": [
-            "Ein an der Boerse gehandelter, meist passiv verwalteter Fonds",
-            "Eine Aktie mit garantierter Dividende",
-            "Ein Kredit zum Aktienkauf auf Pump",
-        ],
-        "correct": 0,
-        "explain": "ETF steht fuer Exchange Traded Fund -- er bildet meist einen Index nach und wird wie eine Aktie an der Boerse gehandelt.",
-    },
-    {
-        "q": "Was bedeutet 'Diversifikation'?",
-        "options": [
-            "Alles Geld in eine einzelne Aktie stecken",
-            "Das Geld auf mehrere Anlagen/Branchen verteilen",
-            "Nur in einer Waehrung investieren",
+            "Wie stark eine Aktie in einem Jahr gestiegen ist",
+            "Die jaehrliche Dividende im Verhaeltnis zum Aktienkurs",
+            "Wie viele Aktionaere ein Unternehmen hat",
         ],
         "correct": 1,
-        "explain": "Diversifikation streut das Risiko ueber mehrere Anlagen -- faellt eine Position, reisst sie nicht das ganze Depot mit.",
+        "explain": "Dividendenrendite = Dividende pro Aktie geteilt durch den Aktienkurs -- eine von mehreren Kennzahlen, kein Garant fuer kuenftige Zahlungen.",
     },
     {
-        "q": "Wofuer steht der VIX (der 'Angstbarometer' der Wall Street)?",
+        "q": "Was ist ein 'Blue Chip'?",
         "options": [
-            "Ein US-Leitzins der Notenbank",
-            "Ein Aktienindex wie der Dow Jones",
-            "Ein Mass fuer die erwartete Schwankungsbreite des Marktes",
+            "Ein besonders volatiler Kleinstwert",
+            "Ein grosses, etabliertes und finanziell stabiles Unternehmen",
+            "Ein Kryptowaehrungs-Token",
         ],
-        "correct": 2,
-        "explain": "Der VIX misst die vom Optionsmarkt erwartete Volatilitaet des S&P 500 -- steigt er stark, rechnen Anleger mit mehr Unsicherheit.",
+        "correct": 1,
+        "explain": "Der Begriff stammt aus dem Pokerspiel (blaue Chips = hoechster Wert) und steht fuer grosse, bekannte Standardwerte wie z.B. Indexschwergewichte.",
+    },
+    {
+        "q": "Wann spricht man von einem 'Baerenmarkt'?",
+        "options": [
+            "Wenn eine einzelne Aktie an einem Tag faellt",
+            "Bei einem anhaltenden Kursrueckgang von rund 20% oder mehr vom Hoch",
+            "Wenn die Zinsen steigen",
+        ],
+        "correct": 1,
+        "explain": "Ein Rueckgang um etwa 20% vom letzten Hoch ueber einen laengeren Zeitraum gilt als gaengige Definition eines Baerenmarkts.",
     },
 ]
 
