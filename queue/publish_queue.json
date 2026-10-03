@@ -2975,10 +2975,12 @@
   {
     "post_name": "story_post_ankuendigung_tech2",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-03T00:05:00+02:00",
     "claimed_by": "Surface4RA-25128-9d0539a8",
-    "claimed_at": "2026-10-03T11:06:22.351164+00:00"
+    "claimed_at": "2026-10-03T11:06:22.351164+00:00",
+    "published_at": "2026-10-03T11:06:45.540205+00:00",
+    "media_id": "18088949591240906"
   },
   {
     "post_name": "story_post_ankuendigung_ecommerce",
