@@ -2675,9 +2675,10 @@
     "post_name": "format_sektor_tech",
     "action": "carousel",
     "slide_count": 5,
-    "status": "draft_held",
+    "status": "pending",
     "note": "Wartet auf explizites Go vom Nutzer -- Status auf pending setzen, wenn er sagt posten.",
-    "caption": "21 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave, ASML, Broadcom, SAP, MercadoLibre, Axon, Rocket Lab.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "caption": "21 Tech-Giganten im Vergleich -- einige der groessten Tech-Werte, die in vielen Depots stecken, auf einen Blick.\n\nApple, Microsoft, Alphabet, Amazon, Meta, Nvidia, Adobe, ServiceNow, Oracle, TSMC, Netflix, Palantir, Micron, Uber, CoreWeave, ASML, Broadcom, SAP, MercadoLibre, Axon, Rocket Lab.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
+    "fire_at": "2026-10-03T00:00:00+02:00"
   },
   {
     "post_name": "format_dividenden_check",
@@ -2772,8 +2773,9 @@
     "post_name": "format_ecommerce_zahlungen",
     "action": "carousel",
     "slide_count": 3,
-    "status": "draft_held",
-    "caption": "E-Commerce & Zahlungen -- 7 Werte aus Online-Handel und digitalen Zahlungen, auf einen Blick.\n\nAmazon, MercadoLibre, PayPal, Visa, Uber, Costco, Home Depot.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+    "status": "pending",
+    "caption": "E-Commerce & Zahlungen -- 7 Werte aus Online-Handel und digitalen Zahlungen, auf einen Blick.\n\nAmazon, MercadoLibre, PayPal, Visa, Uber, Costco, Home Depot.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung.",
+    "fire_at": "2026-10-03T00:00:00+02:00"
   },
   {
     "post_name": "fachbegriff_2026-09-28",
@@ -2965,5 +2967,17 @@
     "claimed_at": "2026-09-30T21:23:52.733408+00:00",
     "published_at": "2026-09-30T21:24:30.916491+00:00",
     "media_id": "18081609515706026"
+  },
+  {
+    "post_name": "story_post_ankuendigung_tech2",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-03T00:05:00+02:00"
+  },
+  {
+    "post_name": "story_post_ankuendigung_ecommerce",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-03T00:10:00+02:00"
   }
 ]
