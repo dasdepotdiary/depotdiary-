@@ -2956,7 +2956,9 @@
     "post_name": "marktupdate_wochenausblick-05-10",
     "action": "story",
     "fire_at": "2026-10-04T00:00:00+02:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "Surface4RA-4468-ecd609fd",
+    "claimed_at": "2026-10-04T20:54:49.352258+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-30-09",
