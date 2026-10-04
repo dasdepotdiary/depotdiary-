@@ -2945,13 +2945,13 @@
     "action": "carousel",
     "caption": "Die kommende Börsenwoche: Fed-Protokoll und vier grosse Bilanzen.\n\nDiese Woche im Blick (05.-09.10.):\n\n-> Montag: ISM-Servicedaten für den US-Dienstleistungssektor\n-> Dienstag bis Freitag: Quartalszahlen von Constellation Brands, Levi Strauss, PepsiCo und Delta Air Lines\n-> Mittwoch: Fed veroeffentlicht die Sitzungsprotokolle vom September\n-> Freitag: US-Verbraucherstimmung und Chinas Inflationsdaten\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #finanzen #investieren",
     "slide_count": 6,
-    "fire_at": "2026-10-05T07:30:00+02:00",
+    "fire_at": "2026-10-04T00:00:00+02:00",
     "status": "pending"
   },
   {
     "post_name": "marktupdate_wochenausblick-05-10",
     "action": "story",
-    "fire_at": "2026-10-05T07:30:00+02:00",
+    "fire_at": "2026-10-04T00:00:00+02:00",
     "status": "pending"
   },
   {
