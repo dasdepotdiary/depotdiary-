@@ -3077,7 +3077,9 @@
   {
     "post_name": "zitat_2026-10-04b",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-04T00:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-04T00:00:00+02:00",
+    "claimed_by": "Surface4RA-6988-40d42f4e",
+    "claimed_at": "2026-10-04T20:56:37.284141+00:00"
   }
 ]
