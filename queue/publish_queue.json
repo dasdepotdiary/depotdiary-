@@ -3077,9 +3077,11 @@
   {
     "post_name": "zitat_2026-10-04b",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-04T00:00:00+02:00",
     "claimed_by": "Surface4RA-24492-fcf360db",
-    "claimed_at": "2026-10-04T20:58:52.983300+00:00"
+    "claimed_at": "2026-10-04T20:58:52.983300+00:00",
+    "published_at": "2026-10-04T20:59:10.114781+00:00",
+    "media_id": "18102209615571215"
   }
 ]
