@@ -3103,8 +3103,10 @@
   {
     "post_name": "story_post_ankuendigung_finanzwerte",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-05T13:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-05T13:05:00+02:00",
+    "claimed_by": "runnervm8df0l-2349-1a2e2d8c",
+    "claimed_at": "2026-10-05T18:36:19.031531+00:00"
   },
   {
     "post_name": "watchlist_2026-10-05",
