@@ -32,15 +32,20 @@ SOFT = "#D8D5CE"
 MUTED = "#A9A59C"
 
 PHOTOS = [
+    ROOT / "assets" / "sk_nyc_wtc_sunset_still.jpg",
+    ROOT / "assets" / "sk_dubai_burj_sunset_still.jpg",
+    ROOT / "assets" / "sk_philadelphia_clouds_still.jpg",
+    ROOT / "assets" / "sk_chicago_pink_still.jpg",
+    ROOT / "assets" / "sk_frankfurt_dusk_still.jpg",
+    ROOT / "assets" / "sk_frankfurt_main_sunset_still.jpg",
+    ROOT / "assets" / "sk_frankfurt_night_still.jpg",
+    ROOT / "assets" / "sk_chicago_blue_still.jpg",
+    ROOT / "assets" / "sk_singapore_dusk_still.jpg",
+    ROOT / "assets" / "sk_london_golden_still.jpg",
     ROOT / "assets" / "wallstreet_bull_still.jpg",
     ROOT / "assets" / "nyse_flag_still.jpg",
     ROOT / "assets" / "frankfurt_dusk_still.jpg",
-    ROOT / "assets" / "chart_screen_still.jpg",
     ROOT / "assets" / "skyscraper_up_still.jpg",
-    ROOT / "assets" / "gold_bars_still.jpg",
-    ROOT / "assets" / "nyse_columns_still.jpg",
-    ROOT / "assets" / "crypto_coins_still.jpg",
-    ROOT / "assets" / "downtown_street_still.png",
 ]
 
 ACCENTS = ["#4CC9F0", "#FF3EA5", "#B6FF3D", "#FFDD3D", "#7B5CFF"]
@@ -152,3 +157,78 @@ def draw_top(draw, accent, label, date_label=None):
         draw.text((80 + dx, SAFE_TOP + 44 + dy), label, font=font(30), fill=(0, 0, 0))
     draw.text((80, SAFE_TOP), handle, font=font(24), fill=CREAM)
     draw.text((80, SAFE_TOP + 44), label, font=font(30), fill=accent)
+
+
+def glass(img, boxes, radius=22, alpha=176):
+    """Halbtransparente dunkle Karten ("Glas") ueber dem Foto -- gut lesbar,
+    Foto bleibt in den Zwischenraeumen sichtbar. Gibt ein NEUES Bild zurueck
+    (danach ImageDraw.Draw neu anlegen)."""
+    base = img.convert("RGBA")
+    overlay = Image.new("RGBA", img.size, (0, 0, 0, 0))
+    d = ImageDraw.Draw(overlay)
+    for (x0, y0, x1, y1) in boxes:
+        d.rounded_rectangle([x0, y0, x1, y1], radius=radius, fill=(8, 8, 10, alpha),
+                            outline=(255, 255, 255, 46), width=1)
+    return Image.alpha_composite(base, overlay).convert("RGB")
+
+
+def draw_list_story(key, label, title_lines, entries, footer_text, date_label=None):
+    """Generische Story fuer nummerierte/getaktete Eintraege (Tagesereignisse,
+    Heute-Agenda): Skyline-Foto, Caps-Titel, Eintraege auf einer Glas-Karte
+    (Foto bleibt sichtbar), Akzent-Tag + Headline + Fliesstext, automatisch auf die
+    verfuegbare Hoehe skaliert.
+    entries: [{"tag": "01" | "14:30 UHR", "headline": str, "body": str}]"""
+    accent = accent_for(key)
+    meas = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    tf = font(80)
+    title_h = len(title_lines) * 90
+    title_y = SAFE_TOP + 110
+    y0 = title_y + title_h + 70
+    y_max = SAFE_BOTTOM - 130
+    max_w = SW - 200
+
+    for hs, bs in ((30, 23), (28, 22), (26, 20), (24, 19), (22, 17)):
+        hf, bf = font(hs), font(bs)
+        laid, total = [], 0
+        for e in entries:
+            hl = wrap_text(meas, e["headline"], hf, max_w)
+            bl = wrap_text(meas, e["body"], bf, max_w) if e.get("body") else []
+            h = 32 + len(hl) * int(hs * 1.22) + (8 + len(bl) * int(bs * 1.32) if bl else 0)
+            laid.append((e, hl, bl, h))
+            total += h + 30
+        if total - 30 <= y_max - y0:
+            break
+    content_h = total - 30
+
+    img = story_background(photo_for(key), scrim_from=0.55, scrim_len=0.30)
+    card = (50, y0 - 36, SW - 50, y0 + content_h + 36)
+    img = glass(img, [card], radius=26, alpha=186)
+    draw = ImageDraw.Draw(img)
+    draw_top(draw, accent, label, date_label)
+    for line in title_lines:
+        for dx, dy in ((3, 3), (2, 2)):
+            draw.text((80 + dx, title_y + dy), line, font=tf, fill=(0, 0, 0))
+        draw.text((80, title_y), line, font=tf, fill=CREAM)
+        title_y += 90
+    draw.rectangle([80, title_y + 6, 80 + 110, title_y + 12], fill=accent)
+
+    y = y0
+    for i, (e, hl, bl, h) in enumerate(laid):
+        draw.text((90, y), e["tag"], font=font(22), fill=accent)
+        yy = y + 32
+        for line in hl:
+            draw.text((90, yy), line, font=hf, fill=CREAM)
+            yy += int(hs * 1.22)
+        if bl:
+            yy += 8
+            for line in bl:
+                draw.text((90, yy), line, font=bf, fill=SOFT)
+                yy += int(bs * 1.32)
+        y += h + 30
+        if i < len(laid) - 1:
+            draw.line([(90, y - 15), (SW - 90, y - 15)], fill=(95, 95, 98), width=1)
+
+    footer_y = max(card[3] + 40, 1380)
+    draw.text((80, SAFE_BOTTOM - 62), footer_text, font=font(20), fill=SOFT)
+    draw_wordmark(img)
+    return img

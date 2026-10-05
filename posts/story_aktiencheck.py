@@ -25,7 +25,9 @@ import matplotlib.font_manager as fm
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 import brand as B
+import style_finanzhafen as S
 
 ROOT = Path(__file__).parent.parent
 NAME = "story_aktiencheck"
@@ -154,45 +156,51 @@ def draw_range_bar(draw, x, y, w, low, high, current, accent):
 
 
 def slide_stock(stock, idx, total):
-    accent = stock.get("accent", OCHRE)
-    img = gradient_background(tint_hex=accent, tint_strength=0.06)
-    add_glow(img, W * 0.5, -100, 620, (40, 40, 40), strength=22)
+    """v3 (2026-10-05): depotdiary-Foto-Schema (Skyline-Foto, Glas-Karten fuer
+    Chart und Kennzahlen, vivide Akzentfarbe) statt fast-schwarzer Flaeche mit
+    ochre/gruen. Schnittstelle (stock-Dict) unveraendert."""
+    key = f"aktiencheck-{DATE_LABEL}-{stock['ticker']}"
+    accent = S.accent_for(key)
+    img = S.story_background(S.photo_for(key), scrim_from=0.62, scrim_len=0.20)
+
+    # Layout vorab (Glas-Karten muessen VOR dem Text gezeichnet werden)
+    chart_w = 840
+    chart_h = int(chart_w * 4.7 / 9.6)
+    chart_card = (50, 530, S.SW - 50, 530 + chart_h + 40)
+    kpi_top = chart_card[3] + 20
+    row_h = 64
+    card_h = 4 * row_h + 100
+    kpi_card = (50, kpi_top, S.SW - 50, kpi_top + card_h)
+    img = S.glass(img, [chart_card, kpi_card], radius=24, alpha=182)
     draw = ImageDraw.Draw(img)
-    draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=accent)
+    S.draw_top(draw, accent, f"AKTIEN-CHECK   {idx}/{total}", DATE_LABEL[:6])
 
-    y = build_header(draw, 64, idx, total)
-    y += 60
-
-    name_font = font(B.SANS_BOLD, 48)
-    ticker_font = font(B.SANS_BOLD, 24)
-    draw.text((B.MARGIN_LEFT, y), stock["name"], font=name_font, fill=CREAM)
-    y += 60
-    draw.text((B.MARGIN_LEFT, y), stock["ticker"], font=ticker_font, fill=accent)
-
-    price_font = font(B.SANS_BOLD, 40)
+    # Name, Ticker, Kurs
+    draw.text((82, 386), stock["name"].upper(), font=S.font(60), fill=(0, 0, 0))
+    draw.text((80, 383), stock["name"].upper(), font=S.font(60), fill=S.CREAM)
+    draw.text((82, 464), stock["ticker"], font=S.font(28), fill=(0, 0, 0))
+    draw.text((80, 462), stock["ticker"], font=S.font(28), fill=accent)
     price_text = f"{fmt_de(stock['price'])} USD"
-    pw = draw.textlength(price_text, font=price_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, y - 36), price_text, font=price_font, fill=CREAM)
+    pf = S.font(44)
+    pw = draw.textlength(price_text, font=pf)
+    draw.text((S.SW - 80 - pw, 392), price_text, font=pf, fill=S.CREAM)
     change = stock["change_pct"]
-    change_font = font(B.SANS_BOLD, 22)
-    change_text = f"{change:+.2f}% (Stand {stock.get('as_of', DATE_LABEL)})"
-    cw = draw.textlength(change_text, font=change_font)
-    change_color = GREEN if change >= 0 else RED
-    draw.text((W - B.MARGIN_RIGHT - cw, y + 14), change_text, font=change_font, fill=change_color)
-    y += 70
+    ctext = f"{change:+.2f}%".replace(".", ",") + f"  (Stand {stock.get('as_of', DATE_LABEL)})"
+    cf = S.font(24)
+    cw = draw.textlength(ctext, font=cf)
+    draw.text((S.SW - 80 - cw + 2, 454), ctext, font=cf, fill=(0, 0, 0))
+    draw.text((S.SW - 80 - cw, 452), ctext, font=cf, fill="#4ADE80" if change >= 0 else "#FF6B6B")
 
     # Chart
     chart_path = OUTPUT / f"_chart_{stock['ticker']}.png"
     render_chart(stock["csv_path"], accent, chart_path)
     chart_img = Image.open(chart_path).convert("RGBA")
-    chart_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
-    chart_h = int(chart_img.height * chart_w / chart_img.width)
     chart_img = chart_img.resize((chart_w, chart_h))
-    img.paste(chart_img, (B.MARGIN_LEFT, y), chart_img)
-    y += chart_h + 24
+    img.paste(chart_img, (120, chart_card[1] + 20), chart_img)
+    draw = ImageDraw.Draw(img)
 
-    # Fundamentaldaten-Karte: 2x3-Kennzahlen-Grid + Range-Bar
-    pad = 28
+    # Kennzahlen-Grid + Range-Bar
+    pad = 40
     stats = [
         ("KGV (aktuell)", fmt_de(stock["pe"], 1) if stock.get("pe") else "---"),
         ("KGV (erwartet)", fmt_de(stock["forward_pe"], 1) if stock.get("forward_pe") else "---"),
@@ -200,51 +208,31 @@ def slide_stock(stock, idx, total):
         ("Dividendenrendite", f"{fmt_de(stock['div_yield'], 2)} %" if stock.get("div_yield") else "keine"),
         ("Marktkap.", stock["market_cap"]),
         ("Tagesvolumen", stock["volume"]),
-        ("Gewinnwachstum (YoY)", f"{stock['earnings_growth']:+.1f} %" if stock.get("earnings_growth") is not None else "---"),
+        ("Gewinnwachstum (YoY)", f"{stock['earnings_growth']:+.1f} %".replace(".", ",") if stock.get("earnings_growth") is not None else "---"),
         ("Beta (Volatilitaet)", fmt_de(stock["beta"], 2) if stock.get("beta") is not None else "---"),
     ]
-    row_h = 64
-    grid_h = 4 * row_h
-    card_h = grid_h + 100
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + card_h], radius=16, fill=CARD, outline=CARD_BORDER, width=1)
-
-    col_w = (W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad) / 2
-    label_font = font(B.SANS_BOLD, 17)
-    value_font = font(B.SANS_BOLD, 25)
+    col_w = (kpi_card[2] - kpi_card[0] - 2 * pad) / 2
     for i, (label, value) in enumerate(stats):
-        col = i % 2
-        row = i // 2
-        cx = B.MARGIN_LEFT + pad + col * col_w
-        cy = y + 24 + row * row_h
-        draw.text((cx, cy), label.upper(), font=label_font, fill=MUTED)
-        draw.text((cx, cy + 24), value, font=value_font, fill=CREAM)
+        col, row = i % 2, i // 2
+        cx = kpi_card[0] + pad + col * col_w
+        cy = kpi_top + 22 + row * row_h
+        draw.text((cx, cy), label.upper(), font=S.font(17), fill=S.SOFT)
+        draw.text((cx, cy + 24), value, font=S.font(26), fill=S.CREAM)
 
-    draw_range_bar(draw, B.MARGIN_LEFT + pad, y + grid_h + 44, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad,
+    draw_range_bar(draw, kpi_card[0] + pad, kpi_top + 4 * row_h + 42, kpi_card[2] - kpi_card[0] - 2 * pad,
                     stock["week52_low"], stock["week52_high"], stock["price"], accent)
 
-    note_font = font(B.SANS_BOLD, 19)
-    words = stock["note"].split()
-    lines, cur = [], ""
-    max_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad
-    for word in words:
-        test = (cur + " " + word).strip()
-        if draw.textlength(test, font=note_font) <= max_w:
-            cur = test
-        else:
-            lines.append(cur)
-            cur = word
-    if cur:
-        lines.append(cur)
-    ny = y + card_h + 30
-    for line in lines[:3]:
-        draw.text((B.MARGIN_LEFT, ny), line, font=note_font, fill=MUTED)
-        ny += 26
+    # Notiz
+    note_f = S.font(22)
+    ny = kpi_card[3] + 26
+    for line in S.wrap_text(draw, stock["note"], note_f, S.SW - 160)[:3]:
+        draw.text((82, ny + 2), line, font=note_f, fill=(0, 0, 0))
+        draw.text((80, ny), line, font=note_f, fill=S.CREAM)
+        ny += 30
 
-    text = "Keine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe."
-    disclaimer_font = font(B.SANS_BOLD, 18)
-    draw.line([(B.MARGIN_LEFT, H - 90), (W - B.MARGIN_RIGHT, H - 90)], fill=CARD_BORDER, width=1)
-    draw.text((B.MARGIN_LEFT, H - 68), text, font=disclaimer_font, fill=MUTED)
-
+    draw.text((80, S.SAFE_BOTTOM - 62), "Keine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.",
+              font=S.font(20), fill=S.SOFT)
+    S.draw_wordmark(img)
     chart_path.unlink(missing_ok=True)
     return img
 

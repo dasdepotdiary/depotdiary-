@@ -21,7 +21,9 @@ import requests
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 import brand as B
+import style_finanzhafen as S
 
 ROOT = Path(__file__).parent.parent
 NAME = "tagesupdate"
@@ -243,45 +245,68 @@ def draw_candlestick_field(img):
     img.paste(layer, (0, 0), layer)
 
 
+CAT_COLORS = {"INDIZES": "#FFDD3D", "ROHSTOFFE": "#4CC9F0", "SENTIMENT": "#FF3EA5",
+              "KRYPTO": "#B6FF3D", "QUARTALSZAHLEN HEUTE": "#FF8A3D"}
+UP, DOWN = "#4ADE80", "#FF6B6B"
+
+
 def slide_update(earnings_today=None):
-    global H
-    # Canvas waechst mit, wenn die Quartalszahlen-Kategorie dazukommt --
-    # sonst wird der Footer/die letzten Zeilen vom festen FEED_SIZE
-    # abgeschnitten (live beobachtet 2026-09-09 beim ersten Testlauf).
-    extra_rows = len(earnings_today) if earnings_today else 0
-    extra_h = (24 + extra_rows * (66 + 6) + 10) if extra_rows else 0
-    H = B.FEED_SIZE[1] + extra_h
-
-    img = gradient_background((22, 18, 14), (12, 10, 8), h=H)
-    draw_candlestick_field(img)
-    add_radial_glow(img, W // 2, -80, 560, (120, 95, 40), strength=45)
-    draw = ImageDraw.Draw(img)
-    draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=CAT_GOLD)
-
-    y = build_header(draw)
-
+    """v4 (2026-10-05): native 9:16 im depotdiary-Foto-Schema (Skyline-Foto,
+    Glas-Karten je Kategorie, vivide Kategorie-Farben) statt dunkler Karten-
+    Liste im 4:5-Format mit Letterbox. Schnittstelle (earnings_today) unveraendert."""
+    key = "tagesupdate-" + DATE_LABEL
+    accent = S.accent_for(key)
     groups = list(GROUPS)
     if earnings_today:
-        # Ab 2026-09-14 auf Nutzerwunsch taeglich dazu: welche bekannten
-        # Unternehmen heute Quartalszahlen bringen -- eigene Kategorie statt
-        # Kursdaten, deshalb "heute" als Wert statt Preis/Prozent-Aenderung.
-        groups.append({
-            "label": "QUARTALSZAHLEN HEUTE", "color": CAT_TEAL,
-            "rows": [(name, "heute", None) for name in earnings_today],
-        })
+        groups.append({"label": "QUARTALSZAHLEN HEUTE", "color": CAT_COLORS["QUARTALSZAHLEN HEUTE"],
+                       "rows": [(name, "heute", None) for name in earnings_today]})
 
-    group_label_font = font(B.SANS_BOLD, 16)
-    row_gap = 6
-    group_gap = 16
-    for group in groups:
-        draw.text((B.MARGIN_LEFT, y), group["label"], font=group_label_font, fill=group["color"])
-        y += 24
-        for name, value, change in group["rows"]:
-            row_h = draw_row(draw, B.MARGIN_LEFT, y, W - B.MARGIN_LEFT - B.MARGIN_RIGHT, name, value, change, group["color"])
-            y += row_h + row_gap
-        y += group_gap - row_gap
+    n_groups = len(groups)
+    n_rows = sum(len(g["rows"]) for g in groups)
+    y_start, y_end = 430, S.SAFE_BOTTOM - 90
+    row_h = max(38, min(60, (y_end - y_start - n_groups * 68) // max(1, n_rows)))
 
-    draw_footer(draw)
+    layout, y, boxes = [], y_start, []
+    for g in groups:
+        label_y = y
+        y += 36
+        card_top = y
+        card_bottom = y + len(g["rows"]) * row_h + 16
+        boxes.append((50, card_top, S.SW - 50, card_bottom))
+        layout.append((g, label_y, card_top))
+        y = card_bottom + 16
+
+    img = S.story_background(S.photo_for(key), scrim_from=0.70, scrim_len=0.22)
+    img = S.glass(img, boxes, radius=20, alpha=178)
+    draw = ImageDraw.Draw(img)
+    S.draw_top(draw, accent, "TAGESUPDATE", DATE_LABEL[:6])
+    draw.text((80, S.SAFE_TOP + 92), "US-Vorboerse / Schlusskurse", font=S.font(22), fill=S.SOFT)
+
+    name_f, val_f, chg_f = S.font(24), S.font(26), S.font(22)
+    for g, label_y, card_top in layout:
+        color = CAT_COLORS.get(g["label"], g["color"])
+        draw.text((82, label_y + 4), g["label"], font=S.font(21), fill=(0, 0, 0))
+        draw.text((80, label_y + 2), g["label"], font=S.font(21), fill=color)
+        ry = card_top + 8
+        for i, (name, value, change) in enumerate(g["rows"]):
+            draw.rectangle([50, ry + 6, 56, ry + row_h - 6], fill=color)
+            draw.text((84, ry + (row_h - 28) // 2), name, font=name_f, fill=S.CREAM)
+            if change is None:
+                vw = draw.textlength(value, font=val_f)
+                draw.text((S.SW - 84 - vw, ry + (row_h - 30) // 2), value, font=val_f, fill=color)
+            else:
+                ctext = f"{change:+.2f}%".replace(".", ",")
+                cw = draw.textlength(ctext, font=chg_f)
+                draw.text((S.SW - 84 - cw, ry + (row_h - 26) // 2), ctext, font=chg_f, fill=UP if change >= 0 else DOWN)
+                vw = draw.textlength(value, font=val_f)
+                draw.text((S.SW - 84 - 150 - vw + 40, ry + (row_h - 30) // 2), value, font=val_f, fill=S.CREAM)
+            if i < len(g["rows"]) - 1:
+                draw.line([(84, ry + row_h), (S.SW - 84, ry + row_h)], fill=(90, 90, 94), width=1)
+            ry += row_h
+
+    draw.text((80, S.SAFE_BOTTOM - 62), "Keine Anlageberatung -- nur Kurse, die ich mir angeschaut habe.",
+              font=S.font(20), fill=S.SOFT)
+    S.draw_wordmark(img)
     return img
 
 
@@ -295,13 +320,7 @@ def main():
 
     img = slide_update(earnings_today)
     img.save(IG_DIR / "slide_1.png")
-
-    canvas = Image.new("RGB", B.STORY_SIZE, BG)
-    x = (B.STORY_SIZE[0] - img.width) // 2
-    y = (B.STORY_SIZE[1] - img.height) // 2
-    canvas.paste(img, (x, y))
-    canvas.save(TT_DIR / "slide_1.png")
-
+    img.save(TT_DIR / "slide_1.png")
     img.save(OUTPUT / "uebersicht.png")
     print(f"Fertig: {OUTPUT / 'uebersicht.png'}")
 
