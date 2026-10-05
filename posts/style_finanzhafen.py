@@ -250,7 +250,8 @@ def draw_cta_story(key, label, title_lines, body, cta, note):
     bf = font(36)
     blines = wrap_text(draw, body, bf, max_w)
     cf = font(44)
-    total = len(title_lines) * int(tf.size * 1.1) + 36 + len(blines) * 50 + 50 + 56
+    clines = wrap_text(draw, cta, cf, max_w)
+    total = len(title_lines) * int(tf.size * 1.1) + 36 + len(blines) * 50 + 50 + len(clines) * 56
     y = 1420 - total
     for line in title_lines:
         draw.text((80, y), line, font=tf, fill=CREAM)
@@ -261,7 +262,9 @@ def draw_cta_story(key, label, title_lines, body, cta, note):
         y += 50
     y += 50
     draw.rectangle([80, y - 24, 80 + 90, y - 18], fill=accent)
-    draw.text((80, y), cta, font=cf, fill=accent)
+    for line in clines:
+        draw.text((80, y), line, font=cf, fill=accent)
+        y += 56
     draw.text((80, SAFE_BOTTOM - 62), note, font=font(20), fill=MUTED)
     draw_wordmark(img)
     return img
