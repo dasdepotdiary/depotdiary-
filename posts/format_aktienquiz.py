@@ -22,7 +22,9 @@ from pathlib import Path
 from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
+sys.path.insert(0, str(Path(__file__).parent))
 import brand as B
+import style_finanzhafen as S
 import voiceover
 
 ROOT = Path(__file__).parent.parent
@@ -122,12 +124,13 @@ def add_radial_glow(img, cx, cy, radius, color, strength=70):
 
 
 def base_slide():
-    img = gradient_background(BG_TOP, BG_BOTTOM)
-    add_radial_glow(img, W // 2, H * 0.2, 480, (60, 40, 120), strength=60)
+    # v3 (2026-10-05): Foto-Schema statt Indigo-Flaeche (posts/style_finanzhafen.py)
+    from datetime import date
+    img = S.story_background(S.photo_for("quiz-" + date.today().isoformat()), scrim_from=0.10, scrim_len=0.26)
     return img, ImageDraw.Draw(img)
 
 
-def build_header(draw, y=60):
+def build_header(draw, y=S.SAFE_TOP - 10):
     handle_font = font(B.SANS_BOLD, 24)
     tw = draw.textlength(OWN_HANDLE, font=handle_font)
     draw.text((W / 2 - tw / 2, y), OWN_HANDLE, font=handle_font, fill=MUTED)
@@ -138,14 +141,14 @@ def footer_disclaimer(draw):
     note_font = font(B.SANS_BOLD, 20)
     note = "Wissensquiz -- keine Anlageberatung, keine Prognose."
     tw = draw.textlength(note, font=note_font)
-    draw.text((W / 2 - tw / 2, H - 60), note, font=note_font, fill=MUTED)
+    draw.text((W / 2 - tw / 2, S.SAFE_BOTTOM - 30), note, font=note_font, fill=S.SOFT)
 
 
 def slide_intro():
     img, draw = base_slide()
     build_header(draw)
 
-    y = H * 0.30
+    y = H * 0.40
     label_font = font(B.SANS_BOLD, 28)
     label = "AKTIENQUIZ"
     tw = draw.textlength(label, font=label_font)
@@ -177,7 +180,7 @@ OPTION_LETTERS = ["A", "B", "C"]
 def slide_question(idx, item):
     img, draw = base_slide()
     y = build_header(draw)
-    y += 60
+    y += 220
 
     badge_font = font(B.SANS_BOLD, 26)
     badge = f"FRAGE {idx + 1} / {len(QUESTIONS)}"
@@ -229,7 +232,7 @@ def draw_cross(draw, cx, cy, size, color):
 def slide_answer(idx, item):
     img, draw = base_slide()
     y = build_header(draw)
-    y += 40
+    y += 200
 
     badge_font = font(B.SANS_BOLD, 26)
     badge = "AUFLOESUNG"
@@ -289,7 +292,7 @@ def slide_outro():
     Kommentieren wie eine Abstimmung."""
     img, draw = base_slide()
     y = build_header(draw)
-    y += 50
+    y += 330
 
     title_font = font(B.SANS_BOLD, 44)
     for line in ["WIE VIELE HATTEST", "DU RICHTIG?"]:

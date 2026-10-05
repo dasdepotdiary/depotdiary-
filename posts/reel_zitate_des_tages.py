@@ -42,17 +42,19 @@ QUOTES = [
 
 
 def _center_slide(lines, label):
+    import style_finanzhafen as S
     from PIL import ImageDraw
-    img = z.gradient_background()
-    z.add_glow(img, z.W * 0.5, z.H * 0.3, 560, (70, 100, 60), strength=35)
+    key = "reel-" + label + lines[0]
+    accent = S.accent_for(key)
+    img = S.story_background(S.photo_for(key))
     draw = ImageDraw.Draw(img)
-    z.center_text(draw, "@DASDEPOTDIARY", z.font(z.B.SANS_BOLD, 22), 80, z.SUBTEXT)
-    z.center_text(draw, label, z.font(z.B.SANS_BOLD, 24), 160, z.GOLD)
-    title_font = z.font(z.B.SANS_BOLD, 56)
-    y = z.H * 0.42
+    S.draw_top(draw, accent, label)
+    f = S.font(96)
+    y = 1440 - len(lines) * 108
     for line in lines:
-        z.center_text(draw, line, title_font, y, z.INK)
-        y += 68
+        draw.text((80, y), line, font=f, fill=S.CREAM)
+        y += 108
+    S.draw_wordmark(img)
     return img
 
 
@@ -74,7 +76,7 @@ def main():
     cols = 4
     rows = (n + cols - 1) // cols
     gap = 16
-    tw, th = z.W // 3, z.H // 3
+    tw, th = 1080 // 3, 1920 // 3
     from PIL import Image
     sheet = Image.new("RGB", (tw * cols + gap * (cols + 1), th * rows + gap * (rows + 1)), (10, 18, 14))
     for i in range(1, n + 1):
