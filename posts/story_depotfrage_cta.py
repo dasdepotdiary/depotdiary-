@@ -72,51 +72,12 @@ def add_radial_glow(img, cx, cy, radius, color, strength=55):
 
 
 def main():
-    img = gradient_background(BG_TOP, BG_BOTTOM)
-    add_radial_glow(img, W // 2, H * 0.2, 480, (90, 74, 20), strength=55)
-    draw = ImageDraw.Draw(img)
-
-    handle_font = font(B.SANS_BOLD, 24)
-    tw = draw.textlength(OWN_HANDLE, font=handle_font)
-    draw.text((W / 2 - tw / 2, 60), OWN_HANDLE, font=handle_font, fill=MUTED)
-
-    y = H * 0.26
-    label_font = font(B.SANS_BOLD, 28)
-    label = "DEPOT-FRAGE"
-    tw = draw.textlength(label, font=label_font)
-    draw.text((W / 2 - tw / 2, y), label, font=label_font, fill=GOLD)
-    y += 62
-
-    title_font = font(B.SANS_BOLD, 50)
-    for line in ["WIE VIELE AKTIEN", "HABT IHR GERADE", "IM DEPOT?"]:
-        tw = draw.textlength(line, font=title_font)
-        draw.text((W / 2 - tw / 2, y), line, font=title_font, fill=CREAM)
-        y += 58
-
-    y += 40
-    body_font = font(B.SANS_BOLD, 30)
-    body = "Schickt mir euer Depot -- nur die Struktur zaehlt: wie viele Positionen, wie viel Prozent in Aktien, ETFs, Krypto, Cash. Keine Aktiennamen oder echten Betraege noetig."
-    lines = wrap_text(draw, body, body_font, W - 160)
-    for line in lines:
-        tw = draw.textlength(line, font=body_font)
-        draw.text((W / 2 - tw / 2, y), line, font=body_font, fill=MUTED)
-        y += 40
-
-    y += 40
-    cta_font = font(B.SANS_BOLD, 34)
-    cta = "Schick's mir per DM."
-    tw = draw.textlength(cta, font=cta_font)
-    draw.text((W / 2 - tw / 2, y), cta, font=cta_font, fill=GOLD)
-
-    note_font = font(B.SANS_BOLD, 20)
-    note = "Wird anonymisiert -- bewertet wird nur die Struktur, keine Anlageberatung."
-    note_lines = wrap_text(draw, note, note_font, W - 140)
-    ny = H - 30 - len(note_lines) * 26
-    for line in note_lines:
-        tw = draw.textlength(line, font=note_font)
-        draw.text((W / 2 - tw / 2, ny), line, font=note_font, fill=MUTED)
-        ny += 26
-
+    """v2 (2026-10-05): depotdiary-Foto-Schema (posts/style_finanzhafen.py) statt dunkler Flaeche."""
+    sys.path.insert(0, str(Path(__file__).parent))
+    import style_finanzhafen as S
+    img = S.draw_cta_story("depotfrage", "DEPOT-FRAGE", ['WIE VIELE AKTIEN', 'HABT IHR GERADE', 'IM DEPOT?'],
+        "Schickt mir euer Depot -- nur die Struktur zaehlt: wie viele Positionen, wie viel Prozent in Aktien, ETFs, Krypto, Cash. Keine Aktiennamen oder echten Betraege noetig.",
+        "Schick's mir per DM.", "Wird anonymisiert -- bewertet wird nur die Struktur, keine Anlageberatung.")
     img.save(TT_DIR / "slide_1.png")
     img.save(OUTPUT / "uebersicht.png")
     print(f"Fertig: {OUTPUT / 'uebersicht.png'}")

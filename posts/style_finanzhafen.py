@@ -232,3 +232,36 @@ def draw_list_story(key, label, title_lines, entries, footer_text, date_label=No
     draw.text((80, SAFE_BOTTOM - 62), footer_text, font=font(20), fill=SOFT)
     draw_wordmark(img)
     return img
+
+
+def draw_cta_story(key, label, title_lines, body, cta, note):
+    """Call-to-Action-Story im Foto-Schema: Caps-Titel, kurzer Text, Akzent-CTA."""
+    accent = accent_for(key)
+    img = story_background(photo_for(key), scrim_from=0.22, scrim_len=0.30)
+    draw = ImageDraw.Draw(img)
+    draw_top(draw, accent, label)
+    max_w = SW - 160
+    meas = draw
+    tf, tlines = fit_lines(draw, " ".join(title_lines), max_w, len(title_lines) + 1, 104, 60)
+    # Zeilenumbrueche wie angegeben beibehalten, solange sie in die Breite passen
+    tf = font(96)
+    while any(draw.textlength(l, font=tf) > max_w for l in title_lines) and tf.size > 56:
+        tf = font(tf.size - 4)
+    bf = font(36)
+    blines = wrap_text(draw, body, bf, max_w)
+    cf = font(44)
+    total = len(title_lines) * int(tf.size * 1.1) + 36 + len(blines) * 50 + 50 + 56
+    y = 1420 - total
+    for line in title_lines:
+        draw.text((80, y), line, font=tf, fill=CREAM)
+        y += int(tf.size * 1.1)
+    y += 36
+    for line in blines:
+        draw.text((80, y), line, font=bf, fill=SOFT)
+        y += 50
+    y += 50
+    draw.rectangle([80, y - 24, 80 + 90, y - 18], fill=accent)
+    draw.text((80, y), cta, font=cf, fill=accent)
+    draw.text((80, SAFE_BOTTOM - 62), note, font=font(20), fill=MUTED)
+    draw_wordmark(img)
+    return img
