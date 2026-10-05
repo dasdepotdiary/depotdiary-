@@ -3083,5 +3083,19 @@
     "claimed_at": "2026-10-04T20:58:52.983300+00:00",
     "published_at": "2026-10-04T20:59:10.114781+00:00",
     "media_id": "18102209615571215"
+  },
+  {
+    "post_name": "format_finanzwerte",
+    "action": "carousel",
+    "slide_count": 3,
+    "status": "pending",
+    "fire_at": "2026-10-05T13:00:00+02:00",
+    "caption": "Finanz-Giganten im Check -- 5 grosse Namen aus Banken, Zahlungen und Versicherung auf einen Blick.\n\nJPMorgan Chase, Bank of America, Visa, PayPal, Berkshire Hathaway.\n\nWelche hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- reine Uebersicht, keine Bewertung."
+  },
+  {
+    "post_name": "story_post_ankuendigung_finanzwerte",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-05T13:05:00+02:00"
   }
 ]
