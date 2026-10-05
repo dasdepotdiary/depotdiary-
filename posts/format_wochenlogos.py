@@ -113,13 +113,13 @@ def wrap_text(draw, text, f, max_w):
 
 def draw_wordmark_anchor(img, draw):
     """Fixer Wiedererkennungs-Anker unten rechts auf jedem Slide -- die
-    depotdiary-Wortmarke statt eines Avatar-Icons."""
+    depotdiary-Wortmarke statt eines Avatar-Icons. Seit 2026-10-05 in hellem
+    Off-White (die Original-Datei ist dunkle Tinte und war auf dem dunklen Grund
+    praktisch unsichtbar)."""
     try:
-        logo = Image.open(WORDMARK).convert("RGBA")
-        target_h = 46
-        ratio = target_h / logo.height
-        logo = logo.resize((max(1, int(logo.width * ratio)), target_h))
-        img.paste(logo, (W - logo.width - 40, H - logo.height - 40), logo)
+        import style_finanzhafen as S
+        logo = S.light_wordmark(60)
+        img.paste(logo, (W - logo.width - 44, H - logo.height - 44), logo)
     except FileNotFoundError:
         pass
 
