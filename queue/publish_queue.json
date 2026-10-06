@@ -2878,10 +2878,12 @@
   {
     "post_name": "fachbegriff_2026-10-06",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-06T17:00:00+02:00",
     "claimed_by": "Surface4RA-16960-0e37fb32",
-    "claimed_at": "2026-10-06T17:41:52.974645+00:00"
+    "claimed_at": "2026-10-06T17:41:52.974645+00:00",
+    "published_at": "2026-10-06T17:42:23.790894+00:00",
+    "media_id": "17993970852041651"
   },
   {
     "post_name": "fachbegriff_2026-10-07",
