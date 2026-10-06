@@ -3165,10 +3165,12 @@
   {
     "post_name": "tagesereignisse_2026-10-06",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-06T20:30:00+02:00",
     "claimed_by": "Surface4RA-34616-9770fd40",
-    "claimed_at": "2026-10-06T18:31:24.872042+00:00"
+    "claimed_at": "2026-10-06T18:31:24.872042+00:00",
+    "published_at": "2026-10-06T18:31:40.503575+00:00",
+    "media_id": "18640332412012498"
   },
   {
     "post_name": "format_alltagsmarken",
