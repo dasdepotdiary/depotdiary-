@@ -3187,7 +3187,9 @@
   {
     "post_name": "story_post_ankuendigung_alltagsmarken",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-06T00:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-06T00:05:00+02:00",
+    "claimed_by": "Surface4RA-34616-9770fd40",
+    "claimed_at": "2026-10-06T18:32:32.809702+00:00"
   }
 ]
