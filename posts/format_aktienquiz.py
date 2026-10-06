@@ -50,36 +50,18 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {
-        "q": "Was zeigt die Dividendenrendite?",
-        "options": [
-            "Wie stark eine Aktie in einem Jahr gestiegen ist",
-            "Die jaehrliche Dividende im Verhaeltnis zum Aktienkurs",
-            "Wie viele Aktionaere ein Unternehmen hat",
-        ],
-        "correct": 1,
-        "explain": "Dividendenrendite = Dividende pro Aktie geteilt durch den Aktienkurs -- eine von mehreren Kennzahlen, kein Garant fuer kuenftige Zahlungen.",
-    },
-    {
-        "q": "Was ist ein 'Blue Chip'?",
-        "options": [
-            "Ein besonders volatiler Kleinstwert",
-            "Ein grosses, etabliertes und finanziell stabiles Unternehmen",
-            "Ein Kryptowaehrungs-Token",
-        ],
-        "correct": 1,
-        "explain": "Der Begriff stammt aus dem Pokerspiel (blaue Chips = hoechster Wert) und steht fuer grosse, bekannte Standardwerte wie z.B. Indexschwergewichte.",
-    },
-    {
-        "q": "Wann spricht man von einem 'Baerenmarkt'?",
-        "options": [
-            "Wenn eine einzelne Aktie an einem Tag faellt",
-            "Bei einem anhaltenden Kursrueckgang von rund 20% oder mehr vom Hoch",
-            "Wenn die Zinsen steigen",
-        ],
-        "correct": 1,
-        "explain": "Ein Rueckgang um etwa 20% vom letzten Hoch ueber einen laengeren Zeitraum gilt als gaengige Definition eines Baerenmarkts.",
-    },
+    {"q": "Was ist ein Dividendenaristokrat?",
+     "options": ["Eine Aktie, die ihre Dividende seit mindestens 25 Jahren jedes Jahr erhoeht hat", "Ein Aktionaer mit mehr als 10% der Anteile", "Eine Aktie, die nur im Adel gehandelt wird"],
+     "correct": 0,
+     "explain": "Der Begriff beschreibt Unternehmen mit sehr langer Serie steigender Dividenden -- eine Vergangenheitsbetrachtung, keine Garantie."},
+    {"q": "Wofuer ist eine Stop-Loss-Order gedacht?",
+     "options": ["Um Gewinne zu verdoppeln", "Um bei einem festgelegten Kurs automatisch zu verkaufen", "Um Dividenden zu sichern"],
+     "correct": 1,
+     "explain": "Faellt der Kurs auf die gesetzte Schwelle, wird die Order ausgeloest -- so begrenzt man potenzielle Verluste, ohne staendig zuzuschauen."},
+    {"q": "Was beschreibt Inflation?",
+     "options": ["Den Anstieg des allgemeinen Preisniveaus", "Den Anstieg der Aktienkurse", "Die Hoehe des Leitzinses"],
+     "correct": 0,
+     "explain": "Bei Inflation sinkt die Kaufkraft von Geld -- fuer 100 Euro bekommt man mit der Zeit weniger Waren und Dienstleistungen."},
 ]
 
 
