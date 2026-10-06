@@ -3155,10 +3155,12 @@
   {
     "post_name": "tagesupdate_2026-10-06",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-06T10:30:00+02:00",
     "claimed_by": "Surface4RA-34616-9770fd40",
-    "claimed_at": "2026-10-06T18:31:03.965764+00:00"
+    "claimed_at": "2026-10-06T18:31:03.965764+00:00",
+    "published_at": "2026-10-06T18:31:21.968252+00:00",
+    "media_id": "18355551001223793"
   },
   {
     "post_name": "tagesereignisse_2026-10-06",
