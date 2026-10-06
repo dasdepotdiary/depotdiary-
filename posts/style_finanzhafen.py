@@ -46,7 +46,7 @@ PHOTOS = [
     ROOT / "assets" / "nyse_flag_still.jpg",
     ROOT / "assets" / "frankfurt_dusk_still.jpg",
     ROOT / "assets" / "skyscraper_up_still.jpg",
-]
+] + sorted((ROOT / "assets" / "new_sk").glob("sk2_*.jpg"))
 
 ACCENTS = ["#4CC9F0", "#FF3EA5", "#B6FF3D", "#FFDD3D", "#7B5CFF"]
 

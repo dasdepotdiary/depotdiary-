@@ -74,12 +74,12 @@ HOOK_PHOTO = ROOT / "assets" / "downtown_street_still.png"
 # Titelfolie -- Nutzerwunsch: "probier andere Bilder, aber sehr sehr stark"
 # + "rotier die immer durch". Deterministisch nach Post-Name gewaehlt (nicht
 # zufaellig), damit derselbe Post beim Neu-Rendern immer gleich aussieht.
-HOOK_PHOTOS = [
-    ROOT / "assets" / "wallstreet_bull_still.jpg",
-    ROOT / "assets" / "nyse_flag_still.jpg",
-    ROOT / "assets" / "downtown_street_still.png",
-    ROOT / "assets" / "skyline_day_still.png",
-]
+def _load_hook_photos():
+    import style_finanzhafen as _S  # Skyline-Pool (inkl. neue Motive) statt nur 4 Fotos
+    return list(_S.PHOTOS)
+
+
+HOOK_PHOTOS = _load_hook_photos()
 
 
 def photo_for(name):
