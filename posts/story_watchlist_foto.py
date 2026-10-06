@@ -19,7 +19,9 @@ from PIL import Image, ImageDraw, ImageFont
 
 sys.path.insert(0, str(Path(__file__).parent.parent))
 sys.path.insert(0, str(Path(__file__).parent))
+sys.path.insert(0, str(Path(__file__).parent))
 import brand as B
+import style_finanzhafen as S
 from story_aktiencheck import (
     font, fmt_de, gradient_background, add_glow, render_chart,
     draw_range_bar, build_header, CARD, CARD_BORDER, CREAM, MUTED, GREEN, RED,
@@ -65,43 +67,19 @@ def wrap_text(draw, text, fnt, max_w):
 
 
 def slide_watchlist(entry, weekday_label):
-    img = gradient_background()
-    add_glow(img, W * 0.5, -100, 620, (40, 40, 40), strength=22)
-    draw = ImageDraw.Draw(img)
-    accent = entry.get("accent", OCHRE)
-    draw.rectangle([0, 0, B.BAR_WIDTH, H], fill=accent)
-
-    y = draw_watchlist_header(draw, 64, weekday_label, entry["date_label"])
-    y += 44
-
-    name_font = font(B.SANS_BOLD, 48)
-    ticker_font = font(B.SANS_BOLD, 24)
-    draw.text((B.MARGIN_LEFT, y), entry["name"], font=name_font, fill=CREAM)
-    y += 60
-    draw.text((B.MARGIN_LEFT, y), entry["ticker"], font=ticker_font, fill=accent)
-
-    price_font = font(B.SANS_BOLD, 40)
-    price_text = f"{fmt_de(entry['price'])} {entry.get('currency', 'USD')}"
-    pw = draw.textlength(price_text, font=price_font)
-    draw.text((W - B.MARGIN_RIGHT - pw, y - 36), price_text, font=price_font, fill=CREAM)
-    change = entry["change_pct"]
-    change_font = font(B.SANS_BOLD, 22)
-    change_text = f"{change:+.2f}% (Stand {entry['as_of']})"
-    cw = draw.textlength(change_text, font=change_font)
-    change_color = GREEN if change >= 0 else RED
-    draw.text((W - B.MARGIN_RIGHT - cw, y + 14), change_text, font=change_font, fill=change_color)
-    y += 70
+    """v3 (2026-10-06): depotdiary-Foto-Schema (Skyline-Foto, Glas-Karten fuer Chart,
+    Kennzahlen und Begruendung, vivide Akzentfarbe). Schnittstelle unveraendert."""
+    key = f"watchlist-{entry['date_label']}-{entry['ticker']}"
+    accent = S.accent_for(key)
+    img = S.story_background(S.photo_for(key), scrim_from=0.62, scrim_len=0.20)
 
     chart_path = OUTPUT / f"_chart_{entry['ticker']}.png"
     render_chart(entry["csv_path"], accent, chart_path)
     chart_img = Image.open(chart_path).convert("RGBA")
-    chart_w = W - B.MARGIN_LEFT - B.MARGIN_RIGHT
+    chart_w = 840
     chart_h = int(chart_img.height * chart_w / chart_img.width)
-    chart_img = chart_img.resize((chart_w, chart_h))
-    img.paste(chart_img, (B.MARGIN_LEFT, y), chart_img)
-    y += chart_h + 24
+    chart_card = (50, 530, S.SW - 50, 530 + chart_h + 40)
 
-    pad = 28
     if entry["kind"] == "stock":
         stats = [
             ("KGV (aktuell)", fmt_de(entry["pe"], 1)),
@@ -114,50 +92,62 @@ def slide_watchlist(entry, weekday_label):
     else:
         stats = [
             ("Marktkap. (ca.)", entry["market_cap"]),
-            ("7-Tage-Veraenderung", f"{entry['change_7d']:+.2f} %"),
+            ("7-Tage-Veraenderung", f"{entry['change_7d']:+.2f} %".replace(".", ",")),
             ("Tief (dargestellt)", f"{fmt_de(entry['range_low'])} USD"),
             ("Hoch (dargestellt)", f"{fmt_de(entry['range_high'])} USD"),
         ]
-
     rows = (len(stats) + 1) // 2
     row_h = 64
-    grid_h = rows * row_h
-    card_h = grid_h + 40
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + card_h], radius=16, fill=CARD, outline=CARD_BORDER, width=1)
-    col_w = (W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad) / 2
-    label_font = font(B.SANS_BOLD, 17)
-    value_font = font(B.SANS_BOLD, 25)
+    kpi_top = chart_card[3] + 20
+    kpi_card = (50, kpi_top, S.SW - 50, kpi_top + rows * row_h + 40)
+
+    tmp = ImageDraw.Draw(Image.new("RGB", (10, 10)))
+    qf = S.font(24)
+    qlines = S.wrap_text(tmp, entry["quote"], qf, S.SW - 200)[:5]
+    q_top = kpi_card[3] + 20
+    quote_card = (50, q_top, S.SW - 50, q_top + 52 + len(qlines) * 32 + 16)
+
+    img = S.glass(img, [chart_card, kpi_card, quote_card], radius=24, alpha=182)
+    draw = ImageDraw.Draw(img)
+    S.draw_top(draw, accent, f"MEINE WATCHLIST   {weekday_label.upper()}", entry["date_label"][:6])
+
+    draw.text((82, 386), entry["name"].upper(), font=S.font(60), fill=(0, 0, 0))
+    draw.text((80, 383), entry["name"].upper(), font=S.font(60), fill=S.CREAM)
+    draw.text((82, 464), entry["ticker"], font=S.font(28), fill=(0, 0, 0))
+    draw.text((80, 462), entry["ticker"], font=S.font(28), fill=accent)
+    price_text = f"{fmt_de(entry['price'])} {entry.get('currency', 'USD')}"
+    pf = S.font(44)
+    pw = draw.textlength(price_text, font=pf)
+    draw.text((S.SW - 80 - pw, 392), price_text, font=pf, fill=S.CREAM)
+    change = entry["change_pct"]
+    ctext = f"{change:+.2f}%".replace(".", ",") + f"  (Stand {entry['as_of']})"
+    cf = S.font(24)
+    cw = draw.textlength(ctext, font=cf)
+    col = "#4ADE80" if change >= 0 else "#FF6B6B"
+    draw.text((S.SW - 80 - cw + 2, 454), ctext, font=cf, fill=(0, 0, 0))
+    draw.text((S.SW - 80 - cw, 452), ctext, font=cf, fill=col)
+
+    img.paste(chart_img.resize((chart_w, chart_h)), (120, chart_card[1] + 20), chart_img.resize((chart_w, chart_h)))
+    draw = ImageDraw.Draw(img)
+
+    pad = 40
+    col_w = (kpi_card[2] - kpi_card[0] - 2 * pad) / 2
     for i, (label, value) in enumerate(stats):
-        col = i % 2
-        row = i // 2
-        cx = B.MARGIN_LEFT + pad + col * col_w
-        cy = y + 24 + row * row_h
-        draw.text((cx, cy), label.upper(), font=label_font, fill=MUTED)
-        draw.text((cx, cy + 24), value, font=value_font, fill=CREAM)
-    y += card_h + 30
+        c, r = i % 2, i // 2
+        cx = kpi_card[0] + pad + c * col_w
+        cy = kpi_top + 22 + r * row_h
+        draw.text((cx, cy), label.upper(), font=S.font(17), fill=S.SOFT)
+        draw.text((cx, cy + 24), value, font=S.font(26), fill=S.CREAM)
 
-    # Begruendungs-Zitat-Karte
-    quote_font = font(B.SANS_BOLD_ITALIC if hasattr(B, "SANS_BOLD_ITALIC") else B.SANS_BOLD, 22)
-    quote_lines = wrap_text(draw, f"„{entry['quote']}“", quote_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT - 2 * pad)
-    quote_h = 40 + len(quote_lines) * 30 + 20
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, W - B.MARGIN_RIGHT, y + quote_h], radius=16, fill="#181818", outline=accent, width=1)
-    draw.rounded_rectangle([B.MARGIN_LEFT, y, B.MARGIN_LEFT + 6, y + quote_h], radius=3, fill=accent)
-    label_font2 = font(B.SANS_BOLD, 16)
-    draw.text((B.MARGIN_LEFT + pad, y + 16), "MEINE BEGRUENDUNG", font=label_font2, fill=accent)
-    qy = y + 42
-    for line in quote_lines:
-        draw.text((B.MARGIN_LEFT + pad, qy), line, font=quote_font, fill=CREAM)
-        qy += 30
+    draw.text((quote_card[0] + pad, q_top + 16), "MEINE BEGRUENDUNG", font=S.font(17), fill=accent)
+    qy = q_top + 46
+    for line in qlines:
+        draw.text((quote_card[0] + pad, qy), line, font=qf, fill=S.CREAM)
+        qy += 32
 
-    text = "Meine Watchlist -- keine Kaufempfehlung, nur meine eigene Beobachtung."
-    disclaimer_font = font(B.SANS_BOLD, 18)
-    draw.line([(B.MARGIN_LEFT, H - 90), (W - B.MARGIN_RIGHT, H - 90)], fill=CARD_BORDER, width=1)
-    dis_lines = wrap_text(draw, text, disclaimer_font, W - B.MARGIN_LEFT - B.MARGIN_RIGHT)
-    dy = H - 68
-    for line in dis_lines:
-        draw.text((B.MARGIN_LEFT, dy), line, font=disclaimer_font, fill=MUTED)
-        dy += 22
-
+    draw.text((80, S.SAFE_BOTTOM - 62), "Meine Watchlist -- keine Kaufempfehlung, nur meine eigene Beobachtung.",
+              font=S.font(20), fill=S.SOFT)
+    S.draw_wordmark(img)
     chart_path.unlink(missing_ok=True)
     return img
 
