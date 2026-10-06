@@ -3123,10 +3123,12 @@
   {
     "post_name": "watchlist_2026-10-06",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-06T14:30:00+02:00",
     "claimed_by": "runnervmmprz5-2345-df9ec5e5",
-    "claimed_at": "2026-10-06T13:37:52.374213+00:00"
+    "claimed_at": "2026-10-06T13:37:52.374213+00:00",
+    "published_at": "2026-10-06T13:38:01.701424+00:00",
+    "media_id": "18135298087642244"
   },
   {
     "post_name": "watchlist_2026-10-07",
