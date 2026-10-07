@@ -2888,10 +2888,12 @@
   {
     "post_name": "fachbegriff_2026-10-07",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-07T17:00:00+02:00",
     "claimed_by": "runnervm8df0l-2402-3ef96a59",
-    "claimed_at": "2026-10-07T16:39:25.828349+00:00"
+    "claimed_at": "2026-10-07T16:39:25.828349+00:00",
+    "published_at": "2026-10-07T16:40:04.941286+00:00",
+    "media_id": "18022822253708417"
   },
   {
     "post_name": "fachbegriff_2026-10-08",
