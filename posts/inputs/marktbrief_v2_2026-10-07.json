@@ -1,0 +1,8 @@
+{"date_label":"07.10.2026","weekday":"Mittwoch","slides":[
+{"type":"big3","dur":11.5,"label":"DAS WAR GESTERN","items":[["-19%","Webull an einem Tag","#FF6B6B"],["700 Mio. $","Krypto-Liquidationen in 24 h","#FFDD3D"],["5,36%","US-Zins: Hoch seit 2002","#4CC9F0"]]},
+{"type":"rows","dur":11.7,"key":"idx","label":"DER MARKT","rows":[["Dow Jones","-0,7%"],["S&P 500","-0,2%"],["Nasdaq","-0,2%"]]},
+{"type":"rows","dur":11.7,"key":"mov","label":"DIE KRASSESTEN BEWEGUNGEN","rows":[["Webull","-19%","Kongressbericht zu China-Verbindung"],["Constellation Brands","-5%","Einzelhandelsverkauf schwaecher"],["Applied Digital","-6%","Tech-Ausverkauf"]]},
+{"type":"stat","dur":11.0,"label":"DAS FED-PROTOKOLL","big":"5,36%","text":"Rendite 10-jaehriger US-Anleihen -- hoechster Stand seit 2002","foot":"Fed: weitere Zinsanhebung bis Jahresende gilt als wahrscheinlich angemessen"},
+{"type":"stat","dur":5.7,"label":"BITCOIN","big":"-3%","text":"Bitcoin auf rund 83.000 Dollar","foot":"Getrieben von Zwangsverkaeufen"},
+{"type":"photo","dur":5.1,"key":"trade","label":"SO HABE ICH GEHANDELT","lines":["NICHTS GEKAUFT","WARTE AUF EINSTIEGE"]},
+{"type":"outro","dur":7.3,"lines":["MORGEN FRUEH","DAS GLEICHE.","FOLG MIR!"]}]}
