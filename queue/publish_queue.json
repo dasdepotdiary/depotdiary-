@@ -3294,8 +3294,10 @@
   {
     "post_name": "heuteagenda_2026-10-09",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-09T08:05:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-09T08:05:00+02:00",
+    "claimed_by": "Surface4RA-24884-bcada662",
+    "claimed_at": "2026-10-09T07:48:49.821701+00:00"
   },
   {
     "post_name": "aktiencheck_2026-10-09",
