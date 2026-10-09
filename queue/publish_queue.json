@@ -3323,7 +3323,9 @@
   {
     "post_name": "zitat_2026-10-09",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-09T12:30:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-09T12:30:00+02:00",
+    "claimed_by": "runnervmmprz5-2135-0c46222a",
+    "claimed_at": "2026-10-09T14:27:12.335137+00:00"
   }
 ]
