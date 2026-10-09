@@ -3284,8 +3284,10 @@
   {
     "post_name": "tagesupdate_2026-10-09",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-09T08:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-09T08:00:00+02:00",
+    "claimed_by": "Surface4RA-24884-bcada662",
+    "claimed_at": "2026-10-09T07:48:34.482145+00:00"
   },
   {
     "post_name": "heuteagenda_2026-10-09",
