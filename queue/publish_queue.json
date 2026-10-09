@@ -2908,8 +2908,10 @@
   {
     "post_name": "fachbegriff_2026-10-09",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-09T17:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-09T17:00:00+02:00",
+    "claimed_by": "runnervmmprz5-2121-0d7fe900",
+    "claimed_at": "2026-10-09T19:45:20.840787+00:00"
   },
   {
     "post_name": "tagesereignisse_2026-09-30",
