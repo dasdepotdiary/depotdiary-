@@ -3333,5 +3333,33 @@
     "claimed_at": "2026-10-09T14:27:12.335137+00:00",
     "published_at": "2026-10-09T14:27:22.175691+00:00",
     "media_id": "18396333433206955"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-10-10",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-10-11T12:00:00+02:00",
+    "slide_count": 8,
+    "caption": "Wochenrückblick: Rekord, Zinsschock, Delta-Warnung.\n\nS&P 500 +1,15%, Dow +0,93%, Nasdaq +0,64% -- trotz Rendite auf 24-Jahres-Hoch und einem Tech-Rücksetzer am Donnerstag. Delta Air Lines senkte den Jahresausblick wegen Kerosinkosten.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #aktien #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-10-10",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-11T12:15:00+02:00"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-11-10",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-10-12T07:30:00+02:00",
+    "slide_count": 7,
+    "caption": "Wochenausblick: Banken-Zahlen & Inflationsbericht.\n\nDienstag legen JPMorgan, Goldman Sachs, Wells Fargo und Citigroup Zahlen vor, Mittwoch folgt der US-Inflationsbericht, Donnerstag TSMC. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-11-10",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-12T07:15:00+02:00"
   }
 ]

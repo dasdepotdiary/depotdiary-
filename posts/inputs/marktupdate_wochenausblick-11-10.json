@@ -1,0 +1,118 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Banken-Zahlen & Inflationsbericht*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag: *ruhiger Start*.",
+      "body": "Wegen des Columbus Day ist der US-Anleihemarkt geschlossen. Größere Quartalszahlen stehen laut Terminkalender nicht an."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *Banken* legen vor.",
+      "stats": [
+        [
+          "JPMorgan",
+          "vor Börsenstart · Konsens-EPS",
+          "5,94 USD",
+          "green"
+        ],
+        [
+          "Goldman Sachs",
+          "vor Börsenstart · Konsens-EPS",
+          "12,90 USD",
+          "green"
+        ],
+        [
+          "Wells Fargo",
+          "vor Börsenstart · Konsens-EPS",
+          "1,85 USD",
+          "green"
+        ],
+        [
+          "Citigroup",
+          "vor Börsenstart · Konsens-EPS",
+          "2,66 USD",
+          "green"
+        ],
+        [
+          "Johnson & Johnson",
+          "vor Börsenstart · Konsens-EPS",
+          "2,53 USD",
+          "green"
+        ]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Mittwoch: *Inflation* & mehr Banken.",
+      "stats": [
+        [
+          "ASML",
+          "vor Börsenstart · Konsens-EPS",
+          "12,47 USD",
+          "green"
+        ],
+        [
+          "Bank of America",
+          "vor Börsenstart · Konsens-EPS",
+          "1,11 USD",
+          "green"
+        ],
+        [
+          "Morgan Stanley",
+          "vor Börsenstart · Konsens-EPS",
+          "2,83 USD",
+          "green"
+        ],
+        [
+          "BlackRock",
+          "vor Börsenstart · Konsens-EPS",
+          "14,01 USD",
+          "green"
+        ]
+      ],
+      "note": "Dazu laut Berichten der US-Inflationsbericht für September."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *TSMC* berichtet.",
+      "stats": [
+        [
+          "TSMC",
+          "vor Börsenstart · Konsens-EPS",
+          "4,45 USD",
+          "green"
+        ],
+        [
+          "Charles Schwab",
+          "vor Börsenstart · Konsens-EPS",
+          "1,66 USD",
+          "green"
+        ],
+        [
+          "PNC Financial",
+          "vor Börsenstart · Konsens-EPS",
+          "4,97 USD",
+          "green"
+        ],
+        [
+          "Prologis",
+          "vor Börsenstart · Konsens-EPS",
+          "1,58 USD",
+          "green"
+        ]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *Wochenabschluss*.",
+      "body": "Travelers (Konsens-EPS 6,86 USD) und Truist (1,17 USD) berichten vor Börsenstart."
+    }
+  ],
+  "cta_headline": "Fed-Sitzung: *27. und 28. Oktober*.",
+  "cta_body": "Dann steht die nächste Zinsentscheidung an. Davor liefern diese Woche Bank-Zahlen und Inflationsdaten neue Eckpunkte -- ohne Prognose, nur die Termine, die ich mir angeschaut habe."
+}

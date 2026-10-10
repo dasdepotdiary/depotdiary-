@@ -1,0 +1,97 @@
+{
+  "eyebrow": "WOCHENRÜCKBLICK",
+  "hook": "Diese Börsenwoche im Rückblick: *Rekord, Zinsschock, Delta-Warnung*.",
+  "hook_sub": "Sechs Dinge, die zwischen Montag und Freitag passiert sind.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Start mit *Rekordhoch*.",
+      "body": "Der S&P 500 legte am Montag um 0,7% zu und schloss am Dienstag erneut höher -- über 7.800 Punkten. Der Nasdaq erreichte ebenfalls ein Rekordhoch."
+    },
+    {
+      "type": "text",
+      "headline": "*Zinsen* auf höchstem Stand seit 2002.",
+      "body": "Die Rendite 10-jähriger US-Staatsanleihen stieg am Mittwoch zeitweise auf 5,36% -- ein 24-Jahres-Hoch. Das Fed-Protokoll hielt eine weitere Zinsanhebung bis Jahresende für wahrscheinlich angemessen. Der Dow verlor 0,66%."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: *Tech unter Druck*.",
+      "body": "Der Nasdaq fiel um 1,25% auf 27.193 Punkte -- zwei Tage nach seinem Rekord. Nvidia verlor rund 2,9%, der Technologiesektor im S&P 500 fast 2%. Ölpreis (Brent über 101 USD) und Zinsen belasteten."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *krassesten* Einzelbewegungen.",
+      "stats": [
+        [
+          "Chipotle",
+          "Übernahmebericht, Do",
+          "+4,4%",
+          "green"
+        ],
+        [
+          "Humana",
+          "Freitag, mittags",
+          "+13%",
+          "green"
+        ],
+        [
+          "Starbucks",
+          "Übernahmebericht, Do",
+          "-3%",
+          "red"
+        ],
+        [
+          "Webull",
+          "Kongressbericht, Mi",
+          "-19%",
+          "red"
+        ]
+      ],
+      "note": "Tagesbewegungen, jeweils am genannten Tag."
+    },
+    {
+      "type": "text",
+      "headline": "*Delta* senkt den Gewinnausblick.",
+      "body": "Delta Air Lines meldete 1,72 USD Gewinn je Aktie (erwartet: ca. 1,77) und senkte die Jahresprognose auf 5,10 bis 5,60 USD -- zuvor 6,50 bis 7,50 USD, wegen gestiegener Kerosinkosten."
+    },
+    {
+      "type": "stats",
+      "headline": "Wochenbilanz in *Zahlen*.",
+      "stats": [
+        [
+          "S&P 500",
+          "7.811,54",
+          "+1,15%",
+          "green"
+        ],
+        [
+          "Dow Jones",
+          "51.654,95",
+          "+0,93%",
+          "green"
+        ],
+        [
+          "Nasdaq",
+          "27.366,17",
+          "+0,64%",
+          "green"
+        ],
+        [
+          "DAX",
+          "25.087,27",
+          "-0,57%",
+          "red"
+        ],
+        [
+          "Gold",
+          "4.216 USD",
+          "+1,3%",
+          "green"
+        ]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 09.10."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Banken-Zahlen & Inflation*.",
+  "cta_body": "Laut Berichten legen am Dienstag JPMorgan, Goldman Sachs, Citigroup und Wells Fargo Zahlen vor, am Mittwoch folgt der Inflationsbericht. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

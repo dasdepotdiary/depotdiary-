@@ -889,5 +889,23 @@
     "excerpt": "Die wichtigsten bekannten Termine bis Freitag.",
     "cover": "assets/posts/marktupdate_wochenausblick-30-09/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-10-10",
+    "title": "Diese Börsenwoche im Rückblick: Rekord, Zinsschock, Delta-Warnung.",
+    "category": "marktupdate",
+    "date": "2026-10-10",
+    "excerpt": "Sechs Dinge, die zwischen Montag und Freitag passiert sind.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-10-10/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-11-10",
+    "title": "Diese Börsenwoche: Banken-Zahlen & Inflationsbericht.",
+    "category": "marktupdate",
+    "date": "2026-10-10",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-11-10/slide_1.webp",
+    "url": null
   }
 ]
