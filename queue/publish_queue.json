@@ -3365,9 +3365,11 @@
   {
     "post_name": "zitat_2026-10-10",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-10T20:00:00+02:00",
     "claimed_by": "runnervmmprz5-2396-1748132b",
-    "claimed_at": "2026-10-10T20:10:33.371929+00:00"
+    "claimed_at": "2026-10-10T20:10:33.371929+00:00",
+    "published_at": "2026-10-10T20:10:44.287002+00:00",
+    "media_id": "18108880528899430"
   }
 ]
