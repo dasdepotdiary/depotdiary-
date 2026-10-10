@@ -1,0 +1,7 @@
+{"date_label":"09.10.2026","weekday":"Freitag","slides":[
+{"type":"big3","dur":12.0,"label":"DAS WAR GESTERN","items":[["+0,6%","S&P 500 trotz Delta-Warnung","#5ED38A"],["5,10-5,60 $","Delta: neuer Gewinnausblick","#FF6B6B"],["+1,4%","Gold auf 4.216 Dollar","#FFDD3D"]]},
+{"type":"rows","dur":12.0,"key":"idx","label":"DER MARKT","rows":[["S&P 500","+0,6%"],["Dow Jones","+0,8%"],["Nasdaq","+0,6%"],["DAX","+1,1%"]]},
+{"type":"stat","dur":12.0,"label":"DELTA AIR LINES","big":"1,72 $","text":"Gewinn je Aktie -- erwartet waren ca. 1,77 $","foot":"Jahresprognose gesenkt auf 5,10 bis 5,60 $ (vorher 6,50 bis 7,50 $), wegen Kerosinkosten"},
+{"type":"rows","dur":10.0,"key":"gold","label":"GOLD & STIMMUNG","rows":[["Gold","+1,4%","4.216 USD"],["US-Verbraucher","46,3","Uni Michigan -- tiefster Stand seit Mai"]]},
+{"type":"rows","dur":9.0,"key":"woche","label":"DIE WOCHE","rows":[["S&P 500","+1,2%"],["Dow Jones","+0,9%"],["Nasdaq","+0,6%"],["DAX","-0,6%"]]},
+{"type":"outro","dur":5.0,"lines":["MORGEN FRUEH","DAS GLEICHE.","FOLG MIR!"]}]}
