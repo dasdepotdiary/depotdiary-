@@ -50,18 +50,18 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {"q": "Was ist ein Dividendenaristokrat?",
-     "options": ["Eine Aktie, die ihre Dividende seit mindestens 25 Jahren jedes Jahr erhoeht hat", "Ein Aktionaer mit mehr als 10% der Anteile", "Eine Aktie, die nur im Adel gehandelt wird"],
-     "correct": 0,
-     "explain": "Der Begriff beschreibt Unternehmen mit sehr langer Serie steigender Dividenden -- eine Vergangenheitsbetrachtung, keine Garantie."},
-    {"q": "Wofuer ist eine Stop-Loss-Order gedacht?",
-     "options": ["Um Gewinne zu verdoppeln", "Um bei einem festgelegten Kurs automatisch zu verkaufen", "Um Dividenden zu sichern"],
+    {"q": "Was passiert mit Anleihekursen, wenn die Zinsen steigen?",
+     "options": ["Sie steigen ebenfalls", "Bestehende Anleihen verlieren tendenziell an Wert", "Nichts, Anleihen sind davon unabhaengig"],
      "correct": 1,
-     "explain": "Faellt der Kurs auf die gesetzte Schwelle, wird die Order ausgeloest -- so begrenzt man potenzielle Verluste, ohne staendig zuzuschauen."},
-    {"q": "Was beschreibt Inflation?",
-     "options": ["Den Anstieg des allgemeinen Preisniveaus", "Den Anstieg der Aktienkurse", "Die Hoehe des Leitzinses"],
+     "explain": "Neue Anleihen werfen dann mehr Zins ab -- aeltere mit niedrigem Zins sind weniger attraktiv, ihr Kurs sinkt tendenziell."},
+    {"q": "Was bedeutet Marktkapitalisierung?",
+     "options": ["Der Aktienkurs mal die Anzahl aller Aktien", "Der Jahresgewinn eines Unternehmens", "Das Eigenkapital laut Bilanz"],
      "correct": 0,
-     "explain": "Bei Inflation sinkt die Kaufkraft von Geld -- fuer 100 Euro bekommt man mit der Zeit weniger Waren und Dienstleistungen."},
+     "explain": "Marktkapitalisierung = Kurs je Aktie mal Anzahl der Aktien -- der boersliche Gesamtwert aller Anteile."},
+    {"q": "Was ist der Unterschied zwischen thesaurierend und ausschuettend bei ETFs?",
+     "options": ["Thesaurierende ETFs sind immer teurer", "Thesaurierende reinvestieren Erträge automatisch, ausschuettende zahlen sie aus", "Es gibt keinen Unterschied"],
+     "correct": 1,
+     "explain": "Thesaurierend: Erträge bleiben im Fonds und werden wieder angelegt. Ausschuettend: Erträge landen auf deinem Konto."},
 ]
 
 
