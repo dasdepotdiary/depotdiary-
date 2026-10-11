@@ -3349,8 +3349,10 @@
   {
     "post_name": "marktupdate_wochenrueckblick-10-10",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-11T12:15:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-11T12:15:00+02:00",
+    "claimed_by": "Surface4RA-20936-a7f66201",
+    "claimed_at": "2026-10-11T14:35:37.807768+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-11-10",
