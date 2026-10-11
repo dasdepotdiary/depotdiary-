@@ -3411,10 +3411,12 @@
   {
     "post_name": "depotfrage_2026-10-11",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-11T17:00:00+02:00",
     "claimed_by": "Surface4RA-16292-bc2902d8",
-    "claimed_at": "2026-10-11T15:06:28.408681+00:00"
+    "claimed_at": "2026-10-11T15:06:28.408681+00:00",
+    "published_at": "2026-10-11T15:06:40.127016+00:00",
+    "media_id": "18056208617798137"
   },
   {
     "post_name": "format_aktienquiz_2026-10-11",
