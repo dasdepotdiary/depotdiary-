@@ -3337,12 +3337,14 @@
   {
     "post_name": "marktupdate_wochenrueckblick-10-10",
     "action": "carousel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-11T12:00:00+02:00",
     "slide_count": 8,
     "caption": "Wochenrückblick: Rekord, Zinsschock, Delta-Warnung.\n\nS&P 500 +1,15%, Dow +0,93%, Nasdaq +0,64% -- trotz Rendite auf 24-Jahres-Hoch und einem Tech-Rücksetzer am Donnerstag. Delta Air Lines senkte den Jahresausblick wegen Kerosinkosten.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #aktien #finanzen",
     "claimed_by": "Surface4RA-20936-a7f66201",
-    "claimed_at": "2026-10-11T14:34:35.883638+00:00"
+    "claimed_at": "2026-10-11T14:34:35.883638+00:00",
+    "published_at": "2026-10-11T14:35:33.630674+00:00",
+    "media_id": "17966329017197985"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-10-10",
