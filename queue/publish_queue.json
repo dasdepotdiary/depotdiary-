@@ -3393,8 +3393,10 @@
   {
     "post_name": "zitat_2026-10-11",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-11T19:30:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-11T19:30:00+02:00",
+    "claimed_by": "runnervmmprz5-2418-db36c512",
+    "claimed_at": "2026-10-11T20:05:13.761176+00:00"
   },
   {
     "post_name": "heuteagenda_2026-10-12",
