@@ -3532,10 +3532,12 @@
   {
     "post_name": "earnings_woche_2026-10-12",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-12T10:10:00+02:00",
     "claimed_by": "Surface4RA-10972-ac9176c3",
-    "claimed_at": "2026-10-12T08:27:16.567335+00:00"
+    "claimed_at": "2026-10-12T08:27:16.567335+00:00",
+    "published_at": "2026-10-12T08:27:28.899351+00:00",
+    "media_id": "17916555531265373"
   },
   {
     "post_name": "zitat_2026-10-12b",
