@@ -50,18 +50,18 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {"q": "Was passiert mit Anleihekursen, wenn die Zinsen steigen?",
-     "options": ["Sie steigen ebenfalls", "Bestehende Anleihen verlieren tendenziell an Wert", "Nichts, Anleihen sind davon unabhaengig"],
-     "correct": 1,
-     "explain": "Neue Anleihen werfen dann mehr Zins ab -- aeltere mit niedrigem Zins sind weniger attraktiv, ihr Kurs sinkt tendenziell."},
-    {"q": "Was bedeutet Marktkapitalisierung?",
-     "options": ["Der Aktienkurs mal die Anzahl aller Aktien", "Der Jahresgewinn eines Unternehmens", "Das Eigenkapital laut Bilanz"],
+    {"q": "Was beschreibt das KGV (Kurs-Gewinn-Verhaeltnis)?",
+     "options": ["Wie viele Jahre Gewinne man zahlt, wenn der Gewinn gleich bleibt", "Die Dividende je Aktie", "Den Umsatz pro Mitarbeiter"],
      "correct": 0,
-     "explain": "Marktkapitalisierung = Kurs je Aktie mal Anzahl der Aktien -- der boersliche Gesamtwert aller Anteile."},
-    {"q": "Was ist der Unterschied zwischen thesaurierend und ausschuettend bei ETFs?",
-     "options": ["Thesaurierende ETFs sind immer teurer", "Thesaurierende reinvestieren Erträge automatisch, ausschuettende zahlen sie aus", "Es gibt keinen Unterschied"],
+     "explain": "KGV = Aktienkurs geteilt durch Gewinn je Aktie. Es zeigt, das Wievielfache des Jahresgewinns der Markt aktuell zahlt -- eine reine Kennzahl, keine Wertung."},
+    {"q": "Was bedeutet Diversifikation?",
+     "options": ["Alles Geld in eine Aktie stecken", "Das Geld auf mehrere Anlagen verteilen", "Nur kurzfristig handeln"],
      "correct": 1,
-     "explain": "Thesaurierend: Erträge bleiben im Fonds und werden wieder angelegt. Ausschuettend: Erträge landen auf deinem Konto."},
+     "explain": "Wer breit streut, haengt nicht von einer einzelnen Aktie oder Branche ab -- das senkt das Risiko einzelner Ausreisser, aber nicht das allgemeine Marktrisiko."},
+    {"q": "Was passiert am Ex-Dividenden-Tag?",
+     "options": ["Der Kurs wird um die Dividende bereinigt, neue Kaeufer bekommen sie nicht mehr", "Die Aktie wird vom Handel ausgesetzt", "Die Dividende wird verdoppelt"],
+     "correct": 0,
+     "explain": "Ab dem Ex-Tag handelt die Aktie ohne Dividendenanspruch -- der Kurs faellt rechnerisch meist um den Dividendenbetrag."},
 ]
 
 
