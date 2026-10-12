@@ -3573,29 +3573,21 @@
   {
     "post_name": "format_aktienquiz_2026-10-12",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-12T19:00:00+02:00",
     "claimed_by": "Surface4RA-4788-843da93e",
-    "claimed_at": "2026-10-12T20:32:35.594606+00:00"
-  },
-  {
-    "post_name": "tagesereignisse_2026-10-12",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-12T22:40:00+02:00"
-  },
-  {
-    "post_name": "reel_fachbegriffe_5",
-    "action": "reel",
-    "status": "pending",
-    "fire_at": "2026-10-13T13:00:00+02:00",
-    "caption": "5 Fachbegriffe, die du an der Börse kennen solltest 👇\n\nInverse Zinsstrukturkurve, TER, Beta, KBV und Leerverkauf -- kurz und ohne Fachchinesisch.\n\nWelchen Begriff soll ich als Nächstes erklären? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur Erklärungen.\n\n#börse #aktien #investieren #finanzen #etf #depotdiary"
-  },
-  {
-    "post_name": "reel_boersenzitate",
-    "action": "reel",
-    "status": "pending",
-    "fire_at": "2026-10-15T13:00:00+02:00",
-    "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary"
+    "claimed_at": "2026-10-12T20:32:35.594606+00:00",
+    "published_at": "2026-10-12T20:34:13.409434+00:00",
+    "media_id": "18012118544978492",
+    "media_ids": [
+      "18012118544978492",
+      "18111457058607883",
+      "18077731694551055",
+      "17904640254355914",
+      "18167140222464206",
+      "18101703683154325",
+      "18087303089304146",
+      "18101221625528689"
+    ]
   }
 ]
