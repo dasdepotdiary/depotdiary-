@@ -3593,8 +3593,10 @@
   {
     "post_name": "tagesereignisse_2026-10-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-12T22:40:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-12T22:40:00+02:00",
+    "claimed_by": "Surface4RA-2480-d200b5e2",
+    "claimed_at": "2026-10-12T20:41:05.535359+00:00"
   },
   {
     "post_name": "reel_fachbegriffe_5",
