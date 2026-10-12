@@ -3369,10 +3369,12 @@
   {
     "post_name": "marktupdate_wochenausblick-11-10",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-12T07:30:00+02:00",
     "slide_count": 7,
-    "caption": "Wochenausblick: Banken-Zahlen & Inflationsbericht.\n\nDienstag legen JPMorgan, Goldman Sachs, Wells Fargo und Citigroup Zahlen vor, Mittwoch folgt der US-Inflationsbericht, Donnerstag TSMC. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+    "caption": "Wochenausblick: Banken-Zahlen & Inflationsbericht.\n\nDienstag legen JPMorgan, Goldman Sachs, Wells Fargo und Citigroup Zahlen vor, Mittwoch folgt der US-Inflationsbericht, Donnerstag TSMC. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen",
+    "claimed_by": "Surface4RA-14120-baac6b25",
+    "claimed_at": "2026-10-12T07:53:42.409215+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-11-10",
