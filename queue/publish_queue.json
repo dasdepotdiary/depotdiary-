@@ -3625,5 +3625,17 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-10-13T12:30:00+02:00"
+  },
+  {
+    "post_name": "tagesupdate_2026-10-13",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-13T08:00:00+02:00"
+  },
+  {
+    "post_name": "aktiencheck_2026-10-13",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-13T11:45:00+02:00"
   }
 ]

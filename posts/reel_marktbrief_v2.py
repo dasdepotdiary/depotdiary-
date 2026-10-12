@@ -40,7 +40,7 @@ def s_big3(c, s):
 
 def s_rows(c, s):
     img, acc = frame(c, s["key"], s["label"])
-    rows = s["rows"]; h = 200
+    rows = s["rows"]; h = 200 if len(rows) <= 4 else 160
     boxes = [(70, 560 + i * (h + 22), S.SW - 70, 560 + i * (h + 22) + h) for i in range(len(rows))]
     img = S.glass(img, boxes); d = ImageDraw.Draw(img)
     for (x0, y, x1, y2), r in zip(boxes, rows):
