@@ -3466,10 +3466,12 @@
   {
     "post_name": "format_software_cloud",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-12T10:05:00+02:00",
     "slide_count": 3,
-    "caption": "Sektor-Check: Software & Cloud -- 8 Werte auf einen Blick.\n\nMicrosoft, Oracle, Adobe, SAP, ServiceNow, Palantir, Zeta Global und Alphabet. Reine Übersicht, keine Bewertung.\n\nWelche davon hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur eine Übersicht.\n\n#depotdiary #aktien #software #cloud #börse #investieren"
+    "caption": "Sektor-Check: Software & Cloud -- 8 Werte auf einen Blick.\n\nMicrosoft, Oracle, Adobe, SAP, ServiceNow, Palantir, Zeta Global und Alphabet. Reine Übersicht, keine Bewertung.\n\nWelche davon hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur eine Übersicht.\n\n#depotdiary #aktien #software #cloud #börse #investieren",
+    "claimed_by": "Surface4RA-11832-ea72a077",
+    "claimed_at": "2026-10-12T08:21:16.480269+00:00"
   },
   {
     "post_name": "format_medien_streaming",
