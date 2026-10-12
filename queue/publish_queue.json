@@ -3613,5 +3613,17 @@
     "status": "pending",
     "fire_at": "2026-10-15T13:00:00+02:00",
     "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary"
+  },
+  {
+    "post_name": "heuteagenda_2026-10-13",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-13T09:30:00+02:00"
+  },
+  {
+    "post_name": "zitat_2026-10-13",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-13T12:30:00+02:00"
   }
 ]
