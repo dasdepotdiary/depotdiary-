@@ -3420,10 +3420,12 @@
   {
     "post_name": "heuteagenda_2026-10-12",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-12T09:30:00+02:00",
     "claimed_by": "Surface4RA-14120-baac6b25",
-    "claimed_at": "2026-10-12T07:54:41.818006+00:00"
+    "claimed_at": "2026-10-12T07:54:41.818006+00:00",
+    "published_at": "2026-10-12T07:54:53.061129+00:00",
+    "media_id": "18090863522218088"
   },
   {
     "post_name": "zitat_2026-10-12",
