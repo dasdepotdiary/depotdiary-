@@ -3552,5 +3552,17 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-10-12T21:00:00+02:00"
+  },
+  {
+    "post_name": "earnings_woche_2026-10-12",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-12T10:10:00+02:00"
+  },
+  {
+    "post_name": "zitat_2026-10-12b",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-12T21:00:00+02:00"
   }
 ]
