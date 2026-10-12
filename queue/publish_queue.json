@@ -3532,8 +3532,10 @@
   {
     "post_name": "earnings_woche_2026-10-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-12T10:10:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-12T10:10:00+02:00",
+    "claimed_by": "Surface4RA-10972-ac9176c3",
+    "claimed_at": "2026-10-12T08:27:16.567335+00:00"
   },
   {
     "post_name": "zitat_2026-10-12b",
