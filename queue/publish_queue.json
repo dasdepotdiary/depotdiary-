@@ -3430,8 +3430,10 @@
   {
     "post_name": "zitat_2026-10-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-12T12:30:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-12T12:30:00+02:00",
+    "claimed_by": "runnervmmprz5-2366-0916fdea",
+    "claimed_at": "2026-10-12T13:21:27.760005+00:00"
   },
   {
     "post_name": "depotfrage_2026-10-11",
