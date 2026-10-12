@@ -3573,7 +3573,9 @@
   {
     "post_name": "format_aktienquiz_2026-10-12",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-12T19:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-12T19:00:00+02:00",
+    "claimed_by": "Surface4RA-4788-843da93e",
+    "claimed_at": "2026-10-12T20:32:35.594606+00:00"
   }
 ]
