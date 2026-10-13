@@ -3067,10 +3067,12 @@
   {
     "post_name": "fachbegriff_2026-10-13",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-13T17:00:00+02:00",
     "claimed_by": "Surface4RA-36856-ef037206",
-    "claimed_at": "2026-10-13T15:07:35.851396+00:00"
+    "claimed_at": "2026-10-13T15:07:35.851396+00:00",
+    "published_at": "2026-10-13T15:07:51.242788+00:00",
+    "media_id": "18130083010763659"
   },
   {
     "post_name": "fachbegriff_2026-10-14",
