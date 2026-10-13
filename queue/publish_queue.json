@@ -3617,8 +3617,11 @@
   {
     "post_name": "heuteagenda_2026-10-13",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-13T09:30:00+02:00"
+    "status": "done",
+    "fire_at": "2026-10-13T09:30:00+02:00",
+    "media_id": "18091152302216766",
+    "published_at": "2026-10-13T07:23:33.321924+00:00",
+    "note": "direkt veroeffentlicht (GitHub-Auth fehlte)"
   },
   {
     "post_name": "zitat_2026-10-13",
@@ -3629,10 +3632,11 @@
   {
     "post_name": "tagesupdate_2026-10-13",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-13T08:00:00+02:00",
-    "claimed_by": "Surface4RA-14092-77050509",
-    "claimed_at": "2026-10-13T06:50:39.374206+00:00"
+    "media_id": "18502865560110572",
+    "published_at": "2026-10-13T07:23:33.322934+00:00",
+    "note": "direkt veroeffentlicht (GitHub-Auth fehlte)"
   },
   {
     "post_name": "aktiencheck_2026-10-13",
@@ -3643,8 +3647,11 @@
   {
     "post_name": "reel_marktbrief_2026-10-12",
     "action": "reel",
-    "status": "pending",
+    "status": "done",
     "fire_at": "2026-10-13T07:00:00+02:00",
-    "caption": "Gestern hat die Börse zwei Gesichter gezeigt 👇\n\n• Dow +0,4 %, Nasdaq −0,4 %\n• Apple und Microsoft im Plus, Nvidia, Tesla und Amazon im Minus\n• Ölpreis: rund +1,5 % an einem Tag\n\nHeute startet die Berichtssaison: JPMorgan, Goldman Sachs, Wells Fargo und Citigroup legen Zahlen vor.\n\nMein Depot: nichts gekauft, ich warte auf meine Einstiege.\n\nWelche Bank schaust du dir heute an? Schreib es in die Kommentare. 👇\n\nJeden Morgen: alles, was du wissen musst. Folg mir, damit du's nicht verpasst. 🔔\n\nKeine Anlageberatung – nur Fakten und was ich getan habe.\n\n#börse #aktien #investieren #finanzen #depotdiary #banken #sp500"
+    "caption": "Gestern hat die Börse zwei Gesichter gezeigt 👇\n\n• Dow +0,4 %, Nasdaq −0,4 %\n• Apple und Microsoft im Plus, Nvidia, Tesla und Amazon im Minus\n• Ölpreis: rund +1,5 % an einem Tag\n\nHeute startet die Berichtssaison: JPMorgan, Goldman Sachs, Wells Fargo und Citigroup legen Zahlen vor.\n\nMein Depot: nichts gekauft, ich warte auf meine Einstiege.\n\nWelche Bank schaust du dir heute an? Schreib es in die Kommentare. 👇\n\nJeden Morgen: alles, was du wissen musst. Folg mir, damit du's nicht verpasst. 🔔\n\nKeine Anlageberatung – nur Fakten und was ich getan habe.\n\n#börse #aktien #investieren #finanzen #depotdiary #banken #sp500",
+    "media_id": "18233552980324921",
+    "published_at": "2026-10-13T07:23:33.322934+00:00",
+    "note": "direkt veroeffentlicht (GitHub-Auth fehlte)"
   }
 ]
