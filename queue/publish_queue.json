@@ -3673,12 +3673,6 @@
     "fire_at": "2026-10-13T11:00:00+02:00"
   },
   {
-    "post_name": "wochencheck_2026-10-13",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-13T15:00:00+02:00"
-  },
-  {
     "post_name": "fachbegriff_2026-10-13c",
     "action": "story",
     "status": "pending",
