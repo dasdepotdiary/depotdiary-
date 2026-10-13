@@ -3641,10 +3641,17 @@
   {
     "post_name": "aktiencheck_2026-10-13",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-13T11:45:00+02:00",
     "claimed_by": "Surface4RA-13852-b79d68d2",
-    "claimed_at": "2026-10-13T10:03:58.342692+00:00"
+    "claimed_at": "2026-10-13T10:03:58.342692+00:00",
+    "published_at": "2026-10-13T10:04:26.369482+00:00",
+    "media_id": "18130767997743597",
+    "media_ids": [
+      "18130767997743597",
+      "18217460158348394",
+      "18069086609756183"
+    ]
   },
   {
     "post_name": "reel_marktbrief_2026-10-12",
