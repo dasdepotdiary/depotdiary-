@@ -50,18 +50,18 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {"q": "Was beschreibt das KGV (Kurs-Gewinn-Verhaeltnis)?",
-     "options": ["Wie viele Jahre Gewinne man zahlt, wenn der Gewinn gleich bleibt", "Die Dividende je Aktie", "Den Umsatz pro Mitarbeiter"],
+    {"q": "Was ist der Unterschied zwischen einer Aktie und einem ETF?",
+     "options": ["Ein ETF bildet viele Aktien auf einmal ab", "Eine Aktie ist immer sicherer", "Es gibt keinen Unterschied"],
      "correct": 0,
-     "explain": "KGV = Aktienkurs geteilt durch Gewinn je Aktie. Es zeigt, das Wievielfache des Jahresgewinns der Markt aktuell zahlt -- eine reine Kennzahl, keine Wertung."},
-    {"q": "Was bedeutet Diversifikation?",
-     "options": ["Alles Geld in eine Aktie stecken", "Das Geld auf mehrere Anlagen verteilen", "Nur kurzfristig handeln"],
-     "correct": 1,
-     "explain": "Wer breit streut, haengt nicht von einer einzelnen Aktie oder Branche ab -- das senkt das Risiko einzelner Ausreisser, aber nicht das allgemeine Marktrisiko."},
-    {"q": "Was passiert am Ex-Dividenden-Tag?",
-     "options": ["Der Kurs wird um die Dividende bereinigt, neue Kaeufer bekommen sie nicht mehr", "Die Aktie wird vom Handel ausgesetzt", "Die Dividende wird verdoppelt"],
+     "explain": "Ein ETF buendelt viele Werte (z.B. einen ganzen Index) in einem Produkt. Eine Aktie ist ein Anteil an genau einem Unternehmen."},
+    {"q": "Was bedeutet der Spread an der Boerse?",
+     "options": ["Die Differenz zwischen Kauf- und Verkaufskurs", "Die Dividende pro Jahr", "Die Gebuehr fuers Depot"],
      "correct": 0,
-     "explain": "Ab dem Ex-Tag handelt die Aktie ohne Dividendenanspruch -- der Kurs faellt rechnerisch meist um den Dividendenbetrag."},
+     "explain": "Der Spread ist der Abstand zwischen dem Preis, zu dem man kaufen kann (Brief), und dem, zu dem man verkaufen kann (Geld). Er ist ein verdeckter Kostenfaktor."},
+    {"q": "Was ist eine Limit-Order?",
+     "options": ["Ein Auftrag, der nur zu einem festgelegten Preis oder besser ausgefuehrt wird", "Ein Auftrag, der immer sofort ausgefuehrt wird", "Eine Steuer auf Gewinne"],
+     "correct": 0,
+     "explain": "Mit einem Limit legst du fest, zu welchem Hoechstpreis du kaufst oder zu welchem Mindestpreis du verkaufst. Wird das Limit nicht erreicht, passiert nichts."},
 ]
 
 
