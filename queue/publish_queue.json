@@ -3634,8 +3634,10 @@
   {
     "post_name": "zitat_2026-10-13",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-13T12:30:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-13T12:30:00+02:00",
+    "claimed_by": "Surface4RA-15204-66d8653c",
+    "claimed_at": "2026-10-13T12:43:59.201819+00:00"
   },
   {
     "post_name": "tagesupdate_2026-10-13",
