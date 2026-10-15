@@ -3785,7 +3785,9 @@
   {
     "post_name": "tagesereignisse_2026-10-14",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-15T13:30:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-15T13:30:00+02:00",
+    "claimed_by": "runnervmmprz5-2367-59b01538",
+    "claimed_at": "2026-10-15T14:56:28.840210+00:00"
   }
 ]
