@@ -3493,8 +3493,8 @@
   {
     "post_name": "format_medien_streaming",
     "action": "carousel",
-    "status": "draft_held",
-    "fire_at": "2026-10-11T20:30:00+02:00",
+    "status": "pending",
+    "fire_at": "2026-10-15T12:10:00+02:00",
     "slide_count": 3,
     "caption": "Sektor-Check: Medien & Streaming -- 6 Werte auf einen Blick.\n\nNetflix, Warner Bros. Discovery, AT&T, Meta, Alphabet und Amazon. Reine Übersicht, keine Bewertung.\n\nWelche davon hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur eine Übersicht.\n\n#depotdiary #aktien #streaming #medien #börse #investieren"
   },
@@ -3745,5 +3745,29 @@
     "claimed_at": "2026-10-13T22:28:25.503004+00:00",
     "published_at": "2026-10-13T22:28:38.782066+00:00",
     "media_id": "18372125866244029"
+  },
+  {
+    "post_name": "tagesupdate_2026-10-15",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-15T12:00:00+02:00"
+  },
+  {
+    "post_name": "heuteagenda_2026-10-15",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-15T12:05:00+02:00"
+  },
+  {
+    "post_name": "aktiencheck_2026-10-15",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-15T12:40:00+02:00"
+  },
+  {
+    "post_name": "tagesereignisse_2026-10-14",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-15T13:30:00+02:00"
   }
 ]
