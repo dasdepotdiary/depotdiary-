@@ -3635,9 +3635,11 @@
   {
     "post_name": "reel_boersenzitate",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-15T13:00:00+02:00",
-    "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary"
+    "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary",
+    "claimed_by": "runnervmmprz5-2367-59b01538",
+    "claimed_at": "2026-10-15T14:50:15.039707+00:00"
   },
   {
     "post_name": "heuteagenda_2026-10-13",
