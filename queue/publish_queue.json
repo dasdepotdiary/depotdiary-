@@ -3635,11 +3635,12 @@
   {
     "post_name": "reel_boersenzitate",
     "action": "reel",
-    "status": "claiming",
+    "status": "error",
     "fire_at": "2026-10-15T13:00:00+02:00",
     "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary",
     "claimed_by": "runnervmmprz5-2367-59b01538",
-    "claimed_at": "2026-10-15T14:50:15.039707+00:00"
+    "claimed_at": "2026-10-15T14:50:15.039707+00:00",
+    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Error validating access token: Session has expired on Wednesday, 14-Oct-26 09:53:12 PDT. The current time is Thursday, 15-Oct-26 07:51:46 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AVW5p-Wow2zTiXI27t_bYQl\"}}"
   },
   {
     "post_name": "heuteagenda_2026-10-13",
