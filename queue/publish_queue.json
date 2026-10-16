@@ -3095,10 +3095,11 @@
   {
     "post_name": "fachbegriff_2026-10-16",
     "action": "story",
-    "status": "claiming",
+    "status": "error",
     "fire_at": "2026-10-16T17:00:00+02:00",
     "claimed_by": "runnervm8k3b6-2350-2ede4865",
-    "claimed_at": "2026-10-16T18:13:01.239582+00:00"
+    "claimed_at": "2026-10-16T18:13:01.239582+00:00",
+    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Error validating access token: Session has expired on Wednesday, 14-Oct-26 09:53:12 PDT. The current time is Friday, 16-Oct-26 11:14:34 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AZaKodGLFSpjifCRr3iL6_B\"}}"
   },
   {
     "post_name": "fachbegriff_2026-10-04",
