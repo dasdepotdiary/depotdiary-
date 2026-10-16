@@ -3095,8 +3095,10 @@
   {
     "post_name": "fachbegriff_2026-10-16",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-16T17:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-16T17:00:00+02:00",
+    "claimed_by": "runnervm8k3b6-2350-2ede4865",
+    "claimed_at": "2026-10-16T18:13:01.239582+00:00"
   },
   {
     "post_name": "fachbegriff_2026-10-04",
