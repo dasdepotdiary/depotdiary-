@@ -1,0 +1,52 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Meta, Tesla, Netflix & SAP*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag: *ruhiger* Start.",
+      "body": "Laut Terminkalender berichtet am Montag nur Fifth Third Bancorp (Konsens-EPS 1,09 USD) vor Börsenstart."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *Netflix*, GE und RTX.",
+      "stats": [
+        ["GE Aerospace", "vor Börsenstart · Konsens-EPS", "2,02 USD", "green"],
+        ["RTX", "vor Börsenstart · Konsens-EPS", "1,78 USD", "green"],
+        ["Netflix", "nach Börsenschluss · Konsens-EPS", "0,82 USD", "green"],
+        ["Intuitive Surgical", "nach Börsenschluss · Konsens-EPS", "2,13 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Mittwoch: *Meta & Tesla* berichten.",
+      "stats": [
+        ["Meta", "nach Börsenschluss · Konsens-EPS", "6,67 USD", "green"],
+        ["Tesla", "nach Börsenschluss · Konsens-EPS", "0,21 USD", "green"],
+        ["SAP", "nach Börsenschluss · Konsens-EPS", "2,03 USD", "green"],
+        ["Texas Instruments", "nach Börsenschluss · Konsens-EPS", "2,39 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *P&G*, Lockheed, Spotify.",
+      "stats": [
+        ["Procter & Gamble", "vor Börsenstart · Konsens-EPS", "1,89 USD", "green"],
+        ["Lockheed Martin", "vor Börsenstart · Konsens-EPS", "7,49 USD", "green"],
+        ["Spotify", "vor Börsenstart · Konsens-EPS", "3,12 USD", "green"],
+        ["Union Pacific", "vor Börsenstart · Konsens-EPS", "3,47 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *American Express* und SLB.",
+      "body": "American Express (Konsens-EPS 4,47 USD) und SLB (0,62 USD) berichten vor Börsenstart."
+    }
+  ],
+  "cta_headline": "Danach: *Fed-Sitzung* am 27. und 28. Oktober.",
+  "cta_body": "Dann steht die nächste Zinsentscheidung an. Diese Woche liefern die Quartalszahlen die Eckpunkte -- ohne Prognose, nur die Termine, die ich mir angeschaut habe."
+}

@@ -3824,5 +3824,33 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-10-18T16:30:00+02:00"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-17-10",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-10-18T12:00:00+02:00",
+    "slide_count": 8,
+    "caption": "Wochenrückblick: Inflation, KI-Ausverkauf, Ölpreis.\n\nNasdaq −4,5 %, S&P 500 −1,95 %, Dow +0,7 %, DAX +2,1 %. Öl (WTI) +10 % auf über 101 USD. Die schwächste Börsenwoche seit Juni.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #aktien #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-17-10",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-18T12:15:00+02:00"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-18-10",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-10-19T07:30:00+02:00",
+    "slide_count": 7,
+    "caption": "Wochenausblick: Meta, Tesla, Netflix & SAP.\n\nDienstag Netflix, GE und RTX, Mittwoch Meta, Tesla und SAP, Donnerstag P&G und Lockheed, Freitag American Express. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-18-10",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-19T07:15:00+02:00"
   }
 ]

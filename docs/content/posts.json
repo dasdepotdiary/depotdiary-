@@ -907,5 +907,23 @@
     "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
     "cover": "assets/posts/marktupdate_wochenausblick-11-10/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-17-10",
+    "title": "Diese Börsenwoche im Rückblick: Inflation, KI-Ausverkauf, Ölpreis.",
+    "category": "marktupdate",
+    "date": "2026-10-18",
+    "excerpt": "Fünf Themen, die zwischen Montag und Freitag passiert sind.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-17-10/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-18-10",
+    "title": "Diese Börsenwoche: Meta, Tesla, Netflix & SAP.",
+    "category": "marktupdate",
+    "date": "2026-10-18",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-18-10/slide_1.webp",
+    "url": null
   }
 ]

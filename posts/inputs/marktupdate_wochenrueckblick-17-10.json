@@ -1,0 +1,51 @@
+{
+  "eyebrow": "WOCHENRÜCKBLICK",
+  "hook": "Diese Börsenwoche im Rückblick: *Inflation, KI-Ausverkauf, Ölpreis*.",
+  "hook_sub": "Fünf Themen, die zwischen Montag und Freitag passiert sind.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Dienstag: *Banken* starten die Saison.",
+      "body": "Die großen US-Banken legten Zahlen vor. Laut Berichten übertraf Goldman Sachs die Erwartungen bei Umsatz und Gewinn je Aktie, JPMorgan verfehlte sie knapp."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *Inflation* heißer als erwartet.",
+      "body": "Die US-Verbraucherpreise stiegen im September um 0,6% zum Vormonat und 3,7% zum Vorjahr. Der S&P 500 fiel um 1,11%, der Nasdaq um 1,88% -- laut Berichten der schwächste Tag seit Juli."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: *Erholung*, aber nicht überall.",
+      "body": "Der Dow legte um 1,08% zu, die Rendite 10-jähriger US-Anleihen sank auf rund 5,09%. TSMC meldete Rekordumsatz (+51%) und Gewinn (+69%), die Aktie fiel trotzdem."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *KI-Aktien* unter Druck.",
+      "body": "Der Nasdaq verlor 2,15% auf 26.140 Punkte, der S&P 500 1,09% auf 7.659. Der Dow gab nur 0,34% nach und beendete die Woche trotzdem im Plus."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        ["Nasdaq", "26.140,03", "-4,48%", "red"],
+        ["S&P 500", "7.659,44", "-1,95%", "red"],
+        ["Dow Jones", "52.002,41", "+0,67%", "green"],
+        ["DAX", "25.622,61", "+2,13%", "green"]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 16.10."
+    },
+    {
+      "type": "stats",
+      "headline": "*Verlierer* und der Ölpreis.",
+      "stats": [
+        ["TSMC", "KI-Chipfertiger", "-9,0%", "red"],
+        ["ASML", "Chipausrüster", "-7,8%", "red"],
+        ["Nvidia", "KI-Chips", "-6,6%", "red"],
+        ["Öl (WTI)", "101,41 USD", "+10,4%", "green"]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 16.10."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Meta, Tesla & Netflix* berichten.",
+  "cta_body": "Netflix (20.10.), Meta und Tesla (21.10.) legen Zahlen vor. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}
