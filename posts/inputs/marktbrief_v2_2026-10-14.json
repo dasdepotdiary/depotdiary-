@@ -1,0 +1,7 @@
+{"date_label":"14.10.2026","weekday":"Mittwoch","slides":[
+{"type":"big3","dur":8.0,"label":"DAS WAR GESTERN","items":[["-1,1%","S&P 500: schwaechster Tag seit Juli","#FF6B6B"],["3,7%","US-Inflation im September","#FFDD3D"],["-1,9%","Nasdaq","#FF6B6B"]]},
+{"type":"stat","dur":12.0,"label":"DER AUSLOESER","big":"+0,6%","text":"US-Verbraucherpreise im September zum Vormonat","foot":"Aufs Jahr gerechnet 3,7% -- mehr als erwartet"},
+{"type":"rows","dur":12.0,"key":"chips","label":"CHIPS UND KI UNTER DRUCK","rows":[["ASML","-3,9%"],["TSMC","-3,4%"],["Nvidia","-3,2%"],["CoreWeave","-15%","zeitweise"]]},
+{"type":"rows","dur":10.0,"key":"banken","label":"BANKEN: GEMISCHT","rows":[["JPMorgan","+1,2%"],["Goldman Sachs","-1,5%"],["Citigroup","-1,8%"],["Bank of America","-4,8%"]]},
+{"type":"photo","dur":8.0,"key":"trade","label":"SO HABE ICH GEHANDELT","lines":["MEIN DEPOT","GESTERN"]},
+{"type":"outro","dur":6.0,"lines":["WIE GEHST DU MIT","STEIGENDEN ZINSEN UM?","FOLG MIR!"]}]}

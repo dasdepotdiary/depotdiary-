@@ -50,18 +50,18 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {"q": "Was ist der Unterschied zwischen einer Aktie und einem ETF?",
-     "options": ["Ein ETF bildet viele Aktien auf einmal ab", "Eine Aktie ist immer sicherer", "Es gibt keinen Unterschied"],
+    {"q": "Was misst der Verbraucherpreisindex (CPI)?",
+     "options": ["Die Preisentwicklung eines typischen Warenkorbs", "Die Hoehe der Aktienkurse", "Den Leitzins der Notenbank"],
      "correct": 0,
-     "explain": "Ein ETF buendelt viele Werte (z.B. einen ganzen Index) in einem Produkt. Eine Aktie ist ein Anteil an genau einem Unternehmen."},
-    {"q": "Was bedeutet der Spread an der Boerse?",
-     "options": ["Die Differenz zwischen Kauf- und Verkaufskurs", "Die Dividende pro Jahr", "Die Gebuehr fuers Depot"],
+     "explain": "Der CPI misst, wie sich die Preise fuer Waren und Dienstleistungen des Alltags veraendern -- die wichtigste Inflationszahl in den USA."},
+    {"q": "Was passiert tendenziell mit Aktien, wenn die Zinsen steigen?",
+     "options": ["Sie profitieren immer", "Sie stehen oft unter Druck, weil Anleihen attraktiver werden", "Nichts, Zinsen sind egal"],
+     "correct": 1,
+     "explain": "Hoehere Zinsen machen Kredite teurer und sichere Anleihen im Vergleich attraktiver. Das belastet Aktien oft -- eine Tendenz, keine Regel."},
+    {"q": "Was ist ein Quartalsbericht?",
+     "options": ["Eine Meldung ueber Umsatz und Gewinn der letzten drei Monate", "Eine Prognose der Notenbank", "Die Dividende fuer das ganze Jahr"],
      "correct": 0,
-     "explain": "Der Spread ist der Abstand zwischen dem Preis, zu dem man kaufen kann (Brief), und dem, zu dem man verkaufen kann (Geld). Er ist ein verdeckter Kostenfaktor."},
-    {"q": "Was ist eine Limit-Order?",
-     "options": ["Ein Auftrag, der nur zu einem festgelegten Preis oder besser ausgefuehrt wird", "Ein Auftrag, der immer sofort ausgefuehrt wird", "Eine Steuer auf Gewinne"],
-     "correct": 0,
-     "explain": "Mit einem Limit legst du fest, zu welchem Hoechstpreis du kaufst oder zu welchem Mindestpreis du verkaufst. Wird das Limit nicht erreicht, passiert nichts."},
+     "explain": "Boersennotierte Unternehmen melden alle drei Monate Umsatz, Gewinn und Ausblick. Daran orientieren sich viele Anleger."},
 ]
 
 

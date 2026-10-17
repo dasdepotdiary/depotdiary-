@@ -3499,13 +3499,10 @@
   {
     "post_name": "format_medien_streaming",
     "action": "carousel",
-    "status": "error",
-    "fire_at": "2026-10-15T12:10:00+02:00",
+    "status": "pending",
+    "fire_at": "2026-10-18T11:00:00+02:00",
     "slide_count": 3,
-    "caption": "Sektor-Check: Medien & Streaming -- 6 Werte auf einen Blick.\n\nNetflix, Warner Bros. Discovery, AT&T, Meta, Alphabet und Amazon. Reine Übersicht, keine Bewertung.\n\nWelche davon hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur eine Übersicht.\n\n#depotdiary #aktien #streaming #medien #börse #investieren",
-    "claimed_by": "runnervmmprz5-2367-59b01538",
-    "claimed_at": "2026-10-15T14:47:07.238158+00:00",
-    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Error validating access token: Session has expired on Wednesday, 14-Oct-26 09:53:12 PDT. The current time is Thursday, 15-Oct-26 07:48:39 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"Aav-oe8hX10uq8FjgSoJXDW\"}}"
+    "caption": "Sektor-Check: Medien & Streaming -- 6 Werte auf einen Blick.\n\nNetflix, Warner Bros. Discovery, AT&T, Meta, Alphabet und Amazon. Reine Übersicht, keine Bewertung.\n\nWelche davon hast du selbst im Depot? Schreib es in die Kommentare.\n\nKeine Anlageberatung -- nur eine Übersicht.\n\n#depotdiary #aktien #streaming #medien #börse #investieren"
   },
   {
     "post_name": "tagesupdate_2026-10-12",
@@ -3644,12 +3641,9 @@
   {
     "post_name": "reel_boersenzitate",
     "action": "reel",
-    "status": "error",
-    "fire_at": "2026-10-15T13:00:00+02:00",
-    "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary",
-    "claimed_by": "runnervmmprz5-2367-59b01538",
-    "claimed_at": "2026-10-15T14:50:15.039707+00:00",
-    "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Error validating access token: Session has expired on Wednesday, 14-Oct-26 09:53:12 PDT. The current time is Thursday, 15-Oct-26 07:51:46 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AVW5p-Wow2zTiXI27t_bYQl\"}}"
+    "status": "pending",
+    "fire_at": "2026-10-18T18:00:00+02:00",
+    "caption": "5 Börsenzitate zum Nachdenken 💭\n\nVon Buffett, Munger und Lynch -- sinngemäß zitiert.\n\nWelches ist dein Favorit? Schreib die Nummer in die Kommentare.\n\nKeine Anlageberatung -- nur Zitate.\n\n#börse #aktien #investieren #buffett #munger #depotdiary"
   },
   {
     "post_name": "heuteagenda_2026-10-13",
@@ -3799,5 +3793,36 @@
     "claimed_by": "runnervmmprz5-2367-59b01538",
     "claimed_at": "2026-10-15T14:56:28.840210+00:00",
     "error": "POST https://graph.facebook.com/v21.0/17841440893045606/media nach 4 Versuchen fehlgeschlagen: {\"error\":{\"message\":\"Error validating access token: Session has expired on Wednesday, 14-Oct-26 09:53:12 PDT. The current time is Thursday, 15-Oct-26 07:58:00 PDT.\",\"type\":\"OAuthException\",\"code\":190,\"error_subcode\":463,\"fbtrace_id\":\"AvqNR1VYWkidEqaVXmjYMRh\"}}"
+  },
+  {
+    "post_name": "reel_news_woche_2026-10-16",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-10-18T08:00:00+02:00",
+    "caption": "Die schlechteste Börsenwoche seit Juni 📉\n\n• Nasdaq: −4,5 % in fünf Handelstagen\n• S&P 500: knapp −2 %\n• Freitag: Nasdaq −2,1 % auf 26.140 Punkte, KI-Aktien unter Druck\n• Dow Jones: zweite Woche in Folge im Plus (+0,7 %)\n\nWas hat deine Woche gemacht? Schreib es in die Kommentare 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#börse #nasdaq #aktien #sp500 #investieren #finanzen #depotdiary"
+  },
+  {
+    "post_name": "format_aktienquiz_2026-10-15",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-18T10:00:00+02:00"
+  },
+  {
+    "post_name": "fachbegriff_2026-10-15b",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-18T13:00:00+02:00"
+  },
+  {
+    "post_name": "zitat_2026-10-15",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-18T15:00:00+02:00"
+  },
+  {
+    "post_name": "fachbegriff_2026-10-15c",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-10-18T16:30:00+02:00"
   }
 ]
