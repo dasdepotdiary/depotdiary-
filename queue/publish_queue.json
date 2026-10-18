@@ -3812,8 +3812,10 @@
   {
     "post_name": "format_aktienquiz_2026-10-15",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-18T10:00:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-18T10:00:00+02:00",
+    "claimed_by": "runnervm8k3b6-2129-a125f919",
+    "claimed_at": "2026-10-18T11:23:09.816143+00:00"
   },
   {
     "post_name": "fachbegriff_2026-10-15b",
