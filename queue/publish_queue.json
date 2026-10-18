@@ -3797,11 +3797,13 @@
   {
     "post_name": "reel_news_woche_2026-10-16",
     "action": "reel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-18T08:00:00+02:00",
     "caption": "Die schlechteste Börsenwoche seit Juni 📉\n\n• Nasdaq: −4,5 % in fünf Handelstagen\n• S&P 500: knapp −2 %\n• Freitag: Nasdaq −2,1 % auf 26.140 Punkte, KI-Aktien unter Druck\n• Dow Jones: zweite Woche in Folge im Plus (+0,7 %)\n\nWas hat deine Woche gemacht? Schreib es in die Kommentare 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#börse #nasdaq #aktien #sp500 #investieren #finanzen #depotdiary",
     "claimed_by": "runnervm8k3b6-2123-57bfd052",
-    "claimed_at": "2026-10-18T06:03:43.893674+00:00"
+    "claimed_at": "2026-10-18T06:03:43.893674+00:00",
+    "published_at": "2026-10-18T06:05:15.389814+00:00",
+    "media_id": "17977604055122100"
   },
   {
     "post_name": "format_aktienquiz_2026-10-15",
