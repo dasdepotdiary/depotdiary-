@@ -3852,10 +3852,12 @@
   {
     "post_name": "fachbegriff_2026-10-15c",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-18T16:30:00+02:00",
     "claimed_by": "runnervm8k3b6-2349-2103c515",
-    "claimed_at": "2026-10-18T14:49:01.849664+00:00"
+    "claimed_at": "2026-10-18T14:49:01.849664+00:00",
+    "published_at": "2026-10-18T14:49:40.302062+00:00",
+    "media_id": "18034950293665835"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-17-10",
