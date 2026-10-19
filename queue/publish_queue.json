@@ -3898,10 +3898,12 @@
   {
     "post_name": "marktupdate_wochenausblick-18-10",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-19T07:30:00+02:00",
     "slide_count": 7,
-    "caption": "Wochenausblick: Meta, Tesla, Netflix & SAP.\n\nDienstag Netflix, GE und RTX, Mittwoch Meta, Tesla und SAP, Donnerstag P&G und Lockheed, Freitag American Express. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+    "caption": "Wochenausblick: Meta, Tesla, Netflix & SAP.\n\nDienstag Netflix, GE und RTX, Mittwoch Meta, Tesla und SAP, Donnerstag P&G und Lockheed, Freitag American Express. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen",
+    "claimed_by": "runnervm8k3b6-2115-43124723",
+    "claimed_at": "2026-10-19T10:59:20.807946+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-18-10",
