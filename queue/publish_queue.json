@@ -3906,7 +3906,9 @@
   {
     "post_name": "marktupdate_wochenausblick-18-10",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-19T07:15:00+02:00"
+    "status": "claiming",
+    "fire_at": "2026-10-19T07:15:00+02:00",
+    "claimed_by": "runnervm8k3b6-2353-d872fde1",
+    "claimed_at": "2026-10-19T05:18:53.580525+00:00"
   }
 ]
