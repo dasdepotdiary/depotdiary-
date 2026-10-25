@@ -1,0 +1,91 @@
+{
+  "eyebrow": "WOCHENRÜCKBLICK",
+  "hook": "Diese Börsenwoche im Rückblick: *KI-Ausverkauf, Gold-Rutsch, Dow-Serie*.",
+  "hook_sub": "Fünf Themen, die zwischen Montag und Freitag passiert sind.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Start mit *Rückenwind*.",
+      "body": "S&P 500 +0,41%, Nasdaq +1,11% -- am Dienstag legte der Dow um 1,0% zu, am Mittwoch folgten S&P 500 (+0,58%) und Nasdaq (+1,05%)."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *Netflix* nach den Zahlen.",
+      "body": "Die Netflix-Aktie fiel am Mittwoch um 5,3%, einen Tag nach dem Quartalsbericht. Auf Wochensicht steht ein Minus von 6,6%."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: *Größter Tagesverlust* seit Juni.",
+      "body": "Der Nasdaq fiel um 2,60%. Laut Reuters verlor der Halbleiterindex 6,7% -- Sorge um die Finanzierungskosten der KI-Investitionen. Meta (-7,0%) und Nvidia (-4,4%) gaben deutlich nach."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *Dow* fällt, Tech stabilisiert.",
+      "body": "Der Dow verlor 1,23% auf 52.215 Punkte, der Nasdaq nur 0,21%. Trotzdem steht der Dow die dritte Woche in Folge im Plus."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        [
+          "S&P 500",
+          "7.623,68",
+          "-0,47%",
+          "red"
+        ],
+        [
+          "Nasdaq",
+          "25.955,34",
+          "-0,71%",
+          "red"
+        ],
+        [
+          "Dow Jones",
+          "52.215,16",
+          "+0,41%",
+          "green"
+        ],
+        [
+          "DAX",
+          "25.181,65",
+          "-1,72%",
+          "red"
+        ]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 23.10."
+    },
+    {
+      "type": "stats",
+      "headline": "Gold, Öl und die *Verlierer*.",
+      "stats": [
+        [
+          "Gold",
+          "4.008 USD",
+          "-4,1%",
+          "red"
+        ],
+        [
+          "Meta",
+          "Wochenbewegung",
+          "-9,4%",
+          "red"
+        ],
+        [
+          "Netflix",
+          "Wochenbewegung",
+          "-6,6%",
+          "red"
+        ],
+        [
+          "Öl (WTI)",
+          "103,27 USD",
+          "+1,8%",
+          "green"
+        ]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 23.10."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Fed, Alphabet, Microsoft, Amazon*.",
+  "cta_body": "Fed-Zinsentscheid laut Berichten am Mittwoch, dazu Alphabet und Microsoft (28.10.) und Amazon (29.10.). Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

@@ -1,0 +1,63 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Fed, Alphabet, Microsoft & Amazon*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Montag: *Verizon* eröffnet.",
+      "stats": [
+        ["Verizon", "vor Börsenstart · Konsens-EPS", "1,27 USD", "green"],
+        ["Welltower", "nach Börsenschluss · Konsens-EPS", "1,64 USD", "green"],
+        ["Cadence Design", "nach Börsenschluss · Konsens-EPS", "1,61 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *Visa*, Coca-Cola, Boeing.",
+      "stats": [
+        ["Coca-Cola", "vor Börsenstart · Konsens-EPS", "0,87 USD", "green"],
+        ["Boeing", "vor Börsenstart · Konsens-EPS", "-0,21 USD", "red"],
+        ["Novartis", "vor Börsenstart · Konsens-EPS", "2,25 USD", "green"],
+        ["Visa", "nach Börsenschluss · Konsens-EPS", "3,43 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Mittwoch: *Fed* und Big Tech.",
+      "stats": [
+        ["Alphabet", "nach Börsenschluss · Konsens-EPS", "2,94 USD", "green"],
+        ["Microsoft", "nach Börsenschluss · Konsens-EPS", "4,71 USD", "green"],
+        ["GE Vernova", "vor Börsenstart · Konsens-EPS", "4,03 USD", "green"],
+        ["T-Mobile US", "nach Börsenschluss · Konsens-EPS", "2,86 USD", "green"]
+      ],
+      "note": "Dazu der Fed-Zinsentscheid (Sitzung 27./28.10., laut Berichten am Mittwoch). Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *Amazon*, Lilly, Intel.",
+      "stats": [
+        ["Eli Lilly", "vor Börsenstart · Konsens-EPS", "5,38 USD", "green"],
+        ["Mastercard", "vor Börsenstart · Konsens-EPS", "5,14 USD", "green"],
+        ["Amazon", "nach Börsenschluss · Konsens-EPS", "2,01 USD", "green"],
+        ["Intel", "nach Börsenschluss · Konsens-EPS", "0,28 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Freitag: *Exxon* und Chevron.",
+      "stats": [
+        ["Exxon Mobil", "vor Börsenstart · Konsens-EPS", "3,96 USD", "green"],
+        ["Chevron", "vor Börsenstart · Konsens-EPS", "4,78 USD", "green"],
+        ["AbbVie", "vor Börsenstart · Konsens-EPS", "3,76 USD", "green"],
+        ["AstraZeneca", "vor Börsenstart · Konsens-EPS", "2,16 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    }
+  ],
+  "cta_headline": "Die Fed-Sitzung: *27. und 28. Oktober*.",
+  "cta_body": "Laut Berichten wird kein Zinsschritt erwartet, die Anleger achten auf Hinweise für Dezember. Keine Prognose, nur die Termine, die ich mir angeschaut habe."
+}
