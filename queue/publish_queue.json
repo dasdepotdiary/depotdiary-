@@ -3940,10 +3940,12 @@
   {
     "post_name": "marktupdate_wochenrueckblick-24-10",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-25T12:30:00+02:00",
     "slide_count": 8,
-    "caption": "Wochenrückblick: KI-Ausverkauf, Gold-Rutsch, Dow-Serie.\n\nS&P 500 −0,5 %, Nasdaq −0,7 %, Dow +0,4 % (dritte Gewinnwoche in Folge), DAX −1,7 %. Gold −4,1 %. Der Nasdaq fiel am Donnerstag um 2,6 % -- größter Tagesverlust seit Juni.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #aktien #finanzen"
+    "caption": "Wochenrückblick: KI-Ausverkauf, Gold-Rutsch, Dow-Serie.\n\nS&P 500 −0,5 %, Nasdaq −0,7 %, Dow +0,4 % (dritte Gewinnwoche in Folge), DAX −1,7 %. Gold −4,1 %. Der Nasdaq fiel am Donnerstag um 2,6 % -- größter Tagesverlust seit Juni.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #aktien #finanzen",
+    "claimed_by": "runnervmtai0g-2316-7445df27",
+    "claimed_at": "2026-10-25T13:46:10.664460+00:00"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-24-10",
