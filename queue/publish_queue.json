@@ -3972,10 +3972,12 @@
   {
     "post_name": "marktupdate_wochenausblick-25-10",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-10-26T07:30:00+01:00",
     "slide_count": 7,
-    "caption": "Wochenausblick: Fed, Alphabet, Microsoft & Amazon.\n\nMittwoch Fed-Zinsentscheid sowie Alphabet und Microsoft, Donnerstag Amazon, Eli Lilly und Intel, Freitag Exxon und Chevron. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+    "caption": "Wochenausblick: Fed, Alphabet, Microsoft & Amazon.\n\nMittwoch Fed-Zinsentscheid sowie Alphabet und Microsoft, Donnerstag Amazon, Eli Lilly und Intel, Freitag Exxon und Chevron. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen",
+    "claimed_by": "runnervmtai0g-2103-cc34913b",
+    "claimed_at": "2026-10-26T12:36:04.275218+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-25-10",
