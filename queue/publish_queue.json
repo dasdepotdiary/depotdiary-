@@ -3984,8 +3984,10 @@
   {
     "post_name": "marktupdate_wochenausblick-25-10",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-26T07:15:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-26T07:15:00+01:00",
+    "claimed_by": "runnervmtai0g-2103-cc34913b",
+    "claimed_at": "2026-10-26T12:36:56.546444+00:00"
   },
   {
     "post_name": "fachbegriff_2026-10-25",
