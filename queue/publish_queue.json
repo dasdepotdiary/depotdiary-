@@ -4113,8 +4113,10 @@
   {
     "post_name": "watchlist_2026-10-27",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-27T14:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-27T14:30:00+01:00",
+    "claimed_by": "runnervmtai0g-2412-193fc42f",
+    "claimed_at": "2026-10-27T14:40:54.758168+00:00"
   },
   {
     "post_name": "watchlist_2026-10-28",
