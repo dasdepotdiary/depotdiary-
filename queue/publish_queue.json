@@ -4061,10 +4061,12 @@
   {
     "post_name": "zitat_2026-10-27",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-27T12:30:00+01:00",
     "claimed_by": "runnervmtai0g-2412-193fc42f",
-    "claimed_at": "2026-10-27T14:40:42.650608+00:00"
+    "claimed_at": "2026-10-27T14:40:42.650608+00:00",
+    "published_at": "2026-10-27T14:40:53.141887+00:00",
+    "media_id": "18439956130183384"
   },
   {
     "post_name": "zitat_2026-10-28",
