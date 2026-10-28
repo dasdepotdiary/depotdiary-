@@ -4193,8 +4193,10 @@
   {
     "post_name": "aktiencheck_2026-10-28",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-28T11:45:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-28T11:45:00+01:00",
+    "claimed_by": "runnervm48cm3-2376-76920a96",
+    "claimed_at": "2026-10-28T15:57:51.014450+00:00"
   },
   {
     "post_name": "reel_news_boeing_fed_2026-10-27",
