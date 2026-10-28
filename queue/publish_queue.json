@@ -4193,10 +4193,17 @@
   {
     "post_name": "aktiencheck_2026-10-28",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-28T11:45:00+01:00",
     "claimed_by": "runnervm48cm3-2376-76920a96",
-    "claimed_at": "2026-10-28T15:57:51.014450+00:00"
+    "claimed_at": "2026-10-28T15:57:51.014450+00:00",
+    "published_at": "2026-10-28T15:59:18.992044+00:00",
+    "media_id": "17897040258450251",
+    "media_ids": [
+      "17897040258450251",
+      "18334907530277900",
+      "17873661048640483"
+    ]
   },
   {
     "post_name": "reel_news_boeing_fed_2026-10-27",
