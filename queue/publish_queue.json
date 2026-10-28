@@ -4075,8 +4075,10 @@
   {
     "post_name": "zitat_2026-10-28",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-28T12:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-28T12:30:00+01:00",
+    "claimed_by": "runnervm48cm3-2376-76920a96",
+    "claimed_at": "2026-10-28T15:56:29.029440+00:00"
   },
   {
     "post_name": "zitat_2026-10-29",
