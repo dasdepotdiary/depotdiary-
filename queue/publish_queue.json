@@ -4175,8 +4175,10 @@
   {
     "post_name": "tagesupdate_2026-10-28",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-28T08:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-28T08:00:00+01:00",
+    "claimed_by": "runnervmtai0g-2357-3f4a7d08",
+    "claimed_at": "2026-10-28T08:59:41.249213+00:00"
   },
   {
     "post_name": "aktiencheck_2026-10-28",
