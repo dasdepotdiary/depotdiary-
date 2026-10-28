@@ -4043,10 +4043,12 @@
   {
     "post_name": "heuteagenda_2026-10-28",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-28T09:30:00+01:00",
     "claimed_by": "runnervmtai0g-2357-3f4a7d08",
-    "claimed_at": "2026-10-28T08:59:01.224412+00:00"
+    "claimed_at": "2026-10-28T08:59:01.224412+00:00",
+    "published_at": "2026-10-28T08:59:39.906212+00:00",
+    "media_id": "18220053196350756"
   },
   {
     "post_name": "heuteagenda_2026-10-29",
