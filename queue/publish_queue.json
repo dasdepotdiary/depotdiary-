@@ -4274,7 +4274,9 @@
   {
     "post_name": "tagesereignisse_2026-10-29",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-29T17:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-29T17:00:00+01:00",
+    "claimed_by": "runnervm48cm3-2351-0b7dded9",
+    "claimed_at": "2026-10-29T19:45:31.124351+00:00"
   }
 ]
