@@ -4235,13 +4235,22 @@
   {
     "post_name": "tagesupdate_2026-10-29",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-10-29T10:30:00+01:00"
+    "status": "done",
+    "fire_at": "2026-10-29T10:30:00+01:00",
+    "published_at": "2026-10-29T14:23:06.164772+00:00",
+    "media_id": "17909836734567073"
   },
   {
     "post_name": "aktiencheck_2026-10-29",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-29T12:00:00+01:00"
+    "status": "done",
+    "fire_at": "2026-10-29T12:00:00+01:00",
+    "published_at": "2026-10-29T14:24:00.200271+00:00",
+    "media_id": "18152880304526686",
+    "media_ids": [
+      "18152880304526686",
+      "17987031548891952",
+      "18136064846503349"
+    ]
   }
 ]
