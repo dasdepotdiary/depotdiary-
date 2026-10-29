@@ -4089,10 +4089,12 @@
   {
     "post_name": "zitat_2026-10-29",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-29T12:30:00+01:00",
     "claimed_by": "runnervm48cm3-2429-10c1c2f6",
-    "claimed_at": "2026-10-29T14:02:16.212629+00:00"
+    "claimed_at": "2026-10-29T14:02:16.212629+00:00",
+    "published_at": "2026-10-29T14:02:53.282297+00:00",
+    "media_id": "18436832596181841"
   },
   {
     "post_name": "zitat_2026-10-30",
