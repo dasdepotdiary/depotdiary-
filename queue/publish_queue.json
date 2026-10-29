@@ -4237,5 +4237,11 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-10-29T10:30:00+01:00"
+  },
+  {
+    "post_name": "aktiencheck_2026-10-29",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-10-29T12:00:00+01:00"
   }
 ]

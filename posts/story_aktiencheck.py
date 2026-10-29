@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Nike", "ticker": "NKE", "price": 35.84, "change_pct": -1.51, "as_of": "29.09.", "pe": 17.07,
-         "forward_pe": 21.01, "peg": 1.40, "div_yield": 4.48, "earnings_growth": 428.0, "beta": 1.11,
-         "market_cap": "53,2 Mrd. USD", "volume": "29,0 Mio.", "week52_low": 35.22, "week52_high": 74.51,
-         "note": "Notiert nur knapp ueber dem 52-Wochen-Tief (35,22 USD) und rund 52% unter dem Hoch -- dadurch liegt die Dividendenrendite aktuell bei 4,5%.",
-         "csv_path": DATA_DIR / "NKE.csv", "accent": OCHRE},
-        {"name": "Micron", "ticker": "MU", "price": 1065.08, "change_pct": 1.05, "as_of": "29.09.", "pe": 23.81,
-         "forward_pe": 7.02, "peg": 0.16, "div_yield": 0.05, "earnings_growth": 1369.0, "beta": 2.22,
-         "market_cap": "1,20 Bio. USD", "volume": "19,7 Mio.", "week52_low": 179.43, "week52_high": 1254.81,
-         "note": "Kurs hat sich seit dem 52-Wochen-Tief (179,43 USD) fast versechsfacht. Beta von 2,2: schwankt gut doppelt so stark wie der Gesamtmarkt.",
-         "csv_path": DATA_DIR / "MU.csv", "accent": GREEN},
-        {"name": "Disney", "ticker": "DIS", "price": 105.41, "change_pct": -0.17, "as_of": "29.09.", "pe": 21.78,
-         "forward_pe": 13.81, "peg": 3.37, "div_yield": 1.42, "earnings_growth": -48.3, "beta": 1.41,
-         "market_cap": "182,0 Mrd. USD", "volume": "7,3 Mio.", "week52_low": 91.49, "week52_high": 115.42,
-         "note": "Bewegt sich seit einem Jahr in einer vergleichsweise engen Spanne (91,49-115,42 USD) -- Quartalsgewinn im Jahresvergleich um 48% gesunken (letztes verfuegbares Quartal).",
-         "csv_path": DATA_DIR / "DIS.csv", "accent": CAT_TEAL},
+        {"name": "Mastercard", "ticker": "MA", "price": 638.52, "change_pct": 4.62, "as_of": "29.10. intraday", "pe": 35.10,
+         "forward_pe": 27.66, "peg": 1.59, "div_yield": 0.57, "earnings_growth": 18.6, "beta": 0.76,
+         "market_cap": "559,0 Mrd. USD", "volume": "1,1 Mio. (bisher)", "week52_low": 464.52, "week52_high": 641.57,
+         "note": "Quartalszahlen heute: Nettoumsatz +14% auf 9,8 Mrd. USD, bereinigter Gewinn je Aktie 5,31 USD. Kurs notiert nahe dem 52-Wochen-Hoch (641,57 USD).",
+         "csv_path": DATA_DIR / "MA.csv", "accent": OCHRE},
+        {"name": "Salesforce", "ticker": "CRM", "price": 232.62, "change_pct": -3.92, "as_of": "29.10. intraday", "pe": 21.26,
+         "forward_pe": 14.50, "peg": 0.86, "div_yield": 0.73, "earnings_growth": 86.9, "beta": 1.26,
+         "market_cap": "191,2 Mrd. USD", "volume": "1,7 Mio. (bisher)", "week52_low": 146.32, "week52_high": 269.11,
+         "note": "Kurs liegt rund 14% unter dem 52-Wochen-Hoch (269,11 USD) und rund 59% ueber dem 52-Wochen-Tief (146,32 USD).",
+         "csv_path": DATA_DIR / "CRM.csv", "accent": GREEN},
+        {"name": "Eli Lilly", "ticker": "LLY", "price": 1388.00, "change_pct": 7.74, "as_of": "29.10. intraday", "pe": 46.46,
+         "forward_pe": 29.23, "peg": 1.23, "div_yield": 0.54, "earnings_growth": 25.3, "beta": 0.45,
+         "market_cap": "1,23 Bio. USD", "volume": "1,6 Mio. (bisher)", "week52_low": 812.25, "week52_high": 1408.38,
+         "note": "Kurs notiert knapp unter dem 52-Wochen-Hoch (1.408,38 USD) und rund 71% ueber dem 52-Wochen-Tief (812,25 USD).",
+         "csv_path": DATA_DIR / "LLY.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
