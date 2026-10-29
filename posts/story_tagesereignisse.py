@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Stand am Nachmittag: Nasdaq +0,94% auf 27.049 Punkte, S&P 500 +0,40% auf 7.701, Dow -0,29% auf 51.203.",
-         "body": "Tech-Werte fuehrten die Gewinne an, der Dow lag leicht im Minus."},
-        {"headline": "Die US-Inflation nach PCE-Index lag im August bei 3,4% zum Vorjahr -- erwartet waren 3,7%.",
-         "body": "Zum Vormonat stieg der Index um 0,2% statt der erwarteten 0,3%; auch die Kernrate fiel niedriger aus."},
-        {"headline": "Die Rendite der 10-jaehrigen US-Staatsanleihe stand bei rund 5,30%.",
-         "body": "Das entspricht einem Anstieg um rund 0,05 Prozentpunkte gegenueber dem Vortag."},
-        {"headline": "Mattel -3%, nachdem der Abgang von CEO Ynon Kreiz bekannt gegeben wurde.",
-         "body": "Der Spielzeughersteller gehoerte damit zu den auffaelligen Einzelwerten des Tages."},
-        {"headline": "Micron legt heute nach US-Boersenschluss seine Quartalszahlen vor.",
-         "body": "Die Aktie notierte vorab bei rund 1.069 USD, +0,39%."},
+        {"headline": "US-Handel kurz nach Eroeffnung (Stand ca. 15 Uhr): S&P 500 -0,42% auf 7.711, Nasdaq -1,41% auf 26.175.",
+         "body": "Der DAX lag zeitgleich bei +1,37% auf 26.057 Punkten."},
+        {"headline": "Mastercard +4,6% nach Quartalszahlen.",
+         "body": "Nettoumsatz +14% auf 9,8 Mrd. USD, bereinigter Gewinn je Aktie 5,31 USD."},
+        {"headline": "Eli Lilly +7,7% auf rund 1.388 USD.",
+         "body": "Die Aktie notiert damit knapp unter ihrem 52-Wochen-Hoch von 1.408 USD."},
+        {"headline": "Salesforce -3,9% auf rund 233 USD.",
+         "body": "Der Kurs liegt rund 14% unter dem 52-Wochen-Hoch von 269 USD."},
+        {"headline": "Amazon legt heute nach US-Boersenschluss Quartalszahlen vor.",
+         "body": "Erwartet werden laut Konsens rund 1,96 USD Gewinn je Aktie bei etwa 202 Mrd. USD Umsatz."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
