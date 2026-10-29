@@ -4274,9 +4274,11 @@
   {
     "post_name": "tagesereignisse_2026-10-29",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-29T17:00:00+01:00",
     "claimed_by": "runnervm48cm3-2351-0b7dded9",
-    "claimed_at": "2026-10-29T19:45:31.124351+00:00"
+    "claimed_at": "2026-10-29T19:45:31.124351+00:00",
+    "published_at": "2026-10-29T19:45:39.862254+00:00",
+    "media_id": "17976457554140057"
   }
 ]
