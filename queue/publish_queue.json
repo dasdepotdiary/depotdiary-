@@ -4183,10 +4183,12 @@
   {
     "post_name": "watchlist_2026-10-30",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-30T14:30:00+01:00",
     "claimed_by": "runnervm48cm3-2133-2e0dc259",
-    "claimed_at": "2026-10-30T17:11:09.549363+00:00"
+    "claimed_at": "2026-10-30T17:11:09.549363+00:00",
+    "published_at": "2026-10-30T17:11:18.089680+00:00",
+    "media_id": "18153104413537194"
   },
   {
     "post_name": "format_aktienquiz_2026-10-27",
