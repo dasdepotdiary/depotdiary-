@@ -4103,10 +4103,12 @@
   {
     "post_name": "zitat_2026-10-30",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-30T12:30:00+01:00",
     "claimed_by": "runnervm48cm3-2133-2e0dc259",
-    "claimed_at": "2026-10-30T17:10:45.896266+00:00"
+    "claimed_at": "2026-10-30T17:10:45.896266+00:00",
+    "published_at": "2026-10-30T17:10:57.794724+00:00",
+    "media_id": "18152325334557555"
   },
   {
     "post_name": "fachbegriff_2026-10-27",
