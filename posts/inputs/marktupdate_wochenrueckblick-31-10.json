@@ -1,0 +1,39 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Tech-Zahlen drücken die Indizes*.",
+  "hook_sub": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "*Fed* lässt den Leitzins unverändert.",
+      "body": "Am Mittwoch hielt die US-Notenbank die Spanne bei 3,75 bis 4,00% -- mit 10 zu 2 Stimmen. Zwei Mitglieder hätten lieber um 0,25 Prozentpunkte erhöht, und die Fed ließ eine weitere Anhebung im Dezember offen."
+    },
+    {
+      "type": "text",
+      "headline": "*Alphabet* bricht nach Zahlen ein.",
+      "body": "Am Donnerstag verlor die Aktie nach den Quartalszahlen rund 12,6%. Der Nasdaq schloss den Tag 1,38% im Minus, der S&P 500 gab 0,3% nach."
+    },
+    {
+      "type": "text",
+      "headline": "*Intel* mit riesigem Kursrutsch.",
+      "body": "Am Freitag fiel die Aktie um rund 29% auf etwa 65,76 USD. Auslöser war die Prognose für das vierte Quartal: 15 bis 16 Mrd. USD Umsatz statt der erwarteten 17 Mrd. USD."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        ["S&P 500", "7.580,07 Punkte", "-0,57%", "red"],
+        ["Nasdaq", "25.437,00 Punkte", "-2,00%", "red"],
+        ["Dow Jones", "51.770,31 Punkte", "-0,85%", "red"]
+      ],
+      "note": "Veränderung Schlusskurs Freitag 30.10. gegenüber Freitag 23.10."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *schwächster Tag* der Woche.",
+      "body": "Der Nasdaq verlor 2,86%, der S&P 500 1,82% und der Dow Jones 1,09%. Hauptthema blieb die Frage, ob sich die hohen KI-Investitionen der Tech-Konzerne auszahlen."
+    }
+  ],
+  "cta_headline": "Was war für dich *das Thema der Woche*?",
+  "cta_body": "Schreib es in die Kommentare. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}
