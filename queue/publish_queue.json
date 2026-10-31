@@ -4312,8 +4312,10 @@
   {
     "post_name": "marktupdate_wochenrueckblick-31-10",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-10-31T10:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-10-31T10:10:00+01:00",
+    "claimed_by": "runnervm48cm3-2129-a453e92b",
+    "claimed_at": "2026-10-31T13:45:09.072667+00:00"
   },
   {
     "post_name": "reel_wochenrueckblick_2026-10-31",
