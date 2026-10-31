@@ -4301,11 +4301,13 @@
     "post_name": "marktupdate_wochenrueckblick-31-10",
     "action": "carousel",
     "slide_count": 7,
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-10-31T10:00:00+01:00",
     "caption": "Diese Boersenwoche im Rueckblick: Tech-Zahlen druecken die Indizes.\n\nMittwoch: Die Fed haelt die Spanne bei 3,75 bis 4,00% (10:2 Stimmen, zwei Mitglieder waeren fuer eine Anhebung gewesen). Donnerstag: Alphabet verliert nach Quartalszahlen rund 12,6%. Freitag: Intel faellt um rund 29% nach schwacher Prognose fuers vierte Quartal, der Nasdaq verliert 2,86%.\n\nWochenbilanz: S&P 500 -0,57%, Nasdaq -2,00%, Dow Jones -0,85%.\n\nWas war fuer dich das Thema der Woche?\n\nKeine Anlageberatung -- nur, was diese Woche wirklich passiert ist.",
     "claimed_by": "runnervm48cm3-2129-a453e92b",
-    "claimed_at": "2026-10-31T13:43:47.198571+00:00"
+    "claimed_at": "2026-10-31T13:43:47.198571+00:00",
+    "published_at": "2026-10-31T13:45:07.789412+00:00",
+    "media_id": "18070607834784920"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-31-10",
