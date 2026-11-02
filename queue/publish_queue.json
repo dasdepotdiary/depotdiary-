@@ -4359,8 +4359,10 @@
   {
     "post_name": "wochenausblick_2026-11-01_schluss",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-02T01:20:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-02T01:20:00+01:00",
+    "claimed_by": "runnervm48cm3-2144-a2fb62e3",
+    "claimed_at": "2026-11-02T02:14:31.591688+00:00"
   },
   {
     "post_name": "reel_wochenausblick_2026-11-01",
