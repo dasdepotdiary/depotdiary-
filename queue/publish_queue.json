@@ -4338,5 +4338,19 @@
     "claimed_at": "2026-10-31T13:48:17.938694+00:00",
     "published_at": "2026-10-31T13:49:20.434942+00:00",
     "media_id": "18145135753601913"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-01-11",
+    "action": "carousel",
+    "slide_count": 7,
+    "status": "pending",
+    "fire_at": "2026-11-02T01:00:00+01:00",
+    "caption": "Wochenausblick: Apple, Palantir, AMD, Midterms & Jobreport.\n\nMontag: Apple und Palantir nach Börsenschluss. Dienstag: US-Zwischenwahlen, AMD nach Börsenschluss. Mittwoch: Uber, McDonald's, Novo Nordisk vor Börsenstart, Qualcomm danach. Donnerstag: Airbnb und Cloudflare nach Börsenschluss. Freitag: US-Arbeitsmarktbericht für Oktober um 14:30 Uhr, dazu Berkshire Hathaway.\n\nKonsens-Schätzungen als reine Zahlen, ohne Wertung. Auf welchen Termin wartest du?\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-01-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-02T01:05:00+01:00"
   }
 ]

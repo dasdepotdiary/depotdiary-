@@ -952,5 +952,14 @@
     "excerpt": "Fünf Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
     "cover": "assets/posts/marktupdate_wochenrueckblick-31-10/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-01-11",
+    "title": "Diese Börsenwoche: Apple, Palantir, AMD, Midterms & Jobreport.",
+    "category": "marktupdate",
+    "date": "2026-11-02",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-01-11/slide_1.webp",
+    "url": null
   }
 ]

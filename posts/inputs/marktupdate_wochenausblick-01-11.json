@@ -1,0 +1,56 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Apple, Palantir, AMD, Midterms & Jobreport*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Montag: *Apple* und Palantir.",
+      "stats": [
+        ["Apple", "nach Börsenschluss · Konsens-EPS", "1,98 USD", "green"],
+        ["Palantir", "nach Börsenschluss · Konsens-EPS", "0,33 USD", "green"],
+        ["Marriott", "vor Börsenstart · Konsens-EPS", "2,87 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *Midterms* und AMD.",
+      "stats": [
+        ["Pfizer", "vor Börsenstart · Konsens-EPS", "0,72 USD", "green"],
+        ["Shopify", "vor Börsenstart · Konsens-EPS", "0,33 USD", "green"],
+        ["AMD", "nach Börsenschluss · Konsens-EPS", "1,68 USD", "green"],
+        ["Amgen", "nach Börsenschluss · Konsens-EPS", "5,74 USD", "green"]
+      ],
+      "note": "Dazu: US-Zwischenwahlen (Midterms) am 3.11. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Mittwoch: *Uber*, McDonald's, Qualcomm.",
+      "stats": [
+        ["Uber", "vor Börsenstart · Konsens-EPS", "0,94 USD", "green"],
+        ["McDonald's", "vor Börsenstart · Konsens-EPS", "3,36 USD", "green"],
+        ["Novo Nordisk", "vor Börsenstart · Konsens-EPS", "0,81 USD", "green"],
+        ["Qualcomm", "nach Börsenschluss · Konsens-EPS", "1,46 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *Airbnb* und Cloudflare.",
+      "stats": [
+        ["ConocoPhillips", "vor Börsenstart · Konsens-EPS", "2,97 USD", "green"],
+        ["Airbnb", "nach Börsenschluss · Konsens-EPS", "2,89 USD", "green"],
+        ["Cloudflare", "nach Börsenschluss · Konsens-EPS", "0,02 USD", "green"]
+      ],
+      "note": "Dazu: Rede von Beth Hammack (Präsidentin der Cleveland Fed). Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *US-Arbeitsmarktbericht*.",
+      "body": "Der Jobreport für Oktober erscheint um 14:30 Uhr deutscher Zeit. Außerdem legt Berkshire Hathaway Quartalszahlen vor (Konsens-EPS Klasse B: 5,91 USD)."
+    }
+  ],
+  "cta_headline": "Auf *welchen Termin* wartest du diese Woche?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+}
