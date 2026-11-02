@@ -55,12 +55,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "14:30 UHR", "headline": "US-Auftragseingaenge langlebiger Gueter (August).",
-         "body": "Das Handelsministerium veroeffentlicht die monatlichen Bestelldaten fuer Maschinen, Elektronik und Co."},
-        {"time": "16:00 UHR", "headline": "Uni-Michigan-Verbrauchervertrauen, finale September-Zahl.",
-         "body": "Die ueberarbeitete Stimmungsumfrage unter US-Konsumenten gilt als Fruehindikator fuer den privaten Konsum."},
-        {"time": "RUHIG", "headline": "Kaum grosse Quartalszahlen heute.",
-         "body": "Nach Costco und Darden gestern pausiert die US-Berichtssaison kurz -- die naechste grosse Welle folgt Anfang Oktober."},
+        {"time": "VOR BOERSENSTART", "headline": "Pfizer, Shopify und Eaton legen Quartalszahlen vor.",
+         "body": "Erwartet werden laut Konsens 0,72 USD (Pfizer) und 0,33 USD (Shopify) Gewinn je Aktie."},
+        {"time": "ABENDS", "headline": "US-Zwischenwahlen (Midterms).",
+         "body": "In den USA wird heute gewaehlt (Zwischenwahlen zum Kongress)."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "AMD, Amgen und Arista berichten.",
+         "body": "Konsens-Schaetzung AMD: 1,68 USD Gewinn je Aktie, Amgen: 5,74 USD."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
