@@ -4355,5 +4355,11 @@
     "status": "error",
     "fire_at": "2026-11-02T01:05:00+01:00",
     "error": "Folie 7/7 fehlgeschlagen, bereits veroeffentlicht: ['18423523366154672', '17912346609487685', '18116735831584140', '18153380446546941', '18134093146805490', '18133090108860378']: HTTPSConnectionPool(host='graph.facebook.com', port=443): Max retries exceeded with url: /v21.0/17841440893045606/media (Caused by ConnectTimeoutError(<HTTPSConnection(host='graph.facebook.com', port=443) at 0x1af5b1959a0>, 'Connection to graph.facebook.com timed out. (connect timeout=None)'))"
+  },
+  {
+    "post_name": "wochenausblick_2026-11-01_schluss",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-02T01:20:00+01:00"
   }
 ]
