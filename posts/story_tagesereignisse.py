@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Handel kurz nach Eroeffnung (Stand ca. 15 Uhr): S&P 500 -0,42% auf 7.711, Nasdaq -1,41% auf 26.175.",
-         "body": "Der DAX lag zeitgleich bei +1,37% auf 26.057 Punkten."},
-        {"headline": "Mastercard +4,6% nach Quartalszahlen.",
-         "body": "Nettoumsatz +14% auf 9,8 Mrd. USD, bereinigter Gewinn je Aktie 5,31 USD."},
-        {"headline": "Eli Lilly +7,7% auf rund 1.388 USD.",
-         "body": "Die Aktie notiert damit knapp unter ihrem 52-Wochen-Hoch von 1.408 USD."},
-        {"headline": "Salesforce -3,9% auf rund 233 USD.",
-         "body": "Der Kurs liegt rund 14% unter dem 52-Wochen-Hoch von 269 USD."},
-        {"headline": "Amazon legt heute nach US-Boersenschluss Quartalszahlen vor.",
-         "body": "Erwartet werden laut Konsens rund 1,96 USD Gewinn je Aktie bei etwa 202 Mrd. USD Umsatz."},
+        {"headline": "US-Boersen am Montag: S&P 500 -0,51% auf 7.541, Nasdaq -1,07% auf 25.164, Dow Jones +0,41% auf 51.984.",
+         "body": "Der DAX schloss 0,63% im Plus bei 25.981 Punkten."},
+        {"headline": "Der Ölpreis (WTI) fällt um rund 7% auf etwa 96 USD.",
+         "body": "Auslöser waren Signale für diplomatische Gespräche zwischen den USA und dem Iran."},
+        {"headline": "Apple nach Boersenschluss: Umsatz 114,5 Mrd. USD (+12%), Gewinn je Aktie 2,10 USD.",
+         "body": "Erwartet waren rund 113,4 Mrd. USD und etwa 2,00 USD; Greater China lag mit 17,5 Mrd. USD unter den Erwartungen."},
+        {"headline": "Palantir: Umsatz +96% auf 2,31 Mrd. USD, bereinigter Gewinn je Aktie 0,44 USD.",
+         "body": "Der Jahresausblick wurde angehoben; das US-Unternehmensgeschaeft liegt erstmals ueber dem Staatsgeschaeft."},
+        {"headline": "Morgen: US-Zwischenwahlen, AMD berichtet nach Boersenschluss.",
+         "body": "Vor Boersenstart legen unter anderem Pfizer und Shopify Zahlen vor."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
