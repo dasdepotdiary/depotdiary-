@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Mastercard", "ticker": "MA", "price": 638.52, "change_pct": 4.62, "as_of": "29.10. intraday", "pe": 35.10,
-         "forward_pe": 27.66, "peg": 1.59, "div_yield": 0.57, "earnings_growth": 18.6, "beta": 0.76,
-         "market_cap": "559,0 Mrd. USD", "volume": "1,1 Mio. (bisher)", "week52_low": 464.52, "week52_high": 641.57,
-         "note": "Quartalszahlen heute: Nettoumsatz +14% auf 9,8 Mrd. USD, bereinigter Gewinn je Aktie 5,31 USD. Kurs notiert nahe dem 52-Wochen-Hoch (641,57 USD).",
-         "csv_path": DATA_DIR / "MA.csv", "accent": OCHRE},
-        {"name": "Salesforce", "ticker": "CRM", "price": 232.62, "change_pct": -3.92, "as_of": "29.10. intraday", "pe": 21.26,
-         "forward_pe": 14.50, "peg": 0.86, "div_yield": 0.73, "earnings_growth": 86.9, "beta": 1.26,
-         "market_cap": "191,2 Mrd. USD", "volume": "1,7 Mio. (bisher)", "week52_low": 146.32, "week52_high": 269.11,
-         "note": "Kurs liegt rund 14% unter dem 52-Wochen-Hoch (269,11 USD) und rund 59% ueber dem 52-Wochen-Tief (146,32 USD).",
-         "csv_path": DATA_DIR / "CRM.csv", "accent": GREEN},
-        {"name": "Eli Lilly", "ticker": "LLY", "price": 1388.00, "change_pct": 7.74, "as_of": "29.10. intraday", "pe": 46.46,
-         "forward_pe": 29.23, "peg": 1.23, "div_yield": 0.54, "earnings_growth": 25.3, "beta": 0.45,
-         "market_cap": "1,23 Bio. USD", "volume": "1,6 Mio. (bisher)", "week52_low": 812.25, "week52_high": 1408.38,
-         "note": "Kurs notiert knapp unter dem 52-Wochen-Hoch (1.408,38 USD) und rund 71% ueber dem 52-Wochen-Tief (812,25 USD).",
-         "csv_path": DATA_DIR / "LLY.csv", "accent": CAT_TEAL},
+        {"name": "Uber", "ticker": "UBER", "price": 66.60, "change_pct": -0.16, "as_of": "03.11. Schluss", "pe": 14.61,
+         "forward_pe": 15.11, "peg": 5.80, "div_yield": 0, "earnings_growth": 76.7, "beta": 1.31,
+         "market_cap": "136,0 Mrd. USD", "volume": "21,2 Mio.", "week52_low": 64.04, "week52_high": 95.44,
+         "note": "Berichtet heute vor Boersenstart (Konsens-EPS 0,94 USD). Der Kurs liegt rund 30% unter dem 52-Wochen-Hoch (95,44 USD).",
+         "csv_path": DATA_DIR / "UBER.csv", "accent": OCHRE},
+        {"name": "Novo Nordisk", "ticker": "NVO", "price": 40.19, "change_pct": -0.64, "as_of": "03.11. Schluss", "pe": 9.83,
+         "forward_pe": 11.68, "peg": 4.55, "div_yield": 4.44, "earnings_growth": -20.8, "beta": 0.37,
+         "market_cap": "177,3 Mrd. USD", "volume": "11,7 Mio.", "week52_low": 35.12, "week52_high": 64.16,
+         "note": "Berichtet heute vor Boersenstart (Konsens-EPS 0,81 USD). Der Kurs liegt rund 37% unter dem 52-Wochen-Hoch (64,16 USD).",
+         "csv_path": DATA_DIR / "NVO.csv", "accent": GREEN},
+        {"name": "ARM Holdings", "ticker": "ARM", "price": 202.49, "change_pct": 2.90, "as_of": "03.11. Schluss", "pe": 208.75,
+         "forward_pe": 66.22, "peg": 1.62, "div_yield": 0, "earnings_growth": 107.7, "beta": 3.94,
+         "market_cap": "216,3 Mrd. USD", "volume": "3,3 Mio.", "week52_low": 100.02, "week52_high": 452.70,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 0,22 USD). Beta von 3,9: schwankt fast viermal so stark wie der Gesamtmarkt.",
+         "csv_path": DATA_DIR / "ARM.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
