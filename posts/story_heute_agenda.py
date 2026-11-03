@@ -55,12 +55,10 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VOR BOERSENSTART", "headline": "Pfizer, Shopify und Eaton legen Quartalszahlen vor.",
-         "body": "Erwartet werden laut Konsens 0,72 USD (Pfizer) und 0,33 USD (Shopify) Gewinn je Aktie."},
-        {"time": "ABENDS", "headline": "US-Zwischenwahlen (Midterms).",
-         "body": "In den USA wird heute gewaehlt (Zwischenwahlen zum Kongress)."},
-        {"time": "NACH BOERSENSCHLUSS", "headline": "AMD, Amgen und Arista berichten.",
-         "body": "Konsens-Schaetzung AMD: 1,68 USD Gewinn je Aktie, Amgen: 5,74 USD."},
+        {"time": "VOR BOERSENSTART", "headline": "Uber, McDonald's und Novo Nordisk berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Uber 0,94 USD, McDonald's 3,36 USD, Novo Nordisk 0,81 USD."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "Qualcomm und ARM legen Zahlen vor.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Qualcomm 1,46 USD, ARM 0,22 USD."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")

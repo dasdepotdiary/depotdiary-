@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Montag: S&P 500 -0,51% auf 7.541, Nasdaq -1,07% auf 25.164, Dow Jones +0,41% auf 51.984.",
-         "body": "Der DAX schloss 0,63% im Plus bei 25.981 Punkten."},
-        {"headline": "Der Ölpreis (WTI) fällt um rund 7% auf etwa 96 USD.",
-         "body": "Auslöser waren Signale für diplomatische Gespräche zwischen den USA und dem Iran."},
-        {"headline": "Apple nach Boersenschluss: Umsatz 114,5 Mrd. USD (+12%), Gewinn je Aktie 2,10 USD.",
-         "body": "Erwartet waren rund 113,4 Mrd. USD und etwa 2,00 USD; Greater China lag mit 17,5 Mrd. USD unter den Erwartungen."},
-        {"headline": "Palantir: Umsatz +96% auf 2,31 Mrd. USD, bereinigter Gewinn je Aktie 0,44 USD.",
-         "body": "Der Jahresausblick wurde angehoben; das US-Unternehmensgeschaeft liegt erstmals ueber dem Staatsgeschaeft."},
-        {"headline": "Morgen: US-Zwischenwahlen, AMD berichtet nach Boersenschluss.",
-         "body": "Vor Boersenstart legen unter anderem Pfizer und Shopify Zahlen vor."},
+        {"headline": "US-Boersen am Dienstag: S&P 500 +0,36% auf 7.569, Nasdaq +0,83% auf 25.372, Dow Jones -0,38% auf 51.787.",
+         "body": "Der DAX schloss 0,45% im Minus bei 25.865 Punkten."},
+        {"headline": "Shopify -8,7% nach Quartalszahlen.",
+         "body": "Das Unternehmen hatte seine Zahlen vor Boersenstart veroeffentlicht."},
+        {"headline": "AMD nach Boersenschluss: Umsatz 13,4 Mrd. USD (+45%), Rechenzentrum +97%.",
+         "body": "Laut Berichten lagen die Erwartungen bei rund 13,1 Mrd. USD."},
+        {"headline": "Ölpreis (WTI) bei rund 97 USD (+0,3%), Gold -0,74% auf 3.940 USD.",
+         "body": "Nach dem deutlichen Ölpreis-Rueckgang vom Montag blieb der Preis stabil."},
+        {"headline": "Morgen: Uber, McDonald's und Novo Nordisk vor Boersenstart.",
+         "body": "Nach Boersenschluss folgen Qualcomm und ARM; Konsens-EPS Uber 0,94 USD, McDonald's 3,36 USD."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
