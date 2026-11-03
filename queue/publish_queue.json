@@ -4396,10 +4396,12 @@
   {
     "post_name": "heuteagenda_2026-11-03",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-03T09:30:00+01:00",
     "claimed_by": "runnervm48cm3-3141-e1e2c75f",
-    "claimed_at": "2026-11-03T09:42:59.782165+00:00"
+    "claimed_at": "2026-11-03T09:42:59.782165+00:00",
+    "published_at": "2026-11-03T09:43:09.573800+00:00",
+    "media_id": "18152038360518132"
   },
   {
     "post_name": "reel_apple_palantir_2026-11-02",
