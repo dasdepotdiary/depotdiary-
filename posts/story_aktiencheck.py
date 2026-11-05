@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Uber", "ticker": "UBER", "price": 66.60, "change_pct": -0.16, "as_of": "03.11. Schluss", "pe": 14.61,
-         "forward_pe": 15.11, "peg": 5.80, "div_yield": 0, "earnings_growth": 76.7, "beta": 1.31,
-         "market_cap": "136,0 Mrd. USD", "volume": "21,2 Mio.", "week52_low": 64.04, "week52_high": 95.44,
-         "note": "Berichtet heute vor Boersenstart (Konsens-EPS 0,94 USD). Der Kurs liegt rund 30% unter dem 52-Wochen-Hoch (95,44 USD).",
-         "csv_path": DATA_DIR / "UBER.csv", "accent": OCHRE},
-        {"name": "Novo Nordisk", "ticker": "NVO", "price": 40.19, "change_pct": -0.64, "as_of": "03.11. Schluss", "pe": 9.83,
-         "forward_pe": 11.68, "peg": 4.55, "div_yield": 4.44, "earnings_growth": -20.8, "beta": 0.37,
-         "market_cap": "177,3 Mrd. USD", "volume": "11,7 Mio.", "week52_low": 35.12, "week52_high": 64.16,
-         "note": "Berichtet heute vor Boersenstart (Konsens-EPS 0,81 USD). Der Kurs liegt rund 37% unter dem 52-Wochen-Hoch (64,16 USD).",
-         "csv_path": DATA_DIR / "NVO.csv", "accent": GREEN},
-        {"name": "ARM Holdings", "ticker": "ARM", "price": 202.49, "change_pct": 2.90, "as_of": "03.11. Schluss", "pe": 208.75,
-         "forward_pe": 66.22, "peg": 1.62, "div_yield": 0, "earnings_growth": 107.7, "beta": 3.94,
-         "market_cap": "216,3 Mrd. USD", "volume": "3,3 Mio.", "week52_low": 100.02, "week52_high": 452.70,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 0,22 USD). Beta von 3,9: schwankt fast viermal so stark wie der Gesamtmarkt.",
-         "csv_path": DATA_DIR / "ARM.csv", "accent": CAT_TEAL},
+        {"name": "Airbnb", "ticker": "ABNB", "price": 176.37, "change_pct": 5.64, "as_of": "04.11. Schluss", "pe": 39.07,
+         "forward_pe": 27.62, "peg": 1.43, "div_yield": 0, "earnings_growth": 27.1, "beta": 1.27,
+         "market_cap": "102,7 Mrd. USD", "volume": "5,7 Mio.", "week52_low": 110.81, "week52_high": 193.45,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 2,89 USD). Der Kurs liegt rund 9% unter dem 52-Wochen-Hoch (193,45 USD).",
+         "csv_path": DATA_DIR / "ABNB.csv", "accent": OCHRE},
+        {"name": "Cloudflare", "ticker": "NET", "price": 266.58, "change_pct": -2.57, "as_of": "04.11. Schluss", "pe": None,
+         "forward_pe": 144.38, "peg": 2.38, "div_yield": 0, "earnings_growth": None, "beta": 1.37,
+         "market_cap": "87,0 Mrd. USD", "volume": "3,4 Mio.", "week52_low": 158.83, "week52_high": 370.35,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 0,02 USD). Der Kurs liegt rund 28% unter dem 52-Wochen-Hoch (370,35 USD).",
+         "csv_path": DATA_DIR / "NET.csv", "accent": GREEN},
+        {"name": "Monster Beverage", "ticker": "MNST", "price": 48.75, "change_pct": 3.33, "as_of": "04.11. Schluss", "pe": 45.20,
+         "forward_pe": 37.25, "peg": 2.43, "div_yield": 0, "earnings_growth": 19.6, "beta": 0.51,
+         "market_cap": "95,6 Mrd. USD", "volume": "11,5 Mio.", "week52_low": 32.94, "week52_high": 50.17,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 0,30 USD). Der Kurs liegt rund 3% unter dem 52-Wochen-Hoch (50,17 USD).",
+         "csv_path": DATA_DIR / "MNST.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

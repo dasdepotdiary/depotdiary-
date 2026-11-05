@@ -55,10 +55,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VOR BOERSENSTART", "headline": "Uber, McDonald's und Novo Nordisk berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Uber 0,94 USD, McDonald's 3,36 USD, Novo Nordisk 0,81 USD."},
-        {"time": "NACH BOERSENSCHLUSS", "headline": "Qualcomm und ARM legen Zahlen vor.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Qualcomm 1,46 USD, ARM 0,22 USD."},
+        {"time": "VOR BOERSENSTART", "headline": "ConocoPhillips und Sony legen Zahlen vor.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: ConocoPhillips 2,97 USD, Sony 0,38 USD."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "Airbnb, Cloudflare und Monster Beverage berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Airbnb 2,89 USD, Cloudflare 0,02 USD, Monster 0,30 USD."},
+        {"time": "HEUTE", "headline": "Rede von Beth Hammack (Praesidentin der Cleveland Fed).",
+         "body": "Zentralbank-Stimmen werden im Markt mit Blick auf die naechste Zinssitzung am 9. Dezember beobachtet."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
