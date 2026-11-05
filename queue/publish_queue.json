@@ -4520,10 +4520,12 @@
   {
     "post_name": "tagesereignisse_2026-11-05_korrektur",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-05T23:00:00+01:00",
     "claimed_by": "Surface4RA-12552-a59a0aa5",
-    "claimed_at": "2026-11-05T23:06:19.206267+00:00"
+    "claimed_at": "2026-11-05T23:06:19.206267+00:00",
+    "published_at": "2026-11-05T23:06:36.403348+00:00",
+    "media_id": "17967638298206324"
   },
   {
     "post_name": "reel_alarm_crash_2026-11-05",
