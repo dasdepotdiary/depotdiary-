@@ -4481,10 +4481,12 @@
   {
     "post_name": "heuteagenda_2026-11-05",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-05T15:00:00+01:00",
     "claimed_by": "Surface4RA-12064-5815aad6",
-    "claimed_at": "2026-11-05T14:45:38.112065+00:00"
+    "claimed_at": "2026-11-05T14:45:38.112065+00:00",
+    "published_at": "2026-11-05T14:45:56.468288+00:00",
+    "media_id": "17936335173142067"
   },
   {
     "post_name": "aktiencheck_2026-11-05",
