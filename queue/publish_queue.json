@@ -4455,7 +4455,7 @@
     "post_name": "fachbegriff_2026-11-05",
     "action": "story",
     "status": "pending",
-    "fire_at": "2026-11-05T17:00:00+01:00"
+    "fire_at": "2026-11-05T15:00:00+01:00"
   },
   {
     "post_name": "reel_tech_marathon_2026-11-03",
@@ -4502,5 +4502,11 @@
       "18115003610270657",
       "17903970819378119"
     ]
+  },
+  {
+    "post_name": "tagesereignisse_2026-11-05",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-05T15:00:00+01:00"
   }
 ]
