@@ -4510,7 +4510,9 @@
   {
     "post_name": "tagesereignisse_2026-11-05",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-05T15:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-05T15:00:00+01:00",
+    "claimed_by": "Surface4RA-17024-98d16fb3",
+    "claimed_at": "2026-11-05T14:53:22.673279+00:00"
   }
 ]
