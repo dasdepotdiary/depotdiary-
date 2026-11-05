@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Mittwoch: S&P 500 -0,97% auf 7.614, Nasdaq -2,13% auf 25.189.",
-         "body": "Chip- und KI-nahe Werte standen unter Druck."},
-        {"headline": "Asien (Stand Donnerstag): KOSPI schliesst 5,3% im Minus bei 5.384, der Hang Seng legt rund 3,7% auf 24.797 zu.",
-         "body": "In Suedkorea belasteten vor allem chipnahe Werte."},
-        {"headline": "Qualcomm nach Zahlen: bereinigter Gewinn je Aktie 2,17 USD (Konsens 2,16), Umsatz -7% auf rund 10,4 Mrd. USD.",
-         "body": "Die Aktie gab nachboerslich deutlich nach; das Handy-Geschaeft sank um 26%."},
-        {"headline": "ARM: Umsatz +27% auf 1,44 Mrd. USD, bereinigter Gewinn je Aktie 0,52 USD (Konsens 0,48).",
-         "body": "Die Aktie gab nachboerslich um rund 3% bis 4% nach."},
-        {"headline": "Heute Abend: Airbnb, Cloudflare und Monster Beverage berichten.",
-         "body": "Konsens-EPS: Airbnb 2,89 USD, Cloudflare 0,02 USD, Monster 0,30 USD."},
+        {"headline": "US-Boersen am Donnerstag: S&P 500 -4,36% auf 7.354, Nasdaq -5,52% auf 24.315, Dow Jones -3,44% auf 51.523.",
+         "body": "Laut AP der schwaechste Tag des S&P 500 seit April 2025. Der DAX schloss vorher 0,43% im Minus."},
+        {"headline": "Chip- und KI-Werte brechen ein: Micron -17,5%, AMD -17,3%, Broadcom -10,4%, Nvidia -9,3%.",
+         "body": "Auch Tesla (-10,8%) und Palantir (-9,7%) verlieren deutlich."},
+        {"headline": "Der Angstindex VIX springt um rund 70% auf 28.",
+         "body": "Bitcoin verliert rund 6% auf etwa 75.600 USD."},
+        {"headline": "Als Gruende nennen Berichte Sorgen um den KI-Rechenzentrums-Ausbau und moegliche strengere KI-Regulierung.",
+         "body": "Hinzu kam die enttaeuschende Qualcomm-Prognose (Reuters, AP)."},
+        {"headline": "Korrektur zur Story von heute Mittag:",
+         "body": "Dort stand ein falscher Mittwochs-Stand. Der S&P 500 schloss am Mittwoch +1,58% bei 7.689."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
