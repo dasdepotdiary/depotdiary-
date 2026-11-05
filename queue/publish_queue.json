@@ -4454,10 +4454,12 @@
   {
     "post_name": "fachbegriff_2026-11-05",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-05T15:00:00+01:00",
     "claimed_by": "Surface4RA-17024-98d16fb3",
-    "claimed_at": "2026-11-05T14:53:03.006710+00:00"
+    "claimed_at": "2026-11-05T14:53:03.006710+00:00",
+    "published_at": "2026-11-05T14:53:20.410513+00:00",
+    "media_id": "17990875457880020"
   },
   {
     "post_name": "reel_tech_marathon_2026-11-03",
