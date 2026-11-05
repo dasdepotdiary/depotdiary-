@@ -4530,8 +4530,10 @@
   {
     "post_name": "reel_alarm_crash_2026-11-05",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-05T23:00:00+01:00",
-    "caption": "🚨 ALARM an den Börsen: der rotste Tag seit April 2025\n\n• S&P 500 −4,4 % auf 7.354 Punkte (laut AP schwächster Tag seit April 2025)\n• Nasdaq −5,5 %, Dow Jones −3,4 %\n• Micron −17,5 %, AMD −17,3 %, Broadcom −10,4 %, Nvidia −9,3 %, Tesla −10,8 %, Palantir −9,7 %\n• VIX +70 % auf 28, Bitcoin rund −6 %\n\nGenannte Gründe laut Reuters/AP: Sorgen um den Ausbau der KI-Rechenzentren, mögliche strengere KI-Regulierung nach den Zwischenwahlen, dazu die schwache Qualcomm-Prognose.\n\nWie gehst du mit so einem Tag um? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#börse #crash #nasdaq #aktien #ki #nvidia #finanzen #depotdiary"
+    "caption": "🚨 ALARM an den Börsen: der rotste Tag seit April 2025\n\n• S&P 500 −4,4 % auf 7.354 Punkte (laut AP schwächster Tag seit April 2025)\n• Nasdaq −5,5 %, Dow Jones −3,4 %\n• Micron −17,5 %, AMD −17,3 %, Broadcom −10,4 %, Nvidia −9,3 %, Tesla −10,8 %, Palantir −9,7 %\n• VIX +70 % auf 28, Bitcoin rund −6 %\n\nGenannte Gründe laut Reuters/AP: Sorgen um den Ausbau der KI-Rechenzentren, mögliche strengere KI-Regulierung nach den Zwischenwahlen, dazu die schwache Qualcomm-Prognose.\n\nWie gehst du mit so einem Tag um? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#börse #crash #nasdaq #aktien #ki #nvidia #finanzen #depotdiary",
+    "claimed_by": "Surface4RA-12552-a59a0aa5",
+    "claimed_at": "2026-11-05T23:06:38.783511+00:00"
   }
 ]
