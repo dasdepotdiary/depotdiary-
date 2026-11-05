@@ -4471,10 +4471,12 @@
   {
     "post_name": "tagesupdate_2026-11-05",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-05T15:00:00+01:00",
     "claimed_by": "Surface4RA-12064-5815aad6",
-    "claimed_at": "2026-11-05T14:45:18.424220+00:00"
+    "claimed_at": "2026-11-05T14:45:18.424220+00:00",
+    "published_at": "2026-11-05T14:45:35.573716+00:00",
+    "media_id": "18139949842638982"
   },
   {
     "post_name": "heuteagenda_2026-11-05",
