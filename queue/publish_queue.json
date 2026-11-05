@@ -4472,18 +4472,18 @@
     "post_name": "tagesupdate_2026-11-05",
     "action": "story",
     "status": "pending",
-    "fire_at": "2026-11-05T15:50:00+01:00"
+    "fire_at": "2026-11-05T15:00:00+01:00"
   },
   {
     "post_name": "heuteagenda_2026-11-05",
     "action": "story",
     "status": "pending",
-    "fire_at": "2026-11-05T15:50:00+01:00"
+    "fire_at": "2026-11-05T15:00:00+01:00"
   },
   {
     "post_name": "aktiencheck_2026-11-05",
     "action": "story_sequence",
     "status": "pending",
-    "fire_at": "2026-11-05T15:50:00+01:00"
+    "fire_at": "2026-11-05T15:00:00+01:00"
   }
 ]
