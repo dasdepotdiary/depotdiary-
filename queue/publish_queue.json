@@ -4481,8 +4481,10 @@
   {
     "post_name": "heuteagenda_2026-11-05",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-05T15:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-05T15:00:00+01:00",
+    "claimed_by": "Surface4RA-12064-5815aad6",
+    "claimed_at": "2026-11-05T14:45:38.112065+00:00"
   },
   {
     "post_name": "aktiencheck_2026-11-05",
