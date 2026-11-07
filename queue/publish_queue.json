@@ -4553,8 +4553,10 @@
   {
     "post_name": "marktupdate_wochenrueckblick-07-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-07T22:05:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-07T22:05:00+01:00",
+    "claimed_by": "Surface4RA-1876-f45b378f",
+    "claimed_at": "2026-11-07T21:33:23.574433+00:00"
   },
   {
     "post_name": "fachbegriff_2026-11-07",
