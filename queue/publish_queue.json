@@ -4542,9 +4542,11 @@
     "post_name": "marktupdate_wochenrueckblick-07-11",
     "action": "carousel",
     "slide_count": 8,
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-07T22:00:00+01:00",
-    "caption": "Diese Börsenwoche im Rückblick: Zahlen, Wahl und Ausverkauf.\n\nMo/Di: Apple (114,5 Mrd. $, +12 %), Palantir (+96 % auf 2,31 Mrd. $) und AMD (13,4 Mrd. $, +45 %) liefern. Donnerstag: S&P 500 −4,4 %, Nasdaq −5,5 % (laut AP schwächster Tag des S&P 500 seit April 2025). Freitag: leichte Erholung, der Jobreport zeigt 165.000 neue Stellen (erwartet: rund 59.000).\n\nWochenbilanz: S&P 500 −2,68 %, Nasdaq −3,37 %, Dow Jones −0,94 %.\n\nWelche Aktie hat dich diese Woche am meisten beschäftigt?\n\nKeine Anlageberatung – nur, was diese Woche wirklich passiert ist."
+    "caption": "Diese Börsenwoche im Rückblick: Zahlen, Wahl und Ausverkauf.\n\nMo/Di: Apple (114,5 Mrd. $, +12 %), Palantir (+96 % auf 2,31 Mrd. $) und AMD (13,4 Mrd. $, +45 %) liefern. Donnerstag: S&P 500 −4,4 %, Nasdaq −5,5 % (laut AP schwächster Tag des S&P 500 seit April 2025). Freitag: leichte Erholung, der Jobreport zeigt 165.000 neue Stellen (erwartet: rund 59.000).\n\nWochenbilanz: S&P 500 −2,68 %, Nasdaq −3,37 %, Dow Jones −0,94 %.\n\nWelche Aktie hat dich diese Woche am meisten beschäftigt?\n\nKeine Anlageberatung – nur, was diese Woche wirklich passiert ist.",
+    "claimed_by": "Surface4RA-1876-f45b378f",
+    "claimed_at": "2026-11-07T21:32:20.247336+00:00"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-07-11",
