@@ -4573,7 +4573,9 @@
   {
     "post_name": "fachbegriff_2026-11-07",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-07T22:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-07T22:10:00+01:00",
+    "claimed_by": "Surface4RA-1876-f45b378f",
+    "claimed_at": "2026-11-07T21:34:57.573515+00:00"
   }
 ]
