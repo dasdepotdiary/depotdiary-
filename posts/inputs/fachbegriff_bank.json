@@ -58,5 +58,10 @@
     "term": "Gewinn je Aktie (EPS)",
     "definition": "Der Gewinn eines Unternehmens geteilt durch die Zahl seiner Aktien. EPS steht fuer 'Earnings per Share' und ist die Kennzahl, die bei Quartalszahlen am haeufigsten genannt wird.",
     "example": "Bei 1 Mrd. USD Gewinn und 500 Mio. Aktien liegt der Gewinn je Aktie bei 2 USD."
+  },
+  "2026-11-07": {
+    "term": "Boersen-Korrektur",
+    "definition": "Ein Rueckgang eines Index oder einer Aktie um mindestens 10% vom letzten Hoch. Faellt der Kurs um mehr als 20%, spricht man ueblicherweise von einem Baerenmarkt.",
+    "example": "Berichten zufolge steht der Nasdaq nach dieser Woche in einer Korrektur -- eine Einordnung der Hoehe des Rueckgangs, keine Prognose."
   }
 }

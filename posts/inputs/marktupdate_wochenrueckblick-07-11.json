@@ -1,0 +1,49 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Zahlen, Wahl und Ausverkauf*.",
+  "hook_sub": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "*Apple, Palantir und AMD* liefern.",
+      "body": "Apple setzte 114,5 Mrd. USD um (+12%), Palantir wuchs um 96% auf 2,31 Mrd. USD und hob den Jahresausblick an. AMD meldete 13,4 Mrd. USD Umsatz (+45%)."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: der *Ausverkauf*.",
+      "body": "Der S&P 500 verlor 4,4%, der Nasdaq 5,5% -- laut AP der schwächste Tag des S&P 500 seit April 2025. Micron, AMD und Nvidia gaben zwischen 9 und 17% nach."
+    },
+    {
+      "type": "text",
+      "headline": "Die genannten *Gründe*.",
+      "body": "Berichte nennen Sorgen um den Ausbau der KI-Rechenzentren und eine mögliche strengere KI-Regulierung nach den US-Zwischenwahlen. Dazu kam die schwache Qualcomm-Prognose."
+    },
+    {
+      "type": "stats",
+      "headline": "Freitag: *Erholung* an der Börse.",
+      "stats": [
+        ["Nasdaq", "24.579 Punkte", "+1,09%", "green"],
+        ["S&P 500", "7.377 Punkte", "+0,31%", "green"],
+        ["Dow Jones", "51.286 Punkte", "-0,46%", "red"]
+      ],
+      "note": "Schlusskurse Freitag, 6.11."
+    },
+    {
+      "type": "text",
+      "headline": "Der *Jobreport* überrascht.",
+      "body": "Im Oktober entstanden in den USA 165.000 neue Stellen -- erwartet waren rund 59.000."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        ["S&P 500", "7.376,86 Punkte", "-2,68%", "red"],
+        ["Nasdaq", "24.579,43 Punkte", "-3,37%", "red"],
+        ["Dow Jones", "51.285,73 Punkte", "-0,94%", "red"]
+      ],
+      "note": "Schlusskurs Freitag 6.11. gegenüber Freitag 30.10. Laut AP die schwächste Woche für S&P 500 und Nasdaq seit Juni."
+    }
+  ],
+  "cta_headline": "Welche *Aktie* hat dich diese Woche am meisten beschäftigt?",
+  "cta_body": "Schreib es in die Kommentare. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}
