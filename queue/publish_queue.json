@@ -4595,11 +4595,13 @@
     "post_name": "marktupdate_wochenausblick-08-11",
     "action": "carousel",
     "slide_count": 7,
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-08T22:00:00+01:00",
     "caption": "Wochenausblick: Inflationsdaten, Cisco & Applied Materials.\n\nMontag: KKR, Constellation Energy, Occidental, Take-Two. Dienstag: US-Verbraucherpreise (Oktober), TransDigm, Sea, Petrobras. Mittwoch: ruhiger Berichtstag. Donnerstag: Cisco und Applied Materials nach Börsenschluss. Freitag: Erzeugerpreise (PPI), dazu mehrere Fed-Redner; nächste Zinsentscheidung am 9. Dezember.\n\nKonsens-Schätzungen als reine Zahlen, ohne Wertung. Auf welchen Termin wartest du?\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.",
     "claimed_by": "Surface4RA-656-40da2279",
-    "claimed_at": "2026-11-08T22:08:04.231142+00:00"
+    "claimed_at": "2026-11-08T22:08:04.231142+00:00",
+    "published_at": "2026-11-08T22:09:03.065860+00:00",
+    "media_id": "18127993294676284"
   },
   {
     "post_name": "marktupdate_wochenausblick-08-11",
