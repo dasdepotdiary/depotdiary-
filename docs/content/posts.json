@@ -970,5 +970,14 @@
     "excerpt": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
     "cover": "assets/posts/marktupdate_wochenrueckblick-07-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-08-11",
+    "title": "Diese Börsenwoche: Inflationsdaten, Cisco & Applied Materials.",
+    "category": "marktupdate",
+    "date": "2026-11-08",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-08-11/slide_1.webp",
+    "url": null
   }
 ]

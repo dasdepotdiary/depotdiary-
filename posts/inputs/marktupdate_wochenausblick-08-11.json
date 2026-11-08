@@ -1,0 +1,50 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Inflationsdaten, Cisco & Applied Materials*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Montag: *KKR* und Constellation Energy.",
+      "stats": [
+        ["KKR", "vor Börsenstart · Konsens-EPS", "1,41 USD", "green"],
+        ["Constellation Energy", "vor Börsenstart · Konsens-EPS", "3,90 USD", "green"],
+        ["Occidental Petroleum", "nach Börsenschluss · Konsens-EPS", "1,43 USD", "green"],
+        ["Take-Two", "nach Börsenschluss · Konsens-EPS", "0,49 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *US-Inflationsdaten*.",
+      "stats": [
+        ["TransDigm", "vor Börsenstart · Konsens-EPS", "11,43 USD", "green"],
+        ["Sea Limited", "vor Börsenstart · Konsens-EPS", "0,79 USD", "green"],
+        ["Petrobras", "nach Börsenschluss · Konsens-EPS", "1,38 USD", "green"]
+      ],
+      "note": "Dazu: Verbraucherpreise (CPI) für Oktober. Laut Vorschauen wird +0,3% zum Vormonat erwartet (Kernrate +0,2%)."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *ruhiger* Berichtstag.",
+      "body": "Nach Börsenschluss legt unter anderem Franco-Nevada Zahlen vor (Konsens-EPS 1,77 USD). Größere US-Namen sind an diesem Tag kaum dabei."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *Cisco* und Applied Materials.",
+      "stats": [
+        ["Brookfield", "vor Börsenstart · Konsens-EPS", "0,72 USD", "green"],
+        ["Cisco", "nach Börsenschluss · Konsens-EPS", "1,15 USD", "green"],
+        ["Applied Materials", "nach Börsenschluss · Konsens-EPS", "4,06 USD", "green"]
+      ],
+      "note": "Für Cisco wird laut Vorschau ein Umsatz von rund 18,1 Mrd. USD erwartet. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *Erzeugerpreise* und Fed-Stimmen.",
+      "body": "Die Erzeugerpreise (PPI) für Oktober stehen an. In der Woche sprechen mehrere Fed-Vertreter, darunter Waller und Jefferson. Die nächste Zinsentscheidung der Fed folgt am 9. Dezember."
+    }
+  ],
+  "cta_headline": "Auf *welchen Termin* wartest du diese Woche?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+}
