@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Donnerstag: S&P 500 -4,36% auf 7.354, Nasdaq -5,52% auf 24.315, Dow Jones -3,44% auf 51.523.",
-         "body": "Laut AP der schwaechste Tag des S&P 500 seit April 2025. Der DAX schloss vorher 0,43% im Minus."},
-        {"headline": "Chip- und KI-Werte brechen ein: Micron -17,5%, AMD -17,3%, Broadcom -10,4%, Nvidia -9,3%.",
-         "body": "Auch Tesla (-10,8%) und Palantir (-9,7%) verlieren deutlich."},
-        {"headline": "Der Angstindex VIX springt um rund 70% auf 28.",
-         "body": "Bitcoin verliert rund 6% auf etwa 75.600 USD."},
-        {"headline": "Als Gruende nennen Berichte Sorgen um den KI-Rechenzentrums-Ausbau und moegliche strengere KI-Regulierung.",
-         "body": "Hinzu kam die enttaeuschende Qualcomm-Prognose (Reuters, AP)."},
-        {"headline": "Korrektur zur Story von heute Mittag:",
-         "body": "Dort stand ein falscher Mittwochs-Stand. Der S&P 500 schloss am Mittwoch +1,58% bei 7.689."},
+        {"headline": "US-Boersen am Montag: S&P 500 +2,35% auf 7.550, Nasdaq +2,74% auf 25.253, Dow Jones +2,15% auf 52.390.",
+         "body": "Der DAX schloss 1,73% im Plus bei 26.267 Punkten, der Angstindex VIX fiel um 22% auf 19,9."},
+        {"headline": "Der Oelpreis (WTI) faellt um 4,9% auf rund 86 USD.",
+         "body": "Berichten zufolge stuetzten Hoffnungen auf Gespraeche zwischen den USA und dem Iran die Maerkte."},
+        {"headline": "AMD springt um 13,3% nach einer Analysten-Hochstufung.",
+         "body": "Dazu kam laut Berichten die Auswahl eines AMD-Chips durch Google Cloud."},
+        {"headline": "Nvidia verliert 4,3%, nachdem der Verwaltungsrat eine Untersuchung zu CEO Jensen Huang eingeleitet hat.",
+         "body": "Huang bleibt vorerst im Amt; der Kurs schloss bei rund 179 USD."},
+        {"headline": "Morgen: US-Inflationsdaten (Verbraucherpreise Oktober).",
+         "body": "Laut Vorschauen wird +0,3% zum Vormonat erwartet (Kernrate +0,2%)."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
