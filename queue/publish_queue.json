@@ -4625,8 +4625,10 @@
   {
     "post_name": "reel_nvidia_huang_2026-11-09",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-09T23:00:00+01:00",
-    "caption": "Nvidia: Verwaltungsrat untersucht Vorgänge um CEO Jensen Huang\n\n• Huang räumte Mitarbeitern gegenüber eine Affäre ein und entschuldigte sich (CNN, Axios, TechCrunch)\n• Medienberichten zufolge steht der Verdacht im Raum, dass die Frau für einen chinesischen Geheimdienst gearbeitet hat – bestätigt ist das nicht\n• Der Verwaltungsrat hat eine unabhängige Untersuchung mit externen Anwälten eingeleitet und sieht keinen Hinweis auf Gefährdung von nationaler Sicherheit oder Unternehmensgeheimnissen\n• Huang bleibt vorerst CEO, eine Entscheidung über seine Position gibt es bisher nicht\n• Aktie am Montag −4,3 % auf rund 179 $, Nasdaq +2,7 %\n\nQuellen: CNN, CNBC, Axios, TechCrunch (8./9.11.2026). Stimme: KI-generiert. Keine Anlageberatung – nur berichtete Fakten, keine Bewertung.\n\n#nvidia #börse #aktien #nachrichten #finanzen #depotdiary"
+    "caption": "Nvidia: Verwaltungsrat untersucht Vorgänge um CEO Jensen Huang\n\n• Huang räumte Mitarbeitern gegenüber eine Affäre ein und entschuldigte sich (CNN, Axios, TechCrunch)\n• Medienberichten zufolge steht der Verdacht im Raum, dass die Frau für einen chinesischen Geheimdienst gearbeitet hat – bestätigt ist das nicht\n• Der Verwaltungsrat hat eine unabhängige Untersuchung mit externen Anwälten eingeleitet und sieht keinen Hinweis auf Gefährdung von nationaler Sicherheit oder Unternehmensgeheimnissen\n• Huang bleibt vorerst CEO, eine Entscheidung über seine Position gibt es bisher nicht\n• Aktie am Montag −4,3 % auf rund 179 $, Nasdaq +2,7 %\n\nQuellen: CNN, CNBC, Axios, TechCrunch (8./9.11.2026). Stimme: KI-generiert. Keine Anlageberatung – nur berichtete Fakten, keine Bewertung.\n\n#nvidia #börse #aktien #nachrichten #finanzen #depotdiary",
+    "claimed_by": "Surface4RA-944-e85e4d87",
+    "claimed_at": "2026-11-09T22:43:18.310229+00:00"
   }
 ]
