@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Montag: S&P 500 +2,35% auf 7.550, Nasdaq +2,74% auf 25.253, Dow Jones +2,15% auf 52.390.",
-         "body": "Der DAX schloss 1,73% im Plus bei 26.267 Punkten, der Angstindex VIX fiel um 22% auf 19,9."},
-        {"headline": "Der Oelpreis (WTI) faellt um 4,9% auf rund 86 USD.",
-         "body": "Berichten zufolge stuetzten Hoffnungen auf Gespraeche zwischen den USA und dem Iran die Maerkte."},
-        {"headline": "AMD springt um 13,3% nach einer Analysten-Hochstufung.",
-         "body": "Dazu kam laut Berichten die Auswahl eines AMD-Chips durch Google Cloud."},
-        {"headline": "Nvidia verliert 4,3%, nachdem der Verwaltungsrat eine Untersuchung zu CEO Jensen Huang eingeleitet hat.",
-         "body": "Huang bleibt vorerst im Amt; der Kurs schloss bei rund 179 USD."},
-        {"headline": "Morgen: US-Inflationsdaten (Verbraucherpreise Oktober).",
-         "body": "Laut Vorschauen wird +0,3% zum Vormonat erwartet (Kernrate +0,2%)."},
+        {"headline": "US-Boersen am Dienstag: S&P 500 -0,38% auf 7.521, Nasdaq -0,74% auf 25.066, Dow Jones -0,30% auf 52.232.",
+         "body": "Der DAX schloss 0,31% im Plus bei 26.347 Punkten."},
+        {"headline": "US-Inflation im Oktober: Verbraucherpreise +0,4% zum Vormonat (erwartet +0,3%), Kernrate +0,3% (erwartet +0,2%).",
+         "body": "Die Rendite 10-jaehriger US-Staatsanleihen stieg auf rund 4,98%."},
+        {"headline": "Nvidia verliert 5,5% auf rund 169 USD.",
+         "body": "Am Montag hatte der Verwaltungsrat die Untersuchung zu CEO Jensen Huang bekannt gegeben."},
+        {"headline": "Fed-Gouverneur Waller hatte laut Berichten gesagt, bei einer Kerninflation ab 0,3% sei eine Zinsanhebung um 0,5 Punkte zu erwaegen.",
+         "body": "Die naechste Zinsentscheidung der Fed steht am 9. Dezember an."},
+        {"headline": "Gold -1,86% auf 4.038 USD, Bitcoin -1,7% auf 73.920 USD.",
+         "body": "Der Oelpreis (WTI) lag stabil bei rund 86 USD."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

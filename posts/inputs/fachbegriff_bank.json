@@ -63,5 +63,10 @@
     "term": "Boersen-Korrektur",
     "definition": "Ein Rueckgang eines Index oder einer Aktie um mindestens 10% vom letzten Hoch. Faellt der Kurs um mehr als 20%, spricht man ueblicherweise von einem Baerenmarkt.",
     "example": "Berichten zufolge steht der Nasdaq nach dieser Woche in einer Korrektur -- eine Einordnung der Hoehe des Rueckgangs, keine Prognose."
+  },
+  "2026-11-10": {
+    "term": "Kerninflation",
+    "definition": "Die Inflationsrate ohne die besonders schwankenden Preise fuer Energie und Lebensmittel. Zentralbanken schauen darauf, weil sie den zugrunde liegenden Preisdruck besser zeigt.",
+    "example": "Im Oktober stieg die Kernrate in den USA laut Bericht um 0,3% zum Vormonat -- die Gesamtrate um 0,4%."
   }
 }
