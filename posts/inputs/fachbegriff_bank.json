@@ -68,5 +68,10 @@
     "term": "Kerninflation",
     "definition": "Die Inflationsrate ohne die besonders schwankenden Preise fuer Energie und Lebensmittel. Zentralbanken schauen darauf, weil sie den zugrunde liegenden Preisdruck besser zeigt.",
     "example": "Im Oktober stieg die Kernrate in den USA laut Bericht um 0,3% zum Vormonat -- die Gesamtrate um 0,4%."
+  },
+  "2026-11-11": {
+    "term": "VIX (Angstindex)",
+    "definition": "Der VIX misst, wie stark der Optionsmarkt in den naechsten 30 Tagen Schwankungen beim S&P 500 erwartet. Steigt er, rechnen Anleger mit mehr Unsicherheit; faellt er, mit weniger.",
+    "example": "Der VIX sprang am 5. November um rund 70% auf 28 und lag am Mittwoch bei rund 17,5."
   }
 }

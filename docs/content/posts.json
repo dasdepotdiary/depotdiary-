@@ -979,5 +979,14 @@
     "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
     "cover": "assets/posts/marktupdate_wochenausblick-08-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_halbzeit-11-11",
+    "title": "Halbzeit der Börsenwoche: Rebound, Inflation, KI-Comeback.",
+    "category": "marktupdate",
+    "date": "2026-11-11",
+    "excerpt": "Was von Montag bis Mittwoch passiert ist -- in fünf Zahlen.",
+    "cover": "assets/posts/marktupdate_halbzeit-11-11/slide_1.webp",
+    "url": null
   }
 ]

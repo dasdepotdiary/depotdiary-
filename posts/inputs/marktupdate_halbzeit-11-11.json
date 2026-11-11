@@ -1,0 +1,39 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Halbzeit der Börsenwoche: *Rebound, Inflation, KI-Comeback*.",
+  "hook_sub": "Was von Montag bis Mittwoch passiert ist -- in fünf Zahlen.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag: *kräftiger Rebound*.",
+      "body": "Nach dem Ausverkauf der Vorwoche legte der S&P 500 um 2,35% zu, der Nasdaq um 2,74%. AMD sprang um 13,3%, Nvidia verlor 4,3% nach der Untersuchung zu CEO Jensen Huang."
+    },
+    {
+      "type": "text",
+      "headline": "Dienstag: *Inflation* etwas höher.",
+      "body": "Die US-Verbraucherpreise stiegen im Oktober um 0,4% zum Vormonat (erwartet: 0,3%), die Kernrate um 0,3% (erwartet: 0,2%). Der S&P 500 gab 0,38% nach."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *KI-Aktien* kehren zurück.",
+      "body": "Nach den Zahlen von CoreWeave stiegen Chip- und KI-Werte: S&P 500 +1,31%, Nasdaq +1,60%. AMD legte um 7,3% zu, Apple schloss laut Berichten auf einem Rekordhoch."
+    },
+    {
+      "type": "stats",
+      "headline": "Seit Freitag: *drei Handelstage*.",
+      "stats": [
+        ["Nasdaq", "25.466 Punkte", "+3,61%", "green"],
+        ["S&P 500", "7.619 Punkte", "+3,29%", "green"],
+        ["Dow Jones", "52.486 Punkte", "+2,34%", "green"]
+      ],
+      "note": "Schlusskurs Mittwoch 11.11. gegenüber Freitag 6.11."
+    },
+    {
+      "type": "text",
+      "headline": "Als Nächstes: *Cisco* und die Erzeugerpreise.",
+      "body": "Donnerstag nach Börsenschluss berichten Cisco und Applied Materials, am Freitag folgen die Erzeugerpreise für Oktober."
+    }
+  ],
+  "cta_headline": "Wie bewertest du *die Woche bisher*?",
+  "cta_body": "Schreib es in die Kommentare. Keine Prognose, keine Bewertung -- nur, was wirklich passiert ist."
+}

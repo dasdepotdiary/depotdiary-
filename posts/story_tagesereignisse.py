@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Dienstag: S&P 500 -0,38% auf 7.521, Nasdaq -0,74% auf 25.066, Dow Jones -0,30% auf 52.232.",
-         "body": "Der DAX schloss 0,31% im Plus bei 26.347 Punkten."},
-        {"headline": "US-Inflation im Oktober: Verbraucherpreise +0,4% zum Vormonat (erwartet +0,3%), Kernrate +0,3% (erwartet +0,2%).",
-         "body": "Die Rendite 10-jaehriger US-Staatsanleihen stieg auf rund 4,98%."},
-        {"headline": "Nvidia verliert 5,5% auf rund 169 USD.",
-         "body": "Am Montag hatte der Verwaltungsrat die Untersuchung zu CEO Jensen Huang bekannt gegeben."},
-        {"headline": "Fed-Gouverneur Waller hatte laut Berichten gesagt, bei einer Kerninflation ab 0,3% sei eine Zinsanhebung um 0,5 Punkte zu erwaegen.",
-         "body": "Die naechste Zinsentscheidung der Fed steht am 9. Dezember an."},
-        {"headline": "Gold -1,86% auf 4.038 USD, Bitcoin -1,7% auf 73.920 USD.",
-         "body": "Der Oelpreis (WTI) lag stabil bei rund 86 USD."},
+        {"headline": "US-Boersen am Mittwoch: S&P 500 +1,31% auf 7.619, Nasdaq +1,60% auf 25.466, Dow Jones +0,49% auf 52.486.",
+         "body": "Der DAX schloss 1,20% im Plus bei 26.663 Punkten, der Angstindex VIX fiel um 10% auf 17,5."},
+        {"headline": "Chip- und KI-Werte erholen sich nach den Zahlen von CoreWeave.",
+         "body": "AMD +7,3%, Nvidia +2,9%; Microsoft verlor 2,3%."},
+        {"headline": "Apple +2,0% auf rund 356 USD.",
+         "body": "Laut Berichten ein neues Rekordhoch."},
+        {"headline": "Cisco +2,7% vor den Quartalszahlen am Donnerstag.",
+         "body": "Konsens-EPS 1,15 USD, erwarteter Umsatz rund 18,1 Mrd. USD (nach Boersenschluss)."},
+        {"headline": "Gold -1,0% auf 3.991 USD, Bitcoin +1,0% auf 74.436 USD.",
+         "body": "Der Oelpreis (WTI) lag bei rund 86 USD, die 10-jaehrige US-Rendite bei etwa 5,0%."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")

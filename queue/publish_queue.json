@@ -4666,5 +4666,31 @@
     "fire_at": "2026-11-10T22:00:00+01:00",
     "published_at": "2026-11-10T22:43:48.477775+00:00",
     "media_id": "17943618528388655"
+  },
+  {
+    "post_name": "marktupdate_halbzeit-11-11",
+    "action": "carousel",
+    "slide_count": 7,
+    "status": "pending",
+    "fire_at": "2026-11-11T22:00:00+01:00",
+    "caption": "Halbzeit der Börsenwoche: Rebound, Inflation, KI-Comeback.\n\nMontag: S&P 500 +2,35 %, Nasdaq +2,74 %, AMD +13,3 %, Nvidia −4,3 % nach der Untersuchung zu CEO Jensen Huang. Dienstag: US-Verbraucherpreise +0,4 % (erwartet +0,3 %), Kernrate +0,3 % (erwartet +0,2 %). Mittwoch: Chip- und KI-Werte erholen sich nach den Zahlen von CoreWeave, S&P 500 +1,31 %, Nasdaq +1,60 %.\n\nSeit Freitag: Nasdaq +3,61 %, S&P 500 +3,29 %, Dow Jones +2,34 %. Als Nächstes: Cisco und Applied Materials (Donnerstag), Erzeugerpreise (Freitag).\n\nWie bewertest du die Woche bisher?\n\nKeine Anlageberatung – nur, was wirklich passiert ist."
+  },
+  {
+    "post_name": "marktupdate_halbzeit-11-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-11T22:05:00+01:00"
+  },
+  {
+    "post_name": "tagesereignisse_2026-11-11",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-11T22:10:00+01:00"
+  },
+  {
+    "post_name": "fachbegriff_2026-11-11",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-11T22:10:00+01:00"
   }
 ]
