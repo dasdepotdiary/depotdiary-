@@ -4756,9 +4756,11 @@
   {
     "post_name": "fachbegriff_2026-11-12",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T13:00:00+01:00",
     "claimed_by": "Surface4RA-24444-5cafe3e4",
-    "claimed_at": "2026-11-12T13:08:20.851324+00:00"
+    "claimed_at": "2026-11-12T13:08:20.851324+00:00",
+    "published_at": "2026-11-12T13:08:33.625516+00:00",
+    "media_id": "18131140519868148"
   }
 ]
