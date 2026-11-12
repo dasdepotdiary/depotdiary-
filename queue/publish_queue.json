@@ -4897,8 +4897,10 @@
   {
     "post_name": "damalsinvestiert_2026-11-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-12T14:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-12T14:00:00+01:00",
+    "claimed_by": "runnervmwuk1x-3585-36596c61",
+    "claimed_at": "2026-11-12T19:10:18.943451+00:00"
   },
   {
     "post_name": "format_aktienquiz_2026-11-12",
