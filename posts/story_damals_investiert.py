@@ -220,16 +220,16 @@ def slide_damals(entries, years_ago, brightness=0.34):
 
 def main():
     entries = [
-        {"name": "Netflix", "ticker": "NFLX", "start_date": "09/2023", "start_price": 37.76, "end_price": 71.79,
-         "invested": 1000, "csv_path": DATA_DIR / "NFLX_3y.csv", "accent": RED},
-        {"name": "Eli Lilly", "ticker": "LLY", "start_date": "09/2023", "start_price": 526.2055, "end_price": 1152.93,
-         "invested": 1000, "csv_path": DATA_DIR / "LLY_3y.csv", "accent": TEAL},
-        {"name": "Uber", "ticker": "UBER", "start_date": "09/2023", "start_price": 45.99, "end_price": 70.50,
-         "invested": 1000, "csv_path": DATA_DIR / "UBER_3y.csv", "accent": SKYBLUE},
-        {"name": "Robinhood", "ticker": "HOOD", "start_date": "09/2023", "start_price": 9.81, "end_price": 119.82,
-         "invested": 1000, "csv_path": DATA_DIR / "HOOD_3y.csv", "accent": GOLD},
-        {"name": "Solana", "ticker": "SOL", "start_date": "09/2023", "start_price": 21.4624, "end_price": 113.23,
-         "invested": 1000, "csv_path": DATA_DIR / "SOL_3y.csv", "accent": "#C77D3B"},
+        {"name": "Micron", "ticker": "MU", "start_date": "11/2023", "start_price": 74.07, "end_price": 811.30,
+         "invested": 1000, "csv_path": DATA_DIR / "MU_3y.csv", "accent": GOLD},
+        {"name": "Nvidia", "ticker": "NVDA", "start_date": "11/2023", "start_price": 48.48, "end_price": 173.73,
+         "invested": 1000, "csv_path": DATA_DIR / "NVDA_3y.csv", "accent": TEAL},
+        {"name": "Cisco", "ticker": "CSCO", "start_date": "11/2023", "start_price": 48.42, "end_price": 100.76,
+         "invested": 1000, "csv_path": DATA_DIR / "CSCO_3y.csv", "accent": SKYBLUE},
+        {"name": "Novo Nordisk", "ticker": "NVO", "start_date": "11/2023", "start_price": 92.40, "end_price": 41.09,
+         "invested": 1000, "csv_path": DATA_DIR / "NVO_3y.csv", "accent": RED},
+        {"name": "Nike", "ticker": "NKE", "start_date": "11/2023", "start_price": 97.19, "end_price": 38.32,
+         "invested": 1000, "csv_path": DATA_DIR / "NKE_3y.csv", "accent": "#C77D3B"},
     ]
     img = slide_damals(entries, years_ago=3, brightness=0.85)
     img.save(TT_DIR / "slide_1.png")

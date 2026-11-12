@@ -50,18 +50,36 @@ GRAY = "#4A4560"
 OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
-    {"q": "Was misst der Verbraucherpreisindex (CPI)?",
-     "options": ["Die Preisentwicklung eines typischen Warenkorbs", "Die Hoehe der Aktienkurse", "Den Leitzins der Notenbank"],
-     "correct": 0,
-     "explain": "Der CPI misst, wie sich die Preise fuer Waren und Dienstleistungen des Alltags veraendern -- die wichtigste Inflationszahl in den USA."},
-    {"q": "Was passiert tendenziell mit Aktien, wenn die Zinsen steigen?",
-     "options": ["Sie profitieren immer", "Sie stehen oft unter Druck, weil Anleihen attraktiver werden", "Nichts, Zinsen sind egal"],
-     "correct": 1,
-     "explain": "Hoehere Zinsen machen Kredite teurer und sichere Anleihen im Vergleich attraktiver. Das belastet Aktien oft -- eine Tendenz, keine Regel."},
-    {"q": "Was ist ein Quartalsbericht?",
-     "options": ["Eine Meldung ueber Umsatz und Gewinn der letzten drei Monate", "Eine Prognose der Notenbank", "Die Dividende fuer das ganze Jahr"],
-     "correct": 0,
-     "explain": "Boersennotierte Unternehmen melden alle drei Monate Umsatz, Gewinn und Ausblick. Daran orientieren sich viele Anleger."},
+    {
+        "q": "Was misst die Kerninflation?",
+        "options": [
+            "Die Inflation ohne Energie und Lebensmittel",
+            "Die Inflation nur bei Immobilien",
+            "Die Inflation in der Eurozone",
+        ],
+        "correct": 0,
+        "explain": "Energie- und Lebensmittelpreise schwanken stark. Ohne sie zeigt die Kernrate den zugrunde liegenden Preisdruck besser.",
+    },
+    {
+        "q": "Ab wann spricht man bei einem Index von einer Korrektur?",
+        "options": [
+            "Ab 1% unter dem letzten Hoch",
+            "Ab 10% unter dem letzten Hoch",
+            "Ab 50% unter dem letzten Hoch",
+        ],
+        "correct": 1,
+        "explain": "Ab mindestens 10% Rueckgang vom letzten Hoch spricht man von einer Korrektur, ab mehr als 20% ueblicherweise von einem Baerenmarkt.",
+    },
+    {
+        "q": "Was bedeutet die Abkuerzung EPS bei Quartalszahlen?",
+        "options": [
+            "Earnings per Share (Gewinn je Aktie)",
+            "Equity Price Spread",
+            "Estimated Profit Score",
+        ],
+        "correct": 0,
+        "explain": "EPS ist der Gewinn eines Unternehmens geteilt durch die Zahl seiner Aktien -- die Kennzahl, die bei Quartalszahlen am haeufigsten genannt wird.",
+    },
 ]
 
 

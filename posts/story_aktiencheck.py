@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Applied Materials", "ticker": "AMAT", "price": 395.08, "change_pct": 6.05, "as_of": "11.11. Schluss", "pe": 34.09,
-         "forward_pe": 21.17, "peg": 0.84, "div_yield": 0.54, "earnings_growth": 42.7, "beta": 1.67,
-         "market_cap": "313,5 Mrd. USD", "volume": "7,4 Mio.", "week52_low": 203.40, "week52_high": 739.67,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 4,06 USD). Der Kurs liegt rund 47% unter dem 52-Wochen-Hoch (739,67 USD).",
-         "csv_path": DATA_DIR / "AMAT.csv", "accent": OCHRE},
-        {"name": "Brookfield", "ticker": "BN", "price": 42.06, "change_pct": -0.78, "as_of": "11.11. Schluss", "pe": None,
-         "forward_pe": None, "peg": 1.27, "div_yield": 0.67, "earnings_growth": 33.8, "beta": 1.83,
-         "market_cap": "93,9 Mrd. USD", "volume": "3,7 Mio.", "week52_low": 35.61, "week52_high": 49.57,
-         "note": "Berichtet heute vor US-Boersenstart (Konsens-EPS 0,72 USD). Der Kurs liegt rund 15% unter dem 52-Wochen-Hoch (49,57 USD).",
-         "csv_path": DATA_DIR / "BN.csv", "accent": GREEN},
-        {"name": "Nebius", "ticker": "NBIS", "price": 154.69, "change_pct": 15.44, "as_of": "11.11. Schluss", "pe": None,
-         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.54,
-         "market_cap": "39,3 Mrd. USD", "volume": "39,8 Mio.", "week52_low": 73.52, "week52_high": 299.86,
-         "note": "Berichtet heute vor US-Boersenstart (Konsens-EPS -0,61 USD). Der Kurs stieg am Mittwoch um 15,4%, liegt aber rund 48% unter dem 52-Wochen-Hoch (299,86 USD).",
-         "csv_path": DATA_DIR / "NBIS.csv", "accent": CAT_TEAL},
+        {"name": "Cisco", "ticker": "CSCO", "price": 100.76, "change_pct": 2.66, "as_of": "11.11. Schluss", "pe": 30.26,
+         "forward_pe": 17.92, "peg": 0.93, "div_yield": 1.67, "earnings_growth": 51.3, "beta": 1.00,
+         "market_cap": "397,3 Mrd. USD", "volume": "19,1 Mio.", "week52_low": 72.80, "week52_high": 130.37,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,15 USD, erwarteter Umsatz rund 18,1 Mrd. USD). Der Kurs liegt rund 23% unter dem 52-Wochen-Hoch (130,37 USD).",
+         "csv_path": DATA_DIR / "CSCO.csv", "accent": OCHRE},
+        {"name": "Nvidia", "ticker": "NVDA", "price": 173.73, "change_pct": 2.87, "as_of": "11.11. Schluss", "pe": 21.96,
+         "forward_pe": 10.91, "peg": 0.21, "div_yield": 0.58, "earnings_growth": 125.9, "beta": 2.25,
+         "market_cap": "4,20 Bio. USD", "volume": "313,4 Mio.", "week52_low": 164.27, "week52_high": 243.37,
+         "note": "Der Verwaltungsrat untersucht Vorgaenge um CEO Jensen Huang; die Aktie verlor am Montag 4,3% und am Dienstag 5,5%. Der Kurs liegt rund 29% unter dem 52-Wochen-Hoch (243,37 USD).",
+         "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
+        {"name": "AMD", "ticker": "AMD", "price": 552.90, "change_pct": 7.32, "as_of": "11.11. Schluss", "pe": 118.14,
+         "forward_pe": 31.26, "peg": 0.50, "div_yield": 0, "earnings_growth": 95.3, "beta": 2.54,
+         "market_cap": "906,8 Mrd. USD", "volume": "44,7 Mio.", "week52_low": 188.22, "week52_high": 658.52,
+         "note": "Am Montag +13,3% nach einer Analysten-Hochstufung, am Mittwoch +7,3%. Beta von 2,5: schwankt gut doppelt so stark wie der Gesamtmarkt.",
+         "csv_path": DATA_DIR / "AMD.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
