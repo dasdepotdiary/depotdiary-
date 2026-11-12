@@ -4721,8 +4721,10 @@
   {
     "post_name": "heuteagenda_2026-11-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-12T13:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-12T13:00:00+01:00",
+    "claimed_by": "Surface4RA-24444-5cafe3e4",
+    "claimed_at": "2026-11-12T13:07:12.486363+00:00"
   },
   {
     "post_name": "tagesupdate_2026-11-12",
