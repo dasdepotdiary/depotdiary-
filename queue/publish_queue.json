@@ -4762,5 +4762,68 @@
     "claimed_at": "2026-11-12T13:08:20.851324+00:00",
     "published_at": "2026-11-12T13:08:33.625516+00:00",
     "media_id": "18131140519868148"
+  },
+  {
+    "post_name": "reel_kerninflation_2026-11-12",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-12T18:30:00+01:00",
+    "caption": "Kerninflation einfach erklärt – mit den frischen US-Zahlen 📊\n\n• Kerninflation = Inflation ohne Energie und Lebensmittel\n• Oktober: Verbraucherpreise +0,4 % zum Vormonat (erwartet +0,3 %)\n• Kernrate +0,3 % (erwartet +0,2 %)\n• Laut Berichten: Fed-Gouverneur Waller – bei einer Kernrate ab 0,3 % sei eine Anhebung um 0,5 Punkte zu erwägen\n• Nächste Fed-Entscheidung: 9. Dezember\n\nKanntest du den Unterschied? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#inflation #kerninflation #fed #börse #finanzen #depotdiary"
+  },
+  {
+    "post_name": "reel_achterbahn_2026-11-12",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-13T12:00:00+01:00",
+    "caption": "7 Börsentage in 60 Sekunden – die Achterbahn der Woche 🎢\n\n• Do 5.11.: S&P 500 −4,4 % (laut AP schwächster Tag seit April 2025), VIX +70 % auf 28\n• Fr: +0,3 %, Jobreport 165.000 (erwartet ca. 59.000)\n• Mo: S&P 500 +2,35 %, Nasdaq +2,74 %, AMD +13 %\n• Di: Inflation etwas höher als erwartet, S&P 500 −0,4 %\n• Mi: S&P 500 +1,3 % auf 7.619 nach den CoreWeave-Zahlen\n• Seit dem Tief vom Donnerstag: rund +3,6 %\n\nWas war für dich der verrückteste Tag? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#börse #sp500 #nasdaq #vix #finanzen #depotdiary"
+  },
+  {
+    "post_name": "reel_vix_2026-11-12",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-13T18:00:00+01:00",
+    "caption": "Der VIX – der Angstindex – in 45 Sekunden 😮\n\n• Misst die vom Optionsmarkt erwartete Schwankung des S&P 500 für die nächsten 30 Tage\n• Steigt er: mehr Unsicherheit. Fällt er: weniger\n• 5.11.: +70 % auf 28 – am Mittwoch darauf rund 17,5\n• Er sagt etwas über die Schwankung, nicht über die Richtung – und ist kein Kauf-/Verkaufssignal\n\nKanntest du den VIX schon? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#vix #angstindex #börse #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_kerninflation",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-12T18:40:00+01:00"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_achterbahn",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-13T12:10:00+01:00"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_vix",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-13T18:10:00+01:00"
+  },
+  {
+    "post_name": "format_alltagsmarken",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-12T14:00:00+01:00"
+  },
+  {
+    "post_name": "format_finanzwerte",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-13T17:00:00+01:00"
+  },
+  {
+    "post_name": "format_ki_infrastruktur",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-14T17:00:00+01:00"
+  },
+  {
+    "post_name": "format_ecommerce_zahlungen",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-15T17:00:00+01:00"
   }
 ]
