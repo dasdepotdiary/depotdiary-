@@ -55,12 +55,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VOR BOERSENSTART", "headline": "ConocoPhillips und Sony legen Zahlen vor.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: ConocoPhillips 2,97 USD, Sony 0,38 USD."},
-        {"time": "NACH BOERSENSCHLUSS", "headline": "Airbnb, Cloudflare und Monster Beverage berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Airbnb 2,89 USD, Cloudflare 0,02 USD, Monster 0,30 USD."},
-        {"time": "HEUTE", "headline": "Rede von Beth Hammack (Praesidentin der Cleveland Fed).",
-         "body": "Zentralbank-Stimmen werden im Markt mit Blick auf die naechste Zinssitzung am 9. Dezember beobachtet."},
+        {"time": "VOR US-BOERSENSTART", "headline": "Brookfield und Nebius legen Zahlen vor.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Brookfield 0,72 USD, Nebius -0,61 USD."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "Cisco und Applied Materials berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Cisco 1,15 USD (Umsatz rund 18,1 Mrd. USD), Applied Materials 4,06 USD."},
+        {"time": "MORGEN", "headline": "US-Erzeugerpreise (PPI) fuer Oktober.",
+         "body": "Nach den Verbraucherpreisen am Dienstag folgt am Freitag die zweite grosse Inflationszahl der Woche."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")

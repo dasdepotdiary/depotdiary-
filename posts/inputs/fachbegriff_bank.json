@@ -73,5 +73,10 @@
     "term": "VIX (Angstindex)",
     "definition": "Der VIX misst, wie stark der Optionsmarkt in den naechsten 30 Tagen Schwankungen beim S&P 500 erwartet. Steigt er, rechnen Anleger mit mehr Unsicherheit; faellt er, mit weniger.",
     "example": "Der VIX sprang am 5. November um rund 70% auf 28 und lag am Mittwoch bei rund 17,5."
+  },
+  "2026-11-12": {
+    "term": "Erzeugerpreisindex (PPI)",
+    "definition": "Der PPI misst, wie sich die Preise entwickeln, die Hersteller fuer ihre Waren erhalten -- noch bevor sie beim Verbraucher ankommen. Er gilt als Vorlaeufer fuer die Verbraucherpreise.",
+    "example": "Der PPI fuer Oktober wird in den USA am Freitag veroeffentlicht."
   }
 }
