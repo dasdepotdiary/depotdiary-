@@ -4805,10 +4805,17 @@
   {
     "post_name": "format_alltagsmarken",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T14:00:00+01:00",
     "claimed_by": "Surface4RA-27964-630dc20f",
-    "claimed_at": "2026-11-12T13:29:53.009746+00:00"
+    "claimed_at": "2026-11-12T13:29:53.009746+00:00",
+    "published_at": "2026-11-12T13:30:28.305740+00:00",
+    "media_id": "18033489983686455",
+    "media_ids": [
+      "18033489983686455",
+      "18121442206777495",
+      "18037030430897172"
+    ]
   },
   {
     "post_name": "format_finanzwerte",
