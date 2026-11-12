@@ -4834,5 +4834,31 @@
     "action": "story_sequence",
     "status": "pending",
     "fire_at": "2026-11-15T17:00:00+01:00"
+  },
+  {
+    "post_name": "reel_korrektur_baerenmarkt_2026-11-12",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-14T11:00:00+01:00",
+    "caption": "Korrektur oder Bärenmarkt? Der Unterschied 📉\n\n• Korrektur: Index mindestens 10 % unter dem letzten Hoch\n• Bärenmarkt: üblicherweise mehr als 20 % Rückgang\n• Diese Woche: Nasdaq laut Berichten in einer Korrektur, −5,5 % am Donnerstag, seit Freitag bis Mittwoch +3,6 %\n• Die Begriffe beschreiben nur die Höhe eines Rückgangs, nicht den weiteren Verlauf\n\nSchon mal eine Korrektur im Depot erlebt? 👇\n\nStimme: KI-generiert. Keine Anlageberatung.\n\n#börse #korrektur #bärenmarkt #nasdaq #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_korrektur",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-14T11:10:00+01:00"
+  },
+  {
+    "post_name": "reel_zinseszins_2026-11-12",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-15T11:00:00+01:00",
+    "caption": "Zinseszins in 45 Sekunden – mit Rechenbeispiel 📈\n\nReines Rechenbeispiel (keine Prognose): 10.000 € bei angenommenen 7 % pro Jahr\n• nach 10 Jahren ≈ 19.700 €\n• nach 20 Jahren ≈ 38.700 €\n• nach 30 Jahren ≈ 76.100 € (mehr als das Siebenfache)\n\nEchte Renditen schwanken, Kosten und Steuern kommen dazu – das Beispiel zeigt nur den Effekt.\n\nWie lange investierst du schon? 👇\n\nStimme: KI-generiert. Keine Anlageberatung.\n\n#zinseszins #investieren #etf #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_zinseszins",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-15T11:10:00+01:00"
   }
 ]
