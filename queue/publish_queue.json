@@ -4907,8 +4907,10 @@
   {
     "post_name": "format_aktienquiz_2026-11-12",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-12T17:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-12T17:30:00+01:00",
+    "claimed_by": "runnervmwuk1x-3585-36596c61",
+    "claimed_at": "2026-11-12T19:10:29.891792+00:00"
   },
   {
     "post_name": "deepdive_poll_2026-11-12",
