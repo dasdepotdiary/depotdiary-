@@ -4864,10 +4864,12 @@
   {
     "post_name": "zitat_2026-11-12",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T14:00:00+01:00",
     "claimed_by": "Surface4RA-23056-f6e50a0b",
-    "claimed_at": "2026-11-12T13:45:16.110791+00:00"
+    "claimed_at": "2026-11-12T13:45:16.110791+00:00",
+    "published_at": "2026-11-12T13:45:26.569022+00:00",
+    "media_id": "18419056330080797"
   },
   {
     "post_name": "aktiencheck_2026-11-12_chips",
