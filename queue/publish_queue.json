@@ -4741,10 +4741,17 @@
   {
     "post_name": "aktiencheck_2026-11-12",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T13:00:00+01:00",
     "claimed_by": "Surface4RA-24444-5cafe3e4",
-    "claimed_at": "2026-11-12T13:07:40.507781+00:00"
+    "claimed_at": "2026-11-12T13:07:40.507781+00:00",
+    "published_at": "2026-11-12T13:08:16.690830+00:00",
+    "media_id": "18094129844220027",
+    "media_ids": [
+      "18094129844220027",
+      "18111733762919651",
+      "17991081234063907"
+    ]
   },
   {
     "post_name": "fachbegriff_2026-11-12",
