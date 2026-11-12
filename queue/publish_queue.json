@@ -4937,10 +4937,12 @@
   {
     "post_name": "zitat_2026-11-12b",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T19:30:00+01:00",
     "claimed_by": "runnervmwuk1x-3585-36596c61",
-    "claimed_at": "2026-11-12T19:14:16.720608+00:00"
+    "claimed_at": "2026-11-12T19:14:16.720608+00:00",
+    "published_at": "2026-11-12T19:14:55.808731+00:00",
+    "media_id": "18116370059171660"
   },
   {
     "post_name": "depotfrage_2026-11-12",
