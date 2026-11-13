@@ -4788,9 +4788,11 @@
   {
     "post_name": "reel_vix_2026-11-12",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-13T18:00:00+01:00",
-    "caption": "Der VIX – der Angstindex – in 45 Sekunden 😮\n\n• Misst die vom Optionsmarkt erwartete Schwankung des S&P 500 für die nächsten 30 Tage\n• Steigt er: mehr Unsicherheit. Fällt er: weniger\n• 5.11.: +70 % auf 28 – am Mittwoch darauf rund 17,5\n• Er sagt etwas über die Schwankung, nicht über die Richtung – und ist kein Kauf-/Verkaufssignal\n\nKanntest du den VIX schon? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#vix #angstindex #börse #finanzen #depotdiary"
+    "caption": "Der VIX – der Angstindex – in 45 Sekunden 😮\n\n• Misst die vom Optionsmarkt erwartete Schwankung des S&P 500 für die nächsten 30 Tage\n• Steigt er: mehr Unsicherheit. Fällt er: weniger\n• 5.11.: +70 % auf 28 – am Mittwoch darauf rund 17,5\n• Er sagt etwas über die Schwankung, nicht über die Richtung – und ist kein Kauf-/Verkaufssignal\n\nKanntest du den VIX schon? 👇\n\nStimme: KI-generiert. Keine Anlageberatung – nur Fakten.\n\n#vix #angstindex #börse #finanzen #depotdiary",
+    "claimed_by": "Surface4RA-26024-99236c19",
+    "claimed_at": "2026-11-13T20:49:33.376080+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_reel_kerninflation",
