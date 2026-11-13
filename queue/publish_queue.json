@@ -4844,10 +4844,17 @@
   {
     "post_name": "format_finanzwerte",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-13T17:00:00+01:00",
     "claimed_by": "runnervmccnms-2460-0c1d163b",
-    "claimed_at": "2026-11-13T21:38:05.051239+00:00"
+    "claimed_at": "2026-11-13T21:38:05.051239+00:00",
+    "published_at": "2026-11-13T21:39:01.459253+00:00",
+    "media_id": "18055840913613929",
+    "media_ids": [
+      "18055840913613929",
+      "17946590847368183",
+      "18130677179311184"
+    ]
   },
   {
     "post_name": "format_ki_infrastruktur",
