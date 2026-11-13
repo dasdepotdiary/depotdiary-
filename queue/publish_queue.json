@@ -4819,10 +4819,12 @@
   {
     "post_name": "story_post_ankuendigung_reel_vix",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-13T18:10:00+01:00",
     "claimed_by": "Surface4RA-26024-99236c19",
-    "claimed_at": "2026-11-13T20:51:06.395378+00:00"
+    "claimed_at": "2026-11-13T20:51:06.395378+00:00",
+    "published_at": "2026-11-13T20:51:19.237353+00:00",
+    "media_id": "17900860455398452"
   },
   {
     "post_name": "format_alltagsmarken",
