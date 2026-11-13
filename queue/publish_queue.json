@@ -4844,8 +4844,10 @@
   {
     "post_name": "format_finanzwerte",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-13T17:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-13T17:00:00+01:00",
+    "claimed_by": "Surface4RA-26024-99236c19",
+    "claimed_at": "2026-11-13T20:51:21.700181+00:00"
   },
   {
     "post_name": "format_ki_infrastruktur",
