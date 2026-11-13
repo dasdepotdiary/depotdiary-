@@ -4805,8 +4805,10 @@
   {
     "post_name": "story_post_ankuendigung_reel_achterbahn",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-13T12:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-13T12:10:00+01:00",
+    "claimed_by": "runnervmccnms-2227-fccd5639",
+    "claimed_at": "2026-11-13T15:32:52.437984+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_reel_vix",
