@@ -4947,9 +4947,11 @@
   {
     "post_name": "depotfrage_2026-11-12",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-12T20:30:00+01:00",
     "claimed_by": "runnervmwuk1x-2236-183da366",
-    "claimed_at": "2026-11-13T00:34:25.944162+00:00"
+    "claimed_at": "2026-11-13T00:34:25.944162+00:00",
+    "published_at": "2026-11-13T00:35:04.940992+00:00",
+    "media_id": "18342626506275649"
   }
 ]
