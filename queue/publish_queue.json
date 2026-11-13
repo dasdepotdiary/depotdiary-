@@ -4947,7 +4947,9 @@
   {
     "post_name": "depotfrage_2026-11-12",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-12T20:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-12T20:30:00+01:00",
+    "claimed_by": "runnervmwuk1x-2236-183da366",
+    "claimed_at": "2026-11-13T00:34:25.944162+00:00"
   }
 ]
