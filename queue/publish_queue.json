@@ -4991,7 +4991,7 @@
     "post_name": "marktupdate_wochenrueckblick-14-11",
     "action": "carousel",
     "status": "pending",
-    "fire_at": "2026-11-14T17:00:00+01:00",
+    "fire_at": "2026-11-14T16:00:00+01:00",
     "slide_count": 9,
     "caption": "Diese Börsenwoche im Rückblick: Rebound, Inflation, Nvidia ohne Huang.\n\nMo: S&P 500 +2,35 %, Nasdaq +2,74 %. Di: US-Verbraucherpreise +0,4 % (erwartet +0,3 %), Kernrate +0,3 % (erwartet +0,2 %). Mi: KI-Werte erholen sich nach CoreWeave. Do: Nvidia teilt den Rücktritt von CEO Jensen Huang mit, Finanzchefin Colette Kress führt kommissarisch; nach Börsenschluss Cisco (Umsatz 18,5 Mrd. $, EPS 1,40) und Applied Materials (Umsatz 10,41 Mrd. $, EPS 4,16). Fr: Erzeugerpreise +0,3 % (erwartet +0,4 %), Cisco −6,2 %, AMD −8,8 %.\n\nWochenbilanz (Schluss 13.11. vs. 6.11.): DAX +3,60 %, S&P 500 +2,51 %, Nasdaq +2,27 %, Dow Jones +2,07 %.\n\nWas war für dich das Thema der Woche?\n\nKeine Anlageberatung – nur, was diese Woche wirklich passiert ist."
   },
@@ -4999,7 +4999,7 @@
     "post_name": "marktupdate_wochenrueckblick-14-11",
     "action": "story_sequence",
     "status": "pending",
-    "fire_at": "2026-11-14T17:05:00+01:00"
+    "fire_at": "2026-11-14T16:00:00+01:00"
   },
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
