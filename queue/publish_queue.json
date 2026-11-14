@@ -5044,10 +5044,20 @@
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-14T20:05:00+01:00",
     "claimed_by": "Surface4RA-30000-f783ddda",
-    "claimed_at": "2026-11-14T19:19:18.412571+00:00"
+    "claimed_at": "2026-11-14T19:19:18.412571+00:00",
+    "published_at": "2026-11-14T19:20:12.665914+00:00",
+    "media_id": "18205407523326653",
+    "media_ids": [
+      "18205407523326653",
+      "18239335504319996",
+      "18083675180367150",
+      "18107389127279894",
+      "18165044083536512",
+      "18112819724176396"
+    ]
   },
   {
     "post_name": "marktupdate_wochenausblick-15-11",
