@@ -4871,11 +4871,13 @@
   {
     "post_name": "reel_korrektur_baerenmarkt_2026-11-12",
     "action": "reel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-14T11:00:00+01:00",
     "caption": "Korrektur oder Bärenmarkt? Der Unterschied 📉\n\n• Korrektur: Index mindestens 10 % unter dem letzten Hoch\n• Bärenmarkt: üblicherweise mehr als 20 % Rückgang\n• Diese Woche: Nasdaq laut Berichten in einer Korrektur, −5,5 % am Donnerstag, seit Freitag bis Mittwoch +3,6 %\n• Die Begriffe beschreiben nur die Höhe eines Rückgangs, nicht den weiteren Verlauf\n\nSchon mal eine Korrektur im Depot erlebt? 👇\n\nStimme: KI-generiert. Keine Anlageberatung.\n\n#börse #korrektur #bärenmarkt #nasdaq #finanzen #depotdiary",
     "claimed_by": "Surface4RA-31604-f5b46a96",
-    "claimed_at": "2026-11-14T14:57:15.352208+00:00"
+    "claimed_at": "2026-11-14T14:57:15.352208+00:00",
+    "published_at": "2026-11-14T14:58:26.426540+00:00",
+    "media_id": "17911339449578760"
   },
   {
     "post_name": "story_post_ankuendigung_reel_korrektur",
