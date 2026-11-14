@@ -5076,10 +5076,12 @@
   {
     "post_name": "zitat_2026-11-14",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-14T20:00:00+01:00",
     "claimed_by": "Surface4RA-29692-366592eb",
-    "claimed_at": "2026-11-14T19:22:58.297550+00:00"
+    "claimed_at": "2026-11-14T19:22:58.297550+00:00",
+    "published_at": "2026-11-14T19:23:09.050037+00:00",
+    "media_id": "18120168404010050"
   },
   {
     "post_name": "fachbegriff_2026-11-14",
