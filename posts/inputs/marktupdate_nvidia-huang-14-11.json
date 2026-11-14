@@ -1,0 +1,35 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Nvidia ohne Jensen Huang: *was bisher bekannt ist*.",
+  "hook_sub": "Vier Punkte zur Lage bei Nvidia -- nur berichtete Fakten.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Zuerst: die *Untersuchung*.",
+      "body": "Am 8. November räumte Jensen Huang gegenüber Mitarbeitern eine Affäre ein. Der Verwaltungsrat von Nvidia leitete eine unabhängige Untersuchung ein. Die Aktie verlor am Montag 4,3% und am Dienstag 5,5%."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: der *Rücktritt*.",
+      "body": "Nvidia teilte mit, dass Huang als CEO zurücktritt. Finanzchefin Colette Kress führt das Unternehmen kommissarisch. Eine Nachfolge ist nicht benannt, der Verwaltungsrat beginnt die Suche."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Aktie* in dieser Woche.",
+      "stats": [
+        ["Montag 9.11.", "Schlusskurs 178,67 USD", "-4,27%", "red"],
+        ["Dienstag 10.11.", "Schlusskurs 168,89 USD", "-5,47%", "red"],
+        ["Donnerstag 12.11.", "Schlusskurs 166,19 USD", "-4,34%", "red"],
+        ["Freitag 13.11.", "Schlusskurs 162,85 USD", "-2,01%", "red"]
+      ],
+      "note": "Mittwoch: +2,87%. Woche gesamt: -12,75% (Schlusskurs 13.11. gegenüber 6.11.)."
+    },
+    {
+      "type": "text",
+      "headline": "Nächster Termin: *Dienstag*.",
+      "body": "Am 17. November nach Börsenschluss legt Nvidia Quartalszahlen vor -- die ersten seit dem Rücktritt. Der Konsens liegt laut Nasdaq-Terminkalender bei 2,49 USD Gewinn je Aktie."
+    }
+  ],
+  "cta_headline": "Wie viel Gewicht hat *der Chef* für ein Unternehmen?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur berichtete Fakten, keine Bewertung."
+}

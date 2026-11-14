@@ -1,0 +1,56 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Diese Börsenwoche im Rückblick: *Rebound, Inflation, Nvidia ohne Huang*.",
+  "hook_sub": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag: *kräftiger Rebound*.",
+      "body": "Nach dem Ausverkauf der Vorwoche stieg der S&P 500 um 2,35%, der Nasdaq um 2,74%. AMD sprang um 13,3%, Nvidia verlor 4,3% nach der Untersuchung zu CEO Jensen Huang."
+    },
+    {
+      "type": "text",
+      "headline": "Dienstag: *Inflation* etwas höher.",
+      "body": "Die US-Verbraucherpreise stiegen im Oktober um 0,4% zum Vormonat (erwartet: 0,3%), die Kernrate um 0,3% (erwartet: 0,2%). Der S&P 500 gab 0,38% nach."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *KI-Aktien* kommen zurück.",
+      "body": "Nach den Zahlen von CoreWeave legten Chip- und KI-Werte zu: S&P 500 +1,31%, Nasdaq +1,60%. Apple schloss laut Berichten auf einem Rekordhoch."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag: *Nvidia ohne Huang*.",
+      "body": "Nvidia teilte mit, dass Jensen Huang als CEO zurücktritt. CFO Colette Kress führt das Unternehmen kommissarisch, eine Nachfolge ist nicht benannt. Die Aktie verlor 4,3%."
+    },
+    {
+      "type": "stats",
+      "headline": "Nach Börsenschluss: *Cisco* und Applied Materials.",
+      "stats": [
+        ["Cisco", "Umsatz 18,5 Mrd. USD (+24%)", "EPS 1,40", "green"],
+        ["Cisco", "Konsens-EPS", "1,32", "grey"],
+        ["Applied Materials", "Umsatz 10,41 Mrd. USD (+53%)", "EPS 4,16", "green"],
+        ["Applied Materials", "Konsens-EPS", "ca. 4,05", "grey"]
+      ],
+      "note": "Bereinigte Ergebnisse je Aktie (non-GAAP). Cisco hob die Jahresprognose an."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *Erzeugerpreise* und Gewinnmitnahmen.",
+      "body": "Die US-Erzeugerpreise stiegen im Oktober um 0,3% zum Vormonat (erwartet: 0,4%), zum Vorjahr um 6,5%. Cisco gab 6,2% nach, AMD 8,8%. S&P 500 -0,40%, Nasdaq -0,91%."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        ["DAX", "26.749,95 Punkte", "+3,60%", "green"],
+        ["S&P 500", "7.561,67 Punkte", "+2,51%", "green"],
+        ["Nasdaq", "25.136,27 Punkte", "+2,27%", "green"],
+        ["Dow Jones", "52.347,55 Punkte", "+2,07%", "green"]
+      ],
+      "note": "Schlusskurs Freitag 13.11. gegenüber Freitag 6.11."
+    }
+  ],
+  "cta_headline": "Was war für dich *das Thema der Woche*?",
+  "cta_body": "Schreib es in die Kommentare. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}

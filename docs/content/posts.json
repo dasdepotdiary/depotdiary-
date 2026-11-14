@@ -988,5 +988,32 @@
     "excerpt": "Was von Montag bis Mittwoch passiert ist -- in fünf Zahlen.",
     "cover": "assets/posts/marktupdate_halbzeit-11-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-14-11",
+    "title": "Diese Börsenwoche im Rückblick: Rebound, Inflation, Nvidia ohne Huang.",
+    "category": "marktupdate",
+    "date": "2026-11-14",
+    "excerpt": "Sechs Themen, die die Märkte zwischen Montag und Freitag bewegt haben.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-14-11/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_nvidia-huang-14-11",
+    "title": "Nvidia ohne Jensen Huang: was bisher bekannt ist.",
+    "category": "marktupdate",
+    "date": "2026-11-14",
+    "excerpt": "Vier Punkte zur Lage bei Nvidia -- nur berichtete Fakten.",
+    "cover": "assets/posts/marktupdate_nvidia-huang-14-11/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-15-11",
+    "title": "Diese Börsenwoche: Nvidia, Walmart, Home Depot & Fed-Protokoll.",
+    "category": "marktupdate",
+    "date": "2026-11-14",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-15-11/slide_1.webp",
+    "url": null
   }
 ]

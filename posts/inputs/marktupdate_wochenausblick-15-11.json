@@ -1,0 +1,56 @@
+{
+  "eyebrow": "WOCHENAUSBLICK",
+  "hook": "Diese Börsenwoche: *Nvidia, Walmart, Home Depot & Fed-Protokoll*.",
+  "hook_sub": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Montag: *Baidu* und Tyson Foods.",
+      "stats": [
+        ["Baidu", "vor US-Börsenstart · Konsens-EPS", "0,57 USD", "green"],
+        ["Tyson Foods", "vor US-Börsenstart · Konsens-EPS", "0,65 USD", "green"],
+        ["Aramark", "vor US-Börsenstart · Konsens-EPS", "0,75 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Dienstag: *Nvidia*, Home Depot, Disney.",
+      "stats": [
+        ["Home Depot", "vor Börsenstart · Konsens-EPS", "3,87 USD", "green"],
+        ["Disney", "vor Börsenstart · Konsens-EPS", "1,67 USD", "green"],
+        ["Nvidia", "nach Börsenschluss · Konsens-EPS", "2,49 USD", "green"]
+      ],
+      "note": "Nvidia berichtet erstmals seit dem Rücktritt von CEO Jensen Huang. Dazu: US-Einzelhandelsumsätze für Oktober (erwartet: +0,2% zum Vormonat)."
+    },
+    {
+      "type": "stats",
+      "headline": "Mittwoch: *Handel* und Fed-Protokoll.",
+      "stats": [
+        ["Lowe's", "vor Börsenstart · Konsens-EPS", "2,86 USD", "green"],
+        ["Target", "vor Börsenstart · Konsens-EPS", "2,03 USD", "green"],
+        ["TJX", "vor Börsenstart · Konsens-EPS", "1,33 USD", "green"],
+        ["Palo Alto Networks", "nach Börsenschluss · Konsens-EPS", "0,52 USD", "green"]
+      ],
+      "note": "Am Nachmittag veröffentlicht die Fed das Protokoll ihrer Oktober-Sitzung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "stats",
+      "headline": "Donnerstag: *Walmart* und Alibaba.",
+      "stats": [
+        ["Walmart", "vor Börsenstart · Konsens-EPS", "0,64 USD", "green"],
+        ["Alibaba", "vor Börsenstart · Konsens-EPS", "1,56 USD", "green"],
+        ["Intuit", "nach Börsenschluss · Konsens-EPS", "2,47 USD", "green"],
+        ["Ross Stores", "nach Börsenschluss · Konsens-EPS", "1,82 USD", "green"]
+      ],
+      "note": "Konsens-Schätzung als reine Zahl, ohne Wertung. Quelle: Nasdaq-Terminkalender."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *ruhiger* Berichtstag.",
+      "body": "Mit BJ's Wholesale (Konsens-EPS 1,22 USD, vor Börsenstart) berichten nur wenige größere US-Namen. Die nächste Zinsentscheidung der Fed folgt am 9. Dezember."
+    }
+  ],
+  "cta_headline": "Auf *welchen Termin* wartest du diese Woche?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur Termine, die ich mir angeschaut habe."
+}

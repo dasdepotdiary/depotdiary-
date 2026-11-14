@@ -4986,5 +4986,47 @@
     "claimed_at": "2026-11-13T00:34:25.944162+00:00",
     "published_at": "2026-11-13T00:35:04.940992+00:00",
     "media_id": "18342626506275649"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-14-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-14T17:00:00+01:00",
+    "slide_count": 9,
+    "caption": "Diese Börsenwoche im Rückblick: Rebound, Inflation, Nvidia ohne Huang.\n\nMo: S&P 500 +2,35 %, Nasdaq +2,74 %. Di: US-Verbraucherpreise +0,4 % (erwartet +0,3 %), Kernrate +0,3 % (erwartet +0,2 %). Mi: KI-Werte erholen sich nach CoreWeave. Do: Nvidia teilt den Rücktritt von CEO Jensen Huang mit, Finanzchefin Colette Kress führt kommissarisch; nach Börsenschluss Cisco (Umsatz 18,5 Mrd. $, EPS 1,40) und Applied Materials (Umsatz 10,41 Mrd. $, EPS 4,16). Fr: Erzeugerpreise +0,3 % (erwartet +0,4 %), Cisco −6,2 %, AMD −8,8 %.\n\nWochenbilanz (Schluss 13.11. vs. 6.11.): DAX +3,60 %, S&P 500 +2,51 %, Nasdaq +2,27 %, Dow Jones +2,07 %.\n\nWas war für dich das Thema der Woche?\n\nKeine Anlageberatung – nur, was diese Woche wirklich passiert ist."
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-14-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-14T17:05:00+01:00"
+  },
+  {
+    "post_name": "marktupdate_nvidia-huang-14-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-14T20:00:00+01:00",
+    "slide_count": 6,
+    "caption": "Nvidia ohne Jensen Huang: was bisher bekannt ist.\n\n• 8.11.: Huang räumt gegenüber Mitarbeitern eine Affäre ein, der Verwaltungsrat leitet eine unabhängige Untersuchung ein\n• 12.11.: Nvidia teilt mit, dass Huang als CEO zurücktritt – Finanzchefin Colette Kress führt kommissarisch, eine Nachfolge ist nicht benannt\n• Aktie diese Woche: Mo −4,27 %, Di −5,47 %, Mi +2,87 %, Do −4,34 %, Fr −2,01 % (gesamt −12,75 %, Schluss 162,85 $)\n• Nächster Termin: Quartalszahlen am 17.11. nach Börsenschluss (Konsens-EPS 2,49 $)\n\nWie viel Gewicht hat der Chef für ein Unternehmen?\n\nQuellen: CNBC, Axios, Nasdaq-Terminkalender. Keine Anlageberatung – nur berichtete Fakten, keine Bewertung."
+  },
+  {
+    "post_name": "marktupdate_nvidia-huang-14-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-14T20:05:00+01:00"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-15-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-15T19:00:00+01:00",
+    "slide_count": 7,
+    "caption": "Wochenausblick: Nvidia, Walmart, Home Depot & Fed-Protokoll.\n\nMo: Baidu, Tyson Foods. Di: Home Depot, Disney (vor Börsenstart), Nvidia (nach Börsenschluss, erstmals seit dem Huang-Rücktritt), dazu die US-Einzelhandelsumsätze. Mi: Lowe's, Target, TJX, Palo Alto Networks, am Nachmittag das Fed-Protokoll. Do: Walmart, Alibaba, Intuit, Ross Stores. Fr: ruhig.\n\nKonsens-Schätzungen als reine Zahlen, ohne Wertung. Auf welchen Termin wartest du?\n\nKeine Anlageberatung – nur Termine, die ich mir angeschaut habe."
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-15-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-15T19:05:00+01:00"
   }
 ]
