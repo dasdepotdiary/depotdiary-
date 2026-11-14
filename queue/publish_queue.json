@@ -5002,8 +5002,10 @@
   {
     "post_name": "marktupdate_wochenrueckblick-14-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-14T16:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-14T16:00:00+01:00",
+    "claimed_by": "runnervmccnms-2538-0b620ccc",
+    "claimed_at": "2026-11-14T15:41:32.049749+00:00"
   },
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
