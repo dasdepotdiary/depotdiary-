@@ -5044,8 +5044,10 @@
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-14T20:05:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-14T20:05:00+01:00",
+    "claimed_by": "Surface4RA-30000-f783ddda",
+    "claimed_at": "2026-11-14T19:19:18.412571+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-15-11",
