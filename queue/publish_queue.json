@@ -5032,12 +5032,14 @@
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
     "action": "carousel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-14T20:00:00+01:00",
     "slide_count": 6,
     "caption": "Nvidia ohne Jensen Huang: was bisher bekannt ist.\n\n• 8.11.: Huang räumt gegenüber Mitarbeitern eine Affäre ein, der Verwaltungsrat leitet eine unabhängige Untersuchung ein\n• 12.11.: Nvidia teilt mit, dass Huang als CEO zurücktritt – Finanzchefin Colette Kress führt kommissarisch, eine Nachfolge ist nicht benannt\n• Aktie diese Woche: Mo −4,27 %, Di −5,47 %, Mi +2,87 %, Do −4,34 %, Fr −2,01 % (gesamt −12,75 %, Schluss 162,85 $)\n• Nächster Termin: Quartalszahlen am 17.11. nach Börsenschluss (Konsens-EPS 2,49 $)\n\nWie viel Gewicht hat der Chef für ein Unternehmen?\n\nQuellen: CNBC, Axios, Nasdaq-Terminkalender. Keine Anlageberatung – nur berichtete Fakten, keine Bewertung.",
     "claimed_by": "Surface4RA-30000-f783ddda",
-    "claimed_at": "2026-11-14T19:18:37.017428+00:00"
+    "claimed_at": "2026-11-14T19:18:37.017428+00:00",
+    "published_at": "2026-11-14T19:19:15.452711+00:00",
+    "media_id": "17982824985136964"
   },
   {
     "post_name": "marktupdate_nvidia-huang-14-11",
@@ -5058,35 +5060,5 @@
     "action": "story_sequence",
     "status": "pending",
     "fire_at": "2026-11-15T19:05:00+01:00"
-  },
-  {
-    "post_name": "zitat_2026-11-14",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-14T20:30:00+01:00"
-  },
-  {
-    "post_name": "fachbegriff_2026-11-14",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-14T21:00:00+01:00"
-  },
-  {
-    "post_name": "format_aktienquiz_2026-11-14",
-    "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-14T21:30:00+01:00"
-  },
-  {
-    "post_name": "zitat_2026-11-14b",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-15T09:30:00+01:00"
-  },
-  {
-    "post_name": "fachbegriff_2026-11-15",
-    "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-15T14:00:00+01:00"
   }
 ]
