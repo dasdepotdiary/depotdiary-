@@ -78,5 +78,15 @@
     "term": "Erzeugerpreisindex (PPI)",
     "definition": "Der PPI misst, wie sich die Preise entwickeln, die Hersteller fuer ihre Waren erhalten -- noch bevor sie beim Verbraucher ankommen. Er gilt als Vorlaeufer fuer die Verbraucherpreise.",
     "example": "Der PPI fuer Oktober wird in den USA am Freitag veroeffentlicht."
+  },
+  "2026-11-14": {
+    "term": "Interim-CEO",
+    "definition": "Ein Vorstandschef, der ein Unternehmen vorlaeufig fuehrt, bis der Verwaltungsrat einen dauerhaften Nachfolger gefunden hat. Oft uebernimmt diese Rolle zusaetzlich die Finanzchefin oder der Finanzchef.",
+    "example": "Bei Nvidia fuehrt Finanzchefin Colette Kress das Unternehmen kommissarisch, eine Nachfolge ist laut Berichten nicht benannt."
+  },
+  "2026-11-15": {
+    "term": "Kurs-Gewinn-Verhaeltnis (KGV)",
+    "definition": "Das KGV setzt den Aktienkurs ins Verhaeltnis zum Gewinn je Aktie. Es zeigt, wie viele Jahresgewinne man beim aktuellen Kurs fuer die Aktie 'zahlt' -- eine Kennzahl von vielen, kein Kaufsignal.",
+    "example": "Bei einem Kurs von 100 USD und 5 USD Gewinn je Aktie liegt das KGV bei 20."
   }
 }

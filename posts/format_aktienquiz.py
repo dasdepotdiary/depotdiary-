@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was misst die Kerninflation?",
+        "q": "Was ist ein Interim-CEO?",
         "options": [
-            "Die Inflation ohne Energie und Lebensmittel",
-            "Die Inflation nur bei Immobilien",
-            "Die Inflation in der Eurozone",
+            "Ein Chef, der nur vorlaeufig fuehrt, bis ein Nachfolger gefunden ist",
+            "Ein Chef, der nur im Ausland arbeitet",
+            "Ein Chef, der kein Gehalt bekommt",
         ],
         "correct": 0,
-        "explain": "Energie- und Lebensmittelpreise schwanken stark. Ohne sie zeigt die Kernrate den zugrunde liegenden Preisdruck besser.",
+        "explain": "Ein Interim-CEO fuehrt das Unternehmen kommissarisch, bis der Verwaltungsrat einen dauerhaften Nachfolger gefunden hat.",
     },
     {
-        "q": "Ab wann spricht man bei einem Index von einer Korrektur?",
+        "q": "Was ist der Erzeugerpreisindex (PPI)?",
         "options": [
-            "Ab 1% unter dem letzten Hoch",
-            "Ab 10% unter dem letzten Hoch",
-            "Ab 50% unter dem letzten Hoch",
-        ],
-        "correct": 1,
-        "explain": "Ab mindestens 10% Rueckgang vom letzten Hoch spricht man von einer Korrektur, ab mehr als 20% ueblicherweise von einem Baerenmarkt.",
-    },
-    {
-        "q": "Was bedeutet die Abkuerzung EPS bei Quartalszahlen?",
-        "options": [
-            "Earnings per Share (Gewinn je Aktie)",
-            "Equity Price Spread",
-            "Estimated Profit Score",
+            "Er misst die Preise, die Hersteller fuer ihre Waren erhalten",
+            "Er misst die Preise im Supermarkt",
+            "Er misst die Mieten in Grossstaedten",
         ],
         "correct": 0,
-        "explain": "EPS ist der Gewinn eines Unternehmens geteilt durch die Zahl seiner Aktien -- die Kennzahl, die bei Quartalszahlen am haeufigsten genannt wird.",
+        "explain": "Der PPI zeigt die Preisentwicklung auf der Herstellerebene -- noch bevor sie beim Verbraucher ankommt. Er gilt als Vorlaeufer der Verbraucherpreise.",
+    },
+    {
+        "q": "Was bedeutet 'Konsens-EPS' vor Quartalszahlen?",
+        "options": [
+            "Der Durchschnitt der Gewinn-Schaetzungen vieler Analysten je Aktie",
+            "Der tatsaechliche Gewinn je Aktie",
+            "Die Dividende je Aktie",
+        ],
+        "correct": 0,
+        "explain": "Der Konsens ist die Messlatte: Er zeigt, was Analysten im Schnitt erwarten, und wird mit dem tatsaechlichen Ergebnis verglichen.",
     },
 ]
 
