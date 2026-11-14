@@ -4882,10 +4882,12 @@
   {
     "post_name": "story_post_ankuendigung_reel_korrektur",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-14T11:10:00+01:00",
     "claimed_by": "Surface4RA-31604-f5b46a96",
-    "claimed_at": "2026-11-14T14:58:30.116619+00:00"
+    "claimed_at": "2026-11-14T14:58:30.116619+00:00",
+    "published_at": "2026-11-14T14:58:43.045993+00:00",
+    "media_id": "17883745632627381"
   },
   {
     "post_name": "reel_zinseszins_2026-11-12",
