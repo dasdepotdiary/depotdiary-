@@ -5180,8 +5180,10 @@
   {
     "post_name": "format_chipwoche",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-15T21:05:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-15T21:05:00+01:00",
+    "claimed_by": "runnervmccnms-2221-2b4effbd",
+    "claimed_at": "2026-11-15T23:55:11.249206+00:00"
   },
   {
     "post_name": "heuteagenda_2026-11-16",
