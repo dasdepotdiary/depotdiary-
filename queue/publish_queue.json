@@ -5077,12 +5077,14 @@
   {
     "post_name": "marktupdate_wochenausblick-15-11",
     "action": "carousel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-15T19:00:00+01:00",
     "slide_count": 7,
     "caption": "Wochenausblick: Nvidia, Walmart, Home Depot & Fed-Protokoll.\n\nMo: Baidu, Tyson Foods. Di: Home Depot, Disney (vor Börsenstart), Nvidia (nach Börsenschluss, erstmals seit dem Huang-Rücktritt), dazu die US-Einzelhandelsumsätze. Mi: Lowe's, Target, TJX, Palo Alto Networks, am Nachmittag das Fed-Protokoll. Do: Walmart, Alibaba, Intuit, Ross Stores. Fr: ruhig.\n\nKonsens-Schätzungen als reine Zahlen, ohne Wertung. Auf welchen Termin wartest du?\n\nKeine Anlageberatung – nur Termine, die ich mir angeschaut habe.",
     "claimed_by": "runnervmccnms-2238-bc094c78",
-    "claimed_at": "2026-11-15T19:57:14.646114+00:00"
+    "claimed_at": "2026-11-15T19:57:14.646114+00:00",
+    "published_at": "2026-11-15T19:58:38.592660+00:00",
+    "media_id": "17919826419501926"
   },
   {
     "post_name": "marktupdate_wochenausblick-15-11",
