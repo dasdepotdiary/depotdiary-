@@ -5180,10 +5180,17 @@
   {
     "post_name": "format_chipwoche",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-15T21:05:00+01:00",
     "claimed_by": "runnervmccnms-2221-2b4effbd",
-    "claimed_at": "2026-11-15T23:55:11.249206+00:00"
+    "claimed_at": "2026-11-15T23:55:11.249206+00:00",
+    "published_at": "2026-11-15T23:56:08.911064+00:00",
+    "media_id": "18112146416627592",
+    "media_ids": [
+      "18112146416627592",
+      "18186738169432377",
+      "18106715624342962"
+    ]
   },
   {
     "post_name": "heuteagenda_2026-11-16",
