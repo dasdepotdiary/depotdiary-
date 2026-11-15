@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Cisco", "ticker": "CSCO", "price": 100.76, "change_pct": 2.66, "as_of": "11.11. Schluss", "pe": 30.26,
-         "forward_pe": 17.92, "peg": 0.93, "div_yield": 1.67, "earnings_growth": 51.3, "beta": 1.00,
-         "market_cap": "397,3 Mrd. USD", "volume": "19,1 Mio.", "week52_low": 72.80, "week52_high": 130.37,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,15 USD, erwarteter Umsatz rund 18,1 Mrd. USD). Der Kurs liegt rund 23% unter dem 52-Wochen-Hoch (130,37 USD).",
-         "csv_path": DATA_DIR / "CSCO.csv", "accent": OCHRE},
-        {"name": "Nvidia", "ticker": "NVDA", "price": 173.73, "change_pct": 2.87, "as_of": "11.11. Schluss", "pe": 21.96,
-         "forward_pe": 10.91, "peg": 0.21, "div_yield": 0.58, "earnings_growth": 125.9, "beta": 2.25,
-         "market_cap": "4,20 Bio. USD", "volume": "313,4 Mio.", "week52_low": 164.27, "week52_high": 243.37,
-         "note": "Der Verwaltungsrat untersucht Vorgaenge um CEO Jensen Huang; die Aktie verlor am Montag 4,3% und am Dienstag 5,5%. Der Kurs liegt rund 29% unter dem 52-Wochen-Hoch (243,37 USD).",
-         "csv_path": DATA_DIR / "NVDA.csv", "accent": GREEN},
-        {"name": "AMD", "ticker": "AMD", "price": 552.90, "change_pct": 7.32, "as_of": "11.11. Schluss", "pe": 118.14,
-         "forward_pe": 31.26, "peg": 0.50, "div_yield": 0, "earnings_growth": 95.3, "beta": 2.54,
-         "market_cap": "906,8 Mrd. USD", "volume": "44,7 Mio.", "week52_low": 188.22, "week52_high": 658.52,
-         "note": "Am Montag +13,3% nach einer Analysten-Hochstufung, am Mittwoch +7,3%. Beta von 2,5: schwankt gut doppelt so stark wie der Gesamtmarkt.",
-         "csv_path": DATA_DIR / "AMD.csv", "accent": CAT_TEAL},
+        {"name": "Walmart", "ticker": "WMT", "price": 128.09, "change_pct": 1.51, "as_of": "13.11. Schluss", "pe": 46.41,
+         "forward_pe": 39.76, "peg": 4.35, "div_yield": 0.77, "earnings_growth": -9.4, "beta": 0.53,
+         "market_cap": "1,02 Bio. USD", "volume": "16,6 Mio.", "week52_low": 99.68, "week52_high": 135.16,
+         "note": "Berichtet am Donnerstag vor Boersenstart (Konsens-EPS 0,64 USD). Der Kurs liegt rund 5% unter dem 52-Wochen-Hoch (135,16 USD).",
+         "csv_path": DATA_DIR / "WMT.csv", "accent": OCHRE},
+        {"name": "Target", "ticker": "TGT", "price": 161.45, "change_pct": 0.34, "as_of": "13.11. Schluss", "pe": 16.77,
+         "forward_pe": 16.85, "peg": 2.21, "div_yield": 2.87, "earnings_growth": 100.7, "beta": 0.93,
+         "market_cap": "73,3 Mrd. USD", "volume": "2,3 Mio.", "week52_low": 83.44, "week52_high": 170.75,
+         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 2,03 USD). Der Kurs liegt rund 94% ueber dem 52-Wochen-Tief (83,44 USD).",
+         "csv_path": DATA_DIR / "TGT.csv", "accent": GREEN},
+        {"name": "Lowe's", "ticker": "LOW", "price": 227.73, "change_pct": 0.12, "as_of": "13.11. Schluss", "pe": 19.25,
+         "forward_pe": 17.63, "peg": 1.45, "div_yield": 2.20, "earnings_growth": None, "beta": 0.81,
+         "market_cap": "127,8 Mrd. USD", "volume": "3,2 Mio.", "week52_low": 178.45, "week52_high": 293.06,
+         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 2,86 USD). Der Kurs liegt rund 22% unter dem 52-Wochen-Hoch (293,06 USD).",
+         "csv_path": DATA_DIR / "LOW.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

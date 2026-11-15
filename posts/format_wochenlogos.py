@@ -221,6 +221,8 @@ def draw_logo_grid_slide(stocks, page_label):
     top = 190
     cell_w = (W - 2 * 70 - (cols - 1) * gap) / cols
     r = int(cell_w / 2) - 6
+    if any(s.get("sub") for s in stocks):
+        r -= 14
     name_font = font(B.SANS_BOLD, 19)
 
     for i, s in enumerate(stocks):
@@ -243,6 +245,10 @@ def draw_logo_grid_slide(stocks, page_label):
         label = s["ticker"]
         lw = draw.textlength(label, font=name_font)
         draw.text((cx - lw / 2, cy + r + 12), label, font=name_font, fill=MUTED)
+        if s.get("sub"):
+            sub_font = font(B.SANS_BOLD, 26)
+            sw = draw.textlength(s["sub"], font=sub_font)
+            draw.text((cx - sw / 2, cy + r + 38), s["sub"], font=sub_font, fill=s.get("sub_color", CREAM))
 
     draw_wordmark_anchor(img, draw)
     return img

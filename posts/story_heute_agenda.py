@@ -55,12 +55,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VOR US-BOERSENSTART", "headline": "Brookfield und Nebius legen Zahlen vor.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Brookfield 0,72 USD, Nebius -0,61 USD."},
-        {"time": "NACH BOERSENSCHLUSS", "headline": "Cisco und Applied Materials berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Cisco 1,15 USD (Umsatz rund 18,1 Mrd. USD), Applied Materials 4,06 USD."},
-        {"time": "MORGEN", "headline": "US-Erzeugerpreise (PPI) fuer Oktober.",
-         "body": "Nach den Verbraucherpreisen am Dienstag folgt am Freitag die zweite grosse Inflationszahl der Woche."},
+        {"time": "VOR US-BOERSENSTART", "headline": "Baidu, Tyson Foods und Aramark legen Zahlen vor.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Baidu 0,57 USD, Tyson Foods 0,65 USD, Aramark 0,75 USD."},
+        {"time": "HEUTE", "headline": "Ruhiger Berichtstag bei den grossen US-Namen.",
+         "body": "Die Schwergewichte der Woche folgen ab Dienstag: Home Depot und Disney vor Boersenstart."},
+        {"time": "MORGEN ABEND", "headline": "Nvidia legt Quartalszahlen vor.",
+         "body": "Die ersten seit dem Ruecktritt von CEO Jensen Huang -- nach US-Boersenschluss, Konsens-EPS 2,49 USD."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")

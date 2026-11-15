@@ -5147,5 +5147,43 @@
     "claimed_at": "2026-11-15T14:39:57.873231+00:00",
     "published_at": "2026-11-15T14:40:05.869576+00:00",
     "media_id": "18572393338074460"
+  },
+  {
+    "post_name": "format_chipwoche",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-15T21:00:00+01:00",
+    "slide_count": 3,
+    "caption": "Chip-Woche: 8 von 9 Chipwerten im Plus 📈\n\nWochenveränderung (Schlusskurs 13.11. vs. 6.11.):\nAMD +18,9 %, Broadcom +18,2 %, Micron +12,8 %, Applied Materials +11,4 %, TSMC +6,2 %, Intel +6,0 %, ASML +4,9 %, Qualcomm +4,3 %.\nNur Nvidia fiel: −12,7 % – nach dem Rücktritt von CEO Jensen Huang.\n\nWelchen Chipwert hast du im Blick? 👇\n\nQuelle: Yahoo-Finance-Schlusskurse. Keine Anlageberatung – reine Übersicht, keine Bewertung."
+  },
+  {
+    "post_name": "format_chipwoche",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-15T21:05:00+01:00"
+  },
+  {
+    "post_name": "heuteagenda_2026-11-16",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-16T09:30:00+01:00"
+  },
+  {
+    "post_name": "aktiencheck_2026-11-16",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-16T12:00:00+01:00"
+  },
+  {
+    "post_name": "zitat_2026-11-16",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-16T14:30:00+01:00"
+  },
+  {
+    "post_name": "fachbegriff_2026-11-16",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-16T17:00:00+01:00"
   }
 ]

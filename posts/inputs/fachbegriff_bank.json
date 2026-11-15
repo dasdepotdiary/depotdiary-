@@ -88,5 +88,10 @@
     "term": "Kurs-Gewinn-Verhaeltnis (KGV)",
     "definition": "Das KGV setzt den Aktienkurs ins Verhaeltnis zum Gewinn je Aktie. Es zeigt, wie viele Jahresgewinne man beim aktuellen Kurs fuer die Aktie 'zahlt' -- eine Kennzahl von vielen, kein Kaufsignal.",
     "example": "Bei einem Kurs von 100 USD und 5 USD Gewinn je Aktie liegt das KGV bei 20."
+  },
+  "2026-11-16": {
+    "term": "Guidance (Unternehmensausblick)",
+    "definition": "Die Prognose, die ein Unternehmen selbst fuer Umsatz oder Gewinn kommender Quartale oder des Geschaeftsjahres abgibt. Sie wird bei Quartalszahlen oft genauso beachtet wie die Zahlen selbst.",
+    "example": "Cisco hob in dieser Woche seine Jahresprognose an: Der erwartete Umsatz fuer das Geschaeftsjahr liegt nun bei 74,8 bis 75,8 Mrd. USD."
   }
 }
