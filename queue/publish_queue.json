@@ -5124,10 +5124,12 @@
   {
     "post_name": "zitat_2026-11-14b",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-15T09:30:00+01:00",
     "claimed_by": "runnervmccnms-2225-0489f546",
-    "claimed_at": "2026-11-15T14:39:17.901574+00:00"
+    "claimed_at": "2026-11-15T14:39:17.901574+00:00",
+    "published_at": "2026-11-15T14:39:56.705375+00:00",
+    "media_id": "18037648895911820"
   },
   {
     "post_name": "fachbegriff_2026-11-15",
