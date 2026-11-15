@@ -5089,8 +5089,10 @@
   {
     "post_name": "marktupdate_wochenausblick-15-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-15T19:05:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-15T19:05:00+01:00",
+    "claimed_by": "runnervmccnms-2238-bc094c78",
+    "claimed_at": "2026-11-15T19:58:39.767353+00:00"
   },
   {
     "post_name": "zitat_2026-11-14",
