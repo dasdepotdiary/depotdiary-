@@ -5205,10 +5205,17 @@
   {
     "post_name": "aktiencheck_2026-11-16",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-16T12:00:00+01:00",
     "claimed_by": "runnervmccnms-2466-36cf6dee",
-    "claimed_at": "2026-11-16T15:21:57.696284+00:00"
+    "claimed_at": "2026-11-16T15:21:57.696284+00:00",
+    "published_at": "2026-11-16T15:22:59.143472+00:00",
+    "media_id": "18102435863424889",
+    "media_ids": [
+      "18102435863424889",
+      "18009365975991084",
+      "17960844168017184"
+    ]
   },
   {
     "post_name": "zitat_2026-11-16",
