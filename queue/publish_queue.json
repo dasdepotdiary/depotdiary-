@@ -5195,8 +5195,10 @@
   {
     "post_name": "heuteagenda_2026-11-16",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-16T09:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-16T09:30:00+01:00",
+    "claimed_by": "runnervmccnms-2466-36cf6dee",
+    "claimed_at": "2026-11-16T15:21:40.645175+00:00"
   },
   {
     "post_name": "aktiencheck_2026-11-16",
