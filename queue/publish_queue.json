@@ -5230,7 +5230,9 @@
   {
     "post_name": "fachbegriff_2026-11-16",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-16T17:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-16T17:00:00+01:00",
+    "claimed_by": "runnervmccnms-2452-d40447dc",
+    "claimed_at": "2026-11-16T23:50:45.870173+00:00"
   }
 ]
