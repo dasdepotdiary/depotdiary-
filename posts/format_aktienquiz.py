@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was ist ein Interim-CEO?",
+        "q": "Was zeigen die US-Einzelhandelsumsaetze?",
         "options": [
-            "Ein Chef, der nur vorlaeufig fuehrt, bis ein Nachfolger gefunden ist",
-            "Ein Chef, der nur im Ausland arbeitet",
-            "Ein Chef, der kein Gehalt bekommt",
+            "Wie viel Verbraucher in Geschaeften und online ausgeben",
+            "Wie viele Filialen neu eroeffnet wurden",
+            "Wie hoch die Ladenmieten sind",
         ],
         "correct": 0,
-        "explain": "Ein Interim-CEO fuehrt das Unternehmen kommissarisch, bis der Verwaltungsrat einen dauerhaften Nachfolger gefunden hat.",
+        "explain": "Die Zahl misst die monatlichen Ausgaben der Verbraucher und gilt in den USA als wichtiger Konjunkturindikator.",
     },
     {
-        "q": "Was ist der Erzeugerpreisindex (PPI)?",
+        "q": "Was ist die Guidance eines Unternehmens?",
         "options": [
-            "Er misst die Preise, die Hersteller fuer ihre Waren erhalten",
-            "Er misst die Preise im Supermarkt",
-            "Er misst die Mieten in Grossstaedten",
+            "Ein Rabatt fuer Grossaktionaere",
+            "Die eigene Prognose fuer Umsatz oder Gewinn kommender Zeitraeume",
+            "Die Dividende des Vorjahres",
         ],
-        "correct": 0,
-        "explain": "Der PPI zeigt die Preisentwicklung auf der Herstellerebene -- noch bevor sie beim Verbraucher ankommt. Er gilt als Vorlaeufer der Verbraucherpreise.",
+        "correct": 1,
+        "explain": "Bei Quartalszahlen wird die Guidance oft genauso beachtet wie die Zahlen selbst, weil sie den Ausblick des Unternehmens zeigt.",
     },
     {
-        "q": "Was bedeutet 'Konsens-EPS' vor Quartalszahlen?",
+        "q": "Was beschreibt der Begriff 'Marktkapitalisierung'?",
         "options": [
-            "Der Durchschnitt der Gewinn-Schaetzungen vieler Analysten je Aktie",
-            "Der tatsaechliche Gewinn je Aktie",
-            "Die Dividende je Aktie",
+            "Die Zahl der Mitarbeiter",
+            "Den Gewinn eines Unternehmens im Quartal",
+            "Den Gesamtwert aller Aktien eines Unternehmens an der Boerse",
         ],
-        "correct": 0,
-        "explain": "Der Konsens ist die Messlatte: Er zeigt, was Analysten im Schnitt erwarten, und wird mit dem tatsaechlichen Ergebnis verglichen.",
+        "correct": 2,
+        "explain": "Marktkapitalisierung = Aktienkurs mal Zahl der Aktien. Sie sagt etwas ueber die Groesse eines Unternehmens an der Boerse, nicht ueber seine Qualitaet.",
     },
 ]
 
