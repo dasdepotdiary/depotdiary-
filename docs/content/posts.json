@@ -1015,5 +1015,14 @@
     "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
     "cover": "assets/posts/marktupdate_wochenausblick-15-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_nvidia-zahlen-17-11",
+    "title": "Nvidia-Zahlen: 115,8 Mrd. USD Umsatz im Quartal.",
+    "category": "marktupdate",
+    "date": "2026-11-17",
+    "excerpt": "Die ersten Zahlen seit Jensen Huangs Rücktritt -- nur berichtete Fakten.",
+    "cover": "assets/posts/marktupdate_nvidia-zahlen-17-11/slide_1.webp",
+    "url": null
   }
 ]

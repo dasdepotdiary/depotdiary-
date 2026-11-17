@@ -1,0 +1,63 @@
+{
+  "eyebrow": "EARNINGS-UPDATE",
+  "hook": "Nvidia-Zahlen: *115,8 Mrd. USD* Umsatz im Quartal.",
+  "hook_sub": "Die ersten Zahlen seit Jensen Huangs Rücktritt -- nur berichtete Fakten.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Die *Zahlen* im Überblick.",
+      "stats": [
+        [
+          "Umsatz",
+          "Konsens ca. 109 Mrd. USD",
+          "115,8 Mrd. USD",
+          "green"
+        ],
+        [
+          "Gewinn je Aktie",
+          "bereinigt · Konsens 2,49 USD",
+          "2,68 USD",
+          "green"
+        ],
+        [
+          "Data Center",
+          "+110% zum Vorjahr",
+          "107,6 Mrd. USD",
+          "green"
+        ]
+      ],
+      "note": "Quartal bis 25. Oktober. Umsatz: +103% zum Vorjahr, +20% zum Vorquartal. Gewinn je Aktie nach US-GAAP: 2,70 USD. Quelle: Unternehmensmitteilung."
+    },
+    {
+      "type": "text",
+      "headline": "Der *Ausblick* fürs nächste Quartal.",
+      "body": "Nvidia nennt rund 130 Mrd. USD Umsatz (plus/minus 3%), inklusive einer zusätzlichen Woche. Die Bruttomarge soll bei 71 bis 72% liegen (Vierteljahr zuvor: 74,8% nach GAAP). Umsätze mit Data-Center-Chips in China sind darin nicht enthalten. Zusätzlich erhöhte der Verwaltungsrat die Rückkauf-Genehmigung um 150 Mrd. USD."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Aktie* nach den Zahlen.",
+      "stats": [
+        [
+          "Schlusskurs 17.11.",
+          "reguläre Handelszeit",
+          "155,46 USD",
+          "red"
+        ],
+        [
+          "Nachbörslich",
+          "Stand 23:30 Uhr deutscher Zeit",
+          "ca. 160,6 USD",
+          "green"
+        ]
+      ],
+      "note": "Schlusskurs: -0,44% zum Vortag. Nachbörslich: rund +3% gegenüber dem Schlusskurs. Der Handel nach Börsenschluss kann stark schwanken."
+    },
+    {
+      "type": "text",
+      "headline": "Der *Hintergrund*.",
+      "body": "Es sind die ersten Quartalszahlen seit dem Rücktritt von CEO Jensen Huang. Finanzchefin Colette Kress führt das Unternehmen laut den letzten Meldungen kommissarisch."
+    }
+  ],
+  "cta_headline": "Was *sticht* für dich in den Zahlen heraus?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur berichtete Fakten, keine Bewertung."
+}
