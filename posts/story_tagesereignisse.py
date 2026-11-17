@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Mittwoch: S&P 500 +1,31% auf 7.619, Nasdaq +1,60% auf 25.466, Dow Jones +0,49% auf 52.486.",
-         "body": "Der DAX schloss 1,20% im Plus bei 26.663 Punkten, der Angstindex VIX fiel um 10% auf 17,5."},
-        {"headline": "Chip- und KI-Werte erholen sich nach den Zahlen von CoreWeave.",
-         "body": "AMD +7,3%, Nvidia +2,9%; Microsoft verlor 2,3%."},
-        {"headline": "Apple +2,0% auf rund 356 USD.",
-         "body": "Laut Berichten ein neues Rekordhoch."},
-        {"headline": "Cisco +2,7% vor den Quartalszahlen am Donnerstag.",
-         "body": "Konsens-EPS 1,15 USD, erwarteter Umsatz rund 18,1 Mrd. USD (nach Boersenschluss)."},
-        {"headline": "Gold -1,0% auf 3.991 USD, Bitcoin +1,0% auf 74.436 USD.",
-         "body": "Der Oelpreis (WTI) lag bei rund 86 USD, die 10-jaehrige US-Rendite bei etwa 5,0%."},
+        {"headline": "US-Boersen am Dienstag: S&P 500 -1,03% auf 7.341, Nasdaq -0,74% auf 24.328, Dow Jones -1,64% auf 50.759.",
+         "body": "Der DAX schloss 2,08% im Minus bei 26.045 Punkten, der Angstindex VIX stieg um 11% auf 25,5."},
+        {"headline": "US-Einzelhandelsumsaetze Oktober: +0,2% zum Vormonat.",
+         "body": "Das entsprach der Erwartung (September: +0,8%). Ohne Autos, Benzin, Baumaterial und Gastronomie: +0,6%."},
+        {"headline": "Home Depot -2,4%, Disney -1,5%, JD.com -7,7% am Berichtstag.",
+         "body": "Home Depot: bereinigter Gewinn je Aktie 3,86 USD, Umsatz 43,4 Mrd. USD. Disney: 1,77 USD, Umsatz 25,95 Mrd. USD."},
+        {"headline": "Nvidia nach Boersenschluss: Umsatz 115,8 Mrd. USD, Gewinn je Aktie 2,68 USD (bereinigt).",
+         "body": "Der Konsens lag bei 2,49 USD. Ausblick fuers naechste Quartal: rund 130 Mrd. USD Umsatz (+/-3%)."},
+        {"headline": "Nvidia-Aktie nachboerslich rund +3% auf etwa 160 USD.",
+         "body": "Schlusskurs im regulaeren Handel: 155,46 USD (-0,4%). Quellen: Unternehmensmitteilung, Yahoo Finance."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
