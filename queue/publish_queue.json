@@ -5260,10 +5260,17 @@
   {
     "post_name": "aktiencheck_2026-11-17",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-17T01:00:00+01:00",
     "claimed_by": "Surface4RA-25880-0cb04bfe",
-    "claimed_at": "2026-11-17T01:05:51.380930+00:00"
+    "claimed_at": "2026-11-17T01:05:51.380930+00:00",
+    "published_at": "2026-11-17T01:06:40.188729+00:00",
+    "media_id": "18120768455004360",
+    "media_ids": [
+      "18120768455004360",
+      "18030337163698807",
+      "18651022165034313"
+    ]
   },
   {
     "post_name": "fachbegriff_2026-11-17",
