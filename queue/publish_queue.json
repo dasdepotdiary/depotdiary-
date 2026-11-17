@@ -5286,9 +5286,11 @@
     "post_name": "format_retailwoche",
     "action": "carousel",
     "slide_count": 3,
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-17T01:00:00+01:00",
-    "caption": "Retail-Woche: 8 Händler berichten 🛒\n\nDienstag: Home Depot (Konsens-EPS 3,87 $), JD.com (0,88 $)\nMittwoch: Lowe's (2,86 $), Target (2,03 $), TJX (1,33 $)\nDonnerstag: Walmart (0,64 $), Alibaba (1,56 $), Ross Stores (1,82 $)\n\nDazu: US-Einzelhandelsumsätze für Oktober (heute, 14:30 Uhr, erwartet +0,2 % zum Vormonat) und das Fed-Protokoll am Mittwoch.\n\nWelchen Händler hast du im Depot? 👇\n\nQuelle: Nasdaq-Terminkalender, Wochenvorschauen. Konsens-EPS als reine Zahl, ohne Wertung. Keine Anlageberatung."
+    "caption": "Retail-Woche: 8 Händler berichten 🛒\n\nDienstag: Home Depot (Konsens-EPS 3,87 $), JD.com (0,88 $)\nMittwoch: Lowe's (2,86 $), Target (2,03 $), TJX (1,33 $)\nDonnerstag: Walmart (0,64 $), Alibaba (1,56 $), Ross Stores (1,82 $)\n\nDazu: US-Einzelhandelsumsätze für Oktober (heute, 14:30 Uhr, erwartet +0,2 % zum Vormonat) und das Fed-Protokoll am Mittwoch.\n\nWelchen Händler hast du im Depot? 👇\n\nQuelle: Nasdaq-Terminkalender, Wochenvorschauen. Konsens-EPS als reine Zahl, ohne Wertung. Keine Anlageberatung.",
+    "claimed_by": "Surface4RA-26568-ee990d91",
+    "claimed_at": "2026-11-17T01:11:01.384067+00:00"
   },
   {
     "post_name": "format_retailwoche",
