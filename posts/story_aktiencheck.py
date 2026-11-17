@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Palo Alto Networks", "ticker": "PANW", "price": 316.09, "change_pct": -1.91, "as_of": "16.11. Schluss", "pe": None,
-         "forward_pe": 64.74, "peg": 1.65, "div_yield": 0, "earnings_growth": None, "beta": 0.97,
-         "market_cap": "258,8 Mrd. USD", "volume": "5,2 Mio.", "week52_low": 139.57, "week52_high": 432.33,
-         "note": "Berichtet am Mittwoch nach Boersenschluss (Konsens-EPS 0,52 USD). Der Kurs liegt rund 27% unter dem 52-Wochen-Hoch (432,33 USD).",
-         "csv_path": DATA_DIR / "PANW.csv", "accent": OCHRE},
-        {"name": "TJX Companies", "ticker": "TJX", "price": 131.09, "change_pct": -2.44, "as_of": "16.11. Schluss", "pe": 24.28,
-         "forward_pe": 22.89, "peg": 2.38, "div_yield": 1.43, "earnings_growth": 22.3, "beta": 0.59,
-         "market_cap": "144,8 Mrd. USD", "volume": "11,4 Mio.", "week52_low": 122.78, "week52_high": 170.00,
-         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 1,33 USD). Der Kurs liegt rund 23% unter dem 52-Wochen-Hoch (170,00 USD).",
-         "csv_path": DATA_DIR / "TJX.csv", "accent": GREEN},
-        {"name": "JD.com", "ticker": "JD", "price": 27.54, "change_pct": -1.33, "as_of": "16.11. Schluss", "pe": 19.26,
-         "forward_pe": None, "peg": 0.56, "div_yield": 3.58, "earnings_growth": 15.4, "beta": 0.30,
-         "market_cap": "37,2 Mrd. USD", "volume": "9,2 Mio.", "week52_low": 24.51, "week52_high": 34.30,
-         "note": "Berichtet heute vor US-Boersenstart (Konsens-EPS 0,88 USD). Der Kurs liegt rund 20% unter dem 52-Wochen-Hoch (34,30 USD).",
-         "csv_path": DATA_DIR / "JD.csv", "accent": CAT_TEAL},
+        {"name": "Intuit", "ticker": "INTU", "price": 320.79, "change_pct": -7.17, "as_of": "17.11. Schluss", "pe": 19.49,
+         "forward_pe": None, "peg": None, "div_yield": 1.6, "earnings_growth": None, "beta": 0.92,
+         "market_cap": "85,7 Mrd. USD", "volume": "3,2 Mio.", "week52_low": 252.84, "week52_high": 682.27,
+         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 2,47 USD). Der Kurs liegt rund 53% unter dem 52-Wochen-Hoch (682,27 USD).",
+         "csv_path": DATA_DIR / "INTU.csv", "accent": OCHRE},
+        {"name": "Ross Stores", "ticker": "ROST", "price": 220.45, "change_pct": -1.14, "as_of": "17.11. Schluss", "pe": 26.66,
+         "forward_pe": 24.44, "peg": 2.05, "div_yield": 0.8, "earnings_growth": None, "beta": 0.85,
+         "market_cap": "70,4 Mrd. USD", "volume": "2,6 Mio.", "week52_low": 158.49, "week52_high": 257.00,
+         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 1,82 USD). Der Kurs liegt rund 14% unter dem 52-Wochen-Hoch (257,00 USD).",
+         "csv_path": DATA_DIR / "ROST.csv", "accent": GREEN},
+        {"name": "Alibaba", "ticker": "BABA", "price": 86.65, "change_pct": -4.38, "as_of": "17.11. Schluss", "pe": 20.98,
+         "forward_pe": None, "peg": None, "div_yield": 1.16, "earnings_growth": None, "beta": 0.40,
+         "market_cap": "215,6 Mrd. USD", "volume": "17,5 Mio.", "week52_low": 86.49, "week52_high": 181.10,
+         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 1,56 USD). Der Kurs liegt rund 52% unter dem 52-Wochen-Hoch (181,10 USD).",
+         "csv_path": DATA_DIR / "BABA.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
