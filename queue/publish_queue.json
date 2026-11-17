@@ -5438,9 +5438,11 @@
   {
     "post_name": "story_post_ankuendigung_nvidia_zahlen",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-17T23:35:00+01:00",
     "claimed_by": "Surface4RA-8028-4ef97c2b",
-    "claimed_at": "2026-11-17T22:36:51.938756+00:00"
+    "claimed_at": "2026-11-17T22:36:51.938756+00:00",
+    "published_at": "2026-11-17T22:37:07.161977+00:00",
+    "media_id": "17983963404137008"
   }
 ]
