@@ -5297,9 +5297,16 @@
   {
     "post_name": "format_retailwoche",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-17T01:05:00+01:00",
     "claimed_by": "Surface4RA-26568-ee990d91",
-    "claimed_at": "2026-11-17T01:11:50.603799+00:00"
+    "claimed_at": "2026-11-17T01:11:50.603799+00:00",
+    "published_at": "2026-11-17T01:12:44.416374+00:00",
+    "media_id": "18104837894653521",
+    "media_ids": [
+      "18104837894653521",
+      "18041987972653009",
+      "17953690935346360"
+    ]
   }
 ]
