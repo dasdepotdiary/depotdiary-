@@ -5363,9 +5363,11 @@
   {
     "post_name": "story_post_ankuendigung_reel_retailwoche",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-17T09:10:00+01:00",
     "claimed_by": "Surface4RA-34536-af979502",
-    "claimed_at": "2026-11-17T09:25:11.550649+00:00"
+    "claimed_at": "2026-11-17T09:25:11.550649+00:00",
+    "published_at": "2026-11-17T09:25:22.586681+00:00",
+    "media_id": "17922934293240096"
   }
 ]
