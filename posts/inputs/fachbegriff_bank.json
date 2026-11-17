@@ -98,5 +98,10 @@
     "term": "Einzelhandelsumsaetze (Retail Sales)",
     "definition": "Die monatlich gemeldete Summe dessen, was Verbraucher in Geschaeften und online ausgeben. In den USA, wo der private Konsum den Grossteil der Wirtschaft ausmacht, gilt die Zahl als wichtiger Konjunkturindikator.",
     "example": "Fuer Oktober wird laut Vorschauen ein Plus von 0,2% zum Vormonat erwartet -- die Zahl erscheint heute um 14:30 Uhr."
+  },
+  "2026-11-18": {
+    "term": "Fed-Protokoll (FOMC Minutes)",
+    "definition": "Eine ausfuehrliche Zusammenfassung der Diskussion bei der Zinssitzung der US-Notenbank. Sie erscheint etwa drei Wochen nach der Sitzung und zeigt, welche Argumente im Ausschuss genannt wurden.",
+    "example": "Heute um 20:00 Uhr deutscher Zeit erscheint das Protokoll der Sitzung von Ende Oktober."
   }
 }

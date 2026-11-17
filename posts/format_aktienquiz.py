@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was zeigen die US-Einzelhandelsumsaetze?",
+        "q": "Was steht im Fed-Protokoll (FOMC Minutes)?",
         "options": [
-            "Wie viel Verbraucher in Geschaeften und online ausgeben",
-            "Wie viele Filialen neu eroeffnet wurden",
-            "Wie hoch die Ladenmieten sind",
-        ],
-        "correct": 0,
-        "explain": "Die Zahl misst die monatlichen Ausgaben der Verbraucher und gilt in den USA als wichtiger Konjunkturindikator.",
-    },
-    {
-        "q": "Was ist die Guidance eines Unternehmens?",
-        "options": [
-            "Ein Rabatt fuer Grossaktionaere",
-            "Die eigene Prognose fuer Umsatz oder Gewinn kommender Zeitraeume",
-            "Die Dividende des Vorjahres",
+            "Die Kursziele fuer den Aktienmarkt",
+            "Eine Zusammenfassung der Diskussion bei der Zinssitzung",
+            "Die Gehaelter der Notenbanker",
         ],
         "correct": 1,
-        "explain": "Bei Quartalszahlen wird die Guidance oft genauso beachtet wie die Zahlen selbst, weil sie den Ausblick des Unternehmens zeigt.",
+        "explain": "Das Protokoll erscheint etwa drei Wochen nach der Sitzung und zeigt, welche Argumente im Ausschuss besprochen wurden.",
     },
     {
-        "q": "Was beschreibt der Begriff 'Marktkapitalisierung'?",
+        "q": "Was bedeutet 'Konsens-EPS' bei Quartalszahlen?",
         "options": [
-            "Die Zahl der Mitarbeiter",
-            "Den Gewinn eines Unternehmens im Quartal",
-            "Den Gesamtwert aller Aktien eines Unternehmens an der Boerse",
+            "Die Dividende, die der Konzern ausschuettet",
+            "Der Gewinn je Aktie, den Analysten im Durchschnitt erwarten",
+            "Der Gewinn je Aktie des Vorjahres",
         ],
-        "correct": 2,
-        "explain": "Marktkapitalisierung = Aktienkurs mal Zahl der Aktien. Sie sagt etwas ueber die Groesse eines Unternehmens an der Boerse, nicht ueber seine Qualitaet.",
+        "correct": 1,
+        "explain": "EPS steht fuer Earnings per Share. Der Konsens ist der Durchschnitt der Analysten-Schaetzungen -- ein Vergleichswert, kein Versprechen.",
+    },
+    {
+        "q": "Was zeigt die 52-Wochen-Spanne einer Aktie?",
+        "options": [
+            "Den hoechsten und den niedrigsten Kurs der letzten 52 Wochen",
+            "Die Dividendenrendite der letzten 52 Wochen",
+            "Wie viele Aktien in 52 Wochen gehandelt wurden",
+        ],
+        "correct": 0,
+        "explain": "Die Spanne zeigt, in welchem Bereich der Kurs im letzten Jahr lag. Sie ist ein Rueckblick und sagt nichts ueber die Zukunft.",
     },
 ]
 
