@@ -93,5 +93,10 @@
     "term": "Guidance (Unternehmensausblick)",
     "definition": "Die Prognose, die ein Unternehmen selbst fuer Umsatz oder Gewinn kommender Quartale oder des Geschaeftsjahres abgibt. Sie wird bei Quartalszahlen oft genauso beachtet wie die Zahlen selbst.",
     "example": "Cisco hob in dieser Woche seine Jahresprognose an: Der erwartete Umsatz fuer das Geschaeftsjahr liegt nun bei 74,8 bis 75,8 Mrd. USD."
+  },
+  "2026-11-17": {
+    "term": "Einzelhandelsumsaetze (Retail Sales)",
+    "definition": "Die monatlich gemeldete Summe dessen, was Verbraucher in Geschaeften und online ausgeben. In den USA, wo der private Konsum den Grossteil der Wirtschaft ausmacht, gilt die Zahl als wichtiger Konjunkturindikator.",
+    "example": "Fuer Oktober wird laut Vorschauen ein Plus von 0,2% zum Vormonat erwartet -- die Zahl erscheint heute um 14:30 Uhr."
   }
 }

@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Walmart", "ticker": "WMT", "price": 128.09, "change_pct": 1.51, "as_of": "13.11. Schluss", "pe": 46.41,
-         "forward_pe": 39.76, "peg": 4.35, "div_yield": 0.77, "earnings_growth": -9.4, "beta": 0.53,
-         "market_cap": "1,02 Bio. USD", "volume": "16,6 Mio.", "week52_low": 99.68, "week52_high": 135.16,
-         "note": "Berichtet am Donnerstag vor Boersenstart (Konsens-EPS 0,64 USD). Der Kurs liegt rund 5% unter dem 52-Wochen-Hoch (135,16 USD).",
-         "csv_path": DATA_DIR / "WMT.csv", "accent": OCHRE},
-        {"name": "Target", "ticker": "TGT", "price": 161.45, "change_pct": 0.34, "as_of": "13.11. Schluss", "pe": 16.77,
-         "forward_pe": 16.85, "peg": 2.21, "div_yield": 2.87, "earnings_growth": 100.7, "beta": 0.93,
-         "market_cap": "73,3 Mrd. USD", "volume": "2,3 Mio.", "week52_low": 83.44, "week52_high": 170.75,
-         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 2,03 USD). Der Kurs liegt rund 94% ueber dem 52-Wochen-Tief (83,44 USD).",
-         "csv_path": DATA_DIR / "TGT.csv", "accent": GREEN},
-        {"name": "Lowe's", "ticker": "LOW", "price": 227.73, "change_pct": 0.12, "as_of": "13.11. Schluss", "pe": 19.25,
-         "forward_pe": 17.63, "peg": 1.45, "div_yield": 2.20, "earnings_growth": None, "beta": 0.81,
-         "market_cap": "127,8 Mrd. USD", "volume": "3,2 Mio.", "week52_low": 178.45, "week52_high": 293.06,
-         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 2,86 USD). Der Kurs liegt rund 22% unter dem 52-Wochen-Hoch (293,06 USD).",
-         "csv_path": DATA_DIR / "LOW.csv", "accent": CAT_TEAL},
+        {"name": "Palo Alto Networks", "ticker": "PANW", "price": 316.09, "change_pct": -1.91, "as_of": "16.11. Schluss", "pe": None,
+         "forward_pe": 64.74, "peg": 1.65, "div_yield": 0, "earnings_growth": None, "beta": 0.97,
+         "market_cap": "258,8 Mrd. USD", "volume": "5,2 Mio.", "week52_low": 139.57, "week52_high": 432.33,
+         "note": "Berichtet am Mittwoch nach Boersenschluss (Konsens-EPS 0,52 USD). Der Kurs liegt rund 27% unter dem 52-Wochen-Hoch (432,33 USD).",
+         "csv_path": DATA_DIR / "PANW.csv", "accent": OCHRE},
+        {"name": "TJX Companies", "ticker": "TJX", "price": 131.09, "change_pct": -2.44, "as_of": "16.11. Schluss", "pe": 24.28,
+         "forward_pe": 22.89, "peg": 2.38, "div_yield": 1.43, "earnings_growth": 22.3, "beta": 0.59,
+         "market_cap": "144,8 Mrd. USD", "volume": "11,4 Mio.", "week52_low": 122.78, "week52_high": 170.00,
+         "note": "Berichtet am Mittwoch vor Boersenstart (Konsens-EPS 1,33 USD). Der Kurs liegt rund 23% unter dem 52-Wochen-Hoch (170,00 USD).",
+         "csv_path": DATA_DIR / "TJX.csv", "accent": GREEN},
+        {"name": "JD.com", "ticker": "JD", "price": 27.54, "change_pct": -1.33, "as_of": "16.11. Schluss", "pe": 19.26,
+         "forward_pe": None, "peg": 0.56, "div_yield": 3.58, "earnings_growth": 15.4, "beta": 0.30,
+         "market_cap": "37,2 Mrd. USD", "volume": "9,2 Mio.", "week52_low": 24.51, "week52_high": 34.30,
+         "note": "Berichtet heute vor US-Boersenstart (Konsens-EPS 0,88 USD). Der Kurs liegt rund 20% unter dem 52-Wochen-Hoch (34,30 USD).",
+         "csv_path": DATA_DIR / "JD.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
