@@ -5352,9 +5352,11 @@
   {
     "post_name": "reel_retailwoche_2026-11-17",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-17T09:00:00+01:00",
-    "caption": "Die Retail-Woche in 60 Sekunden 🛒\n\n• Heute 14:30 Uhr: US-Einzelhandelsumsätze für Oktober (erwartet: +0,2 % zum Vormonat, September: +0,8 %)\n• Di: Home Depot (Konsens-EPS 3,87 $)\n• Mi: Lowe's (2,86 $), Target (2,03 $), TJX (1,33 $), dazu das Fed-Protokoll\n• Do: Walmart (0,64 $)\n• Nächste Fed-Zinsentscheidung: 9. Dezember\n• Heute Abend: Nvidia – erstmals seit dem Rücktritt von Jensen Huang\n\nWelche Zahl schaust du dir an? 👇\n\nStimme: KI-generiert. Quellen: Nasdaq-Terminkalender, Wochenvorschauen. Keine Anlageberatung.\n\n#einzelhandel #walmart #homedepot #target #börse #finanzen #depotdiary"
+    "caption": "Die Retail-Woche in 60 Sekunden 🛒\n\n• Heute 14:30 Uhr: US-Einzelhandelsumsätze für Oktober (erwartet: +0,2 % zum Vormonat, September: +0,8 %)\n• Di: Home Depot (Konsens-EPS 3,87 $)\n• Mi: Lowe's (2,86 $), Target (2,03 $), TJX (1,33 $), dazu das Fed-Protokoll\n• Do: Walmart (0,64 $)\n• Nächste Fed-Zinsentscheidung: 9. Dezember\n• Heute Abend: Nvidia – erstmals seit dem Rücktritt von Jensen Huang\n\nWelche Zahl schaust du dir an? 👇\n\nStimme: KI-generiert. Quellen: Nasdaq-Terminkalender, Wochenvorschauen. Keine Anlageberatung.\n\n#einzelhandel #walmart #homedepot #target #börse #finanzen #depotdiary",
+    "claimed_by": "Surface4RA-34536-af979502",
+    "claimed_at": "2026-11-17T09:24:09.092576+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_reel_retailwoche",
