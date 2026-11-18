@@ -103,5 +103,10 @@
     "term": "Fed-Protokoll (FOMC Minutes)",
     "definition": "Eine ausfuehrliche Zusammenfassung der Diskussion bei der Zinssitzung der US-Notenbank. Sie erscheint etwa drei Wochen nach der Sitzung und zeigt, welche Argumente im Ausschuss genannt wurden.",
     "example": "Heute um 20:00 Uhr deutscher Zeit erscheint das Protokoll der Sitzung von Ende Oktober."
+  },
+  "2026-11-19": {
+    "term": "Bereinigter Gewinn je Aktie (Adjusted EPS)",
+    "definition": "Der Gewinn je Aktie ohne bestimmte Sondereffekte, die das Unternehmen herausrechnet. Deshalb weicht er oft vom Gewinn nach US-GAAP ab. Welche Posten fehlen, legt jedes Unternehmen selbst offen.",
+    "example": "Target meldete gestern 2,65 USD je Aktie. Darin sind laut Mitteilung 0,50 USD aus Zoll-Rueckerstattungen enthalten."
   }
 }

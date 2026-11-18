@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was steht im Fed-Protokoll (FOMC Minutes)?",
+        "q": "Was bedeutet 'bereinigter Gewinn je Aktie' (Adjusted EPS)?",
         "options": [
-            "Die Kursziele fuer den Aktienmarkt",
-            "Eine Zusammenfassung der Diskussion bei der Zinssitzung",
-            "Die Gehaelter der Notenbanker",
-        ],
-        "correct": 1,
-        "explain": "Das Protokoll erscheint etwa drei Wochen nach der Sitzung und zeigt, welche Argumente im Ausschuss besprochen wurden.",
-    },
-    {
-        "q": "Was bedeutet 'Konsens-EPS' bei Quartalszahlen?",
-        "options": [
-            "Die Dividende, die der Konzern ausschuettet",
-            "Der Gewinn je Aktie, den Analysten im Durchschnitt erwarten",
             "Der Gewinn je Aktie des Vorjahres",
+            "Die Dividende je Aktie",
+            "Der Gewinn je Aktie ohne bestimmte Sondereffekte",
         ],
-        "correct": 1,
-        "explain": "EPS steht fuer Earnings per Share. Der Konsens ist der Durchschnitt der Analysten-Schaetzungen -- ein Vergleichswert, kein Versprechen.",
+        "correct": 2,
+        "explain": "Welche Posten herausgerechnet werden, legt das Unternehmen selbst fest -- deshalb lohnt der Blick auf beide Zahlen, bereinigt und nach US-GAAP.",
     },
     {
-        "q": "Was zeigt die 52-Wochen-Spanne einer Aktie?",
+        "q": "Was ist der Leitzins?",
         "options": [
-            "Den hoechsten und den niedrigsten Kurs der letzten 52 Wochen",
-            "Die Dividendenrendite der letzten 52 Wochen",
-            "Wie viele Aktien in 52 Wochen gehandelt wurden",
+            "Der Zins, zu dem sich Banken bei der Notenbank Geld leihen koennen",
+            "Der Zins auf Tagesgeld bei jeder Bank",
+            "Der Zins auf zehnjaehrige Staatsanleihen",
         ],
         "correct": 0,
-        "explain": "Die Spanne zeigt, in welchem Bereich der Kurs im letzten Jahr lag. Sie ist ein Rueckblick und sagt nichts ueber die Zukunft.",
+        "explain": "Die Notenbank legt ihn fest. Er beeinflusst Kredit- und Sparzinsen im ganzen Land.",
+    },
+    {
+        "q": "Was bedeutet 'nachboerslich'?",
+        "options": [
+            "Ein Handelsverbot fuer einen Tag",
+            "Handel nach dem regulaeren Boersenschluss",
+            "Handel nur fuer Profis am Wochenende",
+        ],
+        "correct": 1,
+        "explain": "Viele US-Unternehmen melden Zahlen nach Boersenschluss. Der nachboerslische Handel hat meist weniger Umsatz, die Kurse koennen staerker schwanken.",
     },
 ]
 

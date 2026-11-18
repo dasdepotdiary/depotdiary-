@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Intuit", "ticker": "INTU", "price": 320.79, "change_pct": -7.17, "as_of": "17.11. Schluss", "pe": 19.49,
-         "forward_pe": None, "peg": None, "div_yield": 1.6, "earnings_growth": None, "beta": 0.92,
-         "market_cap": "85,7 Mrd. USD", "volume": "3,2 Mio.", "week52_low": 252.84, "week52_high": 682.27,
-         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 2,47 USD). Der Kurs liegt rund 53% unter dem 52-Wochen-Hoch (682,27 USD).",
-         "csv_path": DATA_DIR / "INTU.csv", "accent": OCHRE},
-        {"name": "Ross Stores", "ticker": "ROST", "price": 220.45, "change_pct": -1.14, "as_of": "17.11. Schluss", "pe": 26.66,
-         "forward_pe": 24.44, "peg": 2.05, "div_yield": 0.8, "earnings_growth": None, "beta": 0.85,
-         "market_cap": "70,4 Mrd. USD", "volume": "2,6 Mio.", "week52_low": 158.49, "week52_high": 257.00,
-         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 1,82 USD). Der Kurs liegt rund 14% unter dem 52-Wochen-Hoch (257,00 USD).",
-         "csv_path": DATA_DIR / "ROST.csv", "accent": GREEN},
-        {"name": "Alibaba", "ticker": "BABA", "price": 86.65, "change_pct": -4.38, "as_of": "17.11. Schluss", "pe": 20.98,
-         "forward_pe": None, "peg": None, "div_yield": 1.16, "earnings_growth": None, "beta": 0.40,
-         "market_cap": "215,6 Mrd. USD", "volume": "17,5 Mio.", "week52_low": 86.49, "week52_high": 181.10,
-         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 1,56 USD). Der Kurs liegt rund 52% unter dem 52-Wochen-Hoch (181,10 USD).",
-         "csv_path": DATA_DIR / "BABA.csv", "accent": CAT_TEAL},
+        {"name": "PDD Holdings", "ticker": "PDD", "price": 77.45, "change_pct": 0.08, "as_of": "18.11. Schluss", "pe": 8.71,
+         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": None,
+         "market_cap": "110,2 Mrd. USD", "volume": "5,0 Mio.", "week52_low": 71.94, "week52_high": 125.36,
+         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 2,61 USD). Der Kurs liegt rund 38% unter dem 52-Wochen-Hoch (125,36 USD).",
+         "csv_path": DATA_DIR / "PDD.csv", "accent": OCHRE},
+        {"name": "Williams-Sonoma", "ticker": "WSM", "price": 260.09, "change_pct": 4.02, "as_of": "18.11. Schluss", "pe": 26.68,
+         "forward_pe": 24.64, "peg": None, "div_yield": 1.22, "earnings_growth": None, "beta": 1.49,
+         "market_cap": "30,6 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 165.51, "week52_high": 274.45,
+         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 2,18 USD). Der Kurs liegt rund 5% unter dem 52-Wochen-Hoch (274,45 USD).",
+         "csv_path": DATA_DIR / "WSM.csv", "accent": GREEN},
+        {"name": "Keysight Technologies", "ticker": "KEYS", "price": 286.30, "change_pct": 0.65, "as_of": "18.11. Schluss", "pe": 38.74,
+         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.21,
+         "market_cap": "48,7 Mrd. USD", "volume": "1,3 Mio.", "week52_low": 167.23, "week52_high": 389.93,
+         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 3,09 USD). Der Kurs liegt rund 27% unter dem 52-Wochen-Hoch (389,93 USD).",
+         "csv_path": DATA_DIR / "KEYS.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))
