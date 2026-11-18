@@ -5515,5 +5515,61 @@
     "fire_at": "2026-11-19T00:25:00+01:00",
     "published_at": "2026-11-18T23:27:23.588482+00:00",
     "media_id": "18132586703504334"
+  },
+  {
+    "post_name": "heuteagenda_2026-11-19",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T06:30:00+01:00"
+  },
+  {
+    "post_name": "tagesupdate_2026-11-19",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T06:30:00+01:00"
+  },
+  {
+    "post_name": "fachbegriff_2026-11-19",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T06:30:00+01:00"
+  },
+  {
+    "post_name": "aktiencheck_2026-11-19",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-19T06:30:00+01:00"
+  },
+  {
+    "post_name": "marktupdate_retail-zahlen-18-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-19T08:00:00+01:00",
+    "slide_count": 6,
+    "caption": "Retail-Zahlen: Lowe's, Target und TJX 🛒\n\n• Lowe's: bereinigter Gewinn je Aktie 3,10 $ (Konsens 2,86 $), Umsatz 22,8 Mrd. $\n• Target: Gewinn je Aktie 2,65 $ (Konsens 2,05 $), Umsatz 27,1 Mrd. $\n• TJX: bereinigter Gewinn je Aktie 1,34 $ (Konsens 1,33 $), Umsatz 15,95 Mrd. $\n• Bei Lowe's und Target sind Einmaleffekte aus Zoll-Rückerstattungen enthalten (0,34 $ bzw. 0,50 $ je Aktie)\n• Aktien am Berichtstag: Lowe's +1,0 %, Target +4,0 %, TJX +8,0 %\n• Heute: Walmart, Alibaba, PDD, Intuit, Ross Stores\n\nWelche Zahl hat dich überrascht? 👇\n\nQuellen: Unternehmensmitteilungen, Nasdaq-Terminkalender, Yahoo Finance. Nur berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#einzelhandel #lowes #target #tjx #quartalszahlen #börse #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_retail_zahlen",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T08:10:00+01:00"
+  },
+  {
+    "post_name": "zitat_2026-11-19",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T09:00:00+01:00"
+  },
+  {
+    "post_name": "format_aktienquiz_2026-11-19",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-19T09:00:00+01:00"
+  },
+  {
+    "post_name": "zitat_2026-11-19b",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-19T09:00:00+01:00"
   }
 ]
