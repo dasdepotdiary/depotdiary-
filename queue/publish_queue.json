@@ -5466,7 +5466,9 @@
   {
     "post_name": "aktiencheck_2026-11-18",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-18T01:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-18T01:00:00+01:00",
+    "claimed_by": "runnervmccnms-2232-07fe882c",
+    "claimed_at": "2026-11-18T06:49:13.978690+00:00"
   }
 ]
