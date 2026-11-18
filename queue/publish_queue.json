@@ -5433,9 +5433,11 @@
   {
     "post_name": "reel_fedprotokoll_2026-11-18",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-18T10:00:00+01:00",
-    "caption": "Das Fed-Protokoll in 45 Sekunden 🏛️\n\n• Was ist das? Eine Zusammenfassung der Diskussion bei der Zinssitzung der US-Notenbank\n• Wann? Etwa drei Wochen nach der Sitzung – heute 20:00 Uhr deutscher Zeit für die Sitzung von Ende Oktober\n• Die Zinsentscheidung steht dann schon fest, das Protokoll zeigt den Weg dorthin\n• Nächste Fed-Zinsentscheidung: 9. Dezember\n\nWas würdest du im Protokoll nachlesen wollen? 👇\n\nStimme: KI-generiert. Quellen: Federal Reserve (Veröffentlichungsrhythmus), Wochenvorschauen. Keine Anlageberatung.\n\n#fed #zinsen #börse #finanzen #aktien #depotdiary"
+    "caption": "Das Fed-Protokoll in 45 Sekunden 🏛️\n\n• Was ist das? Eine Zusammenfassung der Diskussion bei der Zinssitzung der US-Notenbank\n• Wann? Etwa drei Wochen nach der Sitzung – heute 20:00 Uhr deutscher Zeit für die Sitzung von Ende Oktober\n• Die Zinsentscheidung steht dann schon fest, das Protokoll zeigt den Weg dorthin\n• Nächste Fed-Zinsentscheidung: 9. Dezember\n\nWas würdest du im Protokoll nachlesen wollen? 👇\n\nStimme: KI-generiert. Quellen: Federal Reserve (Veröffentlichungsrhythmus), Wochenvorschauen. Keine Anlageberatung.\n\n#fed #zinsen #börse #finanzen #aktien #depotdiary",
+    "claimed_by": "ip-10-0-133-98-2412-3566c599",
+    "claimed_at": "2026-11-18T16:21:21.473139+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_reel_fedprotokoll",
