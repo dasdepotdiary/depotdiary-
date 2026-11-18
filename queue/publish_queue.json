@@ -5423,8 +5423,10 @@
   {
     "post_name": "zitat_2026-11-18b",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-18T09:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-18T09:00:00+01:00",
+    "claimed_by": "ip-10-0-133-98-2412-3566c599",
+    "claimed_at": "2026-11-18T16:21:08.412540+00:00"
   },
   {
     "post_name": "reel_fedprotokoll_2026-11-18",
