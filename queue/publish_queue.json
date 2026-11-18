@@ -5393,10 +5393,12 @@
   {
     "post_name": "zitat_2026-11-18",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-18T09:00:00+01:00",
     "claimed_by": "ip-10-0-133-98-2412-3566c599",
-    "claimed_at": "2026-11-18T16:19:24.285462+00:00"
+    "claimed_at": "2026-11-18T16:19:24.285462+00:00",
+    "published_at": "2026-11-18T16:19:35.960343+00:00",
+    "media_id": "18390502702233370"
   },
   {
     "post_name": "format_aktienquiz_2026-11-18",
