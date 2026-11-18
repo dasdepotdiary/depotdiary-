@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Dienstag: S&P 500 -1,03% auf 7.341, Nasdaq -0,74% auf 24.328, Dow Jones -1,64% auf 50.759.",
-         "body": "Der DAX schloss 2,08% im Minus bei 26.045 Punkten, der Angstindex VIX stieg um 11% auf 25,5."},
-        {"headline": "US-Einzelhandelsumsaetze Oktober: +0,2% zum Vormonat.",
-         "body": "Das entsprach der Erwartung (September: +0,8%). Ohne Autos, Benzin, Baumaterial und Gastronomie: +0,6%."},
-        {"headline": "Home Depot -2,4%, Disney -1,5%, JD.com -7,7% am Berichtstag.",
-         "body": "Home Depot: bereinigter Gewinn je Aktie 3,86 USD, Umsatz 43,4 Mrd. USD. Disney: 1,77 USD, Umsatz 25,95 Mrd. USD."},
-        {"headline": "Nvidia nach Boersenschluss: Umsatz 115,8 Mrd. USD, Gewinn je Aktie 2,68 USD (bereinigt).",
-         "body": "Der Konsens lag bei 2,49 USD. Ausblick fuers naechste Quartal: rund 130 Mrd. USD Umsatz (+/-3%)."},
-        {"headline": "Nvidia-Aktie nachboerslich rund +3% auf etwa 160 USD.",
-         "body": "Schlusskurs im regulaeren Handel: 155,46 USD (-0,4%). Quellen: Unternehmensmitteilung, Yahoo Finance."},
+        {"headline": "US-Boersen am Mittwoch: S&P 500 -0,23% auf 7.324, Nasdaq +0,42% auf 24.430, Dow Jones -1,11% auf 50.198.",
+         "body": "Der DAX schloss 1,19% im Minus bei 25.736 Punkten, der Angstindex VIX sank um 3,5% auf 24,6."},
+        {"headline": "Fed-Protokoll: Fast alle Teilnehmer hielten weitere Zinsanhebungen fuer wahrscheinlich angemessen.",
+         "body": "Der Leitzins blieb im Oktober bei 3,75-4%. Viele nannten den KI-Ausbau als Inflationsrisiko (laut Berichten zum Protokoll)."},
+        {"headline": "Lowe's +1,0%, Target +4,0%, TJX +8,0% am Berichtstag.",
+         "body": "Bereinigter Gewinn je Aktie: Lowe's 3,10 USD, Target 2,65 USD, TJX 1,34 USD. Lowe's und Target nennen Einmaleffekte aus Zoll-Rueckerstattungen."},
+        {"headline": "Disney +4,6%, Nvidia -2,9% auf 150,96 USD.",
+         "body": "Nvidia gab damit den nachboerslichen Anstieg vom Dienstag wieder ab (Schlusskurs Dienstag: 155,46 USD)."},
+        {"headline": "Palo Alto Networks nach Boersenschluss: Umsatz 3,44 Mrd. USD (+39%).",
+         "body": "Die Umsatzprognose fuers Gesamtjahr wurde angehoben. Die Aktie lag nachboerslich bei rund 366 USD (Schlusskurs 339,92 USD)."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
