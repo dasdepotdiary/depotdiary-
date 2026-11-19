@@ -5576,8 +5576,10 @@
   {
     "post_name": "story_post_ankuendigung_retail_zahlen",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-19T08:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-19T08:10:00+01:00",
+    "claimed_by": "runnervmccnms-2257-56b65d14",
+    "claimed_at": "2026-11-19T13:33:39.331039+00:00"
   },
   {
     "post_name": "zitat_2026-11-19",
