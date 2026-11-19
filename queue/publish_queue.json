@@ -5616,9 +5616,11 @@
   {
     "post_name": "zitat_2026-11-19b",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-19T09:00:00+01:00",
     "claimed_by": "runnervmccnms-2257-56b65d14",
-    "claimed_at": "2026-11-19T13:36:52.405268+00:00"
+    "claimed_at": "2026-11-19T13:36:52.405268+00:00",
+    "published_at": "2026-11-19T13:37:00.172926+00:00",
+    "media_id": "17866567173695115"
   }
 ]
