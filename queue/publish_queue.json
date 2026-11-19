@@ -5549,10 +5549,17 @@
   {
     "post_name": "aktiencheck_2026-11-19",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-19T06:30:00+01:00",
     "claimed_by": "runnervmccnms-2257-56b65d14",
-    "claimed_at": "2026-11-19T13:31:31.492533+00:00"
+    "claimed_at": "2026-11-19T13:31:31.492533+00:00",
+    "published_at": "2026-11-19T13:32:57.781962+00:00",
+    "media_id": "18605932105066151",
+    "media_ids": [
+      "18605932105066151",
+      "18085165700347433",
+      "17912416896669067"
+    ]
   },
   {
     "post_name": "marktupdate_retail-zahlen-18-11",
