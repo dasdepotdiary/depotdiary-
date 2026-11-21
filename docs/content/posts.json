@@ -1033,5 +1033,23 @@
     "excerpt": "Die drei Händler vom Mittwoch -- nur berichtete Fakten.",
     "cover": "assets/posts/marktupdate_retail-zahlen-18-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_wochenrueckblick-21-11",
+    "title": "Diese Börsenwoche im Rückblick: Nasdaq -10 %, Nvidia -23 %.",
+    "category": "marktupdate",
+    "date": "2026-11-21",
+    "excerpt": "Fünf Themen, die zwischen Montag und Freitag passiert sind.",
+    "cover": "assets/posts/marktupdate_wochenrueckblick-21-11/slide_1.webp",
+    "url": null
+  },
+  {
+    "id": "marktupdate_wochenausblick-22-11",
+    "title": "Diese Börsenwoche: Thanksgiving, Dell & Deere.",
+    "category": "marktupdate",
+    "date": "2026-11-21",
+    "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
+    "cover": "assets/posts/marktupdate_wochenausblick-22-11/slide_1.webp",
+    "url": null
   }
 ]

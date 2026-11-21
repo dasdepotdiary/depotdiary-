@@ -5622,5 +5622,45 @@
     "claimed_at": "2026-11-19T13:36:52.405268+00:00",
     "published_at": "2026-11-19T13:37:00.172926+00:00",
     "media_id": "17866567173695115"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-21-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-21T16:57:31+01:00",
+    "slide_count": 8,
+    "caption": "Wochenrückblick: Nasdaq −10 %, Nvidia −23 %, S&P 500 in der Korrektur.\n\nDie schwächste Woche für den S&P 500 seit April 2025: S&P 500 −8,6 %, Nasdaq −10,0 %, Dow −8,0 %, DAX −7,3 %. Nvidia fiel am Freitag um 14 % -- laut Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung. Siebter Verlusttag in Folge.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #nasdaq #nvidia #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenrueckblick-21-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-21T16:58:31+01:00"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-22-11",
+    "action": "carousel",
+    "status": "pending",
+    "fire_at": "2026-11-22T10:00:00+01:00",
+    "slide_count": 7,
+    "caption": "Wochenausblick: Thanksgiving, Dell & Deere.\n\nDienstag Dell, Workday, Medtronic, Mittwoch Deere, Donnerstag sind die US-Börsen geschlossen, Freitag verkürzt. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen"
+  },
+  {
+    "post_name": "marktupdate_wochenausblick-22-11",
+    "action": "story_sequence",
+    "status": "pending",
+    "fire_at": "2026-11-22T09:45:00+01:00"
+  },
+  {
+    "post_name": "heuteagenda_2026-11-21",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-21T16:59:33+01:00"
+  },
+  {
+    "post_name": "zitat_2026-11-21",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-21T19:30:00+01:00"
   }
 ]

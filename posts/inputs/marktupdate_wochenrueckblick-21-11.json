@@ -1,0 +1,51 @@
+{
+  "eyebrow": "WOCHENRÜCKBLICK",
+  "hook": "Diese Börsenwoche im Rückblick: *Nasdaq -10 %, Nvidia -23 %*.",
+  "hook_sub": "Fünf Themen, die zwischen Montag und Freitag passiert sind.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Montag und Dienstag: *Verluste* gehen weiter.",
+      "body": "Der S&P 500 verlor am Montag 1,92% und am Dienstag 1,03%. Der Nasdaq fiel am Montag um 2,49%."
+    },
+    {
+      "type": "text",
+      "headline": "Mittwoch: *kurze Pause*, dann Donnerstag minus.",
+      "body": "Am Mittwoch gab der S&P 500 nur 0,23% nach, der Nasdaq legte um 0,42% zu. Am Donnerstag folgten S&P 500 -2,02% und Nasdaq -2,25%."
+    },
+    {
+      "type": "text",
+      "headline": "Freitag: *Nvidia* bricht ein.",
+      "body": "Nvidia fiel um 14%, auf Wochensicht um rund 23%. Laut einem Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung des Konzerns. Der Nasdaq verlor 5,28%, der S&P 500 3,70%."
+    },
+    {
+      "type": "text",
+      "headline": "S&P 500 in der *Korrektur*.",
+      "body": "Es war der siebte Verlusttag in Folge. Der S&P 500 schloss bei 6.910 Punkten -- mehr als 10% unter seinem Rekordhoch von Anfang Oktober."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Wochenbilanz* der Indizes.",
+      "stats": [
+        ["Nasdaq", "22.617,73", "-10,02%", "red"],
+        ["S&P 500", "6.910,39", "-8,61%", "red"],
+        ["Dow Jones", "48.147,33", "-8,02%", "red"],
+        ["DAX", "24.802,78", "-7,28%", "red"]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 20.11."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *größten* Wochenverluste.",
+      "stats": [
+        ["Nvidia", "125,53 USD", "-22,9%", "red"],
+        ["Bitcoin", "58.799 USD", "-13,9%", "red"],
+        ["Meta", "560,84 USD", "-12,6%", "red"],
+        ["Gold", "3.515 USD", "-9,5%", "red"]
+      ],
+      "note": "Wochenbewegung, Stand Freitag 20.11."
+    }
+  ],
+  "cta_headline": "Nächste Woche: *Thanksgiving-Woche*.",
+  "cta_body": "Am Donnerstag, 26.11., sind die US-Börsen geschlossen, am Freitag verkürzt. Davor berichten unter anderem Dell, Autodesk, Workday und Deere. Keine Prognose, keine Bewertung -- nur, was diese Woche wirklich passiert ist."
+}
