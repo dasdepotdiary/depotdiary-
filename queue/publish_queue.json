@@ -5672,10 +5672,12 @@
   {
     "post_name": "heuteagenda_2026-11-21",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-21T16:59:33+01:00",
     "claimed_by": "Surface4RA-1060-55972b74",
-    "claimed_at": "2026-11-21T16:08:43.926913+00:00"
+    "claimed_at": "2026-11-21T16:08:43.926913+00:00",
+    "published_at": "2026-11-21T16:09:00.056201+00:00",
+    "media_id": "18071226221685846"
   },
   {
     "post_name": "zitat_2026-11-21",
