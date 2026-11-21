@@ -5682,7 +5682,9 @@
   {
     "post_name": "zitat_2026-11-21",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-21T19:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-21T19:30:00+01:00",
+    "claimed_by": "Surface4RA-28676-2137536f",
+    "claimed_at": "2026-11-21T20:24:31.845703+00:00"
   }
 ]
