@@ -5682,9 +5682,11 @@
   {
     "post_name": "zitat_2026-11-21",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-21T19:30:00+01:00",
     "claimed_by": "Surface4RA-28676-2137536f",
-    "claimed_at": "2026-11-21T20:24:31.845703+00:00"
+    "claimed_at": "2026-11-21T20:24:31.845703+00:00",
+    "published_at": "2026-11-21T20:24:49.425084+00:00",
+    "media_id": "18096822464184844"
   }
 ]
