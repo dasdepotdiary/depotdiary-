@@ -5626,10 +5626,12 @@
   {
     "post_name": "marktupdate_wochenrueckblick-21-11",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-21T16:57:31+01:00",
     "slide_count": 8,
-    "caption": "Wochenrückblick: Nasdaq −10 %, Nvidia −23 %, S&P 500 in der Korrektur.\n\nDie schwächste Woche für den S&P 500 seit April 2025: S&P 500 −8,6 %, Nasdaq −10,0 %, Dow −8,0 %, DAX −7,3 %. Nvidia fiel am Freitag um 14 % -- laut Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung. Siebter Verlusttag in Folge.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #nasdaq #nvidia #finanzen"
+    "caption": "Wochenrückblick: Nasdaq −10 %, Nvidia −23 %, S&P 500 in der Korrektur.\n\nDie schwächste Woche für den S&P 500 seit April 2025: S&P 500 −8,6 %, Nasdaq −10,0 %, Dow −8,0 %, DAX −7,3 %. Nvidia fiel am Freitag um 14 % -- laut Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung. Siebter Verlusttag in Folge.\n\nKeine Anlageberatung -- nur Zahlen, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenrueckblick #nasdaq #nvidia #finanzen",
+    "claimed_by": "Surface4RA-1060-55972b74",
+    "claimed_at": "2026-11-21T16:04:33.555975+00:00"
   },
   {
     "post_name": "marktupdate_wochenrueckblick-21-11",
