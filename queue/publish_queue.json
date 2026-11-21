@@ -5638,8 +5638,10 @@
   {
     "post_name": "marktupdate_wochenrueckblick-21-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-21T16:58:31+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-21T16:58:31+01:00",
+    "claimed_by": "Surface4RA-1060-55972b74",
+    "claimed_at": "2026-11-21T16:06:17.228263+00:00"
   },
   {
     "post_name": "marktupdate_wochenausblick-22-11",
