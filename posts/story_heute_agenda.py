@@ -55,12 +55,12 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "VOR US-BOERSENSTART", "headline": "Walmart, Alibaba und PDD berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Walmart 0,64 USD (Zahlen ca. 13:00 Uhr), Alibaba 1,56 USD, PDD 2,61 USD."},
-        {"time": "14:30 UHR", "headline": "Erstantraege auf Arbeitslosenhilfe und Philly-Fed-Index.",
-         "body": "Zwei regelmaessige US-Konjunkturdaten: der woechentliche Arbeitsmarktbericht und die Industrie-Stimmung der Region Philadelphia."},
-        {"time": "NACH BOERSENSCHLUSS", "headline": "Intuit und Ross Stores berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: Intuit 2,47 USD, Ross Stores 1,85 USD."},
+        {"time": "WOCHENENDE", "headline": "Boersen weltweit pausieren.",
+         "body": "Aktienmaerkte in den USA, Europa und Asien bleiben bis Montag geschlossen -- ruhiger Tag ohne Earnings oder Konjunkturdaten."},
+        {"time": "24/7", "headline": "Nur der Kryptomarkt handelt weiter.",
+         "body": "Bitcoin, Ethereum und Co. kennen keine Schliesszeiten -- der einzige Markt, der auch am Wochenende laeuft."},
+        {"time": "AUSBLICK", "headline": "Naechste Woche: verkuerzte US-Handelswoche.",
+         "body": "Am Donnerstag, 26.11., bleiben die US-Boersen wegen Thanksgiving komplett geschlossen, Freitag wird nur verkuerzt gehandelt."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
