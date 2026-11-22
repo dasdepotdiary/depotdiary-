@@ -5670,8 +5670,10 @@
   {
     "post_name": "marktupdate_wochenausblick-22-11",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-22T09:45:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-22T09:45:00+01:00",
+    "claimed_by": "runnervm0hi8g-2459-e5e4cfa3",
+    "claimed_at": "2026-11-22T09:40:51.674491+00:00"
   },
   {
     "post_name": "heuteagenda_2026-11-21",
