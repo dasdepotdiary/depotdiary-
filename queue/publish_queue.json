@@ -5761,9 +5761,11 @@
   {
     "post_name": "reel_wochenrueckblick_2026-11-21",
     "action": "reel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-22T23:35:00+01:00",
-    "caption": "Der Wochenrückblick in 70 Sekunden 📉\n\n• Nasdaq: −10,02 % auf 22.617,73 Punkte\n• S&P 500: −8,61 % auf 6.910,39 – siebter Verlusttag in Folge, mehr als 10 % unter dem Rekordhoch von Anfang Oktober (Korrektur)\n• Dow Jones: −8,02 % · DAX: −7,28 %\n• Nvidia: −22,9 % auf 125,53 $ (Freitag: −14 %). Laut einem Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung – eine offizielle Bestätigung habe ich nicht gesehen\n• Bitcoin: −13,9 % · Gold: −9,5 %\n\nWie hast du die Woche erlebt? 👇\n\nStimme: KI-generiert. Quellen: Yahoo Finance (Wochenschlusskurse, Stand Freitag 20.11.), Reuters-Bericht (laut Medien). Nur berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#börse #nasdaq #sp500 #nvidia #wochenrückblick #finanzen #depotdiary"
+    "caption": "Der Wochenrückblick in 70 Sekunden 📉\n\n• Nasdaq: −10,02 % auf 22.617,73 Punkte\n• S&P 500: −8,61 % auf 6.910,39 – siebter Verlusttag in Folge, mehr als 10 % unter dem Rekordhoch von Anfang Oktober (Korrektur)\n• Dow Jones: −8,02 % · DAX: −7,28 %\n• Nvidia: −22,9 % auf 125,53 $ (Freitag: −14 %). Laut einem Reuters-Bericht prüfen SEC-Mitarbeiter die Bilanzierung – eine offizielle Bestätigung habe ich nicht gesehen\n• Bitcoin: −13,9 % · Gold: −9,5 %\n\nWie hast du die Woche erlebt? 👇\n\nStimme: KI-generiert. Quellen: Yahoo Finance (Wochenschlusskurse, Stand Freitag 20.11.), Reuters-Bericht (laut Medien). Nur berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#börse #nasdaq #sp500 #nvidia #wochenrückblick #finanzen #depotdiary",
+    "claimed_by": "Surface4RA-16768-5422298d",
+    "claimed_at": "2026-11-22T22:46:05.964623+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_reel_wochenrueckblick_nov21",
