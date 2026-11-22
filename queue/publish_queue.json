@@ -5658,12 +5658,14 @@
   {
     "post_name": "marktupdate_wochenausblick-22-11",
     "action": "carousel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-22T10:00:00+01:00",
     "slide_count": 7,
     "caption": "Wochenausblick: Thanksgiving, Dell & Deere.\n\nDienstag Dell, Workday, Medtronic, Mittwoch Deere, Donnerstag sind die US-Börsen geschlossen, Freitag verkürzt. Reine Terminübersicht, keine Prognose.\n\nKeine Anlageberatung -- nur Termine, die ich mir angeschaut habe.\n\n#depotdiary #boerse #wochenausblick #aktien #finanzen",
     "claimed_by": "runnervm0hi8g-2459-e5e4cfa3",
-    "claimed_at": "2026-11-22T09:40:05.809066+00:00"
+    "claimed_at": "2026-11-22T09:40:05.809066+00:00",
+    "published_at": "2026-11-22T09:40:50.517211+00:00",
+    "media_id": "18082935245391024"
   },
   {
     "post_name": "marktupdate_wochenausblick-22-11",
