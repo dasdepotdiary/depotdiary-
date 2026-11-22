@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was bedeutet 'bereinigter Gewinn je Aktie' (Adjusted EPS)?",
+        "q": "Was ist eine Boersenkorrektur?",
         "options": [
-            "Der Gewinn je Aktie des Vorjahres",
-            "Die Dividende je Aktie",
-            "Der Gewinn je Aktie ohne bestimmte Sondereffekte",
-        ],
-        "correct": 2,
-        "explain": "Welche Posten herausgerechnet werden, legt das Unternehmen selbst fest -- deshalb lohnt der Blick auf beide Zahlen, bereinigt und nach US-GAAP.",
-    },
-    {
-        "q": "Was ist der Leitzins?",
-        "options": [
-            "Der Zins, zu dem sich Banken bei der Notenbank Geld leihen koennen",
-            "Der Zins auf Tagesgeld bei jeder Bank",
-            "Der Zins auf zehnjaehrige Staatsanleihen",
+            "Ein Rueckgang um mindestens 10% vom letzten Hoch",
+            "Eine Aenderung der Handelszeiten",
+            "Eine Korrektur falscher Kurse durch die Boerse",
         ],
         "correct": 0,
-        "explain": "Die Notenbank legt ihn fest. Er beeinflusst Kredit- und Sparzinsen im ganzen Land.",
+        "explain": "Ab 10% unter dem Hoch spricht man von einer Korrektur, ab 20% von einem Baerenmarkt. Beide Marken sind Konventionen.",
     },
     {
-        "q": "Was bedeutet 'nachboerslich'?",
+        "q": "Was ist ein Baerenmarkt?",
         "options": [
-            "Ein Handelsverbot fuer einen Tag",
-            "Handel nach dem regulaeren Boersenschluss",
-            "Handel nur fuer Profis am Wochenende",
+            "Ein Markt, der nur von Profis gehandelt wird",
+            "Ein Markt mit sehr wenigen Handelstagen",
+            "Ein Rueckgang um mindestens 20% vom letzten Hoch",
         ],
-        "correct": 1,
-        "explain": "Viele US-Unternehmen melden Zahlen nach Boersenschluss. Der nachboerslische Handel hat meist weniger Umsatz, die Kurse koennen staerker schwanken.",
+        "correct": 2,
+        "explain": "Der Begriff beschreibt einen laenger anhaltenden Rueckgang. Die 20%-Marke ist eine gaengige Konvention.",
+    },
+    {
+        "q": "Was bedeutet 'verkuerzter Handel' am Tag nach Thanksgiving?",
+        "options": [
+            "Die Boerse schliesst frueher als sonst",
+            "Es duerfen nur wenige Aktien gehandelt werden",
+            "Die Boerse oeffnet erst am Nachmittag",
+        ],
+        "correct": 0,
+        "explain": "Am Freitag nach Thanksgiving schliessen die US-Boersen frueher. Der Donnerstag selbst ist ein Feiertag ohne Handel.",
     },
 ]
 

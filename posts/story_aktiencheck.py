@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "PDD Holdings", "ticker": "PDD", "price": 77.45, "change_pct": 0.08, "as_of": "18.11. Schluss", "pe": 8.71,
-         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": None,
-         "market_cap": "110,2 Mrd. USD", "volume": "5,0 Mio.", "week52_low": 71.94, "week52_high": 125.36,
-         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 2,61 USD). Der Kurs liegt rund 38% unter dem 52-Wochen-Hoch (125,36 USD).",
-         "csv_path": DATA_DIR / "PDD.csv", "accent": OCHRE},
-        {"name": "Williams-Sonoma", "ticker": "WSM", "price": 260.09, "change_pct": 4.02, "as_of": "18.11. Schluss", "pe": 26.68,
-         "forward_pe": 24.64, "peg": None, "div_yield": 1.22, "earnings_growth": None, "beta": 1.49,
-         "market_cap": "30,6 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 165.51, "week52_high": 274.45,
-         "note": "Berichtet am Donnerstag vor US-Boersenstart (Konsens-EPS 2,18 USD). Der Kurs liegt rund 5% unter dem 52-Wochen-Hoch (274,45 USD).",
-         "csv_path": DATA_DIR / "WSM.csv", "accent": GREEN},
-        {"name": "Keysight Technologies", "ticker": "KEYS", "price": 286.30, "change_pct": 0.65, "as_of": "18.11. Schluss", "pe": 38.74,
-         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.21,
-         "market_cap": "48,7 Mrd. USD", "volume": "1,3 Mio.", "week52_low": 167.23, "week52_high": 389.93,
-         "note": "Berichtet am Donnerstag nach Boersenschluss (Konsens-EPS 3,09 USD). Der Kurs liegt rund 27% unter dem 52-Wochen-Hoch (389,93 USD).",
-         "csv_path": DATA_DIR / "KEYS.csv", "accent": CAT_TEAL},
+        {"name": "Hewlett Packard Enterprise", "ticker": "HPE", "price": 40.91, "change_pct": -10.07, "as_of": "20.11. Schluss", "pe": 21.09,
+         "forward_pe": None, "peg": None, "div_yield": 1.39, "earnings_growth": None, "beta": 1.47,
+         "market_cap": "54,3 Mrd. USD", "volume": "21,5 Mio.", "week52_low": 19.84, "week52_high": 73.56,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,18 USD). Der Kurs liegt rund 44% unter dem 52-Wochen-Hoch (73,56 USD).",
+         "csv_path": DATA_DIR / "HPE.csv", "accent": OCHRE},
+        {"name": "Zoom Communications", "ticker": "ZM", "price": 81.26, "change_pct": -3.05, "as_of": "20.11. Schluss", "pe": None,
+         "forward_pe": 12.80, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 0.99,
+         "market_cap": "23,7 Mrd. USD", "volume": "4,6 Mio.", "week52_low": 70.70, "week52_high": 114.74,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,00 USD). Der Kurs liegt rund 29% unter dem 52-Wochen-Hoch (114,74 USD).",
+         "csv_path": DATA_DIR / "ZM.csv", "accent": GREEN},
+        {"name": "Agilent Technologies", "ticker": "A", "price": 170.38, "change_pct": -2.83, "as_of": "20.11. Schluss", "pe": 33.61,
+         "forward_pe": 25.36, "peg": 1.44, "div_yield": 0.62, "earnings_growth": None, "beta": 1.24,
+         "market_cap": "48,0 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 108.35, "week52_high": 182.99,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,72 USD). Der Kurs liegt rund 7% unter dem 52-Wochen-Hoch (182,99 USD).",
+         "csv_path": DATA_DIR / "A.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

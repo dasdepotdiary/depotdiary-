@@ -55,12 +55,10 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "WOCHENENDE", "headline": "Boersen weltweit pausieren.",
-         "body": "Aktienmaerkte in den USA, Europa und Asien bleiben bis Montag geschlossen -- ruhiger Tag ohne Earnings oder Konjunkturdaten."},
-        {"time": "24/7", "headline": "Nur der Kryptomarkt handelt weiter.",
-         "body": "Bitcoin, Ethereum und Co. kennen keine Schliesszeiten -- der einzige Markt, der auch am Wochenende laeuft."},
-        {"time": "AUSBLICK", "headline": "Naechste Woche: verkuerzte US-Handelswoche.",
-         "body": "Am Donnerstag, 26.11., bleiben die US-Boersen wegen Thanksgiving komplett geschlossen, Freitag wird nur verkuerzt gehandelt."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "Hewlett Packard Enterprise, Agilent und Zoom berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: HPE 1,18 USD, Agilent 1,72 USD, Zoom 1,00 USD."},
+        {"time": "DIESE WOCHE", "headline": "Kurze Handelswoche vor Thanksgiving.",
+         "body": "Dienstag: Dell, Workday, Autodesk. Mittwoch: Deere. Donnerstag bleiben die US-Boersen geschlossen, Freitag wird verkuerzt gehandelt."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
