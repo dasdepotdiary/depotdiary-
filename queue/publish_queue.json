@@ -5709,8 +5709,10 @@
   {
     "post_name": "korrektur_wochenausblick_2026-11-22",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-22T23:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-22T23:30:00+01:00",
+    "claimed_by": "Surface4RA-5500-7e75dcd3",
+    "claimed_at": "2026-11-22T22:31:07.166981+00:00"
   },
   {
     "post_name": "heuteagenda_2026-11-23",
