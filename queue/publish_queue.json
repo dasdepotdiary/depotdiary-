@@ -5766,5 +5766,31 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-11-22T23:45:00+01:00"
+  },
+  {
+    "post_name": "reel_wochenausblick_2026-11-22",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-23T07:45:00+01:00",
+    "caption": "Die Thanksgiving-Woche in 45 Sekunden 🦃\n\n• Mo (nach Börsenschluss): Hewlett Packard Enterprise (Konsens-EPS 1,18 $), Agilent (1,72 $), Zoom (1,00 $)\n• Di: Analog Devices (3,89 $) und Medtronic (1,34 $) vor Börsenstart; Dell (6,55 $), Autodesk (2,27 $), Workday (1,28 $) nach Börsenschluss\n• Mi: Deere (4,07 $) vor Börsenstart\n• Do 26.11.: US-Börsen wegen Thanksgiving geschlossen\n• Fr 27.11.: verkürzter Handel\n\nAuf welchen Termin wartest du? 👇\n\nStimme: KI-generiert. Quelle: Nasdaq-Terminkalender. Konsens-Schätzungen als reine Zahlen, ohne Wertung. Keine Anlageberatung.\n\n#wochenausblick #thanksgiving #dell #deere #börse #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_wochenausblick_nov22",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-23T07:55:00+01:00"
+  },
+  {
+    "post_name": "reel_leitzins_2026-11-22",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-23T12:30:00+01:00",
+    "caption": "Der Leitzins in 45 Sekunden 🏦\n\n• Der Zins, zu dem sich Banken bei der Notenbank Geld leihen können\n• USA: Fed · Euroraum: Europäische Zentralbank\n• Wirkt wie ein Grundpreis für Geld – Kredit- und Sparzinsen ändern sich oft mit\n• Fed im Oktober: Leitzins unverändert bei 3,75–4 %, nächste Entscheidung am 9. Dezember\n• Laut Berichten zum Fed-Protokoll hielten fast alle Teilnehmer weitere Anhebungen für wahrscheinlich angemessen\n\nKennst du den aktuellen Leitzins? 👇\n\nStimme: KI-generiert. Quellen: Federal Reserve, Medienberichte zum Fed-Protokoll. Nur Erklärung, keine Anlageberatung.\n\n#leitzins #fed #zinsen #ezb #finanzwissen #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_leitzins",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-23T12:40:00+01:00"
   }
 ]
