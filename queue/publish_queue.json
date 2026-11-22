@@ -5772,8 +5772,10 @@
   {
     "post_name": "story_post_ankuendigung_reel_wochenrueckblick_nov21",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-22T23:45:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-22T23:45:00+01:00",
+    "claimed_by": "Surface4RA-16768-5422298d",
+    "claimed_at": "2026-11-22T22:47:12.131794+00:00"
   },
   {
     "post_name": "reel_wochenausblick_2026-11-22",
