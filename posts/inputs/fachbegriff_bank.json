@@ -113,5 +113,10 @@
     "term": "Baerenmarkt (Bear Market)",
     "definition": "Ein Rueckgang eines Index um mindestens 20% vom letzten Hoch. Ein Rueckgang von mindestens 10% heisst Korrektur. Beide Marken sind Konventionen, keine Naturgesetze.",
     "example": "Der S&P 500 schloss am Freitag mehr als 10% unter seinem Rekordhoch von Anfang Oktober -- eine Korrektur, noch kein Baerenmarkt."
+  },
+  "2026-11-24": {
+    "term": "Quartalsdividende",
+    "definition": "Eine Dividende, die ein Unternehmen vierteljaehrlich an seine Aktionaere ausschuettet. Ob und wie viel gezahlt wird, beschliesst das Unternehmen jeweils selbst.",
+    "example": "Zoom hat gestern seine erste Quartalsdividende angekuendigt: 0,25 USD je Aktie."
   }
 }

@@ -55,10 +55,10 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "NACH BOERSENSCHLUSS", "headline": "Hewlett Packard Enterprise, Agilent und Zoom berichten.",
-         "body": "Konsens-Schaetzung Gewinn je Aktie: HPE 1,18 USD, Agilent 1,72 USD, Zoom 1,00 USD."},
-        {"time": "DIESE WOCHE", "headline": "Kurze Handelswoche vor Thanksgiving.",
-         "body": "Dienstag: Dell, Workday, Autodesk. Mittwoch: Deere. Donnerstag bleiben die US-Boersen geschlossen, Freitag wird verkuerzt gehandelt."},
+        {"time": "VOR US-BOERSENSTART", "headline": "Analog Devices, Medtronic, Best Buy und Dollar Tree berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Analog Devices 3,89 USD, Medtronic 1,34 USD, Best Buy 1,48 USD, Dollar Tree 0,89 USD."},
+        {"time": "NACH BOERSENSCHLUSS", "headline": "Dell, Autodesk, Workday und HP Inc. berichten.",
+         "body": "Konsens-Schaetzung Gewinn je Aktie: Dell 6,55 USD, Autodesk 2,27 USD, Workday 1,28 USD, HP Inc. 0,74 USD."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")

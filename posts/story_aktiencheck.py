@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Hewlett Packard Enterprise", "ticker": "HPE", "price": 40.91, "change_pct": -10.07, "as_of": "20.11. Schluss", "pe": 21.09,
-         "forward_pe": None, "peg": None, "div_yield": 1.39, "earnings_growth": None, "beta": 1.47,
-         "market_cap": "54,3 Mrd. USD", "volume": "21,5 Mio.", "week52_low": 19.84, "week52_high": 73.56,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,18 USD). Der Kurs liegt rund 44% unter dem 52-Wochen-Hoch (73,56 USD).",
-         "csv_path": DATA_DIR / "HPE.csv", "accent": OCHRE},
-        {"name": "Zoom Communications", "ticker": "ZM", "price": 81.26, "change_pct": -3.05, "as_of": "20.11. Schluss", "pe": None,
-         "forward_pe": 12.80, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 0.99,
-         "market_cap": "23,7 Mrd. USD", "volume": "4,6 Mio.", "week52_low": 70.70, "week52_high": 114.74,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,00 USD). Der Kurs liegt rund 29% unter dem 52-Wochen-Hoch (114,74 USD).",
-         "csv_path": DATA_DIR / "ZM.csv", "accent": GREEN},
-        {"name": "Agilent Technologies", "ticker": "A", "price": 170.38, "change_pct": -2.83, "as_of": "20.11. Schluss", "pe": 33.61,
-         "forward_pe": 25.36, "peg": 1.44, "div_yield": 0.62, "earnings_growth": None, "beta": 1.24,
-         "market_cap": "48,0 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 108.35, "week52_high": 182.99,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,72 USD). Der Kurs liegt rund 7% unter dem 52-Wochen-Hoch (182,99 USD).",
-         "csv_path": DATA_DIR / "A.csv", "accent": CAT_TEAL},
+        {"name": "Dell Technologies", "ticker": "DELL", "price": 334.91, "change_pct": 20.46, "as_of": "23.11. Schluss", "pe": 19.47,
+         "forward_pe": None, "peg": None, "div_yield": 0.91, "earnings_growth": None, "beta": 1.44,
+         "market_cap": "212,9 Mrd. USD", "volume": "16,0 Mio.", "week52_low": 110.22, "week52_high": 595.51,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 6,55 USD). Der Kurs liegt rund 44% unter dem 52-Wochen-Hoch (595,51 USD).",
+         "csv_path": DATA_DIR / "DELL.csv", "accent": OCHRE},
+        {"name": "Workday", "ticker": "WDAY", "price": 176.08, "change_pct": 0.89, "as_of": "23.11. Schluss", "pe": 35.86,
+         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.01,
+         "market_cap": "42,4 Mrd. USD", "volume": "2,5 Mio.", "week52_low": 110.36, "week52_high": 236.80,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,28 USD). Der Kurs liegt rund 26% unter dem 52-Wochen-Hoch (236,80 USD).",
+         "csv_path": DATA_DIR / "WDAY.csv", "accent": GREEN},
+        {"name": "Autodesk", "ticker": "ADSK", "price": 255.33, "change_pct": 4.44, "as_of": "23.11. Schluss", "pe": 33.12,
+         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.25,
+         "market_cap": "53,4 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 185.50, "week52_high": 320.00,
+         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 2,27 USD). Der Kurs liegt rund 20% unter dem 52-Wochen-Hoch (320,00 USD).",
+         "csv_path": DATA_DIR / "ADSK.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

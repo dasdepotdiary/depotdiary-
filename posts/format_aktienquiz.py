@@ -51,34 +51,34 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was ist eine Boersenkorrektur?",
+        "q": "Was ist eine Quartalsdividende?",
         "options": [
-            "Ein Rueckgang um mindestens 10% vom letzten Hoch",
-            "Eine Aenderung der Handelszeiten",
-            "Eine Korrektur falscher Kurse durch die Boerse",
+            "Eine Gebuehr der Boerse pro Quartal",
+            "Eine vierteljaehrliche Ausschuettung des Unternehmens an Aktionaere",
+            "Ein Zuschuss der Notenbank",
         ],
-        "correct": 0,
-        "explain": "Ab 10% unter dem Hoch spricht man von einer Korrektur, ab 20% von einem Baerenmarkt. Beide Marken sind Konventionen.",
+        "correct": 1,
+        "explain": "Ob und wie viel ausgeschuettet wird, beschliesst das Unternehmen selbst. Zoom hat gestern seine erste angekuendigt.",
     },
     {
-        "q": "Was ist ein Baerenmarkt?",
+        "q": "Was zeigt der VIX?",
         "options": [
-            "Ein Markt, der nur von Profis gehandelt wird",
-            "Ein Markt mit sehr wenigen Handelstagen",
-            "Ein Rueckgang um mindestens 20% vom letzten Hoch",
+            "Die erwartete Schwankung des S&P 500 -- den sogenannten Angstindex",
+            "Den Goldpreis in US-Dollar",
+            "Die Zahl der Handelstage im Jahr",
+        ],
+        "correct": 0,
+        "explain": "Der VIX wird aus Optionspreisen berechnet. Ein hoher Wert steht fuer erwartete starke Schwankungen, er sagt aber nichts ueber die Richtung.",
+    },
+    {
+        "q": "Was bedeutet 'vor Boersenstart' bei Quartalszahlen?",
+        "options": [
+            "Die Zahlen kommen nach Boersenschluss",
+            "Die Zahlen kommen am Wochenende",
+            "Die Zahlen kommen, bevor die Boerse oeffnet",
         ],
         "correct": 2,
-        "explain": "Der Begriff beschreibt einen laenger anhaltenden Rueckgang. Die 20%-Marke ist eine gaengige Konvention.",
-    },
-    {
-        "q": "Was bedeutet 'verkuerzter Handel' am Tag nach Thanksgiving?",
-        "options": [
-            "Die Boerse schliesst frueher als sonst",
-            "Es duerfen nur wenige Aktien gehandelt werden",
-            "Die Boerse oeffnet erst am Nachmittag",
-        ],
-        "correct": 0,
-        "explain": "Am Freitag nach Thanksgiving schliessen die US-Boersen frueher. Der Donnerstag selbst ist ein Feiertag ohne Handel.",
+        "explain": "Viele US-Unternehmen melden morgens vor der Eroeffnung, andere nach Handelsschluss. Der Zeitpunkt steht im Terminkalender.",
     },
 ]
 
