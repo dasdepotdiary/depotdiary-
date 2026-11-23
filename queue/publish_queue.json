@@ -5794,10 +5794,12 @@
   {
     "post_name": "zitat_2026-11-23b",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-23T09:00:00+01:00",
     "claimed_by": "Surface4RA-26268-799fdc4e",
-    "claimed_at": "2026-11-23T11:45:31.802058+00:00"
+    "claimed_at": "2026-11-23T11:45:31.802058+00:00",
+    "published_at": "2026-11-23T11:45:44.377053+00:00",
+    "media_id": "17924957748509274"
   },
   {
     "post_name": "reel_wochenrueckblick_2026-11-21",
