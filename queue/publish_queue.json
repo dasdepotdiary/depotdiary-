@@ -5836,10 +5836,12 @@
   {
     "post_name": "story_post_ankuendigung_reel_wochenausblick_nov22",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-23T07:55:00+01:00",
     "claimed_by": "Surface4RA-26268-799fdc4e",
-    "claimed_at": "2026-11-23T11:46:49.054565+00:00"
+    "claimed_at": "2026-11-23T11:46:49.054565+00:00",
+    "published_at": "2026-11-23T11:47:00.994363+00:00",
+    "media_id": "18025069343724219"
   },
   {
     "post_name": "reel_leitzins_2026-11-22",
