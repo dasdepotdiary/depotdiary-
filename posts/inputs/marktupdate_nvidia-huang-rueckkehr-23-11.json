@@ -1,0 +1,44 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Nvidia holt *Jensen Huang* zurück -- die Börse dreht.",
+  "hook_sub": "Was am Montag passiert ist -- nur berichtete Fakten.",
+  "sections": [
+    {
+      "type": "text",
+      "headline": "Was *bekannt* ist.",
+      "body": "Der Verwaltungsrat von Nvidia hat Jensen Huang einstimmig und mit sofortiger Wirkung wieder als CEO eingesetzt. Colette Kress, zuletzt kommissarische Chefin, kehrt in ihre Rolle als Finanzchefin zurück. Die unabhängige Untersuchung läuft laut Nvidia weiter."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Aktie* in zwei Tagen.",
+      "stats": [
+        ["Freitag 20.11.", "Schlusskurs 125,53 USD", "-14,0%", "red"],
+        ["Montag 23.11.", "Schlusskurs 165,05 USD", "+31,5%", "green"]
+      ],
+      "note": "Auf Wochensicht (bis 20.11.) hatte die Aktie rund 23% verloren. Quelle: Yahoo Finance."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Indizes* am Montag.",
+      "stats": [
+        ["Nasdaq", "24.089,56", "+6,51%", "green"],
+        ["S&P 500", "7.237,17", "+4,73%", "green"],
+        ["Dow Jones", "49.595,31", "+3,01%", "green"],
+        ["DAX", "25.337", "+2,15%", "green"]
+      ],
+      "note": "Laut CNN der beste Tag für S&P 500 und Nasdaq seit April 2025."
+    },
+    {
+      "type": "text",
+      "headline": "Die *Einordnung* in Zahlen.",
+      "body": "Gegenüber den Hochs vom 6. Oktober liegen der S&P 500 noch 7,4% und der Nasdaq 12,7% tiefer. Der VIX fiel am Montag um 26% auf 26,6."
+    },
+    {
+      "type": "text",
+      "headline": "Der *Vorlauf*.",
+      "body": "Nach den Quartalszahlen vom 17.11. hatte Kress eine Rückkehr von Huang öffentlich noch ausgeschlossen (laut CNN). Nvidia hatte damals 115,8 Mrd. USD Umsatz gemeldet."
+    }
+  ],
+  "cta_headline": "Wie viel Gewicht hat *der Chef* für ein Unternehmen?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur berichtete Fakten, keine Bewertung."
+}

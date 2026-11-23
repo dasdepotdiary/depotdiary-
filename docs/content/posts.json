@@ -1060,5 +1060,14 @@
     "excerpt": "Montag bis Mittwoch -- danach bleiben die US-Boersen donnerstags geschlossen.",
     "cover": "assets/posts/marktupdate_earnings-woche-2026-11-23/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_nvidia-huang-rueckkehr-23-11",
+    "title": "Nvidia holt Jensen Huang zurück -- die Börse dreht.",
+    "category": "marktupdate",
+    "date": "2026-11-24",
+    "excerpt": "Was am Montag passiert ist -- nur berichtete Fakten.",
+    "cover": "assets/posts/marktupdate_nvidia-huang-rueckkehr-23-11/slide_1.webp",
+    "url": null
   }
 ]
