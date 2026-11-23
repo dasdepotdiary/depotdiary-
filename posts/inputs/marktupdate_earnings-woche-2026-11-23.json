@@ -1,0 +1,65 @@
+{
+  "eyebrow": "EARNINGS-WOCHE",
+  "hook": "Fuenf Berichte vor Thanksgiving: *Zoom*, *Analog Devices*, *Medtronic*, *Dell*, *Deere*.",
+  "hook_sub": "Montag bis Mittwoch -- danach bleiben die US-Boersen donnerstags geschlossen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Zoom* -- Montag, 24.11., nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "20. November 2026", "81,26 USD", "green"],
+        ["KGV", "aktuell", "ca. 7,5", "grey"],
+        ["Marktkap.", "aktuell", "ca. 23,7 Mrd. USD", "green_mid"]
+      ],
+      "note": "Anbieter von Videokonferenz-Software. Analysten rechnen mit rund 1,00 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*Analog Devices* -- Dienstag, 25.11., vor US-Boersenstart.",
+      "stats": [
+        ["Kurs", "20. November 2026", "345,92 USD", "green"],
+        ["KGV", "aktuell", "ca. 46", "grey"],
+        ["Marktkap.", "aktuell", "ca. 168,9 Mrd. USD", "green_mid"]
+      ],
+      "note": "Hersteller von Halbleitern fuer Industrie und Kommunikation. Analysten rechnen mit rund 3,89 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*Medtronic* -- Dienstag, 25.11., vor US-Boersenstart.",
+      "stats": [
+        ["Kurs", "20. November 2026", "99,94 USD", "green"],
+        ["KGV", "aktuell", "ca. 24,7", "grey"],
+        ["Marktkap.", "aktuell", "ca. 127,9 Mrd. USD", "green_mid"]
+      ],
+      "note": "Medizintechnik-Konzern, u.a. Herzschrittmacher und OP-Geraete. Analysten rechnen mit rund 1,34 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*Dell Technologies* -- Dienstag, 25.11., nach US-Boersenschluss.",
+      "stats": [
+        ["Kurs", "20. November 2026", "278,02 USD", "green"],
+        ["KGV", "aktuell", "ca. 16,1", "grey"],
+        ["Marktkap.", "aktuell", "ca. 176,7 Mrd. USD", "green_mid"]
+      ],
+      "note": "PC- und Server-Hersteller. Analysten rechnen mit rund 6,55 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "stats",
+      "headline": "*Deere & Company* -- Mittwoch, 26.11., vor US-Boersenstart.",
+      "stats": [
+        ["Kurs", "20. November 2026", "609,25 USD", "green"],
+        ["KGV", "aktuell", "ca. 33,9", "grey"],
+        ["Marktkap.", "aktuell", "ca. 164,5 Mrd. USD", "green_mid"]
+      ],
+      "note": "Landmaschinen-Hersteller, u.a. Traktoren. Analysten rechnen mit rund 4,07 USD Gewinn je Aktie fuer das Quartal."
+    },
+    {
+      "type": "text",
+      "headline": "Donnerstag bleiben die US-Boersen geschlossen.",
+      "body": "Thanksgiving-Feiertag in den USA, Freitag dann nur verkuerzter Handel. Fuenf sehr unterschiedliche Geschaeftsmodelle -- Software, Chips, Medizintechnik, Hardware und Landmaschinen -- berichten davor noch ihre Zahlen."
+    }
+  ],
+  "cta_headline": "Ich schau mir die Ergebnisse an, sobald sie da sind.",
+  "cta_body": "Keine Bewertung, keine Kaufempfehlung -- nur die Zahlen, die ich mir angeschaut habe.",
+  "date": "2026-11-23"
+}

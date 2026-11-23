@@ -1051,5 +1051,14 @@
     "excerpt": "Die wichtigsten Termine von Montag bis Freitag -- ohne Prognose.",
     "cover": "assets/posts/marktupdate_wochenausblick-22-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_earnings-woche-2026-11-23",
+    "title": "Fuenf Berichte vor Thanksgiving: Zoom, Analog Devices, Medtronic, Dell, Deere.",
+    "category": "marktupdate",
+    "date": "2026-11-23",
+    "excerpt": "Montag bis Mittwoch -- danach bleiben die US-Boersen donnerstags geschlossen.",
+    "cover": "assets/posts/marktupdate_earnings-woche-2026-11-23/slide_1.webp",
+    "url": null
   }
 ]

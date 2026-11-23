@@ -5863,5 +5863,19 @@
     "claimed_at": "2026-11-23T11:48:07.525941+00:00",
     "published_at": "2026-11-23T11:48:19.985418+00:00",
     "media_id": "18118646737832688"
+  },
+  {
+    "post_name": "marktupdate_earnings-woche-2026-11-23",
+    "action": "carousel",
+    "caption": "Fuenf Quartalsberichte vor Thanksgiving.\n\nMontag nach Boersenschluss: Zoom. Dienstag vor Boersenstart: Analog Devices und Medtronic, nach Boersenschluss: Dell Technologies. Mittwoch vor Boersenstart: Deere & Company. Donnerstag bleiben die US-Boersen wegen Thanksgiving geschlossen, Freitag ist nur verkuerzter Handel.\n\nKurs, KGV und Marktkapitalisierung vom 20.11., Konsens-EPS als reine Zahl -- ohne Bewertung.\n\nWelchen Bericht beobachtest du am meisten? \n\nKeine Anlageberatung. Nur mein eigenes Depot.\n\n#aktien #earnings #boerse #dell #zoom #depot #investieren #finanzen",
+    "slide_count": 8,
+    "fire_at": "2026-11-23T10:00:00+01:00",
+    "status": "pending"
+  },
+  {
+    "post_name": "marktupdate_earnings-woche-2026-11-23",
+    "action": "story",
+    "fire_at": "2026-11-23T10:00:00+01:00",
+    "status": "pending"
   }
 ]
