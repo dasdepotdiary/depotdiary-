@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Mittwoch: S&P 500 -0,23% auf 7.324, Nasdaq +0,42% auf 24.430, Dow Jones -1,11% auf 50.198.",
-         "body": "Der DAX schloss 1,19% im Minus bei 25.736 Punkten, der Angstindex VIX sank um 3,5% auf 24,6."},
-        {"headline": "Fed-Protokoll: Fast alle Teilnehmer hielten weitere Zinsanhebungen fuer wahrscheinlich angemessen.",
-         "body": "Der Leitzins blieb im Oktober bei 3,75-4%. Viele nannten den KI-Ausbau als Inflationsrisiko (laut Berichten zum Protokoll)."},
-        {"headline": "Lowe's +1,0%, Target +4,0%, TJX +8,0% am Berichtstag.",
-         "body": "Bereinigter Gewinn je Aktie: Lowe's 3,10 USD, Target 2,65 USD, TJX 1,34 USD. Lowe's und Target nennen Einmaleffekte aus Zoll-Rueckerstattungen."},
-        {"headline": "Disney +4,6%, Nvidia -2,9% auf 150,96 USD.",
-         "body": "Nvidia gab damit den nachboerslichen Anstieg vom Dienstag wieder ab (Schlusskurs Dienstag: 155,46 USD)."},
-        {"headline": "Palo Alto Networks nach Boersenschluss: Umsatz 3,44 Mrd. USD (+39%).",
-         "body": "Die Umsatzprognose fuers Gesamtjahr wurde angehoben. Die Aktie lag nachboerslich bei rund 366 USD (Schlusskurs 339,92 USD)."},
+        {"headline": "US-Boersen am Montag: S&P 500 +4,73% auf 7.237, Nasdaq +6,51% auf 24.090, Dow Jones +3,01% auf 49.595.",
+         "body": "Laut CNN der beste Tag seit April 2025 fuer S&P 500 und Nasdaq. DAX +2,2% auf 25.337, VIX -26% auf 26,6."},
+        {"headline": "Nvidia +31,5% auf 165,05 USD.",
+         "body": "Laut Berichten hat der Verwaltungsrat Jensen Huang wieder als CEO eingesetzt. Vor einer Woche hatte er das Amt niedergelegt."},
+        {"headline": "Abstand zu den Hochs vom 6. Oktober: S&P 500 -7,4%, Nasdaq -12,7%.",
+         "body": "Am Freitag lag der S&P 500 noch mehr als 10% unter dem Hoch (Quelle: Yahoo Finance)."},
+        {"headline": "Zoom nach Boersenschluss: bereinigter Gewinn je Aktie 1,59 USD, Umsatz 1,29 Mrd. USD.",
+         "body": "Erste Quartalsdividende angekuendigt: 0,25 USD je Aktie. Die Aktie lag nachboerslich ungefaehr unveraendert (Schlusskurs 86,03 USD)."},
+        {"headline": "HPE: Ausblick naechstes Quartal 1,54-1,57 USD Gewinn je Aktie, Umsatz 8-8,15 Mrd. USD.",
+         "body": "Die Aktie schloss +17,4% bei 48,02 USD und lag nachboerslich bei rund 44,7 USD."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
