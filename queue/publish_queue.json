@@ -5846,11 +5846,13 @@
   {
     "post_name": "reel_leitzins_2026-11-22",
     "action": "reel",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-23T11:35:00+01:00",
     "caption": "Der Leitzins in 45 Sekunden 🏦\n\n• Der Zins, zu dem sich Banken bei der Notenbank Geld leihen können\n• USA: Fed · Euroraum: Europäische Zentralbank\n• Wirkt wie ein Grundpreis für Geld – Kredit- und Sparzinsen ändern sich oft mit\n• Fed im Oktober: Leitzins unverändert bei 3,75–4 %, nächste Entscheidung am 9. Dezember\n• Laut Berichten zum Fed-Protokoll hielten fast alle Teilnehmer weitere Anhebungen für wahrscheinlich angemessen\n\nKennst du den aktuellen Leitzins? 👇\n\nStimme: KI-generiert. Quellen: Federal Reserve, Medienberichte zum Fed-Protokoll. Nur Erklärung, keine Anlageberatung.\n\n#leitzins #fed #zinsen #ezb #finanzwissen #finanzen #depotdiary",
     "claimed_by": "Surface4RA-26268-799fdc4e",
-    "claimed_at": "2026-11-23T11:47:03.965480+00:00"
+    "claimed_at": "2026-11-23T11:47:03.965480+00:00",
+    "published_at": "2026-11-23T11:48:04.816670+00:00",
+    "media_id": "18121408808090894"
   },
   {
     "post_name": "story_post_ankuendigung_reel_leitzins",
