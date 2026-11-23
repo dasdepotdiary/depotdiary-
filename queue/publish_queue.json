@@ -5729,10 +5729,12 @@
   {
     "post_name": "tagesupdate_2026-11-23",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-23T06:30:00+01:00",
     "claimed_by": "Surface4RA-23836-c29a27c7",
-    "claimed_at": "2026-11-23T10:35:23.852121+00:00"
+    "claimed_at": "2026-11-23T10:35:23.852121+00:00",
+    "published_at": "2026-11-23T10:35:36.000934+00:00",
+    "media_id": "18109790522356582"
   },
   {
     "post_name": "fachbegriff_2026-11-23",
