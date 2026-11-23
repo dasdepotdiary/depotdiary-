@@ -5880,6 +5880,8 @@
     "post_name": "marktupdate_earnings-woche-2026-11-23",
     "action": "story",
     "fire_at": "2026-11-23T10:00:00+01:00",
-    "status": "pending"
+    "status": "claiming",
+    "claimed_by": "runnervm0hi8g-2474-ad0619fa",
+    "claimed_at": "2026-11-23T13:42:06.549960+00:00"
   }
 ]
