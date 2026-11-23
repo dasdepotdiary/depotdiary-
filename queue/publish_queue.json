@@ -5857,9 +5857,11 @@
   {
     "post_name": "story_post_ankuendigung_reel_leitzins",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-23T11:45:00+01:00",
     "claimed_by": "Surface4RA-26268-799fdc4e",
-    "claimed_at": "2026-11-23T11:48:07.525941+00:00"
+    "claimed_at": "2026-11-23T11:48:07.525941+00:00",
+    "published_at": "2026-11-23T11:48:19.985418+00:00",
+    "media_id": "18118646737832688"
   }
 ]
