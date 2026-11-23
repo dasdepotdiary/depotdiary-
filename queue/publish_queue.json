@@ -5889,7 +5889,9 @@
   {
     "post_name": "tagesereignisse_2026-11-23",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-24T00:05:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-24T00:05:00+01:00",
+    "claimed_by": "Surface4RA-3528-2c01073a",
+    "claimed_at": "2026-11-23T23:10:02.071677+00:00"
   }
 ]
