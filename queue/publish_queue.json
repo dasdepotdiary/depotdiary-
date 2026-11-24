@@ -6002,5 +6002,18 @@
     "claimed_at": "2026-11-24T08:00:22.554029+00:00",
     "published_at": "2026-11-24T08:00:38.134755+00:00",
     "media_id": "17907549606606104"
+  },
+  {
+    "post_name": "reel_nvidia_huang_2026-11-24",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-24T09:05:00+01:00",
+    "caption": "Nvidia holt Jensen Huang zurück – in 60 Sekunden 🎬\n\n• Der Verwaltungsrat hat Huang einstimmig und mit sofortiger Wirkung wieder als CEO eingesetzt; Colette Kress ist wieder Finanzchefin\n• Die unabhängige Untersuchung läuft laut Nvidia weiter\n• Nach den Quartalszahlen vom 17.11. hatte Kress eine Rückkehr noch ausgeschlossen (laut CNN)\n• Nvidia-Aktie: +31,5 % auf 165,05 $ am Montag (Freitag: −14 %)\n• Nasdaq +6,5 %, S&P 500 +4,7 % – laut CNN der beste Tag seit April 2025\n• Gegenüber den Hochs vom 6. Oktober: S&P 500 −7,4 %, Nasdaq −12,7 %\n\nWie viel Gewicht hat der Chef für ein Unternehmen? 👇\n\nStimme: KI-generiert. Quellen: Yahoo Finance, CNN, CNBC, Axios. Nur berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#nvidia #jensenhuang #börse #nasdaq #aktien #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_nvidia_huang",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-24T09:15:00+01:00"
   }
 ]
