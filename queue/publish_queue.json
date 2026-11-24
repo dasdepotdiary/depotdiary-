@@ -5929,10 +5929,17 @@
   {
     "post_name": "aktiencheck_2026-11-24",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-24T06:30:00+01:00",
     "claimed_by": "Surface4RA-3236-cb17adc1",
-    "claimed_at": "2026-11-24T07:58:50.554953+00:00"
+    "claimed_at": "2026-11-24T07:58:50.554953+00:00",
+    "published_at": "2026-11-24T07:59:23.423170+00:00",
+    "media_id": "18083610164391449",
+    "media_ids": [
+      "18083610164391449",
+      "17911378761333263",
+      "18168879244487428"
+    ]
   },
   {
     "post_name": "zitat_2026-11-24",
