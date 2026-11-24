@@ -5974,8 +5974,10 @@
   {
     "post_name": "zitat_2026-11-24b",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-24T09:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-24T09:00:00+01:00",
+    "claimed_by": "Surface4RA-23524-a6699dd8",
+    "claimed_at": "2026-11-24T08:02:54.240549+00:00"
   },
   {
     "post_name": "marktupdate_nvidia-huang-rueckkehr-23-11",
