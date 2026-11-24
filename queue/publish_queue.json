@@ -6017,7 +6017,9 @@
   {
     "post_name": "story_post_ankuendigung_reel_nvidia_huang",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-24T09:15:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-24T09:15:00+01:00",
+    "claimed_by": "Surface4RA-21080-a3e6ab8b",
+    "claimed_at": "2026-11-24T08:16:09.905943+00:00"
   }
 ]
