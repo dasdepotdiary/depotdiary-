@@ -5929,8 +5929,10 @@
   {
     "post_name": "aktiencheck_2026-11-24",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-24T06:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-24T06:30:00+01:00",
+    "claimed_by": "Surface4RA-3236-cb17adc1",
+    "claimed_at": "2026-11-24T07:58:50.554953+00:00"
   },
   {
     "post_name": "zitat_2026-11-24",
