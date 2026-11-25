@@ -1,0 +1,45 @@
+{
+  "eyebrow": "EARNINGS-UPDATE",
+  "hook": "Dell: *54,9 Mrd. USD* Umsatz im Quartal.",
+  "hook_sub": "Dazu Workday, Autodesk und Deere -- nur berichtete Fakten.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "*Dell* im Überblick.",
+      "stats": [
+        ["Umsatz", "+103% zum Vorjahr", "54,9 Mrd. USD", "green"],
+        ["Gewinn je Aktie", "bereinigt · +265%", "9,45 USD", "green"],
+        ["KI-Auftragsbestand", "Ende des Quartals", "132,3 Mrd. USD", "green"]
+      ],
+      "note": "Ausblick Gesamtjahr: Umsatz rund 202 Mrd. USD (zuvor rund 192 Mrd.). Zusätzliche Rückkauf-Genehmigung: 25 Mrd. USD. Quelle: Unternehmensmitteilung (8-K)."
+    },
+    {
+      "type": "stats",
+      "headline": "*Workday* und *Autodesk*.",
+      "stats": [
+        ["Workday Umsatz", "+11,2% zum Vorjahr", "2,705 Mrd. USD", "green"],
+        ["Workday Gewinn je Aktie", "bereinigt", "2,82 USD", "green"],
+        ["Autodesk Umsatz", "+17% zum Vorjahr", "2,16 Mrd. USD", "green"],
+        ["Autodesk Gewinn je Aktie", "bereinigt", "3,20 USD", "green"]
+      ],
+      "note": "Workday hebt die Prognose für den Abo-Umsatz auf 9,958 Mrd. USD an, Autodesk die Umsatzprognose (Mittelpunkt rund 8,37 Mrd. USD). Quellen: Unternehmensmitteilungen."
+    },
+    {
+      "type": "stats",
+      "headline": "Die *Schlusskurse* vor den Zahlen.",
+      "stats": [
+        ["Dell", "Schlusskurs Dienstag", "295,28 USD", "red"],
+        ["Workday", "Schlusskurs Dienstag", "179,23 USD", "green"],
+        ["Autodesk", "Schlusskurs Dienstag", "255,70 USD", "green"]
+      ],
+      "note": "Dell: -11,8% am Dienstag (vor der Meldung). Autodesk lag laut Bericht nachbörslich rund 3,6% im Minus. Die Zahlen kamen nach Börsenschluss. Quelle: Yahoo Finance."
+    },
+    {
+      "type": "text",
+      "headline": "Heute: *Deere*.",
+      "body": "Deere hat für das vierte Geschäftsquartal 3,89 USD Gewinn je Aktie gemeldet (Vorjahr: 3,93 USD) bei 12,1 Mrd. USD Umsatz (-2%). Die Konsens-Schätzung laut Nasdaq-Terminkalender lag bei 4,07 USD."
+    }
+  ],
+  "cta_headline": "Welche Zahl *sticht* für dich heraus?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur berichtete Fakten, keine Bewertung."
+}

@@ -1069,5 +1069,14 @@
     "excerpt": "Was am Montag passiert ist -- nur berichtete Fakten.",
     "cover": "assets/posts/marktupdate_nvidia-huang-rueckkehr-23-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_dell-zahlen-24-11",
+    "title": "Dell: 54,9 Mrd. USD Umsatz im Quartal.",
+    "category": "marktupdate",
+    "date": "2026-11-25",
+    "excerpt": "Dazu Workday, Autodesk und Deere -- nur berichtete Fakten.",
+    "cover": "assets/posts/marktupdate_dell-zahlen-24-11/slide_1.webp",
+    "url": null
   }
 ]

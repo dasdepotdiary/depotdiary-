@@ -58,16 +58,16 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Montag: S&P 500 +4,73% auf 7.237, Nasdaq +6,51% auf 24.090, Dow Jones +3,01% auf 49.595.",
-         "body": "Laut CNN der beste Tag seit April 2025 fuer S&P 500 und Nasdaq. DAX +2,2% auf 25.337, VIX -26% auf 26,6."},
-        {"headline": "Nvidia +31,5% auf 165,05 USD.",
-         "body": "Laut Berichten hat der Verwaltungsrat Jensen Huang wieder als CEO eingesetzt. Vor einer Woche hatte er das Amt niedergelegt."},
-        {"headline": "Abstand zu den Hochs vom 6. Oktober: S&P 500 -7,4%, Nasdaq -12,7%.",
-         "body": "Am Freitag lag der S&P 500 noch mehr als 10% unter dem Hoch (Quelle: Yahoo Finance)."},
-        {"headline": "Zoom nach Boersenschluss: bereinigter Gewinn je Aktie 1,59 USD, Umsatz 1,29 Mrd. USD.",
-         "body": "Erste Quartalsdividende angekuendigt: 0,25 USD je Aktie. Die Aktie lag nachboerslich ungefaehr unveraendert (Schlusskurs 86,03 USD)."},
-        {"headline": "HPE: Ausblick naechstes Quartal 1,54-1,57 USD Gewinn je Aktie, Umsatz 8-8,15 Mrd. USD.",
-         "body": "Die Aktie schloss +17,4% bei 48,02 USD und lag nachboerslich bei rund 44,7 USD."},
+        {"headline": "US-Boersen am Dienstag: S&P 500 -0,50% auf 7.201, Nasdaq -1,48% auf 23.734, Dow Jones +0,85% auf 50.019.",
+         "body": "Der Dow schloss ueber 50.000 Punkten. Der DAX verlor 1,3% auf 25.018. Laut Berichten fiel der Halbleiter-Index um 7,9%."},
+        {"headline": "Nvidia -5,9% auf 155,38 USD.",
+         "body": "Am Montag hatte die Aktie nach der Rueckkehr von Jensen Huang als CEO 31,5% zugelegt."},
+        {"headline": "US-Verbrauchervertrauen im November: 103,3 Punkte.",
+         "body": "Erwartet worden waren laut Berichten 92,2 Punkte (Conference Board)."},
+        {"headline": "Dell nach Boersenschluss: Umsatz 54,9 Mrd. USD (+103%), bereinigter Gewinn je Aktie 9,45 USD.",
+         "body": "Die Jahresprognose wurde auf rund 202 Mrd. USD Umsatz angehoben. Die Aktie schloss vor der Meldung bei 295,28 USD (-11,8%)."},
+        {"headline": "Workday und Autodesk legen Zahlen vor und heben Prognosen an.",
+         "body": "Workday: Umsatz 2,705 Mrd. USD (+11,2%). Autodesk: Umsatz 2,16 Mrd. USD (+17%), nachboerslich laut Bericht -3,6%."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
