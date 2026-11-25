@@ -6027,10 +6027,12 @@
   {
     "post_name": "tagesereignisse_2026-11-24",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-25T13:55:00+01:00",
     "claimed_by": "Surface4RA-35344-11d1a231",
-    "claimed_at": "2026-11-25T13:03:42.149221+00:00"
+    "claimed_at": "2026-11-25T13:03:42.149221+00:00",
+    "published_at": "2026-11-25T13:04:00.073917+00:00",
+    "media_id": "17901747483437543"
   },
   {
     "post_name": "marktupdate_dell-zahlen-24-11",
