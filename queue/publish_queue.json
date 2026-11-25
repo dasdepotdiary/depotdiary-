@@ -6049,7 +6049,9 @@
   {
     "post_name": "story_post_ankuendigung_dell_zahlen",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-25T14:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-25T14:10:00+01:00",
+    "claimed_by": "runnervm0hi8g-2233-52c4d902",
+    "claimed_at": "2026-11-25T14:57:31.359589+00:00"
   }
 ]
