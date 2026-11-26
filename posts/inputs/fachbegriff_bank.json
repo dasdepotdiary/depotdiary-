@@ -118,5 +118,10 @@
     "term": "Quartalsdividende",
     "definition": "Eine Dividende, die ein Unternehmen vierteljaehrlich an seine Aktionaere ausschuettet. Ob und wie viel gezahlt wird, beschliesst das Unternehmen jeweils selbst.",
     "example": "Zoom hat gestern seine erste Quartalsdividende angekuendigt: 0,25 USD je Aktie."
+  },
+  "2026-11-26": {
+    "term": "Verkuerzter Handelstag",
+    "definition": "Ein Boersentag, an dem frueher als sonst geschlossen wird, etwa rund um Feiertage. Der Handel findet statt, nur mit weniger Stunden.",
+    "example": "Am Freitag nach Thanksgiving schliessen die US-Boersen schon um 19:00 Uhr deutscher Zeit statt um 22:00 Uhr."
   }
 }

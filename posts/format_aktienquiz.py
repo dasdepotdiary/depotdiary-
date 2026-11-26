@@ -51,34 +51,22 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was ist eine Quartalsdividende?",
-        "options": [
-            "Eine Gebuehr der Boerse pro Quartal",
-            "Eine vierteljaehrliche Ausschuettung des Unternehmens an Aktionaere",
-            "Ein Zuschuss der Notenbank",
-        ],
+        "q": "Was passiert an Thanksgiving an den US-Boersen?",
+        "options": ["Es wird doppelt so lange gehandelt", "Sie bleiben geschlossen", "Nur Anleihen duerfen gehandelt werden"],
         "correct": 1,
-        "explain": "Ob und wie viel ausgeschuettet wird, beschliesst das Unternehmen selbst. Zoom hat gestern seine erste angekuendigt.",
+        "explain": "Thanksgiving ist ein Feiertag ohne Aktienhandel an NYSE und Nasdaq. Der Freitag danach ist verkuerzt.",
     },
     {
-        "q": "Was zeigt der VIX?",
-        "options": [
-            "Die erwartete Schwankung des S&P 500 -- den sogenannten Angstindex",
-            "Den Goldpreis in US-Dollar",
-            "Die Zahl der Handelstage im Jahr",
-        ],
+        "q": "Was ist ein verkuerzter Handelstag?",
+        "options": ["Die Boerse schliesst frueher als sonst", "Nur wenige Aktien werden gehandelt", "Die Kurse werden gekuerzt"],
         "correct": 0,
-        "explain": "Der VIX wird aus Optionspreisen berechnet. Ein hoher Wert steht fuer erwartete starke Schwankungen, er sagt aber nichts ueber die Richtung.",
+        "explain": "Der Handel findet statt, aber mit weniger Stunden. Das ist typisch rund um Feiertage.",
     },
     {
-        "q": "Was bedeutet 'vor Boersenstart' bei Quartalszahlen?",
-        "options": [
-            "Die Zahlen kommen nach Boersenschluss",
-            "Die Zahlen kommen am Wochenende",
-            "Die Zahlen kommen, bevor die Boerse oeffnet",
-        ],
+        "q": "Was bezeichnet der 'Black Friday' im Handel?",
+        "options": ["Einen Tag mit Kurssturz an der Boerse", "Den Tag der Quartalszahlen", "Den Freitag nach Thanksgiving mit vielen Rabattaktionen"],
         "correct": 2,
-        "explain": "Viele US-Unternehmen melden morgens vor der Eroeffnung, andere nach Handelsschluss. Der Zeitpunkt steht im Terminkalender.",
+        "explain": "Der Freitag nach Thanksgiving gilt in den USA als Start der Weihnachtseinkaufssaison. Er ist nicht mit dem Boersencrash zu verwechseln.",
     },
 ]
 

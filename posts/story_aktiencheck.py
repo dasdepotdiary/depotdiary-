@@ -251,21 +251,21 @@ def slide_stock(stock, idx, total):
 
 def main():
     stocks = [
-        {"name": "Dell Technologies", "ticker": "DELL", "price": 334.91, "change_pct": 20.46, "as_of": "23.11. Schluss", "pe": 19.47,
-         "forward_pe": None, "peg": None, "div_yield": 0.91, "earnings_growth": None, "beta": 1.44,
-         "market_cap": "212,9 Mrd. USD", "volume": "16,0 Mio.", "week52_low": 110.22, "week52_high": 595.51,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 6,55 USD). Der Kurs liegt rund 44% unter dem 52-Wochen-Hoch (595,51 USD).",
-         "csv_path": DATA_DIR / "DELL.csv", "accent": OCHRE},
-        {"name": "Workday", "ticker": "WDAY", "price": 176.08, "change_pct": 0.89, "as_of": "23.11. Schluss", "pe": 35.86,
-         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.01,
-         "market_cap": "42,4 Mrd. USD", "volume": "2,5 Mio.", "week52_low": 110.36, "week52_high": 236.80,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 1,28 USD). Der Kurs liegt rund 26% unter dem 52-Wochen-Hoch (236,80 USD).",
-         "csv_path": DATA_DIR / "WDAY.csv", "accent": GREEN},
-        {"name": "Autodesk", "ticker": "ADSK", "price": 255.33, "change_pct": 4.44, "as_of": "23.11. Schluss", "pe": 33.12,
-         "forward_pe": None, "peg": None, "div_yield": 0, "earnings_growth": None, "beta": 1.25,
-         "market_cap": "53,4 Mrd. USD", "volume": "1,9 Mio.", "week52_low": 185.50, "week52_high": 320.00,
-         "note": "Berichtet heute nach Boersenschluss (Konsens-EPS 2,27 USD). Der Kurs liegt rund 20% unter dem 52-Wochen-Hoch (320,00 USD).",
-         "csv_path": DATA_DIR / "ADSK.csv", "accent": CAT_TEAL},
+        {"name": "Deere", "ticker": "DE", "price": 641.02, "change_pct": 4.44, "as_of": "25.11. Schluss", "pe": 35.71,
+         "forward_pe": 24.14, "peg": None, "div_yield": 1.01, "earnings_growth": -1.0, "beta": None,
+         "market_cap": "172,8 Mrd. USD", "volume": "2,4 Mio.", "week52_low": 455.91, "week52_high": 721.22,
+         "note": "Meldete am Mittwoch 3,89 USD Gewinn je Aktie. Der Kurs liegt rund 11% unter dem 52-Wochen-Hoch (721,22 USD).",
+         "csv_path": DATA_DIR / "DE.csv", "accent": GREEN},
+        {"name": "Best Buy", "ticker": "BBY", "price": 102.58, "change_pct": 2.97, "as_of": "25.11. Schluss", "pe": 14.63,
+         "forward_pe": 13.93, "peg": None, "div_yield": 3.74, "earnings_growth": None, "beta": 1.21,
+         "market_cap": "21,5 Mrd. USD", "volume": "3,1 Mio.", "week52_low": 55.10, "week52_high": 106.83,
+         "note": "Hat diese Woche Quartalszahlen vorgelegt. Der Kurs liegt rund 4% unter dem 52-Wochen-Hoch (106,83 USD).",
+         "csv_path": DATA_DIR / "BBY.csv", "accent": OCHRE},
+        {"name": "Dollar Tree", "ticker": "DLTR", "price": 152.21, "change_pct": -1.58, "as_of": "25.11. Schluss", "pe": 18.43,
+         "forward_pe": 19.06, "peg": 3.19, "div_yield": 0, "earnings_growth": 3.3, "beta": 0.69,
+         "market_cap": "28,3 Mrd. USD", "volume": "3,5 Mio.", "week52_low": 85.88, "week52_high": 156.99,
+         "note": "Hat diese Woche Quartalszahlen vorgelegt. Der Kurs liegt rund 3% unter dem 52-Wochen-Hoch (156,99 USD).",
+         "csv_path": DATA_DIR / "DLTR.csv", "accent": CAT_TEAL},
     ]
     for i, stock in enumerate(stocks, start=1):
         img = slide_stock(stock, i, len(stocks))

@@ -58,16 +58,15 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Dienstag: S&P 500 -0,50% auf 7.201, Nasdaq -1,48% auf 23.734, Dow Jones +0,85% auf 50.019.",
-         "body": "Der Dow schloss ueber 50.000 Punkten. Der DAX verlor 1,3% auf 25.018. Laut Berichten fiel der Halbleiter-Index um 7,9%."},
-        {"headline": "Nvidia -5,9% auf 155,38 USD.",
-         "body": "Am Montag hatte die Aktie nach der Rueckkehr von Jensen Huang als CEO 31,5% zugelegt."},
-        {"headline": "US-Verbrauchervertrauen im November: 103,3 Punkte.",
-         "body": "Erwartet worden waren laut Berichten 92,2 Punkte (Conference Board)."},
-        {"headline": "Dell nach Boersenschluss: Umsatz 54,9 Mrd. USD (+103%), bereinigter Gewinn je Aktie 9,45 USD.",
-         "body": "Die Jahresprognose wurde auf rund 202 Mrd. USD Umsatz angehoben. Die Aktie schloss vor der Meldung bei 295,28 USD (-11,8%)."},
-        {"headline": "Workday und Autodesk legen Zahlen vor und heben Prognosen an.",
-         "body": "Workday: Umsatz 2,705 Mrd. USD (+11,2%). Autodesk: Umsatz 2,16 Mrd. USD (+17%), nachboerslich laut Bericht -3,6%."},
+        {"headline": "US-Boersen am Mittwoch: S&P 500 -0,25% auf 7.183, Nasdaq -0,62% auf 23.586, Dow Jones +0,33% auf 50.183.",
+         "body": "Der DAX schloss 1,3% im Minus bei 24.702 Punkten."},
+        {"headline": "Starker Tagesschwung: zwischenzeitlich S&P 500 bis -3,2%, Nasdaq bis -4,6%, Dow mehr als 1.100 Punkte im Minus.",
+         "body": "Bis Handelsschluss wurde ein grosser Teil der Verluste aufgeholt (laut AP und weiteren Berichten)."},
+        {"headline": "Nvidia -3,9% auf 149,30 USD.", "body": "Am Montag hatte die Aktie nach Huangs Rueckkehr 31,5% zugelegt."},
+        {"headline": "Deere +4,4% auf 641,02 USD am Berichtstag.",
+         "body": "Gewinn je Aktie im vierten Geschaeftsquartal: 3,89 USD (Vorjahr 3,93 USD), Umsatz 12,1 Mrd. USD."},
+        {"headline": "Donnerstag: US-Boersen wegen Thanksgiving geschlossen.",
+         "body": "Am Freitag endet der Handel frueher, um 13:00 Uhr US-Ostkuestenzeit (19:00 Uhr deutscher Zeit)."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
