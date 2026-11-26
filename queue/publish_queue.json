@@ -6059,10 +6059,12 @@
   {
     "post_name": "tagesereignisse_2026-11-25",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-26T13:46:00+01:00",
     "claimed_by": "Surface4RA-4484-8f98bd93",
-    "claimed_at": "2026-11-26T12:49:12.502911+00:00"
+    "claimed_at": "2026-11-26T12:49:12.502911+00:00",
+    "published_at": "2026-11-26T12:49:22.673906+00:00",
+    "media_id": "17998265046060669"
   },
   {
     "post_name": "heuteagenda_2026-11-26",
