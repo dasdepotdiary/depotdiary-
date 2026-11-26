@@ -6165,9 +6165,11 @@
   {
     "post_name": "story_post_ankuendigung_reel_comeback",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-26T13:52:00+01:00",
     "claimed_by": "Surface4RA-25548-f2878cac",
-    "claimed_at": "2026-11-26T12:55:14.473544+00:00"
+    "claimed_at": "2026-11-26T12:55:14.473544+00:00",
+    "published_at": "2026-11-26T12:55:22.908883+00:00",
+    "media_id": "18117316823582224"
   }
 ]
