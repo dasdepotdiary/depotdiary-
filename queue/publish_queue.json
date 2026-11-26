@@ -6069,10 +6069,12 @@
   {
     "post_name": "heuteagenda_2026-11-26",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-26T13:46:00+01:00",
     "claimed_by": "Surface4RA-4484-8f98bd93",
-    "claimed_at": "2026-11-26T12:49:25.197808+00:00"
+    "claimed_at": "2026-11-26T12:49:25.197808+00:00",
+    "published_at": "2026-11-26T12:49:33.917820+00:00",
+    "media_id": "17961799371254574"
   },
   {
     "post_name": "tagesupdate_2026-11-26",
