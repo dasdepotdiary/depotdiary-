@@ -6114,10 +6114,12 @@
   {
     "post_name": "zitat_2026-11-26",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-26T13:46:00+01:00",
     "claimed_by": "Surface4RA-4484-8f98bd93",
-    "claimed_at": "2026-11-26T12:50:34.522906+00:00"
+    "claimed_at": "2026-11-26T12:50:34.522906+00:00",
+    "published_at": "2026-11-26T12:50:43.518432+00:00",
+    "media_id": "17919461169520691"
   },
   {
     "post_name": "format_aktienquiz_2026-11-26",
