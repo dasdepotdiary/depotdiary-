@@ -51,22 +51,22 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Wann schliessen die US-Boersen am Freitag nach Thanksgiving?",
-        "options": ["Wie immer um 22:00 Uhr deutscher Zeit", "Frueher, um 19:00 Uhr deutscher Zeit", "Sie oeffnen gar nicht"],
-        "correct": 1,
-        "explain": "Es ist ein verkuerzter Handelstag: Schluss um 13:00 Uhr US-Ostkuestenzeit.",
-    },
-    {
-        "q": "Was ist der Black Friday?",
-        "options": ["Der Freitag nach Thanksgiving mit vielen Rabattaktionen", "Ein Tag mit Boersencrash", "Der Tag der Fed-Sitzung"],
-        "correct": 0,
-        "explain": "Er gilt in den USA als Start der Weihnachtseinkaufssaison.",
-    },
-    {
-        "q": "Was bedeutet 'Marktkapitalisierung'?",
-        "options": ["Der Umsatz eines Jahres", "Die Zahl der Aktionaere", "Der Boersenwert aller Aktien eines Unternehmens"],
+        "q": "Welcher US-Index legte in dieser Woche am staerksten zu?",
+        "options": ["Dow Jones", "S&P 500", "Nasdaq"],
         "correct": 2,
-        "explain": "Aktienkurs mal Anzahl der Aktien. Sie beschreibt die Groesse an der Boerse, nicht die Qualitaet.",
+        "explain": "Der Nasdaq gewann auf Wochensicht 6,7%, der S&P 500 5,6% und der Dow 5,5%.",
+    },
+    {
+        "q": "Wer kehrte am Montag als CEO zu Nvidia zurueck?",
+        "options": ["Jensen Huang", "Colette Kress", "Michael Dell"],
+        "correct": 0,
+        "explain": "Der Verwaltungsrat setzte Huang wieder ein, Kress ist erneut Finanzchefin.",
+    },
+    {
+        "q": "Warum war am Donnerstag kein US-Handel?",
+        "options": ["Wegen eines Boersencrashs", "Wegen Thanksgiving", "Wegen der Fed-Sitzung"],
+        "correct": 1,
+        "explain": "Thanksgiving ist ein Feiertag ohne Handel. Am Freitag wurde verkuerzt gehandelt.",
     },
 ]
 

@@ -58,15 +58,15 @@ def slide_tagesereignisse(events):
 
 def main():
     events = [
-        {"headline": "US-Boersen am Mittwoch: S&P 500 -0,25% auf 7.183, Nasdaq -0,62% auf 23.586, Dow Jones +0,33% auf 50.183.",
-         "body": "Der DAX schloss 1,3% im Minus bei 24.702 Punkten."},
-        {"headline": "Starker Tagesschwung: zwischenzeitlich S&P 500 bis -3,2%, Nasdaq bis -4,6%, Dow mehr als 1.100 Punkte im Minus.",
-         "body": "Bis Handelsschluss wurde ein grosser Teil der Verluste aufgeholt (laut AP und weiteren Berichten)."},
-        {"headline": "Nvidia -3,9% auf 149,30 USD.", "body": "Am Montag hatte die Aktie nach Huangs Rueckkehr 31,5% zugelegt."},
-        {"headline": "Deere +4,4% auf 641,02 USD am Berichtstag.",
-         "body": "Gewinn je Aktie im vierten Geschaeftsquartal: 3,89 USD (Vorjahr 3,93 USD), Umsatz 12,1 Mrd. USD."},
-        {"headline": "Donnerstag: US-Boersen wegen Thanksgiving geschlossen.",
-         "body": "Am Freitag endet der Handel frueher, um 13:00 Uhr US-Ostkuestenzeit (19:00 Uhr deutscher Zeit)."},
+        {"headline": "Verkuerzter Handel am Freitag: S&P 500 +1,60% auf 7.297, Nasdaq +2,31% auf 24.130, Dow +1,18% auf 50.775.",
+         "body": "Der DAX schloss 0,9% im Plus bei 25.441 Punkten, der VIX fiel auf 23,8."},
+        {"headline": "Die Woche: S&P 500 +5,6%, Nasdaq +6,7%, Dow +5,5%.",
+         "body": "Laut Berichten fuer den S&P 500 die beste Woche seit April 2025, fuer den Dow die groesste seit Oktober 2022."},
+        {"headline": "Nvidia auf Wochensicht +19,9% auf 150,49 USD.",
+         "body": "Am Montag war Jensen Huang als CEO zurueckgekehrt."},
+        {"headline": "Trotz Wochenplus: November bleibt schwach.",
+         "body": "Laut Berichten waren S&P 500 und Nasdaq auf Kurs fuer den schwaechsten November seit 2008."},
+        {"headline": "Am Wochenende kein Handel.", "body": "Die US-Boersen oeffnen wieder am Montag, 30. November."},
     ]
     img = slide_tagesereignisse(events)
     img.save(TT_DIR / "slide_1.png")
