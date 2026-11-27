@@ -6185,8 +6185,10 @@
   {
     "post_name": "tagesupdate_2026-11-27",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-27T06:30:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-27T06:30:00+01:00",
+    "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
+    "claimed_at": "2026-11-27T09:04:14.357870+00:00"
   },
   {
     "post_name": "fachbegriff_2026-11-27",
