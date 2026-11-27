@@ -1,0 +1,38 @@
+{
+  "eyebrow": "MARKTUPDATE",
+  "hook": "Vor dem Black Friday: *der Zwischenstand* der Woche.",
+  "hook_sub": "Wo die Indizes vor dem verkürzten Handelstag stehen -- nur Zahlen.",
+  "sections": [
+    {
+      "type": "stats",
+      "headline": "Die *US-Indizes* seit Freitag.",
+      "stats": [
+        ["S&P 500", "7.182,78", "+3,94%", "green"],
+        ["Nasdaq", "23.585,80", "+4,28%", "green"],
+        ["Dow Jones", "50.182,95", "+4,23%", "green"]
+      ],
+      "note": "Veränderung vom Schlusskurs 20.11. bis zum Schlusskurs 25.11. Am Donnerstag war wegen Thanksgiving kein US-Handel."
+    },
+    {
+      "type": "stats",
+      "headline": "*DAX* und *Nvidia*.",
+      "stats": [
+        ["DAX", "25.215,52 (Donnerstag)", "+1,66%", "green"],
+        ["Nvidia", "149,30 USD (Mittwoch)", "+18,9%", "green"]
+      ],
+      "note": "Jeweils gegenüber dem Schlusskurs vom 20.11. Quelle: Yahoo Finance."
+    },
+    {
+      "type": "text",
+      "headline": "Heute: *verkürzter* Handel.",
+      "body": "Die US-Börsen schließen heute schon um 13:00 Uhr US-Ostküstenzeit, das ist 19:00 Uhr deutscher Zeit. Der Freitag nach Thanksgiving ist in den USA zugleich der Black Friday im Einzelhandel."
+    },
+    {
+      "type": "text",
+      "headline": "Was in der Woche *passiert* ist.",
+      "body": "Montag: Nvidia setzte Jensen Huang wieder als CEO ein, die Aktie stieg um 31,5%. Mittwoch: Die Indizes lagen zwischenzeitlich deutlich im Minus und holten bis zum Schluss einen großen Teil auf (laut Berichten)."
+    }
+  ],
+  "cta_headline": "Wie war *deine* Börsenwoche bisher?",
+  "cta_body": "Schreib es in die Kommentare. Keine Anlageberatung -- nur Zahlen und berichtete Fakten, keine Bewertung."
+}

@@ -51,22 +51,22 @@ OWN_HANDLE = "@DASDEPOTDIARY"
 
 QUESTIONS = [
     {
-        "q": "Was passiert an Thanksgiving an den US-Boersen?",
-        "options": ["Es wird doppelt so lange gehandelt", "Sie bleiben geschlossen", "Nur Anleihen duerfen gehandelt werden"],
+        "q": "Wann schliessen die US-Boersen am Freitag nach Thanksgiving?",
+        "options": ["Wie immer um 22:00 Uhr deutscher Zeit", "Frueher, um 19:00 Uhr deutscher Zeit", "Sie oeffnen gar nicht"],
         "correct": 1,
-        "explain": "Thanksgiving ist ein Feiertag ohne Aktienhandel an NYSE und Nasdaq. Der Freitag danach ist verkuerzt.",
+        "explain": "Es ist ein verkuerzter Handelstag: Schluss um 13:00 Uhr US-Ostkuestenzeit.",
     },
     {
-        "q": "Was ist ein verkuerzter Handelstag?",
-        "options": ["Die Boerse schliesst frueher als sonst", "Nur wenige Aktien werden gehandelt", "Die Kurse werden gekuerzt"],
+        "q": "Was ist der Black Friday?",
+        "options": ["Der Freitag nach Thanksgiving mit vielen Rabattaktionen", "Ein Tag mit Boersencrash", "Der Tag der Fed-Sitzung"],
         "correct": 0,
-        "explain": "Der Handel findet statt, aber mit weniger Stunden. Das ist typisch rund um Feiertage.",
+        "explain": "Er gilt in den USA als Start der Weihnachtseinkaufssaison.",
     },
     {
-        "q": "Was bezeichnet der 'Black Friday' im Handel?",
-        "options": ["Einen Tag mit Kurssturz an der Boerse", "Den Tag der Quartalszahlen", "Den Freitag nach Thanksgiving mit vielen Rabattaktionen"],
+        "q": "Was bedeutet 'Marktkapitalisierung'?",
+        "options": ["Der Umsatz eines Jahres", "Die Zahl der Aktionaere", "Der Boersenwert aller Aktien eines Unternehmens"],
         "correct": 2,
-        "explain": "Der Freitag nach Thanksgiving gilt in den USA als Start der Weihnachtseinkaufssaison. Er ist nicht mit dem Boersencrash zu verwechseln.",
+        "explain": "Aktienkurs mal Anzahl der Aktien. Sie beschreibt die Groesse an der Boerse, nicht die Qualitaet.",
     },
 ]
 

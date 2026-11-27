@@ -1078,5 +1078,14 @@
     "excerpt": "Dazu Workday, Autodesk und Deere -- nur berichtete Fakten.",
     "cover": "assets/posts/marktupdate_dell-zahlen-24-11/slide_1.webp",
     "url": null
+  },
+  {
+    "id": "marktupdate_zwischenstand-27-11",
+    "title": "Vor dem Black Friday: der Zwischenstand der Woche.",
+    "category": "marktupdate",
+    "date": "2026-11-27",
+    "excerpt": "Wo die Indizes vor dem verkürzten Handelstag stehen -- nur Zahlen.",
+    "cover": "assets/posts/marktupdate_zwischenstand-27-11/slide_1.webp",
+    "url": null
   }
 ]

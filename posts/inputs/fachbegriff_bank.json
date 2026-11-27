@@ -123,5 +123,10 @@
     "term": "Verkuerzter Handelstag",
     "definition": "Ein Boersentag, an dem frueher als sonst geschlossen wird, etwa rund um Feiertage. Der Handel findet statt, nur mit weniger Stunden.",
     "example": "Am Freitag nach Thanksgiving schliessen die US-Boersen schon um 19:00 Uhr deutscher Zeit statt um 22:00 Uhr."
+  },
+  "2026-11-27": {
+    "term": "Black Friday",
+    "definition": "Der Freitag nach Thanksgiving, an dem US-Haendler mit Rabattaktionen in die Weihnachtssaison starten. Er hat nichts mit den Boersencrashs zu tun, die auch 'schwarze Tage' genannt werden.",
+    "example": "Heute ist Black Friday -- und an der Boerse nur ein verkuerzter Handelstag."
   }
 }

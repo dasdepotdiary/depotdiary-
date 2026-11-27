@@ -55,10 +55,10 @@ def slide_agenda(items):
 
 def main():
     items = [
-        {"time": "HEUTE", "headline": "Thanksgiving: Die US-Boersen bleiben geschlossen.",
-         "body": "Kein Handel an NYSE und Nasdaq. Die europaeischen Boersen handeln normal."},
-        {"time": "MORGEN", "headline": "Verkuerzter US-Handel am Freitag.",
-         "body": "Schluss um 13:00 Uhr US-Ostkuestenzeit, das ist 19:00 Uhr deutscher Zeit."},
+        {"time": "HEUTE", "headline": "Verkuerzter US-Handel nach Thanksgiving.",
+         "body": "NYSE und Nasdaq schliessen um 13:00 Uhr US-Ostkuestenzeit, das ist 19:00 Uhr deutscher Zeit."},
+        {"time": "HEUTE", "headline": "Black Friday im US-Einzelhandel.",
+         "body": "Der Freitag nach Thanksgiving gilt als Start der Weihnachtseinkaufssaison."},
     ]
     img = slide_agenda(items)
     img.save(TT_DIR / "slide_1.png")
