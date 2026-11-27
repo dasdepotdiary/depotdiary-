@@ -6252,8 +6252,10 @@
   {
     "post_name": "format_aktienquiz_2026-11-27",
     "action": "story_sequence",
-    "status": "pending",
-    "fire_at": "2026-11-27T09:00:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-27T09:00:00+01:00",
+    "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
+    "claimed_at": "2026-11-27T09:06:02.245889+00:00"
   },
   {
     "post_name": "zitat_2026-11-27b",
