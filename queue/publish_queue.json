@@ -6282,8 +6282,10 @@
   {
     "post_name": "tagesereignisse_2026-11-27",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-27T23:50:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-27T23:50:00+01:00",
+    "claimed_by": "Surface4RA-32792-87fb9874",
+    "claimed_at": "2026-11-27T22:51:10.256284+00:00"
   },
   {
     "post_name": "fachbegriff_2026-11-28",
