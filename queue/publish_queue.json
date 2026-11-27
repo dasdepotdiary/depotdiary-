@@ -6242,10 +6242,12 @@
   {
     "post_name": "zitat_2026-11-27",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-27T09:00:00+01:00",
     "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
-    "claimed_at": "2026-11-27T09:05:52.713888+00:00"
+    "claimed_at": "2026-11-27T09:05:52.713888+00:00",
+    "published_at": "2026-11-27T09:06:00.635117+00:00",
+    "media_id": "18131171401882805"
   },
   {
     "post_name": "format_aktienquiz_2026-11-27",
