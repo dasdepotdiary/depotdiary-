@@ -6312,5 +6312,18 @@
     "action": "story",
     "status": "pending",
     "fire_at": "2026-11-28T17:00:00+01:00"
+  },
+  {
+    "post_name": "reel_wochenrueckblick_2026-11-28",
+    "action": "reel",
+    "status": "pending",
+    "fire_at": "2026-11-28T10:00:00+01:00",
+    "caption": "Der Wochenrückblick in 55 Sekunden 📈\n\n• S&P 500 +5,6 % · Nasdaq +6,7 % · Dow Jones +5,5 % · DAX +2,6 %\n• Montag: Jensen Huang kehrt als Nvidia-CEO zurück, Aktie +31 %\n• Dienstag: Nvidia −5,9 %\n• Mittwoch: Dow zwischenzeitlich mehr als 1.100 Punkte im Minus, Schluss im Plus\n• Donnerstag: Thanksgiving, kein US-Handel\n• Freitag: verkürzter Handel, S&P 500 +1,6 %, Nasdaq +2,3 %\n• Laut Berichten die beste Woche für den S&P 500 seit April 2025\n\nWie war deine Woche? 👇\n\nStimme: KI-generiert. Quellen: Yahoo Finance, Medienberichte. Nur berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#wochenrückblick #börse #sp500 #nasdaq #nvidia #finanzen #depotdiary"
+  },
+  {
+    "post_name": "story_post_ankuendigung_reel_wochenrueckblick_nov28",
+    "action": "story",
+    "status": "pending",
+    "fire_at": "2026-11-28T10:10:00+01:00"
   }
 ]
