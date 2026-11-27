@@ -6205,10 +6205,17 @@
   {
     "post_name": "aktiencheck_2026-11-27",
     "action": "story_sequence",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-27T06:30:00+01:00",
     "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
-    "claimed_at": "2026-11-27T09:04:33.288635+00:00"
+    "claimed_at": "2026-11-27T09:04:33.288635+00:00",
+    "published_at": "2026-11-27T09:04:59.409997+00:00",
+    "media_id": "18138840049674345",
+    "media_ids": [
+      "18138840049674345",
+      "18155035411549964",
+      "17947747230495906"
+    ]
   },
   {
     "post_name": "marktupdate_zwischenstand-27-11",
