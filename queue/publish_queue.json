@@ -6220,10 +6220,12 @@
   {
     "post_name": "marktupdate_zwischenstand-27-11",
     "action": "carousel",
-    "status": "pending",
+    "status": "claiming",
     "fire_at": "2026-11-27T08:00:00+01:00",
     "slide_count": 6,
-    "caption": "Vor dem Black Friday: der Zwischenstand der Börsenwoche 📈\n\nSeit dem Schlusskurs vom 20.11.:\n• S&P 500 +3,94 % · Nasdaq +4,28 % · Dow Jones +4,23 % (Stand Mittwoch)\n• DAX +1,66 % (Stand Donnerstag) · Nvidia +18,9 %\n• Heute verkürzter US-Handel: Schluss um 19:00 Uhr deutscher Zeit\n\nWie war deine Börsenwoche bisher? 👇\n\nQuelle: Yahoo Finance. Nur Zahlen und berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#börse #blackfriday #sp500 #nasdaq #dax #finanzen #depotdiary"
+    "caption": "Vor dem Black Friday: der Zwischenstand der Börsenwoche 📈\n\nSeit dem Schlusskurs vom 20.11.:\n• S&P 500 +3,94 % · Nasdaq +4,28 % · Dow Jones +4,23 % (Stand Mittwoch)\n• DAX +1,66 % (Stand Donnerstag) · Nvidia +18,9 %\n• Heute verkürzter US-Handel: Schluss um 19:00 Uhr deutscher Zeit\n\nWie war deine Börsenwoche bisher? 👇\n\nQuelle: Yahoo Finance. Nur Zahlen und berichtete Fakten, keine Bewertung. Keine Anlageberatung.\n\n#börse #blackfriday #sp500 #nasdaq #dax #finanzen #depotdiary",
+    "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
+    "claimed_at": "2026-11-27T09:05:00.742039+00:00"
   },
   {
     "post_name": "story_post_ankuendigung_zwischenstand",
