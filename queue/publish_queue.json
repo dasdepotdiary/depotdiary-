@@ -6232,8 +6232,10 @@
   {
     "post_name": "story_post_ankuendigung_zwischenstand",
     "action": "story",
-    "status": "pending",
-    "fire_at": "2026-11-27T08:10:00+01:00"
+    "status": "claiming",
+    "fire_at": "2026-11-27T08:10:00+01:00",
+    "claimed_by": "runnervm0hi8g-2224-eb7fdcc6",
+    "claimed_at": "2026-11-27T09:05:40.762655+00:00"
   },
   {
     "post_name": "zitat_2026-11-27",
