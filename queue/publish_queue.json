@@ -6335,9 +6335,11 @@
   {
     "post_name": "story_post_ankuendigung_reel_wochenrueckblick_nov28",
     "action": "story",
-    "status": "claiming",
+    "status": "done",
     "fire_at": "2026-11-28T10:10:00+01:00",
     "claimed_by": "runnervm3lb7s-2472-3d9d8ffd",
-    "claimed_at": "2026-11-28T10:39:18.452463+00:00"
+    "claimed_at": "2026-11-28T10:39:18.452463+00:00",
+    "published_at": "2026-11-28T10:39:57.217155+00:00",
+    "media_id": "17892444309476578"
   }
 ]
